@@ -1,0 +1,108 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+% Setting the section title size and spacing
+\titleformat{\section}{\LARGE\scshape}{\thesection}{1em}{}
+
+% Set page size and margins
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\font\titleFont=cmr12 at 26pt
+\font\subtitleFont=cmr12 at 20pt
+
+\title{\titleFont Comparison Of Machine Learning Algorithms: Comparing Pruning Algorithms on Models After Transfer Learning}
+\date{\Large \today}
+\author{\subtitleFont James Arnott}
+
+\begin{document}
+
+\maketitle
+
+\begin {center}
+\noindent\rule{15cm}{0.4pt}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+	\begin{Large}
+			CS3821 - BSc Final Year Project
+
+			\vspace{0.6cm}
+
+			Supervised by Li Zhang
+
+			\vspace{0.6cm}
+
+			Department Of Computer Science
+
+			\vspace{0.2cm}
+
+			Royal Holloway, University Of London
+	\end{Large}
+\end{center}
+
+
+\pagebreak
+
+\section{Abstract}
+My final year project will be comparing different pruning algorithms for neural nets,
+after using transfer learning on a variety of different pre-trained image classification models.
+
+Pruning is the process of removing nodes from a neural network.
+This is done to reduce the size of the network, and therefore the amount of memory and
+computation required to run it.
+
+This is not just useful for lower powered embedded systems,
+where processing power is very limited, but also for larger systems,
+where massive neural networks can be used to achieve very
+high accuracy in classification but can be optimised to run faster
+to be deployed on mass in real world applications, to increase
+commercial viability.
+
+When using transfer learning with a pre-trained model, there can be many
+unnessasary nodes in the network that are not required for the new task
+which the transfer learning is being used for. This is where pruning can be used
+to remove these nodes and reduce the size of the network, significantly optimising it.
+
+There are many different pruning algorithms, and this project will hope to compare
+them and their performance on a variety of different pre-trained models, after
+transfer learning to identify a reduced set of entities.
+
+I will need to consider very carefully what the entities the network will try
+to identify are, as I will want to avoid any bias in the data set, and
+ensure that the network is trained on a diverse set of images, whilst avoiding
+overfitting. I will also need to ensure that there are similar entities that the
+network can distinguish between, to ensure that the network is not too simple.
+
+
+
+\pagebreak
+\section{Timeline}
+
+\lipsum[1]\lipsum[2]
+
+\pagebreak
+\section{Risks and Mitigations}
+
+\lipsum[1]\lipsum[2]
+
+\pagebreak
+\section{References}
+
+\lipsum[1]\lipsum[2]
+
+\end{document}
