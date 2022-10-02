@@ -94,12 +94,15 @@ network can distinguish between, to ensure that the network is not too simple.
 \pagebreak
 \section{Timeline}
 
-\begin{ganttchart}{2}{25}
-\gantttitle{2022}{24} \\
-\gantttitlelist{10,11,12,1,2,3,4,5}{3} \\
-\ganttgroup{Group 1}{2}{7} \\
-\ganttbar{Task 1}{2}{2} \\
-\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+\begin{ganttchart}{1}{27}
+\gantttitle{Term 1}{27} \\
+\gantttitlelist{1,2,3,4,5,6,7,8,9}{3} \\
+\ganttgroup{\small Research Algorithms}{1}{5} \\
+\ganttgroup{\small Implement Algorithms}{6}{10} \\
+\ganttbar{\small Classification Models}{1}{3} \\
+\ganttlinkedbar{\small Pruning Algorithms}{2}{5} \ganttnewline 
+
+\ganttlinkedbar{\small Pruning Algorithms}{5}{3} \ganttnewline
 \ganttmilestone{Milestone}{7} \ganttnewline
 \ganttbar{Final Task}{8}{12}
 \ganttlink{elem2}{elem3}
