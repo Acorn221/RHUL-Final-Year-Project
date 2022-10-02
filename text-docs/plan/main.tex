@@ -8,6 +8,7 @@
 \usepackage{mathptmx}
 \usepackage{titlesec}
 \usepackage{lipsum}
+\usepackage{pgfgantt}
 
 % Setting the section title size and spacing
 \titleformat{\section}{\LARGE\scshape}{\thesection}{1em}{}
@@ -92,6 +93,18 @@ network can distinguish between, to ensure that the network is not too simple.
 
 \pagebreak
 \section{Timeline}
+
+\begin{ganttchart}{2}{25}
+\gantttitle{2022}{24} \\
+\gantttitlelist{10,11,12,1,2,3,4,5}{3} \\
+\ganttgroup{Group 1}{2}{7} \\
+\ganttbar{Task 1}{2}{2} \\
+\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+\ganttmilestone{Milestone}{7} \ganttnewline
+\ganttbar{Final Task}{8}{12}
+\ganttlink{elem2}{elem3}
+\ganttlink{elem3}{elem4}
+\end{ganttchart}
 
 \lipsum[1]\lipsum[2]
 
