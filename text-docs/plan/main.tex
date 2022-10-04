@@ -158,8 +158,24 @@ Refactoring the code should hopefully not be too complex and I should aim to kee
 
 \pagebreak
 \section{Risks and Mitigations}
+With machine learning, I know there are many risks that many different aspects of training, pruning and testing can all go wrong.
 
-\lipsum[1]\lipsum[2]
+\subsection{Problems with finding training data for transfer learning}
+There can be problems with finding good data sets for the entities that I end up transfer learning with. As I have not decided what to use transfer learning for I can decide what would be the best data set and decide to transfer learn to that. This allows me to be more flexible and gives this project the highest chance of success.
+
+\subsection{Problems with getting models to work}
+As I want to use a few different models, the minimum ideally would be 10, I may have problems getting the models to work in the environment I want to use for all the models. This is not a huge issue as there are many tutorials online which I can follow to setup the models.
+
+\subsection{Implementing the pruning algorithms}
+This is the biggest risk to the project, I have very limited experience with machine learning and no experience at all with pruning models. I have a basic understanding about how pruning is supposed to work however I will be relying on tutorials primarily for the implementation of the algorithms and this is likely to be the most time consuming part of the project.
+
+\subsection{Limitations of my available computing resources}
+I may end up requiring extra computing resources for running some of the training and pruning algorithms 
+
+\subsection{Problems with testing}
+Throughout the project, I will need to compare the performance of the models, which is not too difficult as I can just have a test data set to compare them against. Testing the model's size would not be too difficult either as I could just use the model's file sizes, however, I am not yet confident as to how I will compare the models computational demand.
+
+
 
 \pagebreak
 \section{References}
