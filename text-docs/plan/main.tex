@@ -97,19 +97,64 @@ network can distinguish between, to ensure that the network is not too simple.
 \begin{ganttchart}{1}{27}
 \gantttitle{Term 1}{27} \\
 \gantttitlelist{1,2,3,4,5,6,7,8,9}{3} \\
-\ganttgroup{\small Research Algorithms}{1}{5} \\
-\ganttgroup{\small Implement Algorithms}{6}{10} \\
-\ganttbar{\small Classification Models}{1}{3} \\
-\ganttlinkedbar{\small Pruning Algorithms}{2}{5} \ganttnewline 
-
-\ganttlinkedbar{\small Pruning Algorithms}{5}{3} \ganttnewline
-\ganttmilestone{Milestone}{7} \ganttnewline
-\ganttbar{Final Task}{8}{12}
-\ganttlink{elem2}{elem3}
-\ganttlink{elem3}{elem4}
+\ganttgroup{\small Research}{1}{8} \\
+\ganttgroup{\small Implementation}{9}{16} \\
+\ganttbar{\small Classification Models}{1}{5} \\
+\ganttlinkedbar{\small Pruning Algorithms}{3}{8} \ganttnewline 
+\ganttlinkedbar{\small Classification models}{9}{11} \ganttnewline
+\ganttlinkedbar{\small Transfer Learning}{10}{13} \ganttnewline
+\ganttlinkedbar{\small Pruning Algorithms models}{12}{16} \ganttnewline
+\ganttmilestone{\small Algorithms can be ran}{16} \ganttnewline
+\ganttlinkedbar{\small Comparing Algorithms}{18}{25} \ganttnewline
+\ganttlinkedbar{\small Report/Presentation}{25}{27}
+\ganttlink{elem6}{elem7}
 \end{ganttchart}
 
-\lipsum[1]\lipsum[2]
+\subsection{Research Models}
+
+Here, I will the pre-trained research models that I will use, along with the pruning algorithms I can implement with them. I will also research how to do transfer learning with the models I want to use for the comparisons.
+
+\subsection{Implementation}
+
+Here I will setup the models and make sure I can run them, the transfer learning will also be done here to specialise the models so they are trained to identify a specific subset of entities.
+
+I will also setup the pruning algorithms to see how effective they are.
+
+\subsection{Comparing Algorithms}
+
+Here I will write scripts to compare the models after training and after pruning. I have allocated a lot of time to this as I will likely need to debug problems I have had with implementation, then I'll need to find good metrics which I can compare the models performance and efficiency with.
+
+\subsection{Report/Presentation}
+
+Here is where I will prepare the for the interim report and presentation.
+
+\pagebreak
+\begin{ganttchart}{1}{22}
+\gantttitle{Term 2}{22} \\
+\gantttitlelist{1,...,11}{2} \\
+\ganttgroup{\small Evaluate The Comparison}{1}{8} \\
+\ganttgroup{\small Optimise The Models}{9}{15} \\
+\ganttbar{\small Compare Performance}{1}{5} \\
+\ganttlinkedbar{\small Identify Problems}{3}{8} \ganttnewline 
+\ganttlinkedbar{\small Try and Fix the problems}{9}{13} \ganttnewline
+\ganttlinkedbar{\small Optimise For Efficiency}{10}{15} \ganttnewline
+\ganttmilestone{\small MVP}{15} \ganttnewline
+\ganttlinkedbar{\small Refactor the code}{16}{20} \ganttnewline
+\ganttlinkedbar{\small Finish Report/Presentation}{18}{22}
+\ganttlink{elem5}{elem6}
+\end{ganttchart}
+
+\subsection{Evaluate The Comparison}
+
+Here I will try and find anomalies in my results and attempt to find fixes for the optimisation, I am likely to have misconfigured one of the models in the transfer learning or pruning and this is where I will hopefully identify where.
+
+\subsection{Optimise The Models}
+
+I will hopefully optimise the models here, after adjusting the transfer learning parameters and the pruning algorithm parameters. This may not be required however I assume with machine learning, there are always likely to be possible improvements.
+
+\subsection{Finalising}
+
+Refactoring the code should hopefully not be too complex and I should aim to keep everything in a relatively strict format throughout the project. The report I write and the presentation I make should be quite a big task with the time I have allocated, however it should be manageable and I will aim to keep my report updated throughout the project.
 
 \pagebreak
 \section{Risks and Mitigations}
