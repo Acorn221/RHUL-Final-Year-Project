@@ -199,25 +199,30 @@ so the pruning algorithms that I will use will be subject to change.
 \ganttlinkedbar{\small Classification models}{9}{11} \ganttnewline
 \ganttlinkedbar{\small Transfer Learning}{10}{13} \ganttnewline
 \ganttlinkedbar{\small Pruning Algorithms models}{12}{16} \ganttnewline
-\ganttmilestone{\small Algorithms can be ran}{16} \ganttnewline
 \ganttlinkedbar{\small Comparing Algorithms}{18}{25} \ganttnewline
+\ganttmilestone{\small MVP}{24} \ganttnewline
 \ganttlinkedbar{\small Report/Presentation}{25}{27}
-\ganttlink{elem6}{elem7}
+\ganttlink{elem7}{elem8}
 \end{ganttchart}
 
 \subsection{Research Models}
 
-Here, I will the pre-trained research models that I will use, along with the pruning algorithms I can implement with them. I will also research how to do transfer learning with the models I want to use for the comparisons.
+Here, I will the pre-trained research models that I will use, along with the pruning algorithms I can implement with them. 
+I will also research how to do transfer learning with the models I want to use for the comparisons.
+This is mainly to ensure that I can get the models working with the pruning algorithms I want to use.
 
 \subsection{Implementation}
 
-Here I will setup the models and make sure I can run them, the transfer learning will also be done here to specialise the models so they are trained to identify a specific subset of entities.
-
+Here I will setup the models and make sure I can run them, the transfer learning 
+will also be done here to specialise the models so they are trained to identify a specific subset of entities.
 I will also setup the pruning algorithms to see how effective they are.
 
 \subsection{Comparing Algorithms}
 
-Here I will write scripts to compare the models after training and after pruning. I have allocated a lot of time to this as I will likely need to debug problems I have had with implementation, then I'll need to find good metrics which I can compare the models performance and efficiency with.
+Here I will write scripts to compare the models after training and after pruning. 
+I have allocated a lot of time to this as I will likely need to debug problems 
+I have had with implementation, then I'll need to find good metrics which I 
+can compare the models performance and efficiency with.
 
 \subsection{Report/Presentation}
 
@@ -235,7 +240,7 @@ and have some results from the pruning algorithms.
 \ganttlinkedbar{\small Identify Problems}{3}{8} \ganttnewline 
 \ganttlinkedbar{\small Try and Fix the problems}{9}{13} \ganttnewline
 \ganttlinkedbar{\small Optimise For Efficiency}{10}{15} \ganttnewline
-\ganttmilestone{\small MVP}{15} \ganttnewline
+\ganttmilestone{\small Final Product}{15} \ganttnewline
 \ganttlinkedbar{\small Refactor the code}{16}{20} \ganttnewline
 \ganttlinkedbar{\small Finish Report/Presentation}{18}{22}
 \ganttlink{elem5}{elem6}
@@ -243,7 +248,8 @@ and have some results from the pruning algorithms.
 
 \subsection{Evaluate The Comparison}
 
-Here I will try and find anomalies in my results and attempt to find fixes for the optimisation, I am likely to have misconfigured one of the models in the transfer learning or pruning and this is where I will hopefully identify where.
+Here I will try and find anomalies in my results and attempt to find fixes for the optimisation, 
+I am likely to have misconfigured one of the models in the transfer learning or pruning and this is where I will hopefully identify where.
 
 \subsection{Optimise The Models}
 
