@@ -2,13 +2,13 @@
 
 % Language setting
 \usepackage[english]{babel}
-
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{mathptmx}
 \usepackage{titlesec}
 \usepackage{lipsum}
 \usepackage{pgfgantt}
+\usepackage{glossaries}
 \usepackage[backend=biber]{biblatex}
 
 \addbibresource{refs.bib}
@@ -23,6 +23,18 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{dl}{DL}{Deep Learning}
+\newacronym{nn}{NN}{Neural Network}
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+
+
+\newglossaryentry{TransferLearning}
+{
+  name="Transfer Learning",
+  description={is is a method of applying a pre-trained model to a new problem.}
+}
 
 \font\titleFont=cmr12 at 26pt
 \font\subtitleFont=cmr12 at 20pt
@@ -87,7 +99,7 @@ There are many different pruning algorithms, and this project will hope to compa
 them and their performance on a variety of different pre-trained models, after
 transfer learning to identify a reduced set of entities.
 
-From FFT pruning in 1965\cite{FFT} to iterative magnitude pruning in 2019\cite{LotteryTicket},
+From FFT pruning in 1965\cite{FFT} to iterative magnitude pruning in 2018\cite{LotteryTicket},
 the algorithms are constantly being developed.
 
 I will need to consider very carefully what the entities the network will try
@@ -102,7 +114,7 @@ as it has been recommended in a recent paper which evaluated the current state o
 \pagebreak
 
 % Got most of these from here https://keras.io/api/applications/
-The pre-trained models that I currently intend to use are:
+\subsection{The pre-trained models that I currently intend to use}
 \begin{itemize}
 	\item VGG16
 	\item VGG19
@@ -117,7 +129,13 @@ The pre-trained models that I currently intend to use are:
 	\item DenseNet169
 \end{itemize}
 
-
+\subsection{The pruning algorithms that I currently intend to use}
+\begin{itemize}
+	\item Global Magnitude Pruning \cite{gupta2022global}
+	\item Iterative magnitude pruning (Lottery Ticket Hypothesis)\cite{LotteryTicket}
+	\item NoiseOut\cite{DBLP:journals/corr/BabaeizadehSC16}
+	\item Random pruning
+\end{itemize}
 
 \pagebreak
 \section{Timeline}
