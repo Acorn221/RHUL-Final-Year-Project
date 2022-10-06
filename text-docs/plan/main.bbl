@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,297 +16,381 @@
   {}
 \endgroup
 
+\datalist[entry]{nty/global//global/global}
+  \entry{DBLP:journals/corr/BabaeizadehSC16}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Babaeizadeh},
+         familyi={B\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Smaragdis},
+         familyi={S\bibinitperiod},
+         given={Paris},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CRH}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Roy\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMSPCRH1}
+    \strng{fullhash}{BMSPCRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1611.06211
+    \endverb
+    \field{title}{NoiseOut: {A} Simple Way to Prune Neural Networks}
+    \verb{url}
+    \verb http://arxiv.org/abs/1611.06211
+    \endverb
+    \field{volume}{abs/1611.06211}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{DBLP:journals/corr/BabaeizadehSC16}{article}{}
-      \name{author}{3}{}{%
-        {{hash=bee046fabb85a8fb46ac6414d13fa4c5}{%
-           family={Babaeizadeh},
-           familyi={B\bibinitperiod},
-           given={Mohammad},
-           giveni={M\bibinitperiod}}}%
-        {{hash=5e88aa083f79674bbfd75f494cc0f4f0}{%
-           family={Smaragdis},
-           familyi={S\bibinitperiod},
-           given={Paris},
-           giveni={P\bibinitperiod}}}%
-        {{hash=886cc29df3761bc097a37b2f4323bb7d}{%
-           family={Campbell},
-           familyi={C\bibinitperiod},
-           given={Roy\bibnamedelima H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \strng{fullhash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \strng{bibnamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \strng{authorbibnamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \strng{authornamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \strng{authorfullhash}{d3e369e89f40a98eb7693fb9b9e1d53e}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{NoiseOut: {A} Simple Way to Prune Neural Networks}
-      \field{volume}{abs/1611.06211}
-      \field{year}{2016}
-      \verb{eprint}
-      \verb 1611.06211
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1611.06211
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1611.06211
-      \endverb
-    \endentry
-    \entry{DBLP:journals/corr/abs-2003-03033}{article}{}
-      \name{author}{4}{}{%
-        {{hash=be4aa9f5c48120018fc63c3170867a03}{%
-           family={Blalock},
-           familyi={B\bibinitperiod},
-           given={Davis\bibnamedelima W.},
-           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=c0e4ea1dc80717d49795c23873e64ee7}{%
-           family={Ortiz},
-           familyi={O\bibinitperiod},
-           given={Jose\bibnamedelimb Javier\bibnamedelima Gonzalez},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=8f891d6f89678d7c987fed1e7090426b}{%
-           family={Frankle},
-           familyi={F\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=545cd09438161e027b2fbf5b7cab9739}{%
-           family={Guttag},
-           familyi={G\bibinitperiod},
-           given={John\bibnamedelima V.},
-           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c6503d4982d73bee133d22836fd872d}
-      \strng{fullhash}{78a573a26f49050077649cfc01210e6c}
-      \strng{bibnamehash}{4c6503d4982d73bee133d22836fd872d}
-      \strng{authorbibnamehash}{4c6503d4982d73bee133d22836fd872d}
-      \strng{authornamehash}{4c6503d4982d73bee133d22836fd872d}
-      \strng{authorfullhash}{78a573a26f49050077649cfc01210e6c}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{What is the State of Neural Network Pruning?}
-      \field{volume}{abs/2003.03033}
-      \field{year}{2020}
-      \verb{eprint}
-      \verb 2003.03033
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2003.03033
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2003.03033
-      \endverb
-    \endentry
-    \entry{FFT}{book}{}
-      \name{author}{2}{}{%
-        {{hash=9a5cfe59165ea73852bf47c17612fc90}{%
-           family={Cooley},
-           familyi={C\bibinitperiod},
-           given={James\bibnamedelima W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=9edab5dbc1987bcb98d6de058f00fc47}{%
-           family={Tukey},
-           familyi={T\bibinitperiod},
-           given={John\bibnamedelima W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \strng{fullhash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \strng{bibnamehash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \strng{authorbibnamehash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \strng{authornamehash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \strng{authorfullhash}{ee74374d9504fa6fb4aa57320b0e47fc}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{An Algorithm for the Machine Calculation of Complex Fourier Series}
-      \field{year}{1965}
-    \endentry
-    \entry{LotteryTicket}{article}{}
-      \name{author}{2}{}{%
-        {{hash=8f891d6f89678d7c987fed1e7090426b}{%
-           family={Frankle},
-           familyi={F\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=7cc7d0487fdba682edd06e917656b031}{%
-           family={Carbin},
-           familyi={C\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{3258326f745480cc40d5d784a5209d9b}
-      \strng{fullhash}{3258326f745480cc40d5d784a5209d9b}
-      \strng{bibnamehash}{3258326f745480cc40d5d784a5209d9b}
-      \strng{authorbibnamehash}{3258326f745480cc40d5d784a5209d9b}
-      \strng{authornamehash}{3258326f745480cc40d5d784a5209d9b}
-      \strng{authorfullhash}{3258326f745480cc40d5d784a5209d9b}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{The Lottery Ticket Hypothesis: Training Pruned Neural Networks}
-      \field{volume}{abs/1803.03635}
-      \field{year}{2018}
-      \verb{eprint}
-      \verb 1803.03635
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1803.03635
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1803.03635
-      \endverb
-    \endentry
-    \entry{gupta2022global}{misc}{}
-      \name{author}{7}{}{%
-        {{hash=0e702e27bb1584c8beefc2de94269e98}{%
-           family={Gupta},
-           familyi={G\bibinitperiod},
-           given={Manas},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7f1d56ce72b376a7cb00a09ff87f124b}{%
-           family={Keneta},
-           familyi={K\bibinitperiod},
-           given={Vishandi\bibnamedelima Rudy},
-           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=440a101d9a88a40c1b52a66f1687ca72}{%
-           family={Vaidyanathan},
-           familyi={V\bibinitperiod},
-           given={Abhishek},
-           giveni={A\bibinitperiod}}}%
-        {{hash=6087a702d0fddae3712162c64f7b36d5}{%
-           family={Kanodia},
-           familyi={K\bibinitperiod},
-           given={Ritwik},
-           giveni={R\bibinitperiod}}}%
-        {{hash=03bd6c290ee374f9de59df01e8ce9019}{%
-           family={Camci},
-           familyi={C\bibinitperiod},
-           given={Efe},
-           giveni={E\bibinitperiod}}}%
-        {{hash=1e3ca29b08ce63c74a878a24704ee054}{%
-           family={Foo},
-           familyi={F\bibinitperiod},
-           given={Chuan-Sheng},
-           giveni={C\bibinithyphendelim S\bibinitperiod}}}%
-        {{hash=4da9df32f0549fd84e52ca592356f954}{%
-           family={Lin},
-           familyi={L\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
-      \strng{fullhash}{7ba7e438ac316609cbddd3dc8d10ac57}
-      \strng{bibnamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
-      \strng{authorbibnamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
-      \strng{authornamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
-      \strng{authorfullhash}{7ba7e438ac316609cbddd3dc8d10ac57}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Global Magnitude Pruning With Minimum Threshold Is All We Need}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://openreview.net/forum?id=jNB6vfl_680
-      \endverb
-      \verb{url}
-      \verb https://openreview.net/forum?id=jNB6vfl_680
-      \endverb
-    \endentry
-    \entry{Jupyter}{misc}{}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labeltitlesource}{title}
-      \field{title}{JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.}
-      \verb{urlraw}
-      \verb https://jupyter.org/
-      \endverb
-      \verb{url}
-      \verb https://jupyter.org/
-      \endverb
-    \endentry
-    \entry{Keras}{misc}{}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labeltitlesource}{title}
-      \field{title}{Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.}
-      \verb{urlraw}
-      \verb https://keras.io/
-      \endverb
-      \verb{url}
-      \verb https://keras.io/
-      \endverb
-    \endentry
-    \entry{ShrinkBench}{misc}{}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{labeltitlesource}{title}
-      \field{title}{Open source PyTorch library to facilitate development and standardized evaluation of neural network pruning methods.}
-      \verb{urlraw}
-      \verb https://github.com/JJGO/shrinkbench
-      \endverb
-      \verb{url}
-      \verb https://github.com/JJGO/shrinkbench
-      \endverb
-    \endentry
-    \entry{PyTorch}{misc}{}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labeltitlesource}{title}
-      \field{title}{PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, primarily developed by Facebook's AI Research lab (FAIR).}
-      \verb{urlraw}
-      \verb https://pytorch.org/
-      \endverb
-      \verb{url}
-      \verb https://pytorch.org/
-      \endverb
-    \endentry
-    \entry{EmbeddedSystems}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=e62b6100a8302afe54c94fc0806c9d6e}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Zhongpeng},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \strng{fullhash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \strng{bibnamehash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \strng{authorbibnamehash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \strng{authornamehash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \strng{authorfullhash}{e62b6100a8302afe54c94fc0806c9d6e}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2021 2nd International Conference on Computing and Data Science (CDS)}
-      \field{title}{Model Pruning Techniques for Boosting the Inference Efficiency on Embedded Systems}
-      \field{year}{2021}
-      \field{pages}{119\bibrangedash 124}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/CDS52072.2021.00027
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
+  \entry{DBLP:journals/corr/abs-2003-03033}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BDW}{%
+         family={Blalock},
+         familyi={B\bibinitperiod},
+         given={Davis\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=OJJG}{%
+         family={Ortiz},
+         familyi={O\bibinitperiod},
+         given={Jose Javier\bibnamedelima Gonzalez},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Frankle},
+         familyi={F\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GJV}{%
+         family={Guttag},
+         familyi={G\bibinitperiod},
+         given={John\bibnamedelima V.},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDW+1}
+    \strng{fullhash}{BDWOJJGFJGJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 2003.03033
+    \endverb
+    \field{title}{What is the State of Neural Network Pruning?}
+    \verb{url}
+    \verb https://arxiv.org/abs/2003.03033
+    \endverb
+    \field{volume}{abs/2003.03033}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2020}
+  \endentry
+
+  \entry{FFT}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CJW}{%
+         family={Cooley},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=TJW}{%
+         family={Tukey},
+         familyi={T\bibinitperiod},
+         given={John\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJWTJW1}
+    \strng{fullhash}{CJWTJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{An Algorithm for the Machine Calculation of Complex Fourier
+  Series}
+    \field{year}{1965}
+  \endentry
+
+  \entry{LotteryTicket}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FJ}{%
+         family={Frankle},
+         familyi={F\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carbin},
+         familyi={C\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJCM1}
+    \strng{fullhash}{FJCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{eprint}
+    \verb 1803.03635
+    \endverb
+    \field{title}{The Lottery Ticket Hypothesis: Training Pruned Neural
+  Networks}
+    \verb{url}
+    \verb http://arxiv.org/abs/1803.03635
+    \endverb
+    \field{volume}{abs/1803.03635}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{gupta2022global}{misc}{}
+    \name{author}{7}{}{%
+      {{hash=GM}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Manas},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KVR}{%
+         family={Keneta},
+         familyi={K\bibinitperiod},
+         given={Vishandi\bibnamedelima Rudy},
+         giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vaidyanathan},
+         familyi={V\bibinitperiod},
+         given={Abhishek},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kanodia},
+         familyi={K\bibinitperiod},
+         given={Ritwik},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Camci},
+         familyi={C\bibinitperiod},
+         given={Efe},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=FCS}{%
+         family={Foo},
+         familyi={F\bibinitperiod},
+         given={Chuan-Sheng},
+         giveni={C\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM+1}
+    \strng{fullhash}{GMKVRVAKRCEFCSLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Global Magnitude Pruning With Minimum Threshold Is All We
+  Need}
+    \verb{url}
+    \verb https://openreview.net/forum?id=jNB6vfl_680
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{Jupyter}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{JupyterLab is a web-based interactive development environment
+  for Jupyter notebooks, code, and data.}
+    \verb{url}
+    \verb https://jupyter.org/
+    \endverb
+  \endentry
+
+  \entry{Keras}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Keras is a high-level neural networks API, written in Python
+  and capable of running on top of TensorFlow, CNTK, or Theano.}
+    \verb{url}
+    \verb https://keras.io/
+    \endverb
+  \endentry
+
+  \entry{Matplotlib}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Matplotlib is a comprehensive library for creating static,
+  animated, and interactive visualizations in Python.}
+    \verb{url}
+    \verb https://matplotlib.org/
+    \endverb
+  \endentry
+
+  \entry{GTX1070}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{NVIDIA GeForce GTX 1070}
+    \verb{url}
+    \verb https://www.nvidia.com/en-gb/geforce/products/10series/geforce-gtx-10
+    \verb 70/
+    \endverb
+  \endentry
+
+  \entry{ShrinkBench}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Open source PyTorch library to facilitate development and
+  standardized evaluation of neural network pruning methods.}
+    \verb{url}
+    \verb https://github.com/JJGO/shrinkbench
+    \endverb
+  \endentry
+
+  \entry{Pandas}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Pandas is a fast, powerful, flexible and easy to use open
+  source data analysis and manipulation tool, built on top of the Python
+  programming language.}
+    \verb{url}
+    \verb https://pandas.pydata.org/
+    \endverb
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-2202-03844}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PJ}{%
+         family={Poyatos},
+         familyi={P\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Molina},
+         familyi={M\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MAD}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={Aritz\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SJD}{%
+         family={Ser},
+         familyi={S\bibinitperiod},
+         given={Javier\bibnamedelima Del},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Herrera},
+         familyi={H\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJ+1}
+    \strng{fullhash}{PJMDMADSJDHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{eprint}
+    \verb 2202.03844
+    \endverb
+    \field{title}{EvoPruneDeepTL: An Evolutionary Pruning Model for Transfer
+  Learning based Deep Neural Networks}
+    \verb{url}
+    \verb https://arxiv.org/abs/2202.03844
+    \endverb
+    \field{volume}{abs/2202.03844}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2022}
+  \endentry
+
+  \entry{PyTorch}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{PyTorch is an open source machine learning library based on
+  the Torch library, used for applications such as computer vision and natural
+  language processing, primarily developed by Facebook's AI Research lab
+  (FAIR).}
+    \verb{url}
+    \verb https://pytorch.org/
+    \endverb
+  \endentry
+
+  \entry{RHULGitLab}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{RHUL GitLab}
+    \verb{url}
+    \verb https://gitlab.cim.rhul.ac.uk/
+    \endverb
+  \endentry
+
+  \entry{EmbeddedSystems}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zhongpeng},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZZ1}
+    \strng{fullhash}{ZZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2021 2nd International Conference on Computing and Data
+  Science (CDS)}
+    \verb{doi}
+    \verb 10.1109/CDS52072.2021.00027
+    \endverb
+    \field{pages}{119\bibrangedash 124}
+    \field{title}{Model Pruning Techniques for Boosting the Inference
+  Efficiency on Embedded Systems}
+    \field{year}{2021}
+  \endentry
+\enddatalist
 \endinput
-
