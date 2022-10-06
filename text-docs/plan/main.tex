@@ -82,7 +82,7 @@ Pruning is the process of removing weights, nodes or even whole layers from a ne
 This is done to reduce the size of the network, and therefore the amount of memory and
 computation required to run it.
 
-This is not just useful for lower powered embedded systems,
+This is not just useful for lower powered embedded systems\cite{EmbeddedSystems},
 where processing power is very limited, but also for larger systems,
 where massive neural networks can be used to achieve very
 high accuracy in classification but can be optimised to run faster
@@ -108,7 +108,7 @@ ensure that the network is trained on a diverse set of images to ensure there is
 overfitting. I will also need to ensure that there are similar entities that the
 network can distinguish between, to ensure that the network is not too simple.
 
-I am intending on using \href{https://github.com/JJGO/shrinkbench}{ShrinkBench} to compare the pruning algorithms,
+I am intending on using ShrinkBench\cite{ShrinkBench} to compare the pruning algorithms,
 as it has been recommended in a recent paper which evaluated the current state of neural network pruning algorithms.\cite{DBLP:journals/corr/abs-2003-03033}.
 
 \pagebreak
@@ -173,6 +173,8 @@ Here I will write scripts to compare the models after training and after pruning
 \subsection{Report/Presentation}
 
 Here is where I will prepare the for the interim report and presentation.
+I will hopefully have the models running and have applied the transfer learning, 
+and have some results from the pruning algorithms.
 
 \pagebreak
 \begin{ganttchart}{1}{22}
