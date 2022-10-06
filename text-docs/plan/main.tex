@@ -92,16 +92,17 @@ have been trained on the datasets like ImageNet\cite{ImageNet}, which contain mi
 and thousands of classes.
 
 Transfer learning is the process of applying a pre-trained model to a new problem,
-in this case, it will be specialising a pre-trained model to classify a specific set of images.
+in this case, it will be specialising a pre-trained model to classify a specific set of images, 
+rather than the broad range of images it can already classify.
 This is done by removing the final layers of the model and replacing it with a new layers
 that will be trained on the new dataset.
 
 Pruning is the process of removing weights, nodes or even whole layers from a neural network.
 This is done to reduce the size of the network, and therefore the amount of memory and
-computation required to run it.
+computation required to run said model.
 
 When using transfer learning with a pre-trained model, there can be many
-unnessasary weights in the network that are not required for the new task
+unnecessary weights in the network that are not required for the new task
 which the transfer learning is being used for. This is where pruning can be used
 to remove these weights and reduce the size of the network, significantly
 optimising the network and even increasing the accuracy of the network.
@@ -126,7 +127,7 @@ network can distinguish between, to ensure that the network is not too simple.
 
 \pagebreak
 
-\section{How i'm going to do it}
+\section{How I'm Going to Complete This Project}
 
 I will be using Jupyter Notebooks\cite{Jupyter} along with Python for this project, as 
 Python is a very popular language for machine learning and deep learning and there are many
@@ -141,7 +142,7 @@ train the models with transfer learning. At this stage, I will also test the acc
 models before pruning, to see how much accuracy is lost, or even gained after pruning.
 
 I will then go one by one and setup the pruning algorithms for the models.
-I'll need to note down the computational cost of pruning each model, as well as the
+I'll need to record the computational cost of pruning each model, as well as the
 accuracy of the model after pruning, and the size of the model after pruning.
 
 I will then compare the results of the pruning algorithms, and see which one is the best
