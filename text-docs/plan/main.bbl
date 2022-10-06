@@ -19,6 +19,49 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{DBLP:journals/corr/BabaeizadehSC16}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bee046fabb85a8fb46ac6414d13fa4c5}{%
+           family={Babaeizadeh},
+           familyi={B\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5e88aa083f79674bbfd75f494cc0f4f0}{%
+           family={Smaragdis},
+           familyi={S\bibinitperiod},
+           given={Paris},
+           giveni={P\bibinitperiod}}}%
+        {{hash=886cc29df3761bc097a37b2f4323bb7d}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Roy\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \strng{fullhash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \strng{bibnamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \strng{authorbibnamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \strng{authornamehash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \strng{authorfullhash}{d3e369e89f40a98eb7693fb9b9e1d53e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{NoiseOut: {A} Simple Way to Prune Neural Networks}
+      \field{volume}{abs/1611.06211}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1611.06211
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1611.06211
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1611.06211
+      \endverb
+    \endentry
     \entry{DBLP:journals/corr/abs-2003-03033}{article}{}
       \name{author}{4}{}{%
         {{hash=be4aa9f5c48120018fc63c3170867a03}{%
@@ -93,7 +136,7 @@
       \field{title}{An Algorithm for the Machine Calculation of Complex Fourier Series}
       \field{year}{1965}
     \endentry
-    \entry{LotteryTicket}{inproceedings}{}
+    \entry{LotteryTicket}{article}{}
       \name{author}{2}{}{%
         {{hash=8f891d6f89678d7c987fed1e7090426b}{%
            family={Frankle},
@@ -116,9 +159,152 @@
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{THE LOTTERY TICKET HYPOTHESIS}
-      \field{title}{FINDING SPARSE, TRAINABLE NEURAL NETWORKS}
-      \field{year}{2019}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{The Lottery Ticket Hypothesis: Training Pruned Neural Networks}
+      \field{volume}{abs/1803.03635}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1803.03635
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1803.03635
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1803.03635
+      \endverb
+    \endentry
+    \entry{gupta2022global}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=0e702e27bb1584c8beefc2de94269e98}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Manas},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7f1d56ce72b376a7cb00a09ff87f124b}{%
+           family={Keneta},
+           familyi={K\bibinitperiod},
+           given={Vishandi\bibnamedelima Rudy},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=440a101d9a88a40c1b52a66f1687ca72}{%
+           family={Vaidyanathan},
+           familyi={V\bibinitperiod},
+           given={Abhishek},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6087a702d0fddae3712162c64f7b36d5}{%
+           family={Kanodia},
+           familyi={K\bibinitperiod},
+           given={Ritwik},
+           giveni={R\bibinitperiod}}}%
+        {{hash=03bd6c290ee374f9de59df01e8ce9019}{%
+           family={Camci},
+           familyi={C\bibinitperiod},
+           given={Efe},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1e3ca29b08ce63c74a878a24704ee054}{%
+           family={Foo},
+           familyi={F\bibinitperiod},
+           given={Chuan-Sheng},
+           giveni={C\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=4da9df32f0549fd84e52ca592356f954}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
+      \strng{fullhash}{7ba7e438ac316609cbddd3dc8d10ac57}
+      \strng{bibnamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
+      \strng{authorbibnamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
+      \strng{authornamehash}{f3df18fc3d819c0cc0e0e6afa6f66eb4}
+      \strng{authorfullhash}{7ba7e438ac316609cbddd3dc8d10ac57}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Magnitude Pruning With Minimum Threshold Is All We Need}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://openreview.net/forum?id=jNB6vfl_680
+      \endverb
+      \verb{url}
+      \verb https://openreview.net/forum?id=jNB6vfl_680
+      \endverb
+    \endentry
+    \entry{Jupyter}{misc}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{title}{JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.}
+      \verb{urlraw}
+      \verb https://jupyter.org/
+      \endverb
+      \verb{url}
+      \verb https://jupyter.org/
+      \endverb
+    \endentry
+    \entry{Keras}{misc}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.}
+      \verb{urlraw}
+      \verb https://keras.io/
+      \endverb
+      \verb{url}
+      \verb https://keras.io/
+      \endverb
+    \endentry
+    \entry{ShrinkBench}{misc}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeltitlesource}{title}
+      \field{title}{Open source PyTorch library to facilitate development and standardized evaluation of neural network pruning methods.}
+      \verb{urlraw}
+      \verb https://github.com/JJGO/shrinkbench
+      \endverb
+      \verb{url}
+      \verb https://github.com/JJGO/shrinkbench
+      \endverb
+    \endentry
+    \entry{PyTorch}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, primarily developed by Facebook's AI Research lab (FAIR).}
+      \verb{urlraw}
+      \verb https://pytorch.org/
+      \endverb
+      \verb{url}
+      \verb https://pytorch.org/
+      \endverb
+    \endentry
+    \entry{EmbeddedSystems}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=e62b6100a8302afe54c94fc0806c9d6e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhongpeng},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \strng{fullhash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \strng{bibnamehash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \strng{authorbibnamehash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \strng{authornamehash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \strng{authorfullhash}{e62b6100a8302afe54c94fc0806c9d6e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 2nd International Conference on Computing and Data Science (CDS)}
+      \field{title}{Model Pruning Techniques for Boosting the Inference Efficiency on Embedded Systems}
+      \field{year}{2021}
+      \field{pages}{119\bibrangedash 124}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/CDS52072.2021.00027
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
