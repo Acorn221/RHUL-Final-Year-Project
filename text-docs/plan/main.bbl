@@ -224,6 +224,16 @@
     \field{year}{2022}
   \endentry
 
+  \entry{ImageNet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{ImageNet}
+    \verb{url}
+    \verb http://www.image-net.org/
+    \endverb
+  \endentry
+
   \entry{Jupyter}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
@@ -364,6 +374,27 @@
     \field{title}{RHUL GitLab}
     \verb{url}
     \verb https://gitlab.cim.rhul.ac.uk/
+    \endverb
+  \endentry
+
+  \entry{TensorFlow}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{TensorFlow is an end-to-end open source platform for machine
+  learning.}
+    \verb{url}
+    \verb https://www.tensorflow.org/
+    \endverb
+  \endentry
+
+  \entry{Trello}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Trello}
+    \verb{url}
+    \verb https://trello.com/
     \endverb
   \endentry
 
