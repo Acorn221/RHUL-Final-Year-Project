@@ -8,8 +8,9 @@
 \usepackage{titlesec}
 \usepackage{lipsum}
 \usepackage{pgfgantt}
+\usepackage{csquotes}
 \usepackage{glossaries}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=bibtex]{biblatex}
 
 \addbibresource{refs.bib}
 
@@ -78,16 +79,26 @@
 My final year project will be comparing different pruning algorithms for neural nets,
 after using transfer learning on a variety of different pre-trained image classification models.
 
-Pruning is the process of removing weights, nodes or even whole layers from a neural network.
-This is done to reduce the size of the network, and therefore the amount of memory and
-computation required to run it.
-
 This is not just useful for lower powered embedded systems\cite{EmbeddedSystems},
 where processing power is very limited, but also for larger systems,
 where massive neural networks can be used to achieve very
 high accuracy in classification but can be optimised to run faster
 to be deployed on mass in real world applications, to increase
 commercial viability.
+
+There are lots of pre-trained models available, such as VGG16, ResNet50, InceptionV3,
+and MobileNetV2, which I can use to perform transfer learning on. These models
+have been trained on the datasets like ImageNet, which contain millions of images
+and thousands of classes.
+
+Transfer learning is the process of applying a pre-trained model to a new problem,
+in this case, it will be specialising a pre-trained model to classify a specific set of images.
+This is done by removing the final layers of the model and replacing it with a new layers
+that will be trained on the new dataset.
+
+Pruning is the process of removing weights, nodes or even whole layers from a neural network.
+This is done to reduce the size of the network, and therefore the amount of memory and
+computation required to run it.
 
 When using transfer learning with a pre-trained model, there can be many
 unnessasary weights in the network that are not required for the new task
@@ -109,17 +120,41 @@ ensure that the network is trained on a diverse set of images to ensure there is
 overfitting. I will also need to ensure that there are similar entities that the
 network can distinguish between, to ensure that the network is not too simple.
 
-I am intending on using ShrinkBench\cite{ShrinkBench} to compare the pruning algorithms,
-as it has been recommended in a recent paper which evaluated the current state of neural network pruning algorithms.\cite{DBLP:journals/corr/abs-2003-03033}.
+\pagebreak
+
+\section{How i'm going to do it}
 
 I will be using Jupyter Notebooks\cite{Jupyter} along with Python for this project, as 
 Python is a very popular language for machine learning and deep learning and there are many
 libraries available for it, such as PyTorch\cite{PyTorch} and Keras\cite{Keras}.
 
+I am intending on using ShrinkBench\cite{ShrinkBench} to compare the pruning algorithms,
+as it has been recommended in a recent paper which evaluated the current state of neural network pruning algorithms.\cite{DBLP:journals/corr/abs-2003-03033}.
+
+After downloading the models and setting up the training and test data, I will need to
+train the models with transfer learning. At this stage, I will also test the accuracy of the
+models before pruning, to see how much accuracy is lost, or even gained after pruning.
+
+I will then go one by one and setup the pruning algorithms for the models.
+I'll need to note down the computational cost of pruning each model, as well as the
+accuracy of the model after pruning, and the size of the model after pruning.
+
+I will then compare the results of the pruning algorithms, and see which one is the best
+for each model, and which one is the best overall.
+
+I will use the python library Matplotlib\cite{Matplotlib} to plot the results of the pruning algorithms,
+and I will likely use the python library Pandas\cite{Pandas} to store the results of the pruning algorithms.
+
+All of the code will be stored in the RHUL GitLab\cite{RHULGitLab} repository.
+
+I will attempt to use my GTX 1070 GPU\cite{GTX1070} to train the models as I have it available to me.
+
+
+
 \pagebreak
 
 % Got most of these from here https://keras.io/api/applications/
-\subsection{The pre-trained models that I currently intend to use}
+\subsection{The pre-trained models that I intend to use}
 \begin{itemize}
 	\item VGG16
 	\item VGG19
@@ -134,13 +169,17 @@ libraries available for it, such as PyTorch\cite{PyTorch} and Keras\cite{Keras}.
 	\item DenseNet169
 \end{itemize}
 
-\subsection{The pruning algorithms that I currently intend to use}
+\subsection{The pruning algorithms that I intend to use}
 \begin{itemize}
 	\item Global Magnitude Pruning \cite{gupta2022global}
 	\item Iterative magnitude pruning (Lottery Ticket Hypothesis)\cite{LotteryTicket}
 	\item NoiseOut\cite{DBLP:journals/corr/BabaeizadehSC16}
+	\item EvoPruneDeepTL \cite{DBLP:journals/corr/abs-2202-03844}
 	\item Random pruning
 \end{itemize}
+
+I am certain that for some of the pruning algorithms, I will have too significant problems getting working
+so the pruning algorithms that I will use will be subject to change.
 
 \pagebreak
 \section{Timeline}
@@ -223,7 +262,9 @@ As I want to use a few different models, the minimum ideally would be 10, I may 
 This is the biggest risk to the project, I have very limited experience with machine learning and no experience at all with pruning models. I have a basic understanding about how pruning is supposed to work however I will be relying on tutorials primarily for the implementation of the algorithms and this is likely to be the most time consuming part of the project.
 
 \subsection{Limitations of my available computing resources}
-I may end up requiring extra computing resources for running some of the training and pruning algorithms 
+I may end up requiring extra computing resources for running some of the training and pruning algorithms.
+I will need to be careful with the amount of data I use for training and pruning as I do not have a lot of computing resources available to me.
+I can also use google cloud to run the models on a virtual machine if I need to that have more power.
 
 \subsection{Problems with testing}
 Throughout the project, I will need to compare the performance of the models, which is not too difficult as I can just have a test data set to compare them against. Testing the model's size would not be too difficult either as I could just use the model's file sizes, however, I am not yet confident as to how I will compare the models computational demand.
