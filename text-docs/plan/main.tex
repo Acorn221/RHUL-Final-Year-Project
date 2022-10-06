@@ -40,7 +40,7 @@
 \font\titleFont=cmr12 at 26pt
 \font\subtitleFont=cmr12 at 20pt
 
-\title{\titleFont Comparing Pruning Algorithms on Image Classification Models After Transfer Learning}
+\title{\titleFont Comparing Pruning Algorithms on Image Classification Models With Transfer Learning}
 \date{\Large \today}
 \author{\subtitleFont James Arnott}
 
@@ -114,6 +114,10 @@ From FFT pruning in 1965\cite{FFT} to iterative magnitude pruning in 2018\cite{L
 the algorithms are constantly being developed and they therefore need to be constantly re-evaluated
 to compare their performances and to see if existing algorithms can be improved upon.
 
+With the way I am intending on structuring this project, it will be possible to
+easily drop in new pruning algorithms and new pre-trained models, and therefore
+it will allow for easy comparison of new algorithms and models as they are developed.
+
 I will need to consider very carefully what the entities the network will try
 to identify are, as I will want to avoid any bias in the data set, and
 ensure that the network is trained on a diverse set of images to ensure there is no
@@ -129,7 +133,8 @@ Python is a very popular language for machine learning and deep learning and the
 libraries available for it, such as PyTorch\cite{PyTorch} and Keras\cite{Keras}.
 
 I am intending on using ShrinkBench\cite{ShrinkBench} to compare the pruning algorithms,
-as it has been recommended in a recent paper which evaluated the current state of neural network pruning algorithms.\cite{DBLP:journals/corr/abs-2003-03033}.
+as it has been recommended (in 2020) in a recent paper which evaluated the current state of pruning with neural networks
+.\cite{DBLP:journals/corr/abs-2003-03033}.
 
 After downloading the models and setting up the training and test data, I will need to
 train the models with transfer learning. At this stage, I will also test the accuracy of the
@@ -253,13 +258,26 @@ Refactoring the code should hopefully not be too complex and I should aim to kee
 With machine learning, I know there are many risks that many different aspects of training, pruning and testing can all go wrong.
 
 \subsection{Problems with finding training data for transfer learning}
-There can be problems with finding good data sets for the entities that I end up transfer learning with. As I have not decided what to use transfer learning for I can decide what would be the best data set and decide to transfer learn to that. This allows me to be more flexible and gives this project the highest chance of success.
+There can be problems with finding good data sets for the entities that I end up transfer learning with. 
+As I have not decided what to use transfer learning for I can decide what would be the best data 
+set and decide to transfer learn to that. This allows me to be more flexible and gives this project the 
+highest chance of success. I am most likely to use Kaggle or ImageNet\cite{ImageNet} for the training and test data.
+
 
 \subsection{Problems with getting models to work}
-As I want to use a few different models, the minimum ideally would be 10, I may have problems getting the models to work in the environment I want to use for all the models. This is not a huge issue as there are many tutorials online which I can follow to setup the models.
+As I want to use a few different models, the minimum ideally would be 10, I may have 
+problems getting the models to work in the environment I want to use for all the models. 
+This is not a huge issue as there are many tutorials online which I can follow to setup the models.
+Keras is a good library to use for this as it has many examples of how to setup the models,
+and it's an abstraction layer on top of TensorFlow\cite{TensorFlow} which is a good library for machine learning
+as TensorFlow is not the easiest to use.
 
 \subsection{Implementing the pruning algorithms}
-This is the biggest risk to the project, I have very limited experience with machine learning and no experience at all with pruning models. I have a basic understanding about how pruning is supposed to work however I will be relying on tutorials primarily for the implementation of the algorithms and this is likely to be the most time consuming part of the project.
+This is the biggest risk to the project, I have very limited experience with machine 
+learning and no experience at all with pruning models. I have a basic 
+understanding about how pruning is supposed to work however I 
+will be relying on tutorials primarily for the implementation of 
+the algorithms and this is likely to be the most time consuming part of the project.
 
 \subsection{Limitations of my available computing resources}
 I may end up requiring extra computing resources for running some of the training and pruning algorithms.
@@ -267,12 +285,19 @@ I will need to be careful with the amount of data I use for training and pruning
 I can also use google cloud to run the models on a virtual machine if I need to that have more power.
 
 \subsection{Problems with testing}
-Throughout the project, I will need to compare the performance of the models, which is not too difficult as I can just have a test data set to compare them against. Testing the model's size would not be too difficult either as I could just use the model's file sizes, however, I am not yet confident as to how I will compare the models computational demand.
+Throughout the project, I will need to compare the performance of the models, 
+which is not too difficult as I can just have a test data set to compare 
+them against. Testing the model's size would not be too difficult 
+either as I could just use the model's file sizes, however, I am 
+not yet confident as to how I will compare the models computational demand.
+The python library ShrinkBench \cite{ShrinkBench} will be very useful for this 
+as it has a lot of metrics that I can use to compare the models.
 
 \subsection{Problems with managing my time throughout the project}
 I cannot be certain how long each task will take, and I may end up spending too much time on one task and not enough on another.
 This is a risk that I will need to be aware of throughout the project and I shall mitigate the risks by asking for help when I need it, to ensure I can progress in accordance with the project plan and I will need to learn more about how neural networks work 
-and how to optimise them.
+and how to optimise them. I will try and plan my time with Trello \cite{Trello} which will help me to keep track of my progress and ensure I am not falling behind schedule.
+
 
 \pagebreak
 
