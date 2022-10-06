@@ -9,6 +9,9 @@
 \usepackage{titlesec}
 \usepackage{lipsum}
 \usepackage{pgfgantt}
+\usepackage[backend=biber]{biblatex}
+
+\addbibresource{refs.bib}
 
 % Setting the section title size and spacing
 \titleformat{\section}{\LARGE\scshape}{\thesection}{1em}{}
@@ -63,7 +66,7 @@
 My final year project will be comparing different pruning algorithms for neural nets,
 after using transfer learning on a variety of different pre-trained image classification models.
 
-Pruning is the process of removing nodes from a neural network.
+Pruning is the process of removing weights, nodes or even whole layers from a neural network.
 This is done to reduce the size of the network, and therefore the amount of memory and
 computation required to run it.
 
@@ -75,17 +78,21 @@ to be deployed on mass in real world applications, to increase
 commercial viability.
 
 When using transfer learning with a pre-trained model, there can be many
-unnessasary nodes in the network that are not required for the new task
+unnessasary weights in the network that are not required for the new task
 which the transfer learning is being used for. This is where pruning can be used
-to remove these nodes and reduce the size of the network, significantly optimising it.
+to remove these weights and reduce the size of the network, significantly
+optimising the network and even increasing the accuracy of the network.
 
 There are many different pruning algorithms, and this project will hope to compare
 them and their performance on a variety of different pre-trained models, after
 transfer learning to identify a reduced set of entities.
 
+From FFT pruning in 1965\cite{FFT} to iterative magnitude pruning in 2019\cite{LotteryTicket},
+the algorithms are constantly being developed.
+
 I will need to consider very carefully what the entities the network will try
 to identify are, as I will want to avoid any bias in the data set, and
-ensure that the network is trained on a diverse set of images, whilst avoiding
+ensure that the network is trained on a diverse set of images to ensure there is no
 overfitting. I will also need to ensure that there are similar entities that the
 network can distinguish between, to ensure that the network is not too simple.
 
@@ -182,7 +189,6 @@ and how to optimise them.
 
 \pagebreak
 
-
-\lipsum[1]\lipsum[2]
+\printbibliography
 
 \end{document}
