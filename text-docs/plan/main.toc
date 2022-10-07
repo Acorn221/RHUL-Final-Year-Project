@@ -1,0 +1,20 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}%
+\contentsline {section}{\numberline {2}How i'm going to do it}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The pre-trained models that I intend to use}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The pruning algorithms that I intend to use}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Timeline}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Research Models}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Implementation}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Comparing Algorithms}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Report/Presentation}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Evaluate The Comparison}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Optimise The Models}{6}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Finalising}{6}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Risks and Mitigations}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problems with finding training data for transfer learning}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Problems with getting models to work}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Implementing the pruning algorithms}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Limitations of my available computing resources}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Problems with testing}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Problems with managing my time throughout the project}{7}{subsection.4.6}%
