@@ -1,3 +1,4 @@
 notebook
 tensorflow
 keras
+matplotlib
