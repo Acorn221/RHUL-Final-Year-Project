@@ -18,3 +18,9 @@ I have decided to use the following sets of images:
 I am going to follow the tutorial [here](https://www.tensorflow.org/tutorials/images/classification) which should help me to get a good understanding of how to use the datasets and how to train the models to start with.
 I have no prior experience training models so this will be a good starting point for me.
 I will then need to use parts of the code from the tutorial to transfer run the transfer learning.
+
+## 26/10/2022
+
+Today I have been working on the transfer learning tutorial, I've made more progress through it and I've managed to get
+Mobilenetv3 to run on the flowers dataset, however I'm having some issues with the alzheimer's dataset.
+This is significant progress as this was a major blocker for me as I was not sure how to go forward with the prediction.
