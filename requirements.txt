@@ -1,0 +1,4 @@
+notebook
+tensorflow
+keras
+matplotlib
