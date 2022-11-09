@@ -1,4 +1,5 @@
 notebook
 tensorflow
+tensorflow-gpu
 keras
 matplotlib
