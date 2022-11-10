@@ -25,6 +25,12 @@ Today I have been working on the transfer learning tutorial, I've made more prog
 Mobilenetv3 to run on the flowers dataset, however I'm having some issues with the alzheimer's dataset.
 This is significant progress as this was a major blocker for me as I was not sure how to go forward with the prediction.
 
+## 01/11/2022
+
+Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset, 
+with varying degrees of accuracy, around 80% was the best I got however this was only after 5 epochs and was the first time I have tried transfer learning.
+
+
 ## 09/11/2022
 
 I had lost some of my git history for my diary 😭, so I have had to rewrite some of the diary entries.
