@@ -24,3 +24,10 @@ I will then need to use parts of the code from the tutorial to transfer run the 
 Today I have been working on the transfer learning tutorial, I've made more progress through it and I've managed to get
 Mobilenetv3 to run on the flowers dataset, however I'm having some issues with the alzheimer's dataset.
 This is significant progress as this was a major blocker for me as I was not sure how to go forward with the prediction.
+
+## 09/11/2022
+
+I had lost some of my git history for my diary 😭, so I have had to rewrite some of the diary entries.
+I have found more flower dataset images here and I've decided to change over to this as soon as possible;
+https://www.kaggle.com/competitions/tpu-getting-started/overview
+
