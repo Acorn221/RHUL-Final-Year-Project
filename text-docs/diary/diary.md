@@ -33,7 +33,13 @@ with varying degrees of accuracy, around 80% was the best I got however this was
 
 ## 09/11/2022
 
-I had lost some of my git history for my diary 😭, so I have had to rewrite some of the diary entries.
+I had lost some of my git history for my diary, so I have had to rewrite some of the diary entries.
 I have found more flower dataset images here and I've decided to change over to this as soon as possible;
 https://www.kaggle.com/competitions/tpu-getting-started/overview
 
+## 14/11/2022
+
+I am training the model "Mobilenetv3 Small" with the alzheimer's dataset, I have been able to get it to run and it is currently training.
+The power required to train the models is making it difficult to use trial and error for the parameters, so I am going to try and find a way to use the GPU on my laptop to train the models as soon as possible.
+I'm also going to optimise the way I am training the models as to not use more power than necessary. This means I've got to get a better understanding of the models I am training with and how they work.
+I have found this paper [here](https://arxiv.org/abs/1905.02244) which I think will be useful for me to read through and understand the structure of Mobilenetv3.
