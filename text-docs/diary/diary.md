@@ -33,7 +33,49 @@ with varying degrees of accuracy, around 80% was the best I got however this was
 
 ## 09/11/2022
 
-I had lost some of my git history for my diary 😭, so I have had to rewrite some of the diary entries.
+I had lost some of my git history for my diary, so I have had to rewrite some of the diary entries.
 I have found more flower dataset images here and I've decided to change over to this as soon as possible;
 https://www.kaggle.com/competitions/tpu-getting-started/overview
 
+## 14/11/2022
+
+I am training the model "Mobilenetv3 Small" with the alzheimer's dataset, I have been able to get it to run and it is currently training.
+The power required to train the models is making it difficult to use trial and error for the parameters, so I am going to try and find a way to use the GPU on my laptop to train the models as soon as possible.
+I'm also going to optimise the way I am training the models as to not use more power than necessary. This means I've got to get a better understanding of the models I am training with and how they work.
+I have found this paper [here](https://arxiv.org/abs/1905.02244) which I think will be useful for me to read through and understand the structure of Mobilenetv3.
+
+## 15/11/2022
+
+I've had trouble getting the Alzheimers classification to work with transfer learning, so I decided to try and run other people's code to see if I could get it to work.
+I have found that my transfer learning could be significantly more efficient and accurate if I use the existing code, so I'll have to try and identify where I went wrong with my code and make improvements.
+
+## 21/11/2022
+
+Today I managed to get the accuracy up to 90% on the alzheimer's dataset, this is a significant improvement from the 60% I was getting before. My model appears to still be overfitting however this progress is good. This was done through transfer learning on the Mobilenetv3 small model.
+
+Output from the model during fine-tuning:
+loss: 0.0314 - accuracy: 0.9883 - val_loss: 0.1337 - val_accuracy: 0.9036
+
+## 22/11/2022
+
+Here's some graphs of the model's predictions on the alzheimer's dataset:#
+This graph was made using the MobilenetV3Small model and transfer learning on the alzheimer's dataset, with all but 3 layers of the mobilenetv3 model frozen.
+![image](./images/better-output.png)
+
+Here's the code that was used to generate that graph
+![image](./images/training.png)
+
+Here's some positive progress from unfreezing all the layers of the model and "fine-tuning" the model:
+
+![image](./images/positive-progress.png)
+
+Here is a graph of where I was fine tuning the model however I had overfitted the model and it was not generalising well to the test data:
+
+![image](./images/fine-tuning-more.png)
+![image](./images/maxing-out.png)
+
+Here is my first attempt at training the mobilenetV3Large model after unfreezing all the layers:
+
+![image](./images/mobilenetv3-first-attempt.png)
+
+I have also setup my laptop properly using Manjaro Linux to train the models on the GPU, this should make it much easier to train the models and to try different parameters and should allow me to create a confusion matrix for different parameters.
