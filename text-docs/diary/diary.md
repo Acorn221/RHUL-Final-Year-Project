@@ -55,3 +55,25 @@ Today I managed to get the accuracy up to 90% on the alzheimer's dataset, this i
 
 Output from the model during fine-tuning:
 loss: 0.0314 - accuracy: 0.9883 - val_loss: 0.1337 - val_accuracy: 0.9036
+
+## 22/11/2022
+
+Here's some graphs of the model's predictions on the alzheimer's dataset:#
+This graph was made using the MobilenetV3Small model and transfer learning on the alzheimer's dataset, with all but 3 layers of the mobilenetv3 model frozen.
+![image](./images/better-output.png)
+
+Here's the code that was used to generate that graph
+![image](./images/training.png)
+
+Here's some positive progress from unfreezing all the layers of the model and "fine-tuning" the model:
+
+![image](./images/positive-progress.png)
+
+Here is a graph of where I was fine tuning the model however I had overfitted the model and it was not generalising well to the test data:
+
+![image](./images/fine-tuning-more.png)
+![image](./images/maxing-out.png)
+
+Here is my first attempt at training the mobilenetV3Large model after unfreezing all the layers:
+
+![image](./images/mobilenetv3-first-attempt.png)
