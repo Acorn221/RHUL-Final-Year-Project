@@ -77,3 +77,5 @@ Here is a graph of where I was fine tuning the model however I had overfitted th
 Here is my first attempt at training the mobilenetV3Large model after unfreezing all the layers:
 
 ![image](./images/mobilenetv3-first-attempt.png)
+
+I have also setup my laptop properly using Manjaro Linux to train the models on the GPU, this should make it much easier to train the models and to try different parameters and should allow me to create a confusion matrix for different parameters.
