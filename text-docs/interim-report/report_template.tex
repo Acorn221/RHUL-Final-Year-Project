@@ -1,6 +1,8 @@
 \documentclass[]{final_report}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{refs.bib}
 
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -80,6 +82,27 @@ Your project specification goes here.
 %%% Introduction
 \chapter{Introduction}
 
+Transfer learning is a common, efficient method for training deep learning models.
+There are many different ways to implement transfer learning and here I hope to compare the performance
+of a variety of different methods with different pre-trained models.
+
+The applications for transfer learning are vast, and it is a common method for training deep learning models,
+This is because it is a very efficient method for training models as most of the work is done by the pre-trained model.
+The pre-trained model is used to extract features from the dataset, and then a new model is trained on top of the extracted features.
+The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained.
+
+After the new model is trained on top, a process known as fine-tuning can be used to further improve the performance of the model.
+Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
+This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
+
+The models I have chosen to compare are the MobileNetv3Small, MobileNetv3Large, ResNet50, ResNet101, ResNet152, and InceptionV3 models.
+These models are all pre-trained on the ImageNet dataset, which contains 1.2 million images of 1000 different classes.
+
+
+
+The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
+
+% TODO: remove
 The project report is a very important part of your project and its preparation and presentation should be of extremely high quality. Remember that a significant portion of the marks for your project are awarded for this report. 
 
 The format of the final report is fixed by the template of this document and the Department of Computer Science suggests its usage. 
@@ -96,7 +119,7 @@ A \textbf{final project report} is approximately 15,000 words and must include a
 Your \textbf{interim report} for the December Review meeting, even if it is a collection of reports, should have a total word count of about 5,000 words. 
 This should summarise the work you have done so far, with sections on the theory you have learnt and the code that you have written.
 
-Also remember that any details of report content and submission rules, as well as other deliverables, are defined in the project booklet~\cite{COHEN:2013}.
+Also remember that any details of report content and submission rules, as well as other deliverables, are defined in the project booklet~.
 
 \section{How to use this template}
 
@@ -159,17 +182,16 @@ Use one consistent system for citing works in the body of your report. Several s
 
 \chapter{Project Information and Rules}
 
-The details about how your project will be assessed, as well as the rules you must follow for this final project report, are detailed in the project booklet~\cite{COHEN:2013}.
+The details about how your project will be assessed, as well as the rules you must follow for this final project report, are detailed in the project booklet~.
 
 \textbf{You must read that document and strictly follow it.}
 
 
 %%%% ADD YOUR BIBLIOGRAPHY HERE
 \newpage
-\begin{thebibliography}{99}
-\addcontentsline{toc}{chapter}{Bibliography}
-\bibitem{COHEN:2013} Dave Cohen and Carlos Matos. \emph{Third Year Projects -- Rules and Guidelines}. Royal Holloway, University of London, 2013.
-\end{thebibliography}
+
+\printbibliography
+
 \label{endpage}
 
 
