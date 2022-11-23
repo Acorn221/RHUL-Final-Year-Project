@@ -79,3 +79,9 @@ Here is my first attempt at training the mobilenetV3Large model after unfreezing
 ![image](./images/mobilenetv3-first-attempt.png)
 
 I have also setup my laptop properly using Manjaro Linux to train the models on the GPU, this should make it much easier to train the models and to try different parameters and should allow me to create a confusion matrix for different parameters.
+
+## 23/11/2022
+
+I have achived 99% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
+I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
+This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
