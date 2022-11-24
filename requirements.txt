@@ -3,3 +3,5 @@ tensorflow
 tensorflow-gpu
 keras
 matplotlib
+kaggle
+scikit-learn
