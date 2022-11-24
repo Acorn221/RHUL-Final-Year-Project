@@ -190,6 +190,31 @@ For the validation set, I have assigned 20\% of the data to be used.
 The confusion matrix is a table that shows the number of correct and incorrect predictions for each class.
 It is a very useful metric to use when evaluating the performance of a model, as it can show which classes the model is having the most trouble with.
 
+\section{Data Augmentation}
+
+Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images.
+This can help to improve the performance of a model, as it can help to reduce overfitting, and can also help to improve the generalisation of the model.
+The transformations that are applied to the images are usually random, and can include things like rotating the image, 
+flipping the image, or changing the contrast/saturation of the image.
+
+In the case of the Alzheimer's MRI Dataset, it is extremley useful to have more data to train the model on, as there are a limited number of brain scans available.
+MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
+
+In the Alzheimer's MRI Dataset, the majority of the archive is comprised of augmented images already so I did not need to apply any data augmentation to the images.
+
+\section{Evaluating the given metrics}
+The metrics of accuracy and loss generally tell us how well the model is performing,
+but they do not tell us how well the model is performing for each class.
+They do also not tell us how well the model would work in a real world scenario, 
+as they are only calculated on the training and validation sets, of which we have a limited amount of data.
+
+The validation dataset is also from the same distribution as the training dataset, 
+so it is not a good representation of how well the model would work in a real world scenario 
+as the scans could be of a different quality.
+
+I have used the augmented dataset for the training and validation sets as this 
+should give a better representation of how well the model would work in a real world scenario.
+
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=100mm]{images/ConfusionMatrix.png}
