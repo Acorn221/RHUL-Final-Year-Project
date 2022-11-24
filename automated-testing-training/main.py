@@ -53,6 +53,7 @@ MobileNetV3Small = keras.applications.MobileNetV3Small(**params)
 for i in range(len(models)):
 	# Create the model
 
+	miscInfo = {}
 	pretrainedModel = models[i]
 
 	model = keras.Sequential()
@@ -78,7 +79,7 @@ for i in range(len(models)):
 
 	history = {}
 	# Train the model
-	for i in range(0, 20):
+	for j in range(0, 20):
 		trainingStats = model.fit(
 			train_ds,
 			epochs=2, 
@@ -87,14 +88,18 @@ for i in range(len(models)):
 		)
 		history = merge_dicts(history, trainingStats.history)
 
-		if(i > 5):
-			lastAccuracy = sum(history['accuracy'][:-5])
-			lastValAccuracy = sum(history['val_accuracy'][:-5])
+		if(j > 5):
+			lastAccuracy = sum(history['accuracy'][:5])
+			lastValAccuracy = sum(history['val_accuracy'][:5])
 
 			if(lastAccuracy > (lastValAccuracy - 0.2)):
 				print("Likely Overfitting, moving to fine tuning now")
-				history['Overfitting excape'] = True
+				miscInfo['Overfitting excape'] = True
 				break;
+
+		if(history['val_accuracy'][:1][0] > 0.95):
+			print("Val_accuracy is over 0.96, moving over to fine tuning")
+			break;
 
 	# Unfreeze all the layers
 	for layer in model.layers:
@@ -106,26 +111,28 @@ for i in range(len(models)):
 								metrics=['accuracy'])
 
 	# Train the model
-	trainingStats = model.fit(
-		train_ds,
-		epochs=40,
-		steps_per_epoch=len(train_ds),
-		validation_data=test_ds,
-	)
+	for j in range(20):
+		trainingStats = model.fit(
+			train_ds,
+			epochs=2,
+			steps_per_epoch=len(train_ds),
+			validation_data=test_ds,
+		)
 
-	# Add the training statistics to the array
-	history = merge_dicts(history, trainingStats.history)
+		# Add the training statistics to the array
+		history = merge_dicts(history, trainingStats.history)
 
 
 	# Get the model name to save the data to
 
 	# Set the misc info for reference
-	history['params'] = params
-	history['pretrainedUnfrozenLayers'] = pretrainedUnfrozenLayers
-	history['BaseModelName'] = modelNames[i]
+	miscInfo['params'] = params
+	miscInfo['pretrainedUnfrozenLayers'] = pretrainedUnfrozenLayers
+	miscInfo['BaseModelName'] = modelNames[i]
+	saveInfo = {**history, **miscInfo}
  	# Save the data to a JSON file
 	with open("./automated-testing-training/training-results/"+modelNames[i]+".json", "w+") as outfile:
-		json.dump(history, outfile)
+		json.dump(saveInfo, outfile)
 
 	# Save the model for future reference
 	model.save('./automated-testing-training/completed-models/'+modelNames[i])
