@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
-from keras.applications import MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19
+from keras.applications import MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19, Xception
 from sklearn.model_selection import GridSearchCV
 import pathlib
 import matplotlib.pyplot as plt
@@ -44,8 +44,12 @@ def merge_dicts(dict1, dict2):
 
 pretrainedUnfrozenLayers = 5
 
-models = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
-modelNames = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
+modelsOld = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
+modelNamesOld = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
+
+models = [InceptionResNetV2, InceptionV3, ResNet101, VGG19, Xception]
+modelNames = ["InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19", "Xception"]
+
 
 
 MobileNetV3Small = keras.applications.MobileNetV3Small(**params)
