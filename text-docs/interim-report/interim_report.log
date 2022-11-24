@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  24 NOV 2022 13:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  24 NOV 2022 19:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +560,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
- (interim_report.out) (interim_report.out)
 \@outlinefile=\write4
 \openout4 = `interim_report.out'.
 
@@ -579,121 +578,235 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout3 = `interim_report-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'interim_report.bbl' found.
- (interim_report.bbl)
+Package biblatex Info: ... file 'interim_report.bbl' not found.
+
+No file interim_report.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-<logo.pdf, id=111, 948.54375pt x 473.77pt>
+<logo.pdf, id=3, 948.54375pt x 473.77pt>
 File: logo.pdf Graphic file (type pdf)
 <use logo.pdf>
 Package pdftex.def Info: logo.pdf  used on input line 23.
 (pdftex.def)             Requested size: 284.82584pt x 142.26378pt.
- [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+[0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./logo.pdf>]
-<images/signature.jpg, id=130, 913.4125pt x 384.43625pt>
+<images/signature.jpg, id=22, 913.4125pt x 384.43625pt>
 File: images/signature.jpg Graphic file (type jpg)
 <use images/signature.jpg>
 Package pdftex.def Info: images/signature.jpg  used on input line 47.
 (pdftex.def)             Requested size: 142.26378pt x 59.87444pt.
  [1
 
- <./images/signature.jpg>] (interim_report.toc
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 1.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 1.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 1.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 1.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 1.
-[2])
+ <./images/signature.jpg>]
+No file interim_report.toc.
 \tf@toc=\write5
 \openout5 = `interim_report.toc'.
 
- [3] [4
+[2] [3
 
-] [5
+] [4
 
 ]
 Chapter 1.
-[6
+
+LaTeX Warning: Citation 'DBLP:journals/corr/abs-1905-02244' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'DBLP:journals/corr/abs-1905-02244' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'DBLP:journals/corr/HeZRS15' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'DBLP:journals/corr/HeZRS15' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'DBLP:journals/corr/HeZRS15' on page 5 undefined on input line 96.
+
+
+LaTeX Warning: Citation 'DBLP:journals/corr/SzegedyVISW15' on page 5 undefined on input line 96.
+
+
+Overfull \hbox (66.88062pt too wide) in paragraph at lines 96--98
+[]\OT1/cmr/m/n/10.95 The mod-els I have cho-sen to com-pare are the MobileNetv3Small[[]],
+ []
+
+
+Overfull \hbox (83.14746pt too wide) in paragraph at lines 96--98
+\OT1/cmr/m/n/10.95 MobileNetv3Large[[]], ResNet50[[]],
+ []
+
+
+Overfull \hbox (15.27896pt too wide) in paragraph at lines 96--98
+\OT1/cmr/m/n/10.95 ResNet10[[]], ResNet152[[]],
+ []
+
+
+LaTeX Warning: Citation 'OxfordFlowers102' on page 5 undefined on input line 100.
+
+
+LaTeX Warning: Citation 'AlzheimersDataset' on page 5 undefined on input line 100.
+
+
+Overfull \hbox (54.27217pt too wide) in paragraph at lines 100--101
+[]\OT1/cmr/m/n/10.95 The datasets I have cho-sen to use for this project are the Ox-ford 102 Flower Dataset[[]]
+ []
+
+[5
 
 ]
 Chapter 2.
-<images/NeuralNetwork.png, id=197, 578.16pt x 297.36093pt>
+<images/NeuralNetwork.png, id=53, 578.16pt x 297.36093pt>
 File: images/NeuralNetwork.png Graphic file (type png)
 <use images/NeuralNetwork.png>
 Package pdftex.def Info: images/NeuralNetwork.png  used on input line 108.
 (pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
-[7
+
+LaTeX Warning: Citation 'NeuralNetworkDiagram' on page 6 undefined on input line 109.
+
+[6
 
  <./images/NeuralNetwork.png>]
 Chapter 3.
-[8
+[7
 
 ] (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [9]
+) [8] [9]
 Chapter 4.
 [10
 
 ]
-<images/ConfusionMatrix.png, id=227, 1054.94125pt x 747.79375pt>
+<images/ConfusionMatrix.png, id=124, 1054.94125pt x 747.79375pt>
 File: images/ConfusionMatrix.png Graphic file (type png)
 <use images/ConfusionMatrix.png>
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 220.
+Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 276.
 (pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
- [11 <./images/ConfusionMatrix.png (PNG copy)>]
-Chapter 5.
-[12
 
-]
-Chapter 6.
+
+LaTeX Warning: Citation 'ConfusionMatrix' on page 11 undefined on input line 277.
+
+[11 <./images/ConfusionMatrix.png (PNG copy)>]
+
+LaTeX Warning: File `images/moderateDemented.jpg' not found on input line 285.
+
+
+c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/interim-report/interim_report.tex:285: Package pdftex.def Error: File `images/moderateDemented.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...height=50mm]{images/moderateDemented.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/mildDemented.jpg' not found on input line 286.
+
+
+c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/interim-report/interim_report.tex:286: Package pdftex.def Error: File `images/mildDemented.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.286 ...0mm,height=50mm]{images/mildDemented.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation 'AlzheimersDataset' on page 12 undefined on input line 287.
+
+
+LaTeX Warning: File `images/flower1.jpg' not found on input line 300.
+
+
+c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/interim-report/interim_report.tex:300: Package pdftex.def Error: File `images/flower1.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300 ...dth=50mm,height=50mm]{images/flower1.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/flower2.jpg' not found on input line 301.
+
+
+c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/interim-report/interim_report.tex:301: Package pdftex.def Error: File `images/flower2.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.301 ...dth=50mm,height=50mm]{images/flower2.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation 'OxfordFlowers102' on page 12 undefined on input line 302.
+
+[12]
+Chapter 5.
 [13
 
 ]
-Overfull \hbox (21.84525pt too wide) in paragraph at lines 254--254
-[]\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
- []
-
+Chapter 6.
 [14
 
-] (interim_report.aux)
+]
+Chapter 7.
+[15
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
+]
+Chapter 8.
+[16
 
-Package rerunfilecheck Info: File `interim_report.out' has not changed.
-(rerunfilecheck)             Checksum: 9BB7F26A47A16D6BF8CFC11924436501;4877.
+]
+
+LaTeX Warning: Empty bibliography on input line 362.
+
+(interim_report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `interim_report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `interim_report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1B43AD22A451550DB839C2CE225DE979;5838.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                interim_report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'interim_report.run.xml'.
 \openout1 = `interim_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18694 strings out of 478338
- 325535 string characters out of 2837644
- 976350 words of memory out of 3000000
- 36878 multiletter control sequences out of 15000+600000
- 477991 words of font info for 57 fonts, out of 8000000 for 9000
+ 18768 strings out of 478338
+ 326921 string characters out of 2837644
+ 993745 words of memory out of 3000000
+ 36918 multiletter control sequences out of 15000+600000
+ 476884 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,77p,1946b,1324s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on interim_report.pdf (15 pages, 592528 bytes).
+ 72i,12n,77p,1946b,1297s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on interim_report.pdf (17 pages, 574492 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
