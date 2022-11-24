@@ -30,7 +30,7 @@ This report has been prepared on the basis of my own work. Where other published
 
 \vskip3em
 
-Word Count: 
+Word Count:
 
 \vskip3em
 
@@ -38,13 +38,13 @@ Student Name: \studentname
 
 \vskip3em
 
-Date of Submission: 
+Date of Submission:
 
 \vskip3em
 
 Signature:
 \begin{figure}[ht!]
-\includegraphics[width=50mm]{signature.jpg}
+  \includegraphics[width=50mm]{images/signature.jpg}
 \end{figure}
 
 \newpage
@@ -58,11 +58,11 @@ Signature:
 
 \begin{abstract}
 
-Transfer learning is a common, efficient method for training deep learning models. 
-It involves using a pre-trained model to extract features from a dataset, 
-and then training a new model on top of the extracted features. 
-This report compares a variety of different image classification models with transfer learning,
-and evaluates their performance on a dataset of images of flower species and MRI scans of Alzheimer's patients brains.
+  Transfer learning is a common, efficient method for training deep learning models.
+  It involves using a pre-trained model to extract features from a dataset,
+  and then training a new model on top of the extracted features.
+  This report compares a variety of different image classification models with transfer learning,
+  and evaluates their performance on a dataset of images of flower species and MRI scans of Alzheimer's patients brains.
 
 \end{abstract}
 \newpage
@@ -102,9 +102,12 @@ The datasets I have chosen to use for this project are the Oxford 102 Flower Dat
 The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
 the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
 
-
-
 \chapter{The way Neural Networks work}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=100mm]{images/NeuralNetwork.png}
+  \caption{A diagram of a neural network \cite{NeuralNetworkDiagram}}
+\end{figure}
 
 \section{What is a Neural Network}
 A neural network is a machine learning model that is inspired by the way the human brain works.
@@ -161,15 +164,37 @@ Here is an example of how I fine-tuned a model using keras:
 \end{verbatim}
 
 \section{The different structures of the models}
+There are so many different ways to structure a model and they can 
 
 \chapter{Evaluating the performance}
 
 \section{The different metrics}
 % Accuracy
+Accuracy is the most common metric used to evaluate the performance of a model, and is defined as the number of correct predictions divided by the total number of predictions.
+It is a very simple metric to understand, and is therefore often used to compare the performance of different models.
+There is accuracy for both the training and validation sets, and the accuracy of the validation set is used to determine how well the model generalises to new data,
+and a validation accuracy that is much lower than the training accuracy is a sign that the model is overfitting.
+However, it is not always the best metric to use, as it can be misleading in some cases.
 
 % Loss
+Loss is the most common metric used to evaluate the performance of a model, it is calculated by taking the difference between the predicted value and the actual value.
+There are however many different types of loss functions, and the one that is used depends on the type of problem that is being solved.
+These could be binary cross entropy, categorical cross entropy, or mean squared error. For my project I used binary cross entropy due
+to it's simplicity and the fact that it is the most common loss function used for binary classification problems.
 
-% Validation Accuracy vs Training Accuracy
+% Validation vs Training Loss and Accuracy
+The validation loss and accuracy are used to determine how well the model generalises to new data, and a validation loss that is much higher than the training loss is a sign that the model is overfitting.
+For the validation set, I have assigned 20\% of the data to be used.
+
+% Confusion Matrix
+The confusion matrix is a table that shows the number of correct and incorrect predictions for each class.
+It is a very useful metric to use when evaluating the performance of a model, as it can show which classes the model is having the most trouble with.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=100mm]{images/ConfusionMatrix.png}
+  \caption{A confusion Matrix\cite{ConfusionMatrix}}
+\end{figure}
 
 \section{The different datasets}
 
@@ -191,7 +216,9 @@ I have learned a lot about the different types of models, how they are structure
 I have specifically learnt how complex image classification models are structured, as they are far more complex than I had initially thought.
 % talk about mobilenetv3
 
-\section{What I would do differently}
+\section{What I will do differently}
+I need to spend more time researching the different structures of the models, and how the optimal ways they can be used for transfer learning.
+
 
 \section{What I need to do next}
 
