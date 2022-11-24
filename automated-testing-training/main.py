@@ -10,6 +10,8 @@ from tensorflow import keras
 from pathlib import Path
 import os.path
 import json
+import atexit
+
 
 data_dir = Path('Alzheimers-classification/data/AugmentedAlzheimerDataset/');
 
@@ -36,6 +38,25 @@ params = {
 	"weights": 'imagenet'
 }
 
+outDir = "./automated-testing-training/training-results/"
+
+modelName = ''
+model = keras.Sequential()
+history = {}
+
+
+def save_history():
+	global history
+	global modelName
+	global model
+	with open(outDir+modelName+".json", "w+") as fp:
+		json.dump(history, fp)
+
+	model.save(outDir+modelName+".h5")
+
+
+atexit.register(save_history)
+
 def merge_dicts(dict1, dict2):
 	# Get the union of dict1 and dict2
   keys = set(dict1).union(dict2)
@@ -54,6 +75,7 @@ for i in range(len(models)):
 	# Create the model
 
 	pretrainedModel = models[i]
+	modelName = modelNames[i]
 
 	model = keras.Sequential()
 
@@ -122,11 +144,11 @@ for i in range(len(models)):
 	# Set the misc info for reference
 	history['params'] = params
 	history['pretrainedUnfrozenLayers'] = pretrainedUnfrozenLayers
-	history['BaseModelName'] = modelNames[i]
+	history['BaseModelName'] = modelName
  	# Save the data to a JSON file
-	with open("./automated-testing-training/training-results/"+modelNames[i]+".json", "w+") as outfile:
+	with open("./automated-testing-training/training-results/"+modelName+".json", "w+") as outfile:
 		json.dump(history, outfile)
 
 	# Save the model for future reference
-	model.save('./automated-testing-training/completed-models/'+modelNames[i])
+	model.save('./automated-testing-training/completed-models/'+modelName)
 
