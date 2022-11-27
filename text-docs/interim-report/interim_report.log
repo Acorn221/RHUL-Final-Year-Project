@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  24 NOV 2022 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  27 NOV 2022 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,7 +583,7 @@ Package biblatex Info: ... file 'interim_report.bbl' found.
  (interim_report.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-<logo.pdf, id=135, 948.54375pt x 473.77pt>
+<logo.pdf, id=139, 948.54375pt x 473.77pt>
 File: logo.pdf Graphic file (type pdf)
 <use logo.pdf>
 Package pdftex.def Info: logo.pdf  used on input line 23.
@@ -591,7 +591,7 @@ Package pdftex.def Info: logo.pdf  used on input line 23.
  [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./logo.pdf>]
-<images/signature.jpg, id=154, 913.4125pt x 384.43625pt>
+<images/signature.jpg, id=158, 913.4125pt x 384.43625pt>
 File: images/signature.jpg Graphic file (type jpg)
 <use images/signature.jpg>
 Package pdftex.def Info: images/signature.jpg  used on input line 47.
@@ -633,7 +633,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/NeuralNetwork.png, id=227, 578.16pt x 297.36093pt>
+<images/NeuralNetwork.png, id=232, 578.16pt x 297.36093pt>
 File: images/NeuralNetwork.png Graphic file (type png)
 <use images/NeuralNetwork.png>
 Package pdftex.def Info: images/NeuralNetwork.png  used on input line 108.
@@ -651,54 +651,60 @@ Chapter 4.
 [11
 
 ]
-<images/ConfusionMatrix.png, id=287, 1054.94125pt x 747.79375pt>
+<images/bad-training-result.png, id=292, 430.0065pt x 328.8285pt>
+File: images/bad-training-result.png Graphic file (type png)
+<use images/bad-training-result.png>
+Package pdftex.def Info: images/bad-training-result.png  used on input line 273.
+(pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
+ [12 <./images/bad-training-result.png>]
+<images/ConfusionMatrix.png, id=302, 1054.94125pt x 747.79375pt>
 File: images/ConfusionMatrix.png Graphic file (type png)
 <use images/ConfusionMatrix.png>
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 276.
+Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 301.
 (pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
- [12 <./images/ConfusionMatrix.png (PNG copy)>]
-<images/moderateDemented.jpg, id=296, 200.75pt x 190.7125pt>
+ [13 <./images/ConfusionMatrix.png (PNG copy)>]
+<images/moderateDemented.jpg, id=310, 200.75pt x 190.7125pt>
 File: images/moderateDemented.jpg Graphic file (type jpg)
 <use images/moderateDemented.jpg>
-Package pdftex.def Info: images/moderateDemented.jpg  used on input line 285.
+Package pdftex.def Info: images/moderateDemented.jpg  used on input line 310.
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/mildDemented.jpg, id=297, 200.75pt x 190.7125pt>
+<images/mildDemented.jpg, id=311, 200.75pt x 190.7125pt>
 File: images/mildDemented.jpg Graphic file (type jpg)
 <use images/mildDemented.jpg>
-Package pdftex.def Info: images/mildDemented.jpg  used on input line 286.
+Package pdftex.def Info: images/mildDemented.jpg  used on input line 311.
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/flower1.jpg, id=299, 669.50125pt x 501.875pt>
+<images/flower1.jpg, id=313, 669.50125pt x 501.875pt>
 File: images/flower1.jpg Graphic file (type jpg)
 <use images/flower1.jpg>
-Package pdftex.def Info: images/flower1.jpg  used on input line 300.
+Package pdftex.def Info: images/flower1.jpg  used on input line 325.
 (pdftex.def)             Requested size: 142.26457pt x 142.26239pt.
-<images/flower2.jpg, id=300, 582.175pt x 501.875pt>
+<images/flower2.jpg, id=314, 582.175pt x 501.875pt>
 File: images/flower2.jpg Graphic file (type jpg)
 <use images/flower2.jpg>
-Package pdftex.def Info: images/flower2.jpg  used on input line 301.
+Package pdftex.def Info: images/flower2.jpg  used on input line 326.
 (pdftex.def)             Requested size: 142.25658pt x 142.26239pt.
- [13 <./images/moderateDemented.jpg> <./images/mildDemented.jpg> <./images/flower1.jpg> <./images/flower2.jpg>]
+ [14 <./images/moderateDemented.jpg> <./images/mildDemented.jpg> <./images/flower1.jpg> <./images/flower2.jpg>]
 Chapter 5.
-[14
-
-]
-Chapter 6.
 [15
 
 ]
-Chapter 7.
+Chapter 6.
 [16
 
 ]
-Chapter 8.
+Chapter 7.
 [17
 
 ]
-Overfull \hbox (21.84525pt too wide) in paragraph at lines 363--363
+Chapter 8.
+[18
+
+]
+Overfull \hbox (21.84525pt too wide) in paragraph at lines 388--388
 []\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
  []
 
-[18
+[19
 
 ] (interim_report.aux)
 
@@ -706,23 +712,23 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `interim_report.out' has not changed.
-(rerunfilecheck)             Checksum: 1B43AD22A451550DB839C2CE225DE979;5838.
+(rerunfilecheck)             Checksum: C4AF172557032E96F5117B85E40D4495;6233.
 Package logreq Info: Writing requests to 'interim_report.run.xml'.
 \openout1 = `interim_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18785 strings out of 478338
- 327041 string characters out of 2837644
- 998008 words of memory out of 3000000
- 36928 multiletter control sequences out of 15000+600000
+ 18799 strings out of 478338
+ 327370 string characters out of 2837644
+ 998096 words of memory out of 3000000
+ 36936 multiletter control sequences out of 15000+600000
  478713 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,77p,1946b,1324s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on interim_report.pdf (19 pages, 699191 bytes).
+Output written on interim_report.pdf (20 pages, 737102 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 436 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
