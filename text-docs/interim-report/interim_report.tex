@@ -123,6 +123,9 @@ The convolutional layers are used to extract features from the image, and the po
 The fully connected layers are used to classify the image.
 They are often much more efficient than other types of neural networks, and are commonly used for image classification.
 
+% Talk about the different types of layers specifically
+% Include a diagram of a CNN
+
 \chapter{Transfer Learning}
 
 \section{Why use Transfer Learning}
@@ -130,6 +133,57 @@ Transfer learning can enable a model to be trained much more efficiently than if
 Aside from the extra time it takes to train a model from scratch, it often requires more training data, which is not always available and can be expensive to obtain.
 Transfer learning can often get better results than training a model from scratch, as the pre-trained model has already learned about different features from a large dataset,
 and the transfer learning model can then use these features to learn about the new dataset.
+
+\section{Drawbacks of Transfer Learning}
+The main drawback of transfer learning is that it is not always possible to use it,
+as the pre-trained model may not be able to extract the features from the new dataset.
+With image classification, the pre-trained model can typically extract features from any image, but it may not be able to extract the features that are needed for the new dataset.
+Transfer learning can also be less efficient than training a model from scratch, 
+as the pre-trained model will have all the weights from the original dataset, which may not be needed for the new dataset.
+This can cause the model to be less efficient, as it will have to train on weights that are not 
+needed but will still affect the performance of the model.
+
+\pagebreak
+\section{The code behind the transfer learning}
+The code for the transfer learning is shown below.
+
+\begin{lstlisting}[language=Python]
+  # This imports the model from the keras library
+  MobileNetV3Small = keras.applications.MobileNetV3Small(
+    input_shape=(224, 224, 3),
+    include_top=False, 
+    weights='imagenet')
+
+  # Create the model
+  model = keras.Sequential()
+
+  # Freezing all but 10 layers of the pre-trained model
+  for layer in MobileNetV3Small.layers[:-10]:
+    layer.trainable = False
+
+  # Adding the pre-trained model to the model, along with 
+  # a dropout layer and a fully connected layer
+  model.add(MobileNetV3Small)
+  model.add(keras.layers.Flatten())
+  model.add(keras.layers.Dense(512, activation='relu'))
+  model.add(keras.layers.Dropout(0.6))
+  model.add(keras.layers.Dense(512, activation='relu'))
+  model.add(keras.layers.Dropout(0.6))
+  model.add(keras.layers.Dense(4, activation='softmax'))
+\end{lstlisting}
+
+The code above shows how to create a model using transfer learning,
+creating the model structure consists of adding the pre-trained model to the model, 
+and then adding a few layers on top of it. The flatten layer is used to flatten the output of the pre-trained model
+as that is the input for the fully connected layers. The fully connected layers are used to classify the images.
+
+The dropout layers are used to prevent overfitting, and the dense layers are used to classify the images.
+The dense layers are potentially the most important part of the model, as they are the ones that are actually learning about the dataset.
+They get trained on the features extracted by the pre-trained model, and the weights of the dense layers are what is used to classify the images.
+
+The final layer of the model is a softmax layer, which is used to classify the images.
+It is used to classify the images into one of the classes in the dataset, in this example,
+the 4 levels of Alzheimer's disease that are in the Alzheimer's MRI Dataset.
 
 \pagebreak
 \section{How to implement Transfer Learning}
@@ -201,6 +255,8 @@ In the case of the Alzheimer's MRI Dataset, it is extremley useful to have more 
 MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
 
 In the Alzheimer's MRI Dataset, the majority of the archive is comprised of augmented images already so I did not need to apply any data augmentation to the images.
+With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
+
 
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
@@ -220,15 +276,68 @@ should give a better representation of how well the model would work in a real w
   \includegraphics[width=100mm]{images/ConfusionMatrix.png}
   \caption{A confusion Matrix\cite{ConfusionMatrix}}
 \end{figure}
-
+\pagebreak
 \section{The different datasets}
 
-\section{The different sizes and structures of the models}
+% images of the datasets
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=50mm,height=50mm]{images/moderateDemented.jpg}
+  \includegraphics[width=50mm,height=50mm]{images/mildDemented.jpg}
+  \caption{The Alzheimer's MRI Dataset\cite{AlzheimersDataset}}
+\end{figure}
 
-\section{The different optimizers}
+The Alzheimer's MRI Dataset is a dataset that contains 4 different levels of Alzheimer's disease,
+it contains 33984 images in the augmentation folder and the images are all 256x256 pixels in size.
+They require resizing to 224x224 pixels in order to be used with the pre-trained models as they are expecting images of that size.
+Not using all the resolution of the images is a problem as it could reduce the accuracy of the model,
+however it is a nessasary due to the models being trained on images of that size.
+It does however not seem to have a significant impact on the accuracy of the model, as I am still able to get a validation accuracy of 99.8\%.
+I could in the future potentially crop the black borders of the scans to increase the amount of useful data that is being passed to the model.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=50mm,height=50mm]{images/flower1.jpg}
+  \includegraphics[width=50mm,height=50mm]{images/flower2.jpg}
+  \caption{The Oxford 102 Flower Dataset\cite{OxfordFlowers102}}
+\end{figure}
+
+The Oxford 102 Flower Dataset is a dataset that contains 102 different types of flowers,
+the images are all different sizes, with 3 channels for colour and are in the JPG format.
+I have chosen this dataset as it contains a wide variety of images with different backgrounds and lighting conditions,
+which should help to test the generalisation of the model, along with the ability for the base model to extract features from the images.
+Per class, there are fewer examples than in the Alzheimer's MRI Dataset, however there are still enough to train the model on.
+This will be a good test for the various base models to see which one is the best at extracting features from the images.
+
+\chapter{The different sizes and structures of the models}
+
+\section{Mobilenetv3}
+
+\section{Resnet50}
+
+\chapter{The different optimizers}
 
 \chapter{Optimising the models}
 % talk about the different optimizers and how they affect the performance of the models
+
+\section{Optimizers}
+There are many different optimizers that can be used to train a model, and the one 
+that is used depends on the type of problem that is being solved.
+These could be SGD, RMSProp, Adam, or Nadam. For my project I used 
+Adam due to it's simplicity and the fact that it is the most common 
+optimizer used for deep learning.
+
+Using a different optimizer can have a significant impact on the performance of the model when training it.
+For example, using SGD can cause the model to get stuck in a local minimum, % TODO: finish
+
+\section{The different learning rates}
+
+When training a model, the learning rate is the rate at which the model learns from the data.
+A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen,
+and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start,
+and then fine-tune the model at a slower rate. 
+
 % Also talk about the different learning rates and how they affect the performance of the models
 
 \chapter{Conclusion}

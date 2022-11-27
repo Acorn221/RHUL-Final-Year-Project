@@ -10,16 +10,28 @@ from tensorflow import keras
 from pathlib import Path
 import os.path
 import json
+import atexit
 
-data_dir = Path('Alzheimers-classification/data/AugmentedAlzheimerDataset/');
+data_dir = Path('../Alzheimers-classification/data/OriginalDataset/');
 
 train_datagen = ImageDataGenerator(rescale=1./255,
-    validation_split=0.2) # set validation split
+    validation_split=0.2,
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=360,
+    width_shift_range=0.1,
+    shear_range=0.1,
+    zoom_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    vertical_flip=True,
+) # set validation split
 
 train_ds = train_datagen.flow_from_directory(
     data_dir,
     target_size=(224, 224),
     batch_size=32,
+
     class_mode='categorical',
     subset='training')
 
@@ -36,6 +48,25 @@ params = {
 	"weights": 'imagenet'
 }
 
+outDir = "./automated-testing-training/training-results/"
+
+modelName = ''
+model = keras.Sequential()
+history = {}
+
+
+def save_history():
+	global history
+	global modelName
+	global model
+	with open(outDir+modelName+".json", "w+") as fp:
+		json.dump(history, fp)
+
+	model.save(outDir+modelName+".h5")
+
+
+atexit.register(save_history)
+
 def merge_dicts(dict1, dict2):
 	# Get the union of dict1 and dict2
   keys = set(dict1).union(dict2)
@@ -44,13 +75,8 @@ def merge_dicts(dict1, dict2):
 
 pretrainedUnfrozenLayers = 5
 
-modelsOld = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
-modelNamesOld = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
-
-models = [InceptionResNetV2, InceptionV3, ResNet101, VGG19, Xception]
-modelNames = ["InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19", "Xception"]
-
-
+models = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
+modelNames = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
 
 MobileNetV3Small = keras.applications.MobileNetV3Small(**params)
 
@@ -59,6 +85,7 @@ for i in range(len(models)):
 
 	miscInfo = {}
 	pretrainedModel = models[i]
+	modelName = modelNames[i]
 
 	model = keras.Sequential()
 
@@ -83,7 +110,7 @@ for i in range(len(models)):
 
 	history = {}
 	# Train the model
-	for j in range(0, 20):
+	for j in range(0, 8):
 		trainingStats = model.fit(
 			train_ds,
 			epochs=2, 
@@ -139,5 +166,5 @@ for i in range(len(models)):
 		json.dump(saveInfo, outfile)
 
 	# Save the model for future reference
-	model.save('./automated-testing-training/completed-models/'+modelNames[i])
+	model.save('./automated-testing-training/completed-models/'+modelName)
 
