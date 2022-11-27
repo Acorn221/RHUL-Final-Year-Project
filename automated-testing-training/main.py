@@ -12,7 +12,7 @@ import os.path
 import json
 import atexit
 
-data_dir = Path('../Alzheimers-classification/data/OriginalDataset/');
+data_dir = Path('Alzheimers-classification/data/OriginalDataset');
 
 train_datagen = ImageDataGenerator(rescale=1./255,
     validation_split=0.2,
@@ -114,7 +114,7 @@ for i in range(len(models)):
 		trainingStats = model.fit(
 			train_ds,
 			epochs=2, 
-			steps_per_epoch=len(train_ds),
+			steps_per_epoch=len(train_ds)*6,
 			validation_data=test_ds,
 		)
 		history = merge_dicts(history, trainingStats.history)
@@ -146,7 +146,7 @@ for i in range(len(models)):
 		trainingStats = model.fit(
 			train_ds,
 			epochs=2,
-			steps_per_epoch=len(train_ds),
+			steps_per_epoch=len(train_ds)*6,
 			validation_data=test_ds,
 		)
 
