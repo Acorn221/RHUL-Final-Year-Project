@@ -12,16 +12,26 @@ import os.path
 import json
 import atexit
 
-
-data_dir = Path('Alzheimers-classification/data/AugmentedAlzheimerDataset/');
+data_dir = Path('../Alzheimers-classification/data/OriginalDataset/');
 
 train_datagen = ImageDataGenerator(rescale=1./255,
-    validation_split=0.2) # set validation split
+    validation_split=0.2,
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=360,
+    width_shift_range=0.1,
+    shear_range=0.1,
+    zoom_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    vertical_flip=True,
+) # set validation split
 
 train_ds = train_datagen.flow_from_directory(
     data_dir,
     target_size=(224, 224),
     batch_size=32,
+
     class_mode='categorical',
     subset='training')
 
@@ -65,13 +75,8 @@ def merge_dicts(dict1, dict2):
 
 pretrainedUnfrozenLayers = 5
 
-modelsOld = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
-modelNamesOld = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
-
-models = [InceptionResNetV2, InceptionV3, ResNet101, VGG19, Xception]
-modelNames = ["InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19", "Xception"]
-
-
+models = [MobileNetV2, MobileNetV3Small, MobileNetV3Large, InceptionResNetV2, InceptionV3, ResNet101, VGG19]
+modelNames = ["MobileNetV2", "MobileNetV3Small", "MobileNetV3Large", "InceptionResNetV2", "InceptionV3", "ResNet101", "VGG19"]
 
 MobileNetV3Small = keras.applications.MobileNetV3Small(**params)
 
@@ -105,7 +110,7 @@ for i in range(len(models)):
 
 	history = {}
 	# Train the model
-	for j in range(0, 20):
+	for j in range(0, 8):
 		trainingStats = model.fit(
 			train_ds,
 			epochs=2, 
