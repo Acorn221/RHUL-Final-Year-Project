@@ -254,9 +254,34 @@ flipping the image, or changing the contrast/saturation of the image.
 In the case of the Alzheimer's MRI Dataset, it is extremley useful to have more data to train the model on, as there are a limited number of brain scans available.
 MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
 
-In the Alzheimer's MRI Dataset, the majority of the archive is comprised of augmented images already so I did not need to apply any data augmentation to the images.
+In the Alzheimer's MRI Dataset, the majority of the archive is comprised of augmented images already however this caused me problems which I will go on to talk about.
 With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
 
+\section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
+
+\subsection{The problems}
+The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
+The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the 
+images were already augmented, and the validation set was made up of images that were in the training set, but 
+with different transformations applied to them. This gave me amazing results on the validation set, but when I 
+tested the model on new data, it performed very poorly. Here the image shows the last 30 epochs of the training process,
+and the validation accuracy is very high, higher than what other models from other research papers have achieved.
+
+% Image of the training results
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/bad-training-result.png}
+  \caption{The training results from the various models (Last 30 epochs)}
+  \label{fig:training_results}
+\end{figure}
+
+\subsection{The solution}
+The solution to this problem was to use the original images, and not the pre-augmented images.
+This meant that I had to re-download the dataset, and re-split the dataset into training and validation sets,
+and then apply data augmentation to the images. This gave me much better results, and the model was able to generalise
+to new data much better. Here is the image of the training results from the various models, and the validation accuracy is much lower than before.
+
+% TODO: Add image of the training results
 
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
