@@ -113,8 +113,8 @@ for i in range(len(models)):
 	for j in range(0, 8):
 		trainingStats = model.fit(
 			train_ds,
-			epochs=2, 
-			steps_per_epoch=len(train_ds)*6,
+			epochs=6, 
+			steps_per_epoch=len(train_ds),
 			validation_data=test_ds,
 		)
 		history = merge_dicts(history, trainingStats.history)
@@ -145,8 +145,8 @@ for i in range(len(models)):
 	for j in range(20):
 		trainingStats = model.fit(
 			train_ds,
-			epochs=2,
-			steps_per_epoch=len(train_ds)*6,
+			epochs=6,
+			steps_per_epoch=len(train_ds),
 			validation_data=test_ds,
 		)
 
