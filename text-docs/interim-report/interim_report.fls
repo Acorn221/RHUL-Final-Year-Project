@@ -687,6 +687,13 @@ INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1095.
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\images\bad-training-result.png
+INPUT .\images\bad-training-result.png
+INPUT images\bad-training-result.png
+INPUT .\images\bad-training-result.png
+INPUT .\images\bad-training-result.png
+INPUT .\images\bad-training-result.png
+INPUT .\images\bad-training-result.png
 INPUT .\images\ConfusionMatrix.png
 INPUT .\images\ConfusionMatrix.png
 INPUT images\ConfusionMatrix.png
