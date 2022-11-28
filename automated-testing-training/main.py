@@ -109,6 +109,7 @@ for i in range(len(models)):
 	)
 
 	history = {}
+	
 	# Train the model
 	for j in range(0, 8):
 		trainingStats = model.fit(
@@ -141,7 +142,7 @@ for i in range(len(models)):
 								loss=keras.losses.BinaryCrossentropy(),
 								metrics=['accuracy'])
 
-	# Train the model
+	# This for loop is here to allow the model training data to be saved periodically, in case the training is interrupted
 	for j in range(20):
 		trainingStats = model.fit(
 			train_ds,
