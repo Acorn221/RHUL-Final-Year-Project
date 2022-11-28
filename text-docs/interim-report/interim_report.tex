@@ -83,30 +83,6 @@ Your project specification goes here.
 %%% Introduction
 \chapter{Introduction}
 
-\section{What transfer learning is}
-Transfer learning is a common, efficient method for training deep learning models.
-There are many different ways to implement transfer learning and here I hope to compare the performance
-of a variety of different methods with different pre-trained models.
-
-The applications for transfer learning are vast, and it is a common method for training deep learning models,
-This is because it is a very efficient method for training models as most of the work is done by the pre-trained model.
-The pre-trained model is used to extract features from the dataset, and then a new model is trained on top of the extracted features.
-The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained.
-
-After the new model is trained on top, a process known as fine-tuning can be used to further improve the performance of the model.
-Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
-This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
-
-\section{The Models I will be comparing}
-The models I have chosen to compare are the MobileNetv3Small\cite{DBLP:journals/corr/abs-1905-02244}, MobileNetv3Large\cite{DBLP:journals/corr/abs-1905-02244}, ResNet50\cite{DBLP:journals/corr/HeZRS15}, ResNet10\cite{DBLP:journals/corr/HeZRS15}, ResNet152\cite{DBLP:journals/corr/HeZRS15}, and InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15} models.
-These models are all pre-trained on the ImageNet dataset, which contains 1.2 million images of 1000 different classes.
-
-\section{The Datasets I will be using}
-The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
-
-The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
-the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
-
 \chapter{Neural Networks}
 \begin{figure}[ht!]
   \centering
@@ -168,6 +144,31 @@ They are often much more efficient than other types of neural networks, and are 
 
 % Talk about the different types of layers specifically
 % Include a diagram of a CNN
+
+
+\section{What transfer learning is}
+Transfer learning is a common, efficient method for training deep learning models.
+There are many different ways to implement transfer learning and here I hope to compare the performance
+of a variety of different methods with different pre-trained models.
+
+The applications for transfer learning are vast, and it is a common method for training deep learning models,
+This is because it is a very efficient method for training models as most of the work is done by the pre-trained model.
+The pre-trained model is used to extract features from the dataset, and then a new model is trained on top of the extracted features.
+The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained.
+
+After the new model is trained on top, a process known as fine-tuning can be used to further improve the performance of the model.
+Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
+This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
+
+\section{The Models I will be comparing}
+The models I have chosen to compare are the MobileNetv3Small\cite{DBLP:journals/corr/abs-1905-02244}, MobileNetv3Large\cite{DBLP:journals/corr/abs-1905-02244}, ResNet50\cite{DBLP:journals/corr/HeZRS15}, ResNet10\cite{DBLP:journals/corr/HeZRS15}, ResNet152\cite{DBLP:journals/corr/HeZRS15}, and InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15} models.
+These models are all pre-trained on the ImageNet dataset, which contains 1.2 million images of 1000 different classes.
+
+\section{The Datasets I will be using}
+The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
+
+The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
+the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
 
 \chapter{Transfer Learning}
 
@@ -438,7 +439,6 @@ optimizer used for deep learning.
 
 Using a different optimizer can have a significant impact on the performance of the model when training it.
 For example, using SGD can cause the model to get stuck in a local minimum, % TODO: finish
-
 
 \chapter{Optimising the training}
 % talk about the different optimizers and how they affect the performance of the models
