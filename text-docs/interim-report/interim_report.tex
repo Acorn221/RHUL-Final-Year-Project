@@ -107,7 +107,7 @@ The datasets I have chosen to use for this project are the Oxford 102 Flower Dat
 The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
 the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
 
-\chapter{The way Neural Networks work}
+\chapter{Neural Networks}
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=100mm]{images/NeuralNetwork.png}
@@ -120,6 +120,44 @@ It is made up of a series of layers, each layer is made up of a number of neuron
 Each neuron is connected to every neuron in the next layer, and each connection has a weight associated with it.
 The weights are used to determine how much each neuron in the next layer is affected by the current neuron.
 The weights are updated during training, and the process of updating the weights is known as backpropagation.
+
+\section{Why use a Neural Network}
+The use of Neural Networks has increased dramatically in recent years, and they are now used in a variety of different applications.
+The reason for this is that they are very good at learning complex patterns in data, and they are able to learn 
+these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
+
+They are far more flexible than many of the traditional strategies for image classification, due to the fact they can adapt to new data and are
+resilliant to noise in the data or changes such as lighting or rotation.
+
+\pagebreak
+\section{What are the alternatives to Neural Networks}
+\subsection{Support Vector Machines}
+There are a number of different alternatives to Neural Networks, one common alternative is Support Vector Machines.
+Support Vector Machines are a type of supervised machine learning model that can be used for both classification and regression.
+They work by finding a hyperplane that separates the data into different classes, and then classifying new data based on which side of the hyperplane it is on.
+They are very good at classifying data that is linearly seperable, however they are not very good at classifying data that is not linearly seperable,
+and they are also very sensitive to noise in the data.
+
+In one study using SVMs to classify Alzheimer's patients, the researchers managed to get an accuracy of 62.64\% using MRI scans of the brain.
+They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy.\cite{10.3389/fneur.2021.640696}
+
+\subsection{Content Based Image Retrieval}
+Content Based Image Retrieval is a method of image classification that relies on comparing extracted features of the image to a database of images.
+The features are extracted using a feature extraction algorithm, and then the features are compared to the features of the images in the database.
+The images in the database are then ranked based on how similar the features are to the features of the image being classified.
+This method is fast and efficient, however dependent on the feature extraction algorithm, it can be very difficult to extract features that are good at classifying images.
+
+Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
+a study was done using this method to classify Alzheimer's patients and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
+
+For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/Principe_cbir.png}
+  \caption{A diagram of Content Based Image Retrieval \cite{ContentBasedImageRetrieval}}
+\end{figure}
+
 
 \section{What is a Convolutional Neural Network}
 A convolutional neural network (CNN) is a type of neural network that is used for image classification.
@@ -445,7 +483,7 @@ I have specifically learnt how complex image classification models are structure
 
 \section{What I will do differently}
 I need to spend more time researching the different structures of the models, and how the optimal ways they can be used for transfer learning.
-
+This would help with optimising what layers should be frozen and which should be unfrozen at different stages of the training process.
 
 \section{What I need to do next}
 
