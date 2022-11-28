@@ -69,6 +69,11 @@ Signature:
 
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
+% TODO: do the project spec, not sure what to put here
+% TODO: Time scale? I need to show when I did what
+% TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
+% TODO: Summary of completed work
+% TODO: Insert or attach the diary
 
 \chapter*{Project Specification}
 \addcontentsline{toc}{chapter}{Project Specification}
@@ -189,9 +194,11 @@ the 4 levels of Alzheimer's disease that are in the Alzheimer's MRI Dataset.
 \section{How to implement Transfer Learning}
 
 \subsection{Extracting features}
-Feature extraction is the process of using a pre-trained model to extract features from a dataset.
-The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained,
-and the new model is trained on top of the extracted features.
+Feature extraction is the process of extracting features from the images in the dataset, these features
+in the images could be anything, such as the colour, shape, or the texture of the image. All of these features
+are used to classify the images, and having these features already extracted can make the training process much faster.
+Most of the pre-trained model is usually frozen so that it does not change during the initial stages training, and only the new model is trained,
+and on top of the extracted features from the base model.
 
 \subsection{Fine-tuning}
 This is the process of training the new model on the dataset, but with a lower learning rate than the initial training and the model is usually unfrozen,
@@ -219,6 +226,13 @@ Here is an example of how I fine-tuned a model using keras:
 
 \section{The different structures of the models}
 There are so many different ways to structure a model and they can 
+
+\section{My training setup}
+For this project, I have setup my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
+I've chosen my laptop to do the training on due to it's powerful GPU, which is a NVIDIA GeForce GTX1070\cite{GTX1070}.
+This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
+Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
+as I can leave it to train overnight without having to constantly check on it.
 
 \chapter{Evaluating the performance}
 
@@ -275,6 +289,8 @@ and the validation accuracy is very high, higher than what other models from oth
   \label{fig:training_results}
 \end{figure}
 
+\pagebreak
+
 \subsection{The solution}
 The solution to this problem was to use the original images, and not the pre-augmented images.
 This meant that I had to re-download the dataset, and re-split the dataset into training and validation sets,
@@ -282,6 +298,24 @@ and then apply data augmentation to the images. This gave me much better results
 to new data much better. Here is the image of the training results from the various models, and the validation accuracy is much lower than before.
 
 % TODO: Add image of the training results
+
+Here's the snippet of code that I used to augment the images:
+\begin{lstlisting}[language=Python]
+train_datagen = ImageDataGenerator(rescale=1./255,
+    validation_split=0.2,
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=360,
+    width_shift_range=0.1,
+    shear_range=0.1,
+    zoom_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    vertical_flip=True,
+) # set validation split
+\end{lstlisting}
+
+\pagebreak
 
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
@@ -334,18 +368,30 @@ which should help to test the generalisation of the model, along with the abilit
 Per class, there are fewer examples than in the Alzheimer's MRI Dataset, however there are still enough to train the model on.
 This will be a good test for the various base models to see which one is the best at extracting features from the images.
 
-\chapter{The different sizes and structures of the models}
-
+\chapter{The different models that are being compared}
+% TODO: finish
 \section{Mobilenetv3}
+
+As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
+It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
+
+The resulting models from this paper are:
+\begin{itemize}
+    \item Mobilenetv3-Large
+    \item Mobilenetv3-Small
+\end{itemize}
+
+The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
+The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
+
+% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336}
+
+
 
 \section{Resnet50}
 
 \chapter{The different optimizers}
 
-\chapter{Optimising the models}
-% talk about the different optimizers and how they affect the performance of the models
-
-\section{Optimizers}
 There are many different optimizers that can be used to train a model, and the one 
 that is used depends on the type of problem that is being solved.
 These could be SGD, RMSProp, Adam, or Nadam. For my project I used 
@@ -355,7 +401,11 @@ optimizer used for deep learning.
 Using a different optimizer can have a significant impact on the performance of the model when training it.
 For example, using SGD can cause the model to get stuck in a local minimum, % TODO: finish
 
-\section{The different learning rates}
+
+\chapter{Optimising the training}
+% talk about the different optimizers and how they affect the performance of the models
+
+\section{Different learning rates}
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
@@ -364,6 +414,24 @@ and a low learning rate whilst the base model is unfrozen is a good way to train
 and then fine-tune the model at a slower rate. 
 
 % Also talk about the different learning rates and how they affect the performance of the models
+
+\section{Batch sizes}
+
+The batch size is the number of images that are passed to the model at a time.
+A larger batch size will cause the model to learn quicker, however it will also use more memory whereas
+having a smaller batch size will cause the model to learn slower, however it will use less memory.
+When I started off, I did not understand the concept of batch sizes, and I was using a batch size of 1000, this lead to my training times
+being very long and I had to wait days for a model to train.
+I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8GB GPU\cite{GTX1070} doesn't often run out of memory.
+
+\section{Dataset Augmentation}
+
+When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
+Unfortunatly I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
+Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
+This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
+It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
+If these models were to be used in a real world scenario, augmentation helps to make the model more resiliant to the quality of the scans.
 
 \chapter{Conclusion}
 
