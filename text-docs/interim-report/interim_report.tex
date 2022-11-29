@@ -142,6 +142,19 @@ For classifying images of flowers it could also be very useful, as it would allo
 This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
 the color of the petals, and the overall structure of the flower.
 
+\section{The different optimizers}
+
+In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function. 
+Optimisers are used to improve the accuracy of a model by reducing the error rate. 
+Common optimisers used in deep learning include Stochastic Gradient Descent (SGD),
+Adaptive Moment Estimation (Adam), and Root Mean Square Propagation (RMSProp).
+There are many different optimizers that can be used to train a model, and the one 
+that is used depends on the type of problem that is being solved.
+
+The impact using different optimisers can have is dependent on the type of problem being solved. 
+For example, SGD is often used for linear regression problems, while Adam is 
+better suited for deep learning problems. 
+Additionally, the choice of optimiser can also affect the speed of convergence and the accuracy of the model.
 
 \begin{figure}[h]
   \centering
@@ -506,16 +519,6 @@ and to test the code quicker.
 Aside from testing the models, I could setup unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an oppourtunity to write unit tests for the API, and to test the code that I would write for the API.
 
-\chapter{The different optimizers}
-
-There are many different optimizers that can be used to train a model, and the one 
-that is used depends on the type of problem that is being solved.
-These could be SGD, RMSProp, Adam, or Nadam. For my project I used 
-Adam due to it's simplicity and the fact that it is the most common 
-optimizer used for deep learning.
-
-Using a different optimizer can have a significant impact on the performance of the model when training it.
-For example, using SGD can cause the model to get stuck in a local minimum, % TODO: finish
 
 \chapter{Optimising the training}
 % talk about the different optimizers and how they affect the performance of the models
@@ -547,6 +550,67 @@ Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to g
 This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
 It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
 If these models were to be used in a real world scenario, augmentation helps to make the model more resiliant to the quality of the scans.
+
+\chapter{My training results}
+% TODO: add graphs and talk about the results
+\subsection{The comparison of the different models}
+Here is a graph of all the different models that I have trained properly with the Alzheimer's dataset.
+The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/good-training-acc-vs-val.png}
+  \caption{The accuracy of the different models}
+  \label{fig:loss}
+\end{figure}
+\pagebreak
+\subsection{InceptionV3}
+For my training results, when everything was working correctly, I was able to get a highest validation accuracy of 84\% and a loss lowest of 0.30.
+% Show the graphs of the training results
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=120mm]{images/inceptionv3-accuracy-vs-val-acc.png}
+  \caption{The training results using InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15} as the base model}
+\end{figure}
+
+This graph clearly indicates that there was overfitting, as the validation accuracy is significantly lower than the training accuracy.
+This is due to the fact that the model is learning from the training data, and it is not generalising well to the validation data.
+To help mitigate overfitting, I did use data augmentation and dropout layers, however I think that the base model it's self is overfitting to the data.
+
+I will need to do more research into regularisation techniques to help mitigate overfitting, and to help improve the performance of the model.
+To avoid this in the future, I will use more advanced techniques such as hyperparameter tuning and regularisation.
+
+L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting.
+Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc. 
+This helps to improve the accuracy of the model and reduce overfitting.
+\pagebreak
+\subsection{The model sizes}
+
+Here's a barchart comparing the sizes of the models in megabytes. 
+They are uncompressed and include the full model, after transfer learning.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=120mm]{images/model-sizes.png}
+  \caption{The different model sizes in MB}
+\end{figure}
+
+From this graph, it's clear to see how large some of the models are in comparison to each other.
+The largest model, ResNet101 is just over 1GB in size and has a far worse accuracy than the top performing model, InceptionV3.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=120mm]{images/ResNet101-vs-Inceptionv3.png}
+  \caption{Here's it's performance in comparison to InceptionV3}
+\end{figure}
+
+The ResNet101\cite{DBLP:journals/corr/HeZRS15} model was created by Microsoft and is a 101 layer deep neural network.
+It was created to compete in the ImageNet Large Scale Visual Recognition Challenge\cite{ILSVRC} in 2015.
+Inceptionv3 is a 48 layer deep neural network, and was created by Google to compete in the same challenge in 2015.
+
+Although the ResNet model managed to win the challenge, it is clear to see that Inceptionv3 is a far better model for this problem.
+Both models were trained on the same dataset (ImageNet), however the imagenet dataset is very different to the Alzheimer's dataset.
+The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images and they are all MRI scans, with only 4 classes.
+This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
 
 \chapter{Conclusion}
 
