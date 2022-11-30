@@ -69,6 +69,11 @@ Signature:
 
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
+% TODO: do the project spec, not sure what to put here
+% TODO: Time scale? I need to show when I did what
+% TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
+% TODO: Summary of completed work
+% TODO: Insert or attach the diary
 
 \chapter*{Project Specification}
 \addcontentsline{toc}{chapter}{Project Specification}
@@ -77,6 +82,98 @@ Your project specification goes here.
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Introduction
 \chapter{Introduction}
+
+\chapter{Neural Networks}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=100mm]{images/NeuralNetwork.png}
+  \caption{A diagram of a neural network \cite{NeuralNetworkDiagram}}
+\end{figure}
+
+\section{What is a Neural Network}
+A neural network is a machine learning model that is inspired by the way the human brain works.
+It is made up of a series of layers, each layer is made up of a number of neurons.
+Each neuron is connected to every neuron in the next layer, and each connection has a weight associated with it.
+The weights are used to determine how much each neuron in the next layer is affected by the current neuron.
+The weights are updated during training, and the process of updating the weights is known as backpropagation.
+
+\section{Why use a Neural Network}
+The use of Neural Networks has increased dramatically in recent years, and they are now used in a variety of different applications.
+The reason for this is that they are very good at learning complex patterns in data, and they are able to learn 
+these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
+
+They are far more flexible than many of the traditional strategies for image classification, due to the fact they can adapt to new data and are
+resilliant to noise in the data or changes such as lighting or rotation.
+
+\pagebreak
+\section{What are the alternatives to Neural Networks}
+
+This is not an exhaustive list for image classification, but it is a list of some of the most common alternatives to Neural Networks
+that produce the best results.
+
+\subsection{Support Vector Machines}
+There are a number of different alternatives to Neural Networks, one common alternative is Support Vector Machines.
+Support Vector Machines are a type of supervised machine learning model that can be used for both classification and regression.
+They work by finding a hyperplane that separates the data into different classes, and then classifying new data based on which side of the hyperplane it is on.
+They are very good at classifying data that is linearly seperable, however they are not very good at classifying data that is not linearly seperable,
+and they are also very sensitive to noise in the data.
+
+In one study using SVMs to classify Alzheimer's patients, the researchers managed to get an accuracy of 62.64\% using MRI scans of the brain.
+They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy.\cite{10.3389/fneur.2021.640696}
+
+\subsection{Content Based Image Retrieval}
+Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar 
+images from a large database. It works by extracting the features from the image and then using those features to compare to other images in the database.
+The features are usually based on a combination of color, texture, shape, and other attributes. The system then produces a list of images that are similar 
+to the one used for the search query. CBIR systems are particularly useful for searching for images that can't be easily described using traditional keywords.
+
+CBIR can be used to identify images that are not in the database by analyzing the content of the images. 
+By extracting features from the image such as color, texture, and shape, CBIR can be used to compare the 
+content of the query image with the content of the images in the database. It can then return images that are 
+similar in content to the query image even if they are not present in the database. 
+
+For example, if the target image was a blue sky with white clouds, then the algorithm would return 
+images that had similar features such as a blue sky and white clouds to the target image.
+
+Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
+a study was done using this method to classify Alzheimer's patients and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
+
+For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
+This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
+the color of the petals, and the overall structure of the flower.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/Principe_cbir.png}
+  \caption{A diagram of Content Based Image Retrieval \cite{ContentBasedImageRetrieval}}
+\end{figure}
+
+
+\section{What is a Convolutional Neural Network}
+A convolutional neural network (CNN) is a type of neural network that is used for image classification.
+It is made up of a series of convolutional layers, pooling layers, and fully connected layers.
+The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image.
+The fully connected layers are used to classify the image.
+They are often much more efficient than other types of neural networks, and are commonly used for image classification.
+
+
+\section{Types Of Layers}
+
+% Listing the different types of layers
+\begin{itemize}
+  \item Convolutional Layer: This layer extracts features from an input image and creates a feature map.
+
+  \item  Pooling Layer: This layer reduces the dimensionality of a feature map while preserving its most important features.
+  
+  \item  Dropout Layer: This layer randomly ignores nodes during training to reduce overfitting.
+  
+  \item  Fully Connected Layer: This layer connects all the neurons of the previous layer to every neuron in the next layer. It helps in mapping input to output.
+\end{itemize}
+
+% Talk about the different types of layers specifically
+% Include a diagram of a CNN
+
 
 \section{What transfer learning is}
 Transfer learning is a common, efficient method for training deep learning models.
@@ -101,30 +198,6 @@ The datasets I have chosen to use for this project are the Oxford 102 Flower Dat
 
 The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
 the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
-
-\chapter{The way Neural Networks work}
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=100mm]{images/NeuralNetwork.png}
-  \caption{A diagram of a neural network \cite{NeuralNetworkDiagram}}
-\end{figure}
-
-\section{What is a Neural Network}
-A neural network is a machine learning model that is inspired by the way the human brain works.
-It is made up of a series of layers, each layer is made up of a number of neurons.
-Each neuron is connected to every neuron in the next layer, and each connection has a weight associated with it.
-The weights are used to determine how much each neuron in the next layer is affected by the current neuron.
-The weights are updated during training, and the process of updating the weights is known as backpropagation.
-
-\section{What is a Convolutional Neural Network}
-A convolutional neural network (CNN) is a type of neural network that is used for image classification.
-It is made up of a series of convolutional layers, pooling layers, and fully connected layers.
-The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image.
-The fully connected layers are used to classify the image.
-They are often much more efficient than other types of neural networks, and are commonly used for image classification.
-
-% Talk about the different types of layers specifically
-% Include a diagram of a CNN
 
 \chapter{Transfer Learning}
 
@@ -189,9 +262,11 @@ the 4 levels of Alzheimer's disease that are in the Alzheimer's MRI Dataset.
 \section{How to implement Transfer Learning}
 
 \subsection{Extracting features}
-Feature extraction is the process of using a pre-trained model to extract features from a dataset.
-The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained,
-and the new model is trained on top of the extracted features.
+Feature extraction is the process of extracting features from the images in the dataset, these features
+in the images could be anything, such as the colour, shape, or the texture of the image. All of these features
+are used to classify the images, and having these features already extracted can make the training process much faster.
+Most of the pre-trained model is usually frozen so that it does not change during the initial stages training, and only the new model is trained,
+and on top of the extracted features from the base model.
 
 \subsection{Fine-tuning}
 This is the process of training the new model on the dataset, but with a lower learning rate than the initial training and the model is usually unfrozen,
@@ -219,6 +294,13 @@ Here is an example of how I fine-tuned a model using keras:
 
 \section{The different structures of the models}
 There are so many different ways to structure a model and they can 
+
+\section{My training setup}
+For this project, I have setup my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
+I've chosen my laptop to do the training on due to it's powerful GPU, which is a NVIDIA GeForce GTX1070\cite{GTX1070}.
+This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
+Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
+as I can leave it to train overnight without having to constantly check on it.
 
 \chapter{Evaluating the performance}
 
@@ -275,6 +357,8 @@ and the validation accuracy is very high, higher than what other models from oth
   \label{fig:training_results}
 \end{figure}
 
+\pagebreak
+
 \subsection{The solution}
 The solution to this problem was to use the original images, and not the pre-augmented images.
 This meant that I had to re-download the dataset, and re-split the dataset into training and validation sets,
@@ -282,6 +366,24 @@ and then apply data augmentation to the images. This gave me much better results
 to new data much better. Here is the image of the training results from the various models, and the validation accuracy is much lower than before.
 
 % TODO: Add image of the training results
+
+Here's the snippet of code that I used to augment the images:
+\begin{lstlisting}[language=Python]
+train_datagen = ImageDataGenerator(rescale=1./255,
+    validation_split=0.2,
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=360,
+    width_shift_range=0.1,
+    shear_range=0.1,
+    zoom_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    vertical_flip=True,
+) # set validation split
+\end{lstlisting}
+
+\pagebreak
 
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
@@ -334,18 +436,30 @@ which should help to test the generalisation of the model, along with the abilit
 Per class, there are fewer examples than in the Alzheimer's MRI Dataset, however there are still enough to train the model on.
 This will be a good test for the various base models to see which one is the best at extracting features from the images.
 
-\chapter{The different sizes and structures of the models}
-
+\chapter{The different models that are being compared}
+% TODO: finish
 \section{Mobilenetv3}
+
+As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
+It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
+
+The resulting models from this paper are:
+\begin{itemize}
+    \item Mobilenetv3-Large
+    \item Mobilenetv3-Small
+\end{itemize}
+
+The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
+The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
+
+% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336}
+
+
 
 \section{Resnet50}
 
 \chapter{The different optimizers}
 
-\chapter{Optimising the models}
-% talk about the different optimizers and how they affect the performance of the models
-
-\section{Optimizers}
 There are many different optimizers that can be used to train a model, and the one 
 that is used depends on the type of problem that is being solved.
 These could be SGD, RMSProp, Adam, or Nadam. For my project I used 
@@ -355,7 +469,10 @@ optimizer used for deep learning.
 Using a different optimizer can have a significant impact on the performance of the model when training it.
 For example, using SGD can cause the model to get stuck in a local minimum, % TODO: finish
 
-\section{The different learning rates}
+\chapter{Optimising the training}
+% talk about the different optimizers and how they affect the performance of the models
+
+\section{Different learning rates}
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
@@ -364,6 +481,24 @@ and a low learning rate whilst the base model is unfrozen is a good way to train
 and then fine-tune the model at a slower rate. 
 
 % Also talk about the different learning rates and how they affect the performance of the models
+
+\section{Batch sizes}
+
+The batch size is the number of images that are passed to the model at a time.
+A larger batch size will cause the model to learn quicker, however it will also use more memory whereas
+having a smaller batch size will cause the model to learn slower, however it will use less memory.
+When I started off, I did not understand the concept of batch sizes, and I was using a batch size of 1000, this lead to my training times
+being very long and I had to wait days for a model to train.
+I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8GB GPU\cite{GTX1070} doesn't often run out of memory.
+
+\section{Dataset Augmentation}
+
+When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
+Unfortunatly I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
+Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
+This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
+It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
+If these models were to be used in a real world scenario, augmentation helps to make the model more resiliant to the quality of the scans.
 
 \chapter{Conclusion}
 
@@ -377,7 +512,7 @@ I have specifically learnt how complex image classification models are structure
 
 \section{What I will do differently}
 I need to spend more time researching the different structures of the models, and how the optimal ways they can be used for transfer learning.
-
+This would help with optimising what layers should be frozen and which should be unfrozen at different stages of the training process.
 
 \section{What I need to do next}
 

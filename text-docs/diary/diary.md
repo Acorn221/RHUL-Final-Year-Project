@@ -85,3 +85,10 @@ I have also setup my laptop properly using Manjaro Linux to train the models on 
 I have achived 99% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
 I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
 This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
+
+## 27/11/2022
+I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
+as I work. I discovered that my '99%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+models with images I have augmented myself.
+
+Soon I'll finish the Alzheimers dataset training and I'll start working on the flowers dataset.
