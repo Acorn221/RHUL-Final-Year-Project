@@ -106,7 +106,7 @@ They are far more flexible than many of the traditional strategies for image cla
 resilliant to noise in the data or changes such as lighting or rotation.
 
 \pagebreak
-\section{What are the alternatives to Neural Networks}
+\section{What are the alternatives to Neural Networks in Image Classification}
 
 This is not an exhaustive list for image classification, but it is a list of some of the most common alternatives to Neural Networks
 that produce the best results.
@@ -393,7 +393,7 @@ train_datagen = ImageDataGenerator(rescale=1./255,
     height_shift_range=0.1,
     horizontal_flip=True,
     vertical_flip=True,
-) # set validation split
+)
 \end{lstlisting}
 
 \pagebreak
@@ -424,7 +424,7 @@ should give a better representation of how well the model would work in a real w
   \centering
   \includegraphics[width=50mm,height=50mm]{images/moderateDemented.jpg}
   \includegraphics[width=50mm,height=50mm]{images/mildDemented.jpg}
-  \caption{The Alzheimer's MRI Dataset\cite{AlzheimersDataset}}
+  \caption{Samples from the Alzheimer's MRI Dataset\cite{AlzheimersDataset}}
 \end{figure}
 
 The Alzheimer's MRI Dataset is a dataset that contains 4 different levels of Alzheimer's disease,
@@ -439,7 +439,7 @@ I could in the future potentially crop the black borders of the scans to increas
   \centering
   \includegraphics[width=50mm,height=50mm]{images/flower1.jpg}
   \includegraphics[width=50mm,height=50mm]{images/flower2.jpg}
-  \caption{The Oxford 102 Flower Dataset\cite{OxfordFlowers102}}
+  \caption{Samples from the Oxford 102 Flower Dataset\cite{OxfordFlowers102}}
 \end{figure}
 
 The Oxford 102 Flower Dataset is a dataset that contains 102 different types of flowers,
