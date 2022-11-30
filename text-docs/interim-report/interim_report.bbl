@@ -17,6 +17,38 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{5972513}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AM}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Mayank},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mostafa},
+         familyi={M\bibinitperiod},
+         given={Javed},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AMMJ1}
+    \strng{fullhash}{AMMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{2011 9th International Workshop on Content-Based
+  Multimedia Indexing (CBMI)}
+    \verb{doi}
+    \verb 10.1109/CBMI.2011.5972513
+    \endverb
+    \field{pages}{13\bibrangedash 18}
+    \field{title}{Content-based image retrieval for Alzheimer's disease
+  detection}
+    \field{year}{2011}
+  \endentry
+
   \entry{AlzheimersDataset}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
@@ -28,6 +60,16 @@
     \endverb
   \endentry
 
+  \entry{CommitLint}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{CommitLint}
+    \verb{url}
+    \verb https://github.com/conventional-changelog/commitlint
+    \endverb
+  \endentry
+
   \entry{ConfusionMatrix}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
@@ -36,6 +78,26 @@
     \verb{url}
     \verb https://towardsdatascience.com/confusion-matrix-for-your-multi-class-
     \verb machine-learning-model-ff9aa3bf7826
+    \endverb
+  \endentry
+
+  \entry{ContentBasedImageRetrieval}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Content-Based Image Retrieval Diagram}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Content-based_image_retrieval
+    \endverb
+  \endentry
+
+  \entry{CUDA}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{CUDA Toolkit Documentation}
+    \verb{url}
+    \verb https://docs.nvidia.com/cuda/
     \endverb
   \endentry
 
@@ -179,6 +241,48 @@
     \field{year}{2019}
   \endentry
 
+  \entry{ILSVRC}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{ILSVRC}
+    \verb{url}
+    \verb http://www.image-net.org/challenges/LSVRC/
+    \endverb
+  \endentry
+
+  \entry{Jupyter}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{JupyterLab is a web-based interactive development environment
+  for Jupyter notebooks, code, and data.}
+    \verb{url}
+    \verb https://jupyter.org/
+    \endverb
+  \endentry
+
+  \entry{Keras}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Keras is a high-level neural networks API, written in Python
+  and capable of running on top of TensorFlow, CNTK, or Theano.}
+    \verb{url}
+    \verb https://keras.io/
+    \endverb
+  \endentry
+
+  \entry{Manjaro}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Manjaro Linux}
+    \verb{url}
+    \verb https://manjaro.org/
+    \endverb
+  \endentry
+
   \entry{NeuralNetworkDiagram}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{N}
@@ -189,6 +293,17 @@
     \endverb
   \endentry
 
+  \entry{GTX1070}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{NVIDIA GeForce GTX 1070}
+    \verb{url}
+    \verb https://www.nvidia.com/en-gb/geforce/products/10series/geforce-gtx-10
+    \verb 70/
+    \endverb
+  \endentry
+
   \entry{OxfordFlowers102}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{O}
@@ -196,6 +311,26 @@
     \field{title}{Oxford Flowers 102}
     \verb{url}
     \verb https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
+    \endverb
+  \endentry
+
+  \entry{Python}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Python}
+    \verb{url}
+    \verb https://www.python.org/
+    \endverb
+  \endentry
+
+  \entry{RHULGitLab}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{RHUL GitLab}
+    \verb{url}
+    \verb https://gitlab.cim.rhul.ac.uk/
     \endverb
   \endentry
 
@@ -249,6 +384,118 @@
     \field{journaltitle}{CoRR}
     \field{eprinttype}{arXiv}
     \field{year}{2015}
+  \endentry
+
+  \entry{tmux}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{tmux}
+    \verb{url}
+    \verb https://github.com/tmux/tmux/wiki
+    \endverb
+  \endentry
+
+  \entry{10.3389/fneur.2021.640696}{article}{}
+    \name{author}{7}{}{%
+      {{hash=VY}{%
+         family={Vichianin},
+         familyi={V\bibinitperiod},
+         given={Yudthaphon},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khummongkol},
+         familyi={K\bibinitperiod},
+         given={Anutr},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chiewvit},
+         familyi={C\bibinitperiod},
+         given={Pipat},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Raksthaput},
+         familyi={R\bibinitperiod},
+         given={Atthapon},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chaichanettee},
+         familyi={C\bibinitperiod},
+         given={Sunisa},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AN}{%
+         family={Aoonkaew},
+         familyi={A\bibinitperiod},
+         given={Nuttapol},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Senanarong},
+         familyi={S\bibinitperiod},
+         given={Vorapun},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VY+1}
+    \strng{fullhash}{VYKACPRACSANSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    Background: The determination of brain volumes using visual ratings is
+  associated with an inherently low accuracy for the diagnosis of Alzheimer's
+  disease (AD). A support-vector machine (SVM) is one of the machine learning
+  techniques, which may be utilized as a classifier for various classification
+  problems. This study exploratorily investigated the accuracy of SVM
+  classification models for AD subjects using brain volume and various clinical
+  data as features.Methods: The study was designed as a retrospective chart
+  review. A total of 201 eligible subjects were recruited from the Memory
+  Clinic at Siriraj Hospital, Thailand. Eighteen cases were excluded due to
+  incomplete MRI data. Subjects were randomly assigned to a training group (AD
+  = 46, normal = 46) and testing group (AD = 45, normal = 46) for SVM modeling
+  and validation, respectively. The results in terms of accuracy and a receiver
+  operating characteristic curve analysis are reported.Results: The highest
+  accuracy for brain volumetry (62.64%) was found using the hippocampus as a
+  single feature. A combination of clinical parameters as features provided
+  accuracy ranging between 83 and 90%. However, a combination of brain
+  volumetry and clinical parameters as features to the SVM models did not
+  improve the accuracy of the result.Conclusions: In our study, the use of
+  brain volumetry as SVM features provided low classification accuracy with the
+  highest accuracy of 62.64% using the hippocampus volume alone. In contrast,
+  the use of clinical parameters [Thai mental state examination score,
+  controlled oral word association tests (animals; and letters K, S, and P),
+  learning memory, clock-drawing test, and construction-praxis] as features for
+  SVM models provided good accuracy between 83 and 90%.%
+    }
+    \verb{doi}
+    \verb 10.3389/fneur.2021.640696
+    \endverb
+    \field{issn}{1664-2295}
+    \field{title}{Accuracy of Support-Vector Machines for Diagnosis of
+  Alzheimer's Disease, Using Volume of Brain Obtained by Structural MRI at
+  Siriraj Hospital}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/fneur.2021.640696
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Frontiers in Neurology}
+    \field{year}{2021}
+  \endentry
+
+  \entry{VsCode}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{VsCode}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Visual_Studio_Code
+    \endverb
   \endentry
 \enddatalist
 \endinput

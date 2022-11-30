@@ -1,37 +1,55 @@
 \contentsline {chapter}{Abstract}{4}{chapter*.2}%
 \contentsline {chapter}{Project Specification}{5}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}What transfer learning is}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}The Models I will be comparing}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}The Datasets I will be using}{6}{section.1.3}%
-\contentsline {chapter}{\numberline {2}The way Neural Networks work}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Neural Networks}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}What is a Neural Network}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}What is a Convolutional Neural Network}{7}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Transfer Learning}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Why use Transfer Learning}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Drawbacks of Transfer Learning}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The code behind the transfer learning}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}How to implement Transfer Learning}{10}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Extracting features}{10}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Fine-tuning}{10}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}How to fine-tune a model}{10}{section.3.5}%
-\contentsline {section}{\numberline {3.6}The different structures of the models}{10}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Evaluating the performance}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The different metrics}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Data Augmentation}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Problems with the Alzheimer's MRI Dataset and how I fixed them}{12}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}The problems}{12}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}The solution}{12}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Evaluating the given metrics}{12}{section.4.4}%
-\contentsline {section}{\numberline {4.5}The different datasets}{14}{section.4.5}%
-\contentsline {chapter}{\numberline {5}The different sizes and structures of the models}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Mobilenetv3}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Resnet50}{15}{section.5.2}%
-\contentsline {chapter}{\numberline {6}The different optimizers}{16}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Optimising the models}{17}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Optimizers}{17}{section.7.1}%
-\contentsline {section}{\numberline {7.2}The different learning rates}{17}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Conclusion}{18}{chapter.8}%
-\contentsline {section}{\numberline {8.1}What I have learned}{18}{section.8.1}%
-\contentsline {section}{\numberline {8.2}What I will do differently}{18}{section.8.2}%
-\contentsline {section}{\numberline {8.3}What I need to do next}{18}{section.8.3}%
+\contentsline {section}{\numberline {2.2}Why use a Neural Network}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}What are the alternatives to Neural Networks in Image Classification}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Support Vector Machines}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Content Based Image Retrieval}{8}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}The different optimizers}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}What is a Convolutional Neural Network}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Types Of Layers}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}What transfer learning is}{10}{section.2.7}%
+\contentsline {section}{\numberline {2.8}The Models I will be comparing}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.9}The Datasets I will be using}{10}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Transfer Learning}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Why use Transfer Learning}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Drawbacks of Transfer Learning}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The code behind the transfer learning}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}How to implement Transfer Learning}{13}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Extracting features}{13}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Fine-tuning}{13}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}How to fine-tune a model}{13}{section.3.5}%
+\contentsline {section}{\numberline {3.6}The different structures of the models}{13}{section.3.6}%
+\contentsline {section}{\numberline {3.7}My training setup}{13}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Evaluating the performance}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The different metrics}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Data Augmentation}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Problems with the Alzheimer's MRI Dataset and how I fixed them}{16}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}The problems}{16}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}The solution}{17}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Evaluating the given metrics}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.5}The different datasets}{19}{section.4.5}%
+\contentsline {chapter}{\numberline {5}The different models that are being compared}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Mobilenetv3}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Resnet50}{20}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Software Engineering}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The code}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}My Development Environment}{21}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Using Git}{21}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Testing with Jupyter Notebook}{21}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Using tmux}{22}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Using Test Driven Development}{22}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Optimising the training}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Different learning rates}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Batch sizes}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Dataset Augmentation}{23}{section.7.3}%
+\contentsline {chapter}{\numberline {8}My training results}{24}{chapter.8}%
+\contentsline {subsection}{\numberline {8.0.1}The comparison of the different models}{24}{subsection.8.0.1}%
+\contentsline {subsection}{\numberline {8.0.2}InceptionV3}{25}{subsection.8.0.2}%
+\contentsline {subsection}{\numberline {8.0.3}The model sizes}{26}{subsection.8.0.3}%
+\contentsline {chapter}{\numberline {9}Conclusion}{27}{chapter.9}%
+\contentsline {section}{\numberline {9.1}What I have learned}{27}{section.9.1}%
+\contentsline {section}{\numberline {9.2}What I will do differently}{27}{section.9.2}%
+\contentsline {section}{\numberline {9.3}What I need to do next}{27}{section.9.3}%
