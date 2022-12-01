@@ -149,7 +149,7 @@ The weights are used to determine how much each neuron in the next layer is affe
 The weights are updated during training, and the process of updating the weights is known as backpropagation.
 
 \section{Why use a Neural Network}
-The use of Neural Networks has increased dramatically in recent years, and they are now used in a variety of different applications.
+The use of neural networks has increased dramatically in recent years, and they are now used in a variety of different applications.
 The reason for this is that they are very good at learning complex patterns in data, and they are able to learn 
 these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
 
@@ -159,14 +159,14 @@ resilient to noise in the data or changes such as lighting or rotation.
 \pagebreak
 \section{What are the alternatives to Neural Networks in Image Classification}
 
-This is not an exhaustive list for image classification, but it is a list of some of the most common alternatives to Neural Networks
+This is not an exhaustive list for image classification, but it is a list of some of the most common alternatives to neural networks
 that produce the best results.
 
 \subsection{Support Vector Machines}
-There are a number of different alternatives to Neural Networks, one common alternative is Support Vector Machines.
+There are a number of different alternatives to neural networks, one common alternative is Support Vector Machines.
 Support Vector Machines are a type of supervised machine learning model that can be used for both classification and regression.
 They work by finding a hyperplane that separates the data into different classes, and then classifying new data based on which side of the hyperplane it is on.
-They are very good at classifying data that is linearly separable, however they are not very good at classifying data that is not linearly separable,
+They are very good at classifying data that is linearly separable, otherwise they are not as good,
 and they are also very sensitive to noise in the data.
 
 In one study using SVMs to classify Alzheimer's patients, the researchers managed to get an accuracy of 62.64\% using MRI scans of the brain.
@@ -188,6 +188,7 @@ images that had similar features such as a blue sky and white clouds to the targ
 
 Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
 a study was done using this method to classify Alzheimer's patients, and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
+and getting feedback from the physicians who were treating the patients.
 
 For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
 This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
@@ -256,8 +257,9 @@ This is also where the model is usually unfrozen, so that the pre-trained model 
 \section{The Datasets I will be using}
 The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
 
-The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
-they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
+The choice of datasets is based off of the availability of the dataset, the complexity and the number of classes.
+The aim of the Alzheimer's dataset was to see if the model could learn subtle differences between the different classes, and if it could learn to classify the different classes.
+The aim with the Oxford flowers 102 dataset\cite{OxfordFlowers102} was to see how the models would perform with a wider variety of classes but more significant differences between the classes.
 
 \chapter{Transfer Learning}
 
@@ -338,7 +340,7 @@ Fine-tuning a model is a very simple process, and can be done in just a few line
 The first step is to unfreeze the pre-trained model, which can be done by setting the trainable attribute of the layers to True.
 The next step is to set the learning rate to a lower value, which can be done by setting the learning rate attribute of the optimizer.
 The final step is to recompile the model, which can be done by calling the compile method of the model.
-Here is an example of how I fine-tuned a model using keras:
+Here is an example of how I fine-tuned a model using Keras:
 
 \begin{lstlisting}[language=Python]
   base_model.trainable = True
@@ -366,14 +368,14 @@ as I can leave it to train overnight without having to constantly check on it.
 
 \section{The different metrics}
 % Accuracy
-Accuracy is the most common metric used to evaluate the performance of a model, and is defined as the number of correct predictions divided by the total number of predictions.
+Accuracy is typically the metric used to compare models and is defined as the number of correct predictions divided by the total number of predictions.
 It is a very simple metric to understand, and is therefore often used to compare the performance of different models.
 There is accuracy for both the training and validation sets, and the accuracy of the validation set is used to determine how well the model generalises to new data,
 and a validation accuracy that is much lower than the training accuracy is a sign that the model is overfitting.
 However, it is not always the best metric to use, as it can be misleading in some cases.
 
 % Loss
-Loss is the most common metric used to evaluate the performance of a model, it is calculated by taking the difference between the predicted value and the actual value.
+Loss is a very common and useful method to evaluate the performance of a model, it is calculated by taking the difference between the predicted value and the actual value.
 There are however many different types of loss functions, and the one that is used depends on the type of problem that is being solved.
 These could be binary cross entropy, categorical cross entropy, or mean squared error. For my project I used binary cross entropy due
 to it's simplicity and the fact that it is the most common loss function used for binary classification problems.
@@ -381,10 +383,6 @@ to it's simplicity and the fact that it is the most common loss function used fo
 % Validation vs Training Loss and Accuracy
 The validation loss and accuracy are used to determine how well the model generalises to new data, and a validation loss that is much higher than the training loss is a sign that the model is overfitting.
 For the validation set, I have assigned 20\% of the data to be used.
-
-% Confusion Matrix
-The confusion matrix is a table that shows the number of correct and incorrect predictions for each class.
-It is a very useful metric to use when evaluating the performance of a model, as it can show which classes the model is having the most trouble with.
 
 \section{Data Augmentation}
 
@@ -482,8 +480,6 @@ it contains 33984 images in the augmentation folder and the images are all 256x2
 They require resizing to 224x224 pixels in order to be used with the pre-trained models as they are expecting images of that size.
 Not using all the resolution of the images is a problem as it could reduce the accuracy of the model,
 however it is a necessary due to the models being trained on images of that size.
-It does however not seem to have a significant impact on the accuracy of the model, as I am still able to get a validation accuracy of 99.8\%.
-I could in the future potentially crop the black borders of the scans to increase the amount of useful data that is being passed to the model.
 
 \begin{figure}[ht!]
   \centering
@@ -548,8 +544,7 @@ It uses auxiliary classifiers, these are additional classifiers used in a neural
 They can also help to reduce the amount of overfitting that can occur when using a single classifier.
 
 \section{ResNet101}
-Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model.
-Resnet101 is the largest model that is being compared, it's different due to the amount of layers that it has, 
+Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has, 
 which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
 
 \section{VGG19}
@@ -583,12 +578,12 @@ I have used the following tools to develop this project:
 \section{Using Git}
 I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
 This was not the first time I have used Git, however it was the first time I have used it with GitLab.
-I used seperate branches for the different stages of the project, and then merged them into the master branch when they were complete.
-The branches were made to create the different planning papers, and then to setup the development environment.
+I used separate branches for the different stages of the project, and then merged them into the master branch when they were complete.
+The branches were made to create the different planning papers, and then to set up the development environment.
 I also used branches to create the different models, and then to test them too.
 
 All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent, 
-and to make it easier to go through the history and find a specific change or commit to cherrypick or revert.
+and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
 
 \section{Testing with Jupyter Notebook}
 I have used Jupyter Notebook to test the code, and to generate the graphs.
@@ -598,7 +593,7 @@ I had many issues with setting up the code as this was the first time I have tra
 \section{Using tmux}
 I have used tmux to run the code in the background, this was useful as I could SSH into my server and run the code, and then disconnect from the server.
 I would then periodically SSH back into the server to check on the progress of the code, and to see if there were any errors.
-This wasn't ideal as I could have setup a canary to send me an email if there were any errors, however I didn't have time to do this.
+This wasn't ideal as I could have set up a canary to email me if there were any errors, however I didn't have time to do this.
 
 \section{Using Test Driven Development}
 I used PyTest\cite{PyTest} to test the code, and to make sure that everything was working as expected.
@@ -625,6 +620,11 @@ but it can also cause the model to get stuck in a local minimum. A combination o
 and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start,
 and then fine-tune the model at a slower rate. 
 
+A local minimum is when the model can't decrease its loss any further by adjusting its parameters. 
+It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
+A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
+It is the lowest point in the entire loss landscape no matter what parameters the model has.
+
 % Also talk about the different learning rates and how they affect the performance of the models
 
 \section{Batch sizes}
@@ -639,11 +639,11 @@ I have found that a batch size of 32 works well for the models that I have train
 \section{Dataset Augmentation}
 
 When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
-Unfortunatly I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
+Unfortunately I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
 Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
 This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
 It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
-If these models were to be used in a real world scenario, augmentation helps to make the model more resiliant to the quality of the scans.
+If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
 
 \chapter{My training results}
 \subsection{The comparison of the different models}
@@ -719,8 +719,8 @@ It was created to compete in the ImageNet Large Scale Visual Recognition Challen
 Inceptionv3 is a 48 layer deep neural network, and was created by Google to compete in the same challenge in 2015.
 
 Although the ResNet model managed to win the challenge, it is clear to see that Inceptionv3 is a far better model for this problem.
-Both models were trained on the same dataset (ImageNet), however the imagenet dataset is very different to the Alzheimer's dataset.
-The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
+Both models were trained on the same dataset (ImageNet), however the ImageNet dataset is very different to the Alzheimer's dataset.
+The ImageNet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
 This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
 
 \chapter{How to run the code}
@@ -741,7 +741,7 @@ To run the tests for the AutomatedTestingLibary run the following command:
 \end{lstlisting}
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
-The flower training notebook does not currently work as I am having issues with Keras and the dataset (specifically the way it is loaded).
+The flower training notebook does not work as I am having issues with Keras and the dataset (specifically the way it is loaded).
 
 \chapter{Diary}
 
@@ -749,8 +749,8 @@ The flower training notebook does not currently work as I am having issues with 
 \section*{19/10/2022}
 
 Today I have been deciding the specific classes of images I want to use for my project.
-I had initially intended on using only 1 class, however I have decided to use 2 classes instead as I think it will be more interesting to see the results of the pruning on 2 classes rather than 1,
-It will also demonstrate better the different strengths and weaknesses of the individual pruning methods.
+I had initially intended on using only 1 class, however I have decided to use 2 classes instead as I think it will be more interesting to see the results of the transfer learning on 2 classes rather than 1,
+It will also demonstrate better the different strengths and weaknesses of the individual transfer learning methods.
 
 I have decided to use the following sets of images:
 
@@ -785,25 +785,25 @@ with varying degrees of accuracy, around 80\% was the best I got however this wa
 \section*{09/11/2022}
 
 
-I had lost some of my git history for my diary, so I have had to rewrite some of the diary entries.
+I had lost some of my git history for my diary, so I have had to rewrite some diary entries.
 I have found more flower dataset images here and I've decided to change over to this as soon as possible;
-https://www.kaggle.com/competitions/tpu-getting-started/overview
+\href{https://www.kaggle.com/competitions/tpu-getting-started/overview}{https://www.kaggle.com/competitions/tpu-getting-started/overview}
 
 \section*{14/11/2022}
 
-I am training the model "Mobilenetv3 Small" with the alzheimer's dataset, I have been able to get it to run and it is currently training.
+I am training the model "Mobilenetv3 Small" with the Alzheimer's dataset, I have been able to get it to run and it is currently training.
 The power required to train the models is making it difficult to use trial and error for the parameters, so I am going to try and find a way to use the GPU on my laptop to train the models as soon as possible.
 I'm also going to optimise the way I am training the models as to not use more power than necessary. This means I've got to get a better understanding of the models I am training with and how they work.
-I have found this paper Seraching For MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244} which I think will be useful for me to read through and understand the structure of Mobilenetv3.
+I have found this paper Searching For MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244} which I think will be useful for me to read through and understand the structure of Mobilenetv3.
 
 \section*{15/11/2022}
 
-I've had trouble getting the Alzheimers classification to work with transfer learning, so I decided to try and run other people's code to see if I could get it to work.
+I've had trouble getting the Alzheimer's classification to work with transfer learning, so I decided to try and run other people's code to see if I could get it to work.
 I have found that my transfer learning could be significantly more efficient and accurate if I use the existing code, so I'll have to try and identify where I went wrong with my code and make improvements.
 
 \section*{21/11/2022}
 
-Today I managed to get the accuracy up to 90% on the alzheimer's dataset, this is a significant improvement from the 60% I was getting before. My model appears to still be overfitting however this progress is good. This was done through transfer learning on the Mobilenetv3 small model.
+Today I managed to get the accuracy up to 90\% on the alzheimer's dataset, this is a significant improvement from the 60\% I was getting before. My model appears to still be overfitting however this progress is good. This was done through transfer learning on the Mobilenetv3 small model.
 
 Output from the model during fine-tuning:
 \begin{lstlisting}
@@ -866,7 +866,7 @@ This should make it a lot easier to use different models, datasets and parameter
 
 \section*{27/11/2022}
 I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
-as I work. I discovered that my '99%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
 models with images I have augmented myself.
 
 Soon I'll finish the Alzheimer's dataset training and I'll start working on the flowers dataset.
@@ -892,15 +892,18 @@ This project is a great learning experience for me, and I have learned a lot abo
 Before I started this project, I had never used transfer learning before, and had only used pre-trained machine learning models for image classification.
 I have learned a lot about the different types of models, how they are structured, and how they can be used for transfer learning.
 
+
 \section{What I have learned}
 I have specifically learned how complex image classification models are structured, as they are far more complex than I had initially thought.
+I have also learned about augmentation, regularisation and hyperparameter tuning, and how they can be used to improve the accuracy of the models.
+In my final report I will try and use all these techniques to improve the accuracy of the models, and I will also try and use different base models to see if I can get better results.
 % talk about mobilenetv3
 
 \section{What I will do differently}
 I need to spend more time researching the different structures of the models, and how the optimal ways they can be used for transfer learning.
 This would help with optimising what layers should be frozen and which should be unfrozen at different stages of the training process.
 I should also have a consistent way of training the models on something more powerful than my laptop, as it takes a long time to train the models.
-When I have setup a faster training environment, I should create a database to store the training results, so that I can easily compare the different models,
+When I have set up a faster training environment, I should create a database to store the training results, so that I can easily compare the different models,
 and it would allow me to do hyperparameter tuning and regularisation to improve the performance of the models without having to retrain them.
 
 \section{What I need to do next}
@@ -908,7 +911,7 @@ After doing more research into the models structures, I will need to do more res
 Hyperparameter tuning I feel is my best chance of further increasing the accuracy of the models, as this could potentially allow them to learn more from the data.
 
 I also want to see if combining the models outputs together, weighting their outputs based on their loss, and seeing if this gives me a better overall accuracy.
-I want to setup a basic webpage that I can use to monitor the training, and to see the accuracy of the models in real time and upload pictures to test the models.
+I want to set up a basic webpage that I can use to monitor the training, and to see the accuracy of the models in real time and upload pictures to test the models.
 
 \newpage
 \printbibliography
