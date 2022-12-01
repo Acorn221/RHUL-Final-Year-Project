@@ -13,3 +13,9 @@ def test_load_training_data():
 	# Check if the training data is loaded
 	assert automatedTesting.train_ds is not None
 	assert automatedTesting.test_ds is not None
+
+def test_start():
+	# Start the automated testing
+	automatedTesting.start()
+	# Check if the automated testing is done
+	assert automatedTesting.done is True
