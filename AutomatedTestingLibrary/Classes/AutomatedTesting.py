@@ -20,8 +20,8 @@ class AutomatedTesting:
 			self.trainingArgs = [
 						{
 					"train": {
-						"epochs": 10,
-						"steps_per_epoch": 1,
+						"epochs": 5,
+						"steps_per_epoch": 5,
 					},
 					"compile": {
 						"optimizer": keras.optimizers.Adam(learning_rate=0.001),
@@ -90,7 +90,6 @@ class AutomatedTesting:
 			for arg in self.trainingArgs:
 				self.currentModel.compileModel(**arg["compile"])
 				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"])
-			self.currentModel.saveModel(self.output)
 			self.currentModel.saveHistory()
 			self.currentModel = None
 
