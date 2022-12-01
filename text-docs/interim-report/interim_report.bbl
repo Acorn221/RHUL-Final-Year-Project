@@ -251,6 +251,16 @@
     \endverb
   \endentry
 
+  \entry{ImageNet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{ImageNet}
+    \verb{url}
+    \verb http://www.image-net.org/
+    \endverb
+  \endentry
+
   \entry{Jupyter}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
@@ -280,6 +290,17 @@
     \field{title}{Manjaro Linux}
     \verb{url}
     \verb https://manjaro.org/
+    \endverb
+  \endentry
+
+  \entry{Matplotlib}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Matplotlib is a comprehensive library for creating static,
+  animated, and interactive visualizations in Python.}
+    \verb{url}
+    \verb https://matplotlib.org/
     \endverb
   \endentry
 
@@ -314,6 +335,16 @@
     \endverb
   \endentry
 
+  \entry{PyTest}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{PyTest}
+    \verb{url}
+    \verb https://docs.pytest.org/en/stable/
+    \endverb
+  \endentry
+
   \entry{Python}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -332,6 +363,33 @@
     \verb{url}
     \verb https://gitlab.cim.rhul.ac.uk/
     \endverb
+  \endentry
+
+  \entry{Simonyan15}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKZA1}
+    \strng{fullhash}{SKZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference on Learning Representations}
+    \field{title}{Very Deep Convolutional Networks for Large-Scale Image
+  Recognition}
+    \field{year}{2015}
   \endentry
 
   \entry{DBLP:journals/corr/SzegedyVISW15}{article}{}
