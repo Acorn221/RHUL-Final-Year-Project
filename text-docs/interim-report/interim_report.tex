@@ -380,8 +380,6 @@ This meant that I had to re-download the dataset, and re-split the dataset into 
 and then apply data augmentation to the images. This gave me much better results, and the model was able to generalise
 to new data much better. Here is the image of the training results from the various models, and the validation accuracy is much lower than before.
 
-% TODO: Add image of the training results
-
 Here's the snippet of code that I used to augment the images:
 \begin{lstlisting}[language=Python]
 train_datagen = ImageDataGenerator(rescale=1./255,
@@ -488,7 +486,7 @@ The large model is designed for high accuracy, and the small model is designed f
 
 
 
-% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336}
+% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
 
 % The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
 
@@ -598,7 +596,6 @@ It is not optimal to be required to use data augmentation, however it's signific
 If these models were to be used in a real world scenario, augmentation helps to make the model more resiliant to the quality of the scans.
 
 \chapter{My training results}
-% TODO: add graphs and talk about the results
 \subsection{The comparison of the different models}
 Here is a graph of all the different models that I have trained properly with the Alzheimer's dataset.
 The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
@@ -676,6 +673,25 @@ Both models were trained on the same dataset (ImageNet), however the imagenet da
 The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
 This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
 
+\chapter{How to run the code}
+
+\section{Prerequisites}
+Go to the directory in your terminal (with python 3.7 > installed) and run the following command:
+\begin{lstlisting}
+  pip install -r requirements.txt
+\end{lstlisting}
+
+\section{Running the code}
+To run the code in the notebook, follow the markdown instructions in the notebook.
+To run the training program, run automated-testing-training/main.py (it will likely take a long time to run).
+
+To run the tests for the AutomatedTestingLibary run the following command:
+\begin{lstlisting}
+  python -m pytest 
+\end{lstlisting}
+Run main.py in the AutomatedTestingLibary directory to run the training program.
+
+The flower training notebook does not currently work as I am having issues with keras and the dataset (specifically the way it is loaded).
 
 
 \chapter{Conclusion}
