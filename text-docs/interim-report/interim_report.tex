@@ -201,10 +201,6 @@ After the new model is trained on top, a process known as fine-tuning can be use
 Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
 This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
 
-\section{The Models I will be comparing}
-The models I have chosen to compare are the MobileNetv3Small\cite{DBLP:journals/corr/abs-1905-02244}, MobileNetv3Large\cite{DBLP:journals/corr/abs-1905-02244}, ResNet50\cite{DBLP:journals/corr/HeZRS15}, ResNet10\cite{DBLP:journals/corr/HeZRS15}, ResNet152\cite{DBLP:journals/corr/HeZRS15}, and InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15} models.
-These models are all pre-trained on the ImageNet dataset, which contains 1.2 million images of 1000 different classes.
-
 \section{The Datasets I will be using}
 The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
 
@@ -451,7 +447,9 @@ For the interim report, I did not use this dataset as I was having too many prob
 was too long for me to be able to have adequate results for the interim report.
 
 \chapter{The different models that are being compared}
-% TODO: finish
+
+All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
+
 \section{Mobilenetv3}
 
 As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
@@ -466,11 +464,50 @@ The resulting models from this paper are:
 The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
 The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
 
+% insert the image of the mobilenetv3 structure
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/MobileNetv3-structure.png}
+  \caption{The proposed segmentation head for MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-segmentation}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/mobilenet-comparison.png}
+  \caption{A comparison of latency and accuracy\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-comparison}
+\end{figure}
+
+
+
 % TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336}
 
+% The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
 
+\section{InceptionV3}
+InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
+It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction. 
+It is a deep learning model that uses a combination of convolutional layers, pooling layers, and fully-connected layers. 
+It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data. 
+They can also help to reduce the amount of overfitting that can occur when using a single classifier.
 
-\section{Resnet50}
+\section{ResNet101}
+Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model.
+Resnet101 is the largest model that is being compared, it's different due to the amount of layers that it has, 
+which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
+
+\section{VGG19}
+VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
+VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
+
+% insert image of the VGG19 structure
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
+  \caption{The structure of VGG19\cite{Simonyan15}}
+  \label{fig:vgg19-structure}
+\end{figure}
 
 \chapter{Software Engineering}
 \section{The code}
@@ -512,17 +549,17 @@ I used PyTest\cite{PyTest} to test the code, and to make sure that everything wa
 This helped me quickly test and debug my code, I would write a test to define how I wanted my code to work, and then write the code to make the test pass.
 This sped up development as I could quickly test the code and make sure that it was working as expected.
 
-The other tests I wrote were making the graphs that I generated, as I was testing the code by generating the graphs
+The other tests I wrote were making the graphs that I generated, as I was testing the code by generating the graphs using Jupyter Notebook\cite{Jupyter} and matplotlib\cite{Matplotlib},
 and then checking that the graphs were looking correct. This was really the only way I could test the training code, as the models take 10+ hours to train,
 and I didn't have the time to train the models multiple times to see if unit tests that I had written were correct.
 
-In the future I would like to use unit tests as I could setup an automated pipeline to train the models and then run the unit tests,
-and then if the unit tests fail, then the pipeline would fail and I would be notified. This would allow me to test the code more easily,
+In the future I would like to use unit tests as I could set up an automated pipeline to train the models and then run the unit tests,
+and then if the unit tests fail, then the pipeline would fail, and I would be notified. This would allow me to test the code more easily,
 and to make sure that the code is working correctly. I would also be able to test the code on a smaller dataset, which would allow me to train the models quicker,
 and to test the code quicker.
 
-Aside from testing the models, I could setup unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
-This would give me an oppourtunity to write unit tests for the API, and to test the code that I would write for the API.
+Aside from testing the models, I could set up unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
+This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
 
 \section{Different learning rates}
 
@@ -620,7 +657,7 @@ Before I started this project, I had never used transfer learning before, and ha
 I have learned a lot about the different types of models, how they are structured, and how they can be used for transfer learning.
 
 \section{What I have learned}
-I have specifically learnt how complex image classification models are structured, as they are far more complex than I had initially thought.
+I have specifically learned how complex image classification models are structured, as they are far more complex than I had initially thought.
 % talk about mobilenetv3
 
 \section{What I will do differently}
