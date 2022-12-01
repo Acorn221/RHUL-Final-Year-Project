@@ -25,8 +25,8 @@ def test_training_args():
 	trainingArgs = [
 		{
 			"train": {
-				"epochs": 5,
-				"steps_per_epoch": 10,
+				"epochs": 1,
+				"steps_per_epoch": 1,
 			},
 			"compile": {
 				"optimizer": keras.optimizers.Adam(learning_rate=0.001/(x * 10)),
