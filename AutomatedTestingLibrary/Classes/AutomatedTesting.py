@@ -11,8 +11,8 @@ class AutomatedTesting:
 		self.models = models
 		self.data_dir = data_dir
 		self.output = output
-		self.trainingData = None
-		self.testingData = None
+		self.train_ds = None
+		self.test_ds = None
 		if augmentationParams is not None:
 			self.augmentationParams = augmentationParams
 		else:
@@ -32,15 +32,15 @@ class AutomatedTesting:
 
 	def loadTrainingData(self):
 		train_datagen = ImageDataGenerator(rescale=1./255,
+			**self.augmentationParams)
 			
-		) # set validation split
-		self.trainingData = train_datagen.flow_from_directory(
+		self.train_ds = train_datagen.flow_from_directory(
 			self.data_dir,
 			target_size=(224, 224),
 			batch_size=32,
 			class_mode='categorical',
 			subset='training')
-		self.testingData = train_datagen.flow_from_directory(
+		self.test_ds = train_datagen.flow_from_directory(
 			self.data_dir,
 			target_size=(224, 224),
 			batch_size=32,
@@ -66,8 +66,3 @@ class AutomatedTesting:
 			self.currentModel = None
 
 
-
-# Check if it's the main file
-if __name__ == "__main__":
-	# Run the main function
-	# TODO: add stuff
