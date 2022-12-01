@@ -1,5 +1,6 @@
 import AutomatedTestingLibrary.Classes.AutomatedTesting as t
 import AutomatedTestingLibrary.Classes.Model as m
+from tensorflow import keras
 
 from utils import MobileNetModel
 
@@ -17,5 +18,22 @@ def test_load_training_data():
 def test_start():
 	# Start the automated testing
 	automatedTesting.start()
+	# Check if the automated testing is done
+	assert automatedTesting.done is True
+
+def test_training_args():
+	trainingArgs = [
+		{
+			"epochs": 5,
+			"optimizer": keras.optimizers.Adam(learning_rate=0.001/(x * 10)),
+			"loss": keras.losses.CategoricalCrossentropy(),
+			"metrics": [keras.metrics.CategoricalAccuracy()]
+		}
+		for x in range(1, 3)]
+	# Start the automated testing
+	automatedTesting = t.AutomatedTesting(models, "Alzheimers-classification/data", "output", trainingArgs=trainingArgs)
+
+	automatedTesting.start()
+
 	# Check if the automated testing is done
 	assert automatedTesting.done is True
