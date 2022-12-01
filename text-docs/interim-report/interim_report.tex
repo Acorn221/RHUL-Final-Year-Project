@@ -38,7 +38,7 @@ Student Name: \studentname
 
 \vskip3em
 
-Date of Submission:
+Date of Submission: \today
 
 \vskip3em
 
@@ -68,18 +68,63 @@ Signature:
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
-% TODO: do the project spec, not sure what to put here
-% TODO: Time scale? I need to show when I did what
 % TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
 % TODO: Summary of completed work
 % TODO: Insert or attach the diary
 
 \chapter*{Project Specification}
-\addcontentsline{toc}{chapter}{Project Specification}
-Your project specification goes here.
 
-%%%%%%%%%%%%%%%%%%%%%%
-%%% Introduction
+Aims: To implement and compare on benchmark data sets various machine learning algorithms
+Background: Machine learning allows us to write computer programs to solve many complex problems: instead of solving a problem directly, the program can learn to solve a class of problems given a training set produced by a teacher. This project will involve implementing a range of machine learning algorithms, from the simplest to sophisticated, and studying their empirical performance using methods such as cross-validation and ROC analysis. In this project you will learn valuable skills prized by employers using data mining.
+Early Deliverables
+
+\begin{itemize}
+  \item You will implement simple machine learning algorithms such as nearest neighbours and decision trees.
+  \item They will be tested using simple artificial data sets.
+  \item Report: a description of 1-nearest neighbour and k-nearest neighbours algorithms, with different strategies for breaking the ties;
+  \item Report: a description of decision trees using different measures of uniformity.
+\end{itemize}
+
+\section{Final Deliverables}
+\begin{itemize}
+  \item May include nearest neighbours using kernels and multi-class support vector machines.
+  \item The algorithms will be studied empirically on benchmark data sets such as those available from the UCI data repository and the Delve repository.
+  \item For many of these data set judicious preprocessing (including normalisation of attributes or examples) will be essential.
+  \item The performance of all algorithms will be explored using a hold-out test set and cross-validation.
+  \item The overall program will have a full object-oriented design, with a full implementation life cycle using modern software engineering principles.
+  \item Ideally, it will have a graphical user interface.
+  \item The report will describe: the theory behind the algorithms.
+  \item The report will describe: the implementation issues necessary to apply the theory.
+  \item The report will describe: the software engineering process involved in generating your software.
+  \item The report will describe: computational experiments with different data sets and parameters.
+\end{itemize}
+
+\section{Suggested Extensions}
+\begin{itemize}
+\item Modifications of known algorithms.
+\item Dealing with machine learning problems with asymmetrical errors (such as spam detection) and ROC analysis.
+\item Nontrivial adaptations of known algorithms to applications in a specific area, such as medical diagnosis or option pricing.
+\item Exploring the cross-validation procedure, in particular the leave-one out procedure. What is the optional number of folds?
+\item Comparative study of different strategies of reducing multi-class classifiers to binary classifiers (such as one-against-one, one-against-the-rest, coding-based).
+\end{itemize}
+
+\section{Reading}
+\begin{itemize}
+  \item Trevor Hastie, Robert Tibshirani, and Jerome Friedman. The Elements of Statistical Learning. Second edition. Springer, New York, 2009.
+  \item Tom M. Mitchell. Machine Learning. McGrow-Hill, New York, 1997.
+  \item Vladimir N. Vapnik. The Nature of Statistical Learning Theory. Second edition. Springer, New York, 2000.
+  \item Vladimir N. Vapnik. Statistical Learning Theory. Wiley, New York, 1998.
+  \item Seth Hettich and Steven D. Bay. The UCI KDD Archive. University of California, Department of Information and Computer Science, Irvine, CA, 1999, http://kdd.ics.uci.edu.
+  \item Delve archive. http://www.cs.toronto.edu/~delve.
+\end{itemize}
+
+\section{Addendum}
+As I was not keen on doing the pre-assigned generic project, I had asked for permission to do a project of my own choosing.
+I was given permission to do so, and I chose to do a project on comparison of image classification models using transfer learning.
+I chose this project as I was interested in transfer learning as I had used it in a previous project and wanted to learn more about it
+and it seemed far more interesting than the generic project and I believe this is generally a more applicable problem to solve in the real world.
+
+
 \chapter{Introduction}
 
 My project is about the comparison of image classification models with transfer learning.
@@ -416,6 +461,11 @@ should give a better representation of how well the model would work in a real w
   \includegraphics[width=100mm]{images/ConfusionMatrix.png}
   \caption{A confusion Matrix\cite{ConfusionMatrix}}
 \end{figure}
+For the final report I intend on using confusion matrices to evaluate the performance of the models,
+as they can show which classes the model has the best or worst performance on.
+They can also represent nicely in a table, all the different hyperparameter combinations that I will try
+to use to get the best possible results.
+
 \pagebreak
 \section{The different datasets}
 
@@ -627,9 +677,9 @@ Hyperparameter tuning is a process of optimising the hyperparameters of a model,
 This helps to improve the accuracy of the model and reduce overfitting.
 \pagebreak
 
-\subsection{MobileNetv3 Small}
+\subsection{MobileNetV3 Small}
 
-Mobilenetv3 Small is the smallest model in size and is consistently the least accurate model and has the highest loss.
+MobilenetV3 Small is the smallest model in size and is consistently the least accurate model and has the highest loss.
 
 % insert graph of loss
 \begin{figure}[ht!]
@@ -638,9 +688,9 @@ Mobilenetv3 Small is the smallest model in size and is consistently the least ac
   \caption{The last 30 epochs of the training results}
 \end{figure}
 
-Here's another graph that clearly shows the difference in performance between Inceptionv3 and Mobilenetv3 Small.
-Although InceptionV3 is slightly over 2x the size of Mobilenetv3 Small, the difference in performance is clearly worth the trade-off in size.
-The lack of performance appears to mostly be down to the fact that Mobilenetv3 Small is a smaller model, and it is not able to learn as well as InceptionV3.
+Here's another graph that clearly shows the difference in performance between Inceptionv3 and MobilenetV3 Small.
+Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the difference in performance is clearly worth the trade-off in size.
+The lack of performance appears to mostly be down to the fact that MobilenetV3 Small is a smaller model, and it is not able to learn as well as InceptionV3.
 MobilenetV2 and V3 Large are mostly in line with the other models in terms of performance, however they are still not as good as InceptionV3.
 
 \pagebreak
@@ -691,8 +741,150 @@ To run the tests for the AutomatedTestingLibary run the following command:
 \end{lstlisting}
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
-The flower training notebook does not currently work as I am having issues with keras and the dataset (specifically the way it is loaded).
+The flower training notebook does not currently work as I am having issues with Keras and the dataset (specifically the way it is loaded).
 
+\chapter{Diary}
+
+
+\section*{19/10/2022}
+
+Today I have been deciding the specific classes of images I want to use for my project.
+I had initially intended on using only 1 class, however I have decided to use 2 classes instead as I think it will be more interesting to see the results of the pruning on 2 classes rather than 1,
+It will also demonstrate better the different strengths and weaknesses of the individual pruning methods.
+
+I have decided to use the following sets of images:
+
+% List the datasets
+\begin{itemize}
+  \item \href{https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz}{Flowers Dataset} 
+	This dataset is likely to be an easier dataset for the models to get high accuracy on, as the different flowers are quite distinct from each other.
+  \item  \href{https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset}{Alzheimer's Dataset}
+	This dataset is going to be more difficult for the models as the changes are more subtle between the different scan images, and the images are not as distinct from each other.
+\end{itemize}
+
+
+
+I am going to follow the tutorial \href{https://www.tensorflow.org/tutorials/images/classification}{here}
+which should help me to get a good understanding of how to use the datasets and how to train the models to start with.
+I have no prior experience training models so this will be a good starting point for me.
+I will then need to use parts of the code from the tutorial to transfer run the transfer learning.
+
+\section*{26/10/2022}
+
+
+Today I have been working on the transfer learning tutorial, I've made more progress through it and I've managed to get
+Mobilenetv3 to run on the flowers dataset, however I'm having some issues with the alzheimer's dataset.
+This is significant progress as this was a major blocker for me as I was not sure how to go forward with the prediction.
+
+\section*{01/11/2022}
+
+Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset, 
+with varying degrees of accuracy, around 80\% was the best I got however this was only after 5 epochs and was the first time I have tried transfer learning.
+
+
+\section*{09/11/2022}
+
+
+I had lost some of my git history for my diary, so I have had to rewrite some of the diary entries.
+I have found more flower dataset images here and I've decided to change over to this as soon as possible;
+https://www.kaggle.com/competitions/tpu-getting-started/overview
+
+\section*{14/11/2022}
+
+I am training the model "Mobilenetv3 Small" with the alzheimer's dataset, I have been able to get it to run and it is currently training.
+The power required to train the models is making it difficult to use trial and error for the parameters, so I am going to try and find a way to use the GPU on my laptop to train the models as soon as possible.
+I'm also going to optimise the way I am training the models as to not use more power than necessary. This means I've got to get a better understanding of the models I am training with and how they work.
+I have found this paper Seraching For MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244} which I think will be useful for me to read through and understand the structure of Mobilenetv3.
+
+\section*{15/11/2022}
+
+I've had trouble getting the Alzheimers classification to work with transfer learning, so I decided to try and run other people's code to see if I could get it to work.
+I have found that my transfer learning could be significantly more efficient and accurate if I use the existing code, so I'll have to try and identify where I went wrong with my code and make improvements.
+
+\section*{21/11/2022}
+
+Today I managed to get the accuracy up to 90% on the alzheimer's dataset, this is a significant improvement from the 60% I was getting before. My model appears to still be overfitting however this progress is good. This was done through transfer learning on the Mobilenetv3 small model.
+
+Output from the model during fine-tuning:
+\begin{lstlisting}
+  loss: 0.0314 - accuracy: 0.9883 - val_loss: 0.1337 - val_accuracy: 0.9036
+\end{lstlisting}
+
+\section*{22/11/2022}
+
+Here's some graphs of the model's predictions on the alzheimer's dataset:
+This graph was made using the MobilenetV3Small model and transfer learning on the Alzheimer's dataset, with all but 3 layers of the mobilenetv3 model frozen.
+![image](/images/better-output.png)
+% convert markdown to latex
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/better-output.png}
+  \caption{Graph of the model's predictions on the alzheimer's dataset}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/training.png}
+  \caption{Code used to generate the graph}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/positive-progress.png}
+  \caption{Positive progress from unfreezing all the layers of the model and "fine-tuning" the model}
+\end{figure}
+
+Here is a graph of where I was fine-tuning the model however I had overfitted the model and it was not generalising well to the test data:
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/fine-tuning-more.png}
+  \caption{Graph of where I was fine-tuning the model however I had overfitted the model and it was not generalising well to the test data}
+\end{figure}
+
+![image](./images/maxing-out.png)
+% convert markdown to latex
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/maxing-out.png}
+\end{figure}
+
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/mobilenetv3-first-attempt.png}
+  \caption{First attempt at training the mobilenetV3Large model after unfreezing all the layers}
+\end{figure}
+
+I have also setup my laptop properly using Manjaro Linux to train the models on the GPU, this should make it much easier to train the models and to try different parameters and should allow me to create a confusion matrix for different parameters.
+
+\section*{23/11/2022}
+
+I have achieved 99\% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
+I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
+This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
+
+\section*{27/11/2022}
+I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
+as I work. I discovered that my '99%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+models with images I have augmented myself.
+
+Soon I'll finish the Alzheimer's dataset training and I'll start working on the flowers dataset.
+
+\section*{28/11/2022}
+
+Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
+
+\section*{29/11/2022}
+
+Today I have decided to start work on the training and testing library which I can use to speed up training and increase reliability of my training, through unit tests and consistency.
+This library will allow me to adjust parameters for fitting and compilation to let me easily do hyperparameter tuning.
+
+\section*{1/12/2022}
+
+I have been working lots on my report and the training library, this has taken a while to get all the information I feel I need in my report, however I have now mostly finished it and will submit it soon.
+
+I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
 
 \chapter{Conclusion}
 
