@@ -92,3 +92,18 @@ as I work. I discovered that my '99%' accuracy was from the model learning the v
 models with images I have augmented myself.
 
 Soon I'll finish the Alzheimers dataset training and I'll start working on the flowers dataset.
+
+## 28/11/2022
+
+Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
+
+## 29/11/2022
+
+Today I have decided to start work on the training and testing library which I can use to speed up training and increase reliability of my training, through unit tests and consistency.
+This library will allow me to adjust parameters for fitting and compilation to let me easily do hyperparameter tuning.
+
+## 1/12/2022
+
+I have been working lots on my report and the training library, this has taken a while to get all the information I feel I need in my report, however I have now mostly finished it and will submit it soon.
+
+I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
