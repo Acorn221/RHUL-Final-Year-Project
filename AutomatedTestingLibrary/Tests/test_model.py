@@ -1,6 +1,7 @@
 import AutomatedTestingLibrary.Classes.AutomatedTesting as t
 import AutomatedTestingLibrary.Classes.Model as m
 from utils import MobileNetModel
+import json
 
 model = m.Model(MobileNetModel, "MobileNetV2")
 
@@ -27,3 +28,14 @@ def test_train():
 
 	# Check if the model is trained
 	assert model.sequentialModel.predict(automatedTesting.test_ds.next()[0]) is not None
+
+# Checking if the model history is saved
+def test_save():
+	# Save the model
+	model.saveHistory()
+
+	# Check if the JSON model history is saved
+
+	f = open(m.modelDir+model.modelName+'.json', "r")
+
+	assert json.load(f) is not None
