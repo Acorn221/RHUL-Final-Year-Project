@@ -82,6 +82,13 @@ Your project specification goes here.
 %%% Introduction
 \chapter{Introduction}
 
+My project is about the comparison of image classification models with transfer learning.
+In this report I shall cover the background of transfer learning, the models I have chosen to compare,
+the datasets I have chosen to use, the results of my experiments and the conclusions I have drawn from them.
+
+The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible.
+It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required.
+
 \chapter{Neural Networks}
 \begin{figure}[ht!]
   \centering
@@ -514,6 +521,7 @@ VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
 \section{My Development Environment}
+% TODO: make basic UML and talk about testing library
 I have used the following tools to develop this project:
 \begin{itemize}
     \item Python 3.8.5\cite{Python} - To run the code
@@ -621,6 +629,24 @@ L2 and L1 regularisation techniques work by adding a penalty to the weights of t
 Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc. 
 This helps to improve the accuracy of the model and reduce overfitting.
 \pagebreak
+
+\subsection{MobileNetv3 Small}
+
+Mobilenetv3 Small is the smallest model in size and is consistently the least accurate model and has the highest loss.
+
+% insert graph of loss
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=120mm]{images/mobilenet-v3-small-vs-inception-v3.png}
+  \caption{The last 30 epochs of the training results}
+\end{figure}
+
+Here's another graph that clearly shows the difference in performance between Inceptionv3 and Mobilenetv3 Small.
+Although InceptionV3 is slightly over 2x the size of Mobilenetv3 Small, the difference in performance is clearly worth the trade-off in size.
+The lack of performance appears to mostly be down to the fact that Mobilenetv3 Small is a smaller model, and it is not able to learn as well as InceptionV3.
+MobilenetV2 and V3 Large are mostly in line with the other models in terms of performance, however they are still not as good as InceptionV3.
+
+\pagebreak
 \subsection{The model sizes}
 
 Here's a bar chart comparing the sizes of the models in megabytes. 
@@ -649,6 +675,8 @@ Although the ResNet model managed to win the challenge, it is clear to see that 
 Both models were trained on the same dataset (ImageNet), however the imagenet dataset is very different to the Alzheimer's dataset.
 The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
 This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
+
+
 
 \chapter{Conclusion}
 
