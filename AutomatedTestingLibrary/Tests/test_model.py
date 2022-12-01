@@ -26,4 +26,4 @@ def test_train():
 	model.fit(automatedTesting.train_ds, automatedTesting.test_ds, epochs=1, steps_per_epoch=1)
 
 	# Check if the model is trained
-	assert model.sequentialModel.predict(automatedTesting.test_ds.next()[0][0].shape) is not None
+	assert model.sequentialModel.predict(automatedTesting.test_ds.next()[0]) is not None

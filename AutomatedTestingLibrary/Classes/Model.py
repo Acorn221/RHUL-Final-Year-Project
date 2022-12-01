@@ -24,7 +24,7 @@ class Model:
 		self.sequentialModel = self.modelCallback()
 
 	def saveHistory(self):
-		infoToSave = { 'history': self.history.history, 'epochs': self.epochs, 'trainingTime': self.trainingTime }
+		infoToSave = { 'history': self.history, 'epochs': self.epochs, 'trainingTime': self.trainingTime }
 		with open(modelDir+self.modelName+".json", "w+") as fp:
 				json.dump(infoToSave, fp)
 
