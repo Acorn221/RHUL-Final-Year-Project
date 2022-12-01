@@ -23,7 +23,7 @@ def test_train():
 	automatedTesting.loadTrainingData()
 
 	# Train the model
-	model.train(automatedTesting.train_ds, automatedTesting.test_ds, 1)
+	model.fit(automatedTesting.train_ds, automatedTesting.test_ds, 1)
 
 	# Check if the model is trained
 	assert model.model.predict(automatedTesting.test_ds.next()[0][0].shape) is not None

@@ -39,11 +39,17 @@ class Model:
 	def compileModel(self, optimizer, loss, metrics):
 		self.sequentialModel.compile(optimizer=optimizer, loss=loss, metrics=metrics)
 
-	def train(self, train_ds, test_ds, epochs):
+	"""
+		This middleware function is used to train the model
+		It also saves the history of the model, 
+	"""
+	def fit(self, train_ds, test_ds, **kwargs):
 		startTime = time.time()
-		history = self.sequentialModel.fit(train_ds, epochs=epochs, validation_data=test_ds)
+		history = self.sequentialModel.fit(train_ds, validation_data=test_ds, **kwargs)
 		self.mergeHistory(history.history)
-		self.epochs += epochs
+		if hasattr(kwargs, 'epochs'):
+			self.epochs += kwargs['epochs']
+
 		self.trainingTime += time.time() - startTime
 
 	def getSequentialModel(self):
