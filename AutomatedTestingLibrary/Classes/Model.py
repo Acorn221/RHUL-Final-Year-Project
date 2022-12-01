@@ -31,10 +31,13 @@ class Model:
 		self.sequentialModel.save(modelDir+self.modelName+".h5")
 
 	def mergeHistory(self, history):
-		# Get the union of dict1 and dict2
-		keys = set(self.history).union(history)
-		arr = []
-		self.history = dict((k, self.history.get(k, arr) + history.get(k, arr)) for k in keys)
+		if self.history is None:
+			self.history = history
+		else:
+			# Get the union of dict1 and dict2
+			keys = set(self.history).union(history)
+			arr = []
+			self.history = dict((k, self.history.get(k, arr) + history.get(k, arr)) for k in keys)
 
 	def compileModel(self, optimizer, loss, metrics):
 		self.sequentialModel.compile(optimizer=optimizer, loss=loss, metrics=metrics)
