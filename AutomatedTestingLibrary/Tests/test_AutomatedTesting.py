@@ -24,10 +24,14 @@ def test_start():
 def test_training_args():
 	trainingArgs = [
 		{
-			"epochs": 5,
-			"optimizer": keras.optimizers.Adam(learning_rate=0.001/(x * 10)),
-			"loss": keras.losses.CategoricalCrossentropy(),
-			"metrics": [keras.metrics.CategoricalAccuracy()]
+			"train": {
+				"epochs": 5,
+			},
+			"compile": {
+				"optimizer": keras.optimizers.Adam(learning_rate=0.001/(x * 10)),
+				"loss": keras.losses.CategoricalCrossentropy(),
+				"metrics": [keras.metrics.CategoricalAccuracy()]
+			}
 		}
 		for x in range(1, 3)]
 	# Start the automated testing
