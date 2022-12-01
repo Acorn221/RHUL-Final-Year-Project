@@ -1,11 +1,13 @@
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
 
+"""
+	This is the main class for the automated testing
+	It loads 1 model at a time, trains it, then saves it
+	This will save me time when I want to test a new model or set of models
+	It allows hyperparameter tuning with the training args
+"""
 class AutomatedTesting:
-	"""
-		This will be the main class that will be used to run the automated testing
-		It will take a list of models 
-	"""
 	def __init__(self, models, data_dir, output, augmentationParams=None, trainingArgs=None):
 		self.currentModel = None
 		self.models = models
@@ -51,6 +53,10 @@ class AutomatedTesting:
 			}
 		self.loadTrainingData()
 
+	"""
+		This loads the training data from the given directory,
+		after rescaling the images and augmenting them
+	"""
 	def loadTrainingData(self):
 		train_datagen = ImageDataGenerator(rescale=1./255,
 			**self.augmentationParams)

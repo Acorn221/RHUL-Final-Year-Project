@@ -10,6 +10,10 @@ modelDir = 'TrainedModels/'
 # TODO: allow quick and easy statistics to be generated
 # TODO: allow for models to be easily trained after a crash or interruption
 
+"""
+	This model class is used to store and easily process the model's training data
+	it times how long the model take to train and saves the training history and the model
+"""
 class Model:
 	def __init__(self, modelCallback, modelname):
 		self.modelCallback = modelCallback
@@ -20,9 +24,16 @@ class Model:
 		self.epochs = 0
 		self.trainingTime = 0
 
+	"""
+		This calls the model's callback function and returns the model
+	"""
 	def loadModel(self):
 		self.sequentialModel = self.modelCallback()
 
+	"""
+		Saves the model to the directory specified by modelDir
+		It saves a JSON and a .h5 file (which is the model)
+	"""
 	def saveHistory(self):
 		infoToSave = { 'history': self.history, 'epochs': self.epochs, 'trainingTime': self.trainingTime }
 		with open(modelDir+self.modelName+".json", "w+") as fp:
@@ -30,6 +41,11 @@ class Model:
 
 		self.sequentialModel.save(modelDir+self.modelName+".h5")
 
+
+	"""
+		This merges the history provided by the model fitting
+		It will append the objects internal arrays with the new data
+	"""
 	def mergeHistory(self, history):
 		if self.history is None:
 			self.history = history
