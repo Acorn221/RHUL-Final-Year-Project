@@ -6,14 +6,34 @@ class AutomatedTesting:
 		This will be the main class that will be used to run the automated testing
 		It will take a list of models 
 	"""
-	def __init__(self, models, data_dir, output, augmentationParams=None):
+	def __init__(self, models, data_dir, output, augmentationParams=None, trainingArgs=None):
 		self.currentModel = None
 		self.models = models
 		self.data_dir = data_dir
 		self.output = output
 		self.train_ds = None
-		self.done = False
 		self.test_ds = None
+		self.done = False
+		
+		# Setting the training arguments to the default if none are provided
+		if trainingArgs is None:
+			self.trainingArgs = [
+						{
+					"train": {
+						"epochs": 10,
+						"steps_per_epoch": 1,
+					},
+					"compile": {
+						"optimizer": keras.optimizers.Adam(learning_rate=0.001),
+						"loss": keras.losses.CategoricalCrossentropy(),
+						"metrics": [keras.metrics.CategoricalAccuracy()]
+					}
+				}
+			]
+		else:
+			self.trainingArgs = trainingArgs
+
+		# Setting the augmentation parameters to the default if none are provided
 		if augmentationParams is not None:
 			self.augmentationParams = augmentationParams
 		else:
@@ -54,6 +74,7 @@ class AutomatedTesting:
 	def loadModel(self, model=None):
 		if model is None:
 			model = self.models.pop(0)
+			model.loadModel()
 
 		self.currentModel = model
 	
@@ -65,11 +86,11 @@ class AutomatedTesting:
 	def start(self):
 		while len(self.models) > 0:
 			self.loadModel()
-			self.currentModel.loadModel()
-			self.currentModel.compileModel(optimizer=keras.optimizers.Adam(0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-			self.currentModel.train(self.train_ds, self.test_ds, 10)
-			self.currentModel.compileModel(optimizer=keras.optimizers.Adam(0.00001), loss='categorical_crossentropy', metrics=['accuracy'])
-			self.currentModel.train(self.train_ds, self.test_ds, 10)
+			# Loop through all the training arguments, and train the model with each set of arguments
+			for arg in self.trainingArgs:
+				self.currentModel.compileModel(**arg["compile"])
+				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"])
+			self.currentModel.saveModel(self.output)
 			self.currentModel.saveHistory()
 			self.currentModel = None
 
