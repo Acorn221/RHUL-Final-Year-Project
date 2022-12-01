@@ -102,7 +102,7 @@ The reason for this is that they are very good at learning complex patterns in d
 these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
 
 They are far more flexible than many of the traditional strategies for image classification, due to the fact they can adapt to new data and are
-resilliant to noise in the data or changes such as lighting or rotation.
+resilient to noise in the data or changes such as lighting or rotation.
 
 \pagebreak
 \section{What are the alternatives to Neural Networks in Image Classification}
@@ -114,11 +114,11 @@ that produce the best results.
 There are a number of different alternatives to Neural Networks, one common alternative is Support Vector Machines.
 Support Vector Machines are a type of supervised machine learning model that can be used for both classification and regression.
 They work by finding a hyperplane that separates the data into different classes, and then classifying new data based on which side of the hyperplane it is on.
-They are very good at classifying data that is linearly seperable, however they are not very good at classifying data that is not linearly seperable,
+They are very good at classifying data that is linearly separable, however they are not very good at classifying data that is not linearly separable,
 and they are also very sensitive to noise in the data.
 
 In one study using SVMs to classify Alzheimer's patients, the researchers managed to get an accuracy of 62.64\% using MRI scans of the brain.
-They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy.\cite{10.3389/fneur.2021.640696}
+They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy. \cite{10.3389/fneur.2021.640696}
 
 \subsection{Content Based Image Retrieval}
 Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar 
@@ -135,7 +135,7 @@ For example, if the target image was a blue sky with white clouds, then the algo
 images that had similar features such as a blue sky and white clouds to the target image.
 
 Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
-a study was done using this method to classify Alzheimer's patients and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
+a study was done using this method to classify Alzheimer's patients, and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
 
 For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
 This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
@@ -209,7 +209,7 @@ These models are all pre-trained on the ImageNet dataset, which contains 1.2 mil
 The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
 
 The choice of datasets is based on the fact that they are both image classification datasets they are both relatively small in classes and
-the they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
+they have a variety classes ranging in difficulty, which will allow me to compare the capabilities of the different models in a variety of different scenarios.
 
 \chapter{Transfer Learning}
 
@@ -259,14 +259,14 @@ The code for the transfer learning is shown below.
 
 The code above shows how to create a model using transfer learning,
 creating the model structure consists of adding the pre-trained model to the model, 
-and then adding a few layers on top of it. The flatten layer is used to flatten the output of the pre-trained model
+and then adding a few layers on top of it. The Flatten layer is used to flatten the output of the pre-trained model
 as that is the input for the fully connected layers. The fully connected layers are used to classify the images.
 
 The dropout layers are used to prevent overfitting, and the dense layers are used to classify the images.
 The dense layers are potentially the most important part of the model, as they are the ones that are actually learning about the dataset.
 They get trained on the features extracted by the pre-trained model, and the weights of the dense layers are what is used to classify the images.
 
-The final layer of the model is a softmax layer, which is used to classify the images.
+The final layer of the model is a Softmax layer, which is used to classify the images.
 It is used to classify the images into one of the classes in the dataset, in this example,
 the 4 levels of Alzheimer's disease that are in the Alzheimer's MRI Dataset.
 
@@ -304,11 +304,11 @@ Here is an example of how I fine-tuned a model using keras:
   model.compile(optimizer=optimizer, loss=loss, metrics=metrics)
 \end{verbatim}
 
-\section{The different structures of the models}
-There are so many different ways to structure a model and they can 
+%\section{The different structures of the models}
+%There are so many different ways to structure a model, and they can 
 
 \section{My training setup}
-For this project, I have setup my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
+For this project, I have set up my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
 I've chosen my laptop to do the training on due to it's powerful GPU, which is a NVIDIA GeForce GTX1070\cite{GTX1070}.
 This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
 Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
@@ -345,10 +345,10 @@ This can help to improve the performance of a model, as it can help to reduce ov
 The transformations that are applied to the images are usually random, and can include things like rotating the image, 
 flipping the image, or changing the contrast/saturation of the image.
 
-In the case of the Alzheimer's MRI Dataset, it is extremley useful to have more data to train the model on, as there are a limited number of brain scans available.
+In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available.
 MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
 
-In the Alzheimer's MRI Dataset, the majority of the archive is comprised of augmented images already however this caused me problems which I will go on to talk about.
+In the Alzheimer's MRI Dataset, the majority of the archive consists of augmented images already however this caused me problems which I will go on to talk about.
 With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
 
 \section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
@@ -430,7 +430,7 @@ The Alzheimer's MRI Dataset is a dataset that contains 4 different levels of Alz
 it contains 33984 images in the augmentation folder and the images are all 256x256 pixels in size.
 They require resizing to 224x224 pixels in order to be used with the pre-trained models as they are expecting images of that size.
 Not using all the resolution of the images is a problem as it could reduce the accuracy of the model,
-however it is a nessasary due to the models being trained on images of that size.
+however it is a necessary due to the models being trained on images of that size.
 It does however not seem to have a significant impact on the accuracy of the model, as I am still able to get a validation accuracy of 99.8\%.
 I could in the future potentially crop the black borders of the scans to increase the amount of useful data that is being passed to the model.
 
@@ -447,6 +447,8 @@ I have chosen this dataset as it contains a wide variety of images with differen
 which should help to test the generalisation of the model, along with the ability for the base model to extract features from the images.
 Per class, there are fewer examples than in the Alzheimer's MRI Dataset, however there are still enough to train the model on.
 This will be a good test for the various base models to see which one is the best at extracting features from the images.
+For the interim report, I did not use this dataset as I was having too many problems with it, and the training time
+was too long for me to be able to have adequate results for the interim report.
 
 \chapter{The different models that are being compared}
 % TODO: finish
@@ -479,7 +481,7 @@ I have used the following tools to develop this project:
 \begin{itemize}
     \item Python 3.8.5\cite{Python} - To run the code
     \item Jupyter Notebook\cite{Jupyter} - To help me develop the code and generate the graphs
-    \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my linux server and modify the code there quickly
+    \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my Linux server and modify the code there quickly
     \item GitLab\cite{RHULGitLab} - To store the code and to track the changes
     \item tmux\cite{tmux} - To run the code in the background
     \item CUDA\cite{CUDA} - To train the models on the GPU
@@ -506,8 +508,12 @@ I would then periodically SSH back into the server to check on the progress of t
 This wasn't ideal as I could have setup a canary to send me an email if there were any errors, however I didn't have time to do this.
 
 \section{Using Test Driven Development}
-The tests I wrote for my code were esentially just the graphs that I generated, as I was testing the code by generating the graphs
-and then checking that the graphs were looking correct. This was really the only way I could test the code, as the models take 10+ hours to train,
+I used PyTest\cite{PyTest} to test the code, and to make sure that everything was working as expected.
+This helped me quickly test and debug my code, I would write a test to define how I wanted my code to work, and then write the code to make the test pass.
+This sped up development as I could quickly test the code and make sure that it was working as expected.
+
+The other tests I wrote were making the graphs that I generated, as I was testing the code by generating the graphs
+and then checking that the graphs were looking correct. This was really the only way I could test the training code, as the models take 10+ hours to train,
 and I didn't have the time to train the models multiple times to see if unit tests that I had written were correct.
 
 In the future I would like to use unit tests as I could setup an automated pipeline to train the models and then run the unit tests,
@@ -517,10 +523,6 @@ and to test the code quicker.
 
 Aside from testing the models, I could setup unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an oppourtunity to write unit tests for the API, and to test the code that I would write for the API.
-
-
-\chapter{Optimising the training}
-% talk about the different optimizers and how they affect the performance of the models
 
 \section{Different learning rates}
 
@@ -539,7 +541,7 @@ A larger batch size will cause the model to learn quicker, however it will also 
 having a smaller batch size will cause the model to learn slower, however it will use less memory.
 When I started off, I did not understand the concept of batch sizes, and I was using a batch size of 1000, this lead to my training times
 being very long and I had to wait days for a model to train.
-I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8GB GPU\cite{GTX1070} doesn't often run out of memory.
+I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8 GB GPU\cite{GTX1070} doesn't often run out of memory.
 
 \section{Dataset Augmentation}
 
@@ -563,7 +565,7 @@ The graph shows the accuracy of the models on the validation set along with the 
 \end{figure}
 \pagebreak
 \subsection{InceptionV3}
-For my training results, when everything was working correctly, I was able to get a highest validation accuracy of 84\% and a loss lowest of 0.30.
+For my training results, when everything was working correctly, I was able to get the highest validation accuracy of 84\% and a loss lowest of 0.30.
 % Show the graphs of the training results
 \begin{figure}[ht!]
   \centering
@@ -584,7 +586,7 @@ This helps to improve the accuracy of the model and reduce overfitting.
 \pagebreak
 \subsection{The model sizes}
 
-Here's a barchart comparing the sizes of the models in megabytes. 
+Here's a bar chart comparing the sizes of the models in megabytes. 
 They are uncompressed and include the full model, after transfer learning.
 
 \begin{figure}[ht!]
@@ -608,7 +610,7 @@ Inceptionv3 is a 48 layer deep neural network, and was created by Google to comp
 
 Although the ResNet model managed to win the challenge, it is clear to see that Inceptionv3 is a far better model for this problem.
 Both models were trained on the same dataset (ImageNet), however the imagenet dataset is very different to the Alzheimer's dataset.
-The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images and they are all MRI scans, with only 4 classes.
+The imagenet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
 This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
 
 \chapter{Conclusion}
