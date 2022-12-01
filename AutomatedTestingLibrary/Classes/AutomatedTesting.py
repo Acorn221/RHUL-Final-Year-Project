@@ -12,6 +12,7 @@ class AutomatedTesting:
 		self.data_dir = data_dir
 		self.output = output
 		self.train_ds = None
+		self.done = False
 		self.test_ds = None
 		if augmentationParams is not None:
 			self.augmentationParams = augmentationParams
@@ -47,22 +48,31 @@ class AutomatedTesting:
 			class_mode='categorical',
 			subset='validation')
 			
-
+	"""
+		Called when a new model needs to be loaded, this will load the next model in the list
+	"""
 	def loadModel(self, model=None):
 		if model is None:
 			model = self.models.pop(0)
 
 		self.currentModel = model
 	
+	"""
+		This starts the automated testing
+		It will load the next model in the list and train it
+		It will stop when there are no more models in the list
+	"""
 	def start(self):
 		while len(self.models) > 0:
 			self.loadModel()
 			self.currentModel.loadModel()
 			self.currentModel.compileModel(optimizer=keras.optimizers.Adam(0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-			self.currentModel.train(self.trainingData, self.testingData, 10)
+			self.currentModel.train(self.train_ds, self.test_ds, 10)
 			self.currentModel.compileModel(optimizer=keras.optimizers.Adam(0.00001), loss='categorical_crossentropy', metrics=['accuracy'])
-			self.currentModel.train(self.trainingData, self.testingData, 10)
+			self.currentModel.train(self.train_ds, self.test_ds, 10)
 			self.currentModel.saveHistory()
 			self.currentModel = None
+
+		self.done = True
 
 
