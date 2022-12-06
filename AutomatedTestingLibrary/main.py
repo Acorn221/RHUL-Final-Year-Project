@@ -1,7 +1,9 @@
 import Classes.AutomatedTesting as t
 import Classes.Model as m
-from tensorflow.keras import layers, Sequential, Flatten, Dense, Dropout
-from tensorflow.keras.applications import MobileNetV2, InceptionModel
+import tensorflow
+from tensorflow.keras.layers import Flatten, Dense, Dropout
+from tensorflow.keras import Sequential
+from tensorflow.keras.applications import MobileNetV2, InceptionV3
 
 def MobileNetModel():
 		model = Sequential()
@@ -20,7 +22,7 @@ def MobileNetModel():
 
 def InceptionModel():
 		model = Sequential()
-		inception = InceptionModel(input_shape=(224, 224, 3), include_top=False, weights='imagenet')
+		inception = InceptionV3(input_shape=(224, 224, 3), include_top=False, weights='imagenet')
 
 		for layer in inception.layers:
 			layer.trainable = False
