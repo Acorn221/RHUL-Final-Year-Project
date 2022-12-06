@@ -1,1 +1,7 @@
 .vscode/settings.json
+automated-testing-training/completed/completed-models
+automated-testing-training/completed/completed-models-old
+AutomatedTestingLibrary/Tests/__pycache__
+AutomatedTestingLibrary/Classes/__pycache__
+AutomatedTestingLibrary/__pycache__
+TrainedModels

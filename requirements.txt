@@ -3,3 +3,7 @@ tensorflow
 tensorflow-gpu
 keras
 matplotlib
+kaggle
+scikit-learn
+tensorflow_datasets
+pytest 

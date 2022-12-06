@@ -79,3 +79,31 @@ Here is my first attempt at training the mobilenetV3Large model after unfreezing
 ![image](./images/mobilenetv3-first-attempt.png)
 
 I have also setup my laptop properly using Manjaro Linux to train the models on the GPU, this should make it much easier to train the models and to try different parameters and should allow me to create a confusion matrix for different parameters.
+
+## 23/11/2022
+
+I have achived 99% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
+I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
+This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
+
+## 27/11/2022
+I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
+as I work. I discovered that my '99%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+models with images I have augmented myself.
+
+Soon I'll finish the Alzheimers dataset training and I'll start working on the flowers dataset.
+
+## 28/11/2022
+
+Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
+
+## 29/11/2022
+
+Today I have decided to start work on the training and testing library which I can use to speed up training and increase reliability of my training, through unit tests and consistency.
+This library will allow me to adjust parameters for fitting and compilation to let me easily do hyperparameter tuning.
+
+## 1/12/2022
+
+I have been working lots on my report and the training library, this has taken a while to get all the information I feel I need in my report, however I have now mostly finished it and will submit it soon.
+
+I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
