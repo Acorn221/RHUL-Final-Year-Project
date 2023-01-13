@@ -15,7 +15,7 @@
 \def\supervisorname{Li Zhang}
 \def\degree{BSc (Hons) in Computer Science}
 \def\fullOrHalfUnit{Full Unit} % indicate if you are doing the project as a Full Unit or Half Unit
-\def\finalOrInterim{Interim Report} % indicate if this document is your Final Report or Interim Report
+\def\finalOrInterim{Final Report} % indicate if this document is your Final Report or Interim Report
 
 \begin{document}
 
@@ -30,7 +30,7 @@ This report has been prepared on the basis of my own work. Where other published
 
 \vskip3em
 
-Word Count: 7127
+Word Count: XXXX % TODO: Word count
 
 \vskip3em
 
@@ -42,7 +42,7 @@ Date of Submission: \today
 
 \vskip3em
 
-Video Link: \url{https://youtu.be/6HuzNkzfe-g}
+Video Link: % TODO: video
 
 \vskip3em
 
@@ -404,6 +404,8 @@ With the flower dataset however, I did apply data augmentation to the images, as
 \section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
 
 \subsection{The problems}
+% TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
+
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
 The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the 
 images were already augmented, and the validation set was made up of images that were in the training set, but 
@@ -710,7 +712,7 @@ They are uncompressed and include the full model, after transfer learning.
 \end{figure}
 
 From this graph, it's clear to see how large some of the models are in comparison to each other.
-The largest model, ResNet101 is just over 1GB in size and has a far worse accuracy than the top performing model, InceptionV3.
+The largest model, ResNet101 is just over 1 GB in size and has a far worse accuracy than the top performing model, InceptionV3.
 
 \begin{figure}[ht!]
   \centering
