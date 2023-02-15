@@ -115,6 +115,6 @@ https://www.oasis-brains.org/
 
 This dataset has more information about the patients, such as their sex, age and different scores on tests relating to the disease.
 
-This also allows me to predict whether or not a person has Alzheimer's from all of the MRI scans they have taken, rather than just one.
+This also allows me to predict whether or not a person has Alzheimer's from all the MRI scans they have taken, rather than just one.
 
 I hope to get this dataset working soon and to start training the models, and I'm aiming for at least a 90% accuracy on the validation dataset.
