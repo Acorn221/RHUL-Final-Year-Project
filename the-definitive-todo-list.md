@@ -31,4 +31,6 @@
   - [ ] Create a basic web interface for uploading and getting the predictions
 - [ ] The Report
   - [ ] The Diary
-  - [ ] Document the higher
+  - [ ] Document the different hyperparameter tuning
+  - [ ] Document the different ways of testing the model and showing its performance
+  - [ ] Talk about the web interface and it's potential uses
