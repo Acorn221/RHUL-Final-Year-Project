@@ -15,7 +15,7 @@
 \def\supervisorname{Li Zhang}
 \def\degree{BSc (Hons) in Computer Science}
 \def\fullOrHalfUnit{Full Unit} % indicate if you are doing the project as a Full Unit or Half Unit
-\def\finalOrInterim{Interim Report} % indicate if this document is your Final Report or Interim Report
+\def\finalOrInterim{Final Report} % indicate if this document is your Final Report or Interim Report
 
 \begin{document}
 
@@ -30,7 +30,7 @@ This report has been prepared on the basis of my own work. Where other published
 
 \vskip3em
 
-Word Count: 7127
+Word Count: XXXX % TODO: Word count
 
 \vskip3em
 
@@ -42,7 +42,7 @@ Date of Submission: \today
 
 \vskip3em
 
-Video Link: \url{https://youtu.be/6HuzNkzfe-g}
+Video Link: % TODO: video
 
 \vskip3em
 
@@ -61,7 +61,7 @@ Signature:
 %%% Your Abstract here
 
 \begin{abstract}
-
+  % TODO: Update abstract
   Transfer learning is a common, efficient method for training deep learning models.
   It involves using a pre-trained model to extract features from a dataset,
   and then training a new model on top of the extracted features.
@@ -404,6 +404,8 @@ With the flower dataset however, I did apply data augmentation to the images, as
 \section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
 
 \subsection{The problems}
+% TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
+
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
 The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the 
 images were already augmented, and the validation set was made up of images that were in the training set, but 
@@ -710,7 +712,7 @@ They are uncompressed and include the full model, after transfer learning.
 \end{figure}
 
 From this graph, it's clear to see how large some of the models are in comparison to each other.
-The largest model, ResNet101 is just over 1GB in size and has a far worse accuracy than the top performing model, InceptionV3.
+The largest model, ResNet101 is just over 1 GB in size and has a far worse accuracy than the top performing model, InceptionV3.
 
 \begin{figure}[ht!]
   \centering
@@ -892,34 +894,7 @@ I have made lots of graphs from the history of the models in training, this made
 
 \chapter{Conclusion}
 
-This project is a great learning experience for me, and I have learned a lot about transfer learning and how to implement it.
-Before I started this project, I had never used transfer learning before, and had only used pre-trained machine learning models for image classification.
-I have learned a lot about the different types of models, how they are structured, and how they can be used for transfer learning.
-
-
-\section{What I have learned}
-I have specifically learned how complex image classification models are structured, as they are far more complex than I had initially thought.
-I have also learned about augmentation, regularisation and hyperparameter tuning, and how they can be used to improve the accuracy of the models.
-In my final report I will try and use all these techniques to improve the accuracy of the models, and I will also try and use different base models to see if I can get better results.
-% talk about mobilenetv3
-
-\section{What I will do differently}
-I need to spend more time researching the different structures of the models, and how the optimal ways they can be used for transfer learning.
-This would help with optimising what layers should be frozen and which should be unfrozen at different stages of the training process.
-I should also have a consistent way of training the models on something more powerful than my laptop, as it takes a long time to train the models.
-When I have set up a faster training environment, I should create a database to store the training results, so that I can easily compare the different models,
-and it would allow me to do hyperparameter tuning and regularisation to improve the performance of the models without having to retrain them.
-
-\section{What I need to do next}
-After doing more research into the models structures, I will need to do more research into hyperparameter tuning and regularisation techniques.
-Hyperparameter tuning I feel is my best chance of further increasing the accuracy of the models, as this could potentially allow them to learn more from the data.
-
-I also want to see if combining the models outputs together, weighting their outputs based on their loss, and seeing if this gives me a better overall accuracy.
-I want to set up a basic webpage that I can use to monitor the training, and to see the accuracy of the models in real time and upload pictures to test the models.
-
-Lastly, I want to research possible ways to reduce the size of the models, as the current models are generally too large to be deployed on mobile devices.
-This would be a great way to use the models in real world applications,
-and I think I can use the knowledge I have gained in this project to help me achieve this.
+% TODO: Conclusion
 
 \newpage
 \printbibliography

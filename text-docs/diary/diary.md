@@ -107,3 +107,14 @@ This library will allow me to adjust parameters for fitting and compilation to l
 I have been working lots on my report and the training library, this has taken a while to get all the information I feel I need in my report, however I have now mostly finished it and will submit it soon.
 
 I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
+
+## 24/1/2023
+
+I've manually reviewed my dataset I'm using and I've found it to have multiple repeated images. Due to the poor quality of the dataset I'm using I've decided to use a different dataset for my project, which I believe is the original data from the corrupted dataset I was using.
+https://www.oasis-brains.org/
+
+This dataset has more information about the patients, such as their sex, age and different scores on tests relating to the disease.
+
+This also allows me to predict whether or not a person has Alzheimer's from all the MRI scans they have taken, rather than just one.
+
+I hope to get this dataset working soon and to start training the models, and I'm aiming for at least a 90% accuracy on the validation dataset.

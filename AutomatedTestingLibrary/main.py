@@ -5,6 +5,9 @@ from tensorflow.keras.layers import Flatten, Dense, Dropout
 from tensorflow.keras import Sequential
 from tensorflow.keras.applications import MobileNetV2, InceptionV3
 
+# The models have to be passed as a list of callable functions that return a model
+# This is because otherwise if they were all loaded at the same time, they would take up all the memory
+
 def MobileNetModel():
 		model = Sequential()
 		mobileNet = MobileNetV2(input_shape=(224, 224, 3), include_top=False, weights='imagenet')
@@ -34,6 +37,8 @@ def InceptionModel():
 		model.add(Dense(4, activation='softmax'))
 		
 		return model
+
+
 
 def main():
 	print(m.Model)

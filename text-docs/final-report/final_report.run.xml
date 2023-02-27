@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>interim_report.aux</file>
-      <file>interim_report-blx.bib</file>
+      <file>final_report.aux</file>
+      <file>final_report-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>interim_report.bbl</file>
+      <file>final_report.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,20 +67,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>interim_report</infile>
+      <infile>final_report</infile>
     </cmdline>
     <input>
-      <file>interim_report.aux</file>
+      <file>final_report.aux</file>
     </input>
     <output>
-      <file>interim_report.bbl</file>
+      <file>final_report.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>interim_report.bbl</file>
+      <file>final_report.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>interim_report.aux</file>
-      <file>interim_report-blx.bib</file>
+      <file>final_report.aux</file>
+      <file>final_report-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>refs.bib</file>

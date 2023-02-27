@@ -53,6 +53,3 @@
 \contentsline {section}{\numberline {8.2}Running the code}{29}{section.8.2}%
 \contentsline {chapter}{\numberline {9}Diary}{30}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Conclusion}{36}{chapter.10}%
-\contentsline {section}{\numberline {10.1}What I have learned}{36}{section.10.1}%
-\contentsline {section}{\numberline {10.2}What I will do differently}{36}{section.10.2}%
-\contentsline {section}{\numberline {10.3}What I need to do next}{36}{section.10.3}%
