@@ -118,3 +118,13 @@ This dataset has more information about the patients, such as their sex, age and
 This also allows me to predict whether or not a person has Alzheimer's from all the MRI scans they have taken, rather than just one.
 
 I hope to get this dataset working soon and to start training the models, and I'm aiming for at least a 90% accuracy on the validation dataset.
+
+## 15/02/2023
+
+I've downloaded the OASIS dataset 1 and I've created some graphs to analyse the data and to try and identify potential biases in the data. The main problem with it is that there are few MRI scans of people with Alzheimer's, and they're mostly old, which means if the model is given the age of the patient, it will cause bias with it, as it's more likely to be an older person with Alzheimer's in this dataset. I need to identify what different parameters given alongside the MRI scans in the dataset will cause bias with the model (primarily by giving the model the age of the patient).
+
+## 28/02/2023
+
+I have decided to create a web-UI for my project, this will allow me to easily show the results of the models and to allow people to upload their own images to test the models on. This should be easy to do with Flask and I hope to have it done soon.
+
+I've also started downloading the new OASIS dataset again after I ran out of space on my hard drive.
