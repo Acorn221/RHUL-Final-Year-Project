@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
 import '@/index.css';
 
-
+/**
+ * The different states that the app can be in,
+ * waitingForFile: The user has not selected an image to upload
+ * waitingForPrediction: The user has selected an image to upload, and the app is waiting for the server to respond
+ * predictionReceived: The server has responded with a prediction and the app is displaying it to the user
+ */
 enum states {
   waitingForFile,
   waitingForPrediction,
