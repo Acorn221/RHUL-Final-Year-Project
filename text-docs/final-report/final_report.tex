@@ -75,6 +75,7 @@ Signature:
 % TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
 % TODO: Summary of completed work
 % TODO: Insert or attach the diary
+% TODO: Remove all mentions of flowers dataset
 
 \chapter*{Project Specification}
 
@@ -651,7 +652,34 @@ This helps training the model as it allows the model to learn from a wider varie
 It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
 If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
 
-\chapter{My training results}
+\chapter{Identifying annd Mitigating Bias}
+
+The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
+% TODO: Talk about there being lots of old patients in the dataset, only the old ones have Alzheimer's generally
+
+\section{nWBV vs Age}
+Giving the age of the patient to the machine learning algorithm may allow for bias, this is because there are very few patients who are young and have Alzheimer's disease, in the dataset.
+This also means it would likely be problematic to give the normalized whole brain volume to the machine learning algorithm, as this is likely to be highly correlated with age, and will therefore allow for bias.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/nWBV-vs-Age.png}
+  \caption{The nWBV of the patients in the dataset}
+  \label{fig:nWBV-vs-Age}
+\end{figure}
+
+\clearpage
+\section{eTIV vs Age}
+This scatter graph is significantly more random than the one for age and whole brain volume, which means it is likely better to give to the machine learning algorithm, as it shouldn't give any strong indication of the age of the patient, and it should be useful for the machine learning algorithm.
+One potential issue with this parameter is that women are more likely to have Alzheimer's disease, and this graph shows how the men and women are separated, which may allow for bias based off of the gender of the patient.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/eTIV-vs-Age.png}
+  \caption{The eTIV of the patients in the dataset}
+  \label{fig:eTIV-vs-Age}
+\end{figure}
+
+\chapter{My initial training results}
 \subsection{The comparison of the different models}
 Here is a graph of all the different models that I have trained properly with the Alzheimer's dataset.
 The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
@@ -728,6 +756,9 @@ Although the ResNet model managed to win the challenge, it is clear to see that 
 Both models were trained on the same dataset (ImageNet), however the ImageNet dataset is very different to the Alzheimer's dataset.
 The ImageNet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
 This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
+
+\chapter{The new training results}
+% TODO: train the models again with the new dataset and parameters, then show the results here
 
 \chapter{How to run the code}
 
