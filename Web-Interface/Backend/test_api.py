@@ -36,3 +36,14 @@ def test_corrupted_image():
 			# Check that the response is valid
 			assert response.status_code == 400
 
+def test_MRI_image():
+	# Create a test client using the Flask application configured for testing
+	with app.test_client() as client:
+			# Send a GET request to the API endpoint
+			response = client.post('/predict', data=dict(file=(open(relativePath+'MRI_Scan.png', 'rb'), 'MRI_Scan.png')))
+			# Check that the response is valid
+			assert response.status_code == 200
+			# Check that the response is a JSON object
+			assert response.is_json
+			# Check that the JSON object contains the key 'prediction'
+			assert 'prediction' in response.get_json()
