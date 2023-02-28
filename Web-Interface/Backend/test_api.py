@@ -27,3 +27,12 @@ def test_not_image():
 			response = client.post('/predict', data=dict(file=(open(relativePath+'Not_An_Image.exe', 'rb'), 'Not_An_Image.exe')))
 			# Check that the response is valid
 			assert response.status_code == 400
+
+def test_corrupted_image():
+	# Create a test client using the Flask application configured for testing
+	with app.test_client() as client:
+			# Send a GET request to the API endpoint
+			response = client.post('/predict', data=dict(file=(open(relativePath+'corruptedImage.png', 'rb'), 'corruptedImage.png')))
+			# Check that the response is valid
+			assert response.status_code == 400
+
