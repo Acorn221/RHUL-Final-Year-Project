@@ -1,5 +1,8 @@
 from tensorflow import keras
 from keras.preprocessing.image import ImageDataGenerator
+import gc
+from keras import backend as k
+from keras.callbacks import Callback
 
 """
 	This is the main class for the automated testing
@@ -95,10 +98,15 @@ class AutomatedTesting:
 			# Loop through all the training arguments, and train the model with each set of arguments
 			for arg in self.trainingArgs:
 				self.currentModel.compileModel(**arg["compile"])
-				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"])
+				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"], callbacks=ClearMemory())
 			self.currentModel.saveHistory()
 			self.currentModel = None
 
 		self.done = True
 
 
+# Credits to https://stackoverflow.com/a/67138072/5758415
+class ClearMemory(Callback):
+    def on_epoch_end(self, epoch, logs=None):
+        gc.collect()
+        k.clear_session()
