@@ -1,11 +1,3 @@
-# My Web Project Template
+# The Web Interface
 
-This template uses:
- - [x] Yarn
- - [x] Typescript
- - [x] React
- - [x] Tailwind
- - [x] Absolute Paths ('@/components/MyComponent')
- - [x] Vite
- - [x] Github Pages, For Easy Deployment
- - [x] Eslint
+The goal with this web-interface is to have a basic GUI for anyone to upload MRI scans and get the prediction from the best model as to whether or not the scan is of a patient with Alzheimer's disease. 
