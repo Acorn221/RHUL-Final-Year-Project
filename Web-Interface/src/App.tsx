@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
+import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
 import '@/index.css';
+
 
 enum states {
   waitingForFile,
@@ -8,7 +9,7 @@ enum states {
   predictionReceived,
 }
 
-type prediction = {
+type predictionType = {
   isPositive: number;
 };
 
@@ -16,7 +17,7 @@ const App = () => {
   const [currentState, setCurrentState] = useState<states>(states.waitingForFile);
   // blob or undefined
   const [image, setImage] = useState<Blob | undefined>(undefined);
-  const [prediction, setPrediction] = useState<prediction | undefined>(undefined);
+  const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
 
   /**
    * Called when the user selects an image to upload
@@ -57,20 +58,23 @@ const App = () => {
         <div className="underline text-5xl">Alzheimer&apos;s Disease Predictor</div>
         <div className="m-5 text-left">
           <div className="text-2xl p-20 text-center bg-slate-300 hover:bg-slate-400 rounded-2xl select-none">
-            {states.waitingForFile === currentState && (
-            <div>
-              <input type="file" name="file" onChange={imageUploaded} className="" />
-              <br />
-              Drag and drop your MRI image here, or click to select the file
-            </div>
+            {currentState === states.waitingForFile && (
+              <div>
+                <input type="file" name="file" onChange={imageUploaded} className="" />
+                <br />
+                Drag and drop your MRI image here, or click to select the file
+              </div>
             )}
-            {states.waitingForPrediction === currentState && (
+            <XyzTransitionGroup xyz="fade delay-1" appearVisible={currentState === states.waitingForPrediction}>
+              {currentState === states.waitingForPrediction && (
               <div>
                 <div className="text-2xl">Processing image...</div>
                 <div className="text-xl">Please wait...</div>
               </div>
-            )}
-            {states.predictionReceived === currentState && (
+              )}
+            </XyzTransitionGroup>
+            <XyzTransitionGroup xyz="fade duration-1" appearVisible={currentState === states.waitingForPrediction}>
+              {states.predictionReceived === currentState && (
               <div>
                 <div className="text-2xl">Prediction received!</div>
                 <div className="text-xl">
@@ -79,7 +83,8 @@ const App = () => {
                   % of having Alzheimer&apos;s Disease
                 </div>
               </div>
-            )}
+              )}
+            </XyzTransitionGroup>
           </div>
         </div>
       </div>
