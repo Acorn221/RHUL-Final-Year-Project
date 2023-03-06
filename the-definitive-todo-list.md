@@ -14,6 +14,7 @@
 	- [ ] Use a grid search
 	- [ ] Use a random search
 	- [ ] Look more into hyperparameter tuning and model optimisation
+- [ ] use googlenet or efficentnet too
 
 ## On campus
 
@@ -34,3 +35,4 @@
   - [ ] Document the different hyperparameter tuning
   - [ ] Document the different ways of testing the model and showing its performance
   - [ ] Talk about the web interface and it's potential uses
+- [ ] Look for another dataset (medical imaging)
