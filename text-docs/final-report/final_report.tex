@@ -261,11 +261,8 @@ Fine-tuning involves training the new model on the dataset, but with a lower lea
 This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
 
 \section{The Datasets I will be using}
-The datasets I have chosen to use for this project are the Oxford 102 Flower Dataset\cite{OxfordFlowers102} and the Alzheimer's MRI Dataset\cite{AlzheimersDataset}.
-
-The choice of datasets is based off of the availability of the dataset, the complexity and the number of classes.
-The aim of the Alzheimer's dataset was to see if the model could learn subtle differences between the different classes, and if it could learn to classify the different classes.
-The aim with the Oxford flowers 102 dataset\cite{OxfordFlowers102} was to see how the models would perform with a wider variety of classes but more significant differences between the classes.
+The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
+This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
 
 \chapter{Transfer Learning}
 
@@ -369,6 +366,9 @@ I've chosen my laptop to do the training on due to it's powerful GPU, which is a
 This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
 Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
 as I can leave it to train overnight without having to constantly check on it.
+
+I have recently upgraded the GPU in my computer to an RTX 3080\cite{RTX3080}, which is a much more powerful GPU than the GTX1070, as it has more CUDA cores, a higher core clock, 2gb more of VRAM, and a much higher memory bandwidth. Alongside this, it has "RT Cores",
+these are designed to be used for ray tracing, which is a technique used to render realistic images, however they also can accelerate the training process.
 
 \chapter{Evaluating the performance}
 
@@ -483,27 +483,7 @@ to use to get the best possible results.
   \caption{Samples from the Alzheimer's MRI Dataset\cite{AlzheimersDataset}}
 \end{figure}
 
-The Alzheimer's MRI Dataset is a dataset that contains 4 different levels of Alzheimer's disease,
-it contains 33984 images in the augmentation folder and the images are all 256x256 pixels in size.
-They require resizing to 224x224 pixels in order to be used with the pre-trained models as they are expecting images of that size.
-Not using all the resolution of the images is a problem as it could reduce the accuracy of the model,
-however it is a necessary due to the models being trained on images of that size.
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=50mm,height=50mm]{images/flower1.jpg}
-  \includegraphics[width=50mm,height=50mm]{images/flower2.jpg}
-  \caption{Samples from the Oxford 102 Flower Dataset\cite{OxfordFlowers102}}
-\end{figure}
-
-The Oxford 102 Flower Dataset is a dataset that contains 102 different types of flowers,
-the images are all different sizes, with 3 channels for colour and are in the JPG format.
-I have chosen this dataset as it contains a wide variety of images with different backgrounds and lighting conditions,
-which should help to test the generalisation of the model, along with the ability for the base model to extract features from the images.
-Per class, there are fewer examples than in the Alzheimer's MRI Dataset, however there are still enough to train the model on.
-This will be a good test for the various base models to see which one is the best at extracting features from the images.
-For the interim report, I did not use this dataset as I was having too many problems with it, and the training time
-was too long for me to be able to have adequate results for the interim report.
+% TODO
 
 \chapter{The different models that are being compared}
 
@@ -559,7 +539,6 @@ which helps with the accuracy of the model, however it is also much slower than 
 VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
 VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
 
-% insert image of the VGG19 structure
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
@@ -598,11 +577,6 @@ I have used Jupyter Notebook to test the code, and to generate the graphs.
 This was the most useful tool for me as it allowed me to test the code quickly and easily,
 I had many issues with setting up the code as this was the first time I have trained any model.
 
-\section{Using tmux}
-I have used tmux to run the code in the background, this was useful as I could SSH into my server and run the code, and then disconnect from the server.
-I would then periodically SSH back into the server to check on the progress of the code, and to see if there were any errors.
-This wasn't ideal as I could have set up a canary to email me if there were any errors, however I didn't have time to do this.
-
 \section{Using Test Driven Development}
 I used PyTest\cite{PyTest} to test the code, and to make sure that everything was working as expected.
 This helped me quickly test and debug my code, I would write a test to define how I wanted my code to work, and then write the code to make the test pass.
@@ -619,6 +593,7 @@ and to test the code quicker.
 
 Aside from testing the models, I could set up unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
+% TODO: Talk about the api and the tests
 
 \section{Different learning rates}
 

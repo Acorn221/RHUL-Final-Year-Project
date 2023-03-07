@@ -335,16 +335,6 @@
     \endverb
   \endentry
 
-  \entry{OxfordFlowers102}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{title}{Oxford Flowers 102}
-    \verb{url}
-    \verb https://www.robots.ox.ac.uk/~vgg/data/flowers/102/
-    \endverb
-  \endentry
-
   \entry{PyTest}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -372,6 +362,17 @@
     \field{title}{RHUL GitLab}
     \verb{url}
     \verb https://gitlab.cim.rhul.ac.uk/
+    \endverb
+  \endentry
+
+  \entry{RTX3080}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{RTX 3080}
+    \verb{url}
+    \verb https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-308
+    \verb 0/
     \endverb
   \endentry
 
