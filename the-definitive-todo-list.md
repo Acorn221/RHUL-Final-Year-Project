@@ -44,3 +44,4 @@
   - [ ] Document the different ways of testing the model and showing its performance
   - [ ] Talk about the web interface and it's potential uses
 - [ ] Look for another dataset (medical imaging)
+  - [x] OASIS-3 - Gained access to the dataset
