@@ -118,3 +118,34 @@ This dataset has more information about the patients, such as their sex, age and
 This also allows me to predict whether or not a person has Alzheimer's from all the MRI scans they have taken, rather than just one.
 
 I hope to get this dataset working soon and to start training the models, and I'm aiming for at least a 90% accuracy on the validation dataset.
+
+## 15/02/2023
+
+I've downloaded the OASIS dataset 1 and I've created some graphs to analyse the data and to try and identify potential biases in the data. The main problem with it is that there are few MRI scans of people with Alzheimer's, and they're mostly old, which means if the model is given the age of the patient, it will cause bias with it, as it's more likely to be an older person with Alzheimer's in this dataset. I need to identify what different parameters given alongside the MRI scans in the dataset will cause bias with the model (primarily by giving the model the age of the patient).
+
+## 28/02/2023
+
+I have decided to create a web-UI for my project, this will allow me to easily show the results of the models and to allow people to upload their own images to test the models on. This should be easy to do with Flask and I hope to have it done soon.
+
+I've also started downloading the new OASIS dataset again after I ran out of space on my hard drive.
+
+## 5/03/2023
+
+I've purchased an RTX 3080 to help speed up my training and to allow me to train larger models. After installing this hardware, my training times have been significantly reduced, and I have 2 GB more v-ram to use.
+
+## 10/03/2023
+
+I have managed to get the OASIS-1 dataset training with transfer learning, as it's format is different to the dataset I was previously using (it's a collection of files, rather than 4 folders with the different categories of images in them). This was done through the Pandas library, using the dataframe class, along with the keras ImageDataGenerator class which helps me read the images from the dataset, along with batching them to be used in training (so my GPU doesn't run out of memory), as well as augmenting the images to help prevent overfitting.
+
+The performance of the model on the new dataset however is significantly lower than I would like. The previous dataset gave me false hope, as the repeated images were in the training and validation classes, giving me a far higher accuracy than I actually had. I will experiment with hyperparameter tuning and I will look into using the other information in the OASIS-1 dataset to help improve the accuracy of the model, as features in the OASIS model include
+```
+ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay
+```
+
+During this time, I've also managed to get ill, so I haven't been able to work on the project as much as I would like.
+
+## 14/03/2023
+
+To use the seperate parameters, alongside the MRI scans, I will need to create a custom model, which will take in the parameters, then I will also use the original transfer learning model, and combine the outputs of the two models to create a new model. This will allow me to use the parameters and the MRI scans, which will hopefully improve the accuracy of the model.
+
+Combining the models will be done through the Keras Model class, which allows me to create a new model from the outputs of other models, however I am struggling to pass the data to the new model, as I have had many errors when trying to pass the new data and the MRI scans to the model. I will continue to try and fix this issue today.

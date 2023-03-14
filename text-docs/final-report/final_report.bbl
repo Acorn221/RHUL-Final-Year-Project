@@ -325,6 +325,16 @@
     \endverb
   \endentry
 
+  \entry{OASIS}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{OASIS}
+    \verb{url}
+    \verb https://oasis-brains.org/#data
+    \endverb
+  \endentry
+
   \entry{OxfordFlowers102}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{O}

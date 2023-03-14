@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  14 MAR 2023 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  14 MAR 2023 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,7 +583,7 @@ Package biblatex Info: ... file 'final_report.bbl' found.
  (final_report.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
-<logo.pdf, id=187, 948.54375pt x 473.77pt>
+<logo.pdf, id=203, 948.54375pt x 473.77pt>
 File: logo.pdf Graphic file (type pdf)
 <use logo.pdf>
 Package pdftex.def Info: logo.pdf  used on input line 23.
@@ -591,7 +591,7 @@ Package pdftex.def Info: logo.pdf  used on input line 23.
  [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./logo.pdf>]
-<images/signature.jpg, id=206, 913.4125pt x 384.43625pt>
+<images/signature.jpg, id=222, 913.4125pt x 384.43625pt>
 File: images/signature.jpg Graphic file (type jpg)
 <use images/signature.jpg>
 Package pdftex.def Info: images/signature.jpg  used on input line 51.
@@ -628,7 +628,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [5
 
 ]
-Overfull \hbox (4.89122pt too wide) in paragraph at lines 121--122
+Overfull \hbox (4.89122pt too wide) in paragraph at lines 123--124
 \OT1/cmr/m/n/10.95 part-ment of In-for-ma-tion and Com-puter Sci-ence, Irvine, CA, 1999, http://kdd.ics.uci.edu. 
  []
 
@@ -638,18 +638,18 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/NeuralNetwork.png, id=289, 578.16pt x 297.36093pt>
+<images/NeuralNetwork.png, id=309, 578.16pt x 297.36093pt>
 File: images/NeuralNetwork.png Graphic file (type png)
 <use images/NeuralNetwork.png>
-Package pdftex.def Info: images/NeuralNetwork.png  used on input line 144.
+Package pdftex.def Info: images/NeuralNetwork.png  used on input line 146.
 (pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
 [8
 
  <./images/NeuralNetwork.png>] [9]
-<images/Principe_cbir.png, id=309, 699.36281pt x 262.73157pt>
+<images/Principe_cbir.png, id=329, 699.36281pt x 262.73157pt>
 File: images/Principe_cbir.png Graphic file (type png)
 <use images/Principe_cbir.png>
-Package pdftex.def Info: images/Principe_cbir.png  used on input line 217.
+Package pdftex.def Info: images/Principe_cbir.png  used on input line 219.
 (pdftex.def)             Requested size: 308.71106pt x 115.97507pt.
  [10 <./images/Principe_cbir.png>] [11]
 Chapter 3.
@@ -662,57 +662,57 @@ Chapter 4.
 [15
 
 ]
-<images/bad-training-result.png, id=383, 430.0065pt x 328.8285pt>
+<images/bad-training-result.png, id=403, 430.0065pt x 328.8285pt>
 File: images/bad-training-result.png Graphic file (type png)
 <use images/bad-training-result.png>
-Package pdftex.def Info: images/bad-training-result.png  used on input line 419.
+Package pdftex.def Info: images/bad-training-result.png  used on input line 421.
 (pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
  [16 <./images/bad-training-result.png>] [17]
-<images/ConfusionMatrix.png, id=409, 1054.94125pt x 747.79375pt>
+<images/ConfusionMatrix.png, id=429, 1054.94125pt x 747.79375pt>
 File: images/ConfusionMatrix.png Graphic file (type png)
 <use images/ConfusionMatrix.png>
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 465.
+Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 467.
 (pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
  [18 <./images/ConfusionMatrix.png (PNG copy)>]
-<images/moderateDemented.jpg, id=418, 200.75pt x 190.7125pt>
+<images/moderateDemented.jpg, id=438, 200.75pt x 190.7125pt>
 File: images/moderateDemented.jpg Graphic file (type jpg)
 <use images/moderateDemented.jpg>
-Package pdftex.def Info: images/moderateDemented.jpg  used on input line 479.
+Package pdftex.def Info: images/moderateDemented.jpg  used on input line 481.
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/mildDemented.jpg, id=419, 200.75pt x 190.7125pt>
+<images/mildDemented.jpg, id=439, 200.75pt x 190.7125pt>
 File: images/mildDemented.jpg Graphic file (type jpg)
 <use images/mildDemented.jpg>
-Package pdftex.def Info: images/mildDemented.jpg  used on input line 480.
+Package pdftex.def Info: images/mildDemented.jpg  used on input line 482.
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/flower1.jpg, id=421, 669.50125pt x 501.875pt>
+<images/flower1.jpg, id=441, 669.50125pt x 501.875pt>
 File: images/flower1.jpg Graphic file (type jpg)
 <use images/flower1.jpg>
-Package pdftex.def Info: images/flower1.jpg  used on input line 492.
+Package pdftex.def Info: images/flower1.jpg  used on input line 494.
 (pdftex.def)             Requested size: 142.26457pt x 142.26239pt.
-<images/flower2.jpg, id=422, 582.175pt x 501.875pt>
+<images/flower2.jpg, id=442, 582.175pt x 501.875pt>
 File: images/flower2.jpg Graphic file (type jpg)
 <use images/flower2.jpg>
-Package pdftex.def Info: images/flower2.jpg  used on input line 493.
+Package pdftex.def Info: images/flower2.jpg  used on input line 495.
 (pdftex.def)             Requested size: 142.25658pt x 142.26239pt.
  [19 <./images/moderateDemented.jpg> <./images/mildDemented.jpg> <./images/flower1.jpg> <./images/flower2.jpg>]
 Chapter 5.
-<images/MobileNetv3-structure.png, id=433, 2594.19188pt x 892.08281pt>
+<images/MobileNetv3-structure.png, id=453, 2594.19188pt x 892.08281pt>
 File: images/MobileNetv3-structure.png Graphic file (type png)
 <use images/MobileNetv3-structure.png>
-Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 527.
+Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 529.
 (pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
-<images/mobilenet-comparison.png, id=435, 2151.53813pt x 920.68968pt>
+<images/mobilenet-comparison.png, id=455, 2151.53813pt x 920.68968pt>
 File: images/mobilenet-comparison.png Graphic file (type png)
 <use images/mobilenet-comparison.png>
-Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 534.
+Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 536.
 (pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
 [20
 
  <./images/MobileNetv3-structure.png>]
-<images/VGG19-architecture.png, id=450, 1350.54562pt x 742.27313pt>
+<images/VGG19-architecture.png, id=470, 1350.54562pt x 742.27313pt>
 File: images/VGG19-architecture.png Graphic file (type png)
 <use images/VGG19-architecture.png>
-Package pdftex.def Info: images/VGG19-architecture.png  used on input line 563.
+Package pdftex.def Info: images/VGG19-architecture.png  used on input line 565.
 (pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
  [21 <./images/mobilenet-comparison.png> <./images/VGG19-architecture.png>]
 Chapter 6.
@@ -720,123 +720,144 @@ Chapter 6.
 
 ] [23] [24]
 Chapter 7.
-<images/good-training-acc-vs-val.png, id=495, 1193.9004pt x 699.5736pt>
-File: images/good-training-acc-vs-val.png Graphic file (type png)
-<use images/good-training-acc-vs-val.png>
-Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 660.
-(pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
+<images/nWBV-vs-Age.png, id=516, 416.2752pt x 312.2064pt>
+File: images/nWBV-vs-Age.png Graphic file (type png)
+<use images/nWBV-vs-Age.png>
+Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 667.
+(pdftex.def)             Requested size: 441.01773pt x 330.78pt.
 [25
 
+ <./images/nWBV-vs-Age.png>]
+<images/eTIV-vs-Age.png, id=524, 419.166pt x 312.2064pt>
+File: images/eTIV-vs-Age.png Graphic file (type png)
+<use images/eTIV-vs-Age.png>
+Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 678.
+(pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
+ [26
+
+ <./images/eTIV-vs-Age.png>]
+Chapter 8.
+<images/good-training-acc-vs-val.png, id=531, 1193.9004pt x 699.5736pt>
+File: images/good-training-acc-vs-val.png Graphic file (type png)
+<use images/good-training-acc-vs-val.png>
+Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 689.
+(pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
+[27
+
  <./images/good-training-acc-vs-val.png>]
-<images/inceptionv3-accuracy-vs-val-acc.png, id=503, 1171.4967pt x 654.7662pt>
+<images/inceptionv3-accuracy-vs-val-acc.png, id=539, 1171.4967pt x 654.7662pt>
 File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
 <use images/inceptionv3-accuracy-vs-val-acc.png>
-Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 670.
+Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 699.
 (pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
- [26 <./images/inceptionv3-accuracy-vs-val-acc.png>]
-<images/mobilenet-v3-small-vs-inception-v3.png, id=512, 1178.7237pt x 682.9515pt>
+ [28 <./images/inceptionv3-accuracy-vs-val-acc.png>]
+<images/mobilenet-v3-small-vs-inception-v3.png, id=548, 1178.7237pt x 682.9515pt>
 File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
 <use images/mobilenet-v3-small-vs-inception-v3.png>
-Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 693.
+Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 722.
 (pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
- [27 <./images/mobilenet-v3-small-vs-inception-v3.png>]
-<images/model-sizes.png, id=520, 791.3565pt x 344.0052pt>
+ [29 <./images/mobilenet-v3-small-vs-inception-v3.png>]
+<images/model-sizes.png, id=556, 791.3565pt x 344.0052pt>
 File: images/model-sizes.png Graphic file (type png)
 <use images/model-sizes.png>
-Package pdftex.def Info: images/model-sizes.png  used on input line 710.
+Package pdftex.def Info: images/model-sizes.png  used on input line 739.
 (pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
-<images/ResNet101-vs-Inceptionv3.png, id=521, 1182.3372pt x 677.8926pt>
+<images/ResNet101-vs-Inceptionv3.png, id=557, 1182.3372pt x 677.8926pt>
 File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
 <use images/ResNet101-vs-Inceptionv3.png>
-Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 719.
+Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 748.
 (pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
- [28 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>]
-Chapter 8.
-[29
-
-]
+ [30 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>]
 Chapter 9.
-[30
+[31
 
 ]
-Overfull \hbox (51.7374pt too wide) in paragraph at lines 816--817
+Chapter 10.
+[32
+
+]
+Chapter 11.
+[33
+
+]
+Overfull \hbox (51.7374pt too wide) in paragraph at lines 848--849
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<images/better-output.png, id=556, 399.4925pt x 279.0425pt>
+<images/better-output.png, id=596, 399.4925pt x 279.0425pt>
 File: images/better-output.png Graphic file (type png)
 <use images/better-output.png>
-Package pdftex.def Info: images/better-output.png  used on input line 827.
+Package pdftex.def Info: images/better-output.png  used on input line 859.
 (pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
-<images/training.png, id=557, 445.665pt x 668.4975pt>
+<images/training.png, id=597, 445.665pt x 668.4975pt>
 File: images/training.png Graphic file (type png)
 <use images/training.png>
-Package pdftex.def Info: images/training.png  used on input line 833.
+Package pdftex.def Info: images/training.png  used on input line 865.
 (pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
-<images/positive-progress.png, id=558, 387.4475pt x 279.0425pt>
+<images/positive-progress.png, id=598, 387.4475pt x 279.0425pt>
 File: images/positive-progress.png Graphic file (type png)
 <use images/positive-progress.png>
-Package pdftex.def Info: images/positive-progress.png  used on input line 839.
+Package pdftex.def Info: images/positive-progress.png  used on input line 871.
 (pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
-<images/fine-tuning-more.png, id=559, 393.47pt x 279.0425pt>
+<images/fine-tuning-more.png, id=599, 393.47pt x 279.0425pt>
 File: images/fine-tuning-more.png Graphic file (type png)
 <use images/fine-tuning-more.png>
-Package pdftex.def Info: images/fine-tuning-more.png  used on input line 847.
+Package pdftex.def Info: images/fine-tuning-more.png  used on input line 879.
 (pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/maxing-out.png, id=560, 393.47pt x 279.0425pt>
+<images/maxing-out.png, id=600, 393.47pt x 279.0425pt>
 File: images/maxing-out.png Graphic file (type png)
 <use images/maxing-out.png>
-Package pdftex.def Info: images/maxing-out.png  used on input line 855.
+Package pdftex.def Info: images/maxing-out.png  used on input line 887.
 (pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/mobilenetv3-first-attempt.png, id=561, 387.4475pt x 279.0425pt>
+<images/mobilenetv3-first-attempt.png, id=601, 387.4475pt x 279.0425pt>
 File: images/mobilenetv3-first-attempt.png Graphic file (type png)
 <use images/mobilenetv3-first-attempt.png>
-Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 861.
+Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 893.
 (pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
-[31] [32 <./images/better-output.png>] [33 <./images/training.png>] [34 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [35 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>]
-Chapter 10.
-[36
+[34] [35 <./images/better-output.png>] [36 <./images/training.png>] [37 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [38 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>]
+Chapter 12.
+[39
 
 ]
-Overfull \hbox (5.1628pt too wide) in paragraph at lines 901--901
+Overfull \hbox (5.1628pt too wide) in paragraph at lines 933--933
 []\OT1/cmr/m/it/10.95 Alzheimer's Dataset\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / www . kaggle . com / datasets / uraninjo / augmented -[]
  []
 
 
-Overfull \hbox (27.32025pt too wide) in paragraph at lines 901--901
+Overfull \hbox (27.32025pt too wide) in paragraph at lines 933--933
 []\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
  []
 
 
-Overfull \hbox (0.12296pt too wide) in paragraph at lines 901--901
+Overfull \hbox (0.12296pt too wide) in paragraph at lines 933--933
 []\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
  []
 
-[37
+[40
 
-] [38] (final_report.aux)
+] [41] (final_report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `final_report.out' has not changed.
-(rerunfilecheck)             Checksum: 5598BEA86507E3A98590244851273481;7744.
+(rerunfilecheck)             Checksum: B5FFE2B1CD5DA3DD5821AB54D07B76CE;8411.
 Package logreq Info: Writing requests to 'final_report.run.xml'.
 \openout1 = `final_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19123 strings out of 478338
- 335577 string characters out of 2837644
- 1005284 words of memory out of 3000000
- 37140 multiletter control sequences out of 15000+600000
+ 19157 strings out of 478338
+ 336267 string characters out of 2837644
+ 1005581 words of memory out of 3000000
+ 37162 multiletter control sequences out of 15000+600000
  478713 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,77p,1942b,1369s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,13n,77p,1942b,1423s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_report.pdf (39 pages, 2807985 bytes).
+Output written on final_report.pdf (42 pages, 2912926 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 206 named destinations out of 1000 (max. 500000)
- 489 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 
