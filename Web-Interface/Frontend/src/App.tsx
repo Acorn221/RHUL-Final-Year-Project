@@ -2,7 +2,14 @@
 import React, { useEffect, useState } from 'react';
 import { XyzTransitionGroup } from '@animxyz/react';
 import '@/index.css';
+
 import Slider from '@mui/material/Slider';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import Button from '@mui/material/Button';
 
 /**
  * The different states that the app can be in,
@@ -28,6 +35,8 @@ const App = () => {
   const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
 
   const [age, setAge] = useState<number>(50);
+  const [sex, setSex] = useState<string>('male');
+  const [MMSE, setMMSE] = useState<number>(15);
 
   /**
    * Called when the user selects an image to upload
@@ -77,12 +86,18 @@ const App = () => {
             )}
             <XyzTransitionGroup xyz="fade delay-1" appearVisible={currentState === states.waitingForPrediction}>
               {currentState === states.waitingForData && (
-              <div>
+              <div className="flex flex-col space-y-5">
                 <div className="text-2xl">Please enter the following details:</div>
                 <div className="text-xl">
                   <div className="flex justify-center m-3">
                     <div className="flex flex-col w-1/2">
-                      <label htmlFor="age">Age {age} years old</label>
+                      <label htmlFor="age">
+                        Age
+                        {' '}
+                        {age}
+                        {' '}
+                        years old
+                      </label>
                       <Slider
                         className="m-5"
                         value={age}
@@ -91,10 +106,49 @@ const App = () => {
                         }}
                         aria-label="Default"
                         valueLabelDisplay="off"
-                        range={{ min: 0, max: 120 }}
+                        min={0}
+                        max={120}
                       />
                     </div>
                   </div>
+                  <div className="flex justify-center m-3">
+                    <FormControl>
+                      <FormLabel id="demo-radio-buttons-group-label">Sex</FormLabel>
+                      <RadioGroup
+                        aria-labelledby="demo-radio-buttons-group-label"
+                        defaultValue=""
+                        name="radio-buttons-group"
+                        value={sex}
+                        onChange={(evt, val) => setSex(val)}
+                      >
+                        <FormControlLabel value="male" control={<Radio />} label="Male" />
+                        <FormControlLabel value="female" control={<Radio />} label="Female" />
+                      </RadioGroup>
+                    </FormControl>
+                  </div>
+                </div>
+                <div className="flex justify-center m-3">
+                  <div className="flex flex-col w-1/2 text-xl">
+                    <label htmlFor="MMSE">
+                      MMSE Score:
+                      {' '}
+                      {MMSE}
+                    </label>
+                    <Slider
+                      className="m-5"
+                      value={MMSE}
+                      onChange={(event, newValue) => {
+                        setMMSE(newValue as number);
+                      }}
+                      aria-label="Default"
+                      valueLabelDisplay="off"
+                      min={0}
+                      max={30}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <Button variant="contained">Submit</Button>
                 </div>
               </div>
               )}
