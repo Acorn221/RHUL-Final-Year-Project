@@ -88,7 +88,7 @@ const App = () => {
               {currentState === states.waitingForData && (
               <div className="flex flex-col space-y-5">
                 <div className="text-2xl">Please enter the following details:</div>
-                <div className="text-xl">
+                <div className="text-2xl">
                   <div className="flex justify-center m-3">
                     <div className="flex flex-col w-1/2">
                       <label htmlFor="age">
@@ -128,7 +128,7 @@ const App = () => {
                   </div>
                 </div>
                 <div className="flex justify-center m-3">
-                  <div className="flex flex-col w-1/2 text-xl">
+                  <div className="flex flex-col w-1/2 text-2xl">
                     <label htmlFor="MMSE">
                       MMSE Score:
                       {' '}
@@ -147,8 +147,8 @@ const App = () => {
                     />
                   </div>
                 </div>
-                <div>
-                  <Button variant="contained">Submit</Button>
+                <div className="w-full">
+                  <Button variant="contained" size="large" className="w-1/2 h-20">Submit</Button>
                 </div>
               </div>
               )}
