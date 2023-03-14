@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useState } from 'react';
-import { XyzTransition, XyzTransitionGroup } from '@animxyz/react';
+import { XyzTransitionGroup } from '@animxyz/react';
 import '@/index.css';
+import Slider from '@mui/material/Slider';
 
 /**
  * The different states that the app can be in,
@@ -10,6 +12,7 @@ import '@/index.css';
  */
 enum states {
   waitingForFile,
+  waitingForData,
   waitingForPrediction,
   predictionReceived,
 }
@@ -24,6 +27,8 @@ const App = () => {
   const [image, setImage] = useState<Blob | undefined>(undefined);
   const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
 
+  const [age, setAge] = useState<number>(50);
+
   /**
    * Called when the user selects an image to upload
    * @param event The event that triggered this function
@@ -32,7 +37,7 @@ const App = () => {
   const imageUploaded = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files === null) return;
     setImage(event.target.files[0]);
-    setCurrentState(states.waitingForPrediction);
+    setCurrentState(states.waitingForData);
   };
 
   /**
@@ -62,7 +67,7 @@ const App = () => {
       <div className="bg-white m-auto p-10 rounded-xl w-3/4 md:w-1/2 text-center">
         <div className="underline text-5xl">Alzheimer&apos;s Disease Predictor</div>
         <div className="m-5 text-left">
-          <div className="text-2xl p-20 text-center bg-slate-300 hover:bg-slate-400 rounded-2xl select-none">
+          <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-2xl rounded-2xl select-none">
             {currentState === states.waitingForFile && (
               <div>
                 <input type="file" name="file" onChange={imageUploaded} className="" />
@@ -70,6 +75,30 @@ const App = () => {
                 Drag and drop your MRI image here, or click to select the file
               </div>
             )}
+            <XyzTransitionGroup xyz="fade delay-1" appearVisible={currentState === states.waitingForPrediction}>
+              {currentState === states.waitingForData && (
+              <div>
+                <div className="text-2xl">Please enter the following details:</div>
+                <div className="text-xl">
+                  <div className="flex justify-center m-3">
+                    <div className="flex flex-col w-1/2">
+                      <label htmlFor="age">Age {age} years old</label>
+                      <Slider
+                        className="m-5"
+                        value={age}
+                        onChange={(event, newValue) => {
+                          setAge(newValue as number);
+                        }}
+                        aria-label="Default"
+                        valueLabelDisplay="off"
+                        range={{ min: 0, max: 120 }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              )}
+            </XyzTransitionGroup>
             <XyzTransitionGroup xyz="fade delay-1" appearVisible={currentState === states.waitingForPrediction}>
               {currentState === states.waitingForPrediction && (
               <div>
