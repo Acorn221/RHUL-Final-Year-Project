@@ -76,7 +76,8 @@ Signature:
 % TODO: Summary of completed work
 % TODO: Insert or attach the diary
 % TODO: Remove all mentions of flowers dataset
-% TODO: Add explanations of ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay and what I will/wont use and why
+% TODO: Change secion on exiting data, say that it is to be disregarded
+
 
 \chapter*{Project Specification}
 
@@ -468,6 +469,10 @@ train_datagen = ImageDataGenerator(rescale=1./255,
 \end{lstlisting}
 
 \pagebreak
+
+This however did not solve all my problems, as the model was still overfitting. This ended up being a problem with the dataset, as even with the "original images" that were provided, there were still images that were repeated, and aside from the overfitting problems this caused, it also meant that my validation set had images that were in the training set, and this gave me very high validation accuracy.
+
+This was then solved by going directly with the OASIS-1 dataset, and using the images that were provided there. I was hesitant to do this at first, as there was more pre-processing required to format the data in the way that I wanted it, but it has now allowed me to train my models without getting false results.
 
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
