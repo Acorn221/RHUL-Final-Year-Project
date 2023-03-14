@@ -260,9 +260,29 @@ After the new model is trained on top, a process known as fine-tuning can be use
 Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
 This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
 
-\section{The Datasets I will be using}
+\chapter{The Datasets I will be using}
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
 This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
+
+\section{The Contents of the Dataset}
+This information is from the fact sheet, associated with the dataset. \cite{OASISFactSheet}
+The OASIS-1 dataset contains a few different associated parameters, as listed here from the CSV:
+
+`ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay`
+
+\begin{itemize}
+  \item ID: The ID of the patient
+  \item `M/F`: The gender of the patient
+  \item `Hand`: The primary hand of the patient
+  \item `Age`: The age of the patient
+  \item `Educ`: The education level of the patient 1: less than high school grad., 2:High school grad., 3: some college, 4: college grad., 5: beyond college
+  \item `SES`: The socioeconomic status of the patient
+  \item `MMSE`: The Mini-Mental State Examination score of the patient
+  \item `CDR`: The Clinical Dementia Rating score of the patient
+  \item `eTIV`: The Estimated Total Intracranial Volume of the patient
+  \item `nWBV`: The normalized whole brain volume of the patient
+  \item `ASF`: The Atlas Scaling Factor of the patient
+\end{itemize}
 
 \chapter{Transfer Learning}
 
