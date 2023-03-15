@@ -149,3 +149,7 @@ During this time, I've also managed to get ill, so I haven't been able to work o
 To use the seperate parameters, alongside the MRI scans, I will need to create a custom model, which will take in the parameters, then I will also use the original transfer learning model, and combine the outputs of the two models to create a new model. This will allow me to use the parameters and the MRI scans, which will hopefully improve the accuracy of the model.
 
 Combining the models will be done through the Keras Model class, which allows me to create a new model from the outputs of other models, however I am struggling to pass the data to the new model, as I have had many errors when trying to pass the new data and the MRI scans to the model. I will continue to try and fix this issue today.
+
+# 15/03/2023
+
+I have had many problems combining the age, gender and other information about the patients with the MRI scans, the problem lies with the fit function of the model as the method I was using to get the images from the dataset originally, did not allow for other data to be included as an input for the model. I have now created my own generator class and intend to use that to get the data from the dataset and pass it to the model.
