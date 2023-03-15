@@ -58,6 +58,9 @@ const App = () => {
       const formData = new FormData();
       if (image === undefined) return;
       formData.append('file', image);
+      formData.append('age', age.toString());
+      formData.append('sex', sex);
+      formData.append('MMSE', MMSE.toString());
       fetch('http://localhost:3001/predict', {
         method: 'POST',
         body: formData,
@@ -84,7 +87,7 @@ const App = () => {
                 Drag and drop your MRI image here, or click to select the file
               </div>
             )}
-            <XyzTransitionGroup xyz="fade delay-1" appearVisible={currentState === states.waitingForPrediction}>
+            <XyzTransitionGroup xyz="fade" appearVisible={currentState === states.waitingForPrediction}>
               {currentState === states.waitingForData && (
               <div className="flex flex-col space-y-5">
                 <div className="text-2xl">Please enter the following details:</div>
@@ -137,8 +140,8 @@ const App = () => {
                     <Slider
                       className="m-5"
                       value={MMSE}
-                      onChange={(event, newValue) => {
-                        setMMSE(newValue as number);
+                      onChange={(evt, val) => {
+                        setMMSE(val as number);
                       }}
                       aria-label="Default"
                       valueLabelDisplay="off"
@@ -148,7 +151,7 @@ const App = () => {
                   </div>
                 </div>
                 <div className="w-full">
-                  <Button variant="contained" size="large" className="w-1/2 h-20">Submit</Button>
+                  <Button variant="contained" size="large" className="w-1/2 h-20" onClick={() => setCurrentState(states.waitingForPrediction)}>Submit</Button>
                 </div>
               </div>
               )}
