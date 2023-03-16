@@ -13,10 +13,10 @@
     - The model just needs more information, it's not learning well with just the MRI scans and standard transfer learning
   - [x] See if classification or regression is better for it
     - Classification appears to yeild better results, as the dataset essentially has just 4 classes
-- [ ] Get the training with the MRI image and the other data in the OASIS-1 dataset
+- [z] Get the training with the MRI image and the other data in the OASIS-1 dataset
   - [x] Create a sub-model for the other data
   - [x] Combine the two models
-  - [ ] Feed the data to the new model, in the correct format
+  - [x] Feed the data to the new model, in the correct format
 - [ ] Use better methods of analysis for the performance
   - [ ] Confusion Matrices
 - [ ] Hyperparameter tuning
@@ -25,7 +25,7 @@
 	- [ ] Look more into hyperparameter tuning and model optimisation
 - [ ] Setup the OASIS-3 Dataset
   - [ ] Download and extract the dataset
-  - [ ] Find out how to read and interpret the dataset
+  - [x] Find out how to read and interpret the dataset
   - [ ] Parse the dataset into a usable format, to be used by keras
   - [ ] See if training with the OASIS-3 dataset is better
 
@@ -45,7 +45,7 @@
 - [ ] Create a web interface for uploading MRI scans and getting the results
   - [ ] Set up a flask API
     - [ ] Create tests for the API
-  - [ ] Create a basic web interface for uploading and getting the predictions
+  - [x] Create a basic web interface for uploading and getting the predictions
 - [ ] The Report
   - [ ] The Diary
   - [ ] Document the different hyperparameter tuning
