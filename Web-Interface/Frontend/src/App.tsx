@@ -36,7 +36,7 @@ const App = () => {
 
   const [age, setAge] = useState<number>(50);
   const [sex, setSex] = useState<string>('male');
-  const [MMSE, setMMSE] = useState<number>(15);
+  const [mmse, setMMSE] = useState<number>(15);
 
   /**
    * Called when the user selects an image to upload
@@ -60,7 +60,7 @@ const App = () => {
       formData.append('file', image);
       formData.append('age', age.toString());
       formData.append('sex', sex);
-      formData.append('MMSE', MMSE.toString());
+      formData.append('mmse', mmse.toString());
       fetch('http://localhost:3001/predict', {
         method: 'POST',
         body: formData,
@@ -132,14 +132,14 @@ const App = () => {
                 </div>
                 <div className="flex justify-center m-3">
                   <div className="flex flex-col w-1/2 text-2xl">
-                    <label htmlFor="MMSE">
+                    <label htmlFor="mmse">
                       MMSE Score:
                       {' '}
-                      {MMSE}
+                      {mmse}
                     </label>
                     <Slider
                       className="m-5"
-                      value={MMSE}
+                      value={mmse}
                       onChange={(evt, val) => {
                         setMMSE(val as number);
                       }}
