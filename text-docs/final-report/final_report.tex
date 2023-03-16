@@ -391,10 +391,11 @@ as I can leave it to train overnight without having to constantly check on it.
 I have recently upgraded the GPU in my computer to an RTX 3080\cite{RTX3080}, which is a much more powerful GPU than the GTX1070, as it has more CUDA cores, a higher core clock, 2gb more of VRAM, and a much higher memory bandwidth. Alongside this, it has "RT Cores",
 these are designed to be used for ray tracing, which is a technique used to render realistic images, however they also can accelerate the training process.
 
-\chapter{Data Preprocessing}
+\chapter{Data Importing and Preprocessing}
 
-% TODO: move from the SE chapter to the DL chapter
-\section{Batch sizes}
+\section{Formatting and converting the data}
+Clinica is a python library that can be used to convert the MRI scans in the different formats into the BIDS format\cite{BIDS}.
+This significantly speeds up development as the standardised BIDS format lets me use the same code for the different datasets, as well as allowing me to use pre existing tools to import the data and preprocess it, ready for training.
 
 \section{Dataset Augmentation}
 
