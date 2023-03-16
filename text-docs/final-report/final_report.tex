@@ -398,8 +398,12 @@ these are designed to be used for ray tracing, which is a technique used to rend
 \chapter{Data Importing and Preprocessing}
 
 \section{Formatting and converting the data}
-Clinica\cite{SAMPERGONZALEZ2018504} is a python library that can be used to convert the MRI scans in the different formats into the BIDS format\cite{BIDS}.
+Clinica\cite{SAMPERGONZALEZ2018504} is a python library that can be used to convert the MRI scans in the different formats into the BIDS format\cite{Gorgolewski2016}.
 This significantly speeds up development as the standardised BIDS format lets me use the same code for the different datasets, as well as allowing me to use pre existing tools to import the data and preprocess it, ready for training.
+
+MRI data can be complicated and before the BIDS standardisation, it was significantly more difficult for researchers to share data with each other. It contains information such as the manufacturer of the scanner, the model of the scanner, the software associated with the scanner and version, then other parameters about the setup of the scanner, such as the field strength and the number of channels.\cite{BIDS_metadata}
+
+Whilst I have not used the BIDS standard for all the datasets in this project, I feel that it is very useful and I will be using it for all the future datasets that I use.
 
 \section{Dataset Augmentation}
 
