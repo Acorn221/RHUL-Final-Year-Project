@@ -246,6 +246,9 @@ They are often much more efficient than other types of neural networks, and are 
 % Talk about the different types of layers specifically
 % Include a diagram of a CNN
 
+\section{Using an LSTM for classification with MRI scans}
+An LSTM (Long Short Term Memory) network is a type of recurrent neural network that is used for time series prediction, it is typically not used with transfer learning as it is not as efficient as other types of neural networks. The specific LSTM structure allows for multiple MRI scans to be used as input to the model, and the model, so it would be able to classify the Alzheimer's CDR score more accurately, as it could take into account more scans, using the raw scan information, instead of the pre-processed data that I would otherwise have to use with regular CNN model that I could use with transfer learning.
+
 
 \section{What transfer learning is}
 Transfer learning is a common, efficient method for training deep learning models.
