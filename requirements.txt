@@ -6,4 +6,6 @@ matplotlib
 kaggle
 scikit-learn
 tensorflow_datasets
-pytest 
+pytest
+werkzeug
+flask
