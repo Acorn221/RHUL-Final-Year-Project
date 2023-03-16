@@ -1,6 +1,6 @@
 # This is to test the API, by uploading an image of the MRI scan and checking what it responds with
 # Import the Flask testing library
-from Web-Interface.Backend.main import app
+from Backend.main import app
 
 # This is needed as the pytest command should be ran from the root of the project
 relativePath = "Web-Interface/Backend/Test_Files/"
