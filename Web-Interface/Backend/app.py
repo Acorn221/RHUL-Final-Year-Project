@@ -1,5 +1,6 @@
 # Import flask for API
 from flask import Flask, request, jsonify
+from werkzeug.utils import secure_filename
 
 # Import keras and other libraries for processing the MRI image
 from keras.models import load_model
@@ -10,8 +11,8 @@ import tensorflow as tf
 # Define the flask app
 app = Flask(__name__)
 
-# Load the model
-model = load_model('model.h5')
+# Load the model TODO: add model to test with 
+#model = load_model('model.h5')
 
 # Define the function to predict the class of the MRI image
 def predict_class(img_path, model):
@@ -26,12 +27,18 @@ def predict_class(img_path, model):
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
 	# Get the file from the request
-	file = request.files['file']
+	uploadedFile = request.files['file']
 	# Save the file to ./uploads
-	filepath = './uploads/' + file.filename
-	file.save(filepath)
-	# Make prediction
-	prediction = predict_class(filepath, model)
+	filepath = './uploads/' + secure_filename(uploadedFile.filename)
+	uploadedFile.save(filepath)
+
+	age = request.form['age']
+	sex = request.form['sex']
+	mmse = request.form['mmse']
+	
+	# Make prediction TODO: make prediction
+	# prediction = predict_class(filepath, model)
+	prediction = {'0': '0.0', '1': '0.82', '2': '0.18', '3': '0.01'}
 	# Convert the response to a string
 	response = str(prediction)
 	return response
