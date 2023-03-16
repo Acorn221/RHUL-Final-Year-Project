@@ -349,6 +349,19 @@
   title = {Clinica},
   url   = {https://github.com/aramis-lab/clinica}
 }
+@article{SAMPERGONZALEZ2018504,
+title = {Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data},
+journal = {NeuroImage},
+volume = {183},
+pages = {504-521},
+year = {2018},
+issn = {1053-8119},
+doi = {https://doi.org/10.1016/j.neuroimage.2018.08.042},
+url = {https://www.sciencedirect.com/science/article/pii/S1053811918307407},
+author = {Jorge Samper-González and Ninon Burgos and Simona Bottani and Sabrina Fontanella and Pascal Lu and Arnaud Marcoux and Alexandre Routier and Jérémy Guillon and Michael Bacci and Junhao Wen and Anne Bertrand and Hugo Bertin and Marie-Odile Habert and Stanley Durrleman and Theodoros Evgeniou and Olivier Colliot},
+keywords = {Classification, Reproducibility, Alzheimer's disease, Magnetic resonance imaging, Positron emission tomography, Open-source},
+abstract = {A large number of papers have introduced novel machine learning and feature extraction methods for automatic classification of Alzheimer's disease (AD). However, while the vast majority of these works use the public dataset ADNI for evaluation, they are difficult to reproduce because different key components of the validation are often not readily available. These components include selected participants and input data, image preprocessing and cross-validation procedures. The performance of the different approaches is also difficult to compare objectively. In particular, it is often difficult to assess which part of the method (e.g. preprocessing, feature extraction or classification algorithms) provides a real improvement, if any. In the present paper, we propose a framework for reproducible and objective classification experiments in AD using three publicly available datasets (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of the three datasets into a standard format (BIDS); ii) a modular set of preprocessing pipelines, feature extraction and classification methods, together with an evaluation framework, that provide a baseline for benchmarking the different components. We demonstrate the use of the framework for a large-scale evaluation on 1960 participants using T1 MRI and FDG PET data. In this evaluation, we assess the influence of different modalities, preprocessing, feature types (regional or voxel-based features), classifiers, training set sizes and datasets. Performances were in line with the state-of-the-art. FDG PET outperformed T1 MRI for all classification tasks. No difference in performance was found for the use of different atlases, image smoothing, partial volume correction of FDG PET images, or feature type. Linear SVM and L2-logistic regression resulted in similar performance and both outperformed random forests. The classification performance increased along with the number of subjects used for training. Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code of the framework and the experiments is publicly available: general-purpose tools have been integrated into the Clinica software (www.clinica.run) and the paper-specific code is available at: https://gitlab.icm-institute.org/aramislab/AD-ML.}
+}
 @misc{BIDS,
   title = {BIDS},
   url   = {https://bids.neuroimaging.io/}
