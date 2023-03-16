@@ -391,6 +391,39 @@ as I can leave it to train overnight without having to constantly check on it.
 I have recently upgraded the GPU in my computer to an RTX 3080\cite{RTX3080}, which is a much more powerful GPU than the GTX1070, as it has more CUDA cores, a higher core clock, 2gb more of VRAM, and a much higher memory bandwidth. Alongside this, it has "RT Cores",
 these are designed to be used for ray tracing, which is a technique used to render realistic images, however they also can accelerate the training process.
 
+\chapter{Data Preprocessing}
+
+% TODO: move from the SE chapter to the DL chapter
+\section{Batch sizes}
+
+\section{Dataset Augmentation}
+
+When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
+Unfortunately I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
+Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
+This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
+It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
+If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
+
+\section{Batch sizes}
+The batch size is the number of images that are passed to the model at a time.
+A larger batch size will cause the model to learn quicker, however it will also use more memory whereas
+having a smaller batch size will cause the model to learn slower, however it will use less memory.
+When I started off, I did not understand the concept of batch sizes, and I was using a batch size of 1000, this lead to my training times
+being very long and I had to wait days for a model to train.
+I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8 GB GPU\cite{GTX1070} doesn't often run out of memory.
+
+\section{Feature Normalisation}
+
+Normalisation is the process of scaling the data so that it is typically between 0 and 1.
+In the case of age, this would be the highest age in the dataset, divided by the age of the patient.
+This is done to make the training process more efficient, as it helps with convergence, as it can avoid the model from getting stuck in a local minimum. This can help reduce the impact of outliers by scaling the input to a smaller range.
+Although it is not required, it is generally recommended to always normalize the data.
+
+\section{Keras Data Generators}
+
+When passing the batched images and the other data to the model, I had to create my own superclass for the Keras Sequence class. This allowed me to pass the age, gender, MMSE score, and the image to the model, instead of just the image. I needed to create this as I did not have enough ram to load all of the images into memory, so using batches was required. This still allowed me to use the ImageDataGenerator class to augment the images.
+
 \chapter{Evaluating the performance}
 
 \section{The different metrics}
@@ -634,24 +667,6 @@ A global minimum is the same concept, but it is the absolute lowest the model ca
 It is the lowest point in the entire loss landscape no matter what parameters the model has.
 
 % Also talk about the different learning rates and how they affect the performance of the models
-
-\section{Batch sizes}
-
-The batch size is the number of images that are passed to the model at a time.
-A larger batch size will cause the model to learn quicker, however it will also use more memory whereas
-having a smaller batch size will cause the model to learn slower, however it will use less memory.
-When I started off, I did not understand the concept of batch sizes, and I was using a batch size of 1000, this lead to my training times
-being very long and I had to wait days for a model to train.
-I have found that a batch size of 32 works well for the models that I have trained and my GTX1070 8 GB GPU\cite{GTX1070} doesn't often run out of memory.
-
-\section{Dataset Augmentation}
-
-When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
-Unfortunately I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
-Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
-This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
-It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
-If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
 
 \chapter{Identifying annd Mitigating Bias}
 
@@ -924,6 +939,7 @@ I have been working lots on my report and the training library, this has taken a
 
 I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
 
+% TODO: add the rest of the diary
 \chapter{Conclusion}
 
 % TODO: Conclusion
