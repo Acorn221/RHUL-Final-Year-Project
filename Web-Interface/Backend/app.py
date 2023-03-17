@@ -7,6 +7,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 from os import path, remove
 import numpy as np
+import logging
 import tensorflow as tf
 
 # Define the flask app
@@ -31,6 +32,10 @@ def predict_class(img_path, model):
 def upload():
 	# Get the file from the request
 	uploadedFile = request.files['file']
+
+	if uploadedFile.filename == '':
+		return jsonify({'error': 'No file selected'}), 400
+		
 	# Save the file to ./uploads
 	filepath = relativePath + '/uploads/' + secure_filename(uploadedFile.filename)
 	uploadedFile.save(filepath)
@@ -39,12 +44,18 @@ def upload():
 	sex = request.form['sex']
 	mmse = request.form['mmse']
 
+	# Return an error if age, sex or mmse is not provided
+	if age == None or sex == None or mmse == None:
+		return jsonify({'error': 'Missing parameters'}), 400
+
+	logging.info(f"Age: {age}, Sex: {sex}, MMSE: {mmse}, Filepath: {filepath}")
+
 	# Make prediction TODO: make prediction
 	# prediction = predict_class(filepath, model)
 	prediction = {'0': '0.0', '1': '0.82', '2': '0.18', '3': '0.01'}
 	# Convert the response to a string
 	response = str(prediction)
-
+	logging.info("Prediction: " + response)
 	# Delete the file from the server
 	remove(filepath)
 
