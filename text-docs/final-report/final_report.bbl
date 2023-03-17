@@ -60,6 +60,17 @@
     \endverb
   \endentry
 
+  \entry{BIDS_metadata}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{BIDS MRI Metadata}
+    \verb{url}
+    \verb https://bids-specification.readthedocs.io/en/stable/04-modality-speci
+    \verb fic-files/01-magnetic-resonance-imaging-data.html
+    \endverb
+  \endentry
+
   \entry{CommitLint}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
@@ -99,6 +110,210 @@
     \verb{url}
     \verb https://docs.nvidia.com/cuda/
     \endverb
+  \endentry
+
+  \entry{Gorgolewski2016}{article}{}
+    \name{author}{27}{}{%
+      {{hash=GKJ}{%
+         family={Gorgolewski},
+         familyi={G\bibinitperiod},
+         given={Krzysztof\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Auer},
+         familyi={A\bibinitperiod},
+         given={Tibor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CVD}{%
+         family={Calhoun},
+         familyi={C\bibinitperiod},
+         given={Vince\bibnamedelima D.},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CRC}{%
+         family={Craddock},
+         familyi={C\bibinitperiod},
+         given={R.\bibnamedelima Cameron},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Samir},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DEP}{%
+         family={Duff},
+         familyi={D\bibinitperiod},
+         given={Eugene\bibnamedelima P.},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Flandin},
+         familyi={F\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GSS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Satrajit\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Glatard},
+         familyi={G\bibinitperiod},
+         given={Tristan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O.},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HDA}{%
+         family={Handwerker},
+         familyi={H\bibinitperiod},
+         given={Daniel\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Keator},
+         familyi={K\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiangrui},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MZ}{%
+         family={Michael},
+         familyi={M\bibinitperiod},
+         given={Zachary},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maumet},
+         familyi={M\bibinitperiod},
+         given={Camille},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NBN}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={B.\bibnamedelima Nolan},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=NTE}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={Thomas\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pellman},
+         familyi={P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PJB}{%
+         family={Poline},
+         familyi={P\bibinitperiod},
+         given={Jean-Baptiste},
+         giveni={J\bibinithyphendelim B\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rokem},
+         familyi={R\bibinitperiod},
+         given={Ariel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Gunnar},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Sochat},
+         familyi={S\bibinitperiod},
+         given={Vanessa},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Triplett},
+         familyi={T\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TJA}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={Jessica\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Varoquaux},
+         familyi={V\bibinitperiod},
+         given={Ga{\"e}l},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PRA}{%
+         family={Poldrack},
+         familyi={P\bibinitperiod},
+         given={Russell\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKJ+1}
+  \strng{fullhash}{GKJATCVDCRCDSDEPFGGSSGTHYOHDAHMKDLXMZMCNBNNTEPJPJBRASGSVTWTJAVGPRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The development of magnetic resonance imaging (MRI) techniques has defined
+  modern neuroimaging. Since its inception, tens of thousands of studies using
+  techniques such as functional MRI and diffusion weighted imaging have allowed
+  for the non-invasive study of the brain. Despite the fact that MRI is
+  routinely used to obtain data for neuroscience research, there has been no
+  widely adopted standard for organizing and describing the data collected in
+  an imaging experiment. This renders sharing and reusing data (within or
+  between labs) difficult if not impossible and unnecessarily complicates the
+  application of automatic pipelines and quality assurance protocols. To solve
+  this problem, we have developed the Brain Imaging Data Structure (BIDS), a
+  standard for organizing and describing MRI datasets. The BIDS standard uses
+  file formats compatible with existing software, unifies the majority of
+  practices already common in the field, and captures the metadata necessary
+  for most common data processing operations.%
+    }
+    \verb{doi}
+    \verb 10.1038/sdata.2016.44
+    \endverb
+    \field{issn}{2052-4463}
+    \field{number}{1}
+    \field{pages}{160044}
+    \field{title}{The brain imaging data structure, a format for organizing and
+  describing outputs of neuroimaging experiments}
+    \verb{url}
+    \verb https://doi.org/10.1038/sdata.2016.44
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Scientific Data}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{DBLP:journals/corr/HeZRS15}{article}{}
@@ -335,6 +550,16 @@
     \endverb
   \endentry
 
+  \entry{OASISFactSheet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{OASIS-1 Fact Sheet}
+    \verb{url}
+    \verb https://oasis-brains.org/files/oasis_cross-sectional_facts.pdf
+    \endverb
+  \endentry
+
   \entry{PyTest}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -374,6 +599,162 @@
     \verb https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-308
     \verb 0/
     \endverb
+  \endentry
+
+  \entry{SAMPERGONZALEZ2018504}{article}{}
+    \name{author}{16}{}{%
+      {{hash=SGJ}{%
+         family={Samper-González},
+         familyi={S\bibinithyphendelim G\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Burgos},
+         familyi={B\bibinitperiod},
+         given={Ninon},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bottani},
+         familyi={B\bibinitperiod},
+         given={Simona},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fontanella},
+         familyi={F\bibinitperiod},
+         given={Sabrina},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Marcoux},
+         familyi={M\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Routier},
+         familyi={R\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Guillon},
+         familyi={G\bibinitperiod},
+         given={Jérémy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bacci},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={Junhao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bertrand},
+         familyi={B\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bertin},
+         familyi={B\bibinitperiod},
+         given={Hugo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HMO}{%
+         family={Habert},
+         familyi={H\bibinitperiod},
+         given={Marie-Odile},
+         giveni={M\bibinithyphendelim O\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Durrleman},
+         familyi={D\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Evgeniou},
+         familyi={E\bibinitperiod},
+         given={Theodoros},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Colliot},
+         familyi={C\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \keyw{Classification, Reproducibility, Alzheimer's disease, Magnetic
+  resonance imaging, Positron emission tomography, Open-source}
+    \strng{namehash}{SGJ+1}
+    \strng{fullhash}{SGJBNBSFSLPMARAGJBMWJBABHHMODSETCO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    A large number of papers have introduced novel machine learning and feature
+  extraction methods for automatic classification of Alzheimer's disease (AD).
+  However, while the vast majority of these works use the public dataset ADNI
+  for evaluation, they are difficult to reproduce because different key
+  components of the validation are often not readily available. These
+  components include selected participants and input data, image preprocessing
+  and cross-validation procedures. The performance of the different approaches
+  is also difficult to compare objectively. In particular, it is often
+  difficult to assess which part of the method (e.g. preprocessing, feature
+  extraction or classification algorithms) provides a real improvement, if any.
+  In the present paper, we propose a framework for reproducible and objective
+  classification experiments in AD using three publicly available datasets
+  (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of
+  the three datasets into a standard format (BIDS); ii) a modular set of
+  preprocessing pipelines, feature extraction and classification methods,
+  together with an evaluation framework, that provide a baseline for
+  benchmarking the different components. We demonstrate the use of the
+  framework for a large-scale evaluation on 1960 participants using T1 MRI and
+  FDG PET data. In this evaluation, we assess the influence of different
+  modalities, preprocessing, feature types (regional or voxel-based features),
+  classifiers, training set sizes and datasets. Performances were in line with
+  the state-of-the-art. FDG PET outperformed T1 MRI for all classification
+  tasks. No difference in performance was found for the use of different
+  atlases, image smoothing, partial volume correction of FDG PET images, or
+  feature type. Linear SVM and L2-logistic regression resulted in similar
+  performance and both outperformed random forests. The classification
+  performance increased along with the number of subjects used for training.
+  Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code
+  of the framework and the experiments is publicly available: general-purpose
+  tools have been integrated into the Clinica software (www.clinica.run) and
+  the paper-specific code is available at:
+  https://gitlab.icm-institute.org/aramislab/AD-ML.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neuroimage.2018.08.042
+    \endverb
+    \field{issn}{1053-8119}
+    \field{pages}{504\bibrangedash 521}
+    \field{title}{Reproducible evaluation of classification methods in
+  Alzheimer's disease: Framework and application to MRI and PET data}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1053811918307407
+    \endverb
+    \field{volume}{183}
+    \field{journaltitle}{NeuroImage}
+    \field{year}{2018}
   \endentry
 
   \entry{Simonyan15}{inproceedings}{}
