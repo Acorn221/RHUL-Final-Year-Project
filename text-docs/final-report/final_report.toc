@@ -10,49 +10,54 @@
 \contentsline {section}{\numberline {2.5}What is a Convolutional Neural Network}{10}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Types Of Layers}{10}{section.2.6}%
 \contentsline {section}{\numberline {2.7}What transfer learning is}{11}{section.2.7}%
-\contentsline {section}{\numberline {2.8}The Datasets I will be using}{11}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Transfer Learning}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Why use Transfer Learning}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Drawbacks of Transfer Learning}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The code behind the transfer learning}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}How to implement Transfer Learning}{14}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Extracting features}{14}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Fine-tuning}{14}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}How to fine-tune a model}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}My training setup}{14}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Evaluating the performance}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The different metrics}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Data Augmentation}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Problems with the Alzheimer's MRI Dataset and how I fixed them}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}The problems}{17}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}The solution}{18}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Evaluating the given metrics}{19}{section.4.4}%
-\contentsline {section}{\numberline {4.5}The different datasets}{20}{section.4.5}%
-\contentsline {chapter}{\numberline {5}The different models that are being compared}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Mobilenetv3}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}InceptionV3}{21}{section.5.2}%
-\contentsline {section}{\numberline {5.3}ResNet101}{22}{section.5.3}%
-\contentsline {section}{\numberline {5.4}VGG19}{22}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Software Engineering}{23}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The code}{23}{section.6.1}%
-\contentsline {section}{\numberline {6.2}My Development Environment}{23}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Using Git}{23}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Testing with Jupyter Notebook}{23}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Using Test Driven Development}{24}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Different learning rates}{24}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Batch sizes}{24}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Dataset Augmentation}{25}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Identifying annd Mitigating Bias}{26}{chapter.7}%
-\contentsline {section}{\numberline {7.1}nWBV vs Age}{26}{section.7.1}%
-\contentsline {section}{\numberline {7.2}eTIV vs Age}{27}{section.7.2}%
-\contentsline {chapter}{\numberline {8}My initial training results}{28}{chapter.8}%
-\contentsline {subsection}{\numberline {8.0.1}The comparison of the different models}{28}{subsection.8.0.1}%
-\contentsline {subsection}{\numberline {8.0.2}InceptionV3}{29}{subsection.8.0.2}%
-\contentsline {subsection}{\numberline {8.0.3}MobileNetV3 Small}{30}{subsection.8.0.3}%
-\contentsline {subsection}{\numberline {8.0.4}The model sizes}{31}{subsection.8.0.4}%
-\contentsline {chapter}{\numberline {9}The new training results}{32}{chapter.9}%
-\contentsline {chapter}{\numberline {10}How to run the code}{33}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Prerequisites}{33}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Running the code}{33}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Diary}{34}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Conclusion}{40}{chapter.12}%
+\contentsline {chapter}{\numberline {3}The Datasets I will be using}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Contents of the Dataset}{12}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Transfer Learning}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Why use Transfer Learning}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Drawbacks of Transfer Learning}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The code behind the transfer learning}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}How to implement Transfer Learning}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Extracting features}{15}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Fine-tuning}{15}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}How to fine-tune a model}{15}{section.4.5}%
+\contentsline {section}{\numberline {4.6}My training setup}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Data Importing and Preprocessing}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Formatting and converting the data}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dataset Augmentation}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Batch sizes}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Feature Normalisation}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Keras Data Generators}{18}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Evaluating the performance}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The different metrics}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Data Augmentation}{19}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Problems with the Alzheimer's MRI Dataset and how I fixed them}{20}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}The problems}{20}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}The solution}{21}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Evaluating the given metrics}{22}{section.6.4}%
+\contentsline {section}{\numberline {6.5}The different datasets}{23}{section.6.5}%
+\contentsline {chapter}{\numberline {7}The different models that are being compared}{24}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Mobilenetv3}{24}{section.7.1}%
+\contentsline {section}{\numberline {7.2}InceptionV3}{24}{section.7.2}%
+\contentsline {section}{\numberline {7.3}ResNet101}{25}{section.7.3}%
+\contentsline {section}{\numberline {7.4}VGG19}{25}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Software Engineering}{26}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The code}{26}{section.8.1}%
+\contentsline {section}{\numberline {8.2}My Development Environment}{26}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Using Git}{26}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Testing with Jupyter Notebook}{26}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Using Test Driven Development}{27}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Different learning rates}{27}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Identifying annd Mitigating Bias}{28}{chapter.9}%
+\contentsline {section}{\numberline {9.1}nWBV vs Age}{28}{section.9.1}%
+\contentsline {section}{\numberline {9.2}eTIV vs Age}{29}{section.9.2}%
+\contentsline {chapter}{\numberline {10}My initial training results}{30}{chapter.10}%
+\contentsline {subsection}{\numberline {10.0.1}The comparison of the different models}{30}{subsection.10.0.1}%
+\contentsline {subsection}{\numberline {10.0.2}InceptionV3}{31}{subsection.10.0.2}%
+\contentsline {subsection}{\numberline {10.0.3}MobileNetV3 Small}{32}{subsection.10.0.3}%
+\contentsline {subsection}{\numberline {10.0.4}The model sizes}{33}{subsection.10.0.4}%
+\contentsline {chapter}{\numberline {11}The new training results}{34}{chapter.11}%
+\contentsline {chapter}{\numberline {12}How to run the code}{35}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Prerequisites}{35}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Running the code}{35}{section.12.2}%
+\contentsline {chapter}{\numberline {13}Diary}{36}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Conclusion}{42}{chapter.14}%

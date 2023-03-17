@@ -60,6 +60,16 @@
     \endverb
   \endentry
 
+  \entry{BIDS}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{BIDS}
+    \verb{url}
+    \verb https://bids.neuroimaging.io/
+    \endverb
+  \endentry
+
   \entry{CommitLint}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
@@ -335,6 +345,16 @@
     \endverb
   \endentry
 
+  \entry{OASISFactSheet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{OASIS-1 Fact Sheet}
+    \verb{url}
+    \verb https://oasis-brains.org/files/oasis_cross-sectional_facts.pdf
+    \endverb
+  \endentry
+
   \entry{PyTest}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -374,6 +394,162 @@
     \verb https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-308
     \verb 0/
     \endverb
+  \endentry
+
+  \entry{SAMPERGONZALEZ2018504}{article}{}
+    \name{author}{16}{}{%
+      {{hash=SGJ}{%
+         family={Samper-González},
+         familyi={S\bibinithyphendelim G\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Burgos},
+         familyi={B\bibinitperiod},
+         given={Ninon},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bottani},
+         familyi={B\bibinitperiod},
+         given={Simona},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fontanella},
+         familyi={F\bibinitperiod},
+         given={Sabrina},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Marcoux},
+         familyi={M\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Routier},
+         familyi={R\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Guillon},
+         familyi={G\bibinitperiod},
+         given={Jérémy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bacci},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={Junhao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bertrand},
+         familyi={B\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bertin},
+         familyi={B\bibinitperiod},
+         given={Hugo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HMO}{%
+         family={Habert},
+         familyi={H\bibinitperiod},
+         given={Marie-Odile},
+         giveni={M\bibinithyphendelim O\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Durrleman},
+         familyi={D\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Evgeniou},
+         familyi={E\bibinitperiod},
+         given={Theodoros},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Colliot},
+         familyi={C\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \keyw{Classification, Reproducibility, Alzheimer's disease, Magnetic
+  resonance imaging, Positron emission tomography, Open-source}
+    \strng{namehash}{SGJ+1}
+    \strng{fullhash}{SGJBNBSFSLPMARAGJBMWJBABHHMODSETCO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    A large number of papers have introduced novel machine learning and feature
+  extraction methods for automatic classification of Alzheimer's disease (AD).
+  However, while the vast majority of these works use the public dataset ADNI
+  for evaluation, they are difficult to reproduce because different key
+  components of the validation are often not readily available. These
+  components include selected participants and input data, image preprocessing
+  and cross-validation procedures. The performance of the different approaches
+  is also difficult to compare objectively. In particular, it is often
+  difficult to assess which part of the method (e.g. preprocessing, feature
+  extraction or classification algorithms) provides a real improvement, if any.
+  In the present paper, we propose a framework for reproducible and objective
+  classification experiments in AD using three publicly available datasets
+  (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of
+  the three datasets into a standard format (BIDS); ii) a modular set of
+  preprocessing pipelines, feature extraction and classification methods,
+  together with an evaluation framework, that provide a baseline for
+  benchmarking the different components. We demonstrate the use of the
+  framework for a large-scale evaluation on 1960 participants using T1 MRI and
+  FDG PET data. In this evaluation, we assess the influence of different
+  modalities, preprocessing, feature types (regional or voxel-based features),
+  classifiers, training set sizes and datasets. Performances were in line with
+  the state-of-the-art. FDG PET outperformed T1 MRI for all classification
+  tasks. No difference in performance was found for the use of different
+  atlases, image smoothing, partial volume correction of FDG PET images, or
+  feature type. Linear SVM and L2-logistic regression resulted in similar
+  performance and both outperformed random forests. The classification
+  performance increased along with the number of subjects used for training.
+  Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code
+  of the framework and the experiments is publicly available: general-purpose
+  tools have been integrated into the Clinica software (www.clinica.run) and
+  the paper-specific code is available at:
+  https://gitlab.icm-institute.org/aramislab/AD-ML.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neuroimage.2018.08.042
+    \endverb
+    \field{issn}{1053-8119}
+    \field{pages}{504\bibrangedash 521}
+    \field{title}{Reproducible evaluation of classification methods in
+  Alzheimer's disease: Framework and application to MRI and PET data}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1053811918307407
+    \endverb
+    \field{volume}{183}
+    \field{journaltitle}{NeuroImage}
+    \field{year}{2018}
   \endentry
 
   \entry{Simonyan15}{inproceedings}{}
