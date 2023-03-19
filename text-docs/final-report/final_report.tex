@@ -685,9 +685,7 @@ This would give me an opportunity to write unit tests for the API, and to test t
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen,
-and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start,
-and then fine-tune the model at a slower rate. 
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate. 
 
 A local minimum is when the model can't decrease its loss any further by adjusting its parameters. 
 It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
@@ -699,7 +697,6 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 \chapter{Identifying annd Mitigating Bias}
 
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
-% TODO: Talk about there being lots of old patients in the dataset, only the old ones have Alzheimer's generally
 
 \section{nWBV vs Age}
 Giving the age of the patient to the machine learning algorithm may allow for bias, this is because there are very few patients who are young and have Alzheimer's disease, in the dataset.
