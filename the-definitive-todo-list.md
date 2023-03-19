@@ -17,6 +17,9 @@
   - [x] Create a sub-model for the other data
   - [x] Combine the two models
   - [x] Feed the data to the new model, in the correct format
+- [ ] Try and predict the age of the patients to see if it's possible
+  - [ ] See if the model can predict the age of the patients
+  - [ ] Compare the impact of changing the input age to the model, to see how the model reacts
 - [ ] Use better methods of analysis for the performance
   - [ ] Confusion Matrices
 - [ ] Hyperparameter tuning
