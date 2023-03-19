@@ -831,6 +831,8 @@ The validity and reliability of AI models are critical for maintaining trust in 
 
 The use of machine learning for Alzheimer's diagnosis raises significant privacy concerns, particularly with regard to the handling and storage of sensitive patient data. Data protection laws and regulations, such as HIPAA and GDPR, must be adhered to in order to guarantee patient confidentiality and to secure informed consent for the collection of medical data. Data anonymization techniques should be used to protect patients' identities when training and utilizing AI models. For the OASIS datasets, the data is already anonymized, but there are also other terms and conditions that must be followed, for example, with MRI scans, you can generate an image of the patient's face and use that to identify the patient and that was explicitly forbidden in the terms and conditions.
 
+Machine learning is also used in other areas of healthcare, such as drug discovery and clinical trials, for example, a drug may get killed off in it's early stages if an algorithm determines that it could be carcinogenic. This could be a problem if the algorithm is wrong, as the drug could have been a significant breakthrough treatment, however it's likely to have a better impact to use the prediction algorithm to screen drugs and get the problematic ones removed quicker, as more resources can be put into the drugs that are more likely to be successful.\cite{10.3389/frai.2021.757780}
+
 \section{Monopoly and Competition}
 
 The AI healthcare market should remain competitive and accessible to various stakeholders, preventing the dominance of a few companies or technologies. The avoidance of proprietary formats, DRM measures, and forced tie-ins is crucial for maintaining a fair marketplace and providing healthcare professionals with multiple options for AI-assisted Alzheimer's diagnosis and treatment. Specifically, the BIDS format should be used to store and interpret the data, as it is an open standard for neuroimaging data. In terms of competition, Keras, Tensorflow and the pre-trained models are all open source, so anyone can use them, and there are many other open source libraries that can be used by anyone, so the competition is not a huge issue.
@@ -846,7 +848,6 @@ The healthcare professionals would be interested in the web interface, as it wou
 The biases in the OASIS-1 dataset are very prevalent, I have decided to dedicate a seperate chapter to this issue. Giving the machine learning model the age of the patient as a feature could potentially be a bad idea, as the biases in the data could potentially lead to the model predicting whether or not the patient has AD, based off of their age. If I don't give the model the age of the patient, there is a chance that it could predict the age it's self, which would defeat the purpose of the model. I could try predicting the age of the patient to see how well it can guess the age of a patient based off of their MRI scan, to see if it has the ability to predict the age of the patient, I could also see how changing the given age of the patient affects the accuracy of the model, accross the different classes.
 
 \chapter{Diary}
-
 
 \section*{19/10/2022}
 
