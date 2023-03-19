@@ -78,7 +78,6 @@ Signature:
 % TODO: Remove all mentions of flowers dataset
 % TODO: Change secion on exiting data, say that it is to be disregarded
 
-
 \chapter*{Project Specification}
 
 Aims: To implement and compare on benchmark data sets various machine learning algorithms
@@ -221,6 +220,15 @@ Additionally, the choice of optimiser can also affect the speed of convergence a
   \caption{A diagram of Content Based Image Retrieval \cite{ContentBasedImageRetrieval}}
 \end{figure}
 
+\section{Classification Vs Regression}
+
+Classification is a type of supervised machine learning model that is used to predict the class of a given data point.
+It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point.
+For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house.
+
+Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. 
+
+The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset.
 
 \section{What is a Convolutional Neural Network}
 A convolutional neural network (CNN) is a type of neural network that is used for image classification.
@@ -228,7 +236,6 @@ It is made up of a series of convolutional layers, pooling layers, and fully con
 The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image.
 The fully connected layers are used to classify the image.
 They are often much more efficient than other types of neural networks, and are commonly used for image classification.
-
 
 \section{Types Of Layers}
 
@@ -804,6 +811,7 @@ To run the tests for the AutomatedTestingLibary run the following command:
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
 The flower training notebook does not work as I am having issues with Keras and the dataset (specifically the way it is loaded).
+
 
 \chapter{Diary}
 
