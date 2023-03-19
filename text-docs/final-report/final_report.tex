@@ -859,6 +859,9 @@ The healthcare professionals would be interested in the web interface, as it wou
 
 The biases in the OASIS-1 dataset are very prevalent, I have decided to dedicate a seperate chapter to this issue. Giving the machine learning model the age of the patient as a feature could potentially be a bad idea, as the biases in the data could potentially lead to the model predicting whether or not the patient has AD, based off of their age. If I don't give the model the age of the patient, there is a chance that it could predict the age it's self, which would defeat the purpose of the model. I could try predicting the age of the patient to see how well it can guess the age of a patient based off of their MRI scan, to see if it has the ability to predict the age of the patient, I could also see how changing the given age of the patient affects the accuracy of the model, accross the different classes.
 
+\section{Collaboration and Communication Barriers}
+If the model's accuracy is not explicitly stated in the web interface, doctors may be more likely to rely on the models predictions, rather than using their own judgement, which could lead to a misdiagnosis. The model's accuracy should be clearly stated in the web interface, so that the healthcare professionals can make an informed decision, and the interface should have a disclaimer stating that the model's accuracy is not guaranteed, and that the healthcare professional should use their own judgement when making a diagnosis, along with multilingual support, so that the interface can be used by healthcare professionals from all over the world, without any potential problems with language barriers.
+
 \chapter{Diary}
 
 \section*{19/10/2022}
