@@ -56,3 +56,19 @@
   - [ ] Talk about the web interface and it's potential uses
 - [ ] Look for another dataset (medical imaging)
   - [x] OASIS-3 - Gained access to the dataset
+
+
+
+## Markscheme Checklist
+
+- [ ] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+- [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
+- [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
+- [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
+- [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
+- [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
+  - [ ] 
+- [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
+  - [ ] Bibtex has taken care of this
+- [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
+  - [ ] I feel as though I have covered this well
