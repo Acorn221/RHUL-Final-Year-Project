@@ -21,3 +21,5 @@ disc11
 disc12
 processed_scans
 Alzheimers-classification/
+.venv/Lib/site-packages
+.venv/share
