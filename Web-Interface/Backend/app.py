@@ -1,6 +1,7 @@
 # Import flask for API
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
+from flask_cors import CORS
 
 # Import keras and other libraries for processing the MRI image
 from keras.models import load_model
@@ -12,6 +13,9 @@ import tensorflow as tf
 
 # Define the flask app
 app = Flask(__name__)
+
+# Enable CORS for the API
+cors = CORS(app, resources={r"/predict": {"origins": "*"}})
 
 relativePath = path.dirname(path.abspath(__file__))
 
@@ -63,5 +67,5 @@ def upload():
 
 
 if __name__ == "__main__":
-	app.run(debug=True, port=3001)
+	app.run(debug=True, port=3002)
 	
