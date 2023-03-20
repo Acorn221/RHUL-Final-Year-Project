@@ -162,4 +162,13 @@ I've also encountered a problem with the training, as the validation accuracy is
 
 ## 19/03/2023
 
-I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have began to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+
+## 20/03/2023
+
+I've merged the git branches into main, as I wanted to ensure I do not have too many conflicts closer to the deadline, and to ensure that I will not lose work due to a merge conflict.
+
+I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used ).
+
+Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
+The web-ui is mostly finished now, I just need to add the results of the models to the web page.
