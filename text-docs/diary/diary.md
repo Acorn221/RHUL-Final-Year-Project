@@ -172,3 +172,5 @@ I have also decided today to not use the OASIS-3 dataset, as it's not as well do
 
 Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
 The web-ui is mostly finished now, I just need to add the results of the models to the web page.
+
+I have managed to get the basic transfer learning results saved to files, along with the training and loss results.
