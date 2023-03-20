@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  17 MAR 2023 12:49
 =======
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  17 MAR 2023 12:36
 >>>>>>> Project-report
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  15 MAR 2023 23:56
+>>>>>>> OASIS-Dataset
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -700,23 +704,36 @@ Chapter 6.
 <images/bad-training-result.png, id=448, 430.0065pt x 328.8285pt>
 File: images/bad-training-result.png Graphic file (type png)
 <use images/bad-training-result.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/bad-training-result.png  used on input line 476.
+=======
+Package pdftex.def Info: images/bad-training-result.png  used on input line 422.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
  [20 <./images/bad-training-result.png>] [21]
 <images/ConfusionMatrix.png, id=474, 1054.94125pt x 747.79375pt>
 File: images/ConfusionMatrix.png Graphic file (type png)
 <use images/ConfusionMatrix.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 526.
+=======
+Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 468.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
  [22 <./images/ConfusionMatrix.png (PNG copy)>]
 <images/moderateDemented.jpg, id=482, 200.75pt x 190.7125pt>
 File: images/moderateDemented.jpg Graphic file (type jpg)
 <use images/moderateDemented.jpg>
+<<<<<<< HEAD
 Package pdftex.def Info: images/moderateDemented.jpg  used on input line 540.
+=======
+Package pdftex.def Info: images/moderateDemented.jpg  used on input line 482.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
 <images/mildDemented.jpg, id=483, 200.75pt x 190.7125pt>
 File: images/mildDemented.jpg Graphic file (type jpg)
 <use images/mildDemented.jpg>
+<<<<<<< HEAD
 Package pdftex.def Info: images/mildDemented.jpg  used on input line 541.
 (pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
  [23 <./images/moderateDemented.jpg> <./images/mildDemented.jpg>]
@@ -725,10 +742,31 @@ Chapter 7.
 File: images/MobileNetv3-structure.png Graphic file (type png)
 <use images/MobileNetv3-structure.png>
 Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 568.
+=======
+Package pdftex.def Info: images/mildDemented.jpg  used on input line 483.
+(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
+<images/flower1.jpg, id=441, 669.50125pt x 501.875pt>
+File: images/flower1.jpg Graphic file (type jpg)
+<use images/flower1.jpg>
+Package pdftex.def Info: images/flower1.jpg  used on input line 495.
+(pdftex.def)             Requested size: 142.26457pt x 142.26239pt.
+<images/flower2.jpg, id=442, 582.175pt x 501.875pt>
+File: images/flower2.jpg Graphic file (type jpg)
+<use images/flower2.jpg>
+Package pdftex.def Info: images/flower2.jpg  used on input line 496.
+(pdftex.def)             Requested size: 142.25658pt x 142.26239pt.
+ [19 <./images/moderateDemented.jpg> <./images/mildDemented.jpg> <./images/flower1.jpg> <./images/flower2.jpg>]
+Chapter 5.
+<images/MobileNetv3-structure.png, id=453, 2594.19188pt x 892.08281pt>
+File: images/MobileNetv3-structure.png Graphic file (type png)
+<use images/MobileNetv3-structure.png>
+Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 530.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
 <images/mobilenet-comparison.png, id=496, 2151.53813pt x 920.68968pt>
 File: images/mobilenet-comparison.png Graphic file (type png)
 <use images/mobilenet-comparison.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 575.
 =======
 <images/bad-training-result.png, id=455, 430.0065pt x 328.8285pt>
@@ -765,6 +803,9 @@ File: images/mobilenet-comparison.png Graphic file (type png)
 <use images/mobilenet-comparison.png>
 Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 583.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 537.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
 [24
 
@@ -778,8 +819,12 @@ Package pdftex.def Info: images/VGG19-architecture.png  used on input line 603.
 <images/VGG19-architecture.png, id=518, 1350.54562pt x 742.27313pt>
 File: images/VGG19-architecture.png Graphic file (type png)
 <use images/VGG19-architecture.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/VGG19-architecture.png  used on input line 611.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/VGG19-architecture.png  used on input line 566.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
  [25 <./images/mobilenet-comparison.png> <./images/VGG19-architecture.png>]
 Chapter 8.
@@ -796,8 +841,12 @@ Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 683.
 <images/nWBV-vs-Age.png, id=557, 416.2752pt x 312.2064pt>
 File: images/nWBV-vs-Age.png Graphic file (type png)
 <use images/nWBV-vs-Age.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 691.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 668.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 441.01773pt x 330.78pt.
 [28
 
@@ -811,8 +860,12 @@ Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 694.
 <images/eTIV-vs-Age.png, id=564, 419.166pt x 312.2064pt>
 File: images/eTIV-vs-Age.png Graphic file (type png)
 <use images/eTIV-vs-Age.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 702.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 679.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
  [29
 
@@ -822,6 +875,7 @@ Chapter 10.
 <images/good-training-acc-vs-val.png, id=564, 1193.9004pt x 699.5736pt>
 File: images/good-training-acc-vs-val.png Graphic file (type png)
 <use images/good-training-acc-vs-val.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 705.
 =======
 <images/good-training-acc-vs-val.png, id=571, 1193.9004pt x 699.5736pt>
@@ -829,6 +883,9 @@ File: images/good-training-acc-vs-val.png Graphic file (type png)
 <use images/good-training-acc-vs-val.png>
 Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 713.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 690.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
 [30
 
@@ -837,23 +894,36 @@ Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line
 <images/inceptionv3-accuracy-vs-val-acc.png, id=573, 1171.4967pt x 654.7662pt>
 File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
 <use images/inceptionv3-accuracy-vs-val-acc.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 715.
+=======
+Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 700.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
  [31 <./images/inceptionv3-accuracy-vs-val-acc.png>]
 <images/mobilenet-v3-small-vs-inception-v3.png, id=582, 1178.7237pt x 682.9515pt>
 File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
 <use images/mobilenet-v3-small-vs-inception-v3.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 738.
+=======
+Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 723.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
  [32 <./images/mobilenet-v3-small-vs-inception-v3.png>]
 <images/model-sizes.png, id=590, 791.3565pt x 344.0052pt>
 File: images/model-sizes.png Graphic file (type png)
 <use images/model-sizes.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/model-sizes.png  used on input line 755.
+=======
+Package pdftex.def Info: images/model-sizes.png  used on input line 740.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
 <images/ResNet101-vs-Inceptionv3.png, id=591, 1182.3372pt x 677.8926pt>
 File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
 <use images/ResNet101-vs-Inceptionv3.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 764.
 =======
 <images/inceptionv3-accuracy-vs-val-acc.png, id=580, 1171.4967pt x 654.7662pt>
@@ -878,6 +948,9 @@ File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
 <use images/ResNet101-vs-Inceptionv3.png>
 Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 772.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 749.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
  [33 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>]
 Chapter 11.
@@ -892,6 +965,7 @@ Chapter 13.
 [36
 
 ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 Overfull \hbox (51.7374pt too wide) in paragraph at lines 864--865
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -928,39 +1002,66 @@ File: images/mobilenetv3-first-attempt.png Graphic file (type png)
 Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 909.
 =======
 Overfull \hbox (51.7374pt too wide) in paragraph at lines 872--873
+=======
+Overfull \hbox (51.7374pt too wide) in paragraph at lines 849--850
+>>>>>>> OASIS-Dataset
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 <images/better-output.png, id=637, 399.4925pt x 279.0425pt>
 File: images/better-output.png Graphic file (type png)
 <use images/better-output.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/better-output.png  used on input line 883.
+=======
+Package pdftex.def Info: images/better-output.png  used on input line 860.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
 <images/training.png, id=638, 445.665pt x 668.4975pt>
 File: images/training.png Graphic file (type png)
 <use images/training.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/training.png  used on input line 889.
+=======
+Package pdftex.def Info: images/training.png  used on input line 866.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
 <images/positive-progress.png, id=639, 387.4475pt x 279.0425pt>
 File: images/positive-progress.png Graphic file (type png)
 <use images/positive-progress.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/positive-progress.png  used on input line 895.
+=======
+Package pdftex.def Info: images/positive-progress.png  used on input line 872.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
 <images/fine-tuning-more.png, id=640, 393.47pt x 279.0425pt>
 File: images/fine-tuning-more.png Graphic file (type png)
 <use images/fine-tuning-more.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/fine-tuning-more.png  used on input line 903.
+=======
+Package pdftex.def Info: images/fine-tuning-more.png  used on input line 880.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
 <images/maxing-out.png, id=641, 393.47pt x 279.0425pt>
 File: images/maxing-out.png Graphic file (type png)
 <use images/maxing-out.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/maxing-out.png  used on input line 911.
+=======
+Package pdftex.def Info: images/maxing-out.png  used on input line 888.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
 <images/mobilenetv3-first-attempt.png, id=642, 387.4475pt x 279.0425pt>
 File: images/mobilenetv3-first-attempt.png Graphic file (type png)
 <use images/mobilenetv3-first-attempt.png>
+<<<<<<< HEAD
 Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 917.
 >>>>>>> Project-report
+=======
+Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 894.
+>>>>>>> OASIS-Dataset
 (pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
 [37] [38 <./images/better-output.png>] [39 <./images/training.png>] [40 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [41 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>]
 Chapter 14.
@@ -968,26 +1069,38 @@ Chapter 14.
 
 ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 Overfull \hbox (5.1628pt too wide) in paragraph at lines 950--950
 =======
 Overfull \hbox (5.1628pt too wide) in paragraph at lines 958--958
 >>>>>>> Project-report
+=======
+Overfull \hbox (5.1628pt too wide) in paragraph at lines 934--934
+>>>>>>> OASIS-Dataset
 []\OT1/cmr/m/it/10.95 Alzheimer's Dataset\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / www . kaggle . com / datasets / uraninjo / augmented -[]
  []
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Overfull \hbox (27.32025pt too wide) in paragraph at lines 950--950
 =======
 Overfull \hbox (27.32025pt too wide) in paragraph at lines 958--958
 >>>>>>> Project-report
+=======
+Overfull \hbox (27.32025pt too wide) in paragraph at lines 934--934
+>>>>>>> OASIS-Dataset
 []\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
  []
 
 [43
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Overfull \hbox (0.12296pt too wide) in paragraph at lines 950--950
+=======
+Overfull \hbox (0.12296pt too wide) in paragraph at lines 934--934
+>>>>>>> OASIS-Dataset
 []\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
  []
 
