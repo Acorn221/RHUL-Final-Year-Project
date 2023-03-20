@@ -46,9 +46,11 @@
     - [ ] Test
     - [ ] Function
 - [ ] Create a web interface for uploading MRI scans and getting the results
-  - [ ] Set up a flask API
-    - [ ] Create tests for the API
+  - [x] Set up a flask API
+    - [x] Create tests for the API
   - [x] Create a basic web interface for uploading and getting the predictions
+  - [ ] Display the predictions
+  - [ ] Actually get the predictions from the model
 - [ ] The Report
   - [ ] The Diary
   - [ ] Document the different hyperparameter tuning
@@ -62,6 +64,7 @@
 ## Markscheme Checklist
 
 - [ ] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+  - Added a rationale section, needs more objectives
 - [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
 - [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
