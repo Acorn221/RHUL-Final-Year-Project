@@ -6,4 +6,5 @@ matplotlib
 kaggle
 scikit-learn
 tensorflow_datasets
-pytest 
+pytest
+pybids
