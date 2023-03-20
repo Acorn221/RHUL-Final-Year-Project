@@ -53,12 +53,7 @@ Signature:
 
 \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%
-%%% Table of Contents
 \tableofcontents\pdfbookmark[0]{Table of Contents}{toc}\newpage
-
-%%%%%%%%%%%%%%%%%%%%%%
-%%% Your Abstract here
 
 \begin{abstract}
   % TODO: Update abstract
@@ -77,8 +72,8 @@ Signature:
 % TODO: Insert or attach the diary
 % TODO: Remove all mentions of flowers dataset
 % TODO: Add explanations of ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay and what I will/wont use and why
-% TODO: Explain how generators work in keras and why I created my own
 % TODO: Change secion on exiting data, say that it is to be disregarded
+% TODO: Talk about more models that are being compared
 
 \chapter*{Project Specification}
 
@@ -132,15 +127,12 @@ I was given permission to do so, and I chose to do a project on comparison of im
 I chose this project as I was interested in transfer learning as I had used it in a previous project and wanted to learn more about it
 and it seemed far more interesting than the generic project and I believe this is generally a more applicable problem to solve in the real world.
 
-
 \chapter{Introduction}
 
 My project is about the comparison of image classification models with transfer learning.
-In this report I shall cover the background of transfer learning, the models I have chosen to compare,
-the datasets I have chosen to use, the results of my experiments and the conclusions I have drawn from them.
+In this report I shall cover the background of transfer learning, the models I have chosen to compare, the datasets I have chosen to use, the pre the results of my experiments and the conclusions I have drawn from them.
 
-The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible.
-It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required.
+The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
 
 \chapter{Rationale}
 
@@ -152,7 +144,6 @@ The symptoms of Alzheimer's disease are memory loss, confusion, mood swings, and
 There have recently been developments in drug discovery and development that have been able to slow the progression of AD, but are only effective in the early stages of the disease, and are not able to reverse the damage that has already been done. This means that early diagnosis is essential to ensure that the drugs are as effective as possible.\cite{Van_Dyck2022-pt}
 
 Transfer learning can be a useful tool to create predictions of the progression of AD, as it can be used to train models on a smaller dataset than would otherwise be required, as MRI scans are expensive and time consuming to obtain.
-
 
 \chapter{Neural Networks}
 \begin{figure}[ht!]
@@ -487,9 +478,9 @@ MRI scans are also very expensive, so using data augmentation can significantly 
 In the Alzheimer's MRI Dataset, the majority of the archive consists of augmented images already however this caused me problems which I will go on to talk about.
 With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
 
-\section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
+\section{Problems With The Datasets and How I Fixed Them}
 
-\subsection{The problems}
+\subsection{The Problems}
 % TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
 
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
@@ -537,6 +528,8 @@ This however did not solve all my problems, as the model was still overfitting. 
 
 This was then solved by going directly with the OASIS-1 dataset, and using the images that were provided there. I was hesitant to do this at first, as there was more pre-processing required to format the data in the way that I wanted it, but it has now allowed me to train my models without getting false results.
 
+By using the OASIS-1 dataset directly, that presented a new set of challenges, as the images were given in a different format, as I had a CSV file with the labels and the image IDs which identified the images. This lead me to learn how to use the Pandas\cite{Pandas} library in Python, which allowed me to read the CSV file and extract the image IDs and the labels from it. Then I had to create my own custom data generator, which allowed me to load the images from the dataset, and apply the transformations to them. This was a very useful learning experience, as I was able to learn important skills relating to data preprocessing. The data generator, which I had talked about earlier, helps batch and augment the data that is being fed into the model during training.
+
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
 but they do not tell us how well the model is performing for each class.
@@ -573,7 +566,7 @@ to use to get the best possible results.
 
 % TODO
 
-\chapter{The different models that are being compared}
+\chapter{The Different Models That Are Being Compared}
 
 All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
 
@@ -696,7 +689,15 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 
 % Also talk about the different learning rates and how they affect the performance of the models
 
-\chapter{Identifying annd Mitigating Bias}
+\chapter{The User Interface}
+
+\section{The Front End}
+For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript. 
+This allows for better code completion, and it makes it easier to debug the code, as it will tell you if you've made a mistake sooner, whereas javascript would give you an error at runtime, if you end up with a type error. Typescript helps counter many of the issues with JS however it's not perfect and there are still issues where there can be scope for errors.
+
+\section{The Back End}
+
+\chapter{Identifying and Mitigating Bias}
 
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
 
@@ -722,9 +723,9 @@ One potential issue with this parameter is that women are more likely to have Al
   \label{fig:eTIV-vs-Age}
 \end{figure}
 
-\chapter{My initial training results}
-\subsection{The comparison of the different models}
-Here is a graph of all the different models that I have trained properly with the Alzheimer's dataset.
+\chapter{My Initial Faulty Training Results}
+\subsection{The Comparison Of The Different Models}
+Here is a graph of all the different models that I have trained properly with the old and faulty Alzheimer's dataset from kaggle.
 The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
 \begin{figure}[h]
   \centering
@@ -746,12 +747,11 @@ This graph clearly indicates that there was overfitting, as the validation accur
 This is due to the fact that the model is learning from the training data, and it is not generalising well to the validation data.
 To help mitigate overfitting, I did use data augmentation and dropout layers, however I think that the base model it's self is overfitting to the data.
 
-I will need to do more research into regularisation techniques to help mitigate overfitting, and to help improve the performance of the model.
-To avoid this in the future, I will use more advanced techniques such as hyperparameter tuning and regularisation.
-
-L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting.
+I was planning on using L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting, however I didn't have to implement as I changed from this dataset to the OASIS-1 dataset.
 Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc. 
 This helps to improve the accuracy of the model and reduce overfitting.
+
+
 \pagebreak
 
 \subsection{MobileNetV3 Small}
@@ -766,9 +766,7 @@ MobilenetV3 Small is the smallest model in size and is consistently the least ac
 \end{figure}
 
 Here's another graph that clearly shows the difference in performance between Inceptionv3 and MobilenetV3 Small.
-Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the difference in performance is clearly worth the trade-off in size.
-The lack of performance appears to mostly be down to the fact that MobilenetV3 Small is a smaller model, and it is not able to learn as well as InceptionV3.
-MobilenetV2 and V3 Large are mostly in line with the other models in terms of performance, however they are still not as good as InceptionV3.
+Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the model is likely not overfitting as much as the other models are, however I can't be sure as this was trained with the old dataset.
 
 \pagebreak
 \subsection{The model sizes}
@@ -783,7 +781,6 @@ They are uncompressed and include the full model, after transfer learning.
 \end{figure}
 
 From this graph, it's clear to see how large some of the models are in comparison to each other.
-The largest model, ResNet101 is just over 1 GB in size and has a far worse accuracy than the top performing model, InceptionV3.
 
 \begin{figure}[ht!]
   \centering
@@ -795,16 +792,16 @@ The ResNet101\cite{DBLP:journals/corr/HeZRS15} model was created by Microsoft an
 It was created to compete in the ImageNet Large Scale Visual Recognition Challenge\cite{ILSVRC} in 2015.
 Inceptionv3 is a 48 layer deep neural network, and was created by Google to compete in the same challenge in 2015.
 
-Although the ResNet model managed to win the challenge, it is clear to see that Inceptionv3 is a far better model for this problem.
-Both models were trained on the same dataset (ImageNet), however the ImageNet dataset is very different to the Alzheimer's dataset.
-The ImageNet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
-This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
+\section{Why These Results Looked Promising}
+The results from the faulty dataset looked so promising as there was consistent progress in the accuracy of the models, and the loss was decreasing over time. This was because the model was learning from some of the validation data (but not all) so it's accuracy was never perfect (100\%) on the validation data, but it was high enough to give the illusion that the model was working well.
+
+My lack of experience with machine learning meant that I didn't know what to trust when it came to the results, I just assumed that the model was working well. Thankfully I did realise the issue before I had finished my project, and I was able to fix it with the upcoming results.
 
 \chapter{The new training results}
 % TODO: train the models again with the new dataset and parameters, then show the results here
 
 \chapter{How to run the code}
-
+% TODO: update the instructions for running the code, talk about virtual environments
 \section{Prerequisites}
 Go to the directory in your terminal (with python 3.7 > installed) and run the following command:
 \begin{lstlisting}
@@ -1004,6 +1001,7 @@ I have been working lots on my report and the training library, this has taken a
 I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
 
 % TODO: add the rest of the diary
+
 \chapter{Conclusion}
 
 % TODO: Conclusion
