@@ -60,6 +60,7 @@
     \endverb
   \endentry
 
+<<<<<<< HEAD
   \entry{BIDS}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
@@ -67,6 +68,16 @@
     \field{title}{BIDS}
     \verb{url}
     \verb https://bids.neuroimaging.io/
+=======
+  \entry{BIDS_metadata}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{BIDS MRI Metadata}
+    \verb{url}
+    \verb https://bids-specification.readthedocs.io/en/stable/04-modality-speci
+    \verb fic-files/01-magnetic-resonance-imaging-data.html
+>>>>>>> Project-report
     \endverb
   \endentry
 
@@ -109,6 +120,210 @@
     \verb{url}
     \verb https://docs.nvidia.com/cuda/
     \endverb
+  \endentry
+
+  \entry{Gorgolewski2016}{article}{}
+    \name{author}{27}{}{%
+      {{hash=GKJ}{%
+         family={Gorgolewski},
+         familyi={G\bibinitperiod},
+         given={Krzysztof\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Auer},
+         familyi={A\bibinitperiod},
+         given={Tibor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CVD}{%
+         family={Calhoun},
+         familyi={C\bibinitperiod},
+         given={Vince\bibnamedelima D.},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CRC}{%
+         family={Craddock},
+         familyi={C\bibinitperiod},
+         given={R.\bibnamedelima Cameron},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Samir},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DEP}{%
+         family={Duff},
+         familyi={D\bibinitperiod},
+         given={Eugene\bibnamedelima P.},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Flandin},
+         familyi={F\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GSS}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Satrajit\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Glatard},
+         familyi={G\bibinitperiod},
+         given={Tristan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HYO}{%
+         family={Halchenko},
+         familyi={H\bibinitperiod},
+         given={Yaroslav\bibnamedelima O.},
+         giveni={Y\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HDA}{%
+         family={Handwerker},
+         familyi={H\bibinitperiod},
+         given={Daniel\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Keator},
+         familyi={K\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiangrui},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MZ}{%
+         family={Michael},
+         familyi={M\bibinitperiod},
+         given={Zachary},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maumet},
+         familyi={M\bibinitperiod},
+         given={Camille},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NBN}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={B.\bibnamedelima Nolan},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=NTE}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={Thomas\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pellman},
+         familyi={P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PJB}{%
+         family={Poline},
+         familyi={P\bibinitperiod},
+         given={Jean-Baptiste},
+         giveni={J\bibinithyphendelim B\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rokem},
+         familyi={R\bibinitperiod},
+         given={Ariel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Gunnar},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Sochat},
+         familyi={S\bibinitperiod},
+         given={Vanessa},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Triplett},
+         familyi={T\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TJA}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={Jessica\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Varoquaux},
+         familyi={V\bibinitperiod},
+         given={Ga{\"e}l},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PRA}{%
+         family={Poldrack},
+         familyi={P\bibinitperiod},
+         given={Russell\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKJ+1}
+  \strng{fullhash}{GKJATCVDCRCDSDEPFGGSSGTHYOHDAHMKDLXMZMCNBNNTEPJPJBRASGSVTWTJAVGPRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The development of magnetic resonance imaging (MRI) techniques has defined
+  modern neuroimaging. Since its inception, tens of thousands of studies using
+  techniques such as functional MRI and diffusion weighted imaging have allowed
+  for the non-invasive study of the brain. Despite the fact that MRI is
+  routinely used to obtain data for neuroscience research, there has been no
+  widely adopted standard for organizing and describing the data collected in
+  an imaging experiment. This renders sharing and reusing data (within or
+  between labs) difficult if not impossible and unnecessarily complicates the
+  application of automatic pipelines and quality assurance protocols. To solve
+  this problem, we have developed the Brain Imaging Data Structure (BIDS), a
+  standard for organizing and describing MRI datasets. The BIDS standard uses
+  file formats compatible with existing software, unifies the majority of
+  practices already common in the field, and captures the metadata necessary
+  for most common data processing operations.%
+    }
+    \verb{doi}
+    \verb 10.1038/sdata.2016.44
+    \endverb
+    \field{issn}{2052-4463}
+    \field{number}{1}
+    \field{pages}{160044}
+    \field{title}{The brain imaging data structure, a format for organizing and
+  describing outputs of neuroimaging experiments}
+    \verb{url}
+    \verb https://doi.org/10.1038/sdata.2016.44
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Scientific Data}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{DBLP:journals/corr/HeZRS15}{article}{}

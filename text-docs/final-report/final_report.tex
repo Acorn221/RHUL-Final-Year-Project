@@ -78,7 +78,6 @@ Signature:
 % TODO: Remove all mentions of flowers dataset
 % TODO: Change secion on exiting data, say that it is to be disregarded
 
-
 \chapter*{Project Specification}
 
 Aims: To implement and compare on benchmark data sets various machine learning algorithms
@@ -140,6 +139,18 @@ the datasets I have chosen to use, the results of my experiments and the conclus
 
 The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible.
 It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required.
+
+\chapter{Rationale}
+
+\section{Background}
+Alzheimer's disease is a neurodegenerative disease that affects the brain. It is the most common cause of dementia, and 1 in 3 people born in the UK this year will develop dementia in their lifetime.\cite{DementiaStatistics}
+
+The symptoms of Alzheimer's disease are memory loss, confusion, mood swings, and difficulty with everyday tasks, it can also eventually lead to death, however the slow progression disease causes many prople to live with it for years and slowly lose their independence, and forget who they are.
+
+There have recently been developments in drug discovery and development that have been able to slow the progression of AD, but are only effective in the early stages of the disease, and are not able to reverse the damage that has already been done. This means that early diagnosis is essential to ensure that the drugs are as effective as possible.\cite{Van_Dyck2022-pt}
+
+Transfer learning can be a useful tool to create predictions of the progression of AD, as it can be used to train models on a smaller dataset than would otherwise be required, as MRI scans are expensive and time consuming to obtain.
+
 
 \chapter{Neural Networks}
 \begin{figure}[ht!]
@@ -221,6 +232,15 @@ Additionally, the choice of optimiser can also affect the speed of convergence a
   \caption{A diagram of Content Based Image Retrieval \cite{ContentBasedImageRetrieval}}
 \end{figure}
 
+\section{Classification Vs Regression}
+
+Classification is a type of supervised machine learning model that is used to predict the class of a given data point.
+It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point.
+For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house.
+
+Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. 
+
+The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset.
 
 \section{What is a Convolutional Neural Network}
 A convolutional neural network (CNN) is a type of neural network that is used for image classification.
@@ -228,7 +248,6 @@ It is made up of a series of convolutional layers, pooling layers, and fully con
 The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image.
 The fully connected layers are used to classify the image.
 They are often much more efficient than other types of neural networks, and are commonly used for image classification.
-
 
 \section{Types Of Layers}
 
@@ -246,6 +265,10 @@ They are often much more efficient than other types of neural networks, and are 
 % Talk about the different types of layers specifically
 % Include a diagram of a CNN
 
+\section{Using an LSTM for classification with MRI scans}
+An LSTM (Long Short Term Memory) network is a type of recurrent neural network that is used for time series prediction, it is typically not used with transfer learning as it is not as efficient as other types of neural networks. The specific LSTM structure allows for multiple MRI scans to be used as input to the model, and the model, so it would be able to classify the Alzheimer's CDR score more accurately, as it could take into account more scans, using the raw scan information, instead of the pre-processed data that I would otherwise have to use with regular CNN model that I could use with transfer learning.
+
+% TODO: Maybe implement an LSTM model and compare the performance to the CNN model
 
 \section{What transfer learning is}
 Transfer learning is a common, efficient method for training deep learning models.
@@ -394,8 +417,12 @@ these are designed to be used for ray tracing, which is a technique used to rend
 \chapter{Data Importing and Preprocessing}
 
 \section{Formatting and converting the data}
-Clinica\cite{SAMPERGONZALEZ2018504} is a python library that can be used to convert the MRI scans in the different formats into the BIDS format\cite{BIDS}.
+Clinica\cite{SAMPERGONZALEZ2018504} is a python library that can be used to convert the MRI scans in the different formats into the BIDS format\cite{Gorgolewski2016}.
 This significantly speeds up development as the standardised BIDS format lets me use the same code for the different datasets, as well as allowing me to use pre existing tools to import the data and preprocess it, ready for training.
+
+MRI data can be complicated and before the BIDS standardisation, it was significantly more difficult for researchers to share data with each other. It contains information such as the manufacturer of the scanner, the model of the scanner, the software associated with the scanner and version, then other parameters about the setup of the scanner, such as the field strength and the number of channels.\cite{BIDS_metadata}
+
+Whilst I have not used the BIDS standard for all the datasets in this project, I feel that it is very useful and I will be using it for all the future datasets that I use.
 
 \section{Dataset Augmentation}
 
@@ -658,9 +685,7 @@ This would give me an opportunity to write unit tests for the API, and to test t
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen,
-and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start,
-and then fine-tune the model at a slower rate. 
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate. 
 
 A local minimum is when the model can't decrease its loss any further by adjusting its parameters. 
 It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
@@ -672,7 +697,6 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 \chapter{Identifying annd Mitigating Bias}
 
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
-% TODO: Talk about there being lots of old patients in the dataset, only the old ones have Alzheimer's generally
 
 \section{nWBV vs Age}
 Giving the age of the patient to the machine learning algorithm may allow for bias, this is because there are very few patients who are young and have Alzheimer's disease, in the dataset.
@@ -797,8 +821,45 @@ Run main.py in the AutomatedTestingLibary directory to run the training program.
 
 The flower training notebook does not work as I am having issues with Keras and the dataset (specifically the way it is loaded).
 
-\chapter{Diary}
+\chapter{Professional Issues}
 
+% TODO: talk about the agreements made to get the data, and the potential issues with the data
+
+\section{Usability}
+As AI-based systems such as transfer learning models are increasingly employed for Alzheimer's detection, it is crucial to ensure that they are accessible, user-friendly and transparent in their operation. The algorithms should be focused on designing systems that complement human expertise rather than replacing it, facilitating seamless integration between healthcare professionals and AI tools. Appropriate training and guidelines for the use of AI in medical imaging should be implemented to ensure that healthcare providers are comfortable and proficient with the technology. This would mean that my web interface should be intuitive and easily accessible to healthcare professionals, and should be able to be used by them without any training.
+
+\section{Plagiarism}
+
+To prevent unethical practices and promote collaboration, it is essential to establish guidelines for the appropriate use, citation, and acknowledgment of research materials and software. When using code or datasets from other sources, I have quoted the source and provided a link or citation to the original work.
+
+\section{Safety and Reliability}
+
+The validity and reliability of AI models are critical for maintaining trust in the technology, especially when dealing with sensitive healthcare data. Rigorous testing and validation methods should be employed to ensure the accuracy of the model. Furthermore, healthcare providers and patients should be made aware of any "as is" clauses or other limitations associated with the software to prevent misuse or over-reliance on the technology. As the accuracy of the models is not guaranteed, I will need to ensure that the output is clearly displayed from the model and the confidence scores for each class are also displayed, to help the healthcare professional make a decision. The models used in this project would most likely be better suited for screening patients, rather than making a final diagnosis.
+
+\section{Privacy and Legal Issues}
+
+The use of machine learning for Alzheimer's diagnosis raises significant privacy concerns, particularly with regard to the handling and storage of sensitive patient data. Data protection laws and regulations, such as HIPAA and GDPR, must be adhered to in order to guarantee patient confidentiality and to secure informed consent for the collection of medical data. Data anonymization techniques should be used to protect patients' identities when training and utilizing AI models. For the OASIS datasets, the data is already anonymized, but there are also other terms and conditions that must be followed, for example, with MRI scans, you can generate an image of the patient's face and use that to identify the patient and that was explicitly forbidden in the terms and conditions.
+
+Machine learning is also used in other areas of healthcare, such as drug discovery and clinical trials, for example, a drug may get killed off in it's early stages if an algorithm determines that it could be carcinogenic. This could be a problem if the algorithm is wrong, as the drug could have been a significant breakthrough treatment, however it's likely to have a better impact to use the prediction algorithm to screen drugs and get the problematic ones removed quicker, as more resources can be put into the drugs that are more likely to be successful.\cite{10.3389/frai.2021.757780}
+
+\section{Monopoly and Competition}
+
+The AI healthcare market should remain competitive and accessible to various stakeholders, preventing the dominance of a few companies or technologies. The avoidance of proprietary formats, DRM measures, and forced tie-ins is crucial for maintaining a fair marketplace and providing healthcare professionals with multiple options for AI-assisted Alzheimer's diagnosis and treatment. Specifically, the BIDS format should be used to store and interpret the data, as it is an open standard for neuroimaging data. In terms of competition, Keras, Tensorflow and the pre-trained models are all open source, so anyone can use them, and there are many other open source libraries that can be used by anyone, so the competition is not a huge issue.
+
+\section{Management and Stakeholder Consultation}
+
+There are various stakeholders who would be interested in AI prediction of Alzheimer's, for example the patients could be interested in knowing if they have Alzheimer's quicker than they otherwise would have, however the patients having direct access to the web interface would be problematic, as the results may be inaccurate and could potentially cause un-needed stress for the patient. 
+
+The healthcare professionals would be interested in the web interface, as it would allow them to quickly and easily get a prediction of whether the patient has Alzheimer's or not, and it would also allow them to see the confidence scores for each class, so they can make a more informed decision, this interface being available 24/7 and being easy to use would benefit them greatly. The usability to the healthcare professionals would depend on the accuracy of the model too, so it would be important to ensure that the model is as accurate as possible.
+
+\section{Biases in the data}
+
+The biases in the OASIS-1 dataset are very prevalent, I have decided to dedicate a seperate chapter to this issue. Giving the machine learning model the age of the patient as a feature could potentially be a bad idea, as the biases in the data could potentially lead to the model predicting whether or not the patient has AD, based off of their age. If I don't give the model the age of the patient, there is a chance that it could predict the age it's self, which would defeat the purpose of the model. I could try predicting the age of the patient to see how well it can guess the age of a patient based off of their MRI scan, to see if it has the ability to predict the age of the patient, I could also see how changing the given age of the patient affects the accuracy of the model, accross the different classes.
+
+\section{Collaboration and Communication Barriers}
+If the model's accuracy is not explicitly stated in the web interface, doctors may be more likely to rely on the models predictions, rather than using their own judgement, which could lead to a misdiagnosis. The model's accuracy should be clearly stated in the web interface, so that the healthcare professionals can make an informed decision, and the interface should have a disclaimer stating that the model's accuracy is not guaranteed, and that the healthcare professional should use their own judgement when making a diagnosis, along with multilingual support, so that the interface can be used by healthcare professionals from all over the world, without any potential problems with language barriers.
+
+\chapter{Diary}
 
 \section*{19/10/2022}
 

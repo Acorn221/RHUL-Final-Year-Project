@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex final_report"] 1679057365 "final_report.aux" "final_report.bbl" "final_report" 1679057370
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1657609515 65483 3b5a53ada692a06ce416d088de6a391b ""
   "final_report-blx.bib" 1679057370 340 25674e554aa25e98ea59ec40797d70f1 "pdflatex"
@@ -8,6 +9,17 @@
   "final_report.bbl"
   "final_report.blg"
 ["pdflatex"] 1679057366 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1679057370
+=======
+["bibtex final_report"] 1679056595 "final_report.aux" "final_report.bbl" "final_report" 1679056605
+  "C:/Users/mlg/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1657609515 65483 3b5a53ada692a06ce416d088de6a391b ""
+  "final_report-blx.bib" 1679056604 340 25674e554aa25e98ea59ec40797d70f1 "pdflatex"
+  "final_report.aux" 1679056604 21893 0bb41130604c8156f09935cd6c439f5c "pdflatex"
+  "refs.bib" 1679056586 19437 fc92d1e27ead8d9ec2b4cc7fd4c2c0d7 ""
+  (generated)
+  "final_report.bbl"
+  "final_report.blg"
+["pdflatex"] 1679056600 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1679056605
+>>>>>>> Project-report
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668535242 84158 d77284a6843bde1e4b9764f09fb2e89e ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1669307071 12668 9f739290d3285f6525d6bae1771125d4 ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1669307275 15464 b7b1c66cd01c7bc6d4081ff506a709ef ""
@@ -111,6 +123,7 @@
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657797096 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/tocloft/tocloft.sty" 1578908763 37263 3e78d14f0f4b1a30560fea5e04de805d ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+<<<<<<< HEAD
   "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1679057359 57481 cf6ef8955f6a33fdabfad964d0cda4e0 ""
   "final_report.aux" 1679057370 21477 1953db66715f8a454eed1563da7c9004 "pdflatex"
   "final_report.bbl" 1679057366 23060 42cdd243a8ddc075e57698946266861c "bibtex final_report"
@@ -119,6 +132,16 @@
   "final_report.run.xml" 1679057370 2588 c75833d2c4201e1d86f79009efc08bc5 "pdflatex"
   "final_report.tex" 1679057359 57481 cf6ef8955f6a33fdabfad964d0cda4e0 ""
   "final_report.toc" 1679057370 5270 5ff6c3b8badf5d1f327c7248dccb2540 "pdflatex"
+=======
+  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1679056529 58856 77428bbdb0722c750dd63be0958551b3 ""
+  "final_report.aux" 1679056604 21893 0bb41130604c8156f09935cd6c439f5c "pdflatex"
+  "final_report.bbl" 1679056595 29919 635d4396b8d34051736ab8e4c6881dad "bibtex final_report"
+  "final_report.cls" 1677581669 5034 9949560295805b0968e9910abcf2715a ""
+  "final_report.out" 1679056604 9586 31ab809466d7602399a54c355bf2840d "pdflatex"
+  "final_report.run.xml" 1679056604 2588 c75833d2c4201e1d86f79009efc08bc5 "pdflatex"
+  "final_report.tex" 1679056529 58856 77428bbdb0722c750dd63be0958551b3 ""
+  "final_report.toc" 1679056604 5378 c07d6cbe73f400f3e60d8e5c0aaeaf6e "pdflatex"
+>>>>>>> Project-report
   "images/ConfusionMatrix.png" 1677581669 40651 910da642e1c17289c0a431d6747f5304 ""
   "images/MobileNetv3-structure.png" 1677581669 431093 aab09e190cefeb85682125e5fb31a3c6 ""
   "images/NeuralNetwork.png" 1677581669 75767 d252ea67d006d476afbcec7728753a78 ""

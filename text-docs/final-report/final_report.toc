@@ -9,7 +9,12 @@
 \contentsline {section}{\numberline {2.4}The different optimizers}{10}{section.2.4}%
 \contentsline {section}{\numberline {2.5}What is a Convolutional Neural Network}{10}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Types Of Layers}{10}{section.2.6}%
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2.7}What transfer learning is}{11}{section.2.7}%
+=======
+\contentsline {section}{\numberline {2.7}Using an LSTM for classification with MRI scans}{11}{section.2.7}%
+\contentsline {section}{\numberline {2.8}What transfer learning is}{11}{section.2.8}%
+>>>>>>> Project-report
 \contentsline {chapter}{\numberline {3}The Datasets I will be using}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The Contents of the Dataset}{12}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Transfer Learning}{13}{chapter.4}%
@@ -25,7 +30,11 @@
 \contentsline {section}{\numberline {5.1}Formatting and converting the data}{17}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Dataset Augmentation}{17}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Batch sizes}{17}{section.5.3}%
+<<<<<<< HEAD
 \contentsline {section}{\numberline {5.4}Feature Normalisation}{17}{section.5.4}%
+=======
+\contentsline {section}{\numberline {5.4}Feature Normalisation}{18}{section.5.4}%
+>>>>>>> Project-report
 \contentsline {section}{\numberline {5.5}Keras Data Generators}{18}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Evaluating the performance}{19}{chapter.6}%
 \contentsline {section}{\numberline {6.1}The different metrics}{19}{section.6.1}%

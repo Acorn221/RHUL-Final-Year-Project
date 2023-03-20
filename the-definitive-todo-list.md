@@ -13,10 +13,13 @@
     - The model just needs more information, it's not learning well with just the MRI scans and standard transfer learning
   - [x] See if classification or regression is better for it
     - Classification appears to yeild better results, as the dataset essentially has just 4 classes
-- [ ] Get the training with the MRI image and the other data in the OASIS-1 dataset
+- [z] Get the training with the MRI image and the other data in the OASIS-1 dataset
   - [x] Create a sub-model for the other data
   - [x] Combine the two models
-  - [ ] Feed the data to the new model, in the correct format
+  - [x] Feed the data to the new model, in the correct format
+- [ ] Try and predict the age of the patients to see if it's possible
+  - [ ] See if the model can predict the age of the patients
+  - [ ] Compare the impact of changing the input age to the model, to see how the model reacts
 - [ ] Use better methods of analysis for the performance
   - [ ] Confusion Matrices
 - [ ] Hyperparameter tuning
@@ -25,7 +28,7 @@
 	- [ ] Look more into hyperparameter tuning and model optimisation
 - [ ] Setup the OASIS-3 Dataset
   - [ ] Download and extract the dataset
-  - [ ] Find out how to read and interpret the dataset
+  - [x] Find out how to read and interpret the dataset
   - [ ] Parse the dataset into a usable format, to be used by keras
   - [ ] See if training with the OASIS-3 dataset is better
 
@@ -45,7 +48,7 @@
 - [ ] Create a web interface for uploading MRI scans and getting the results
   - [ ] Set up a flask API
     - [ ] Create tests for the API
-  - [ ] Create a basic web interface for uploading and getting the predictions
+  - [x] Create a basic web interface for uploading and getting the predictions
 - [ ] The Report
   - [ ] The Diary
   - [ ] Document the different hyperparameter tuning
@@ -53,3 +56,19 @@
   - [ ] Talk about the web interface and it's potential uses
 - [ ] Look for another dataset (medical imaging)
   - [x] OASIS-3 - Gained access to the dataset
+
+
+
+## Markscheme Checklist
+
+- [ ] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+- [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
+- [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
+- [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
+- [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
+- [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
+  - [ ] 
+- [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
+  - [ ] Bibtex has taken care of this
+- [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
+  - [ ] I feel as though I have covered this well
