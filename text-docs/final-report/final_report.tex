@@ -695,7 +695,11 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript. 
 This allows for better code completion, and it makes it easier to debug the code, as it will tell you if you've made a mistake sooner, whereas javascript would give you an error at runtime, if you end up with a type error. Typescript helps counter many of the issues with JS however it's not perfect and there are still issues where there can be scope for errors.
 
+I do have the option of using tensorflow-JS, which can process all of the data locally, this has benefits and drawbacks, the main benefit is that the user doesn't have to upload their data to a server, which can make the handling more secure as everything is processed locally, so there would be far less red tape with data protection laws. The main drawback is that the model would have to be downloaded to the user's device, which could be a problem if the model is large, and it would also mean that the user would have to wait for the model to be downloaded before they could use the application, then they would have to wait for the model to make a prediction after this.
+
 \section{The Back End}
+
+I've decided to use Python for the API backend, as it's the main server side language I have used so far. I can use Flask to host the api and return the results when they have been processed by the model.
 
 \chapter{Identifying and Mitigating Bias}
 
@@ -894,7 +898,6 @@ This is significant progress as this was a major blocker for me as I was not sur
 
 Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset, 
 with varying degrees of accuracy, around 80\% was the best I got however this was only after 5 epochs and was the first time I have tried transfer learning.
-
 
 \section*{09/11/2022}
 
