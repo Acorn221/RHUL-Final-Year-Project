@@ -19,4 +19,7 @@ def mmseConvert(x):
 	if math.isnan(float(x)):
 		return np.random.randint(25, 30)
 	else:
-		return x
+		return float(x)
+
+def genderToFloat(x):
+	return 1 if x == 'M' else 0

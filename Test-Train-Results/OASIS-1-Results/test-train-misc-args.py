@@ -37,7 +37,7 @@ from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 from keras.models import Model
 from keras.utils import Sequence
-from utils import createFileName, convertToString, mmseConvert
+from utils import createFileName, convertToString, mmseConvert, genderToFloat
 
 """
 This script is used to generate the transfer learning results from the OASIS-1 dataset, with the addition of the misc data.
@@ -57,13 +57,12 @@ scansDir = "C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/processed_scans"
 csvFile = "C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/oasis_cross-sectional.csv"
 modelDir = "C:/Active-Projects/RHUL-FYP/PROJECT/Test-Train-Results/OASIS-1-Results/extra-data-models/"
 
-"""
-This function is used to create the model for the transfer learning, it takes in the base model and creates the surrounding layers
-This is a function so that it can be used for the different models and avoid repeated code
-"""
-
 
 def create_model(base_model):
+    """
+    This function is used to create the model for the transfer learning, it takes in the base model and creates the surrounding layers
+    This is a function so that it can be used for the different models and avoid repeated code
+    """
     # Creating the sub-model for handling the assocated data with the scan
     sub_model_input = Input(shape=(4,))
     x = Dense(64, activation="relu")(sub_model_input)
@@ -100,6 +99,10 @@ def create_model(base_model):
 
 
 class MRIDataGenerator(Sequence):
+    """
+    This class is the data generator used to augment and batch the data for the model
+    """
+
     def __init__(
         self,
         df,
@@ -177,3 +180,123 @@ class MRIDataGenerator(Sequence):
                 print(f"Error with Datagen For Loop: {e}")
 
         return [batch_a, batch_x], batch_y
+
+
+class AutomatedRegularTesting(t.AutomatedTesting):
+    """
+    This class inherits from the AutomatedTesting class and is used to automate the testing of the models
+    I need to override the loadTrainingData function so that I can pass the extra data through the data generator, to the model
+    """
+
+    def __init__(
+        self, models, output, augmentationParams, trainingArgs, batchSize=32, split=0.2
+    ):
+        self.batchSize = batchSize
+        self.split = split
+        self.datagen = ImageDataGenerator(
+            **augmentationParams,
+        )
+        super().__init__(models, None, output, augmentationParams, trainingArgs)
+
+    def loadTrainingData(self):
+        """
+        This function is used to load the training data, it will load the data from the csv file and then create the data generator
+        It will then return the data generator
+        """
+        labels = pd.read_csv("oasis_cross-sectional.csv", dtype=str)
+
+        labels["fileNames"] = labels["ID"].apply(createFileName)
+        labels["CDR_str"] = labels["CDR"].apply(convertToString)
+        labels["MMSE_fixed"] = labels["MMSE"].apply(mmseConvert)
+        labels["M/F_str"] = labels["M/F"].apply(genderToFloat)
+
+        split = int(len(labels) * self.split)
+
+        self.train_ds = MRIDataGenerator(
+            labels[split:],
+            self.datagen,
+            self.batchSize,
+            ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"],
+            "CDR_str",
+            target_size=self.targetSize,
+        )
+
+        self.test_ds = MRIDataGenerator(
+            labels[:split],
+            self.datagen,
+            self.batchSize,
+            ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"],
+            "CDR_str",
+            target_size=self.targetSize,
+        )
+
+
+def main():
+    models = []
+    modelsToTest = [
+        MobileNetV2,
+        InceptionV3,
+        MobileNetV3Large,
+        MobileNetV3Small,
+        ResNet50V2,
+        ResNet101V2,
+        EfficientNetB0,
+        EfficientNetB1,
+        EfficientNetB3,
+        VGG16,
+        VGG19,
+        Xception,
+    ]
+
+    for model in modelsToTest:
+        callback = partial(create_model, model)
+        models.append(m.Model(callback, modelname=model.__name__, saveDir=modelDir))
+
+    # Define the augmentation parameters
+    augmentationParams = {
+        "rotation_range": 20,
+        "width_shift_range": 0.2,
+        "height_shift_range": 0.2,
+        "shear_range": 0.2,
+        "zoom_range": 0.2,
+        "horizontal_flip": True,
+        "fill_mode": "nearest",
+        "validation_split": 0.2,
+    }
+
+    trainingArgs = [
+        {
+            "train": {
+                "epochs": 100,
+            },
+            "compile": {
+                "optimizer": Adam(learning_rate=0.00001),
+                "loss": CategoricalCrossentropy(),
+                "metrics": [CategoricalAccuracy()],
+            },
+        },
+        {
+            "train": {
+                "epochs": 100,
+            },
+            "other": {
+                "fully_trainable": True,
+            },
+            "compile": {
+                "optimizer": Adam(learning_rate=0.0000001),
+                "loss": CategoricalCrossentropy(),
+                "metrics": [CategoricalAccuracy()],
+            },
+        },
+    ]
+
+    testing = AutomatedRegularTesting(
+        models, modelDir, augmentationParams, trainingArgs, batchSize=32, split=0.2
+    )
+
+    # Run the testing
+    testing.start()
+
+
+if __name__ == "__main__":
+    main()
