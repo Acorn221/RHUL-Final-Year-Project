@@ -121,7 +121,7 @@ if __name__ == '__main__':
 
 
   trainingArgs = [
-    { 4
+    {
       "train": {
         "epochs": 100,
       },
