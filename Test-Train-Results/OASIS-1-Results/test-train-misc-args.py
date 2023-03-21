@@ -15,6 +15,7 @@ from keras.optimizers import Adam
 from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 from keras.models import Model
+from keras.utils import Sequence
 from utils import createFileName, convertToString, mmseConvert
 
 """
@@ -65,6 +66,7 @@ def create_model(base_model):
   x = Dropout(0.5)(x)
   x = Concatenate()([sub_model.output, x])
   x = Dense(512, activation='relu')(x)
+  x = Dropout(0.5)(x)
   outputs = Dense(4, activation='softmax')(x)
 
   # Clearly defining the inputs and outputs of the model
@@ -72,4 +74,72 @@ def create_model(base_model):
 
   return model
 
+
+class MRIDataGenerator(Sequence):
+
+  def __init__(self, df, datagen, batch_size, df_input_labels, df_target_label, target_size=(224, 224, 3), shuffle=True):
+      self.df = df
+      self.datagen = datagen
+      self.df_input_labels = df_input_labels
+      self.df_target_label = df_target_label
+      self.batch_size = batch_size
+      self.target_size = target_size
+      self.shuffle = shuffle
+      self.on_epoch_end()
+
+  def __len__(self):
+    return int(np.ceil(len(self.df) / self.batch_size))
+  
+  def on_epoch_end(self):
+     # Shuffle the data if shuffle is True
+    if self.shuffle:
+      self.df = self.df.sample(frac=1).reset_index(drop=True)
+
+  def __getitem__(self, idx):
+    # If the batch size is not a multiple of the total number of images, the last batch will be smaller
+    batchEnd = (idx+1)*self.batch_size if (idx+1)*self.batch_size < len(self.df) else len(self.df)
+
+    # Get the batch
+    batch = self.df[idx*self.batch_size:batchEnd]
+
+    # Create the arrays to store the images and labels
+    batch_x = np.zeros((len(batch),) + self.target_size + (3,), dtype='float32')
+    batch_y = np.zeros((len(batch),), dtype='int32')
+
+    # Create the arrays to store the attributes
+    batch_a = np.zeros((len(batch), len(self.df_input_labels)), dtype='float32')
+    
+    for i, row in batch.iterrows():
+      try:
+        # i refers to the index of the dataframe, not the batch
+        current_index = i % self.batch_size - 1
+
+        #print(f"i: {i}, currentIndex: {currentIndex}, batchEnd: {batchEnd}, batchStart: {idx*self.batch_size}")
+
+        img = tf.keras.preprocessing.image.load_img(
+          row['fileNames'],
+          target_size=self.target_size
+        )
+
+        # Convert the image to an array
+        x = tf.keras.preprocessing.image.img_to_array(img)
+
+        # Apply the data augmentation
+        x = self.datagen.random_transform(x)
+        x = self.datagen.standardize(x)
+
+        # Add the image to the batch
+        batch_x[current_index] = x
+
+        # Add the label to the batch
+        batch_y[current_index] = float(row[self.df_target_label])
+
+        # Add the attributes to the batch
+        for label, i in self.df_input_labels:
+          batch_a[current_index, i] = float(row[label])
+
+      except Exception as e:
+        print(f"Error with Datagen For Loop: {e}")
+      
+    return [batch_a, batch_x], batch_y
 
