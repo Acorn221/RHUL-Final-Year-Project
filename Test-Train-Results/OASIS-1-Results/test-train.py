@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
-
+from functools import partial
 import AutomatedTestingLibrary.Classes.AutomatedTesting as t
 import AutomatedTestingLibrary.Classes.Model as m
 
@@ -19,7 +19,7 @@ csvFile = 'C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/oasis_cross-sectional.csv
 outputDir = 'C:/Active-Projects/RHUL-FYP/PROJECT/Test-Train-Results/OASIS-1-Results/output/'
 modelDir = 'C:/Active-Projects/RHUL-FYP/PROJECT/Test-Train-Results/OASIS-1-Results/models/'
 
-def create_model(base_model, **kwargs):
+def create_model(base_model):
 
   model = Sequential()
 
@@ -36,7 +36,7 @@ def create_model(base_model, **kwargs):
   model.add(Dropout(0.5))
   model.add(Dense(4, activation='softmax'))
 
-  return m.Model(model, **kwargs)
+  return model
 
 
 class AutomatedRegularTesting(t.AutomatedTesting):
@@ -101,7 +101,8 @@ if __name__ == '__main__':
   modelsToTest = [MobileNetV2, InceptionV3, MobileNetV3Large, MobileNetV3Small, ResNet50V2, ResNet101V2, EfficientNetB0, EfficientNetB1, EfficientNetB3, VGG16, VGG19, Xception]
 
   for model in modelsToTest:
-    models.append(create_model(model, name=model.__name__, saveDir=modelDir))
+    callback = partial(create_model, model)
+    models.append(m.Model(callback, modelname=model.__name__, saveDir=modelDir))
 
   # Define the data directory
   data_dir = None
@@ -120,7 +121,7 @@ if __name__ == '__main__':
 
 
   trainingArgs = [
-    { 
+    { 4
       "train": {
         "epochs": 100,
       },
