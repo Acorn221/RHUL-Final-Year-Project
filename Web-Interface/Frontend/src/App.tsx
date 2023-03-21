@@ -25,7 +25,10 @@ enum states {
 }
 
 type predictionType = {
-  isPositive: number;
+  0: number;
+  1: number;
+  2: number;
+  3: number;
 };
 
 const App = () => {
@@ -61,7 +64,7 @@ const App = () => {
       formData.append('age', age.toString());
       formData.append('sex', sex);
       formData.append('mmse', mmse.toString());
-      fetch('http://localhost:3001/predict', {
+      fetch('http://localhost:3002/predict', {
         method: 'POST',
         body: formData,
       })
@@ -170,7 +173,7 @@ const App = () => {
                 <div className="text-2xl">Prediction received!</div>
                 <div className="text-xl">
                   The model predicts that the patient has a probability of &nbsp;
-                  {prediction?.isPositive}
+                  {JSON.stringify(prediction, null, 2)}
                   % of having Alzheimer&apos;s Disease
                 </div>
               </div>

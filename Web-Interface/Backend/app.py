@@ -58,8 +58,8 @@ def upload():
 	# prediction = predict_class(filepath, model)
 	prediction = {'0': '0.0', '1': '0.82', '2': '0.18', '3': '0.01'}
 	# Convert the response to a string
-	response = str(prediction)
-	logging.info("Prediction: " + response)
+	response = jsonify(prediction)
+	logging.info("Prediction: " + str(response))
 	# Delete the file from the server
 	remove(filepath)
 
