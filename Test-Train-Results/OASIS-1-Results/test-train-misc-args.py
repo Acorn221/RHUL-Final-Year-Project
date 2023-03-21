@@ -5,7 +5,7 @@ from functools import partial
 import AutomatedTestingLibrary.Classes.AutomatedTesting as t
 import AutomatedTestingLibrary.Classes.Model as m
 import tensorflow as tf
-import tf.keras as keras
+import tensorflow.keras as keras
 from keras.layers import (
     Conv2D,
     MaxPooling2D,
@@ -15,7 +15,7 @@ from keras.layers import (
     Input,
     Concatenate,
 )
-from keras.preprocessing.image import load_img, img_to_array, ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 from keras.layers import Flatten, Dense, Dropout
 from keras import Sequential
 from keras.applications import (
@@ -58,13 +58,13 @@ csvFile = "C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/oasis_cross-sectional.csv
 modelDir = "C:/Active-Projects/RHUL-FYP/PROJECT/Test-Train-Results/OASIS-1-Results/extra-data-models/"
 
 
-def create_model(base_model):
+def create_model(base_model, float_inputs):
     """
     This function is used to create the model for the transfer learning, it takes in the base model and creates the surrounding layers
     This is a function so that it can be used for the different models and avoid repeated code
     """
     # Creating the sub-model for handling the assocated data with the scan
-    sub_model_input = Input(shape=(4,))
+    sub_model_input = Input(shape=(len(float_inputs),))
     x = Dense(64, activation="relu")(sub_model_input)
     x = Dense(512, activation="relu")(x)
     x = Dropout(0.2)(x)
@@ -110,7 +110,7 @@ class MRIDataGenerator(Sequence):
         batch_size,
         df_input_labels,
         df_target_label,
-        target_size=(224, 224, 3),
+        target_size=(224, 224),
         shuffle=True,
     ):
         self.df = df
@@ -173,7 +173,7 @@ class MRIDataGenerator(Sequence):
                 batch_y[current_index] = float(row[self.df_target_label])
 
                 # Add the attributes to the batch
-                for label, i in self.df_input_labels:
+                for i, label in enumerate(self.df_input_labels):
                     batch_a[current_index, i] = float(row[label])
 
             except Exception as e:
@@ -189,10 +189,11 @@ class AutomatedRegularTesting(t.AutomatedTesting):
     """
 
     def __init__(
-        self, models, output, augmentationParams, trainingArgs, batchSize=32, split=0.2
+        self, models, output, augmentationParams, trainingArgs, batchSize=32, split=0.2, other_params=[]
     ):
         self.batchSize = batchSize
         self.split = split
+        self.other_params = ["M/F_str"] if len(other_params) == 0 else other_params
         self.datagen = ImageDataGenerator(
             **augmentationParams,
         )
@@ -203,7 +204,17 @@ class AutomatedRegularTesting(t.AutomatedTesting):
         This function is used to load the training data, it will load the data from the csv file and then create the data generator
         It will then return the data generator
         """
-        labels = pd.read_csv("oasis_cross-sectional.csv", dtype=str)
+
+        raw_labels = pd.read_csv(csvFile, dtype=str)
+
+        # Creating a list of all the actual images in the processed_scans folder
+        fileNames = []
+        # Create an array of all the file names from the processed_scans folder
+        for _, _, files in os.walk(scansDir):
+          for file in files:
+            fileNames.append(file)
+
+        labels = raw_labels[raw_labels['ID'].isin([fileName[:13] for fileName in fileNames])]
 
         labels["fileNames"] = labels["ID"].apply(createFileName)
         labels["CDR_str"] = labels["CDR"].apply(convertToString)
@@ -216,24 +227,26 @@ class AutomatedRegularTesting(t.AutomatedTesting):
             labels[split:],
             self.datagen,
             self.batchSize,
-            ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"],
+            self.other_params,
             "CDR_str",
-            target_size=self.targetSize,
         )
 
         self.test_ds = MRIDataGenerator(
             labels[:split],
             self.datagen,
             self.batchSize,
-            ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"],
+            self.other_params,
             "CDR_str",
-            target_size=self.targetSize,
         )
 
 
 def main():
+
+    # Defining the other parameters to use
+    other_params = ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"]
+    # Define the models to test
     models = []
-    modelsToTest = [
+    models_to_test = [
         MobileNetV2,
         InceptionV3,
         MobileNetV3Large,
@@ -248,12 +261,12 @@ def main():
         Xception,
     ]
 
-    for model in modelsToTest:
-        callback = partial(create_model, model)
+    for model in models_to_test:
+        callback = partial(create_model, model, other_params)
         models.append(m.Model(callback, modelname=model.__name__, saveDir=modelDir))
 
     # Define the augmentation parameters
-    augmentationParams = {
+    augmentation_params = {
         "rotation_range": 20,
         "width_shift_range": 0.2,
         "height_shift_range": 0.2,
@@ -264,7 +277,7 @@ def main():
         "validation_split": 0.2,
     }
 
-    trainingArgs = [
+    training_args = [
         {
             "train": {
                 "epochs": 100,
@@ -291,7 +304,7 @@ def main():
     ]
 
     testing = AutomatedRegularTesting(
-        models, modelDir, augmentationParams, trainingArgs, batchSize=32, split=0.2
+        models, modelDir, augmentation_params, training_args, batchSize=32, split=0.2, other_params=other_params
     )
 
     # Run the testing
