@@ -281,6 +281,12 @@ This is also where the model is usually unfrozen, so that the pre-trained model 
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
 This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
 
+I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
+It's a combination of 2 datasets, the Edinburgh Research and Innovation (Dermofit)\cite{Ballerini2013}, and the Dermatology Service of Hospital Pedro Hispano\cite{6610779}. There are 484 images in the dataset, with 2 different classes, benign (270) and malignant (214). All the images are 200x200 pixels, with 3 channels (RGB), which is not optimal as they require upscaling to be used with the models I will be using for transfer learning.
+
+In the paper from the dataset creators, they used KNN, SVM and a CNN model to classify the images in the dataset.
+With the optimal hyperparameters, they achieved an accuracy of 99.54\% using the SVM and RCPSO which stands for Real-Coded Particle Swarm Optimization, this is a nature-inspired optimization technique used to search for the best solution in a given problem space, which was used for optimising the hyperparameters of the SVM model.
+
 \section{The Contents of the Dataset}
 This information is from the fact sheet, associated with the dataset. \cite{OASISFactSheet}
 The OASIS-1 dataset contains a few different associated parameters, as listed here from the CSV:
