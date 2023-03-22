@@ -287,7 +287,7 @@ It's a combination of 2 datasets, the Edinburgh Research and Innovation (Dermofi
 In the paper from the dataset creators, they used KNN, SVM and a CNN model to classify the images in the dataset.
 With the optimal hyperparameters, they achieved an accuracy of 99.54\% using the SVM and RCPSO which stands for Real-Coded Particle Swarm Optimization, this is a nature-inspired optimization technique used to search for the best solution in a given problem space, which was used for optimising the hyperparameters of the SVM model.
 
-\section{The Contents of the Dataset}
+\section{The Contents of OASIS-1}
 This information is from the fact sheet, associated with the dataset. \cite{OASISFactSheet}
 The OASIS-1 dataset contains a few different associated parameters, as listed here from the CSV:
 
@@ -305,6 +305,21 @@ The OASIS-1 dataset contains a few different associated parameters, as listed he
   \item `eTIV`: The Estimated Total Intracranial Volume of the patient
   \item `nWBV`: The normalized whole brain volume of the patient
   \item `ASF`: The Atlas Scaling Factor of the patient
+\end{itemize}
+
+\section{The Contents of the Skin Cancer Dataset}
+
+The skin cancer dataset contains 2 different classes, benign and malignant, and 484 images in total.
+This is all the information that is available about the dataset, as it is not a publicly available dataset, this requires me to augment the data as much as possible to get good results.
+
+The augmentations I will be using are:
+\begin{itemize}
+  \item Random horizontal flipping
+  \item Random vertical flipping
+  \item Random rotation
+  \item Random zoom
+  \item Random brightness
+  \item Random offset
 \end{itemize}
 
 \chapter{Transfer Learning}
@@ -809,6 +824,16 @@ My lack of experience with machine learning meant that I didn't know what to tru
 
 \chapter{The new training results}
 % TODO: train the models again with the new dataset and parameters, then show the results here
+
+\section{The OASIS-1 Dataset}
+
+The OASIS-1 dataset accuracy is not particularly high without any optimisation, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions. 
+
+\subsection{Training with only the MRI scans}
+
+\subsection{Training with the MRI scans and the other features}
+
+\section{The Skin Cancer Dataset}
 
 \chapter{How to run the code}
 % TODO: update the instructions for running the code, talk about virtual environments
