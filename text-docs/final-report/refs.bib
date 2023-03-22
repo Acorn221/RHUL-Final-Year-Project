@@ -331,11 +331,11 @@
   title = {OASIS},
   url   = {https://oasis-brains.org/#data}
 }
-@InProceedings{Simonyan15,
-  author       = "Karen Simonyan and Andrew Zisserman",
-  title        = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-  booktitle    = "International Conference on Learning Representations",
-  year         = "2015",
+@inproceedings{Simonyan15,
+  author    = {Karen Simonyan and Andrew Zisserman},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2015}
 }
 @misc{RTX3080,
   title = {RTX 3080},
@@ -345,102 +345,93 @@
   title = {OASIS-1 Fact Sheet},
   url   = {https://oasis-brains.org/files/oasis_cross-sectional_facts.pdf}
 }
-@misc{Clinica, 
+@misc{Clinica,
   title = {Clinica},
   url   = {https://github.com/aramis-lab/clinica}
 }
 @article{SAMPERGONZALEZ2018504,
-title = {Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data},
-journal = {NeuroImage},
-volume = {183},
-pages = {504-521},
-year = {2018},
-issn = {1053-8119},
-doi = {https://doi.org/10.1016/j.neuroimage.2018.08.042},
-url = {https://www.sciencedirect.com/science/article/pii/S1053811918307407},
-author = {Jorge Samper-González and Ninon Burgos and Simona Bottani and Sabrina Fontanella and Pascal Lu and Arnaud Marcoux and Alexandre Routier and Jérémy Guillon and Michael Bacci and Junhao Wen and Anne Bertrand and Hugo Bertin and Marie-Odile Habert and Stanley Durrleman and Theodoros Evgeniou and Olivier Colliot},
-keywords = {Classification, Reproducibility, Alzheimer's disease, Magnetic resonance imaging, Positron emission tomography, Open-source},
-abstract = {A large number of papers have introduced novel machine learning and feature extraction methods for automatic classification of Alzheimer's disease (AD). However, while the vast majority of these works use the public dataset ADNI for evaluation, they are difficult to reproduce because different key components of the validation are often not readily available. These components include selected participants and input data, image preprocessing and cross-validation procedures. The performance of the different approaches is also difficult to compare objectively. In particular, it is often difficult to assess which part of the method (e.g. preprocessing, feature extraction or classification algorithms) provides a real improvement, if any. In the present paper, we propose a framework for reproducible and objective classification experiments in AD using three publicly available datasets (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of the three datasets into a standard format (BIDS); ii) a modular set of preprocessing pipelines, feature extraction and classification methods, together with an evaluation framework, that provide a baseline for benchmarking the different components. We demonstrate the use of the framework for a large-scale evaluation on 1960 participants using T1 MRI and FDG PET data. In this evaluation, we assess the influence of different modalities, preprocessing, feature types (regional or voxel-based features), classifiers, training set sizes and datasets. Performances were in line with the state-of-the-art. FDG PET outperformed T1 MRI for all classification tasks. No difference in performance was found for the use of different atlases, image smoothing, partial volume correction of FDG PET images, or feature type. Linear SVM and L2-logistic regression resulted in similar performance and both outperformed random forests. The classification performance increased along with the number of subjects used for training. Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code of the framework and the experiments is publicly available: general-purpose tools have been integrated into the Clinica software (www.clinica.run) and the paper-specific code is available at: https://gitlab.icm-institute.org/aramislab/AD-ML.}
+  title    = {Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data},
+  journal  = {NeuroImage},
+  volume   = {183},
+  pages    = {504-521},
+  year     = {2018},
+  issn     = {1053-8119},
+  doi      = {https://doi.org/10.1016/j.neuroimage.2018.08.042},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1053811918307407},
+  author   = {Jorge Samper-González and Ninon Burgos and Simona Bottani and Sabrina Fontanella and Pascal Lu and Arnaud Marcoux and Alexandre Routier and Jérémy Guillon and Michael Bacci and Junhao Wen and Anne Bertrand and Hugo Bertin and Marie-Odile Habert and Stanley Durrleman and Theodoros Evgeniou and Olivier Colliot},
+  keywords = {Classification, Reproducibility, Alzheimer's disease, Magnetic resonance imaging, Positron emission tomography, Open-source},
+  abstract = {A large number of papers have introduced novel machine learning and feature extraction methods for automatic classification of Alzheimer's disease (AD). However, while the vast majority of these works use the public dataset ADNI for evaluation, they are difficult to reproduce because different key components of the validation are often not readily available. These components include selected participants and input data, image preprocessing and cross-validation procedures. The performance of the different approaches is also difficult to compare objectively. In particular, it is often difficult to assess which part of the method (e.g. preprocessing, feature extraction or classification algorithms) provides a real improvement, if any. In the present paper, we propose a framework for reproducible and objective classification experiments in AD using three publicly available datasets (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of the three datasets into a standard format (BIDS); ii) a modular set of preprocessing pipelines, feature extraction and classification methods, together with an evaluation framework, that provide a baseline for benchmarking the different components. We demonstrate the use of the framework for a large-scale evaluation on 1960 participants using T1 MRI and FDG PET data. In this evaluation, we assess the influence of different modalities, preprocessing, feature types (regional or voxel-based features), classifiers, training set sizes and datasets. Performances were in line with the state-of-the-art. FDG PET outperformed T1 MRI for all classification tasks. No difference in performance was found for the use of different atlases, image smoothing, partial volume correction of FDG PET images, or feature type. Linear SVM and L2-logistic regression resulted in similar performance and both outperformed random forests. The classification performance increased along with the number of subjects used for training. Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code of the framework and the experiments is publicly available: general-purpose tools have been integrated into the Clinica software (www.clinica.run) and the paper-specific code is available at: https://gitlab.icm-institute.org/aramislab/AD-ML.}
 }
 
-@Article{Gorgolewski2016,
-author={Gorgolewski, Krzysztof J.
-and Auer, Tibor
-and Calhoun, Vince D.
-and Craddock, R. Cameron
-and Das, Samir
-and Duff, Eugene P.
-and Flandin, Guillaume
-and Ghosh, Satrajit S.
-and Glatard, Tristan
-and Halchenko, Yaroslav O.
-and Handwerker, Daniel A.
-and Hanke, Michael
-and Keator, David
-and Li, Xiangrui
-and Michael, Zachary
-and Maumet, Camille
-and Nichols, B. Nolan
-and Nichols, Thomas E.
-and Pellman, John
-and Poline, Jean-Baptiste
-and Rokem, Ariel
-and Schaefer, Gunnar
-and Sochat, Vanessa
-and Triplett, William
-and Turner, Jessica A.
-and Varoquaux, Ga{\"e}l
-and Poldrack, Russell A.},
-title={The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments},
-journal={Scientific Data},
-year={2016},
-month={Jun},
-day={21},
-volume={3},
-number={1},
-pages={160044},
-abstract={The development of magnetic resonance imaging (MRI) techniques has defined modern neuroimaging. Since its inception, tens of thousands of studies using techniques such as functional MRI and diffusion weighted imaging have allowed for the non-invasive study of the brain. Despite the fact that MRI is routinely used to obtain data for neuroscience research, there has been no widely adopted standard for organizing and describing the data collected in an imaging experiment. This renders sharing and reusing data (within or between labs) difficult if not impossible and unnecessarily complicates the application of automatic pipelines and quality assurance protocols. To solve this problem, we have developed the Brain Imaging Data Structure (BIDS), a standard for organizing and describing MRI datasets. The BIDS standard uses file formats compatible with existing software, unifies the majority of practices already common in the field, and captures the metadata necessary for most common data processing operations.},
-issn={2052-4463},
-doi={10.1038/sdata.2016.44},
-url={https://doi.org/10.1038/sdata.2016.44}
+@article{Gorgolewski2016,
+  author   = {Gorgolewski, Krzysztof J.
+              and Auer, Tibor
+              and Calhoun, Vince D.
+              and Craddock, R. Cameron
+              and Das, Samir
+              and Duff, Eugene P.
+              and Flandin, Guillaume
+              and Ghosh, Satrajit S.
+              and Glatard, Tristan
+              and Halchenko, Yaroslav O.
+              and Handwerker, Daniel A.
+              and Hanke, Michael
+              and Keator, David
+              and Li, Xiangrui
+              and Michael, Zachary
+              and Maumet, Camille
+              and Nichols, B. Nolan
+              and Nichols, Thomas E.
+              and Pellman, John
+              and Poline, Jean-Baptiste
+              and Rokem, Ariel
+              and Schaefer, Gunnar
+              and Sochat, Vanessa
+              and Triplett, William
+              and Turner, Jessica A.
+              and Varoquaux, Ga{\"e}l
+              and Poldrack, Russell A.},
+  title    = {The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments},
+  journal  = {Scientific Data},
+  year     = {2016},
+  month    = {Jun},
+  day      = {21},
+  volume   = {3},
+  number   = {1},
+  pages    = {160044},
+  abstract = {The development of magnetic resonance imaging (MRI) techniques has defined modern neuroimaging. Since its inception, tens of thousands of studies using techniques such as functional MRI and diffusion weighted imaging have allowed for the non-invasive study of the brain. Despite the fact that MRI is routinely used to obtain data for neuroscience research, there has been no widely adopted standard for organizing and describing the data collected in an imaging experiment. This renders sharing and reusing data (within or between labs) difficult if not impossible and unnecessarily complicates the application of automatic pipelines and quality assurance protocols. To solve this problem, we have developed the Brain Imaging Data Structure (BIDS), a standard for organizing and describing MRI datasets. The BIDS standard uses file formats compatible with existing software, unifies the majority of practices already common in the field, and captures the metadata necessary for most common data processing operations.},
+  issn     = {2052-4463},
+  doi      = {10.1038/sdata.2016.44},
+  url      = {https://doi.org/10.1038/sdata.2016.44}
 }
-@misc{BIDS_metadata, 
+@misc{BIDS_metadata,
   title = {BIDS MRI Metadata},
   url   = {https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html}
 }
-@ARTICLE{10.3389/frai.2021.757780,
-  
-AUTHOR={Li, Ting and Tong, Weida and Roberts, Ruth and Liu, Zhichao and Thakkar, Shraddha},   
-	 
-TITLE={DeepCarc: Deep Learning-Powered Carcinogenicity Prediction Using Model-Level Representation},      
-	
-JOURNAL={Frontiers in Artificial Intelligence},      
-	
-VOLUME={4},           
-	
-YEAR={2021},      
-	  
-URL={https://www.frontiersin.org/articles/10.3389/frai.2021.757780},       
-	
-DOI={10.3389/frai.2021.757780},      
-	
-ISSN={2624-8212},   
-   
-ABSTRACT={Carcinogenicity testing plays an essential role in identifying carcinogens in environmental chemistry and drug development. However, it is a time-consuming and label-intensive process to evaluate the carcinogenic potency with conventional 2-years rodent animal studies. Thus, there is an urgent need for alternative approaches to providing reliable and robust assessments on carcinogenicity. In this study, we proposed a DeepCarc model to predict carcinogenicity for small molecules using deep learning-based model-level representations. The DeepCarc Model was developed using a data set of 692 compounds and evaluated on a test set containing 171 compounds in the National Center for Toxicological Research liver cancer database (NCTRlcdb). As a result, the proposed DeepCarc model yielded a Matthews correlation coefficient (MCC) of 0.432 for the test set, outperforming four advanced deep learning (DL) powered quantitative structure-activity relationship (QSAR) models with an average improvement rate of 37%. Furthermore, the DeepCarc model was also employed to screen the carcinogenicity potential of the compounds from both DrugBank and Tox21. Altogether, the proposed DeepCarc model could serve as an early detection tool (<ext-link ext-link-type="uri" xlink:href="https://github.com/TingLi2016/DeepCarc" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/TingLi2016/DeepCarc</ext-link>) for carcinogenicity assessment.}
+@article{10.3389/frai.2021.757780,
+  author   = {Li, Ting and Tong, Weida and Roberts, Ruth and Liu, Zhichao and Thakkar, Shraddha},
+  title    = {DeepCarc: Deep Learning-Powered Carcinogenicity Prediction Using Model-Level Representation},
+  journal  = {Frontiers in Artificial Intelligence},
+  volume   = {4},
+  year     = {2021},
+  url      = {https://www.frontiersin.org/articles/10.3389/frai.2021.757780},
+  doi      = {10.3389/frai.2021.757780},
+  issn     = {2624-8212},
+  abstract = {Carcinogenicity testing plays an essential role in identifying carcinogens in environmental chemistry and drug development. However, it is a time-consuming and label-intensive process to evaluate the carcinogenic potency with conventional 2-years rodent animal studies. Thus, there is an urgent need for alternative approaches to providing reliable and robust assessments on carcinogenicity. In this study, we proposed a DeepCarc model to predict carcinogenicity for small molecules using deep learning-based model-level representations. The DeepCarc Model was developed using a data set of 692 compounds and evaluated on a test set containing 171 compounds in the National Center for Toxicological Research liver cancer database (NCTRlcdb). As a result, the proposed DeepCarc model yielded a Matthews correlation coefficient (MCC) of 0.432 for the test set, outperforming four advanced deep learning (DL) powered quantitative structure-activity relationship (QSAR) models with an average improvement rate of 37%. Furthermore, the DeepCarc model was also employed to screen the carcinogenicity potential of the compounds from both DrugBank and Tox21. Altogether, the proposed DeepCarc model could serve as an early detection tool (<ext-link ext-link-type="uri" xlink:href="https://github.com/TingLi2016/DeepCarc" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/TingLi2016/DeepCarc</ext-link>) for carcinogenicity assessment.}
 }
 @misc{DementiaStatistics,
   title = {Alzheimer's Disease Statistics},
   url   = {https://dementiastatistics.org/}
 }
-@ARTICLE{Van_Dyck2022-pt,
-  title    = "Lecanemab in Early Alzheimer's Disease",
-  author   = "van Dyck, Christopher H and Swanson, Chad J and Aisen, Paul and
+@article{Van_Dyck2022-pt,
+  title    = {Lecanemab in Early Alzheimer's Disease},
+  author   = {van Dyck, Christopher H and Swanson, Chad J and Aisen, Paul and
               Bateman, Randall J and Chen, Christopher and Gee, Michelle and
               Kanekiyo, Michio and Li, David and Reyderman, Larisa and Cohen,
               Sharon and Froelich, Lutz and Katayama, Sadao and Sabbagh, Marwan
               and Vellas, Bruno and Watson, David and Dhadda, Shobha and
-              Irizarry, Michael and Kramer, Lynn D and Iwatsubo, Takeshi",
-  abstract = "BACKGROUND: The accumulation of soluble and insoluble aggregated
+              Irizarry, Michael and Kramer, Lynn D and Iwatsubo, Takeshi},
+  abstract = {BACKGROUND: The accumulation of soluble and insoluble aggregated
               amyloid-beta (A$\beta$) may initiate or potentiate pathologic
               processes in Alzheimer's disease. Lecanemab, a humanized IgG1
               monoclonal antibody that binds with high affinity to A$\beta$
@@ -487,15 +478,15 @@ ABSTRACT={Carcinogenicity testing plays an essential role in identifying carcino
               at 18 months but was associated with adverse events. Longer
               trials are warranted to determine the efficacy and safety of
               lecanemab in early Alzheimer's disease. (Funded by Eisai and
-              Biogen; Clarity AD ClinicalTrials.gov number, NCT03887455.).",
-  journal  = "N Engl J Med",
-  volume   =  388,
-  number   =  1,
-  pages    = "9--21",
-  month    =  nov,
-  year     =  2022,
-  address  = "United States",
-  language = "en"
+              Biogen; Clarity AD ClinicalTrials.gov number, NCT03887455.).},
+  journal  = {N Engl J Med},
+  volume   = 388,
+  number   = 1,
+  pages    = {9--21},
+  month    = nov,
+  year     = 2022,
+  address  = {United States},
+  language = {en}
 }
 @misc{React,
   title = {React: A JavaScript library for building user interfaces},
