@@ -5,6 +5,7 @@ from functools import partial
 import AutomatedTestingLibrary.Classes.AutomatedTesting as t
 import AutomatedTestingLibrary.Classes.Model as m
 import tensorflow as tf
+import traceback
 import tensorflow.keras as keras
 from keras.layers import (
     Conv2D,
@@ -36,8 +37,8 @@ from keras.optimizers import Adam
 from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 from keras.models import Model
-from keras.utils import Sequence
-from utils import createFileName, convertToString, mmseConvert, genderToFloat
+from keras.utils import Sequence, to_categorical
+from utils import createFileName, convertToString, mmseConvert, genderToFloat, cdr_formatting
 
 """
 This script is used to generate the transfer learning results from the OASIS-1 dataset, with the addition of the misc data.
@@ -107,16 +108,14 @@ class MRIDataGenerator(Sequence):
         self,
         df,
         datagen,
-        batch_size,
         df_input_labels,
-        df_target_label,
+        batch_size=32,
         target_size=(224, 224),
         shuffle=True,
     ):
         self.df = df
         self.datagen = datagen
         self.df_input_labels = df_input_labels
-        self.df_target_label = df_target_label
         self.batch_size = batch_size
         self.target_size = target_size
         self.shuffle = shuffle
@@ -143,6 +142,8 @@ class MRIDataGenerator(Sequence):
 
         # Create the arrays to store the images and labels
         batch_x = np.zeros((len(batch),) + self.target_size + (3,), dtype="float32")
+
+        # Create the array to store the labels
         batch_y = np.zeros((len(batch),), dtype="int32")
 
         # Create the arrays to store the attributes
@@ -170,7 +171,7 @@ class MRIDataGenerator(Sequence):
                 batch_x[current_index] = x
 
                 # Add the label to the batch
-                batch_y[current_index] = float(row[self.df_target_label])
+                batch_y[current_index] = float(row["CDR_str"])
 
                 # Add the attributes to the batch
                 for i, label in enumerate(self.df_input_labels):
@@ -178,8 +179,10 @@ class MRIDataGenerator(Sequence):
 
             except Exception as e:
                 print(f"Error with Datagen For Loop: {e}")
+                # Stack trace
+                traceback.print_exc()
 
-        return [batch_a, batch_x], batch_y
+        return ([batch_a, batch_x], batch_y)
 
 
 class AutomatedRegularTesting(t.AutomatedTesting):
@@ -189,11 +192,18 @@ class AutomatedRegularTesting(t.AutomatedTesting):
     """
 
     def __init__(
-        self, models, output, augmentationParams, trainingArgs, batchSize=32, split=0.2, other_params=[]
+        self,
+        models,
+        output,
+        augmentationParams,
+        trainingArgs,
+        other_params,
+        batchSize=32,
+        split=0.2,
     ):
         self.batchSize = batchSize
         self.split = split
-        self.other_params = ["M/F_str"] if len(other_params) == 0 else other_params
+        self.other_params = other_params
         self.datagen = ImageDataGenerator(
             **augmentationParams,
         )
@@ -211,10 +221,12 @@ class AutomatedRegularTesting(t.AutomatedTesting):
         fileNames = []
         # Create an array of all the file names from the processed_scans folder
         for _, _, files in os.walk(scansDir):
-          for file in files:
-            fileNames.append(file)
+            for file in files:
+                fileNames.append(file)
 
-        labels = raw_labels[raw_labels['ID'].isin([fileName[:13] for fileName in fileNames])]
+        labels = raw_labels[
+            raw_labels["ID"].isin([fileName[:13] for fileName in fileNames])
+        ]
 
         labels["fileNames"] = labels["ID"].apply(createFileName)
         labels["CDR_str"] = labels["CDR"].apply(convertToString)
@@ -226,22 +238,19 @@ class AutomatedRegularTesting(t.AutomatedTesting):
         self.train_ds = MRIDataGenerator(
             labels[split:],
             self.datagen,
-            self.batchSize,
             self.other_params,
-            "CDR_str",
+            self.batchSize,
         )
 
         self.test_ds = MRIDataGenerator(
             labels[:split],
             self.datagen,
-            self.batchSize,
             self.other_params,
-            "CDR_str",
+            self.batchSize,
         )
 
 
 def main():
-
     # Defining the other parameters to use
     other_params = ["M/F_str", "Age", "MMSE_fixed", "eTIV", "nWBV"]
     # Define the models to test
@@ -304,7 +313,13 @@ def main():
     ]
 
     testing = AutomatedRegularTesting(
-        models, modelDir, augmentation_params, training_args, batchSize=32, split=0.2, other_params=other_params
+        models,
+        modelDir,
+        augmentation_params,
+        training_args,
+        other_params,
+        batchSize=32,
+        split=0.2,
     )
 
     # Run the testing
