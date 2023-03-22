@@ -307,6 +307,14 @@ The OASIS-1 dataset contains a few different associated parameters, as listed he
   \item `ASF`: The Atlas Scaling Factor of the patient
 \end{itemize}
 
+The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
+\begin{itemize}
+  \item Random horizontal flipping
+  \item Random vertical flipping
+  \item Random rotation (20 degrees)
+  \item Random zoom
+\end{itemize}
+
 \section{The Contents of the Skin Cancer Dataset}
 
 The skin cancer dataset contains 2 different classes, benign and malignant, and 484 images in total.
@@ -317,7 +325,7 @@ The augmentations I will be using are:
   \item Random horizontal flipping
   \item Random vertical flipping
   \item Random rotation
-  \item Random zoom
+  \item Random zoom (359 degrees)
   \item Random brightness
   \item Random offset
 \end{itemize}
