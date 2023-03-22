@@ -97,16 +97,18 @@ class AutomatedTesting:
 			self.loadModel()
 			# Loop through all the training arguments, and train the model with each set of arguments
 			for arg in self.trainingArgs:
+				if 'other' in arg:
+					if 'fullyTrainable' in arg["other"]:
+						if arg["other"]["fullyTrainable"]:
+							for layer in self.currentModel.sequentialModel.layers:
+								layer.trainable = True
+
 				self.currentModel.compileModel(**arg["compile"])
-				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"], callbacks=ClearMemory())
+				self.currentModel.fit(self.train_ds, self.test_ds, **arg["train"])
 			self.currentModel.saveHistory()
+			gc.collect()
+			k.clear_session()
 			self.currentModel = None
 
 		self.done = True
 
-
-# Credits to https://stackoverflow.com/a/67138072/5758415
-class ClearMemory(Callback):
-    def on_epoch_end(self, epoch, logs=None):
-        gc.collect()
-        k.clear_session()
