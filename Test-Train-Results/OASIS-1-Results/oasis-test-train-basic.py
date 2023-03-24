@@ -117,7 +117,6 @@ class AutomatedRegularTesting(t.AutomatedTesting):
 if __name__ == "__main__":
     # Define the models to be tested
     models = []
-    # ,
     modelsToTest = [
         MobileNetV2,
         InceptionV3,
