@@ -36,7 +36,7 @@ It does not use any other inputs, aside from the MRI scans.
 
 # Set directory paths
 data_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\skin-cancer-dataset\Resized_200x200_MIX_2Classes'
-model_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\Test-Train-Results\OASIS-1-Results\skin-cancer-basic'
+model_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\Test-Train-Results\OASIS-1-Results\skin-cancer-basic\\'
 
 # Define constants
 IMG_SIZE = (224, 224)
@@ -54,13 +54,12 @@ def create_model(base_model):
         input_shape=(224, 224, 3), include_top=False, weights="imagenet"
     )
 
-    for layer in pretrained_model.layers[:-5]:
+    for layer in pretrained_model.layers:
         layer.trainable = False
 
     model.add(pretrained_model)
     model.add(Flatten())
     model.add(Dense(1024, activation="relu"))
-    model.add(Dropout(0.2))
     model.add(Dense(NUM_CLASSES, activation="softmax"))
 
     return model
@@ -135,7 +134,7 @@ if __name__ == "__main__":
                 "epochs": EPOCHS,
             },
             "compile": {
-                "optimizer": Adam(learning_rate=0.00001),
+                "optimizer": Adam(learning_rate=0.000001),
                 "loss": CategoricalCrossentropy(),
                 "metrics": [CategoricalAccuracy()],
             },
@@ -148,7 +147,7 @@ if __name__ == "__main__":
                 "fully_trainable": True,
             },
             "compile": {
-                "optimizer": Adam(learning_rate=0.0000001),
+                "optimizer": Adam(learning_rate=0.00000001),
                 "loss": CategoricalCrossentropy(),
                 "metrics": [CategoricalAccuracy()],
             },
