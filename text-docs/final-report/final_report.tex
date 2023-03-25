@@ -656,7 +656,10 @@ VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
   \label{fig:vgg19-structure}
 \end{figure}
 
+% TODO: add more of the models that I'm comparing and graph of the size of the models
+
 \chapter{Software Engineering}
+% TODO: needs complete re-write
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
@@ -732,9 +735,10 @@ I've decided to use Python for the API backend, as it's the main server side lan
 
 \chapter{Identifying and Mitigating Bias}
 
+\section{The OASIS-1 Dataset}
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
 
-\section{nWBV vs Age}
+\subsection{nWBV vs Age}
 Giving the age of the patient to the machine learning algorithm may allow for bias, this is because there are very few patients who are young and have Alzheimer's disease, in the dataset.
 This also means it would likely be problematic to give the normalized whole brain volume to the machine learning algorithm, as this is likely to be highly correlated with age, and will therefore allow for bias.
 
@@ -746,7 +750,7 @@ This also means it would likely be problematic to give the normalized whole brai
 \end{figure}
 
 \clearpage
-\section{eTIV vs Age}
+\subsection{eTIV vs Age}
 This scatter graph is significantly more random than the one for age and whole brain volume, which means it is likely better to give to the machine learning algorithm, as it shouldn't give any strong indication of the age of the patient, and it should be useful for the machine learning algorithm.
 One potential issue with this parameter is that women are more likely to have Alzheimer's disease, and this graph shows how the men and women are separated, which may allow for bias based off of the gender of the patient.
 \begin{figure}[h]
@@ -755,6 +759,25 @@ One potential issue with this parameter is that women are more likely to have Al
   \caption{The eTIV of the patients in the dataset}
   \label{fig:eTIV-vs-Age}
 \end{figure}
+
+\clearpage
+\section{The Skin Cancer Dataset}
+The Skin cancer dataset that I was provided for this project contains images of benign and malignant skin cancer.
+
+% Show the benign and malignant images
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{images/benign-skin-cancer.png}
+  \includegraphics[width=0.2\textwidth]{images/malignant-skin-cancer.png}
+  \caption{Benign and malignant skin cancer image}
+  \label{fig:benign-malignant}
+\end{figure}
+
+These are some example images of what the training and test data looks like. The images are all 200x200 pixels and are in RGB format.
+Unfortunately they appear to only be pictures of caucasian skin, which means that the model may not be able to predict skin cancer on people with other ethnic backgrounds.
+There does however appear to be multiple types of skin cancer in the dataset, which means that the model should be able to predict a variety of skin cancers.
+With this particular dataset, I don't have the ability to do much to mitigate bias, as the dataset is already biased towards caucasian skin, and my points of reference for model accuracy are with this dataset.
+This dataset is also relatively small, with only 484 images all together. Although this is a small number, the results from training with this dataset are still very good, and the model is able to predict skin cancer with a high accuracy, it just have slightly more bias than it would if it was trained with a larger and more diverse dataset.
 
 \chapter{My Initial Faulty Training Results}
 \subsection{The Comparison Of The Different Models}
@@ -841,7 +864,38 @@ The OASIS-1 dataset accuracy is not particularly high without any optimisation, 
 
 \subsection{Training with the MRI scans and the other features}
 
+\pagebreak
 \section{The Skin Cancer Dataset}
+Training the models with the skin cancer dataset was a lot more successful than training with the other dataset. This is likely due to the fact that skin cancer is visually easier to identify than Alzheimer's disease, as the skin cancer images are much more clearly defined.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-loss.png}
+\end{figure}
+
+As this graph shows, there are lots of models that did well, and a handful that did poorly. This is only the loss from the training data, and not the validation data, so it's only really a good indication of what models obviously performed poorly, such as the EfficientNetB3 and the MobilenetV3 models.
+
+\pagebreak
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-validation-accuracy-last-50.png}
+\end{figure}
+
+This graph shows the last 50 epochs of the training process for the skin cancer dataset, with the validation accuracy. This shows the most clear results, as the models with a high accuracy here are the ones that have learned the best from the training data.
+This was graph was also created with the full augmentation performed on the validation data. This may have changed the results to make the models appear to perform worse than they actually did, however lots of the augmentation I had done was reasonable and within the scope of what it would be like in the real world.
+
+There appears to be a clearly defined line between the models that performed well and the poorly performing models. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/Skin-cancer-validation-accuracy-last-50-low-performers.png}
+\end{figure}
+
+These models are the lower performers in the skin cancer dataset, none of them ever scored above 90\% accuracy on the validation data, they all also were clearly distinguished from the other models in their training loss. Mobilenetv3 Large has typically been a good performer with the Alzheimer's dataset, however here it's performing comparatively poorly.
+
+The efficient net models are also performing poorly, this is likely due to the fact that the efficient net models are comparatively very small, and may not have enough capacity to effectively capture the more complex features of the skin cancer images, as opposed to classifying images of hotdogs or not hotdogs, for example.
+
 
 \chapter{How to run the code}
 % TODO: update the instructions for running the code, talk about virtual environments
@@ -900,6 +954,10 @@ The biases in the OASIS-1 dataset are very prevalent, I have decided to dedicate
 
 \section{Collaboration and Communication Barriers}
 If the model's accuracy is not explicitly stated in the web interface, doctors may be more likely to rely on the models predictions, rather than using their own judgement, which could lead to a misdiagnosis. The model's accuracy should be clearly stated in the web interface, so that the healthcare professionals can make an informed decision, and the interface should have a disclaimer stating that the model's accuracy is not guaranteed, and that the healthcare professional should use their own judgement when making a diagnosis, along with multilingual support, so that the interface can be used by healthcare professionals from all over the world, without any potential problems with language barriers.
+
+\section{Bias in the Skin Cancer Dataset}
+The skin cancer dataset has a variety of different photos of benign and malignant blemishes on skin, however all of the images are of caucasian people, with there appearing to be no variety in terms of skin colour. This means that this model would only benefit anyone of caucasian descent, and it would not be reliable with any other skin colour. This is a problem as the dataset is not representative of the world's population, which could lead to non-caucasian people getting a lower quality of healthcare, as they would not be able to use the model to get a diagnosis of their skin cancer.
+On the other hand, prediction of skin cancer would be a lot more accurate for caucasian people as opposed to people with darker skin, as the melanin in their skin would make it harder to see the blemishes and make out what they are. This specific problem would be beyond the scope of this report, however it would be something to consider for anyone using this dataset for other projects.
 
 \chapter{Diary}
 

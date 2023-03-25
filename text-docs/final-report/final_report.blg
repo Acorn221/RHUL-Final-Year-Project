@@ -20,93 +20,50 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 10460 items.
 Database file #1: final_report-blx.bib
 Database file #2: refs.bib
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-<<<<<<< HEAD
-You've used 30 entries,
+You've used 39 entries,
             6399 wiz_defined-function locations,
-            1339 strings with 17331 characters,
-and the built_in function-call counts, 140868 in all, are:
-= -- 10508
-> -- 990
-< -- 479
-+ -- 4051
-- -- 503
-* -- 8951
-:= -- 15051
+            1414 strings with 28798 characters,
+and the built_in function-call counts, 302871 in all, are:
+= -- 25984
+> -- 2026
+< -- 717
++ -- 9522
+- -- 991
+* -- 21148
+:= -- 36218
 add.period$ -- 0
-call.type$ -- 30
-change.case$ -- 156
-chr.to.int$ -- 42
-cite$ -- 58
-duplicate$ -- 16877
-empty$ -- 14079
-format.name$ -- 798
-if$ -- 28123
+call.type$ -- 39
+change.case$ -- 274
+chr.to.int$ -- 49
+cite$ -- 76
+duplicate$ -- 33118
+empty$ -- 27456
+format.name$ -- 1745
+if$ -- 59106
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 56
 missing$ -- 0
-newline$ -- 682
-num.names$ -- 287
-pop$ -- 10302
+newline$ -- 1263
+num.names$ -- 591
+pop$ -- 14427
 preamble$ -- 1
-purify$ -- 232
+purify$ -- 477
 quote$ -- 0
-skip$ -- 2803
+skip$ -- 4336
 stack$ -- 0
-substring$ -- 18612
-swap$ -- 3024
-text.length$ -- 517
-text.prefix$ -- 29
+substring$ -- 50440
+swap$ -- 4993
+text.length$ -- 764
+text.prefix$ -- 38
 top$ -- 1
-type$ -- 1008
+type$ -- 1314
 warning$ -- 0
-while$ -- 1985
+while$ -- 4476
 width$ -- 0
-write$ -- 653
-=======
-You've used 31 entries,
-            6399 wiz_defined-function locations,
-            1352 strings with 19284 characters,
-and the built_in function-call counts, 204077 in all, are:
-= -- 16976
-> -- 1279
-< -- 503
-+ -- 6271
-- -- 663
-* -- 13912
-:= -- 23841
-add.period$ -- 0
-call.type$ -- 31
-change.case$ -- 166
-chr.to.int$ -- 43
-cite$ -- 60
-duplicate$ -- 22783
-empty$ -- 19095
-format.name$ -- 1131
-if$ -- 40005
-int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 0
-newline$ -- 873
-num.names$ -- 328
-pop$ -- 11147
-preamble$ -- 1
-purify$ -- 296
-quote$ -- 0
-skip$ -- 3077
-stack$ -- 0
-substring$ -- 32553
-swap$ -- 3546
-text.length$ -- 566
-text.prefix$ -- 30
-top$ -- 1
-type$ -- 1042
-warning$ -- 0
-while$ -- 2977
-width$ -- 0
-write$ -- 843
->>>>>>> Project-report
+write$ -- 1225
