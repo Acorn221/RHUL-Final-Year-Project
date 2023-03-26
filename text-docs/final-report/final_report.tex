@@ -104,11 +104,11 @@ Early Deliverables
 
 \section*{Suggested Extensions}
 \begin{itemize}
-\item Modifications of known algorithms.
-\item Dealing with machine learning problems with asymmetrical errors (such as spam detection) and ROC analysis.
-\item Nontrivial adaptations of known algorithms to applications in a specific area, such as medical diagnosis or option pricing.
-\item Exploring the cross-validation procedure, in particular the leave-one out procedure. What is the optional number of folds?
-\item Comparative study of different strategies of reducing multi-class classifiers to binary classifiers (such as one-against-one, one-against-the-rest, coding-based).
+  \item Modifications of known algorithms.
+  \item Dealing with machine learning problems with asymmetrical errors (such as spam detection) and ROC analysis.
+  \item Nontrivial adaptations of known algorithms to applications in a specific area, such as medical diagnosis or option pricing.
+  \item Exploring the cross-validation procedure, in particular the leave-one out procedure. What is the optional number of folds?
+  \item Comparative study of different strategies of reducing multi-class classifiers to binary classifiers (such as one-against-one, one-against-the-rest, coding-based).
 \end{itemize}
 
 \section*{Reading}
@@ -161,7 +161,7 @@ The weights are updated during training, and the process of updating the weights
 
 \section{Why use a Neural Network}
 The use of neural networks has increased dramatically in recent years, and they are now used in a variety of different applications.
-The reason for this is that they are very good at learning complex patterns in data, and they are able to learn 
+The reason for this is that they are very good at learning complex patterns in data, and they are able to learn
 these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
 
 They are far more flexible than many of the traditional strategies for image classification, due to the fact they can adapt to new data and are
@@ -184,39 +184,39 @@ In one study using SVMs to classify Alzheimer's patients, the researchers manage
 They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy. \cite{10.3389/fneur.2021.640696}
 
 \subsection{Content Based Image Retrieval}
-Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar 
+Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar
 images from a large database. It works by extracting the features from the image and then using those features to compare to other images in the database.
-The features are usually based on a combination of color, texture, shape, and other attributes. The system then produces a list of images that are similar 
+The features are usually based on a combination of color, texture, shape, and other attributes. The system then produces a list of images that are similar
 to the one used for the search query. CBIR systems are particularly useful for searching for images that can't be easily described using traditional keywords.
 
-CBIR can be used to identify images that are not in the database by analyzing the content of the images. 
-By extracting features from the image such as color, texture, and shape, CBIR can be used to compare the 
-content of the query image with the content of the images in the database. It can then return images that are 
-similar in content to the query image even if they are not present in the database. 
+CBIR can be used to identify images that are not in the database by analyzing the content of the images.
+By extracting features from the image such as color, texture, and shape, CBIR can be used to compare the
+content of the query image with the content of the images in the database. It can then return images that are
+similar in content to the query image even if they are not present in the database.
 
-For example, if the target image was a blue sky with white clouds, then the algorithm would return 
+For example, if the target image was a blue sky with white clouds, then the algorithm would return
 images that had similar features such as a blue sky and white clouds to the target image.
 
-Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
+Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients,
 a study was done using this method to classify Alzheimer's patients, and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
 and getting feedback from the physicians who were treating the patients.
 
 For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
-This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
+This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals,
 the color of the petals, and the overall structure of the flower.
 
 \section{The different optimizers}
 
-In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function. 
-Optimisers are used to improve the accuracy of a model by reducing the error rate. 
+In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function.
+Optimisers are used to improve the accuracy of a model by reducing the error rate.
 Common optimisers used in deep learning include Stochastic Gradient Descent (SGD),
 Adaptive Moment Estimation (Adam), and Root Mean Square Propagation (RMSProp).
-There are many different optimizers that can be used to train a model, and the one 
+There are many different optimizers that can be used to train a model, and the one
 that is used depends on the type of problem that is being solved.
 
-The impact using different optimisers can have is dependent on the type of problem being solved. 
-For example, SGD is often used for linear regression problems, while Adam is 
-better suited for deep learning problems. 
+The impact using different optimisers can have is dependent on the type of problem being solved.
+For example, SGD is often used for linear regression problems, while Adam is
+better suited for deep learning problems.
 Additionally, the choice of optimiser can also affect the speed of convergence and the accuracy of the model.
 
 \begin{figure}[h]
@@ -231,7 +231,7 @@ Classification is a type of supervised machine learning model that is used to pr
 It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point.
 For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house.
 
-Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. 
+Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease.
 
 The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset.
 
@@ -249,9 +249,9 @@ They are often much more efficient than other types of neural networks, and are 
   \item Convolutional Layer: This layer extracts features from an input image and creates a feature map.
 
   \item  Pooling Layer: This layer reduces the dimensionality of a feature map while preserving its most important features.
-  
+
   \item  Dropout Layer: This layer randomly ignores nodes during training to reduce overfitting.
-  
+
   \item  Fully Connected Layer: This layer connects all the neurons of the previous layer to every neuron in the next layer. It helps in mapping input to output.
 \end{itemize}
 
@@ -330,6 +330,83 @@ The augmentations I will be using are:
   \item Random offset
 \end{itemize}
 
+\chapter{The Different Models That Are Being Compared}
+
+All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
+
+\section{Mobilenetv3}
+
+As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
+It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
+
+The resulting models from this paper are:
+\begin{itemize}
+  \item Mobilenetv3-Large
+  \item Mobilenetv3-Small
+\end{itemize}
+
+The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
+The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
+
+% insert the image of the mobilenetv3 structure
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/MobileNetv3-structure.png}
+  \caption{The proposed segmentation head for MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-segmentation}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/mobilenet-comparison.png}
+  \caption{A comparison of latency and accuracy\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-comparison}
+\end{figure}
+
+
+
+% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
+
+% TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
+\section{InceptionV3}
+InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
+It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction.
+It is a deep learning model that uses a combination of convolutional layers, pooling layers, and fully-connected layers.
+It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data.
+They can also help to reduce the amount of overfitting that can occur when using a single classifier.
+
+\section{ResNet101}
+Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has,
+which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
+
+\section{VGG19}
+VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
+VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
+  \caption{The structure of VGG19\cite{Simonyan15}}
+  \label{fig:vgg19-structure}
+\end{figure}
+
+% TODO: add more of the models that I'm comparing and graph of the size of the models
+
+\section{EfficientNet}
+
+EfficientNet, developed by Google and published in the paper "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks". It was a huge leap in performance for efficient image classification models. Their primary achivement, stated in the abstract, is having 84.3\% top-1 accuracy on ImageNet, while being 8.4x smaller and 6.1x faster than the best existing convolutional neural network models.\cite{tan2020efficientnet}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetComparison.PNG}
+  \caption{The improvements made in the EfficientNet paper\cite{tan2020efficientnet}}
+  \label{fig:efficientnet-comparison}
+\end{figure}
+
+As \label{fig:efficientnet-comparison} shows, EfficientNet is a huge improvement over the previous models, it is much smaller, faster and more accurate than the previous models using the same techniques.
+
+The proposal of a "compound scaling" method, which is a method of scaling the model by changing the depth, width and resolution of the model at a constant ratio, is what makes EfficientNet so much more efficient than the previous models.
+
 \chapter{Transfer Learning}
 
 \section{Why use Transfer Learning}
@@ -342,9 +419,9 @@ and the transfer learning model can then use these features to learn about the n
 The main drawback of transfer learning is that it is not always possible to use it,
 as the pre-trained model may not be able to extract the features from the new dataset.
 With image classification, the pre-trained model can typically extract features from any image, but it may not be able to extract the features that are needed for the new dataset.
-Transfer learning can also be less efficient than training a model from scratch, 
+Transfer learning can also be less efficient than training a model from scratch,
 as the pre-trained model will have all the weights from the original dataset, which may not be needed for the new dataset.
-This can cause the model to be less efficient, as it will have to train on weights that are not 
+This can cause the model to be less efficient, as it will have to train on weights that are not
 needed but will still affect the performance of the model.
 
 \pagebreak
@@ -377,7 +454,7 @@ The code for the transfer learning is shown below.
 \end{lstlisting}
 
 The code above shows how to create a model using transfer learning,
-creating the model structure consists of adding the pre-trained model to the model, 
+creating the model structure consists of adding the pre-trained model to the model,
 and then adding a few layers on top of it. The Flatten layer is used to flatten the output of the pre-trained model
 as that is the input for the fully connected layers. The fully connected layers are used to classify the images.
 
@@ -430,7 +507,7 @@ Here is an example of how I fine-tuned a model using Keras:
 For this project, I have set up my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
 I've chosen my laptop to do the training on due to it's powerful GPU, which is a NVIDIA GeForce GTX1070\cite{GTX1070}.
 This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
-Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
+Training the models on my laptop has been very useful, as it has allowed me to train the models much easier
 as I can leave it to train overnight without having to constantly check on it.
 
 I have recently upgraded the GPU in my computer to an RTX 3080\cite{RTX3080}, which is a much more powerful GPU than the GTX1070, as it has more CUDA cores, a higher core clock, 2gb more of VRAM, and a much higher memory bandwidth. Alongside this, it has "RT Cores",
@@ -498,7 +575,7 @@ For the validation set, I have assigned 20\% of the data to be used.
 
 Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images.
 This can help to improve the performance of a model, as it can help to reduce overfitting, and can also help to improve the generalisation of the model.
-The transformations that are applied to the images are usually random, and can include things like rotating the image, 
+The transformations that are applied to the images are usually random, and can include things like rotating the image,
 flipping the image, or changing the contrast/saturation of the image.
 
 In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available.
@@ -513,9 +590,9 @@ With the flower dataset however, I did apply data augmentation to the images, as
 % TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
 
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
-The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the 
-images were already augmented, and the validation set was made up of images that were in the training set, but 
-with different transformations applied to them. This gave me amazing results on the validation set, but when I 
+The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the
+images were already augmented, and the validation set was made up of images that were in the training set, but
+with different transformations applied to them. This gave me amazing results on the validation set, but when I
 tested the model on new data, it performed very poorly. Here the image shows the last 30 epochs of the training process,
 and the validation accuracy is very high, higher than what other models from other research papers have achieved.
 
@@ -562,14 +639,14 @@ By using the OASIS-1 dataset directly, that presented a new set of challenges, a
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
 but they do not tell us how well the model is performing for each class.
-They do also not tell us how well the model would work in a real world scenario, 
+They do also not tell us how well the model would work in a real world scenario,
 as they are only calculated on the training and validation sets, of which we have a limited amount of data.
 
-The validation dataset is also from the same distribution as the training dataset, 
-so it is not a good representation of how well the model would work in a real world scenario 
+The validation dataset is also from the same distribution as the training dataset,
+so it is not a good representation of how well the model would work in a real world scenario
 as the scans could be of a different quality.
 
-I have used the augmented dataset for the training and validation sets as this 
+I have used the augmented dataset for the training and validation sets as this
 should give a better representation of how well the model would work in a real world scenario.
 
 \begin{figure}[ht!]
@@ -595,73 +672,6 @@ to use to get the best possible results.
 
 % TODO
 
-\chapter{The Different Models That Are Being Compared}
-
-All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
-
-\section{Mobilenetv3}
-
-As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
-It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
-
-The resulting models from this paper are:
-\begin{itemize}
-    \item Mobilenetv3-Large
-    \item Mobilenetv3-Small
-\end{itemize}
-
-The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
-The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
-
-% insert the image of the mobilenetv3 structure
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/MobileNetv3-structure.png}
-  \caption{The proposed segmentation head for MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244}}
-  \label{fig:mobilenetv3-segmentation}
-\end{figure}
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/mobilenet-comparison.png}
-  \caption{A comparison of latency and accuracy\cite{DBLP:journals/corr/abs-1905-02244}}
-  \label{fig:mobilenetv3-comparison}
-\end{figure}
-
-
-
-% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
-
-% TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
-\section{InceptionV3}
-InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
-It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction. 
-It is a deep learning model that uses a combination of convolutional layers, pooling layers, and fully-connected layers. 
-It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data. 
-They can also help to reduce the amount of overfitting that can occur when using a single classifier.
-
-\section{ResNet101}
-Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has, 
-which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
-
-\section{VGG19}
-VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
-VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
-  \caption{The structure of VGG19\cite{Simonyan15}}
-  \label{fig:vgg19-structure}
-\end{figure}
-
-% TODO: add more of the models that I'm comparing and graph of the size of the models
-
-\section{EfficientNet}
-
-
-\cite{tan2020efficientnet}
-
 \chapter{Software Engineering}
 % TODO: needs complete re-write
 \section{The code}
@@ -671,12 +681,12 @@ The way I have structured the code is by having a main.py file that contains the
 % TODO: make basic UML and talk about testing library
 I have used the following tools to develop this project:
 \begin{itemize}
-    \item Python 3.8.5\cite{Python} - To run the code
-    \item Jupyter Notebook\cite{Jupyter} - To help me develop the code and generate the graphs
-    \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my Linux server and modify the code there quickly
-    \item GitLab\cite{RHULGitLab} - To store the code and to track the changes
-    \item tmux\cite{tmux} - To run the code in the background
-    \item CUDA\cite{CUDA} - To train the models on the GPU
+  \item Python 3.8.5\cite{Python} - To run the code
+  \item Jupyter Notebook\cite{Jupyter} - To help me develop the code and generate the graphs
+  \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my Linux server and modify the code there quickly
+  \item GitLab\cite{RHULGitLab} - To store the code and to track the changes
+  \item tmux\cite{tmux} - To run the code in the background
+  \item CUDA\cite{CUDA} - To train the models on the GPU
 \end{itemize}
 
 \section{Using Git}
@@ -686,7 +696,7 @@ I used separate branches for the different stages of the project, and then merge
 The branches were made to create the different planning papers, and then to set up the development environment.
 I also used branches to create the different models, and then to test them too.
 
-All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent, 
+All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
 and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
 
 \section{Testing with Jupyter Notebook}
@@ -716,9 +726,9 @@ This would give me an opportunity to write unit tests for the API, and to test t
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate. 
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
 
-A local minimum is when the model can't decrease its loss any further by adjusting its parameters. 
+A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
 It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
 A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
 It is the lowest point in the entire loss landscape no matter what parameters the model has.
@@ -728,7 +738,7 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 \chapter{The User Interface}
 
 \section{The Front End}
-For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript. 
+For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript.
 This allows for better code completion, and it makes it easier to debug the code, as it will tell you if you've made a mistake sooner, whereas javascript would give you an error at runtime, if you end up with a type error. Typescript helps counter many of the issues with JS however it's not perfect and there are still issues where there can be scope for errors.
 
 I do have the option of using tensorflow-JS, which can process all of the data locally, this has benefits and drawbacks, the main benefit is that the user doesn't have to upload their data to a server, which can make the handling more secure as everything is processed locally, so there would be far less red tape with data protection laws. The main drawback is that the model would have to be downloaded to the user's device, which could be a problem if the model is large, and it would also mean that the user would have to wait for the model to be downloaded before they could use the application, then they would have to wait for the model to make a prediction after this.
@@ -809,7 +819,7 @@ This is due to the fact that the model is learning from the training data, and i
 To help mitigate overfitting, I did use data augmentation and dropout layers, however I think that the base model it's self is overfitting to the data.
 
 I was planning on using L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting, however I didn't have to implement as I changed from this dataset to the OASIS-1 dataset.
-Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc. 
+Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc.
 This helps to improve the accuracy of the model and reduce overfitting.
 
 
@@ -832,7 +842,7 @@ Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the mode
 \pagebreak
 \subsection{The model sizes}
 
-Here's a bar chart comparing the sizes of the models in megabytes. 
+Here's a bar chart comparing the sizes of the models in megabytes.
 They are uncompressed and include the full model, after transfer learning.
 
 \begin{figure}[ht!]
@@ -863,7 +873,7 @@ My lack of experience with machine learning meant that I didn't know what to tru
 
 \section{The OASIS-1 Dataset}
 
-The OASIS-1 dataset accuracy is not particularly high without any optimisation, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions. 
+The OASIS-1 dataset accuracy is not particularly high without any optimisation, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions.
 
 \subsection{Training with only the MRI scans}
 
@@ -890,7 +900,7 @@ As this graph shows, there are lots of models that did well, and a handful that 
 This graph shows the last 50 epochs of the training process for the skin cancer dataset, with the validation accuracy. This shows the most clear results, as the models with a high accuracy here are the ones that have learned the best from the training data.
 This was graph was also created with the full augmentation performed on the validation data. This may have changed the results to make the models appear to perform worse than they actually did, however lots of the augmentation I had done was reasonable and within the scope of what it would be like in the real world.
 
-There appears to be a clearly defined line between the models that performed well and the poorly performing models. 
+There appears to be a clearly defined line between the models that performed well and the poorly performing models.
 
 \begin{figure}[ht!]
   \centering
@@ -906,7 +916,7 @@ The efficient net models are also performing poorly, this is likely due to the f
   \includegraphics[width=1.1\textwidth]{images/Skin-cancer-validation-accuracy-last-50-high-performers.png}
 \end{figure}
 
-These models with a maximum validation accuracy of over 90\%, typically all perform very well, not dipping below the 90\% mark often. As this graph shows too, many models achived a consistent accuracy of over 96\% on the validation data, which is very good for the amount of time it took to train them. VGG16 typically performed the best with this dataset, and it's the smallest model that performed well. This could have been a coincidence, however it's undenyable that VGG16 is a very good model for this application. 
+These models with a maximum validation accuracy of over 90\%, typically all perform very well, not dipping below the 90\% mark often. As this graph shows too, many models achived a consistent accuracy of over 96\% on the validation data, which is very good for the amount of time it took to train them. VGG16 typically performed the best with this dataset, and it's the smallest model that performed well. This could have been a coincidence, however it's undenyable that VGG16 is a very good model for this application.
 
 \begin{figure}[ht!]
   \centering
@@ -960,7 +970,7 @@ The AI healthcare market should remain competitive and accessible to various sta
 
 \section{Management and Stakeholder Consultation}
 
-There are various stakeholders who would be interested in AI prediction of Alzheimer's, for example the patients could be interested in knowing if they have Alzheimer's quicker than they otherwise would have, however the patients having direct access to the web interface would be problematic, as the results may be inaccurate and could potentially cause un-needed stress for the patient. 
+There are various stakeholders who would be interested in AI prediction of Alzheimer's, for example the patients could be interested in knowing if they have Alzheimer's quicker than they otherwise would have, however the patients having direct access to the web interface would be problematic, as the results may be inaccurate and could potentially cause un-needed stress for the patient.
 
 The healthcare professionals would be interested in the web interface, as it would allow them to quickly and easily get a prediction of whether the patient has Alzheimer's or not, and it would also allow them to see the confidence scores for each class, so they can make a more informed decision, this interface being available 24/7 and being easy to use would benefit them greatly. The usability to the healthcare professionals would depend on the accuracy of the model too, so it would be important to ensure that the model is as accurate as possible.
 
@@ -987,10 +997,10 @@ I have decided to use the following sets of images:
 
 % List the datasets
 \begin{itemize}
-  \item \href{https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz}{Flowers Dataset} 
-	This dataset is likely to be an easier dataset for the models to get high accuracy on, as the different flowers are quite distinct from each other.
+  \item \href{https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz}{Flowers Dataset}
+        This dataset is likely to be an easier dataset for the models to get high accuracy on, as the different flowers are quite distinct from each other.
   \item  \href{https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset}{Alzheimer's Dataset}
-	This dataset is going to be more difficult for the models as the changes are more subtle between the different scan images, and the images are not as distinct from each other.
+        This dataset is going to be more difficult for the models as the changes are more subtle between the different scan images, and the images are not as distinct from each other.
 \end{itemize}
 
 
@@ -1009,7 +1019,7 @@ This is significant progress as this was a major blocker for me as I was not sur
 
 \section*{01/11/2022}
 
-Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset, 
+Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset,
 with varying degrees of accuracy, around 80\% was the best I got however this was only after 5 epochs and was the first time I have tried transfer learning.
 
 \section*{09/11/2022}
@@ -1096,7 +1106,7 @@ This should make it a lot easier to use different models, datasets and parameter
 
 \section*{27/11/2022}
 I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
-as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the
 models with images I have augmented myself.
 
 Soon I'll finish the Alzheimer's dataset training and I'll start working on the flowers dataset.
