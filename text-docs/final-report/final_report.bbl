@@ -1261,6 +1261,37 @@
     \field{year}{2015}
   \endentry
 
+  \entry{tan2020efficientnet}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Mingxing},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMLQV1}
+    \strng{fullhash}{TMLQV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 1905.11946
+    \endverb
+    \field{title}{EfficientNet: Rethinking Model Scaling for Convolutional
+  Neural Networks}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2020}
+  \endentry
+
   \entry{TAN2019105725}{article}{}
     \name{author}{3}{}{%
       {{hash=TTY}{%

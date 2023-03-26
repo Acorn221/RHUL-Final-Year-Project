@@ -632,8 +632,7 @@ The large model is designed for high accuracy, and the small model is designed f
 
 % TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
 
-% The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
-
+% TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
 \section{InceptionV3}
 InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
 It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction. 
@@ -657,6 +656,11 @@ VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
 \end{figure}
 
 % TODO: add more of the models that I'm comparing and graph of the size of the models
+
+\section{EfficientNet}
+
+
+\cite{tan2020efficientnet}
 
 \chapter{Software Engineering}
 % TODO: needs complete re-write
@@ -734,6 +738,7 @@ I do have the option of using tensorflow-JS, which can process all of the data l
 I've decided to use Python for the API backend, as it's the main server side language I have used so far. I can use Flask to host the api and return the results when they have been processed by the model.
 
 \chapter{Identifying and Mitigating Bias}
+
 
 \section{The OASIS-1 Dataset}
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
@@ -894,8 +899,19 @@ There appears to be a clearly defined line between the models that performed wel
 
 These models are the lower performers in the skin cancer dataset, none of them ever scored above 90\% accuracy on the validation data, they all also were clearly distinguished from the other models in their training loss. Mobilenetv3 Large has typically been a good performer with the Alzheimer's dataset, however here it's performing comparatively poorly.
 
-The efficient net models are also performing poorly, this is likely due to the fact that the efficient net models are comparatively very small, and may not have enough capacity to effectively capture the more complex features of the skin cancer images, as opposed to classifying images of hotdogs or not hotdogs, for example.
+The efficient net models are also performing poorly, this is likely due to the fact that the efficient net models are comparatively very small, and may not have enough capacity to effectively capture the more complex features of the skin cancer images, as opposed to classifying images of hotdogs or not hotdogs, for example. None of these models are specifically designed to classify smaller details in images, however many of them have the capacity to do so, it just may have been pruned too much for it to be effective at this task.
 
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/Skin-cancer-validation-accuracy-last-50-high-performers.png}
+\end{figure}
+
+These models with a maximum validation accuracy of over 90\%, typically all perform very well, not dipping below the 90\% mark often. As this graph shows too, many models achived a consistent accuracy of over 96\% on the validation data, which is very good for the amount of time it took to train them. VGG16 typically performed the best with this dataset, and it's the smallest model that performed well. This could have been a coincidence, however it's undenyable that VGG16 is a very good model for this application. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-model-sizes-graph.png}
+\end{figure}
 
 \chapter{How to run the code}
 % TODO: update the instructions for running the code, talk about virtual environments
