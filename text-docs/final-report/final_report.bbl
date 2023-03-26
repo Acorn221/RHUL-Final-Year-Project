@@ -164,6 +164,35 @@
     \endverb
   \endentry
 
+  \entry{DBLP:journals/corr/Chollet16a}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={Fran{\c{c}}ois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1610.02357
+    \endverb
+    \field{title}{Xception: Deep Learning with Depthwise Separable
+  Convolutions}
+    \verb{url}
+    \verb http://arxiv.org/abs/1610.02357
+    \endverb
+    \field{volume}{abs/1610.02357}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
   \entry{CommitLint}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
@@ -1473,6 +1502,62 @@
     \verb{url}
     \verb https://en.wikipedia.org/wiki/Visual_Studio_Code
     \endverb
+  \endentry
+
+  \entry{BMVC2016_87}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ZS}{%
+         family={Zagoruyko},
+         familyi={Z\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Komodakis},
+         familyi={K\bibinitperiod},
+         given={Nikos},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=RCWERH}{%
+         family={Richard C.\bibnamedelima Wilson},
+         familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+         given={Edwin R.\bibnamedelima Hancock},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+      {{hash=SWAP}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={William A.\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BMVA Press}%
+    }
+    \strng{namehash}{ZSKN1}
+    \strng{fullhash}{ZSKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the British Machine Vision Conference
+  (BMVC)}
+    \verb{doi}
+    \verb 10.5244/C.30.87
+    \endverb
+    \field{isbn}{1-901725-59-6}
+    \field{pages}{87.1\bibrangedash 87.12}
+    \field{title}{Wide Residual Networks}
+    \verb{url}
+    \verb https://dx.doi.org/10.5244/C.30.87
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput
