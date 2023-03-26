@@ -330,6 +330,8 @@ The augmentations I will be using are:
   \item Random offset
 \end{itemize}
 
+Augmentations on the skin cancer dataset would represent more of a real-world scenario as opposed to the OASIS-1 dataset, as the scans are all in the same orientation, whereas the oritentation of the images in the skin cancer dataset could practically be at any orientation and still be valid.
+
 \chapter{The Different Models That Are Being Compared}
 
 All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
@@ -379,9 +381,19 @@ They can also help to reduce the amount of overfitting that can occur when using
 Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has,
 which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
 
-\section{VGG19}
+The ResNet paper\cite{DBLP:journals/corr/HeZRS15}, published in 2015, introduced a new state-of-the-art deep learning architecture called the Residual Network or ResNet. The paper's authors proposed a novel residual learning framework that enables the training of very deep neural networks with hundreds of layers, significantly exceeding the depth of previous architectures.
+
+The ResNet architecture introduced the concept of residual blocks, which allowed for the construction of deeper networks while avoiding the problem of vanishing gradients. The residual block adds a shortcut connection, also known as a skip connection, that allows the network to learn an identity function if it is optimal to do so. This allows the network to learn more complex functions and enables the network to be trained deeper without degrading performance.
+
+In a traditional deep neural network, as the signal propagates through the layers, the gradient signal can become very small, making it difficult for the network to learn. This is known as the vanishing gradient problem. Skip connections address this problem by allowing information from earlier layers to bypass some of the later layers and be added directly to the output of those layers.
+Skip connections help to preserve the gradient signal throughout the network, making it easier for the network to learn and allowing for the construction of much deeper networks.
+
+\section{VGG}
 VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
-VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
+VGG19\cite{Simonyan15} is a model which has 19 convolutional layers, and VGG16 has 16 convolutional layers.
+
+The significance of the Very Deep Convolutional Networks for Large-Scale Image Recognition paper\cite{Simonyan15} is that it explored the idea of using increased depth that resulted in improved accuracy in image recognition tasks, outperforming previous state-of-the-art models on the ImageNet dataset.
+The VGG architecture also introduced the use of smaller 3x3 convolutional filters, which allowed for deeper networks without increasing the number of parameters. This concept of using small filters to improve network depth and performance has since become a standard practice in deep learning.
 
 \begin{figure}[ht!]
   \centering
@@ -405,7 +417,33 @@ EfficientNet, developed by Google and published in the paper "EfficientNet: Reth
 
 As \label{fig:efficientnet-comparison} shows, EfficientNet is a huge improvement over the previous models, it is much smaller, faster and more accurate than the previous models using the same techniques.
 
-The proposal of a "compound scaling" method, which is a method of scaling the model by changing the depth, width and resolution of the model at a constant ratio, is what makes EfficientNet so much more efficient than the previous models.
+The proposal of a "compound scaling" method, which is a method of scaling the model by changing the depth, width and resolution of the model at a constant ratio, is what makes EfficientNet so much more efficient than the previous models. This is partly due to other models scaling the depth or width of the model to try and get a better accuracy, however scaling the depth of a model does normally increase it's performance, the gains are comparatively very small, as a model could double in layers, but only get a 1\% increase in accuracy. As researched in the paper "Wide Residual Networks" \cite{BMVC2016_87}, it highlights the problems with just increasing the depth of a model.
+
+Another proposal made in the EfficientNet paper is to increase the input image resolution, as this would provide the model with more data to learn from and classify with. Unfortunately, I cannot use this method as the images that I am using are already at the maximum resolution that they can be, and increasing the resolution would not provide any additional information to the model.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetPerformanceDatasets.PNG}
+  \caption{The Performance of EfficientNet With Multiple Datasets\cite{tan2020efficientnet}}
+  \label{fig:efficientnet-performance-with-multiple-datasets}
+\end{figure}
+
+Here it's clear to see how much better EfficientNet is than the previous models, it's much smaller, faster and more accurate than the previous models, across multiple datasets.
+
+\section{Xception}
+
+Xception: Deep Learning with Depthwise Separable Convolutions\cite{DBLP:journals/corr/Chollet16a} was a paper published in 2016 from Google, which introduced the concept of depthwise separable convolutions, which is a type of convolutional layer that is used in the Xception model.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/Xception-structure.png}
+  \caption{The structure of Xception\cite{DBLP:journals/corr/Chollet16a}}
+  \label{fig:xception-structure}
+\end{figure}
+
+The Xception architecture is based on a novel type of convolutional operation called depthwise separable convolutions, which allow for significantly more efficient and accurate learning of features in CNNs. Regular CNNs use standard convolutional layers, which apply the same set of filters to all channels of an input volume. Depthwise separable convolutions, on the other hand, perform two separate operations: first, they apply a single filter to each input channel (depthwise convolution), and then they combine the output channels using a pointwise convolution (1x1 convolution).
+
+This two-step process dramatically reduces the number of parameters and computations required for each layer of the network, resulting in a much more efficient architecture that can be trained on smaller datasets and run on devices with limited computational power. In addition, the Xception architecture achieved state-of-the-art results on several benchmark datasets, demonstrating the effectiveness of depthwise separable convolutions for deep learning.
 
 \chapter{Transfer Learning}
 
