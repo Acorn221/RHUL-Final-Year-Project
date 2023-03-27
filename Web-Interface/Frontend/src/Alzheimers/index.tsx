@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { XyzTransitionGroup } from '@animxyz/react';
 import '@/index.css';
 
+/**
+ * Importing the different material ui components
+ */
 import Slider from '@mui/material/Slider';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -24,6 +27,7 @@ enum states {
   predictionReceived,
 }
 
+// The type for the prediction, this is the same as the type in the server (0 = non AD, 3 = moderate AD)
 type predictionType = {
   0: number;
   1: number;
@@ -31,12 +35,23 @@ type predictionType = {
   3: number;
 };
 
+/**
+ * This is the page to predict Alzheimers, it allows the user to upload an image, then processes it on the server
+ * This would not be a client facing page, as it sends the sensitive info of the user to the server and
+ * it's more likely that a doctor would have the MRI files of the patient, aside from the fact that the doctor
+ * should take this into account when diagnosing the patient
+ *
+ * @returns The Alzheimers predicter page
+ */
 const Alzheimers = () => {
+  // This stores the current state of the app
   const [currentState, setCurrentState] = useState<states>(states.waitingForFile);
   // blob or undefined
   const [image, setImage] = useState<Blob | undefined>(undefined);
+  // predictionType or undefined, this is the prediction that the server returns
   const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
 
+  // These are the values that the user can change to increase the accuracy of the prediction
   const [age, setAge] = useState<number>(50);
   const [sex, setSex] = useState<string>('male');
   const [mmse, setMMSE] = useState<number>(15);
