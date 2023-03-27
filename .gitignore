@@ -23,3 +23,5 @@ processed_scans
 Alzheimers-classification/
 .venv/Lib/site-packages
 .venv/share
+Web-Interface/Frontend/.DS_Store
+Web-Interface/Frontend/public/.DS_Store

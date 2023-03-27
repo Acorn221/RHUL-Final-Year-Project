@@ -12,13 +12,14 @@ import {
 import HomePage from '@/misc/HomePage';
 import Alzheimers from '@/Alzheimers';
 import Layout from '@/misc/Layout';
+import SkinCancer from '@/SkinCancer';
 
 const App = () => (
   <Router>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/AD-Predicter" element={<Alzheimers />} />
-        <Route path="/Skin-Cancer-Predicter" element={<Alzheimers />} />
+        <Route path="/Skin-Cancer-Predicter" element={<SkinCancer />} />
         <Route path="/" element={<HomePage />} />
         <Route path="*">404 Not Found</Route>
       </Route>
