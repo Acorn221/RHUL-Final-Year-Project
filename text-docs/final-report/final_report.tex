@@ -58,10 +58,10 @@ Signature:
 
 \begin{abstract}
 
-  Transfer learning is a common, efficient method for training deep learning models. It involves using a pre-trained model to extract features from a dataset, and then training a new model on top of the extracted features. This project report gives comparison of the performance of several image classification models when using transfer learning and evaluates their performance on a dataset with MRI scans of Alzheimer's patients and images of skin cancer. I will attempt to get the highest accuracy through various methods of optimising neural networks. The models that being compared are Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception. % TODO: add a breif summary of the results
+  Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
 
 \end{abstract}
-\newpage
+
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
 % TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
@@ -126,6 +126,8 @@ My project is about the comparison of image classification models with transfer 
 In this report I shall cover the background of transfer learning, the models I have chosen to compare, the datasets I have chosen to use, the pre the results of my experiments and the conclusions I have drawn from them.
 
 The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
+
+In this project, I'm planning to learn about transfer learning and comparing the different models and also going over other methods of classification such as SVMs and KNNs. I will then preprocess the dataset images and train the models on the dataset and compare the results. I will then attempt to optimise the models, find out what issues they have and try to fix them.
 
 \chapter{Rationale}
 
@@ -370,15 +372,15 @@ It is a deep learning model that uses a combination of convolutional layers, poo
 It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data.
 They can also help to reduce the amount of overfitting that can occur when using a single classifier.
 
-\section{ResNet101}
-Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has,
-which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
+\section{ResNet}
+Resnet\cite{DBLP:journals/corr/HeZRS15} is another popular model, ResNet101 is the largest model that is being compared and different due to the amount of layers that it has, which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
 
 The ResNet paper\cite{DBLP:journals/corr/HeZRS15}, published in 2015, introduced a new state-of-the-art deep learning architecture called the Residual Network or ResNet. The paper's authors proposed a novel residual learning framework that enables the training of very deep neural networks with hundreds of layers, significantly exceeding the depth of previous architectures.
 
 The ResNet architecture introduced the concept of residual blocks, which allowed for the construction of deeper networks while avoiding the problem of vanishing gradients. The residual block adds a shortcut connection, also known as a skip connection, that allows the network to learn an identity function if it is optimal to do so. This allows the network to learn more complex functions and enables the network to be trained deeper without degrading performance.
 
 In a traditional deep neural network, as the signal propagates through the layers, the gradient signal can become very small, making it difficult for the network to learn. This is known as the vanishing gradient problem. Skip connections address this problem by allowing information from earlier layers to bypass some of the later layers and be added directly to the output of those layers.
+
 Skip connections help to preserve the gradient signal throughout the network, making it easier for the network to learn and allowing for the construction of much deeper networks.
 
 \section{VGG}
