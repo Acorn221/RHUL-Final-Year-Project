@@ -430,6 +430,16 @@ Another proposal made in the EfficientNet paper is to increase the input image r
 
 In the figure\ref{fig:efficientnet-performance-with-multiple-datasets} it's clear to see how much better EfficientNet is than the previous models, it's much smaller, faster and more accurate than the previous models, across multiple datasets.
 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetv2-Performance-Graph.png}
+  \caption{EfficientNetV2 \cite{DBLP:journals/corr/abs-2104-00298}}
+  \label{fig:efficientnetv2-performance-graph}
+\end{figure}
+
+EfficinetNetv2: Smaller Models and Faster Training\cite{DBLP:journals/corr/abs-2104-00298} is a paper published in 2021, which is an improvement on the EfficientNet model. The top performing model in the improved group has more parameters than the original highest performing EfficientNet model, however it's top-1 accuracy goes from 84.7\% with EfficientNetB7, to 87.3\% with EfficientNetv2-XL (21k). This improvement however comes at the cost of many more parameters, from 66 million with EfficientNetB7, to 208 million with EfficientNetv2-XL (21k). The real improvement comes with the smaller models such as EfficientNetv2-S (21k) which has 22 million parameters, and a top-1 accuracy of 84.9\%, as this model has fewer parameters than the previous best EfficientNet model. \ref{fig:efficientnetv2-performance-graph} shows the performance of the EfficientNetv2 models, and how they compare to the EfficientNet models.
+
 \section{Xception}
 
 Xception: Deep Learning with Depthwise Separable Convolutions\cite{DBLP:journals/corr/Chollet16a} was a paper published in 2016 from Google, which introduced the concept of depthwise separable convolutions, which is a type of convolutional layer that is used in the Xception model.
@@ -960,6 +970,9 @@ These models with a maximum validation accuracy of over 90\%, typically all perf
   \centering
   \includegraphics[width=1.1\textwidth]{images/skin-cancer-model-sizes-graph.png}
 \end{figure}
+
+Now that I've got the initial training results, I'm going to try and see if I can use hyperparameter optimisation, and see if I can get the models to perform even better. I'll also try adjusting the augmentation parameters and see how that affects the results.
+
 
 \chapter{How to run the code}
 % TODO: update the instructions for running the code, talk about virtual environments
