@@ -49,17 +49,6 @@
     \field{year}{2011}
   \endentry
 
-  \entry{AlzheimersDataset}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{title}{Alzheimer's Dataset}
-    \verb{url}
-    \verb https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-data
-    \verb set
-    \endverb
-  \endentry
-
   \entry{DementiaStatistics}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
@@ -200,17 +189,6 @@
     \field{title}{CommitLint}
     \verb{url}
     \verb https://github.com/conventional-changelog/commitlint
-    \endverb
-  \endentry
-
-  \entry{ConfusionMatrix}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{title}{Confusion Matrix}
-    \verb{url}
-    \verb https://towardsdatascience.com/confusion-matrix-for-your-multi-class-
-    \verb machine-learning-model-ff9aa3bf7826
     \endverb
   \endentry
 
@@ -1319,6 +1297,40 @@
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs.LG}
     \field{year}{2020}
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-2104-00298}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Mingxing},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMLQV1}
+    \strng{fullhash}{TMLQV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 2104.00298
+    \endverb
+    \field{title}{EfficientNetV2: Smaller Models and Faster Training}
+    \verb{url}
+    \verb https://arxiv.org/abs/2104.00298
+    \endverb
+    \field{volume}{abs/2104.00298}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2021}
   \endentry
 
   \entry{TAN2019105725}{article}{}
