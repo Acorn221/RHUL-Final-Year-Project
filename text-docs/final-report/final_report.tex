@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{refs.bib}
 
@@ -955,6 +956,63 @@ These models with a maximum validation accuracy of over 90\%, typically all perf
 \end{figure}
 
 Now that I've got the initial training results, I'm going to try and see if I can use hyperparameter optimisation, and see if I can get the models to perform even better. I'll also try adjusting the augmentation parameters and see how that affects the results.
+
+
+\section{Optimising the EfficientNet Models}
+
+Due to the outstanding performance of the EfficientNet models in the ImageNet challenge, I decided to try and optimise one of the best models in the series too see if I can get it to perform on the same level as the other models. For this, I have chosen to use the newer and slightly larger EfficientNetV2B1 model. For this test I have decided to not change the brightness on the validation set images as I believe that this will lead to more accurate results, better representing the real world.
+
+I had previously done some experimenting, trying to find the best amount of layers to freeze in the model, in the initial training stages where the learning rate is higher, and for this, I had determined that freezing all the layers in the base model aside from the last 35 gave me good results to get started with.
+
+% Show image of EfficientNetV2B1-initial-training-loss.png
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-initial-training-loss.png}
+    \caption{Training Loss}
+    \label{fig:EfficientNetV2B1-initial-training-loss}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-initial-training-accuracy.png}
+    \caption{Training Accuracy}
+    \label{fig:EfficientNetV2B1-initial-training-accuracy}
+  \end{subfigure}
+  \caption{Initial Training Loss and Accuracy of EfficientNetV2B1}
+  \label{fig:EfficientNetV2B1-initial-training}
+\end{figure}
+
+The first 200 epochs as shown in the figure \ref{fig:EfficientNetV2B1-initial-training-loss} shows that there is really not much progress with the training. The loss is not decreasing much at all. The accuracy graph tells the same story too, there is essentially no progress made with most of the base model's layers frozen.
+
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-2nd-training-loss.png}
+    \caption{Training Loss}
+    \label{fig:EfficientNetV2B1-2nd-training-loss}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-2nd-training-accuracy.png}
+    \caption{Training Accuracy}
+    \label{fig:EfficientNetV2B1-2nd-training-accuracy}
+  \end{subfigure}
+  \caption{The 2nd Round of Training Loss and Accuracy of EfficientNetV2B1}
+  \label{fig:EfficientNetV2B1-2nd-training}
+\end{figure}
+
+The progress made after unfreezing all of the base model and turning the learning rate from $1 \times 10^{-5}$ to $1 \times 10^{-7}$ as this apparently allows the model to learn better from the training data. Interestingly, after reducing the augmentation on the validation set, the model's accuracy on the validation set is consistently above the training set accuracy, which is a good sign.
+
+This clearly shows progress in the training of the model, however it is still not as good as the other models over their first 400 epochs. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=\linewidth]{images/EfficientNetV2B1-final-training-accuracy.png}
+  \caption{Training Loss}
+  \label{fig:EfficientNetV2B1-final-training-loss}
+\end{figure}
+
+I decided to train this model until it reaches a point where it does not appear to be improving anymore. This ended up being around 2800 epochs, which is a lot more than the other models. This results in a final validation accuracy of 0.9375 (93.75\%) which is not as bad as it was, however it is still not as good as the other models and it took a lot longer to train to get these results.
 
 \chapter{How to run the code}
 % TODO: update the instructions for running the code, talk about virtual environments
