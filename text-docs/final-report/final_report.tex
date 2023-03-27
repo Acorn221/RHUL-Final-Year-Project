@@ -1134,19 +1134,19 @@ I have also setup my laptop properly using Manjaro Linux to train the models on 
 \section*{23/11/2022}
 
 I have achieved 99\% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
-I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
-This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
+I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file, so I can analyse the results later, it also saves the model to a file, so I can use it later.
+This should make it a lot easier to use different models, datasets and parameters to train the models and to analyze the results and make the confusion matrix.
 
 \section*{27/11/2022}
 I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
 as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the
 models with images I have augmented myself.
 
-Soon I'll finish the Alzheimer's dataset training and I'll start working on the flowers dataset.
+Soon I'll finish the Alzheimer's dataset training, and I'll start working on the flower's dataset.
 
 \section*{28/11/2022}
 
-Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
+Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed, and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
 
 \section*{29/11/2022}
 
@@ -1160,7 +1160,7 @@ I have been working lots on my report and the training library, this has taken a
 I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
 
 \section*{24/1/2023}
-I've manually reviewed my dataset I'm using and I've found it to have multiple repeated images. Due to the poor quality of the dataset I'm using I've decided to use a different dataset for my project, which I believe is the original data from the corrupted dataset I was using.
+I've manually reviewed my dataset I'm using, and I've found it to have multiple repeated images. Due to the poor quality of the dataset I'm using I've decided to use a different dataset for my project, which I believe is the original data from the corrupted dataset I was using.
 https://www.oasis-brains.org/
 
 This dataset has more information about the patients, such as their sex, age and different scores on tests relating to the disease.
@@ -1171,7 +1171,7 @@ I hope to get this dataset working soon and to start training the models, and I'
 
 \section*{15/2/2023}
 
-I've downloaded the OASIS dataset 1 and I've created some graphs to analyse the data and to try and identify potential biases in the data. The main problem with it is that there are few MRI scans of people with Alzheimer's, and they're mostly old, which means if the model is given the age of the patient, it will cause bias with it, as it's more likely to be an older person with Alzheimer's in this dataset. I need to identify what different parameters given alongside the MRI scans in the dataset will cause bias with the model (primarily by giving the model the age of the patient).
+I've downloaded the OASIS dataset 1 and I've created some graphs to analyze the data and to try and identify potential biases in the data. The main problem with it is that there are few MRI scans of people with Alzheimer's, and they're mostly old, which means if the model is given the age of the patient, it will cause bias with it, as it's more likely to be an older person with Alzheimer's in this dataset. I need to identify what different parameters given alongside the MRI scans in the dataset will cause bias with the model (primarily by giving the model the age of the patient).
 
 \section*{28/2/2023}
 
@@ -1185,7 +1185,7 @@ I've purchased an RTX 3080 to help speed up my training and to allow me to train
 
 \section*{10/3/2023}
 
-I have managed to get the OASIS-1 dataset training with transfer learning, as it's format is different to the dataset I was previously using (it's a collection of files, rather than 4 folders with the different categories of images in them). This was done through the Pandas library, using the dataframe class, along with the keras ImageDataGenerator class which helps me read the images from the dataset, along with batching them to be used in training (so my GPU doesn't run out of memory), as well as augmenting the images to help prevent overfitting.
+I have managed to get the OASIS-1 dataset training with transfer learning, as its format is different to the dataset I was previously using (it's a collection of files, rather than 4 folders with the different categories of images in them). This was done through the Pandas library, using the dataframe class, along with the keras ImageDataGenerator class which helps me read the images from the dataset, along with batching them to be used in training (so my GPU doesn't run out of memory), as well as augmenting the images to help prevent overfitting.
 
 The performance of the model on the new dataset however is significantly lower than I would like. The previous dataset gave me false hope, as the repeated images were in the training and validation classes, giving me a far higher accuracy than I actually had. I will experiment with hyperparameter tuning and I will look into using the other information in the OASIS-1 dataset to help improve the accuracy of the model, as features in the OASIS model include
 ```
@@ -1212,13 +1212,13 @@ I've also encountered a problem with the training, as the validation accuracy is
 
 \section*{19/3/2023}
 
-I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+I have continued to work on the report today, and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
 
 \section*{20/3/2023}
 
 I've merged the git branches into main, as I wanted to ensure I do not have too many conflicts closer to the deadline, and to ensure that I will not lose work due to a merge conflict.
 
-I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used ).
+I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used).
 
 Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
 The web-ui is mostly finished now, I just need to add the results of the models to the web page.
@@ -1227,7 +1227,7 @@ I have managed to get the basic transfer learning results saved to files, along 
 
 \section*{21/3/2023}
 
-Today I've been working on my report, adding different sections on the Alzheimers disease, and why it's so important to diagnose it early.
+Today I've been working on my report, adding different sections on the Alzheimer's disease, and why it's so important to diagnose it early.
 
 \section*{22/3/2023}
 
@@ -1235,7 +1235,7 @@ I've been working more on the report and getting the web-ui working, I've battle
 
 \section*{23/3/2023}
 
-I have decided to get the training results for all the different models with the Alzheimers dataset, and save them to files, so I can use them in the web-ui. The performance of these models is not great, so I will have to find ways to make this better.
+I have decided to get the training results for all the different models with the Alzheimer's dataset, and save them to files, so I can use them in the web-ui. The performance of these models is not great, so I will have to find ways to make this better.
 
 
 \section*{24/3/2023}
@@ -1250,11 +1250,11 @@ Today I have created graphs from the different training results with the skin ca
 
 \section*{26/3/2023}
 
-I have been working more on my report, as I have my graphs to analyse and talk about in the report. I am going to try and increase the accuracy of the EfficientNet models and potentially use the newer EfficientNetV2 models to try and boost performance.
+I have been working more on my report, as I have my graphs to analyze and talk about in the report. I am going to try and increase the accuracy of the EfficientNet models and potentially use the newer EfficientNetV2 models to try and boost performance.
 
 \section*{27/3/2023}
 
-Today I want to try and optimise the EfficientNetv2 models more and do a write up on the results for them, then I will try and use hyperparameter tuning to try and improve the performance of the better performing models to see how high I can get the accuracy.
+Today I want to try and optimise the EfficientNetv2 models more and do a write-up on the results for them, then I will try and use hyperparameter tuning to try and improve the performance of the better performing models to see how high I can get the accuracy.
 
 I also want to try to get the web-ui working with the server side processing, so I can get the results of the models on the web page and then I want to experiment with tensorflow-JS to see if I can get the models to run in the browser for increased privacy and lower running costs.
 
