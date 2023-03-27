@@ -149,3 +149,60 @@ During this time, I've also managed to get ill, so I haven't been able to work o
 To use the seperate parameters, alongside the MRI scans, I will need to create a custom model, which will take in the parameters, then I will also use the original transfer learning model, and combine the outputs of the two models to create a new model. This will allow me to use the parameters and the MRI scans, which will hopefully improve the accuracy of the model.
 
 Combining the models will be done through the Keras Model class, which allows me to create a new model from the outputs of other models, however I am struggling to pass the data to the new model, as I have had many errors when trying to pass the new data and the MRI scans to the model. I will continue to try and fix this issue today.
+
+# 15/03/2023
+
+I have had many problems combining the age, gender and other information about the patients with the MRI scans, the problem lies with the fit function of the model as the method I was using to get the images from the dataset originally, did not allow for other data to be included as an input for the model. I have now created my own generator class and intend to use that to get the data from the dataset and pass it to the model.
+
+# 16/03/2023
+
+After lots of struggling, I have managed to get my custom generator working with keras, it now trains and has the MMSE, age and gender as context. I'm still having trouble with the accuracy but hopefully with more parameters, it will improve.
+
+I've also encountered a problem with the training, as the validation accuracy is almost always 0.9195, and this doesn't seem to change much. I will try adjusting the training/validation split to see if anything improves.
+
+## 19/03/2023
+
+I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+
+## 20/03/2023
+
+I've merged the git branches into main, as I wanted to ensure I do not have too many conflicts closer to the deadline, and to ensure that I will not lose work due to a merge conflict.
+
+I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used ).
+
+Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
+The web-ui is mostly finished now, I just need to add the results of the models to the web page.
+
+I have managed to get the basic transfer learning results saved to files, along with the training and loss results.
+
+## 21/03/2023
+
+Today I've been working on my report, adding different sections on the Alzheimers disease, and why it's so important to diagnose it early.
+
+## 22/03/2023
+
+I've been working more on the report and getting the web-ui working, I've battled with CORS to get the POST request through to flask and I've managed to get the majority of it working.
+
+## 23/03/2023
+
+I have decided to get the training results for all the different models with the Alzheimers dataset, and save them to files, so I can use them in the web-ui. The performance of these models is not great, so I will have to find ways to make this better.
+
+## 24/03/2023
+
+Today I have been given a skin cancer dataset to use for my project, I will be using this to train a model to classify benign and malignant blemishes on the skin. I will be using transfer learning to train the model, and I will be using the same model structure as I used for the Alzheimers dataset.
+
+The results from training these models has been very positive, and I have managed to get a consistent accuracy of 0.98 on the validation set, which is very good. I will continue to train the model and see if I can get the accuracy any higher.
+
+## 25/03/2023	
+
+Today I have created graphs from the different training results with the skin cancer dataset, I will use these to talk about the performance of the different models in my report. 
+
+## 26/03/2023
+
+I have been working more on my report, as I have my graphs to analyse and talk about in the report. I am going to try and increase the accuracy of the EfficientNet models and potentially use the newer EfficientNetV2 models to try and boost performance.
+
+## 27/03/2023
+
+Today I want to try and optimise the EfficientNetv2 models more and do a write up on the results for them, then I will try and use hyperparameter tuning to try and improve the performance of the better performing models to see how high I can get the accuracy.
+
+I also want to try to get the web-ui working with the server side processing, so I can get the results of the models on the web page and then I want to experiment with tensorflow-JS to see if I can get the models to run in the browser for increased privacy and lower running costs.

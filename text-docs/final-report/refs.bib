@@ -331,9 +331,256 @@
   title = {OASIS},
   url   = {https://oasis-brains.org/#data}
 }
-@InProceedings{Simonyan15,
-  author       = "Karen Simonyan and Andrew Zisserman",
-  title        = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-  booktitle    = "International Conference on Learning Representations",
-  year         = "2015",
+@inproceedings{Simonyan15,
+  author    = {Karen Simonyan and Andrew Zisserman},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2015}
+}
+@misc{RTX3080,
+  title = {RTX 3080},
+  url   = {https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/}
+}
+@misc{OASISFactSheet,
+  title = {OASIS-1 Fact Sheet},
+  url   = {https://oasis-brains.org/files/oasis_cross-sectional_facts.pdf}
+}
+@misc{Clinica,
+  title = {Clinica},
+  url   = {https://github.com/aramis-lab/clinica}
+}
+@article{SAMPERGONZALEZ2018504,
+  title    = {Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data},
+  journal  = {NeuroImage},
+  volume   = {183},
+  pages    = {504-521},
+  year     = {2018},
+  issn     = {1053-8119},
+  doi      = {https://doi.org/10.1016/j.neuroimage.2018.08.042},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1053811918307407},
+  author   = {Jorge Samper-González and Ninon Burgos and Simona Bottani and Sabrina Fontanella and Pascal Lu and Arnaud Marcoux and Alexandre Routier and Jérémy Guillon and Michael Bacci and Junhao Wen and Anne Bertrand and Hugo Bertin and Marie-Odile Habert and Stanley Durrleman and Theodoros Evgeniou and Olivier Colliot},
+  keywords = {Classification, Reproducibility, Alzheimer's disease, Magnetic resonance imaging, Positron emission tomography, Open-source},
+  abstract = {A large number of papers have introduced novel machine learning and feature extraction methods for automatic classification of Alzheimer's disease (AD). However, while the vast majority of these works use the public dataset ADNI for evaluation, they are difficult to reproduce because different key components of the validation are often not readily available. These components include selected participants and input data, image preprocessing and cross-validation procedures. The performance of the different approaches is also difficult to compare objectively. In particular, it is often difficult to assess which part of the method (e.g. preprocessing, feature extraction or classification algorithms) provides a real improvement, if any. In the present paper, we propose a framework for reproducible and objective classification experiments in AD using three publicly available datasets (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of the three datasets into a standard format (BIDS); ii) a modular set of preprocessing pipelines, feature extraction and classification methods, together with an evaluation framework, that provide a baseline for benchmarking the different components. We demonstrate the use of the framework for a large-scale evaluation on 1960 participants using T1 MRI and FDG PET data. In this evaluation, we assess the influence of different modalities, preprocessing, feature types (regional or voxel-based features), classifiers, training set sizes and datasets. Performances were in line with the state-of-the-art. FDG PET outperformed T1 MRI for all classification tasks. No difference in performance was found for the use of different atlases, image smoothing, partial volume correction of FDG PET images, or feature type. Linear SVM and L2-logistic regression resulted in similar performance and both outperformed random forests. The classification performance increased along with the number of subjects used for training. Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code of the framework and the experiments is publicly available: general-purpose tools have been integrated into the Clinica software (www.clinica.run) and the paper-specific code is available at: https://gitlab.icm-institute.org/aramislab/AD-ML.}
+}
+
+@article{Gorgolewski2016,
+  author   = {Gorgolewski, Krzysztof J.
+              and Auer, Tibor
+              and Calhoun, Vince D.
+              and Craddock, R. Cameron
+              and Das, Samir
+              and Duff, Eugene P.
+              and Flandin, Guillaume
+              and Ghosh, Satrajit S.
+              and Glatard, Tristan
+              and Halchenko, Yaroslav O.
+              and Handwerker, Daniel A.
+              and Hanke, Michael
+              and Keator, David
+              and Li, Xiangrui
+              and Michael, Zachary
+              and Maumet, Camille
+              and Nichols, B. Nolan
+              and Nichols, Thomas E.
+              and Pellman, John
+              and Poline, Jean-Baptiste
+              and Rokem, Ariel
+              and Schaefer, Gunnar
+              and Sochat, Vanessa
+              and Triplett, William
+              and Turner, Jessica A.
+              and Varoquaux, Ga{\"e}l
+              and Poldrack, Russell A.},
+  title    = {The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments},
+  journal  = {Scientific Data},
+  year     = {2016},
+  month    = {Jun},
+  day      = {21},
+  volume   = {3},
+  number   = {1},
+  pages    = {160044},
+  abstract = {The development of magnetic resonance imaging (MRI) techniques has defined modern neuroimaging. Since its inception, tens of thousands of studies using techniques such as functional MRI and diffusion weighted imaging have allowed for the non-invasive study of the brain. Despite the fact that MRI is routinely used to obtain data for neuroscience research, there has been no widely adopted standard for organizing and describing the data collected in an imaging experiment. This renders sharing and reusing data (within or between labs) difficult if not impossible and unnecessarily complicates the application of automatic pipelines and quality assurance protocols. To solve this problem, we have developed the Brain Imaging Data Structure (BIDS), a standard for organizing and describing MRI datasets. The BIDS standard uses file formats compatible with existing software, unifies the majority of practices already common in the field, and captures the metadata necessary for most common data processing operations.},
+  issn     = {2052-4463},
+  doi      = {10.1038/sdata.2016.44},
+  url      = {https://doi.org/10.1038/sdata.2016.44}
+}
+@misc{BIDS_metadata,
+  title = {BIDS MRI Metadata},
+  url   = {https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html}
+}
+@article{10.3389/frai.2021.757780,
+  author   = {Li, Ting and Tong, Weida and Roberts, Ruth and Liu, Zhichao and Thakkar, Shraddha},
+  title    = {DeepCarc: Deep Learning-Powered Carcinogenicity Prediction Using Model-Level Representation},
+  journal  = {Frontiers in Artificial Intelligence},
+  volume   = {4},
+  year     = {2021},
+  url      = {https://www.frontiersin.org/articles/10.3389/frai.2021.757780},
+  doi      = {10.3389/frai.2021.757780},
+  issn     = {2624-8212},
+  abstract = {Carcinogenicity testing plays an essential role in identifying carcinogens in environmental chemistry and drug development. However, it is a time-consuming and label-intensive process to evaluate the carcinogenic potency with conventional 2-years rodent animal studies. Thus, there is an urgent need for alternative approaches to providing reliable and robust assessments on carcinogenicity. In this study, we proposed a DeepCarc model to predict carcinogenicity for small molecules using deep learning-based model-level representations. The DeepCarc Model was developed using a data set of 692 compounds and evaluated on a test set containing 171 compounds in the National Center for Toxicological Research liver cancer database (NCTRlcdb). As a result, the proposed DeepCarc model yielded a Matthews correlation coefficient (MCC) of 0.432 for the test set, outperforming four advanced deep learning (DL) powered quantitative structure-activity relationship (QSAR) models with an average improvement rate of 37%. Furthermore, the DeepCarc model was also employed to screen the carcinogenicity potential of the compounds from both DrugBank and Tox21. Altogether, the proposed DeepCarc model could serve as an early detection tool (<ext-link ext-link-type="uri" xlink:href="https://github.com/TingLi2016/DeepCarc" xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/TingLi2016/DeepCarc</ext-link>) for carcinogenicity assessment.}
+}
+@misc{DementiaStatistics,
+  title = {Alzheimer's Disease Statistics},
+  url   = {https://dementiastatistics.org/}
+}
+@article{Van_Dyck2022-pt,
+  title    = {Lecanemab in Early Alzheimer's Disease},
+  author   = {van Dyck, Christopher H and Swanson, Chad J and Aisen, Paul and
+              Bateman, Randall J and Chen, Christopher and Gee, Michelle and
+              Kanekiyo, Michio and Li, David and Reyderman, Larisa and Cohen,
+              Sharon and Froelich, Lutz and Katayama, Sadao and Sabbagh, Marwan
+              and Vellas, Bruno and Watson, David and Dhadda, Shobha and
+              Irizarry, Michael and Kramer, Lynn D and Iwatsubo, Takeshi},
+  abstract = {BACKGROUND: The accumulation of soluble and insoluble aggregated
+              amyloid-beta (A$\beta$) may initiate or potentiate pathologic
+              processes in Alzheimer's disease. Lecanemab, a humanized IgG1
+              monoclonal antibody that binds with high affinity to A$\beta$
+              soluble protofibrils, is being tested in persons with early
+              Alzheimer's disease. METHODS: We conducted an 18-month,
+              multicenter, double-blind, phase 3 trial involving persons 50 to
+              90 years of age with early Alzheimer's disease (mild cognitive
+              impairment or mild dementia due to Alzheimer's disease) with
+              evidence of amyloid on positron-emission tomography (PET) or by
+              cerebrospinal fluid testing. Participants were randomly assigned
+              in a 1:1 ratio to receive intravenous lecanemab (10 mg per
+              kilogram of body weight every 2 weeks) or placebo. The primary
+              end point was the change from baseline at 18 months in the score
+              on the Clinical Dementia Rating-Sum of Boxes (CDR-SB; range, 0 to
+              18, with higher scores indicating greater impairment). Key
+              secondary end points were the change in amyloid burden on PET,
+              the score on the 14-item cognitive subscale of the Alzheimer's
+              Disease Assessment Scale (ADAS-cog14; range, 0 to 90; higher
+              scores indicate greater impairment), the Alzheimer's Disease
+              Composite Score (ADCOMS; range, 0 to 1.97; higher scores indicate
+              greater impairment), and the score on the Alzheimer's Disease
+              Cooperative Study-Activities of Daily Living Scale for Mild
+              Cognitive Impairment (ADCS-MCI-ADL; range, 0 to 53; lower scores
+              indicate greater impairment). RESULTS: A total of 1795
+              participants were enrolled, with 898 assigned to receive
+              lecanemab and 897 to receive placebo. The mean CDR-SB score at
+              baseline was approximately 3.2 in both groups. The adjusted
+              least-squares mean change from baseline at 18 months was 1.21
+              with lecanemab and 1.66 with placebo (difference, -0.45; 95\%
+              confidence interval [CI], -0.67 to -0.23; P<0.001). In a substudy
+              involving 698 participants, there were greater reductions in
+              brain amyloid burden with lecanemab than with placebo
+              (difference, -59.1 centiloids; 95\% CI, -62.6 to -55.6). Other
+              mean differences between the two groups in the change from
+              baseline favoring lecanemab were as follows: for the ADAS-cog14
+              score, -1.44 (95\% CI, -2.27 to -0.61; P<0.001); for the ADCOMS,
+              -0.050 (95\% CI, -0.074 to -0.027; P<0.001); and for the
+              ADCS-MCI-ADL score, 2.0 (95\% CI, 1.2 to 2.8; P<0.001). Lecanemab
+              resulted in infusion-related reactions in 26.4\% of the
+              participants and amyloid-related imaging abnormalities with edema
+              or effusions in 12.6\%. CONCLUSIONS: Lecanemab reduced markers of
+              amyloid in early Alzheimer's disease and resulted in moderately
+              less decline on measures of cognition and function than placebo
+              at 18 months but was associated with adverse events. Longer
+              trials are warranted to determine the efficacy and safety of
+              lecanemab in early Alzheimer's disease. (Funded by Eisai and
+              Biogen; Clarity AD ClinicalTrials.gov number, NCT03887455.).},
+  journal  = {N Engl J Med},
+  volume   = 388,
+  number   = 1,
+  pages    = {9--21},
+  month    = nov,
+  year     = 2022,
+  address  = {United States},
+  language = {en}
+}
+@misc{React,
+  title = {React: A JavaScript library for building user interfaces},
+  url   = {https://reactjs.org/}
+}
+@article{TAN2019105725,
+  title    = {Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models},
+  journal  = {Applied Soft Computing},
+  volume   = {84},
+  pages    = {105725},
+  year     = {2019},
+  issn     = {1568-4946},
+  doi      = {https://doi.org/10.1016/j.asoc.2019.105725},
+  url      = {https://www.sciencedirect.com/science/article/pii/S156849461930506X},
+  author   = {Teck Yan Tan and Li Zhang and Chee Peng Lim},
+  keywords = {Skin cancer detection, Feature selection, Hyper-parameter tuning, Evolutionary algorithm, Deep and ensemble classifier},
+  abstract = {In this research, we propose an intelligent decision support system for skin cancer detection. Since generating an effective lesion representation is a vital step to ensure the success of lesion classification, the discriminative power of different types of features is exploited. Specifically, we combine clinically important asymmetry, border irregularity, colour and dermoscopic structure features with texture features extracted using Grey Level Run Length Matrix, Local Binary Patterns, and Histogram of Oriented Gradients operators for lesion representation. Then, we propose two enhanced Particle Swarm Optimization (PSO) models for feature optimization. The first model employs adaptive acceleration coefficients, multiple remote leaders, in-depth sub-dimension feature search and re-initialization mechanisms to overcome stagnation. The second model uses random acceleration coefficients, instead of adaptive ones, based on non-linear circle, sine and helix functions, respectively, to increase diversification and intensification. Ensemble classifiers are also constructed with each base model trained using each optimized feature subset. A deep convolutional neural network is devised whose hyper-parameters are fine-tuned using the proposed PSO models. Extensive experimental studies using dermoscopic skin lesion data, medical data from the UCI machine learning repository, and ALL-IDB2 image data are conducted to evaluate the model efficiency systematically. The results from empirical evaluations and statistical tests indicate the superiority of the proposed models over other advanced PSO variants and classical search methods pertaining to discriminative feature selection and optimal hyper-parameter identification for deep learning networks in lesion classification as well as other disease diagnosis.}
+}
+@inbook{Ballerini2013,
+  author    = {Ballerini, Lucia
+               and Fisher, Robert B.
+               and Aldridge, Ben
+               and Rees, Jonathan},
+  editor    = {Celebi, M. Emre
+               and Schaefer, Gerald},
+  title     = {A Color and Texture Based Hierarchical K-NN Approach to the Classification of Non-melanoma Skin Lesions},
+  booktitle = {Color Medical Image Analysis},
+  year      = {2013},
+  publisher = {Springer Netherlands},
+  address   = {Dordrecht},
+  pages     = {63--86},
+  abstract  = {This chapter proposes a novel hierarchical classification system based on the K-Nearest Neighbors (K-NN) model and its application to non-melanoma skin lesion classification. Color and texture features are extracted from skin lesion images. The hierarchical structure decomposes the classification task into a set of simpler problems, one at each node of the classification. Feature selection is embedded in the hierarchical framework that chooses the most relevant feature subsets at each node of the hierarchy. The accuracy of the proposed hierarchical scheme is higher than 93 {\%} in discriminating cancer and potential at risk lesions from benign lesions, and it reaches an overall classification accuracy of 74 {\%} over five common classes of skin lesions, including two non-melanoma cancer types. This is the most extensive known result on non-melanoma skin cancer classification using color and texture information from images acquired by a standard camera (non-dermoscopy).},
+  isbn      = {978-94-007-5389-1},
+  doi       = {10.1007/978-94-007-5389-1_4},
+  url       = {https://doi.org/10.1007/978-94-007-5389-1_4}
+}
+
+@inproceedings{6610779,
+  author    = {Mendonça, Teresa and Ferreira, Pedro M. and Marques, Jorge S. and Marcal, André R. S. and Rozeira, Jorge},
+  booktitle = {2013 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  title     = {PH2 - A dermoscopic image database for research and benchmarking},
+  year      = {2013},
+  volume    = {},
+  number    = {},
+  pages     = {5437-5440},
+  doi       = {10.1109/EMBC.2013.6610779}
+}
+@misc{tan2020efficientnet,
+  title={EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks}, 
+  author={Mingxing Tan and Quoc V. Le},
+  year={2020},
+  eprint={1905.11946},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+@inproceedings{BMVC2016_87,
+  title={Wide Residual Networks},
+  author={Sergey Zagoruyko and Nikos Komodakis},
+  year={2016},
+  month={September},
+  pages={87.1-87.12},
+  articleno={87},
+  numpages={12},
+  booktitle={Proceedings of the British Machine Vision Conference (BMVC)},
+  publisher={BMVA Press},
+  editor={Richard C. Wilson, Edwin R. Hancock and William A. P. Smith},
+  doi={10.5244/C.30.87},
+  isbn={1-901725-59-6},
+  url={https://dx.doi.org/10.5244/C.30.87}
+}
+@article{DBLP:journals/corr/Chollet16a,
+  author    = {Fran{\c{c}}ois Chollet},
+  title     = {Xception: Deep Learning with Depthwise Separable Convolutions},
+  journal   = {CoRR},
+  volume    = {abs/1610.02357},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1610.02357},
+  eprinttype = {arXiv},
+  eprint    = {1610.02357},
+  timestamp = {Mon, 13 Aug 2018 16:46:20 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/Chollet16a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-2104-00298,
+  author    = {Mingxing Tan and
+               Quoc V. Le},
+  title     = {EfficientNetV2: Smaller Models and Faster Training},
+  journal   = {CoRR},
+  volume    = {abs/2104.00298},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2104.00298},
+  eprinttype = {arXiv},
+  eprint    = {2104.00298},
+  timestamp = {Mon, 12 Apr 2021 16:14:56 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2104-00298.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }

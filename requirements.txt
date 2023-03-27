@@ -1,12 +1,13 @@
 notebook
-tensorflow
-tensorflow-gpu
-keras
+tensorflow<2.11
+keras==2.10.0
 matplotlib
 kaggle
 scikit-learn
 tensorflow_datasets
 pytest
+pybids
+pandas
 werkzeug
 flask
 flask-cors
