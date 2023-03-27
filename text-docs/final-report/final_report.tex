@@ -57,24 +57,16 @@ Signature:
 \tableofcontents\pdfbookmark[0]{Table of Contents}{toc}\newpage
 
 \begin{abstract}
-  % TODO: Update abstract
-  Transfer learning is a common, efficient method for training deep learning models.
-  It involves using a pre-trained model to extract features from a dataset,
-  and then training a new model on top of the extracted features.
-  This project report gives a comparison of the performance of several image classification models
-  when using transfer learning and evaluates their performance on a dataset with MRI scans of Alzheimer's patients.
-  The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
+
+  Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
+
 \end{abstract}
-\newpage
+
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
 % TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
 % TODO: Summary of completed work
-% TODO: Insert or attach the diary
-% TODO: Remove all mentions of flowers dataset
-% TODO: Add explanations of ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay and what I will/wont use and why
-% TODO: Change secion on exiting data, say that it is to be disregarded
-% TODO: Talk about more models that are being compared
+% TODO: Ensure the models being compared are right
 
 \chapter*{Project Specification}
 
@@ -128,14 +120,20 @@ I was given permission to do so, and I chose to do a project on comparison of im
 I chose this project as I was interested in transfer learning as I had used it in a previous project and wanted to learn more about it
 and it seemed far more interesting than the generic project and I believe this is generally a more applicable problem to solve in the real world.
 
-\chapter{Introduction}
+\chapter{Rationale}
+
+\section{Introduction}
 
 My project is about the comparison of image classification models with transfer learning.
 In this report I shall cover the background of transfer learning, the models I have chosen to compare, the datasets I have chosen to use, the pre the results of my experiments and the conclusions I have drawn from them.
 
 The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
 
-\chapter{Rationale}
+In this project, I'm planning to learn about transfer learning and comparing the different models and also going over other methods of classification such as SVMs and KNNs. I will then preprocess the dataset images and train the models on the dataset and compare the results. I will then attempt to optimise the models, find out what issues they have and try to fix them to get the best results possible.
+
+I'll also make a web based GUI for the project, so that anyone can use it to classify images of their own. I plan on using python based libraries such as keras and flask, which will communicate with a backend server. I also plan to use and test the viability of tensorflowJS\cite{smilkov2019tensorflowjs} to make the model run in the browser, which would allow anyone to use the model locally, without having to send their images to a server, which would avoid all privacy issues and potential legal issues.
+
+This will be a learning experience for me, as I have not done any machine learning work before, and I will get to learn about different machine learning techniques and experiment with cutting edge technology that is being used in the real world.
 
 \section{Background}
 Alzheimer's disease is a neurodegenerative disease that affects the brain. It is the most common cause of dementia, and 1 in 3 people born in the UK this year will develop dementia in their lifetime.\cite{DementiaStatistics}
@@ -202,7 +200,7 @@ Although this method of image classification would not seem to be very useful fo
 a study was done using this method to classify Alzheimer's patients, and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
 and getting feedback from the physicians who were treating the patients.
 
-For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
+For classifying images of different flowers, for example, it could also be very useful, as it would allow the user to search for images of a specific flower.
 This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals,
 the color of the petals, and the overall structure of the flower.
 
@@ -367,9 +365,6 @@ The large model is designed for high accuracy, and the small model is designed f
 \end{figure}
 
 
-
-% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
-
 % TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
 \section{InceptionV3}
 InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
@@ -378,15 +373,15 @@ It is a deep learning model that uses a combination of convolutional layers, poo
 It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data.
 They can also help to reduce the amount of overfitting that can occur when using a single classifier.
 
-\section{ResNet101}
-Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has,
-which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
+\section{ResNet}
+Resnet\cite{DBLP:journals/corr/HeZRS15} is another popular model, ResNet101 is the largest model that is being compared and different due to the amount of layers that it has, which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
 
 The ResNet paper\cite{DBLP:journals/corr/HeZRS15}, published in 2015, introduced a new state-of-the-art deep learning architecture called the Residual Network or ResNet. The paper's authors proposed a novel residual learning framework that enables the training of very deep neural networks with hundreds of layers, significantly exceeding the depth of previous architectures.
 
 The ResNet architecture introduced the concept of residual blocks, which allowed for the construction of deeper networks while avoiding the problem of vanishing gradients. The residual block adds a shortcut connection, also known as a skip connection, that allows the network to learn an identity function if it is optimal to do so. This allows the network to learn more complex functions and enables the network to be trained deeper without degrading performance.
 
 In a traditional deep neural network, as the signal propagates through the layers, the gradient signal can become very small, making it difficult for the network to learn. This is known as the vanishing gradient problem. Skip connections address this problem by allowing information from earlier layers to bypass some of the later layers and be added directly to the output of those layers.
+
 Skip connections help to preserve the gradient signal throughout the network, making it easier for the network to learn and allowing for the construction of much deeper networks.
 
 \section{VGG}
@@ -709,7 +704,7 @@ should give a better representation of how well the model would work in a real w
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
-\section{My Development Environment}
+\section{My Python Development Environment}
 % TODO: make basic UML and talk about testing library
 I have used the following tools to develop this project:
 \begin{itemize}
@@ -720,6 +715,21 @@ I have used the following tools to develop this project:
   \item tmux\cite{tmux} - To run the code in the background
   \item CUDA\cite{CUDA} - To train the models on the GPU
 \end{itemize}
+
+\section{My Web Development Environment}
+
+For the web development, I have decided to use Typescript + React. This is because I have experience with these from my previous projects, and I wanted to use a framework that I was familiar with. I specifically used a template\cite{TypescriptTemplate} that I created in a previous project, and I have used this template for this project too.
+
+I have used the following libraries to develop the front end in this project:
+\begin{itemize}
+  \item React\cite{React} - To create the web application
+  \item Typescript\cite{Typescript} - To add types to the code
+  \item TailwindCSS\cite{tailwindcss} - To style the web application quickly
+  \item Vite\cite{Vite} - To bundle the code and to run the development server quickly
+  \item MaterialUI\cite{MaterialUI} - To use the Material Design components
+  \item TensorflowJS\cite{TensorflowJS} - To run the model in the browser
+\end{itemize}
+
 
 \section{Using Git}
 I have used Git to manage the code, and have used the RHUL GitLab server to host the code.

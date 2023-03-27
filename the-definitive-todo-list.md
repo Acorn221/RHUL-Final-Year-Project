@@ -38,13 +38,12 @@
 ## On campus
 
 - [ ] Finish the automated testing library
-  - [ ] Write tests for the model memory clearing
-    - [ ] Write the model memory clearing function
   - [ ] Write tests for hyperparameter tuning
 		- [ ] Write the hyperparameter tuning function
   - [ ] Allow for the image input and the other related parameters to be passed into the model
     - [ ] Test
     - [ ] Function
+  - [ ] Write some examples for the library
 - [ ] Create a web interface for uploading MRI scans and getting the results
   - [x] Set up a flask API
     - [x] Create tests for the API
@@ -76,7 +75,24 @@
 - [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
 - [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
+  - Go over everything to ensure there aren't mistakes and everything is clear
 - [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
   - [ ] Bibtex has taken care of this
 - [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
   - [ ] I feel as though I have covered this well
+
+
+## The Code
+
+ - [ ] Does it work? Is it stable?
+ - [ ] Is the software usable? Is the interface appropriate for the application (a compiler might require more technical skills to run than an e-commerce site)?
+ - [ ] Does the code and system structure follow the design?
+ - [ ] How complete is the functionality with respect to the requirements?
+ - [ ] Is the coding clean and well documented?
+ - [ ] Does the GitLab repository reflect the use of good software engineering principles including appropriate use of branches/tags?
+ - [ ] Does the product require techniques, tools, theory or concepts which are clearly above second year level?
+ - [ ] Does the product use complex new technologies/platforms or require the study of a significant body of literature from disparate sources to complete?
+
+
+
+SUBMIT HERE: https://moodle.royalholloway.ac.uk/mod/assign/view.php?id=781358
