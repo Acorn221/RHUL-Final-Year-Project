@@ -76,7 +76,11 @@
 - [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
 - [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
+  - Go over everything to ensure there aren't mistakes and everything is clear
 - [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
   - [ ] Bibtex has taken care of this
 - [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
   - [ ] I feel as though I have covered this well
+
+
+SUBMIT HERE: https://moodle.royalholloway.ac.uk/mod/assign/view.php?id=781358
