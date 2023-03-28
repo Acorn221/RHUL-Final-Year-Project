@@ -705,7 +705,7 @@ should give a better representation of how well the model would work in a real w
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
-\section{My Development Environment}
+\subsection{My Development Python Environment}
 % TODO: make basic UML and talk about testing library
 I have used the following tools to develop this project:
 \begin{itemize}
@@ -717,22 +717,12 @@ I have used the following tools to develop this project:
   \item CUDA\cite{CUDA} - To train the models on the GPU
 \end{itemize}
 
-\section{Using Git}
-I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
-This was not the first time I have used Git, however it was the first time I have used it with GitLab.
-I used separate branches for the different stages of the project, and then merged them into the master branch when they were complete.
-The branches were made to create the different planning papers, and then to set up the development environment.
-I also used branches to create the different models, and then to test them too.
-
-All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
-and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
-
-\section{Testing with Jupyter Notebook}
+\subsection{Testing with Jupyter Notebook}
 I have used Jupyter Notebook to test the code, and to generate the graphs.
 This was the most useful tool for me as it allowed me to test the code quickly and easily,
 I had many issues with setting up the code as this was the first time I have trained any model.
 
-\section{Using Test Driven Development}
+\subsection{Using Test Driven Development}
 I used PyTest\cite{PyTest} to test the code, and to make sure that everything was working as expected.
 This helped me quickly test and debug my code, I would write a test to define how I wanted my code to work, and then write the code to make the test pass.
 This sped up development as I could quickly test the code and make sure that it was working as expected.
@@ -750,7 +740,7 @@ Aside from testing the models, I could set up unit tests for an API that I could
 This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
 % TODO: Talk about the api and the tests
 
-\section{Different learning rates}
+\subsection{Different learning rates}
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
@@ -762,6 +752,25 @@ A global minimum is the same concept, but it is the absolute lowest the model ca
 It is the lowest point in the entire loss landscape no matter what parameters the model has.
 
 % Also talk about the different learning rates and how they affect the performance of the models
+
+\section{Using Git}
+I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
+This was not the first time I have used Git, however it was the first time I have used it with GitLab.
+I used separate branches for the different stages of the project, and then merged them into the master branch when they were complete.
+The branches were made to create the different planning papers, and then to set up the development environment.
+I also used branches to create the different models, and then to test them too.
+
+All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
+and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
+
+I have tried to make my commits small and concise, and to try to make sure that each commit is a complete change.
+This makes it easier to revert a change if it breaks something, and it makes it easier to cherry pick a change if it is needed in another branch. I have cherrypicked a few commits throughout the project, however when I need to use it, it comes in very handy.
+
+I have also used GitKraken\cite{GitKraken} to help me manage the code, and to make it easier to see the changes that I have made, handle the Git tree and to make it easier to merge the branches.
+
+\section{Frontend Typescript and React}
+
+For the frontend, I have chosen not to use TDD as it would be difficult to test the code, as it's mostly just displaying the results from the the models that I have trained. I did however setup the project using my template\cite{TypescriptProjectTemplate} that I created prior to this project, which has a basic setup for a React Typescript project, which used EsLint\cite{EsLint} to format the code and to make sure that the code is consistent, and to make sure that there are no syntax errors.
 
 \chapter{The User Interface}
 
@@ -1011,14 +1020,48 @@ This clearly shows progress in the training of the model, however it is still no
 I decided to train this model until it reaches a point where it does not appear to be improving anymore. This ended up being around 2800 epochs, which is a lot more than the other models. This results in a final validation accuracy of 0.9375 (93.75\%) which is not as bad as it was, however it is still not as good as the other models and it took a lot longer to train to get these results.
 
 \chapter{How to run the code}
-% TODO: update the instructions for running the code, talk about virtual environments
-\section{Prerequisites}
+
+\section{The Frontend Installation and Setup}
+
+\subsection{Installing Node.js}
+To install Node.js\cite{NodeJs}, go to the Node.js website and download the latest version of Node.js for your operating system. 
+Follow the instructions to install Node.js.
+
+\subsection{Installing Yarn}
+To install Yarn\cite{Yarn}, go to the Yarn website and download the latest version of Yarn for your operating system.
+Follow the instructions to install Yarn.
+
+\subsection{Installing the dependencies}
+To install the dependencies for the frontend, run the following command in the frontend directory:
+\begin{lstlisting}
+  yarn
+\end{lstlisting}
+
+\subsection{Running the frontend}
+To run the frontend, run the following command in the frontend directory:
+\begin{lstlisting}
+  yarn dev
+\end{lstlisting}
+
+\subsection{Building the frontend}
+To build the frontend, run the following command in the frontend directory:
+\begin{lstlisting}
+  yarn build
+\end{lstlisting}
+
+This will create a folder under ./dist/ which contains the built frontend.
+
+\section{The Python Side of the Project}
+
+\subsection{Prerequisites for the Python code}
 Go to the directory in your terminal (with python 3.7 > installed) and run the following command:
 \begin{lstlisting}
   pip install -r requirements.txt
 \end{lstlisting}
 
-\section{Running the code}
+\subsection{Running the Notebooks}
+
+This should install the required packages for the python side of the project.
 To run the code in the notebook, follow the markdown instructions in the notebook.
 To run the training program, run automated-testing-training/main.py (it will likely take a long time to run).
 
@@ -1071,6 +1114,9 @@ If the model's accuracy is not explicitly stated in the web interface, doctors m
 \section{Bias in the Skin Cancer Dataset}
 The skin cancer dataset has a variety of different photos of benign and malignant blemishes on skin, however all of the images are of caucasian people, with there appearing to be no variety in terms of skin colour. This means that this model would only benefit anyone of caucasian descent, and it would not be reliable with any other skin colour. This is a problem as the dataset is not representative of the world's population, which could lead to non-caucasian people getting a lower quality of healthcare, as they would not be able to use the model to get a diagnosis of their skin cancer.
 On the other hand, prediction of skin cancer would be a lot more accurate for caucasian people as opposed to people with darker skin, as the melanin in their skin would make it harder to see the blemishes and make out what they are. This specific problem would be beyond the scope of this report, however it would be something to consider for anyone using this dataset for other projects.
+
+\section{Data Privacy and Security}
+Data privacy and security for any medical data is a huge issue, and it is important to ensure that the data is secure and that any patients who use their data with my user interface. This was part of my decision to have all the data processing locally on the user's computer, as it would mean that the data would not be sent to any servers, and it would also mean that the data would not need to be stored on any servers either. This would avoid all medical data handling regulatory issues from legal bodies/statutes such as HIPAA and GDPR, which require extremely strict data handling procedures to be followed, which takes a lot of time and effort to implement, and it would also avoid any potential legal issues that could arise from not following the regulations. This is the best solution for a project like this as the models are only around 40MB max for some of the good models I have tried, so it wouldn't take longer than a few minutes at most to download the model. Another potential drawback is the model might be too large for devices with low processing power to run, however modern phones are very powerful and have GPU acceleration which the library the models use online can take advantage of.
 
 \chapter{Diary}
 
@@ -1312,7 +1358,17 @@ Today I want to try and optimise the EfficientNetv2 models more and do a write-u
 
 I also want to try to get the web-ui working with the server side processing, so I can get the results of the models on the web page and then I want to experiment with tensorflow-JS to see if I can get the models to run in the browser for increased privacy and lower running costs.
 
+\section*{28/3/2023}
+
+Today I have been training more models to try and optimise the performance of them in the Alzheimer's dataset.
+
+I've also got the web-ui working with the client side processing, so I can give the user the results of their images locally, which avoids the need for the server to process the images. There are many advantages to this, one of which is that I can deploy to a static file hosting service, such as GitHub pages, which means I can indefinitely host the web-ui for free.
+
+I will continue to refactor the server side code to submit it to my project code, however I will not use it.
+
 \chapter{Conclusion}
+
+This project has been a huge learning experience for me, 
 
 % TODO: Conclusion
 
