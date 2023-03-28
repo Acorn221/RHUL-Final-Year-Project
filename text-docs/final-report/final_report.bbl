@@ -867,6 +867,13 @@
     \endverb
   \endentry
 
+  \entry{MaterialUI}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Material-UI}
+  \endentry
+
   \entry{Matplotlib}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
@@ -1216,6 +1223,144 @@
     \field{year}{2015}
   \endentry
 
+  \entry{smilkov2019tensorflowjs}{misc}{}
+    \name{author}{20}{}{%
+      {{hash=SD}{%
+         family={Smilkov},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Thorat},
+         familyi={T\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AY}{%
+         family={Assogba},
+         familyi={A\bibinitperiod},
+         given={Yannick},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Ann},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Kreeger},
+         familyi={K\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=YP}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZK}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Kangyi},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Shanqing},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soergel},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bileschi},
+         familyi={B\bibinitperiod},
+         given={Stan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Terry},
+         familyi={T\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nicholson},
+         familyi={N\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GSN}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Sandeep\bibnamedelima N.},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sirajuddin},
+         familyi={S\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sculley},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Monga},
+         familyi={M\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VFB}{%
+         family={Viégas},
+         familyi={V\bibinitperiod},
+         given={Fernanda\bibnamedelima B.},
+         giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wattenberg},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD+1}
+    \strng{fullhash}{SDTNAYYAKNYPZKCSNESDBSTMNCGSNSSSDMRCGVFBWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1901.05350
+    \endverb
+    \field{title}{TensorFlow.js: Machine Learning for the Web and Beyond}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2019}
+  \endentry
+
   \entry{DBLP:journals/corr/SzegedyVISW15}{article}{}
     \name{author}{5}{}{%
       {{hash=SC}{%
@@ -1266,6 +1411,13 @@
     \field{journaltitle}{CoRR}
     \field{eprinttype}{arXiv}
     \field{year}{2015}
+  \endentry
+
+  \entry{tailwindcss}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Tailwind CSS}
   \endentry
 
   \entry{tan2020efficientnet}{misc}{}
@@ -1414,6 +1566,20 @@
     \endverb
   \endentry
 
+  \entry{Typescript}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{TypeScript}
+  \endentry
+
+  \entry{TypescriptTemplate}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Typescript Template}
+  \endentry
+
   \entry{10.3389/fneur.2021.640696}{article}{}
     \name{author}{7}{}{%
       {{hash=VY}{%
@@ -1504,6 +1670,13 @@
     \field{volume}{12}
     \field{journaltitle}{Frontiers in Neurology}
     \field{year}{2021}
+  \endentry
+
+  \entry{Vite}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Vite}
   \endentry
 
   \entry{VsCode}{misc}{}
