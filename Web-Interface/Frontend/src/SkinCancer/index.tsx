@@ -93,7 +93,7 @@ const SkinCancer = () => {
 
   return (
     <div className="h-full flex">
-      <div className="justify-center align-middle bg-white p-5 m-auto w-full max-w-6xl text-center">
+      <div className="justify-center align-middle bg-white p-5 m-auto min-w-fit w-1/2 text-center">
         <div className="mt-3 mb-3 bg-slate-300 p-3 text-2xl rounded-md">
           Skin Cancer Predicter
         </div>
