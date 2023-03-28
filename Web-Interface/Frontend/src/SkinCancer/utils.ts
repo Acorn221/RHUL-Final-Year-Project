@@ -7,6 +7,11 @@ export type PredictionType = {
   confidence: number;
 };
 
+/**
+ * Preprocesses the image to be used in the model
+ * @param canvas The canvas that the image is drawn to
+ * @returns The preprocessed image
+ */
 const preprocess = async (canvas: any) => {
   const tensor = tf.browser.fromPixels(canvas as HTMLCanvasElement);
   const resized = tf.image.resizeBilinear(tensor, [224, 224]);
@@ -14,12 +19,20 @@ const preprocess = async (canvas: any) => {
   return batched;
 };
 
+/**
+ * Returns the raw prediction from the model
+ */
 const getPrediction = async (model: tf.LayersModel, canvas: any) => {
   const preprocessedData = await preprocess(canvas as HTMLCanvasElement);
   const prediction = model.predict(preprocessedData);
   return Array.isArray(prediction) ? prediction[0] : prediction;
 };
 
+/**
+ * @param model The TF model that is to be used to predict the image
+ * @param offscreen The offscreen canvas that the image is drawn to
+ * @returns The prediction and the confidence of the prediction
+ */
 const predictImage = async (model: tf.LayersModel, offscreen: any): Promise<PredictionType> => {
   const prediction = await getPrediction(model, offscreen);
   console.log(prediction);
@@ -44,6 +57,7 @@ const setCanvas = (
   canvas: OffscreenCanvas,
   crop: Crop,
 ) => {
+  // Get the context of the canvas, this is used to modify the canvas
   const ctx = canvas.getContext('2d');
 
   if (!ctx) {
