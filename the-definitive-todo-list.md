@@ -77,15 +77,19 @@
 
 ## Markscheme Checklist
 
-- [ ] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
-  - Added a rationale section, needs more objectives
-- [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
+
 - [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
+  - Conclusion needs writing and the discussion needs to be expanded
+  - The analysis of the results needs to be expanded and more need to be added to it
 - [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
+  - Need to go over the technical decisions and make sure they are all justified
 - [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
 - [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
-  - [ ] Bibtex has taken care of this
+  - Bibtex has taken care of this
 - [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
   - [ ] I feel as though I have covered this well
+- [x] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+  - Added a rationale section, needs more objectives
+- [x] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
