@@ -23,5 +23,6 @@ processed_scans
 Alzheimers-classification/
 .venv/Lib/site-packages
 .venv/share
+skin-cancer-dataset/*.h5
 Web-Interface/Frontend/.DS_Store
 Web-Interface/Frontend/public/.DS_Store
