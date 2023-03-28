@@ -5,6 +5,11 @@ import Button from '@mui/material/Button';
 import ReactCrop, { Crop } from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
 import { FaFileUpload } from 'react-icons/fa';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { GrDocumentUpdate } from 'react-icons/gr';
+import { RiBodyScanFill } from 'react-icons/ri';
+import { IoChevronBackCircleSharp } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 import { setCanvas, predictImage, PredictionType } from './utils';
 
 /**
@@ -95,8 +100,15 @@ const SkinCancer = () => {
   return (
     <div className="h-full flex">
       <div className="justify-center align-middle bg-white p-5 m-auto text-center">
-        <div className="mt-3 mb-3 bg-slate-300 p-3 text-2xl rounded-md">
-          Skin Cancer Predicter
+        <div className="flex justify-between mt-3 mb-3 gap-4">
+          <Link to="/">
+            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full">
+              <IoChevronBackCircleSharp className="h-10 w-10 m-auto" />
+            </div>
+          </Link>
+          <div className="bg-slate-300 p-3 text-2xl rounded-md flex-1">
+            Skin Cancer Predicter
+          </div>
         </div>
         {loading && <p>Loading Model...</p>}
         {!loading && (
@@ -117,7 +129,7 @@ const SkinCancer = () => {
                 {imageList.length === 0 && (
                   <div className="flex gap-3 mt-4">
                     <button
-                      className={`flex-1 h-20 d bg-slate-300 rounded-2xl p-5 flex align-middle justify-center gap-4 ${
+                      className={`flex-1 h-20 d bg-slate-300 rounded-md p-5 flex align-middle justify-center gap-4 ${
                         isDragging && 'bg-slate-400'
                       }`}
                       onClick={onImageUpload}
@@ -149,28 +161,31 @@ const SkinCancer = () => {
                         <Button
                           variant="contained"
                           size="large"
-                          className="flex-1 h-20"
+                          className="flex-1 h-20 flex justify-center"
                           onClick={() => onImageUpdate(0)}
                         >
-                          Update
+                          <div className="m-auto flex-1">Update</div>
+                          <GrDocumentUpdate className="m-auto invert h-10 flex-auto" />
                         </Button>
                         <Button
                           variant="contained"
                           size="large"
-                          className="flex-1 h-20"
+                          className="flex-1 h-20 flex justify-center"
                           onClick={() => onImageRemove(0)}
                         >
-                          Remove
+                          <div className="m-auto flex-1">Remove</div>
+                          <AiOutlineCloseCircle className="m-auto h-10 flex-auto" />
                         </Button>
                       </div>
                     </div>
                     <Button
                       variant="contained"
                       size="large"
-                      className="flex-1 h-20"
+                      className="flex-1 h-20 flex justify-center"
                       onClick={() => predict()}
                     >
-                      Check
+                      <div className="m-auto flex-1">Check</div>
+                      <RiBodyScanFill className="m-auto flex-auto h-10" />
                     </Button>
                   </div>
                 )}
