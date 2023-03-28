@@ -363,9 +363,6 @@ The large model is designed for high accuracy, and the small model is designed f
 \end{figure}
 
 
-
-% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
-
 % TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
 \section{InceptionV3}
 InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
@@ -701,12 +698,11 @@ should give a better representation of how well the model would work in a real w
 \pagebreak
 
 \chapter{Software Engineering}
-% TODO: needs complete re-write
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
 \subsection{My Development Python Environment}
-% TODO: make basic UML and talk about testing library
+% TODO: edit this section and make it more concise and descriptive of the final project
 I have used the following tools to develop this project:
 \begin{itemize}
   \item Python 3.8.5\cite{Python} - To run the code
@@ -1372,9 +1368,21 @@ I will continue to refactor the server side code to submit it to my project code
 
 \chapter{Conclusion}
 
-This project has been a huge learning experience for me, 
+This project has been a huge learning experience for me, I had never trained, optimised or deployed a machine learning model before, and I have learned a lot about the process of doing so. I have also learned a lot about the cutting edge image classification techniques, including transfer learning. I have also learned a lot about how hyperoptimisation works and how to use it to improve the performance of a model.
 
-% TODO: Conclusion
+I have also learned a lot about the Alzheimer's disease, and how important it is to diagnose it early, as it can have a huge impact on the quality of life of the patient. I have also learned a lot about the different types of scans that are used to diagnose Alzheimer's, and how they can be used to detect the disease. 
+
+Although my results from the Alzheimer's dataset were not as good as I would have liked, I have still learned a lot from this project and I am very happy with the results from the skin cancer dataset, as I was able to get a very high accuracy on the validation set.
+
+\section{Challanges and how I overcame them}
+
+I had many problems with the Alzheimer's dataset, however after learning how to use the OASIS-1 dataset, I was able to get some better and more reliable results. I realise how it would have been much better if I were to go straight to the OASIS-1 dataset, however I was not aware of it until I was already deep into the project. Luckily I was able to get some good results from the skin cancer dataset, and I was able to use these results to talk about the performance of the different models in my report.
+
+I had spend many hours trying to find out how to parse batches of images and floats together into a model, to try and increase the accuracy that I got on the OASIS-1 dataset. I eventually found out that I had to use a custom data generator, which I was able to use to parse the images and floats together into a model. I was able to get a much better accuracy from this, and with some of the models I tried to optimise the performance of, I was able to get a consistent accuracy of x on the validation set.
+
+% TODO: REPLACE X WITH THE ACTUAL ACCURACY
+
+I have also had some few problems with TensorflowJS\cite{tensorflowjs}, as I was not able to get all the models to run in the browser as not all of the keras layers have been implemented in the JS library. The `Normalisation` layer was not implemented, so I had to remove that model from the web-ui. This was not a huge deal as I was able to get the other models to run in the browser, and I was able to get the results of the models on the web page.
 
 \newpage
 \printbibliography
