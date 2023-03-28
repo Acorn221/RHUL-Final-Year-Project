@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{refs.bib}
 
@@ -10,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Input project details
 \def\studentname{James Arnott}
-\def\reportyear{2022}
+\def\reportyear{2023}
 \def\projecttitle{Comparison of Image Classification Models with Transfer Learning}
 \def\supervisorname{Li Zhang}
 \def\degree{BSc (Hons) in Computer Science}
@@ -53,32 +54,19 @@ Signature:
 
 \newpage
 
-%%%%%%%%%%%%%%%%%%%%%%
-%%% Table of Contents
 \tableofcontents\pdfbookmark[0]{Table of Contents}{toc}\newpage
 
-%%%%%%%%%%%%%%%%%%%%%%
-%%% Your Abstract here
-
 \begin{abstract}
-  % TODO: Update abstract
-  Transfer learning is a common, efficient method for training deep learning models.
-  It involves using a pre-trained model to extract features from a dataset,
-  and then training a new model on top of the extracted features.
-  This project report gives a comparison of the performance of several image classification models
-  when using transfer learning and evaluates their performance on a dataset with MRI scans of Alzheimer's patients.
-  The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
+
+  Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
+
 \end{abstract}
-\newpage
+
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
 % TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
 % TODO: Summary of completed work
-% TODO: Insert or attach the diary
-% TODO: Remove all mentions of flowers dataset
-% TODO: Add explanations of ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay and what I will/wont use and why
-% TODO: Explain how generators work in keras and why I created my own
-% TODO: Change secion on exiting data, say that it is to be disregarded
+% TODO: Ensure the models being compared are right
 
 \chapter*{Project Specification}
 
@@ -109,11 +97,11 @@ Early Deliverables
 
 \section*{Suggested Extensions}
 \begin{itemize}
-\item Modifications of known algorithms.
-\item Dealing with machine learning problems with asymmetrical errors (such as spam detection) and ROC analysis.
-\item Nontrivial adaptations of known algorithms to applications in a specific area, such as medical diagnosis or option pricing.
-\item Exploring the cross-validation procedure, in particular the leave-one out procedure. What is the optional number of folds?
-\item Comparative study of different strategies of reducing multi-class classifiers to binary classifiers (such as one-against-one, one-against-the-rest, coding-based).
+  \item Modifications of known algorithms.
+  \item Dealing with machine learning problems with asymmetrical errors (such as spam detection) and ROC analysis.
+  \item Nontrivial adaptations of known algorithms to applications in a specific area, such as medical diagnosis or option pricing.
+  \item Exploring the cross-validation procedure, in particular the leave-one out procedure. What is the optional number of folds?
+  \item Comparative study of different strategies of reducing multi-class classifiers to binary classifiers (such as one-against-one, one-against-the-rest, coding-based).
 \end{itemize}
 
 \section*{Reading}
@@ -132,17 +120,20 @@ I was given permission to do so, and I chose to do a project on comparison of im
 I chose this project as I was interested in transfer learning as I had used it in a previous project and wanted to learn more about it
 and it seemed far more interesting than the generic project and I believe this is generally a more applicable problem to solve in the real world.
 
+\chapter{Rationale}
 
-\chapter{Introduction}
+\section{Introduction}
 
 My project is about the comparison of image classification models with transfer learning.
-In this report I shall cover the background of transfer learning, the models I have chosen to compare,
-the datasets I have chosen to use, the results of my experiments and the conclusions I have drawn from them.
+In this report I shall cover the background of transfer learning, the models I have chosen to compare, the datasets I have chosen to use, the pre the results of my experiments and the conclusions I have drawn from them.
 
-The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible.
-It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required.
+The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
 
-\chapter{Rationale}
+In this project, I'm planning to learn about transfer learning and comparing the different models and also going over other methods of classification such as SVMs and KNNs. I will then preprocess the dataset images and train the models on the dataset and compare the results. I will then attempt to optimise the models, find out what issues they have and try to fix them to get the best results possible.
+
+I'll also make a web based GUI for the project, so that anyone can use it to classify images of their own. I plan on using python based libraries such as keras and flask, which will communicate with a backend server. I also plan to use and test the viability of tensorflowJS\cite{smilkov2019tensorflowjs} to make the model run in the browser, which would allow anyone to use the model locally, without having to send their images to a server, which would avoid all privacy issues and potential legal issues.
+
+This will be a learning experience for me, as I have not done any machine learning work before, and I will get to learn about different machine learning techniques and experiment with cutting edge technology that is being used in the real world.
 
 \section{Background}
 Alzheimer's disease is a neurodegenerative disease that affects the brain. It is the most common cause of dementia, and 1 in 3 people born in the UK this year will develop dementia in their lifetime.\cite{DementiaStatistics}
@@ -152,7 +143,6 @@ The symptoms of Alzheimer's disease are memory loss, confusion, mood swings, and
 There have recently been developments in drug discovery and development that have been able to slow the progression of AD, but are only effective in the early stages of the disease, and are not able to reverse the damage that has already been done. This means that early diagnosis is essential to ensure that the drugs are as effective as possible.\cite{Van_Dyck2022-pt}
 
 Transfer learning can be a useful tool to create predictions of the progression of AD, as it can be used to train models on a smaller dataset than would otherwise be required, as MRI scans are expensive and time consuming to obtain.
-
 
 \chapter{Neural Networks}
 \begin{figure}[ht!]
@@ -170,7 +160,7 @@ The weights are updated during training, and the process of updating the weights
 
 \section{Why use a Neural Network}
 The use of neural networks has increased dramatically in recent years, and they are now used in a variety of different applications.
-The reason for this is that they are very good at learning complex patterns in data, and they are able to learn 
+The reason for this is that they are very good at learning complex patterns in data, and they are able to learn
 these patterns without being explicitly programmed to do so. This saves a lot of time and effort when compared to other machine learning techniques.
 
 They are far more flexible than many of the traditional strategies for image classification, due to the fact they can adapt to new data and are
@@ -193,39 +183,39 @@ In one study using SVMs to classify Alzheimer's patients, the researchers manage
 They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy. \cite{10.3389/fneur.2021.640696}
 
 \subsection{Content Based Image Retrieval}
-Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar 
+Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar
 images from a large database. It works by extracting the features from the image and then using those features to compare to other images in the database.
-The features are usually based on a combination of color, texture, shape, and other attributes. The system then produces a list of images that are similar 
+The features are usually based on a combination of color, texture, shape, and other attributes. The system then produces a list of images that are similar
 to the one used for the search query. CBIR systems are particularly useful for searching for images that can't be easily described using traditional keywords.
 
-CBIR can be used to identify images that are not in the database by analyzing the content of the images. 
-By extracting features from the image such as color, texture, and shape, CBIR can be used to compare the 
-content of the query image with the content of the images in the database. It can then return images that are 
-similar in content to the query image even if they are not present in the database. 
+CBIR can be used to identify images that are not in the database by analyzing the content of the images.
+By extracting features from the image such as color, texture, and shape, CBIR can be used to compare the
+content of the query image with the content of the images in the database. It can then return images that are
+similar in content to the query image even if they are not present in the database.
 
-For example, if the target image was a blue sky with white clouds, then the algorithm would return 
+For example, if the target image was a blue sky with white clouds, then the algorithm would return
 images that had similar features such as a blue sky and white clouds to the target image.
 
-Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients, 
+Although this method of image classification would not seem to be very useful for classifying images of Alzheimer's patients,
 a study was done using this method to classify Alzheimer's patients, and they had managed to get an accuracy of 87\% using MRI scans\cite{5972513}
 and getting feedback from the physicians who were treating the patients.
 
-For classifying images of flowers it could also be very useful, as it would allow the user to search for images of a specific flower.
-This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals, 
+For classifying images of different flowers, for example, it could also be very useful, as it would allow the user to search for images of a specific flower.
+This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals,
 the color of the petals, and the overall structure of the flower.
 
 \section{The different optimizers}
 
-In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function. 
-Optimisers are used to improve the accuracy of a model by reducing the error rate. 
+In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function.
+Optimisers are used to improve the accuracy of a model by reducing the error rate.
 Common optimisers used in deep learning include Stochastic Gradient Descent (SGD),
 Adaptive Moment Estimation (Adam), and Root Mean Square Propagation (RMSProp).
-There are many different optimizers that can be used to train a model, and the one 
+There are many different optimizers that can be used to train a model, and the one
 that is used depends on the type of problem that is being solved.
 
-The impact using different optimisers can have is dependent on the type of problem being solved. 
-For example, SGD is often used for linear regression problems, while Adam is 
-better suited for deep learning problems. 
+The impact using different optimisers can have is dependent on the type of problem being solved.
+For example, SGD is often used for linear regression problems, while Adam is
+better suited for deep learning problems.
 Additionally, the choice of optimiser can also affect the speed of convergence and the accuracy of the model.
 
 \begin{figure}[h]
@@ -240,7 +230,7 @@ Classification is a type of supervised machine learning model that is used to pr
 It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point.
 For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house.
 
-Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. 
+Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease.
 
 The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset.
 
@@ -258,9 +248,9 @@ They are often much more efficient than other types of neural networks, and are 
   \item Convolutional Layer: This layer extracts features from an input image and creates a feature map.
 
   \item  Pooling Layer: This layer reduces the dimensionality of a feature map while preserving its most important features.
-  
+
   \item  Dropout Layer: This layer randomly ignores nodes during training to reduce overfitting.
-  
+
   \item  Fully Connected Layer: This layer connects all the neurons of the previous layer to every neuron in the next layer. It helps in mapping input to output.
 \end{itemize}
 
@@ -290,7 +280,13 @@ This is also where the model is usually unfrozen, so that the pre-trained model 
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
 This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
 
-\section{The Contents of the Dataset}
+I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
+It's a combination of 2 datasets, the Edinburgh Research and Innovation (Dermofit)\cite{Ballerini2013}, and the Dermatology Service of Hospital Pedro Hispano\cite{6610779}. There are 484 images in the dataset, with 2 different classes, benign (270) and malignant (214). All the images are 200x200 pixels, with 3 channels (RGB), which is not optimal as they require upscaling to be used with the models I will be using for transfer learning.
+
+In the paper from the dataset creators, they used KNN, SVM and a CNN model to classify the images in the dataset.
+With the optimal hyperparameters, they achieved an accuracy of 99.54\% using the SVM and RCPSO which stands for Real-Coded Particle Swarm Optimization, this is a nature-inspired optimization technique used to search for the best solution in a given problem space, which was used for optimising the hyperparameters of the SVM model.
+
+\section{The Contents of OASIS-1}
 This information is from the fact sheet, associated with the dataset. \cite{OASISFactSheet}
 The OASIS-1 dataset contains a few different associated parameters, as listed here from the CSV:
 
@@ -310,6 +306,151 @@ The OASIS-1 dataset contains a few different associated parameters, as listed he
   \item `ASF`: The Atlas Scaling Factor of the patient
 \end{itemize}
 
+The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
+\begin{itemize}
+  \item Random horizontal flipping
+  \item Random vertical flipping
+  \item Random rotation (20 degrees)
+  \item Random zoom
+\end{itemize}
+
+\section{The Contents of the Skin Cancer Dataset}
+
+The skin cancer dataset contains 2 different classes, benign and malignant, and 484 images in total.
+This is all the information that is available about the dataset, as it is not a publicly available dataset, this requires me to augment the data as much as possible to get good results.
+
+The augmentations I will be using are:
+\begin{itemize}
+  \item Random horizontal flipping
+  \item Random vertical flipping
+  \item Random rotation
+  \item Random zoom (359 degrees)
+  \item Random brightness
+  \item Random offset
+\end{itemize}
+
+Augmentations on the skin cancer dataset would represent more of a real-world scenario as opposed to the OASIS-1 dataset, as the scans are all in the same orientation, whereas the oritentation of the images in the skin cancer dataset could practically be at any orientation and still be valid.
+
+\chapter{The Different Models That Are Being Compared}
+
+All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
+
+\section{Mobilenetv3}
+
+As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
+It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
+
+The resulting models from this paper are:
+\begin{itemize}
+  \item Mobilenetv3-Large
+  \item Mobilenetv3-Small
+\end{itemize}
+
+The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
+The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
+
+% insert the image of the mobilenetv3 structure
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/MobileNetv3-structure.png}
+  \caption{The proposed segmentation head for MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-segmentation}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/mobilenet-comparison.png}
+  \caption{A comparison of latency and accuracy\cite{DBLP:journals/corr/abs-1905-02244}}
+  \label{fig:mobilenetv3-comparison}
+\end{figure}
+
+
+% TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
+\section{InceptionV3}
+InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
+It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction.
+It is a deep learning model that uses a combination of convolutional layers, pooling layers, and fully-connected layers.
+It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data.
+They can also help to reduce the amount of overfitting that can occur when using a single classifier.
+
+\section{ResNet}
+Resnet\cite{DBLP:journals/corr/HeZRS15} is another popular model, ResNet101 is the largest model that is being compared and different due to the amount of layers that it has, which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
+
+The ResNet paper\cite{DBLP:journals/corr/HeZRS15}, published in 2015, introduced a new state-of-the-art deep learning architecture called the Residual Network or ResNet. The paper's authors proposed a novel residual learning framework that enables the training of very deep neural networks with hundreds of layers, significantly exceeding the depth of previous architectures.
+
+The ResNet architecture introduced the concept of residual blocks, which allowed for the construction of deeper networks while avoiding the problem of vanishing gradients. The residual block adds a shortcut connection, also known as a skip connection, that allows the network to learn an identity function if it is optimal to do so. This allows the network to learn more complex functions and enables the network to be trained deeper without degrading performance.
+
+In a traditional deep neural network, as the signal propagates through the layers, the gradient signal can become very small, making it difficult for the network to learn. This is known as the vanishing gradient problem. Skip connections address this problem by allowing information from earlier layers to bypass some of the later layers and be added directly to the output of those layers.
+
+Skip connections help to preserve the gradient signal throughout the network, making it easier for the network to learn and allowing for the construction of much deeper networks.
+
+\section{VGG}
+VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
+VGG19\cite{Simonyan15} is a model which has 19 convolutional layers, and VGG16 has 16 convolutional layers.
+
+The significance of the Very Deep Convolutional Networks for Large-Scale Image Recognition paper\cite{Simonyan15} is that it explored the idea of using increased depth that resulted in improved accuracy in image recognition tasks, outperforming previous state-of-the-art models on the ImageNet dataset.
+The VGG architecture also introduced the use of smaller 3x3 convolutional filters, which allowed for deeper networks without increasing the number of parameters. This concept of using small filters to improve network depth and performance has since become a standard practice in deep learning.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
+  \caption{The structure of VGG19\cite{Simonyan15}}
+  \label{fig:vgg19-structure}
+\end{figure}
+
+% TODO: add more of the models that I'm comparing and graph of the size of the models
+
+\section{EfficientNet}
+
+EfficientNet, developed by Google and published in the paper "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks". It was a huge leap in performance for efficient image classification models. Their primary achivement, stated in the abstract, is having 84.3\% top-1 accuracy on ImageNet, while being 8.4x smaller and 6.1x faster than the best existing convolutional neural network models.\cite{tan2020efficientnet}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetComparison.PNG}
+  \caption{The improvements made in the EfficientNet paper\cite{tan2020efficientnet}}
+  \label{fig:efficientnet-comparison}
+\end{figure}
+
+As \ref{fig:efficientnet-comparison} shows, EfficientNet is a huge improvement over the previous models, it is much smaller, faster and more accurate than the previous models using the same techniques.
+
+The proposal of a "compound scaling" method, which is a method of scaling the model by changing the depth, width and resolution of the model at a constant ratio, is what makes EfficientNet so much more efficient than the previous models. This is partly due to other models scaling the depth or width of the model to try and get a better accuracy, however scaling the depth of a model does normally increase it's performance, the gains are comparatively very small, as a model could double in layers, but only get a 1\% increase in accuracy. As researched in the paper "Wide Residual Networks" \cite{BMVC2016_87}, it highlights the problems with just increasing the depth of a model.
+
+Another proposal made in the EfficientNet paper is to increase the input image resolution, as this would provide the model with more data to learn from and classify with. Unfortunately, I cannot use this method as the images that I am using are already at the maximum resolution that they can be, and increasing the resolution would not provide any additional information to the model.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetPerformanceDatasets.PNG}
+  \caption{The Performance of EfficientNet With Multiple Datasets\cite{tan2020efficientnet}}
+  \label{fig:efficientnet-performance-with-multiple-datasets}
+\end{figure}
+
+In the figure\ref{fig:efficientnet-performance-with-multiple-datasets} it's clear to see how much better EfficientNet is than the previous models, it's much smaller, faster and more accurate than the previous models, across multiple datasets.
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/EfficientNetv2-Performance-Graph.png}
+  \caption{EfficientNetV2 \cite{DBLP:journals/corr/abs-2104-00298}}
+  \label{fig:efficientnetv2-performance-graph}
+\end{figure}
+
+EfficinetNetv2: Smaller Models and Faster Training\cite{DBLP:journals/corr/abs-2104-00298} is a paper published in 2021, which is an improvement on the EfficientNet model. The top performing model in the improved group has more parameters than the original highest performing EfficientNet model, however it's top-1 accuracy goes from 84.7\% with EfficientNetB7, to 87.3\% with EfficientNetv2-XL (21k). This improvement however comes at the cost of many more parameters, from 66 million with EfficientNetB7, to 208 million with EfficientNetv2-XL (21k). The real improvement comes with the smaller models such as EfficientNetv2-S (21k) which has 22 million parameters, and a top-1 accuracy of 84.9\%, as this model has fewer parameters than the previous best EfficientNet model. \ref{fig:efficientnetv2-performance-graph} shows the performance of the EfficientNetv2 models, and how they compare to the EfficientNet models.
+
+\section{Xception}
+
+Xception: Deep Learning with Depthwise Separable Convolutions\cite{DBLP:journals/corr/Chollet16a} was a paper published in 2016 from Google, which introduced the concept of depthwise separable convolutions, which is a type of convolutional layer that is used in the Xception model.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/Xception-structure.png}
+  \caption{The structure of Xception\cite{DBLP:journals/corr/Chollet16a}}
+  \label{fig:xception-structure}
+\end{figure}
+
+The Xception architecture is based on a novel type of convolutional operation called depthwise separable convolutions, which allow for significantly more efficient and accurate learning of features in CNNs. Regular CNNs use standard convolutional layers, which apply the same set of filters to all channels of an input volume. Depthwise separable convolutions, on the other hand, perform two separate operations: first, they apply a single filter to each input channel (depthwise convolution), and then they combine the output channels using a pointwise convolution (1x1 convolution).
+
+This two-step process dramatically reduces the number of parameters and computations required for each layer of the network, resulting in a much more efficient architecture that can be trained on smaller datasets and run on devices with limited computational power. In addition, the Xception architecture achieved state-of-the-art results on several benchmark datasets, demonstrating the effectiveness of depthwise separable convolutions for deep learning.
+
 \chapter{Transfer Learning}
 
 \section{Why use Transfer Learning}
@@ -322,9 +463,9 @@ and the transfer learning model can then use these features to learn about the n
 The main drawback of transfer learning is that it is not always possible to use it,
 as the pre-trained model may not be able to extract the features from the new dataset.
 With image classification, the pre-trained model can typically extract features from any image, but it may not be able to extract the features that are needed for the new dataset.
-Transfer learning can also be less efficient than training a model from scratch, 
+Transfer learning can also be less efficient than training a model from scratch,
 as the pre-trained model will have all the weights from the original dataset, which may not be needed for the new dataset.
-This can cause the model to be less efficient, as it will have to train on weights that are not 
+This can cause the model to be less efficient, as it will have to train on weights that are not
 needed but will still affect the performance of the model.
 
 \pagebreak
@@ -357,7 +498,7 @@ The code for the transfer learning is shown below.
 \end{lstlisting}
 
 The code above shows how to create a model using transfer learning,
-creating the model structure consists of adding the pre-trained model to the model, 
+creating the model structure consists of adding the pre-trained model to the model,
 and then adding a few layers on top of it. The Flatten layer is used to flatten the output of the pre-trained model
 as that is the input for the fully connected layers. The fully connected layers are used to classify the images.
 
@@ -410,7 +551,7 @@ Here is an example of how I fine-tuned a model using Keras:
 For this project, I have set up my gaming laptop as a server, with Manjaro\cite{Manjaro} as the operating system.
 I've chosen my laptop to do the training on due to it's powerful GPU, which is a NVIDIA GeForce GTX1070\cite{GTX1070}.
 This can be used with Nvidia CUDA\cite{CUDA} to speed up the training process, which is what I have done.
-Training the models on my laptop has been very useful, as it has allowed me to train the models much easier 
+Training the models on my laptop has been very useful, as it has allowed me to train the models much easier
 as I can leave it to train overnight without having to constantly check on it.
 
 I have recently upgraded the GPU in my computer to an RTX 3080\cite{RTX3080}, which is a much more powerful GPU than the GTX1070, as it has more CUDA cores, a higher core clock, 2gb more of VRAM, and a much higher memory bandwidth. Alongside this, it has "RT Cores",
@@ -478,7 +619,7 @@ For the validation set, I have assigned 20\% of the data to be used.
 
 Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images.
 This can help to improve the performance of a model, as it can help to reduce overfitting, and can also help to improve the generalisation of the model.
-The transformations that are applied to the images are usually random, and can include things like rotating the image, 
+The transformations that are applied to the images are usually random, and can include things like rotating the image,
 flipping the image, or changing the contrast/saturation of the image.
 
 In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available.
@@ -487,15 +628,15 @@ MRI scans are also very expensive, so using data augmentation can significantly 
 In the Alzheimer's MRI Dataset, the majority of the archive consists of augmented images already however this caused me problems which I will go on to talk about.
 With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
 
-\section{Problems with the Alzheimer's MRI Dataset and how I fixed them}
+\section{Problems With The Datasets and How I Fixed Them}
 
-\subsection{The problems}
+\subsection{The Problems}
 % TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
 
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
-The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the 
-images were already augmented, and the validation set was made up of images that were in the training set, but 
-with different transformations applied to them. This gave me amazing results on the validation set, but when I 
+The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the
+images were already augmented, and the validation set was made up of images that were in the training set, but
+with different transformations applied to them. This gave me amazing results on the validation set, but when I
 tested the model on new data, it performed very poorly. Here the image shows the last 30 epochs of the training process,
 and the validation accuracy is very high, higher than what other models from other research papers have achieved.
 
@@ -537,118 +678,58 @@ This however did not solve all my problems, as the model was still overfitting. 
 
 This was then solved by going directly with the OASIS-1 dataset, and using the images that were provided there. I was hesitant to do this at first, as there was more pre-processing required to format the data in the way that I wanted it, but it has now allowed me to train my models without getting false results.
 
+By using the OASIS-1 dataset directly, that presented a new set of challenges, as the images were given in a different format, as I had a CSV file with the labels and the image IDs which identified the images. This lead me to learn how to use the Pandas\cite{Pandas} library in Python, which allowed me to read the CSV file and extract the image IDs and the labels from it. Then I had to create my own custom data generator, which allowed me to load the images from the dataset, and apply the transformations to them. This was a very useful learning experience, as I was able to learn important skills relating to data preprocessing. The data generator, which I had talked about earlier, helps batch and augment the data that is being fed into the model during training.
+
 \section{Evaluating the given metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
 but they do not tell us how well the model is performing for each class.
-They do also not tell us how well the model would work in a real world scenario, 
+They do also not tell us how well the model would work in a real world scenario,
 as they are only calculated on the training and validation sets, of which we have a limited amount of data.
 
-The validation dataset is also from the same distribution as the training dataset, 
-so it is not a good representation of how well the model would work in a real world scenario 
+The validation dataset is also from the same distribution as the training dataset,
+so it is not a good representation of how well the model would work in a real world scenario
 as the scans could be of a different quality.
 
-I have used the augmented dataset for the training and validation sets as this 
+I have used the augmented dataset for the training and validation sets as this
 should give a better representation of how well the model would work in a real world scenario.
 
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=100mm]{images/ConfusionMatrix.png}
-  \caption{A confusion Matrix\cite{ConfusionMatrix}}
-\end{figure}
-For the final report I intend on using confusion matrices to evaluate the performance of the models,
-as they can show which classes the model has the best or worst performance on.
-They can also represent nicely in a table, all the different hyperparameter combinations that I will try
-to use to get the best possible results.
+
+% TODO: TALK ABOUT METRICS
+
 
 \pagebreak
-\section{The different datasets}
-
-% images of the datasets
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=50mm,height=50mm]{images/moderateDemented.jpg}
-  \includegraphics[width=50mm,height=50mm]{images/mildDemented.jpg}
-  \caption{Samples from the Alzheimer's MRI Dataset\cite{AlzheimersDataset}}
-\end{figure}
-
-% TODO
-
-\chapter{The different models that are being compared}
-
-All the pre-trained models are from the Keras library\cite{Keras} and were trained on the ImageNet dataset\cite{ImageNet}.
-
-\section{Mobilenetv3}
-
-As described in the "Searching for Mobilenetv3" paper\cite{DBLP:journals/corr/abs-1905-02244}, this model is designed for mobile devices, and is a successor to the Mobilenetv2 model.
-It is a comparatively small model as it is optimised for mobile devices, and is also very fast.
-
-The resulting models from this paper are:
-\begin{itemize}
-    \item Mobilenetv3-Large
-    \item Mobilenetv3-Small
-\end{itemize}
-
-The idea to have a large and small model is to specialise the model for different use cases and different hardware, increasing the speed or accuracy of the model.
-The large model is designed for high accuracy, and the small model is designed for high speed, there may also be cases where the smaller model is the only viable option due to hardware constraints.
-
-% insert the image of the mobilenetv3 structure
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/MobileNetv3-structure.png}
-  \caption{The proposed segmentation head for MobileNetV3\cite{DBLP:journals/corr/abs-1905-02244}}
-  \label{fig:mobilenetv3-segmentation}
-\end{figure}
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/mobilenet-comparison.png}
-  \caption{A comparison of latency and accuracy\cite{DBLP:journals/corr/abs-1905-02244}}
-  \label{fig:mobilenetv3-comparison}
-\end{figure}
-
-
-
-% TODO: Talk about Hardware aware network architecture search \cite{DBLP:journals/corr/abs-2101-09336} - for the final report
-
-% The models compared are MobileNetv2, MobileNetv3-Small, MobileNetv3-Large, InceptionV3, ResNet101 and VGG19.
-
-\section{InceptionV3}
-InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
-It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction. 
-It is a deep learning model that uses a combination of convolutional layers, pooling layers, and fully-connected layers. 
-It uses auxiliary classifiers, these are additional classifiers used in a neural network to predict the output of the main classifier. Auxiliary classifiers are used to improve the accuracy of the main classifier by providing additional input data. 
-They can also help to reduce the amount of overfitting that can occur when using a single classifier.
-
-\section{ResNet101}
-Resnet101\cite{DBLP:journals/corr/HeZRS15} is another popular model, it's the largest model that is being compared and different due to the amount of layers that it has, 
-which helps with the accuracy of the model, however it is also much slower than the other models to train and to run inference on.
-
-\section{VGG19}
-VGG stands for Visual Geometry Group, it is a model that was developed by the Visual Geometry Group at Oxford University.
-VGG19\cite{Simonyan15} is a model which has 19 convolutional layers
-
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/VGG19-architecture.png}
-  \caption{The structure of VGG19\cite{Simonyan15}}
-  \label{fig:vgg19-structure}
-\end{figure}
 
 \chapter{Software Engineering}
+% TODO: needs complete re-write
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
-\section{My Development Environment}
+\section{My Python Development Environment}
 % TODO: make basic UML and talk about testing library
 I have used the following tools to develop this project:
 \begin{itemize}
-    \item Python 3.8.5\cite{Python} - To run the code
-    \item Jupyter Notebook\cite{Jupyter} - To help me develop the code and generate the graphs
-    \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my Linux server and modify the code there quickly
-    \item GitLab\cite{RHULGitLab} - To store the code and to track the changes
-    \item tmux\cite{tmux} - To run the code in the background
-    \item CUDA\cite{CUDA} - To train the models on the GPU
+  \item Python 3.8.5\cite{Python} - To run the code
+  \item Jupyter Notebook\cite{Jupyter} - To help me develop the code and generate the graphs
+  \item Visual Studio Code\cite{VsCode} - As my IDE to develop in, I have used the SSH feature of VsCode to SSH into my Linux server and modify the code there quickly
+  \item GitLab\cite{RHULGitLab} - To store the code and to track the changes
+  \item tmux\cite{tmux} - To run the code in the background
+  \item CUDA\cite{CUDA} - To train the models on the GPU
 \end{itemize}
+
+\section{My Web Development Environment}
+
+For the web development, I have decided to use Typescript + React. This is because I have experience with these from my previous projects, and I wanted to use a framework that I was familiar with. I specifically used a template\cite{TypescriptTemplate} that I created in a previous project, and I have used this template for this project too.
+
+I have used the following libraries to develop the front end in this project:
+\begin{itemize}
+  \item React\cite{React} - To create the web application
+  \item Typescript\cite{Typescript} - To add types to the code
+  \item TailwindCSS\cite{tailwindcss} - To style the web application quickly
+  \item Vite\cite{Vite} - To bundle the code and to run the development server quickly
+  \item MaterialUI\cite{MaterialUI} - To use the Material Design components
+  \item TensorflowJS\cite{TensorflowJS} - To run the model in the browser
+\end{itemize}
+
 
 \section{Using Git}
 I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
@@ -657,7 +738,7 @@ I used separate branches for the different stages of the project, and then merge
 The branches were made to create the different planning papers, and then to set up the development environment.
 I also used branches to create the different models, and then to test them too.
 
-All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent, 
+All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
 and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
 
 \section{Testing with Jupyter Notebook}
@@ -687,20 +768,34 @@ This would give me an opportunity to write unit tests for the API, and to test t
 
 When training a model, the learning rate is the rate at which the model learns from the data.
 A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate. 
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
 
-A local minimum is when the model can't decrease its loss any further by adjusting its parameters. 
+A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
 It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
 A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
 It is the lowest point in the entire loss landscape no matter what parameters the model has.
 
 % Also talk about the different learning rates and how they affect the performance of the models
 
-\chapter{Identifying annd Mitigating Bias}
+\chapter{The User Interface}
 
+\section{The Front End}
+For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript.
+This allows for better code completion, and it makes it easier to debug the code, as it will tell you if you've made a mistake sooner, whereas javascript would give you an error at runtime, if you end up with a type error. Typescript helps counter many of the issues with JS however it's not perfect and there are still issues where there can be scope for errors.
+
+I do have the option of using tensorflow-JS, which can process all of the data locally, this has benefits and drawbacks, the main benefit is that the user doesn't have to upload their data to a server, which can make the handling more secure as everything is processed locally, so there would be far less red tape with data protection laws. The main drawback is that the model would have to be downloaded to the user's device, which could be a problem if the model is large, and it would also mean that the user would have to wait for the model to be downloaded before they could use the application, then they would have to wait for the model to make a prediction after this.
+
+\section{The Back End}
+
+I've decided to use Python for the API backend, as it's the main server side language I have used so far. I can use Flask to host the api and return the results when they have been processed by the model.
+
+\chapter{Identifying and Mitigating Bias}
+
+
+\section{The OASIS-1 Dataset}
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
 
-\section{nWBV vs Age}
+\subsection{nWBV vs Age}
 Giving the age of the patient to the machine learning algorithm may allow for bias, this is because there are very few patients who are young and have Alzheimer's disease, in the dataset.
 This also means it would likely be problematic to give the normalized whole brain volume to the machine learning algorithm, as this is likely to be highly correlated with age, and will therefore allow for bias.
 
@@ -712,7 +807,7 @@ This also means it would likely be problematic to give the normalized whole brai
 \end{figure}
 
 \clearpage
-\section{eTIV vs Age}
+\subsection{eTIV vs Age}
 This scatter graph is significantly more random than the one for age and whole brain volume, which means it is likely better to give to the machine learning algorithm, as it shouldn't give any strong indication of the age of the patient, and it should be useful for the machine learning algorithm.
 One potential issue with this parameter is that women are more likely to have Alzheimer's disease, and this graph shows how the men and women are separated, which may allow for bias based off of the gender of the patient.
 \begin{figure}[h]
@@ -722,9 +817,28 @@ One potential issue with this parameter is that women are more likely to have Al
   \label{fig:eTIV-vs-Age}
 \end{figure}
 
-\chapter{My initial training results}
-\subsection{The comparison of the different models}
-Here is a graph of all the different models that I have trained properly with the Alzheimer's dataset.
+\clearpage
+\section{The Skin Cancer Dataset}
+The Skin cancer dataset that I was provided for this project contains images of benign and malignant skin cancer.
+
+% Show the benign and malignant images
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{images/benign-skin-cancer.png}
+  \includegraphics[width=0.2\textwidth]{images/malignant-skin-cancer.png}
+  \caption{Benign and malignant skin cancer image}
+  \label{fig:benign-malignant}
+\end{figure}
+
+These are some example images of what the training and test data looks like. The images are all 200x200 pixels and are in RGB format.
+Unfortunately they appear to only be pictures of caucasian skin, which means that the model may not be able to predict skin cancer on people with other ethnic backgrounds.
+There does however appear to be multiple types of skin cancer in the dataset, which means that the model should be able to predict a variety of skin cancers.
+With this particular dataset, I don't have the ability to do much to mitigate bias, as the dataset is already biased towards caucasian skin, and my points of reference for model accuracy are with this dataset.
+This dataset is also relatively small, with only 484 images all together. Although this is a small number, the results from training with this dataset are still very good, and the model is able to predict skin cancer with a high accuracy, it just have slightly more bias than it would if it was trained with a larger and more diverse dataset.
+
+\chapter{My Initial Faulty Training Results}
+\subsection{The Comparison Of The Different Models}
+Here is a graph of all the different models that I have trained properly with the old and faulty Alzheimer's dataset from kaggle.
 The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
 \begin{figure}[h]
   \centering
@@ -746,12 +860,11 @@ This graph clearly indicates that there was overfitting, as the validation accur
 This is due to the fact that the model is learning from the training data, and it is not generalising well to the validation data.
 To help mitigate overfitting, I did use data augmentation and dropout layers, however I think that the base model it's self is overfitting to the data.
 
-I will need to do more research into regularisation techniques to help mitigate overfitting, and to help improve the performance of the model.
-To avoid this in the future, I will use more advanced techniques such as hyperparameter tuning and regularisation.
-
-L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting.
-Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc. 
+I was planning on using L2 and L1 regularisation techniques work by adding a penalty to the weights of the model, which helps to reduce overfitting, however I didn't have to implement as I changed from this dataset to the OASIS-1 dataset.
+Hyperparameter tuning is a process of optimising the hyperparameters of a model, such as learning rate, number of layers, etc.
 This helps to improve the accuracy of the model and reduce overfitting.
+
+
 \pagebreak
 
 \subsection{MobileNetV3 Small}
@@ -766,14 +879,12 @@ MobilenetV3 Small is the smallest model in size and is consistently the least ac
 \end{figure}
 
 Here's another graph that clearly shows the difference in performance between Inceptionv3 and MobilenetV3 Small.
-Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the difference in performance is clearly worth the trade-off in size.
-The lack of performance appears to mostly be down to the fact that MobilenetV3 Small is a smaller model, and it is not able to learn as well as InceptionV3.
-MobilenetV2 and V3 Large are mostly in line with the other models in terms of performance, however they are still not as good as InceptionV3.
+Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the model is likely not overfitting as much as the other models are, however I can't be sure as this was trained with the old dataset.
 
 \pagebreak
 \subsection{The model sizes}
 
-Here's a bar chart comparing the sizes of the models in megabytes. 
+Here's a bar chart comparing the sizes of the models in megabytes.
 They are uncompressed and include the full model, after transfer learning.
 
 \begin{figure}[ht!]
@@ -783,7 +894,6 @@ They are uncompressed and include the full model, after transfer learning.
 \end{figure}
 
 From this graph, it's clear to see how large some of the models are in comparison to each other.
-The largest model, ResNet101 is just over 1 GB in size and has a far worse accuracy than the top performing model, InceptionV3.
 
 \begin{figure}[ht!]
   \centering
@@ -795,16 +905,127 @@ The ResNet101\cite{DBLP:journals/corr/HeZRS15} model was created by Microsoft an
 It was created to compete in the ImageNet Large Scale Visual Recognition Challenge\cite{ILSVRC} in 2015.
 Inceptionv3 is a 48 layer deep neural network, and was created by Google to compete in the same challenge in 2015.
 
-Although the ResNet model managed to win the challenge, it is clear to see that Inceptionv3 is a far better model for this problem.
-Both models were trained on the same dataset (ImageNet), however the ImageNet dataset is very different to the Alzheimer's dataset.
-The ImageNet dataset contains a wide variety of images, whereas the Alzheimer's dataset contains a very small number of images, and they are all MRI scans, with only 4 classes.
-This could suggest that the ResNet model performs better on a larger dataset, however it is not as good at classification with a smaller dataset and fewer classes.
+\section{Why These Results Looked Promising}
+The results from the faulty dataset looked so promising as there was consistent progress in the accuracy of the models, and the loss was decreasing over time. This was because the model was learning from some of the validation data (but not all) so it's accuracy was never perfect (100\%) on the validation data, but it was high enough to give the illusion that the model was working well.
+
+My lack of experience with machine learning meant that I didn't know what to trust when it came to the results, I just assumed that the model was working well. Thankfully I did realise the issue before I had finished my project, and I was able to fix it with the upcoming results.
 
 \chapter{The new training results}
 % TODO: train the models again with the new dataset and parameters, then show the results here
 
-\chapter{How to run the code}
+\section{The OASIS-1 Dataset}
 
+The OASIS-1 dataset accuracy is not particularly high without any optimisation, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions.
+
+\subsection{Training with only the MRI scans}
+
+\subsection{Training with the MRI scans and the other features}
+
+\pagebreak
+\section{The Skin Cancer Dataset}
+Training the models with the skin cancer dataset was a lot more successful than training with the other dataset. This is likely due to the fact that skin cancer is visually easier to identify than Alzheimer's disease, as the skin cancer images are much more clearly defined.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-loss.png}
+\end{figure}
+
+As this graph shows, there are lots of models that did well, and a handful that did poorly. This is only the loss from the training data, and not the validation data, so it's only really a good indication of what models obviously performed poorly, such as the EfficientNetB3 and the MobilenetV3 models.
+
+\pagebreak
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-validation-accuracy-last-50.png}
+\end{figure}
+
+This graph shows the last 50 epochs of the training process for the skin cancer dataset, with the validation accuracy. This shows the most clear results, as the models with a high accuracy here are the ones that have learned the best from the training data.
+This was graph was also created with the full augmentation performed on the validation data. This may have changed the results to make the models appear to perform worse than they actually did, however lots of the augmentation I had done was reasonable and within the scope of what it would be like in the real world.
+
+There appears to be a clearly defined line between the models that performed well and the poorly performing models.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/Skin-cancer-validation-accuracy-last-50-low-performers.png}
+\end{figure}
+
+These models are the lower performers in the skin cancer dataset, none of them ever scored above 90\% accuracy on the validation data, they all also were clearly distinguished from the other models in their training loss. Mobilenetv3 Large has typically been a good performer with the Alzheimer's dataset, however here it's performing comparatively poorly.
+
+The efficient net models are also performing poorly, this is likely due to the fact that the efficient net models are comparatively very small, and may not have enough capacity to effectively capture the more complex features of the skin cancer images, as opposed to classifying images of hotdogs or not hotdogs, for example. None of these models are specifically designed to classify smaller details in images, however many of them have the capacity to do so, it just may have been pruned too much for it to be effective at this task.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/Skin-cancer-validation-accuracy-last-50-high-performers.png}
+\end{figure}
+
+These models with a maximum validation accuracy of over 90\%, typically all perform very well, not dipping below the 90\% mark often. As this graph shows too, many models achived a consistent accuracy of over 96\% on the validation data, which is very good for the amount of time it took to train them. VGG16 typically performed the best with this dataset, and it's the smallest model that performed well. This could have been a coincidence, however it's undenyable that VGG16 is a very good model for this application.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1.1\textwidth]{images/skin-cancer-model-sizes-graph.png}
+\end{figure}
+
+Now that I've got the initial training results, I'm going to try and see if I can use hyperparameter optimisation, and see if I can get the models to perform even better. I'll also try adjusting the augmentation parameters and see how that affects the results.
+
+
+\section{Optimising the EfficientNet Models}
+
+Due to the outstanding performance of the EfficientNet models in the ImageNet challenge, I decided to try and optimise one of the best models in the series too see if I can get it to perform on the same level as the other models. For this, I have chosen to use the newer and slightly larger EfficientNetV2B1 model. For this test I have decided to not change the brightness on the validation set images as I believe that this will lead to more accurate results, better representing the real world.
+
+I had previously done some experimenting, trying to find the best amount of layers to freeze in the model, in the initial training stages where the learning rate is higher, and for this, I had determined that freezing all the layers in the base model aside from the last 35 gave me good results to get started with.
+
+% Show image of EfficientNetV2B1-initial-training-loss.png
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-initial-training-loss.png}
+    \caption{Training Loss}
+    \label{fig:EfficientNetV2B1-initial-training-loss}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-initial-training-accuracy.png}
+    \caption{Training Accuracy}
+    \label{fig:EfficientNetV2B1-initial-training-accuracy}
+  \end{subfigure}
+  \caption{Initial Training Loss and Accuracy of EfficientNetV2B1}
+  \label{fig:EfficientNetV2B1-initial-training}
+\end{figure}
+
+The first 200 epochs as shown in the figure \ref{fig:EfficientNetV2B1-initial-training-loss} shows that there is really not much progress with the training. The loss is not decreasing much at all. The accuracy graph tells the same story too, there is essentially no progress made with most of the base model's layers frozen.
+
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-2nd-training-loss.png}
+    \caption{Training Loss}
+    \label{fig:EfficientNetV2B1-2nd-training-loss}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-2nd-training-accuracy.png}
+    \caption{Training Accuracy}
+    \label{fig:EfficientNetV2B1-2nd-training-accuracy}
+  \end{subfigure}
+  \caption{The 2nd Round of Training Loss and Accuracy of EfficientNetV2B1}
+  \label{fig:EfficientNetV2B1-2nd-training}
+\end{figure}
+
+The progress made after unfreezing all of the base model and turning the learning rate from $1 \times 10^{-5}$ to $1 \times 10^{-7}$ as this apparently allows the model to learn better from the training data. Interestingly, after reducing the augmentation on the validation set, the model's accuracy on the validation set is consistently above the training set accuracy, which is a good sign.
+
+This clearly shows progress in the training of the model, however it is still not as good as the other models over their first 400 epochs. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{images/EfficientNetV2B1-final-training-accuracy.png}
+  \caption{Training Loss}
+  \label{fig:EfficientNetV2B1-final-training-loss}
+\end{figure}
+
+I decided to train this model until it reaches a point where it does not appear to be improving anymore. This ended up being around 2800 epochs, which is a lot more than the other models \ref{fig:EfficientNetV2B1-final-training-loss} shows the last 200 epochs of this. This results in a final validation accuracy of 0.9375 (93.75\%) which is not as bad as it was, however it is still not as good as the other models and it took a lot longer to train to get these results.
+
+\chapter{How to run the code}
+% TODO: update the instructions for running the code, talk about virtual environments
 \section{Prerequisites}
 Go to the directory in your terminal (with python 3.7 > installed) and run the following command:
 \begin{lstlisting}
@@ -850,7 +1071,7 @@ The AI healthcare market should remain competitive and accessible to various sta
 
 \section{Management and Stakeholder Consultation}
 
-There are various stakeholders who would be interested in AI prediction of Alzheimer's, for example the patients could be interested in knowing if they have Alzheimer's quicker than they otherwise would have, however the patients having direct access to the web interface would be problematic, as the results may be inaccurate and could potentially cause un-needed stress for the patient. 
+There are various stakeholders who would be interested in AI prediction of Alzheimer's, for example the patients could be interested in knowing if they have Alzheimer's quicker than they otherwise would have, however the patients having direct access to the web interface would be problematic, as the results may be inaccurate and could potentially cause un-needed stress for the patient.
 
 The healthcare professionals would be interested in the web interface, as it would allow them to quickly and easily get a prediction of whether the patient has Alzheimer's or not, and it would also allow them to see the confidence scores for each class, so they can make a more informed decision, this interface being available 24/7 and being easy to use would benefit them greatly. The usability to the healthcare professionals would depend on the accuracy of the model too, so it would be important to ensure that the model is as accurate as possible.
 
@@ -860,6 +1081,10 @@ The biases in the OASIS-1 dataset are very prevalent, I have decided to dedicate
 
 \section{Collaboration and Communication Barriers}
 If the model's accuracy is not explicitly stated in the web interface, doctors may be more likely to rely on the models predictions, rather than using their own judgement, which could lead to a misdiagnosis. The model's accuracy should be clearly stated in the web interface, so that the healthcare professionals can make an informed decision, and the interface should have a disclaimer stating that the model's accuracy is not guaranteed, and that the healthcare professional should use their own judgement when making a diagnosis, along with multilingual support, so that the interface can be used by healthcare professionals from all over the world, without any potential problems with language barriers.
+
+\section{Bias in the Skin Cancer Dataset}
+The skin cancer dataset has a variety of different photos of benign and malignant blemishes on skin, however all of the images are of caucasian people, with there appearing to be no variety in terms of skin colour. This means that this model would only benefit anyone of caucasian descent, and it would not be reliable with any other skin colour. This is a problem as the dataset is not representative of the world's population, which could lead to non-caucasian people getting a lower quality of healthcare, as they would not be able to use the model to get a diagnosis of their skin cancer.
+On the other hand, prediction of skin cancer would be a lot more accurate for caucasian people as opposed to people with darker skin, as the melanin in their skin would make it harder to see the blemishes and make out what they are. This specific problem would be beyond the scope of this report, however it would be something to consider for anyone using this dataset for other projects.
 
 \chapter{Diary}
 
@@ -873,10 +1098,10 @@ I have decided to use the following sets of images:
 
 % List the datasets
 \begin{itemize}
-  \item \href{https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz}{Flowers Dataset} 
-	This dataset is likely to be an easier dataset for the models to get high accuracy on, as the different flowers are quite distinct from each other.
+  \item \href{https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz}{Flowers Dataset}
+        This dataset is likely to be an easier dataset for the models to get high accuracy on, as the different flowers are quite distinct from each other.
   \item  \href{https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset}{Alzheimer's Dataset}
-	This dataset is going to be more difficult for the models as the changes are more subtle between the different scan images, and the images are not as distinct from each other.
+        This dataset is going to be more difficult for the models as the changes are more subtle between the different scan images, and the images are not as distinct from each other.
 \end{itemize}
 
 
@@ -895,9 +1120,8 @@ This is significant progress as this was a major blocker for me as I was not sur
 
 \section*{01/11/2022}
 
-Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset, 
+Today I've worked more on the transfer learning tutorial and it can now identify the different flowers in the flowers dataset,
 with varying degrees of accuracy, around 80\% was the best I got however this was only after 5 epochs and was the first time I have tried transfer learning.
-
 
 \section*{09/11/2022}
 
@@ -978,19 +1202,19 @@ I have also setup my laptop properly using Manjaro Linux to train the models on 
 \section*{23/11/2022}
 
 I have achieved 99\% accuracy on my model identifying Alzheimer's (validation dataset). This was unfortunatley not saved however as it crashed, however I believe I can get it to that level again.
-I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file so I can analyse the results later, it also saves the model to a file so I can use it later.
-This should make it a lot easier to use different models, datasets and parameters to train the models and to analyse the results and make the confusion matrix.
+I have written a scritpt to use different base models for transfer learning and to output the results of training to a JSON file, so I can analyse the results later, it also saves the model to a file, so I can use it later.
+This should make it a lot easier to use different models, datasets and parameters to train the models and to analyze the results and make the confusion matrix.
 
 \section*{27/11/2022}
 I have been working lots on the interim report and getting it ready to submit, during this time I have also been setting my laptop off to train the models
-as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the 
+as I work. I discovered that my '99\%' accuracy was from the model learning the validation set through the augmented images, so I have had to retrain all the
 models with images I have augmented myself.
 
-Soon I'll finish the Alzheimer's dataset training and I'll start working on the flowers dataset.
+Soon I'll finish the Alzheimer's dataset training, and I'll start working on the flower's dataset.
 
 \section*{28/11/2022}
 
-Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
+Today I have had trouble with the training, my GPU kept running out of memory due to me not releasing the ram after the keras model was trained. This meant I had to keep on checking and restarting the training, every few models. This is now fixed, and I have been able to train the models without any issues. They are currently training and there is a lot of progress to be made.
 
 \section*{29/11/2022}
 
@@ -1003,7 +1227,105 @@ I have been working lots on my report and the training library, this has taken a
 
 I have made lots of graphs from the history of the models in training, this made it a lot easier to talk about the different strengths and weaknesses of the different base models.
 
-% TODO: add the rest of the diary
+\section*{24/1/2023}
+I've manually reviewed my dataset I'm using, and I've found it to have multiple repeated images. Due to the poor quality of the dataset I'm using I've decided to use a different dataset for my project, which I believe is the original data from the corrupted dataset I was using.
+https://www.oasis-brains.org/
+
+This dataset has more information about the patients, such as their sex, age and different scores on tests relating to the disease.
+
+This also allows me to predict whether or not a person has Alzheimer's from all the MRI scans they have taken, rather than just one.
+
+I hope to get this dataset working soon and to start training the models, and I'm aiming for at least a 90\% accuracy on the validation dataset.
+
+\section*{15/2/2023}
+
+I've downloaded the OASIS dataset 1 and I've created some graphs to analyze the data and to try and identify potential biases in the data. The main problem with it is that there are few MRI scans of people with Alzheimer's, and they're mostly old, which means if the model is given the age of the patient, it will cause bias with it, as it's more likely to be an older person with Alzheimer's in this dataset. I need to identify what different parameters given alongside the MRI scans in the dataset will cause bias with the model (primarily by giving the model the age of the patient).
+
+\section*{28/2/2023}
+
+I have decided to create a web-UI for my project, this will allow me to easily show the results of the models and to allow people to upload their own images to test the models on. This should be easy to do with Flask and I hope to have it done soon.
+
+I've also started downloading the new OASIS dataset again after I ran out of space on my hard drive.
+
+\section*{5/3/2023}
+
+I've purchased an RTX 3080 to help speed up my training and to allow me to train larger models. After installing this hardware, my training times have been significantly reduced, and I have 2 GB more v-ram to use.
+
+\section*{10/3/2023}
+
+I have managed to get the OASIS-1 dataset training with transfer learning, as its format is different to the dataset I was previously using (it's a collection of files, rather than 4 folders with the different categories of images in them). This was done through the Pandas library, using the dataframe class, along with the keras ImageDataGenerator class which helps me read the images from the dataset, along with batching them to be used in training (so my GPU doesn't run out of memory), as well as augmenting the images to help prevent overfitting.
+
+The performance of the model on the new dataset however is significantly lower than I would like. The previous dataset gave me false hope, as the repeated images were in the training and validation classes, giving me a far higher accuracy than I actually had. I will experiment with hyperparameter tuning and I will look into using the other information in the OASIS-1 dataset to help improve the accuracy of the model, as features in the OASIS model include
+```
+ID,M/F,Hand,Age,Educ,SES,MMSE,CDR,eTIV,nWBV,ASF,Delay
+```
+
+During this time, I've also managed to get ill, so I haven't been able to work on the project as much as I would like.
+
+\section*{14/3/2023}
+
+To use the seperate parameters, alongside the MRI scans, I will need to create a custom model, which will take in the parameters, then I will also use the original transfer learning model, and combine the outputs of the two models to create a new model. This will allow me to use the parameters and the MRI scans, which will hopefully improve the accuracy of the model.
+
+Combining the models will be done through the Keras Model class, which allows me to create a new model from the outputs of other models, however I am struggling to pass the data to the new model, as I have had many errors when trying to pass the new data and the MRI scans to the model. I will continue to try and fix this issue today.
+
+\section*{15/3/2023}
+
+I have had many problems combining the age, gender and other information about the patients with the MRI scans, the problem lies with the fit function of the model as the method I was using to get the images from the dataset originally, did not allow for other data to be included as an input for the model. I have now created my own generator class and intend to use that to get the data from the dataset and pass it to the model.
+
+\section*{16/3/2023}
+
+After lots of struggling, I have managed to get my custom generator working with keras, it now trains and has the MMSE, age and gender as context. I'm still having trouble with the accuracy but hopefully with more parameters, it will improve.
+
+I've also encountered a problem with the training, as the validation accuracy is almost always 0.9195, and this doesn't seem to change much. I will try adjusting the training/validation split to see if anything improves.
+
+\section*{19/3/2023}
+
+I have continued to work on the report today, and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+
+\section*{20/3/2023}
+
+I've merged the git branches into main, as I wanted to ensure I do not have too many conflicts closer to the deadline, and to ensure that I will not lose work due to a merge conflict.
+
+I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used).
+
+Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
+The web-ui is mostly finished now, I just need to add the results of the models to the web page.
+
+I have managed to get the basic transfer learning results saved to files, along with the training and loss results.
+
+\section*{21/3/2023}
+
+Today I've been working on my report, adding different sections on the Alzheimer's disease, and why it's so important to diagnose it early.
+
+\section*{22/3/2023}
+
+I've been working more on the report and getting the web-ui working, I've battled with CORS to get the POST request through to flask and I've managed to get the majority of it working.
+
+\section*{23/3/2023}
+
+I have decided to get the training results for all the different models with the Alzheimer's dataset, and save them to files, so I can use them in the web-ui. The performance of these models is not great, so I will have to find ways to make this better.
+
+
+\section*{24/3/2023}
+
+Today I have been given a skin cancer dataset to use for my project, I will be using this to train a model to classify benign and malignant blemishes on the skin. I will be using transfer learning to train the model, and I will be using the same model structure as I used for the Alzheimers dataset.
+
+The results from training these models has been very positive, and I have managed to get a consistent accuracy of 0.98 on the validation set, which is very good. I will continue to train the model and see if I can get the accuracy any higher.
+
+\section*{25/3/2023}
+
+Today I have created graphs from the different training results with the skin cancer dataset, I will use these to talk about the performance of the different models in my report. 
+
+\section*{26/3/2023}
+
+I have been working more on my report, as I have my graphs to analyze and talk about in the report. I am going to try and increase the accuracy of the EfficientNet models and potentially use the newer EfficientNetV2 models to try and boost performance.
+
+\section*{27/3/2023}
+
+Today I want to try and optimise the EfficientNetv2 models more and do a write-up on the results for them, then I will try and use hyperparameter tuning to try and improve the performance of the better performing models to see how high I can get the accuracy.
+
+I also want to try to get the web-ui working with the server side processing, so I can get the results of the models on the web page and then I want to experiment with tensorflow-JS to see if I can get the models to run in the browser for increased privacy and lower running costs.
+
 \chapter{Conclusion}
 
 % TODO: Conclusion

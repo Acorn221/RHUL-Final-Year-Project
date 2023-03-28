@@ -162,4 +162,47 @@ I've also encountered a problem with the training, as the validation accuracy is
 
 ## 19/03/2023
 
-I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have began to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+I have continued to work on the report today and I've got most of the web-ui working now, I just need to display the results of the models on the web page. I have begun to go through the markscheme and add sections such as the professional issues to my report, along with Rationale.
+
+## 20/03/2023
+
+I've merged the git branches into main, as I wanted to ensure I do not have too many conflicts closer to the deadline, and to ensure that I will not lose work due to a merge conflict.
+
+I have also decided today to not use the OASIS-3 dataset, as it's not as well documented as the OASIS-1 dataset, and the different scan formats are not easily passed to the model. The OASIS-1 dataset has preprocessed images which are easier to use and train with, whereas the raw OASIS-3 scans would most likely require a different model structure to be used (such as an LSTM, which is not typically used ).
+
+Today I will try and get the basic transfer learning results finished and save them to a file, so I can use them in the web-ui.
+The web-ui is mostly finished now, I just need to add the results of the models to the web page.
+
+I have managed to get the basic transfer learning results saved to files, along with the training and loss results.
+
+## 21/03/2023
+
+Today I've been working on my report, adding different sections on the Alzheimers disease, and why it's so important to diagnose it early.
+
+## 22/03/2023
+
+I've been working more on the report and getting the web-ui working, I've battled with CORS to get the POST request through to flask and I've managed to get the majority of it working.
+
+## 23/03/2023
+
+I have decided to get the training results for all the different models with the Alzheimers dataset, and save them to files, so I can use them in the web-ui. The performance of these models is not great, so I will have to find ways to make this better.
+
+## 24/03/2023
+
+Today I have been given a skin cancer dataset to use for my project, I will be using this to train a model to classify benign and malignant blemishes on the skin. I will be using transfer learning to train the model, and I will be using the same model structure as I used for the Alzheimers dataset.
+
+The results from training these models has been very positive, and I have managed to get a consistent accuracy of 0.98 on the validation set, which is very good. I will continue to train the model and see if I can get the accuracy any higher.
+
+## 25/03/2023	
+
+Today I have created graphs from the different training results with the skin cancer dataset, I will use these to talk about the performance of the different models in my report. 
+
+## 26/03/2023
+
+I have been working more on my report, as I have my graphs to analyse and talk about in the report. I am going to try and increase the accuracy of the EfficientNet models and potentially use the newer EfficientNetV2 models to try and boost performance.
+
+## 27/03/2023
+
+Today I want to try and optimise the EfficientNetv2 models more and do a write up on the results for them, then I will try and use hyperparameter tuning to try and improve the performance of the better performing models to see how high I can get the accuracy.
+
+I also want to try to get the web-ui working with the server side processing, so I can get the results of the models on the web page and then I want to experiment with tensorflow-JS to see if I can get the models to run in the browser for increased privacy and lower running costs.

@@ -20,93 +20,52 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 11720 items.
 Database file #1: final_report-blx.bib
 Database file #2: refs.bib
+Warning--I didn't find a database entry for "TensorflowJS"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-<<<<<<< HEAD
-You've used 30 entries,
+You've used 47 entries,
             6399 wiz_defined-function locations,
-            1339 strings with 17331 characters,
-and the built_in function-call counts, 140868 in all, are:
-= -- 10508
-> -- 990
-< -- 479
-+ -- 4051
-- -- 503
-* -- 8951
-:= -- 15051
+            1456 strings with 29932 characters,
+and the built_in function-call counts, 381685 in all, are:
+= -- 32923
+> -- 2693
+< -- 897
++ -- 11974
+- -- 1277
+* -- 26908
+:= -- 45834
 add.period$ -- 0
-call.type$ -- 30
-change.case$ -- 156
-chr.to.int$ -- 42
-cite$ -- 58
-duplicate$ -- 16877
-empty$ -- 14079
-format.name$ -- 798
-if$ -- 28123
+call.type$ -- 47
+change.case$ -- 344
+chr.to.int$ -- 50
+cite$ -- 92
+duplicate$ -- 41313
+empty$ -- 34337
+format.name$ -- 2273
+if$ -- 74539
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 73
 missing$ -- 0
-newline$ -- 682
-num.names$ -- 287
-pop$ -- 10302
+newline$ -- 1558
+num.names$ -- 817
+pop$ -- 17531
 preamble$ -- 1
-purify$ -- 232
+purify$ -- 603
 quote$ -- 0
-skip$ -- 2803
+skip$ -- 5512
 stack$ -- 0
-substring$ -- 18612
-swap$ -- 3024
-text.length$ -- 517
-text.prefix$ -- 29
+substring$ -- 64181
+swap$ -- 6190
+text.length$ -- 954
+text.prefix$ -- 46
 top$ -- 1
-type$ -- 1008
+type$ -- 1586
 warning$ -- 0
-while$ -- 1985
+while$ -- 5619
 width$ -- 0
-write$ -- 653
-=======
-You've used 31 entries,
-            6399 wiz_defined-function locations,
-            1352 strings with 19284 characters,
-and the built_in function-call counts, 204077 in all, are:
-= -- 16976
-> -- 1279
-< -- 503
-+ -- 6271
-- -- 663
-* -- 13912
-:= -- 23841
-add.period$ -- 0
-call.type$ -- 31
-change.case$ -- 166
-chr.to.int$ -- 43
-cite$ -- 60
-duplicate$ -- 22783
-empty$ -- 19095
-format.name$ -- 1131
-if$ -- 40005
-int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 0
-newline$ -- 873
-num.names$ -- 328
-pop$ -- 11147
-preamble$ -- 1
-purify$ -- 296
-quote$ -- 0
-skip$ -- 3077
-stack$ -- 0
-substring$ -- 32553
-swap$ -- 3546
-text.length$ -- 566
-text.prefix$ -- 30
-top$ -- 1
-type$ -- 1042
-warning$ -- 0
-while$ -- 2977
-width$ -- 0
-write$ -- 843
->>>>>>> Project-report
+write$ -- 1512
+(There was 1 warning)

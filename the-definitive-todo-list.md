@@ -17,6 +17,15 @@
   - [x] Create a sub-model for the other data
   - [x] Combine the two models
   - [x] Feed the data to the new model, in the correct format
+- [ ] User Interface
+  - [ ] Make the interface work
+  - [ ] Skin Cancer
+    - [ ] Let the user take a photo with their phone
+    - [ ] Process the image with the best performing model
+    - [ ] Display the results
+    - [ ] Host on github pages
+  - [ ] Alzheimer's
+    - [ ] Make the server side work with the model
 - [ ] Try and predict the age of the patients to see if it's possible
   - [ ] See if the model can predict the age of the patients
   - [ ] Compare the impact of changing the input age to the model, to see how the model reacts
@@ -38,17 +47,18 @@
 ## On campus
 
 - [ ] Finish the automated testing library
-  - [ ] Write tests for the model memory clearing
-    - [ ] Write the model memory clearing function
   - [ ] Write tests for hyperparameter tuning
 		- [ ] Write the hyperparameter tuning function
   - [ ] Allow for the image input and the other related parameters to be passed into the model
     - [ ] Test
     - [ ] Function
+  - [ ] Write some examples for the library
 - [ ] Create a web interface for uploading MRI scans and getting the results
-  - [ ] Set up a flask API
-    - [ ] Create tests for the API
+  - [x] Set up a flask API
+    - [x] Create tests for the API
   - [x] Create a basic web interface for uploading and getting the predictions
+  - [ ] Display the predictions
+  - [ ] Actually get the predictions from the model
 - [ ] The Report
   - [ ] The Diary
   - [ ] Document the different hyperparameter tuning
@@ -56,19 +66,42 @@
   - [ ] Talk about the web interface and it's potential uses
 - [ ] Look for another dataset (medical imaging)
   - [x] OASIS-3 - Gained access to the dataset
+- [ ] Talk about different metrics
+  - [ ] Sensitivity/recall
+  - [ ] Specificity
+  - [ ] Precision
+  - [ ] F1 Score
 
 
 
 ## Markscheme Checklist
 
 - [ ] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+  - Added a rationale section, needs more objectives
 - [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
 - [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
 - [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
 - [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
-  - [ ] 
+  - More graphs are needed
+  - Go over everything to ensure there aren't mistakes and everything is clear
 - [x] Bibliography and Citations (5%): Clear and appropriate bibliography with good citations. Must be clear and well formatted.
   - [ ] Bibtex has taken care of this
 - [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
   - [ ] I feel as though I have covered this well
+
+
+## The Code
+
+ - [ ] Does it work? Is it stable?
+ - [ ] Is the software usable? Is the interface appropriate for the application (a compiler might require more technical skills to run than an e-commerce site)?
+ - [ ] Does the code and system structure follow the design?
+ - [ ] How complete is the functionality with respect to the requirements?
+ - [ ] Is the coding clean and well documented?
+ - [ ] Does the GitLab repository reflect the use of good software engineering principles including appropriate use of branches/tags?
+ - [ ] Does the product require techniques, tools, theory or concepts which are clearly above second year level?
+ - [ ] Does the product use complex new technologies/platforms or require the study of a significant body of literature from disparate sources to complete?
+
+
+
+SUBMIT HERE: https://moodle.royalholloway.ac.uk/mod/assign/view.php?id=781358

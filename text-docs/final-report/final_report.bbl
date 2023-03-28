@@ -49,26 +49,99 @@
     \field{year}{2011}
   \endentry
 
-  \entry{AlzheimersDataset}{misc}{}
+  \entry{DementiaStatistics}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{title}{Alzheimer's Dataset}
+    \field{title}{Alzheimer's Disease Statistics}
     \verb{url}
-    \verb https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-data
-    \verb set
+    \verb https://dementiastatistics.org/
     \endverb
   \endentry
 
-<<<<<<< HEAD
-  \entry{BIDS}{misc}{}
+  \entry{Ballerini2013}{inbook}{}
+    \name{author}{4}{}{%
+      {{hash=BL}{%
+         family={Ballerini},
+         familyi={B\bibinitperiod},
+         given={Lucia},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FRB}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={Robert\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Aldridge},
+         familyi={A\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rees},
+         familyi={R\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CME}{%
+         family={Celebi},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima Emre},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schaefer},
+         familyi={S\bibinitperiod},
+         given={Gerald},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Netherlands}%
+    }
+    \strng{namehash}{BL+1}
+    \strng{fullhash}{BLFRBABRJ1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{title}{BIDS}
+    \field{abstract}{%
+    This chapter proposes a novel hierarchical classification system based on
+  the K-Nearest Neighbors (K-NN) model and its application to non-melanoma skin
+  lesion classification. Color and texture features are extracted from skin
+  lesion images. The hierarchical structure decomposes the classification task
+  into a set of simpler problems, one at each node of the classification.
+  Feature selection is embedded in the hierarchical framework that chooses the
+  most relevant feature subsets at each node of the hierarchy. The accuracy of
+  the proposed hierarchical scheme is higher than 93 {\%} in discriminating
+  cancer and potential at risk lesions from benign lesions, and it reaches an
+  overall classification accuracy of 74 {\%} over five common classes of skin
+  lesions, including two non-melanoma cancer types. This is the most extensive
+  known result on non-melanoma skin cancer classification using color and
+  texture information from images acquired by a standard camera
+  (non-dermoscopy).%
+    }
+    \field{booktitle}{Color Medical Image Analysis}
+    \verb{doi}
+    \verb 10.1007/978-94-007-5389-1_4
+    \endverb
+    \field{isbn}{978-94-007-5389-1}
+    \field{pages}{63\bibrangedash 86}
+    \field{title}{A Color and Texture Based Hierarchical K-NN Approach to the
+  Classification of Non-melanoma Skin Lesions}
     \verb{url}
-    \verb https://bids.neuroimaging.io/
-=======
+    \verb https://doi.org/10.1007/978-94-007-5389-1_4
+    \endverb
+    \list{location}{1}{%
+      {Dordrecht}%
+    }
+    \field{year}{2013}
+  \endentry
+
   \entry{BIDS_metadata}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
@@ -77,8 +150,36 @@
     \verb{url}
     \verb https://bids-specification.readthedocs.io/en/stable/04-modality-speci
     \verb fic-files/01-magnetic-resonance-imaging-data.html
->>>>>>> Project-report
     \endverb
+  \endentry
+
+  \entry{DBLP:journals/corr/Chollet16a}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={Fran{\c{c}}ois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1610.02357
+    \endverb
+    \field{title}{Xception: Deep Learning with Depthwise Separable
+  Convolutions}
+    \verb{url}
+    \verb http://arxiv.org/abs/1610.02357
+    \endverb
+    \field{volume}{abs/1610.02357}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
   \endentry
 
   \entry{CommitLint}{misc}{}
@@ -88,17 +189,6 @@
     \field{title}{CommitLint}
     \verb{url}
     \verb https://github.com/conventional-changelog/commitlint
-    \endverb
-  \endentry
-
-  \entry{ConfusionMatrix}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{title}{Confusion Matrix}
-    \verb{url}
-    \verb https://towardsdatascience.com/confusion-matrix-for-your-multi-class-
-    \verb machine-learning-model-ff9aa3bf7826
     \endverb
   \endentry
 
@@ -120,6 +210,189 @@
     \verb{url}
     \verb https://docs.nvidia.com/cuda/
     \endverb
+  \endentry
+
+  \entry{Van_Dyck2022-pt}{article}{}
+    \name{author}{19}{}{%
+      {{hash=vDCH}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Dyck},
+         familyi={D\bibinitperiod},
+         given={Christopher\bibnamedelima H},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SCJ}{%
+         family={Swanson},
+         familyi={S\bibinitperiod},
+         given={Chad\bibnamedelima J},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Aisen},
+         familyi={A\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BRJ}{%
+         family={Bateman},
+         familyi={B\bibinitperiod},
+         given={Randall\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gee},
+         familyi={G\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kanekiyo},
+         familyi={K\bibinitperiod},
+         given={Michio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Reyderman},
+         familyi={R\bibinitperiod},
+         given={Larisa},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Sharon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FL}{%
+         family={Froelich},
+         familyi={F\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Katayama},
+         familyi={K\bibinitperiod},
+         given={Sadao},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sabbagh},
+         familyi={S\bibinitperiod},
+         given={Marwan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={Vellas},
+         familyi={V\bibinitperiod},
+         given={Bruno},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dhadda},
+         familyi={D\bibinitperiod},
+         given={Shobha},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Irizarry},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KLD}{%
+         family={Kramer},
+         familyi={K\bibinitperiod},
+         given={Lynn\bibnamedelima D},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=IT}{%
+         family={Iwatsubo},
+         familyi={I\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{DCHv+1}
+    \strng{fullhash}{DCHvSCJAPBRJCCGMKMLDRLCSFLKSSMVBWDDSIMKLDIT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    BACKGROUND: The accumulation of soluble and insoluble aggregated
+  amyloid-beta (A$\beta$) may initiate or potentiate pathologic processes in
+  Alzheimer's disease. Lecanemab, a humanized IgG1 monoclonal antibody that
+  binds with high affinity to A$\beta$ soluble protofibrils, is being tested in
+  persons with early Alzheimer's disease. METHODS: We conducted an 18-month,
+  multicenter, double-blind, phase 3 trial involving persons 50 to 90 years of
+  age with early Alzheimer's disease (mild cognitive impairment or mild
+  dementia due to Alzheimer's disease) with evidence of amyloid on
+  positron-emission tomography (PET) or by cerebrospinal fluid testing.
+  Participants were randomly assigned in a 1:1 ratio to receive intravenous
+  lecanemab (10 mg per kilogram of body weight every 2 weeks) or placebo. The
+  primary end point was the change from baseline at 18 months in the score on
+  the Clinical Dementia Rating-Sum of Boxes (CDR-SB; range, 0 to 18, with
+  higher scores indicating greater impairment). Key secondary end points were
+  the change in amyloid burden on PET, the score on the 14-item cognitive
+  subscale of the Alzheimer's Disease Assessment Scale (ADAS-cog14; range, 0 to
+  90; higher scores indicate greater impairment), the Alzheimer's Disease
+  Composite Score (ADCOMS; range, 0 to 1.97; higher scores indicate greater
+  impairment), and the score on the Alzheimer's Disease Cooperative
+  Study-Activities of Daily Living Scale for Mild Cognitive Impairment
+  (ADCS-MCI-ADL; range, 0 to 53; lower scores indicate greater impairment).
+  RESULTS: A total of 1795 participants were enrolled, with 898 assigned to
+  receive lecanemab and 897 to receive placebo. The mean CDR-SB score at
+  baseline was approximately 3.2 in both groups. The adjusted least-squares
+  mean change from baseline at 18 months was 1.21 with lecanemab and 1.66 with
+  placebo (difference, -0.45; 95\% confidence interval [CI], -0.67 to -0.23;
+  P<0.001). In a substudy involving 698 participants, there were greater
+  reductions in brain amyloid burden with lecanemab than with placebo
+  (difference, -59.1 centiloids; 95\% CI, -62.6 to -55.6). Other mean
+  differences between the two groups in the change from baseline favoring
+  lecanemab were as follows: for the ADAS-cog14 score, -1.44 (95\% CI, -2.27 to
+  -0.61; P<0.001); for the ADCOMS, -0.050 (95\% CI, -0.074 to -0.027; P<0.001);
+  and for the ADCS-MCI-ADL score, 2.0 (95\% CI, 1.2 to 2.8; P<0.001). Lecanemab
+  resulted in infusion-related reactions in 26.4\% of the participants and
+  amyloid-related imaging abnormalities with edema or effusions in 12.6\%.
+  CONCLUSIONS: Lecanemab reduced markers of amyloid in early Alzheimer's
+  disease and resulted in moderately less decline on measures of cognition and
+  function than placebo at 18 months but was associated with adverse events.
+  Longer trials are warranted to determine the efficacy and safety of lecanemab
+  in early Alzheimer's disease. (Funded by Eisai and Biogen; Clarity AD
+  ClinicalTrials.gov number, NCT03887455.).%
+    }
+    \field{number}{1}
+    \field{pages}{9\bibrangedash 21}
+    \field{title}{Lecanemab in Early Alzheimer's Disease}
+    \field{volume}{388}
+    \list{location}{1}{%
+      {United States}%
+    }
+    \field{journaltitle}{N Engl J Med}
+    \field{month}{11}
+    \field{year}{2022}
   \endentry
 
   \entry{Gorgolewski2016}{article}{}
@@ -508,6 +781,82 @@
     \endverb
   \endentry
 
+  \entry{10.3389/frai.2021.757780}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LT}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ting},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={Weida},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Roberts},
+         familyi={R\bibinitperiod},
+         given={Ruth},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zhichao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Thakkar},
+         familyi={T\bibinitperiod},
+         given={Shraddha},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LT+1}
+    \strng{fullhash}{LTTWRRLZTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Carcinogenicity testing plays an essential role in identifying carcinogens
+  in environmental chemistry and drug development. However, it is a
+  time-consuming and label-intensive process to evaluate the carcinogenic
+  potency with conventional 2-years rodent animal studies. Thus, there is an
+  urgent need for alternative approaches to providing reliable and robust
+  assessments on carcinogenicity. In this study, we proposed a DeepCarc model
+  to predict carcinogenicity for small molecules using deep learning-based
+  model-level representations. The DeepCarc Model was developed using a data
+  set of 692 compounds and evaluated on a test set containing 171 compounds in
+  the National Center for Toxicological Research liver cancer database
+  (NCTRlcdb). As a result, the proposed DeepCarc model yielded a Matthews
+  correlation coefficient (MCC) of 0.432 for the test set, outperforming four
+  advanced deep learning (DL) powered quantitative structure-activity
+  relationship (QSAR) models with an average improvement rate of 37%.
+  Furthermore, the DeepCarc model was also employed to screen the
+  carcinogenicity potential of the compounds from both DrugBank and Tox21.
+  Altogether, the proposed DeepCarc model could serve as an early detection
+  tool (<ext-link ext-link-type="uri"
+  xlink:href="https://github.com/TingLi2016/DeepCarc"
+  xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/TingLi2016/DeepCarc</ext-link>)
+  for carcinogenicity assessment.%
+    }
+    \verb{doi}
+    \verb 10.3389/frai.2021.757780
+    \endverb
+    \field{issn}{2624-8212}
+    \field{title}{DeepCarc: Deep Learning-Powered Carcinogenicity Prediction
+  Using Model-Level Representation}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/frai.2021.757780
+    \endverb
+    \field{volume}{4}
+    \field{journaltitle}{Frontiers in Artificial Intelligence}
+    \field{year}{2021}
+  \endentry
+
   \entry{Manjaro}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
@@ -516,6 +865,13 @@
     \verb{url}
     \verb https://manjaro.org/
     \endverb
+  \endentry
+
+  \entry{MaterialUI}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Material-UI}
   \endentry
 
   \entry{Matplotlib}{misc}{}
@@ -527,6 +883,57 @@
     \verb{url}
     \verb https://matplotlib.org/
     \endverb
+  \endentry
+
+  \entry{6610779}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MT}{%
+         family={Mendonça},
+         familyi={M\bibinitperiod},
+         given={Teresa},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FPM}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={Pedro\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJS}{%
+         family={Marques},
+         familyi={M\bibinitperiod},
+         given={Jorge\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MARS}{%
+         family={Marcal},
+         familyi={M\bibinitperiod},
+         given={André R.\bibnamedelima S.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rozeira},
+         familyi={R\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTFPMMJSMARSRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2013 35th Annual International Conference of the IEEE
+  Engineering in Medicine and Biology Society (EMBC)}
+    \verb{doi}
+    \verb 10.1109/EMBC.2013.6610779
+    \endverb
+    \field{pages}{5437\bibrangedash 5440}
+    \field{title}{PH2 - A dermoscopic image database for research and
+  benchmarking}
+    \field{year}{2013}
   \endentry
 
   \entry{NeuralNetworkDiagram}{misc}{}
@@ -570,6 +977,18 @@
     \endverb
   \endentry
 
+  \entry{Pandas}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Pandas is a fast, powerful, flexible and easy to use open
+  source data analysis and manipulation tool, built on top of the Python
+  programming language.}
+    \verb{url}
+    \verb https://pandas.pydata.org/
+    \endverb
+  \endentry
+
   \entry{PyTest}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -587,6 +1006,16 @@
     \field{title}{Python}
     \verb{url}
     \verb https://www.python.org/
+    \endverb
+  \endentry
+
+  \entry{React}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{React: A JavaScript library for building user interfaces}
+    \verb{url}
+    \verb https://reactjs.org/
     \endverb
   \endentry
 
@@ -794,6 +1223,144 @@
     \field{year}{2015}
   \endentry
 
+  \entry{smilkov2019tensorflowjs}{misc}{}
+    \name{author}{20}{}{%
+      {{hash=SD}{%
+         family={Smilkov},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Thorat},
+         familyi={T\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AY}{%
+         family={Assogba},
+         familyi={A\bibinitperiod},
+         given={Yannick},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Ann},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Kreeger},
+         familyi={K\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=YP}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZK}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Kangyi},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Shanqing},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soergel},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bileschi},
+         familyi={B\bibinitperiod},
+         given={Stan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Terry},
+         familyi={T\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Nicholson},
+         familyi={N\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GSN}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Sandeep\bibnamedelima N.},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sirajuddin},
+         familyi={S\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sculley},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Monga},
+         familyi={M\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VFB}{%
+         family={Viégas},
+         familyi={V\bibinitperiod},
+         given={Fernanda\bibnamedelima B.},
+         giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wattenberg},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD+1}
+    \strng{fullhash}{SDTNAYYAKNYPZKCSNESDBSTMNCGSNSSSDMRCGVFBWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1901.05350
+    \endverb
+    \field{title}{TensorFlow.js: Machine Learning for the Web and Beyond}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2019}
+  \endentry
+
   \entry{DBLP:journals/corr/SzegedyVISW15}{article}{}
     \name{author}{5}{}{%
       {{hash=SC}{%
@@ -846,6 +1413,149 @@
     \field{year}{2015}
   \endentry
 
+  \entry{tailwindcss}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Tailwind CSS}
+  \endentry
+
+  \entry{tan2020efficientnet}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Mingxing},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMLQV1}
+    \strng{fullhash}{TMLQV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 1905.11946
+    \endverb
+    \field{title}{EfficientNet: Rethinking Model Scaling for Convolutional
+  Neural Networks}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2020}
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-2104-00298}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Mingxing},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMLQV1}
+    \strng{fullhash}{TMLQV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 2104.00298
+    \endverb
+    \field{title}{EfficientNetV2: Smaller Models and Faster Training}
+    \verb{url}
+    \verb https://arxiv.org/abs/2104.00298
+    \endverb
+    \field{volume}{abs/2104.00298}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2021}
+  \endentry
+
+  \entry{TAN2019105725}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TTY}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Teck\bibnamedelima Yan},
+         giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LCP}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Chee\bibnamedelima Peng},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Skin cancer detection, Feature selection, Hyper-parameter tuning,
+  Evolutionary algorithm, Deep and ensemble classifier}
+    \strng{namehash}{TTYZLLCP1}
+    \strng{fullhash}{TTYZLLCP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    In this research, we propose an intelligent decision support system for
+  skin cancer detection. Since generating an effective lesion representation is
+  a vital step to ensure the success of lesion classification, the
+  discriminative power of different types of features is exploited.
+  Specifically, we combine clinically important asymmetry, border irregularity,
+  colour and dermoscopic structure features with texture features extracted
+  using Grey Level Run Length Matrix, Local Binary Patterns, and Histogram of
+  Oriented Gradients operators for lesion representation. Then, we propose two
+  enhanced Particle Swarm Optimization (PSO) models for feature optimization.
+  The first model employs adaptive acceleration coefficients, multiple remote
+  leaders, in-depth sub-dimension feature search and re-initialization
+  mechanisms to overcome stagnation. The second model uses random acceleration
+  coefficients, instead of adaptive ones, based on non-linear circle, sine and
+  helix functions, respectively, to increase diversification and
+  intensification. Ensemble classifiers are also constructed with each base
+  model trained using each optimized feature subset. A deep convolutional
+  neural network is devised whose hyper-parameters are fine-tuned using the
+  proposed PSO models. Extensive experimental studies using dermoscopic skin
+  lesion data, medical data from the UCI machine learning repository, and
+  ALL-IDB2 image data are conducted to evaluate the model efficiency
+  systematically. The results from empirical evaluations and statistical tests
+  indicate the superiority of the proposed models over other advanced PSO
+  variants and classical search methods pertaining to discriminative feature
+  selection and optimal hyper-parameter identification for deep learning
+  networks in lesion classification as well as other disease diagnosis.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.asoc.2019.105725
+    \endverb
+    \field{issn}{1568-4946}
+    \field{pages}{105725}
+    \field{title}{Intelligent skin cancer diagnosis using improved particle
+  swarm optimization and deep learning models}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S156849461930506X
+    \endverb
+    \field{volume}{84}
+    \field{journaltitle}{Applied Soft Computing}
+    \field{year}{2019}
+  \endentry
+
   \entry{tmux}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
@@ -854,6 +1564,20 @@
     \verb{url}
     \verb https://github.com/tmux/tmux/wiki
     \endverb
+  \endentry
+
+  \entry{Typescript}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{TypeScript}
+  \endentry
+
+  \entry{TypescriptTemplate}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Typescript Template}
   \endentry
 
   \entry{10.3389/fneur.2021.640696}{article}{}
@@ -948,6 +1672,13 @@
     \field{year}{2021}
   \endentry
 
+  \entry{Vite}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Vite}
+  \endentry
+
   \entry{VsCode}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{V}
@@ -956,6 +1687,62 @@
     \verb{url}
     \verb https://en.wikipedia.org/wiki/Visual_Studio_Code
     \endverb
+  \endentry
+
+  \entry{BMVC2016_87}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ZS}{%
+         family={Zagoruyko},
+         familyi={Z\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Komodakis},
+         familyi={K\bibinitperiod},
+         given={Nikos},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=RCWERH}{%
+         family={Richard C.\bibnamedelima Wilson},
+         familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+         given={Edwin R.\bibnamedelima Hancock},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+      {{hash=SWAP}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={William A.\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BMVA Press}%
+    }
+    \strng{namehash}{ZSKN1}
+    \strng{fullhash}{ZSKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the British Machine Vision Conference
+  (BMVC)}
+    \verb{doi}
+    \verb 10.5244/C.30.87
+    \endverb
+    \field{isbn}{1-901725-59-6}
+    \field{pages}{87.1\bibrangedash 87.12}
+    \field{title}{Wide Residual Networks}
+    \verb{url}
+    \verb https://dx.doi.org/10.5244/C.30.87
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

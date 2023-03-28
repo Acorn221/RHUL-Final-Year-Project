@@ -1,12 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  17 MAR 2023 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  14 MAR 2023 22:59
 =======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  17 MAR 2023 12:36
->>>>>>> Project-report
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  27 MAR 2023 14:28
+>>>>>>> Report-Skin-Cancer
 =======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  15 MAR 2023 23:56
->>>>>>> OASIS-Dataset
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  28 MAR 2023 00:20
+>>>>>>> Report-Skin-Cancer
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -249,62 +249,87 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count286
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count287
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count284
+\etb@tempcnta=\count288
 ) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count285
+\lrq@indent=\count289
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count286
-\c@listtotal=\count287
-\c@listcount=\count288
-\c@liststart=\count289
-\c@liststop=\count290
-\c@citecount=\count291
-\c@citetotal=\count292
-\c@multicitecount=\count293
-\c@multicitetotal=\count294
-\c@instcount=\count295
-\c@maxnames=\count296
-\c@minnames=\count297
-\c@maxitems=\count298
-\c@minitems=\count299
-\c@citecounter=\count300
-\c@maxcitecounter=\count301
-\c@savedcitecounter=\count302
-\c@uniquelist=\count303
-\c@uniquename=\count304
-\c@refsection=\count305
-\c@refsegment=\count306
-\c@maxextratitle=\count307
-\c@maxextratitleyear=\count308
-\c@maxextraname=\count309
-\c@maxextradate=\count310
-\c@maxextraalpha=\count311
-\c@abbrvpenalty=\count312
-\c@highnamepenalty=\count313
-\c@lownamepenalty=\count314
-\c@maxparens=\count315
-\c@parenlevel=\count316
-\blx@tempcnta=\count317
-\blx@tempcntb=\count318
-\blx@tempcntc=\count319
-\c@blx@maxsection=\count320
-\blx@maxsegment@0=\count321
-\blx@notetype=\count322
-\blx@parenlevel@text=\count323
-\blx@parenlevel@foot=\count324
-\blx@sectionciteorder@0=\count325
-\blx@sectionciteorderinternal@0=\count326
-\blx@entrysetcounter=\count327
-\blx@biblioinstance=\count328
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\c@blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\blx@sectionciteorderinternal@0=\count330
+\blx@entrysetcounter=\count331
+\blx@biblioinstance=\count332
 \labelnumberwidth=\skip93
 \labelalphawidth=\skip94
 \biblabelsep=\skip95
@@ -316,9 +341,9 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
-\c@mincomprange=\count329
-\c@maxcomprange=\count330
-\c@mincompwidth=\count331
+\c@mincomprange=\count333
+\c@maxcomprange=\count334
+\c@mincompwidth=\count335
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -326,74 +351,74 @@ File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count332
-\c@savedafterword=\count333
-\c@annotator=\count334
-\c@savedannotator=\count335
-\c@author=\count336
-\c@savedauthor=\count337
-\c@bookauthor=\count338
-\c@savedbookauthor=\count339
-\c@commentator=\count340
-\c@savedcommentator=\count341
-\c@editor=\count342
-\c@savededitor=\count343
-\c@editora=\count344
-\c@savededitora=\count345
-\c@editorb=\count346
-\c@savededitorb=\count347
-\c@editorc=\count348
-\c@savededitorc=\count349
-\c@foreword=\count350
-\c@savedforeword=\count351
-\c@holder=\count352
-\c@savedholder=\count353
-\c@introduction=\count354
-\c@savedintroduction=\count355
-\c@namea=\count356
-\c@savednamea=\count357
-\c@nameb=\count358
-\c@savednameb=\count359
-\c@namec=\count360
-\c@savednamec=\count361
-\c@translator=\count362
-\c@savedtranslator=\count363
-\c@shortauthor=\count364
-\c@savedshortauthor=\count365
-\c@shorteditor=\count366
-\c@savedshorteditor=\count367
-\c@labelname=\count368
-\c@savedlabelname=\count369
-\c@institution=\count370
-\c@savedinstitution=\count371
-\c@lista=\count372
-\c@savedlista=\count373
-\c@listb=\count374
-\c@savedlistb=\count375
-\c@listc=\count376
-\c@savedlistc=\count377
-\c@listd=\count378
-\c@savedlistd=\count379
-\c@liste=\count380
-\c@savedliste=\count381
-\c@listf=\count382
-\c@savedlistf=\count383
-\c@location=\count384
-\c@savedlocation=\count385
-\c@organization=\count386
-\c@savedorganization=\count387
-\c@origlocation=\count388
-\c@savedoriglocation=\count389
-\c@origpublisher=\count390
-\c@savedorigpublisher=\count391
-\c@publisher=\count392
-\c@savedpublisher=\count393
-\c@language=\count394
-\c@savedlanguage=\count395
-\c@origlanguage=\count396
-\c@savedoriglanguage=\count397
-\c@pageref=\count398
-\c@savedpageref=\count399
+\c@afterword=\count336
+\c@savedafterword=\count337
+\c@annotator=\count338
+\c@savedannotator=\count339
+\c@author=\count340
+\c@savedauthor=\count341
+\c@bookauthor=\count342
+\c@savedbookauthor=\count343
+\c@commentator=\count344
+\c@savedcommentator=\count345
+\c@editor=\count346
+\c@savededitor=\count347
+\c@editora=\count348
+\c@savededitora=\count349
+\c@editorb=\count350
+\c@savededitorb=\count351
+\c@editorc=\count352
+\c@savededitorc=\count353
+\c@foreword=\count354
+\c@savedforeword=\count355
+\c@holder=\count356
+\c@savedholder=\count357
+\c@introduction=\count358
+\c@savedintroduction=\count359
+\c@namea=\count360
+\c@savednamea=\count361
+\c@nameb=\count362
+\c@savednameb=\count363
+\c@namec=\count364
+\c@savednamec=\count365
+\c@translator=\count366
+\c@savedtranslator=\count367
+\c@shortauthor=\count368
+\c@savedshortauthor=\count369
+\c@shorteditor=\count370
+\c@savedshorteditor=\count371
+\c@labelname=\count372
+\c@savedlabelname=\count373
+\c@institution=\count374
+\c@savedinstitution=\count375
+\c@lista=\count376
+\c@savedlista=\count377
+\c@listb=\count378
+\c@savedlistb=\count379
+\c@listc=\count380
+\c@savedlistc=\count381
+\c@listd=\count382
+\c@savedlistd=\count383
+\c@liste=\count384
+\c@savedliste=\count385
+\c@listf=\count386
+\c@savedlistf=\count387
+\c@location=\count388
+\c@savedlocation=\count389
+\c@organization=\count390
+\c@savedorganization=\count391
+\c@origlocation=\count392
+\c@savedoriglocation=\count393
+\c@origpublisher=\count394
+\c@savedorigpublisher=\count395
+\c@publisher=\count396
+\c@savedpublisher=\count397
+\c@language=\count398
+\c@savedlanguage=\count399
+\c@origlanguage=\count400
+\c@savedoriglanguage=\count401
+\c@pageref=\count402
+\c@savedpageref=\count403
 \shorthandwidth=\skip101
 \shortjournalwidth=\skip102
 \shortserieswidth=\skip103
@@ -427,19 +452,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
-\c@textcitecount=\count400
-\c@textcitetotal=\count401
-\c@textcitemaxnames=\count402
-\c@biburlbigbreakpenalty=\count403
-\c@biburlbreakpenalty=\count404
-\c@biburlnumpenalty=\count405
-\c@biburlucpenalty=\count406
-\c@biburllcpenalty=\count407
+\c@textcitecount=\count404
+\c@textcitetotal=\count405
+\c@textcitemaxnames=\count406
+\c@biburlbigbreakpenalty=\count407
+\c@biburlbreakpenalty=\count408
+\c@biburlnumpenalty=\count409
+\c@biburlucpenalty=\count410
+\c@biburllcpenalty=\count411
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count408
+\c@smartand=\count412
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -449,8 +474,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count409
-\c@bbx:relatedtotal=\count410
+\c@bbx:relatedcount=\count413
+\c@bbx:relatedtotal=\count414
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -479,7 +504,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2022-07-04 L3 programming layer (loader) 
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count411
+\l__color_backend_stack_int=\count415
 \l__pdf_internal_box=\box53
 ))
 Package biblatex Info: ... and expl3
@@ -491,29 +516,29 @@ Package: xparse 2022-06-22 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
-\@quotelevel=\count412
-\@quotereset=\count413
+\@quotelevel=\count416
+\@quotereset=\count417
  (final_report.aux)
 \openout1 = `final_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -550,16 +575,16 @@ LaTeX Font Info:    ... okay on input line 20.
 
 (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count414
-\scratchdimen=\dimen157
+\scratchcounter=\count418
+\scratchdimen=\dimen165
 \scratchbox=\box54
-\nofMPsegments=\count415
-\nofMParguments=\count416
+\nofMPsegments=\count419
+\nofMParguments=\count420
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count417
-\MPscratchDim=\dimen158
-\MPnumerator=\count418
-\makeMPintoPDFobject=\count419
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen166
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
 \everyMPtoPDFconversion=\toks20
 ) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -567,12 +592,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 21.
  (final_report.out) (final_report.out)
 \@outlinefile=\write4
 \openout4 = `final_report.out'.
 
-\c@lstlisting=\count420
+\c@lstlisting=\count424
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -594,29 +621,26 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Gorgolewski2016':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'BMVC2016_87':
+(biblatex)                - Invalid format of field 'month'.
+
 )
-Package biblatex Info: Reference section=0 on input line 20.
-Package biblatex Info: Reference segment=0 on input line 20.
-<<<<<<< HEAD
-<logo.pdf, id=219, 948.54375pt x 473.77pt>
-=======
-<logo.pdf, id=223, 948.54375pt x 473.77pt>
->>>>>>> Project-report
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+<logo.pdf, id=315, 948.54375pt x 473.77pt>
 File: logo.pdf Graphic file (type pdf)
 <use logo.pdf>
-Package pdftex.def Info: logo.pdf  used on input line 23.
+Package pdftex.def Info: logo.pdf  used on input line 24.
 (pdftex.def)             Requested size: 284.82584pt x 142.26378pt.
  [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./logo.pdf>]
-<<<<<<< HEAD
-<images/signature.jpg, id=238, 913.4125pt x 384.43625pt>
-=======
-<images/signature.jpg, id=242, 913.4125pt x 384.43625pt>
->>>>>>> Project-report
+<images/signature.jpg, id=334, 913.4125pt x 384.43625pt>
 File: images/signature.jpg Graphic file (type jpg)
 <use images/signature.jpg>
-Package pdftex.def Info: images/signature.jpg  used on input line 51.
+Package pdftex.def Info: images/signature.jpg  used on input line 52.
 (pdftex.def)             Requested size: 142.26378pt x 59.87444pt.
  [1
 
@@ -641,522 +665,405 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7.69997> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.5> on input line 1.
-[2])
+[2] [3])
 \tf@toc=\write5
 \openout5 = `final_report.toc'.
 
- [3] [4
+ [4] [5
 
-] [5
+] [6
 
 ]
-Overfull \hbox (4.89122pt too wide) in paragraph at lines 124--125
+Overfull \hbox (4.89122pt too wide) in paragraph at lines 113--114
 \OT1/cmr/m/n/10.95 part-ment of In-for-ma-tion and Com-puter Sci-ence, Irvine, CA, 1999, http://kdd.ics.uci.edu. 
  []
 
-[6]
+[7]
 Chapter 1.
-[7
-
-]
-Chapter 2.
-<<<<<<< HEAD
-<images/NeuralNetwork.png, id=329, 578.16pt x 297.36093pt>
-=======
-<images/NeuralNetwork.png, id=334, 578.16pt x 297.36093pt>
->>>>>>> Project-report
-File: images/NeuralNetwork.png Graphic file (type png)
-<use images/NeuralNetwork.png>
-Package pdftex.def Info: images/NeuralNetwork.png  used on input line 147.
-(pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
 [8
 
- <./images/NeuralNetwork.png>] [9]
-<<<<<<< HEAD
-<images/Principe_cbir.png, id=349, 699.36281pt x 262.73157pt>
-=======
-<images/Principe_cbir.png, id=354, 699.36281pt x 262.73157pt>
->>>>>>> Project-report
+] [9]
+Chapter 2.
+<images/NeuralNetwork.png, id=464, 578.16pt x 297.36093pt>
+File: images/NeuralNetwork.png Graphic file (type png)
+<use images/NeuralNetwork.png>
+Package pdftex.def Info: images/NeuralNetwork.png  used on input line 150.
+(pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
+[10
+
+ <./images/NeuralNetwork.png>] [11]
+<images/Principe_cbir.png, id=485, 699.36281pt x 262.73157pt>
 File: images/Principe_cbir.png Graphic file (type png)
 <use images/Principe_cbir.png>
-Package pdftex.def Info: images/Principe_cbir.png  used on input line 220.
+Package pdftex.def Info: images/Principe_cbir.png  used on input line 223.
 (pdftex.def)             Requested size: 308.71106pt x 115.97507pt.
- [10 <./images/Principe_cbir.png>] [11]
+ [12 <./images/Principe_cbir.png>] [13]
 Chapter 3.
-[12
+[14
 
-]
+] [15]
 Chapter 4.
-[13
+<images/MobileNetv3-structure.png, id=521, 2594.19188pt x 892.08281pt>
+File: images/MobileNetv3-structure.png Graphic file (type png)
+<use images/MobileNetv3-structure.png>
+Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 355.
+(pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
+<images/mobilenet-comparison.png, id=524, 2151.53813pt x 920.68968pt>
+File: images/mobilenet-comparison.png Graphic file (type png)
+<use images/mobilenet-comparison.png>
+Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 362.
+(pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
+[16
+
+ <./images/MobileNetv3-structure.png> <./images/mobilenet-comparison.png>] [17]
+<images/VGG19-architecture.png, id=550, 1350.54562pt x 742.27313pt>
+File: images/VGG19-architecture.png Graphic file (type png)
+<use images/VGG19-architecture.png>
+Package pdftex.def Info: images/VGG19-architecture.png  used on input line 396.
+(pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
+<images/EfficientNetComparison.PNG, id=554, 1174.3875pt x 931.22906pt>
+File: images/EfficientNetComparison.PNG Graphic file (type png)
+<use images/EfficientNetComparison.PNG>
+Package pdftex.def Info: images/EfficientNetComparison.PNG  used on input line 409.
+(pdftex.def)             Requested size: 352.81552pt x 279.75453pt.
+ [18 <./images/VGG19-architecture.png> <./images/EfficientNetComparison.PNG>]
+<images/EfficientNetPerformanceDatasets.PNG, id=569, 1204.5pt x 658.71094pt>
+File: images/EfficientNetPerformanceDatasets.PNG Graphic file (type png)
+<use images/EfficientNetPerformanceDatasets.PNG>
+Package pdftex.def Info: images/EfficientNetPerformanceDatasets.PNG  used on input line 422.
+(pdftex.def)             Requested size: 352.81552pt x 192.94104pt.
+<images/EfficientNetv2-Performance-Graph.png, id=573, 651.93562pt x 511.9125pt>
+File: images/EfficientNetv2-Performance-Graph.png Graphic file (type png)
+<use images/EfficientNetv2-Performance-Graph.png>
+Package pdftex.def Info: images/EfficientNetv2-Performance-Graph.png  used on input line 432.
+(pdftex.def)             Requested size: 352.81552pt x 277.04572pt.
+ [19 <./images/EfficientNetPerformanceDatasets.PNG>]
+<images/Xception-structure.png, id=588, 788.9475pt x 546.54187pt>
+File: images/Xception-structure.png Graphic file (type png)
+<use images/Xception-structure.png>
+Package pdftex.def Info: images/Xception-structure.png  used on input line 445.
+(pdftex.def)             Requested size: 352.81552pt x 244.40709pt.
+ [20 <./images/EfficientNetv2-Performance-Graph.png> <./images/Xception-structure.png>] [21]
+Chapter 5.
+[22
 
 ] (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [14] [15] [16]
-Chapter 5.
-[17
-
-] [18]
+) [23] [24] [25]
 Chapter 6.
-[19
-
-]
-<<<<<<< HEAD
-<images/bad-training-result.png, id=448, 430.0065pt x 328.8285pt>
-File: images/bad-training-result.png Graphic file (type png)
-<use images/bad-training-result.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/bad-training-result.png  used on input line 476.
-=======
-Package pdftex.def Info: images/bad-training-result.png  used on input line 422.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
- [20 <./images/bad-training-result.png>] [21]
-<images/ConfusionMatrix.png, id=474, 1054.94125pt x 747.79375pt>
-File: images/ConfusionMatrix.png Graphic file (type png)
-<use images/ConfusionMatrix.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 526.
-=======
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 468.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
- [22 <./images/ConfusionMatrix.png (PNG copy)>]
-<images/moderateDemented.jpg, id=482, 200.75pt x 190.7125pt>
-File: images/moderateDemented.jpg Graphic file (type jpg)
-<use images/moderateDemented.jpg>
-<<<<<<< HEAD
-Package pdftex.def Info: images/moderateDemented.jpg  used on input line 540.
-=======
-Package pdftex.def Info: images/moderateDemented.jpg  used on input line 482.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/mildDemented.jpg, id=483, 200.75pt x 190.7125pt>
-File: images/mildDemented.jpg Graphic file (type jpg)
-<use images/mildDemented.jpg>
-<<<<<<< HEAD
-Package pdftex.def Info: images/mildDemented.jpg  used on input line 541.
-(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
- [23 <./images/moderateDemented.jpg> <./images/mildDemented.jpg>]
-Chapter 7.
-<images/MobileNetv3-structure.png, id=494, 2594.19188pt x 892.08281pt>
-File: images/MobileNetv3-structure.png Graphic file (type png)
-<use images/MobileNetv3-structure.png>
-Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 568.
-=======
-Package pdftex.def Info: images/mildDemented.jpg  used on input line 483.
-(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/flower1.jpg, id=441, 669.50125pt x 501.875pt>
-File: images/flower1.jpg Graphic file (type jpg)
-<use images/flower1.jpg>
-Package pdftex.def Info: images/flower1.jpg  used on input line 495.
-(pdftex.def)             Requested size: 142.26457pt x 142.26239pt.
-<images/flower2.jpg, id=442, 582.175pt x 501.875pt>
-File: images/flower2.jpg Graphic file (type jpg)
-<use images/flower2.jpg>
-Package pdftex.def Info: images/flower2.jpg  used on input line 496.
-(pdftex.def)             Requested size: 142.25658pt x 142.26239pt.
- [19 <./images/moderateDemented.jpg> <./images/mildDemented.jpg> <./images/flower1.jpg> <./images/flower2.jpg>]
-Chapter 5.
-<images/MobileNetv3-structure.png, id=453, 2594.19188pt x 892.08281pt>
-File: images/MobileNetv3-structure.png Graphic file (type png)
-<use images/MobileNetv3-structure.png>
-Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 530.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
-<images/mobilenet-comparison.png, id=496, 2151.53813pt x 920.68968pt>
-File: images/mobilenet-comparison.png Graphic file (type png)
-<use images/mobilenet-comparison.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 575.
-=======
-<images/bad-training-result.png, id=455, 430.0065pt x 328.8285pt>
-File: images/bad-training-result.png Graphic file (type png)
-<use images/bad-training-result.png>
-Package pdftex.def Info: images/bad-training-result.png  used on input line 484.
-(pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
- [20 <./images/bad-training-result.png>] [21]
-<images/ConfusionMatrix.png, id=481, 1054.94125pt x 747.79375pt>
-File: images/ConfusionMatrix.png Graphic file (type png)
-<use images/ConfusionMatrix.png>
-Package pdftex.def Info: images/ConfusionMatrix.png  used on input line 534.
-(pdftex.def)             Requested size: 284.52756pt x 201.6788pt.
- [22 <./images/ConfusionMatrix.png (PNG copy)>]
-<images/moderateDemented.jpg, id=489, 200.75pt x 190.7125pt>
-File: images/moderateDemented.jpg Graphic file (type jpg)
-<use images/moderateDemented.jpg>
-Package pdftex.def Info: images/moderateDemented.jpg  used on input line 548.
-(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
-<images/mildDemented.jpg, id=490, 200.75pt x 190.7125pt>
-File: images/mildDemented.jpg Graphic file (type jpg)
-<use images/mildDemented.jpg>
-Package pdftex.def Info: images/mildDemented.jpg  used on input line 549.
-(pdftex.def)             Requested size: 142.27312pt x 142.26866pt.
- [23 <./images/moderateDemented.jpg> <./images/mildDemented.jpg>]
-Chapter 7.
-<images/MobileNetv3-structure.png, id=501, 2594.19188pt x 892.08281pt>
-File: images/MobileNetv3-structure.png Graphic file (type png)
-<use images/MobileNetv3-structure.png>
-Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 576.
-(pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
-<images/mobilenet-comparison.png, id=503, 2151.53813pt x 920.68968pt>
-File: images/mobilenet-comparison.png Graphic file (type png)
-<use images/mobilenet-comparison.png>
-Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 583.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 537.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
-[24
-
- <./images/MobileNetv3-structure.png>]
-<<<<<<< HEAD
-<images/VGG19-architecture.png, id=511, 1350.54562pt x 742.27313pt>
-File: images/VGG19-architecture.png Graphic file (type png)
-<use images/VGG19-architecture.png>
-Package pdftex.def Info: images/VGG19-architecture.png  used on input line 603.
-=======
-<images/VGG19-architecture.png, id=518, 1350.54562pt x 742.27313pt>
-File: images/VGG19-architecture.png Graphic file (type png)
-<use images/VGG19-architecture.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/VGG19-architecture.png  used on input line 611.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/VGG19-architecture.png  used on input line 566.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
- [25 <./images/mobilenet-comparison.png> <./images/VGG19-architecture.png>]
-Chapter 8.
 [26
 
 ] [27]
-Chapter 9.
-<<<<<<< HEAD
-<images/nWBV-vs-Age.png, id=550, 416.2752pt x 312.2064pt>
-File: images/nWBV-vs-Age.png Graphic file (type png)
-<use images/nWBV-vs-Age.png>
-Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 683.
-=======
-<images/nWBV-vs-Age.png, id=557, 416.2752pt x 312.2064pt>
-File: images/nWBV-vs-Age.png Graphic file (type png)
-<use images/nWBV-vs-Age.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 691.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 668.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 441.01773pt x 330.78pt.
+Chapter 7.
+
+Overfull \hbox (6.91362pt too wide) in paragraph at lines 631--631
+[]\OT1/cmss/bx/n/17.28 Problems With The Datasets and How I Fixed Them 
+ []
+
 [28
 
- <./images/nWBV-vs-Age.png>]
-<<<<<<< HEAD
-<images/eTIV-vs-Age.png, id=557, 419.166pt x 312.2064pt>
-File: images/eTIV-vs-Age.png Graphic file (type png)
-<use images/eTIV-vs-Age.png>
-Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 694.
-=======
-<images/eTIV-vs-Age.png, id=564, 419.166pt x 312.2064pt>
-File: images/eTIV-vs-Age.png Graphic file (type png)
-<use images/eTIV-vs-Age.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 702.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 679.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
- [29
-
- <./images/eTIV-vs-Age.png>]
-Chapter 10.
-<<<<<<< HEAD
-<images/good-training-acc-vs-val.png, id=564, 1193.9004pt x 699.5736pt>
-File: images/good-training-acc-vs-val.png Graphic file (type png)
-<use images/good-training-acc-vs-val.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 705.
-=======
-<images/good-training-acc-vs-val.png, id=571, 1193.9004pt x 699.5736pt>
-File: images/good-training-acc-vs-val.png Graphic file (type png)
-<use images/good-training-acc-vs-val.png>
-Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 713.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 690.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
-[30
-
- <./images/good-training-acc-vs-val.png>]
-<<<<<<< HEAD
-<images/inceptionv3-accuracy-vs-val-acc.png, id=573, 1171.4967pt x 654.7662pt>
-File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
-<use images/inceptionv3-accuracy-vs-val-acc.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 715.
-=======
-Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 700.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
- [31 <./images/inceptionv3-accuracy-vs-val-acc.png>]
-<images/mobilenet-v3-small-vs-inception-v3.png, id=582, 1178.7237pt x 682.9515pt>
-File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
-<use images/mobilenet-v3-small-vs-inception-v3.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 738.
-=======
-Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 723.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
- [32 <./images/mobilenet-v3-small-vs-inception-v3.png>]
-<images/model-sizes.png, id=590, 791.3565pt x 344.0052pt>
-File: images/model-sizes.png Graphic file (type png)
-<use images/model-sizes.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/model-sizes.png  used on input line 755.
-=======
-Package pdftex.def Info: images/model-sizes.png  used on input line 740.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
-<images/ResNet101-vs-Inceptionv3.png, id=591, 1182.3372pt x 677.8926pt>
-File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
-<use images/ResNet101-vs-Inceptionv3.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 764.
-=======
-<images/inceptionv3-accuracy-vs-val-acc.png, id=580, 1171.4967pt x 654.7662pt>
-File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
-<use images/inceptionv3-accuracy-vs-val-acc.png>
-Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 723.
-(pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
- [31 <./images/inceptionv3-accuracy-vs-val-acc.png>]
-<images/mobilenet-v3-small-vs-inception-v3.png, id=589, 1178.7237pt x 682.9515pt>
-File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
-<use images/mobilenet-v3-small-vs-inception-v3.png>
-Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 746.
-(pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
- [32 <./images/mobilenet-v3-small-vs-inception-v3.png>]
-<images/model-sizes.png, id=597, 791.3565pt x 344.0052pt>
-File: images/model-sizes.png Graphic file (type png)
-<use images/model-sizes.png>
-Package pdftex.def Info: images/model-sizes.png  used on input line 763.
-(pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
-<images/ResNet101-vs-Inceptionv3.png, id=598, 1182.3372pt x 677.8926pt>
-File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
-<use images/ResNet101-vs-Inceptionv3.png>
-Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 772.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 749.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
- [33 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>]
-Chapter 11.
-[34
-
 ]
-Chapter 12.
+<images/bad-training-result.png, id=681, 430.0065pt x 328.8285pt>
+File: images/bad-training-result.png Graphic file (type png)
+<use images/bad-training-result.png>
+Package pdftex.def Info: images/bad-training-result.png  used on input line 646.
+(pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
+ [29 <./images/bad-training-result.png>] [30] [31]
+Chapter 8.
+
+LaTeX Warning: Citation 'TensorflowJS' on page 32 undefined on input line 730.
+
+[32
+
+] [33] [34]
+Chapter 9.
 [35
 
 ]
-Chapter 13.
+Chapter 10.
+<images/nWBV-vs-Age.png, id=762, 416.2752pt x 312.2064pt>
+File: images/nWBV-vs-Age.png Graphic file (type png)
+<use images/nWBV-vs-Age.png>
+Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 804.
+(pdftex.def)             Requested size: 441.01773pt x 330.78pt.
 [36
 
+ <./images/nWBV-vs-Age.png>]
+<images/eTIV-vs-Age.png, id=771, 419.166pt x 312.2064pt>
+File: images/eTIV-vs-Age.png Graphic file (type png)
+<use images/eTIV-vs-Age.png>
+Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 815.
+(pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
+ [37
+
+ <./images/eTIV-vs-Age.png>]
+<images/benign-skin-cancer.png, id=779, 200.75pt x 200.75pt>
+File: images/benign-skin-cancer.png Graphic file (type png)
+<use images/benign-skin-cancer.png>
+Package pdftex.def Info: images/benign-skin-cancer.png  used on input line 827.
+(pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
+<images/malignant-skin-cancer.png, id=780, 200.75pt x 200.75pt>
+File: images/malignant-skin-cancer.png Graphic file (type png)
+<use images/malignant-skin-cancer.png>
+Package pdftex.def Info: images/malignant-skin-cancer.png  used on input line 828.
+(pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
+ [38
+
+ <./images/benign-skin-cancer.png (PNG copy)> <./images/malignant-skin-cancer.png (PNG copy)>]
+Chapter 11.
+<images/good-training-acc-vs-val.png, id=786, 1193.9004pt x 699.5736pt>
+File: images/good-training-acc-vs-val.png Graphic file (type png)
+<use images/good-training-acc-vs-val.png>
+Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 845.
+(pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
+[39
+
+ <./images/good-training-acc-vs-val.png>]
+<images/inceptionv3-accuracy-vs-val-acc.png, id=794, 1171.4967pt x 654.7662pt>
+File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
+<use images/inceptionv3-accuracy-vs-val-acc.png>
+Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 855.
+(pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
+ [40 <./images/inceptionv3-accuracy-vs-val-acc.png>]
+<images/mobilenet-v3-small-vs-inception-v3.png, id=804, 1178.7237pt x 682.9515pt>
+File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
+<use images/mobilenet-v3-small-vs-inception-v3.png>
+Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 877.
+(pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
+ [41 <./images/mobilenet-v3-small-vs-inception-v3.png>]
+<images/model-sizes.png, id=812, 791.3565pt x 344.0052pt>
+File: images/model-sizes.png Graphic file (type png)
+<use images/model-sizes.png>
+Package pdftex.def Info: images/model-sizes.png  used on input line 892.
+(pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
+<images/ResNet101-vs-Inceptionv3.png, id=813, 1182.3372pt x 677.8926pt>
+File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
+<use images/ResNet101-vs-Inceptionv3.png>
+Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 900.
+(pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
+ [42 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>] [43]
+Chapter 12.
+[44
+
 ]
-<<<<<<< HEAD
-<<<<<<< HEAD
-Overfull \hbox (51.7374pt too wide) in paragraph at lines 864--865
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+<images/skin-cancer-loss.png, id=837, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-loss.png Graphic file (type png)
+<use images/skin-cancer-loss.png>
+Package pdftex.def Info: images/skin-cancer-loss.png  used on input line 930.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 930--931
+ [][] 
  []
 
-<images/better-output.png, id=630, 399.4925pt x 279.0425pt>
-File: images/better-output.png Graphic file (type png)
-<use images/better-output.png>
-Package pdftex.def Info: images/better-output.png  used on input line 875.
-(pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
-<images/training.png, id=631, 445.665pt x 668.4975pt>
-File: images/training.png Graphic file (type png)
-<use images/training.png>
-Package pdftex.def Info: images/training.png  used on input line 881.
-(pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
-<images/positive-progress.png, id=632, 387.4475pt x 279.0425pt>
-File: images/positive-progress.png Graphic file (type png)
-<use images/positive-progress.png>
-Package pdftex.def Info: images/positive-progress.png  used on input line 887.
-(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
-<images/fine-tuning-more.png, id=633, 393.47pt x 279.0425pt>
-File: images/fine-tuning-more.png Graphic file (type png)
-<use images/fine-tuning-more.png>
-Package pdftex.def Info: images/fine-tuning-more.png  used on input line 895.
-(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/maxing-out.png, id=634, 393.47pt x 279.0425pt>
-File: images/maxing-out.png Graphic file (type png)
-<use images/maxing-out.png>
-Package pdftex.def Info: images/maxing-out.png  used on input line 903.
-(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/mobilenetv3-first-attempt.png, id=635, 387.4475pt x 279.0425pt>
-File: images/mobilenetv3-first-attempt.png Graphic file (type png)
-<use images/mobilenetv3-first-attempt.png>
-Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 909.
-=======
-Overfull \hbox (51.7374pt too wide) in paragraph at lines 872--873
-=======
-Overfull \hbox (51.7374pt too wide) in paragraph at lines 849--850
->>>>>>> OASIS-Dataset
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[45 <./images/skin-cancer-loss.png>]
+<images/skin-cancer-validation-accuracy-last-50.png, id=844, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-validation-accuracy-last-50.png Graphic file (type png)
+<use images/skin-cancer-validation-accuracy-last-50.png>
+Package pdftex.def Info: images/skin-cancer-validation-accuracy-last-50.png  used on input line 939.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 939--940
+ [][] 
  []
 
-<images/better-output.png, id=637, 399.4925pt x 279.0425pt>
-File: images/better-output.png Graphic file (type png)
-<use images/better-output.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/better-output.png  used on input line 883.
-=======
-Package pdftex.def Info: images/better-output.png  used on input line 860.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
-<images/training.png, id=638, 445.665pt x 668.4975pt>
-File: images/training.png Graphic file (type png)
-<use images/training.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/training.png  used on input line 889.
-=======
-Package pdftex.def Info: images/training.png  used on input line 866.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
-<images/positive-progress.png, id=639, 387.4475pt x 279.0425pt>
-File: images/positive-progress.png Graphic file (type png)
-<use images/positive-progress.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/positive-progress.png  used on input line 895.
-=======
-Package pdftex.def Info: images/positive-progress.png  used on input line 872.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
-<images/fine-tuning-more.png, id=640, 393.47pt x 279.0425pt>
-File: images/fine-tuning-more.png Graphic file (type png)
-<use images/fine-tuning-more.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/fine-tuning-more.png  used on input line 903.
-=======
-Package pdftex.def Info: images/fine-tuning-more.png  used on input line 880.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/maxing-out.png, id=641, 393.47pt x 279.0425pt>
-File: images/maxing-out.png Graphic file (type png)
-<use images/maxing-out.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/maxing-out.png  used on input line 911.
-=======
-Package pdftex.def Info: images/maxing-out.png  used on input line 888.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
-<images/mobilenetv3-first-attempt.png, id=642, 387.4475pt x 279.0425pt>
-File: images/mobilenetv3-first-attempt.png Graphic file (type png)
-<use images/mobilenetv3-first-attempt.png>
-<<<<<<< HEAD
-Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 917.
->>>>>>> Project-report
-=======
-Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 894.
->>>>>>> OASIS-Dataset
-(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
-[37] [38 <./images/better-output.png>] [39 <./images/training.png>] [40 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [41 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>]
+<images/Skin-cancer-validation-accuracy-last-50-low-performers.png, id=845, 897.5934pt x 359.1819pt>
+File: images/Skin-cancer-validation-accuracy-last-50-low-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-low-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-low-performers.png  used on input line 949.
+(pdftex.def)             Requested size: 485.1222pt x 194.1307pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 949--950
+ [][] 
+ []
+
+<images/Skin-cancer-validation-accuracy-last-50-high-performers.png, id=846, 897.5934pt x 374.3586pt>
+File: images/Skin-cancer-validation-accuracy-last-50-high-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-high-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-high-performers.png  used on input line 958.
+(pdftex.def)             Requested size: 485.1222pt x 202.33342pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 958--959
+ [][] 
+ []
+
+[46 <./images/skin-cancer-validation-accuracy-last-50.png> <./images/Skin-cancer-validation-accuracy-last-50-low-performers.png>]
+<images/skin-cancer-model-sizes-graph.png, id=855, 891.0891pt x 384.4764pt>
+File: images/skin-cancer-model-sizes-graph.png Graphic file (type png)
+<use images/skin-cancer-model-sizes-graph.png>
+Package pdftex.def Info: images/skin-cancer-model-sizes-graph.png  used on input line 965.
+(pdftex.def)             Requested size: 485.1222pt x 209.31548pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 965--966
+ [][] 
+ []
+
+[47 <./images/Skin-cancer-validation-accuracy-last-50-high-performers.png> <./images/skin-cancer-model-sizes-graph.png>]
+<images/EfficientNetV2B1-initial-training-loss.png, id=864, 422.0568pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-loss.png  used on input line 982.
+(pdftex.def)             Requested size: 176.40439pt x 131.39838pt.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 983.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 983.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-initial-training-accuracy.png, id=865, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-accuracy.png  used on input line 987.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 988.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 988.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-loss.png, id=867, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-loss.png  used on input line 1001.
+(pdftex.def)             Requested size: 176.40439pt x 133.22122pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1002.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1002.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-accuracy.png, id=868, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-accuracy.png  used on input line 1006.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1007.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1007.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-final-training-accuracy.png, id=869, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-final-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-final-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-final-training-accuracy.png  used on input line 1020.
+(pdftex.def)             Requested size: 308.71106pt x 233.15155pt.
+[48 <./images/EfficientNetV2B1-initial-training-loss.png> <./images/EfficientNetV2B1-initial-training-accuracy.png> <./images/EfficientNetV2B1-2nd-training-loss.png> <./images/EfficientNetV2B1-2nd-training-accuracy.png>] [49 <./images/EfficientNetV2B1-final-training-accuracy.png>]
+Chapter 13.
+[50
+
+]
 Chapter 14.
-[42
 
-]
-<<<<<<< HEAD
-<<<<<<< HEAD
-Overfull \hbox (5.1628pt too wide) in paragraph at lines 950--950
-=======
-Overfull \hbox (5.1628pt too wide) in paragraph at lines 958--958
->>>>>>> Project-report
-=======
-Overfull \hbox (5.1628pt too wide) in paragraph at lines 934--934
->>>>>>> OASIS-Dataset
-[]\OT1/cmr/m/it/10.95 Alzheimer's Dataset\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / www . kaggle . com / datasets / uraninjo / augmented -[]
+Overfull \hbox (4.25235pt too wide) in paragraph at lines 1052--1053
+[]\OT1/cmr/m/n/10.95 As AI-based sys-tems such as trans-fer learn-ing mod-els are in-creas-ingly em-ployed for Alzheimer's
  []
 
+[51
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Overfull \hbox (27.32025pt too wide) in paragraph at lines 950--950
-=======
-Overfull \hbox (27.32025pt too wide) in paragraph at lines 958--958
->>>>>>> Project-report
-=======
-Overfull \hbox (27.32025pt too wide) in paragraph at lines 934--934
->>>>>>> OASIS-Dataset
+] [52] [53]
+Chapter 15.
+[54
+
+]
+Overfull \hbox (51.7374pt too wide) in paragraph at lines 1151--1152
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<images/better-output.png, id=927, 399.4925pt x 279.0425pt>
+File: images/better-output.png Graphic file (type png)
+<use images/better-output.png>
+Package pdftex.def Info: images/better-output.png  used on input line 1162.
+(pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
+<images/training.png, id=928, 445.665pt x 668.4975pt>
+File: images/training.png Graphic file (type png)
+<use images/training.png>
+Package pdftex.def Info: images/training.png  used on input line 1168.
+(pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
+<images/positive-progress.png, id=929, 387.4475pt x 279.0425pt>
+File: images/positive-progress.png Graphic file (type png)
+<use images/positive-progress.png>
+Package pdftex.def Info: images/positive-progress.png  used on input line 1174.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+<images/fine-tuning-more.png, id=930, 393.47pt x 279.0425pt>
+File: images/fine-tuning-more.png Graphic file (type png)
+<use images/fine-tuning-more.png>
+Package pdftex.def Info: images/fine-tuning-more.png  used on input line 1182.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/maxing-out.png, id=931, 393.47pt x 279.0425pt>
+File: images/maxing-out.png Graphic file (type png)
+<use images/maxing-out.png>
+Package pdftex.def Info: images/maxing-out.png  used on input line 1190.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/mobilenetv3-first-attempt.png, id=932, 387.4475pt x 279.0425pt>
+File: images/mobilenetv3-first-attempt.png Graphic file (type png)
+<use images/mobilenetv3-first-attempt.png>
+Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 1196.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+[55] [56 <./images/better-output.png>] [57 <./images/training.png>] [58 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [59 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>] [60] [61] [62] [63]
+Chapter 16.
+[64
+
+]
+Overfull \hbox (27.32025pt too wide) in paragraph at lines 1335--1335
 []\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
  []
 
-[43
+[65
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Overfull \hbox (0.12296pt too wide) in paragraph at lines 950--950
-=======
-Overfull \hbox (0.12296pt too wide) in paragraph at lines 934--934
->>>>>>> OASIS-Dataset
-[]\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
- []
-
-[43
-
-] [44] (final_report.aux)
-=======
 ]
-Overfull \hbox (0.12296pt too wide) in paragraph at lines 958--958
+Overfull \hbox (0.12296pt too wide) in paragraph at lines 1335--1335
 []\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
  []
 
-[44] (final_report.aux)
->>>>>>> Project-report
+[66] [67] (final_report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `final_report.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: EAD030103797E6117A09189D1891B2F7;9275.
-=======
-(rerunfilecheck)             Checksum: 31AB809466D7602399A54C355BF2840D;9586.
->>>>>>> Project-report
+(rerunfilecheck)             Checksum: C376B74104A7D29A5547412C9F99E2E8;13568.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                final_report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'final_report.run.xml'.
 \openout1 = `final_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 19175 strings out of 478338
- 336806 string characters out of 2837644
- 1010413 words of memory out of 3000000
- 37173 multiletter control sequences out of 15000+600000
+ 20902 strings out of 478338
+ 375155 string characters out of 2837644
+ 1049358 words of memory out of 3000000
+ 38779 multiletter control sequences out of 15000+600000
  478713 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,77p,1942b,1441s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_report.pdf (45 pages, 2860702 bytes).
+ 72i,13n,77p,1942b,1455s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_report.pdf (68 pages, 4468095 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
- 553 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 19182 strings out of 478338
- 337080 string characters out of 2837644
- 1014219 words of memory out of 3000000
- 37178 multiletter control sequences out of 15000+600000
- 478713 words of font info for 59 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 72i,13n,77p,1942b,1435s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_report.pdf (45 pages, 2865022 bytes).
-PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 227 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> Project-report
+ 1237 PDF objects out of 1440 (max. 8388607)
+ 323 named destinations out of 1000 (max. 500000)
+ 810 words of extra memory for PDF output out of 10000 (max. 10000000)
 
