@@ -4,6 +4,7 @@ import ImageUploading, { ImageType } from 'react-images-uploading';
 import Button from '@mui/material/Button';
 import ReactCrop, { Crop } from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
+import { FaFileUpload } from 'react-icons/fa';
 import { setCanvas, predictImage, PredictionType } from './utils';
 
 /**
@@ -93,7 +94,7 @@ const SkinCancer = () => {
 
   return (
     <div className="h-full flex">
-      <div className="justify-center align-middle bg-white p-5 m-auto w-10/12 md:w-1/2 text-center">
+      <div className="justify-center align-middle bg-white p-5 m-auto text-center">
         <div className="mt-3 mb-3 bg-slate-300 p-3 text-2xl rounded-md">
           Skin Cancer Predicter
         </div>
@@ -114,15 +115,17 @@ const SkinCancer = () => {
             }) => (
               <div className="flex-col w-full justify-center align-middle gap-4">
                 {imageList.length === 0 && (
-                  <div className="flex gap-3 m-4">
+                  <div className="flex gap-3 mt-4">
                     <button
-                      className={`flex-1 h-20 d bg-slate-300 rounded-2xl p-5 ${
+                      className={`flex-1 h-20 d bg-slate-300 rounded-2xl p-5 flex align-middle justify-center gap-4 ${
                         isDragging && 'bg-slate-400'
                       }`}
                       onClick={onImageUpload}
                       {...dragProps}
                     >
-                      Click or Drag and Drop here
+                      <div className="flex-1 m-auto">Click or Drag and Drop here</div>
+                      {' '}
+                      <FaFileUpload className="h-full m-auto" />
                     </button>
                   </div>
                 )}
