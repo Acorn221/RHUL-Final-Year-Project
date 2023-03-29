@@ -1088,6 +1088,7 @@ This clearly shows progress in the training of the model, however it is still no
 
 I decided to train this model until it reaches a point where it does not appear to be improving anymore. This ended up being around 2800 epochs, which is a lot more than the other models \ref{fig:EfficientNetV2B1-final-training-loss} shows the last 200 epochs of this. This results in a final validation accuracy of 0.9375 (93.75\%) which is not as bad as it was, however it is still not as good as the other models and it took a lot longer to train to get these results.
 
+\clearpage
 After training the EfficientNetV2B1 model, as shown in the figure \ref{fig:EfficientNetV2B1-final-training-loss}, I decided to try and optimise it further through adjusting the augmentation parameters from:
 
 \begin{lstlisting}
@@ -1122,18 +1123,21 @@ to:
 
 This was increasing the width and height shift range, increasing the zoom range, and increasing the brightness range. These augmentations were not applied to the validation set. This unfortunatley did not result in any notable improvements in the model's accuracy, as shown in the figure \ref{fig:EfficientNetV2B1-extreme-augmentation-training-loss} and \ref{fig:EfficientNetV2B1-extreme-augmentation-training-accuracy}. The model trained for 1000 epochs and the final validation accuracy was 0.9583 (95.83\%) which is slightly better than the model before I had adjusted the augmentation parameters.
 
-\begin{figure}[ht!]
-  \centering
-  \includegraphics[width=0.7\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Loss.png}
-  \caption{EfficientNetV2B1 Extreme Augmentation Training Loss}
-  \label{fig:EfficientNetV2B1-extreme-augmentation-training-loss}
-\end{figure}
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Accuracy.png}
-  \caption{EfficientNetV2B1 Extreme Augmentation Training Accuracy}
-  \label{fig:EfficientNetV2B1-extreme-augmentation-training-accuracy}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Loss.png}
+    \caption{EfficientNetV2B1 Extreme Augmentation Training Loss}
+    \label{fig:EfficientNetV2B1-extreme-augmentation-training-loss}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Accuracy.png}
+    \caption{EfficientNetV2B1 Extreme Augmentation Training Accuracy}
+    \label{fig:EfficientNetV2B1-extreme-augmentation-training-accuracy}
+  \end{subfigure}
+  \caption{The Extreme Augmentation Training Loss and Accuracy of EfficientNetV2B1}
+  \label{fig:EfficientNetV2B1-extreme-augmentation-training}
 \end{figure}
 
 \chapter{How to run the code}
