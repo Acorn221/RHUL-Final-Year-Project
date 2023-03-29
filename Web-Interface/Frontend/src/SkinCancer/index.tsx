@@ -129,7 +129,7 @@ const SkinCancer = () => {
                 {imageList.length === 0 && (
                   <div className="flex gap-3 mt-4">
                     <button
-                      className={`flex-1 h-20 d bg-slate-300 rounded-md p-5 flex align-middle justify-center gap-4 ${
+                      className={`flex-1 h-20 d bg-slate-300 rounded-md p-5 flex align-middle justify-center gap-4 hover:shadow-xl ${
                         isDragging && 'bg-slate-400'
                       }`}
                       onClick={onImageUpload}

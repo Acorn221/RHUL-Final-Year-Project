@@ -75,22 +75,7 @@ const Alzheimers = () => {
    */
   useEffect(() => {
     if (currentState === states.waitingForPrediction) {
-      const formData = new FormData();
-      if (image === undefined) return;
-      formData.append('file', image);
-      formData.append('age', age.toString());
-      formData.append('sex', sex);
-      formData.append('mmse', mmse.toString());
-      fetch('http://localhost:3002/predict', {
-        method: 'POST',
-        body: formData,
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          setPrediction(data);
-          setCurrentState(states.predictionReceived);
-        });
+      // TODO: Process the image and the other input data
     }
   }, [currentState]);
 
@@ -107,7 +92,7 @@ const Alzheimers = () => {
             Skin Cancer Predicter
           </div>
         </div>
-        <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-2xl rounded-2xl select-none">
+        <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-xl rounded-md select-none">
           {currentState === states.waitingForFile && (
           <div>
             <input type="file" name="file" onChange={imageUploaded} className="" />
