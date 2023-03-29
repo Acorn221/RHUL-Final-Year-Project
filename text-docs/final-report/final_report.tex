@@ -1499,9 +1499,7 @@ Although my results from the Alzheimer's dataset were not as good as I would hav
 
 I had many problems with the Alzheimer's dataset, however after learning how to use the OASIS-1 dataset, I was able to get some better and more reliable results. I realise how it would have been much better if I were to go straight to the OASIS-1 dataset, however I was not aware of it until I was already deep into the project. Luckily I was able to get some good results from the skin cancer dataset, and I was able to use these results to talk about the performance of the different models in my report.
 
-I had spend many hours trying to find out how to parse batches of images and floats together into a model, to try and increase the accuracy that I got on the OASIS-1 dataset. I eventually found out that I had to use a custom data generator, which I was able to use to parse the images and floats together into a model. I was able to get a much better accuracy from this, and with some of the models I tried to optimise the performance of, I was able to get a consistent accuracy of x on the validation set.
-
-% TODO: REPLACE X WITH THE ACTUAL ACCURACY
+I had spend many hours trying to find out how to parse batches of images and floats together into a model, to try and increase the accuracy that I got on the OASIS-1 dataset. I eventually found out that I had to use a custom data generator, which I was able to use to parse the images and floats together into a model. I was able to get a much better accuracy from this, and with some of the models I tried to optimise the performance of, I was able to get a consistent accuracy of \%95.83 on the validation set with EfficientNetV2B1 or 97\% with VGG19.
 
 I have also had some few problems with TensorflowJS\cite{smilkov2019tensorflowjs}, as I was not able to get all the models to run in the browser as not all of the keras layers have been implemented in the JS library. The `Normalisation` layer was not implemented, so I had to remove that model from the web-ui. This was not a huge deal as I was able to get the other models to run in the browser, and I was able to get the results of the models on the web page.
 
