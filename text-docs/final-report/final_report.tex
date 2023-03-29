@@ -951,8 +951,10 @@ Training the different models with only the MRI scans as the input data was not 
   \label{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}
 \end{figure}
 
-In \ref{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}, the graph shows all the validation accuracies of the models. This clearly shows there was no model that performed well, as the highest accuracy only peaked at 80\% and the majority of the time, the models were around 75\% accuracy. This would not be too bad, if the dataset were not imbalanced, however it is, as there are around 3 times more healthy patients than there are patients with Alzheimer's disease. This means it can just predict that everyone has AD and still get a 75\% accuracy.
+In \ref{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}, the graph shows all the validation accuracies of the models. This clearly shows there was no model that performed well, as the highest accuracy only peaked at 80\% and the majority of the time, the models were around 75\% accuracy. This would not be too bad, if the dataset were not imbalanced, however it is, as there are around 3 times more healthy patients than there are patients with Alzheimer's disease. This means it can just predict that everyone has AD and still get a 75\% accuracy. 
 
+The validation loss in \ref{fig:OASIS-1-Transfer-Learning-Basic-Results-Validation-Loss} tells a similar story too, there really aren't any gains made past the 75th epoch, by any of the models and the loss is just stuck around 0.6 for the majority of the time. This means that the models are not learning from the data, the training loss and accuracies continue to improve however this just suggests to me that they are overfitting to the training data.
+ 
 % Show the val loss graph
 \begin{figure}[ht!]
   \centering
@@ -962,6 +964,26 @@ In \ref{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}, the graph shows a
 \end{figure}
 
 \subsection{Training with the MRI scans and the other features}
+
+Training models with more than just the MRI scan led to much more promising results, here is the loss graph from one of the models I had chosen to train with the MRI scans and the other features \ref{fig:VGG19-OASIS-1-loss}.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/VGG19-OASIS-1-loss.png}
+  \caption{The results of training the models with the MRI scans and the other features (VGG19 model)}
+  \label{fig:VGG19-OASIS-1-loss}
+\end{figure}
+
+In figure \ref{fig:VGG19-OASIS-1-800-epoch}, it is clear to see that the model is not learning any more from the data, and the model has slightly overfit to the training data. This may be because I could not augment the other inputs, such as age, as that would not make sense. Although the model is overfitting, it's validation accuracy is peaking at around 93.10\% which is far better than the 75\% accuracy of the models trained with only the MRI scans.
+
+Although these results look better, I believe that this may just be because the dataset is imbalanced, and the model could just be predicting that someone may have Alzheimer's disease based off of their age, or other factors which corrolate with an increased risk of Alzheimer's disease, rather than it detecting the potential causes of Alzheimer's disease in the MRI scans.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/VGG19-OASIS-1-800-epoch.png}
+  \caption{The fine tuning results of training the models with the MRI scans and the other features (VGG19 model)}
+  \label{fig:VGG19-OASIS-1-800-epoch}
+\end{figure}
 
 \pagebreak
 \section{The Skin Cancer Dataset}
@@ -1065,6 +1087,54 @@ This clearly shows progress in the training of the model, however it is still no
 \end{figure}
 
 I decided to train this model until it reaches a point where it does not appear to be improving anymore. This ended up being around 2800 epochs, which is a lot more than the other models \ref{fig:EfficientNetV2B1-final-training-loss} shows the last 200 epochs of this. This results in a final validation accuracy of 0.9375 (93.75\%) which is not as bad as it was, however it is still not as good as the other models and it took a lot longer to train to get these results.
+
+After training the EfficientNetV2B1 model, as shown in the figure \ref{fig:EfficientNetV2B1-final-training-loss}, I decided to try and optimise it further through adjusting the augmentation parameters from:
+
+\begin{lstlisting}
+  train_datagen = ImageDataGenerator(
+    rescale=1.0 / 255,
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    zoom_range=0.2,
+    validation_split=0.2,
+    rotation_range=360,
+    vertical_flip=True,
+    brightness_range=(0.7, 1.3),
+  )
+\end{lstlisting}
+
+to:
+
+\begin{lstlisting}
+  train_datagen = ImageDataGenerator(
+    rescale=1.0 / 255,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    horizontal_flip=True,
+    zoom_range=0.4,
+    validation_split=0.2,
+    rotation_range=360,
+    vertical_flip=True,
+    brightness_range=(0.3, 1.7),
+  )
+\end{lstlisting}
+
+This was increasing the width and height shift range, increasing the zoom range, and increasing the brightness range. These augmentations were not applied to the validation set. This unfortunatley did not result in any notable improvements in the model's accuracy, as shown in the figure \ref{fig:EfficientNetV2B1-extreme-augmentation-training-loss} and \ref{fig:EfficientNetV2B1-extreme-augmentation-training-accuracy}. The model trained for 1000 epochs and the final validation accuracy was 0.9583 (95.83\%) which is slightly better than the model before I had adjusted the augmentation parameters.
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Loss.png}
+  \caption{EfficientNetV2B1 Extreme Augmentation Training Loss}
+  \label{fig:EfficientNetV2B1-extreme-augmentation-training-loss}
+\end{figure}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{images/EfficientNetV2B1-Extreme-Augmentation-Accuracy.png}
+  \caption{EfficientNetV2B1 Extreme Augmentation Training Accuracy}
+  \label{fig:EfficientNetV2B1-extreme-augmentation-training-accuracy}
+\end{figure}
 
 \chapter{How to run the code}
 
