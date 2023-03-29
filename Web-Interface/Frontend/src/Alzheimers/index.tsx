@@ -13,6 +13,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import { IoChevronBackCircleSharp } from 'react-icons/io5';
 
 /**
  * The different states that the app can be in,
@@ -93,9 +95,18 @@ const Alzheimers = () => {
   }, [currentState]);
 
   return (
-    <div className="bg-white m-auto p-10 rounded-xl w-3/4 md:w-1/2 text-center">
-      <div className="underline text-5xl">Alzheimer&apos;s Disease Predictor</div>
-      <div className="m-5 text-left">
+    <div className="h-full flex">
+      <div className="justify-center align-middle bg-white p-5 m-auto text-center">
+        <div className="flex justify-between mt-3 mb-3 gap-4">
+          <Link to="/">
+            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full hover:bg-slate-400">
+              <IoChevronBackCircleSharp className="h-10 w-10 m-auto" />
+            </div>
+          </Link>
+          <div className="bg-slate-300 p-3 text-2xl rounded-md flex-1">
+            Skin Cancer Predicter
+          </div>
+        </div>
         <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-2xl rounded-2xl select-none">
           {currentState === states.waitingForFile && (
           <div>

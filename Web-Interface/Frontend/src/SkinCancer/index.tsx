@@ -102,7 +102,7 @@ const SkinCancer = () => {
       <div className="justify-center align-middle bg-white p-5 m-auto text-center">
         <div className="flex justify-between mt-3 mb-3 gap-4">
           <Link to="/">
-            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full">
+            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full hover:bg-slate-400">
               <IoChevronBackCircleSharp className="h-10 w-10 m-auto" />
             </div>
           </Link>
