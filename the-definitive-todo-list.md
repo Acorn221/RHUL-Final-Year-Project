@@ -43,13 +43,10 @@
 
 ## Markscheme Checklist
 
-
+- [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
 - [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
-  - Conclusion needs writing and the discussion needs to be expanded
-  - The analysis of the results needs to be expanded and more need to be added to it
-- [ ] Technical Decision Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
-  - Need to go over the technical decisions and make sure they are all justified
+- [ ] Technical Decision-Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
 - [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
   - Go over everything to ensure there aren't mistakes and everything is clear
@@ -58,6 +55,8 @@
 - [x] Professional issues (10%): Should be a topic relevant to the project undertaken.
   -  I feel as though I have covered this well
 
+- [x] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
+  - Added a rationale section, needs more objectives
 
 ## The Code
 
@@ -75,5 +74,7 @@
  - [x] Does the product use complex new technologies/platforms or require the study of a significant body of literature from disparate sources to complete?
 
 
+
+## THE VIDEO aaaaaaaaaaaaaaaaa
 
 SUBMIT HERE: https://moodle.royalholloway.ac.uk/mod/assign/view.php?id=781358
