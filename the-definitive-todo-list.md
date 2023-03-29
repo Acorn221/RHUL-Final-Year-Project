@@ -30,9 +30,7 @@
 - [ ] The Report
   - [ ] Document the different hyperparameter tuning
   - [ ] Document the different ways of testing the model and showing its performance
-  - [ ] Talk about the web interface and it's potential uses
-- [ ] Look for another dataset (medical imaging)
-  - [x] OASIS-3 - Gained access to the dataset
+  - [x] Talk about the web interface and it's potential uses
 - [ ] Talk about different metrics
   - [ ] Sensitivity/recall
   - [ ] Specificity
@@ -43,7 +41,7 @@
 
 ## Markscheme Checklist
 
-- [ ] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
+
 - [ ] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
 - [ ] Technical Decision-Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
@@ -57,6 +55,7 @@
 
 - [x] Rationale (10%): Aims, objectives and a good introduction describing the structure of the report.
   - Added a rationale section, needs more objectives
+- [x] Literature Review and Background Reading (15%): Description and critical analysis of relevant background material from books, research papers or the web. Analysis of existing systems that solve similar tasks;
 
 ## The Code
 

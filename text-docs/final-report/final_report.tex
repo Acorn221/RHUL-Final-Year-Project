@@ -172,9 +172,13 @@ Transfer learning can be a useful tool to create predictions of the progression 
 \section{What is a Neural Network}
 A neural network is a machine learning model that is inspired by the way the human brain works.
 It is made up of a series of layers, each layer is made up of a number of neurons.
-Each neuron is connected to every neuron in the next layer, and each connection has a weight associated with it.
+Each neuron is connected to every neuron in the next layer (in fully connected layers, they're not all like that however), and each connection has a weight associated with it.
 The weights are used to determine how much each neuron in the next layer is affected by the current neuron.
 The weights are updated during training, and the process of updating the weights is known as backpropagation.
+
+Convolutional Neural Networks or CNNs are the main time of neural networks I will be using for this project, as they are currently the best performing type of neural network for image classification.
+
+Deep learning is a type of machine learning that uses neural networks, but with many more layers than traditional neural networks, and many of the models I will be using would be considered to be deep learning models.
 
 \section{Why use a Neural Network}
 The use of neural networks has increased dramatically in recent years, and they are now used in a variety of different applications.
@@ -194,11 +198,12 @@ that produce the best results.
 There are a number of different alternatives to neural networks, one common alternative is Support Vector Machines.
 Support Vector Machines are a type of supervised machine learning model that can be used for both classification and regression.
 They work by finding a hyperplane that separates the data into different classes, and then classifying new data based on which side of the hyperplane it is on.
-They are very good at classifying data that is linearly separable, otherwise they are not as good,
-and they are also very sensitive to noise in the data.
+They are very good at classifying data that is linearly separable, otherwise they are not as good, and they are also very typically sensitive to noise in the data, if they are not properly tuned, and this can take a long time to do. Another drawbacks of SVMs is that they can be less accurate with data that has a high dimensionality.
 
 In one study using SVMs to classify Alzheimer's patients, the researchers managed to get an accuracy of 62.64\% using MRI scans of the brain.
 They managed to get between 83\% and 90\% accuracy when using SVMs with clinical parameters, however combining the two methods in this study did not improve the accuracy. \cite{10.3389/fneur.2021.640696}
+
+Random Forests and Decision Trees can also be used for image classification. They are more interpretable compared to neural networks and can be efficient when dealing with smaller datasets. They are however not as accurate as neural networks generally, so they are not as commonly used for image classification.
 
 \subsection{Content Based Image Retrieval}
 Content Based Image Retrieval (CBIR) is a type of image retrieval system that uses the actual content of an image as the basis for retrieving similar
@@ -222,19 +227,11 @@ For classifying images of different flowers, for example, it could also be very 
 This could help identify flowers by recognizing the different characteristics of each flower, such as the shape of the petals,
 the color of the petals, and the overall structure of the flower.
 
-\section{The different optimizers}
+\section{The Different Optimisers}
 
-In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function.
-Optimisers are used to improve the accuracy of a model by reducing the error rate.
-Common optimisers used in deep learning include Stochastic Gradient Descent (SGD),
-Adaptive Moment Estimation (Adam), and Root Mean Square Propagation (RMSProp).
-There are many different optimizers that can be used to train a model, and the one
-that is used depends on the type of problem that is being solved.
+In deep learning, optimisers are algorithms used to adjust the parameters of a model in order to minimise a loss function. Optimisers are used to improve the accuracy of a model by reducing the error rate. Common optimisers used in deep learning include Stochastic Gradient Descent (SGD), Adaptive Moment Estimation (Adam), and Root Mean Square Propagation (RMSProp). There are many optimisers that can be used to train a model, and the one that is used depends on the type of problem that is being solved.
 
-The impact using different optimisers can have is dependent on the type of problem being solved.
-For example, SGD is often used for linear regression problems, while Adam is
-better suited for deep learning problems.
-Additionally, the choice of optimiser can also affect the speed of convergence and the accuracy of the model.
+The impact using different optimisers can have is dependent on the type of problem being solved. For example, SGD is often used for linear regression problems, while Adam is better suited for deep learning problems. Additionally, the choice of optimiser can also affect the speed of convergence and the accuracy of the model. However, there isn't always a one-size-fits-all solution, and it is often necessary to experiment with different optimiser and their hyperparameters to find the best fit for a specific problem.
 
 \begin{figure}[h]
   \centering
@@ -244,20 +241,18 @@ Additionally, the choice of optimiser can also affect the speed of convergence a
 
 \section{Classification Vs Regression}
 
-Classification is a type of supervised machine learning model that is used to predict the class of a given data point.
-It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point.
-For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house.
+Classification is a type of supervised machine learning model that is used to predict the class of a given data point. It is used to predict the class of the given data, whereas regression is used to predict the value of a given data point. For example, classification would be best suited to classifying images for dogs or cats, whereas regression would be best suited to predicting the price of a house. Regression in machine learning is also a type of supervised learning model that is used to predict the value of a given data point.
 
-Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease.
+Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset. There could however be an argument made that this could be a multi-class classification task, as the model could try and just estimate the most likely scores for the patient, rather than trying to predict the exact score, which could be more useful to a doctor.
 
-The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset.
+In the case of the skin cancer dataset, the problem is a binary classification problem, as the dataset only contains images of either benign or malignant skin cancer. This means that the given images are either of a benign or malignant skin cancer, and the model is trying to predict which one it is.
 
 \section{What is a Convolutional Neural Network}
-A convolutional neural network (CNN) is a type of neural network that is used for image classification.
-It is made up of a series of convolutional layers, pooling layers, and fully connected layers.
-The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image.
-The fully connected layers are used to classify the image.
-They are often much more efficient than other types of neural networks, and are commonly used for image classification.
+A convolutional neural network (CNN) is a type of neural network that is used for image classification. It is made up of a series of convolutional layers, pooling layers, and fully connected layers. The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image. The fully connected layers are used to classify the image. They are often much more efficient than other types of neural networks, and are commonly used for image classification. CNNs are more suited to multi-dimentional data, such as images, as they are able to extract features from the image and then use those features to classify the image.
+
+Dropout layers are used to reduce overfitting in the model. Overfitting is when the model is too specific to the training data, and is unable to generalise to new data. This can be a problem when the model is used to classify images that it has never seen before, such as the validation sets I am using for this project. Dropout layers randomly ignore nodes during training, which leads to the model being less specific to the training data, and therefore being able to generalise to new data better.
+
+CNNs are not just restricted to image classification, they can also be used for other types of classification problems. For example, they can be used to classify text and audio too (amongst other data).
 
 \section{Types Of Layers}
 
@@ -278,21 +273,17 @@ They are often much more efficient than other types of neural networks, and are 
 \section{Using an LSTM for classification with MRI scans}
 An LSTM (Long Short Term Memory) network is a type of recurrent neural network that is used for time series prediction, it is typically not used with transfer learning as it is not as efficient as other types of neural networks. The specific LSTM structure allows for multiple MRI scans to be used as input to the model, and the model, so it would be able to classify the Alzheimer's CDR score more accurately, as it could take into account more scans, using the raw scan information, instead of the pre-processed data that I would otherwise have to use with regular CNN model that I could use with transfer learning.
 
-% TODO: Maybe implement an LSTM model and compare the performance to the CNN model
+This would be interesting to explore as it would be a new way of using an LSTM model, and it would be more space efficient, than having a neural network take the 3D MRI scans as input, as it would be able to take in the 2D slices of the MRI scans as input, and use the LSTM model to process the data. 
+This technique could potentially lead to improved accuracy in Alzheimer's disease diagnosis and a better understanding of the progression of the condition.
 
 \section{What transfer learning is}
-Transfer learning is a common, efficient method for training deep learning models.
-There are many different ways to implement transfer learning and here I hope to compare the performance
-of a variety of different methods with different pre-trained models.
+Transfer learning is a prevalent and efficient method for training deep learning models. There are numerous ways to implement transfer learning, and this discussion aims to compare the performance of various methods with different pre-trained models.
 
-The applications for transfer learning are vast, and it is a common method for training deep learning models,
-This is because it is a very efficient method for training models as most of the work is done by the pre-trained model.
-The pre-trained model is used to extract features from the dataset, and then a new model is trained on top of the extracted features.
-The pre-trained model is usually frozen so that it does not change during training, and only the new model is trained.
+The applications for transfer learning are extensive, as it is a frequently used method to train deep learning models. It is primarily due to the method's efficiency in training models, as most of the work is performed by the pre-trained model. This model is employed to extract features from the dataset, followed by training a new model on top of the extracted features. Typically, the pre-trained model is frozen, so it does not change during training; only the new model is trained.
 
-After the new model is trained on top, a process known as fine-tuning can be used to further improve the performance of the model.
-Fine-tuning involves training the new model on the dataset, but with a lower learning rate than the initial training.
-This is also where the model is usually unfrozen, so that the pre-trained model can be trained as well, which helps to improve the overall performance of the model.
+Once the new model is trained on top, a process called fine-tuning can further enhance the model's performance. Fine-tuning involves training the new model on the dataset but with a lower learning rate than the initial training. At this stage, the model is usually unfrozen, allowing the pre-trained model to be trained as well, leading to improved overall performance.
+
+It is possible to use a pre-trained model as a feature extractor, such as an SVM or a logistic regression model, instead of just neural networks.
 
 \chapter{The Datasets I will be using}
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
@@ -384,6 +375,7 @@ The large model is designed for high accuracy, and the small model is designed f
 
 
 % TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
+
 \section{InceptionV3}
 InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
 It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction.
@@ -718,6 +710,7 @@ should give a better representation of how well the model would work in a real w
 \pagebreak
 
 \chapter{Software Engineering}
+
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
@@ -747,7 +740,6 @@ I have used the following libraries to develop the front end in this project:
   \item TensorflowJS\cite{smilkov2019tensorflowjs} - To run the model in the browser
 \end{itemize}
 
-
 \section{Using Git}
 I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
 This was not the first time I have used Git, however it was the first time I have used it with GitLab.
@@ -756,7 +748,11 @@ The branches were made to create the different planning papers, and then to set 
 I also used branches to create the different models, and then to test them too.
 
 All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
-and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
+and to make it easier to go through the history and find a specific change or commit to cherry-pick or revert.
+I have tried to make my commits small and concise, and to try to make sure that each commit is a complete change.
+This makes it easier to revert a change if it breaks something, and it makes it easier to cherry pick a change if it is needed in another branch. I have cherrypicked a few commits throughout the project, however when I need to use it, it comes in very handy.
+
+I have also used GitKraken\cite{GitKraken} to help me manage the code, and to make it easier to see the changes that I have made, handle the Git tree and to make it easier to merge the branches.
 
 \section{Testing with Jupyter Notebook}
 I have used Jupyter Notebook to test the code, and to generate the graphs.
@@ -794,21 +790,6 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 
 % Also talk about the different learning rates and how they affect the performance of the models
 
-\section{Using Git}
-I have used Git to manage the code, and have used the RHUL GitLab server to host the code.
-This was not the first time I have used Git, however it was the first time I have used it with GitLab.
-I used separate branches for the different stages of the project, and then merged them into the master branch when they were complete.
-The branches were made to create the different planning papers, and then to set up the development environment.
-I also used branches to create the different models, and then to test them too.
-
-All of my commits were in the format of Commitlint\cite{CommitLint} to make it easier to read the commit messages, make them more consistent,
-and to make it easier to go through the history and find a specific change or commit to cherry pick or revert.
-
-I have tried to make my commits small and concise, and to try to make sure that each commit is a complete change.
-This makes it easier to revert a change if it breaks something, and it makes it easier to cherry pick a change if it is needed in another branch. I have cherrypicked a few commits throughout the project, however when I need to use it, it comes in very handy.
-
-I have also used GitKraken\cite{GitKraken} to help me manage the code, and to make it easier to see the changes that I have made, handle the Git tree and to make it easier to merge the branches.
-
 \section{Frontend Typescript and React}
 
 For the frontend, I have chosen not to use TDD as it would be difficult to test the code, as it's mostly just displaying the results from the the models that I have trained. I did however setup the project using my template\cite{TypescriptProjectTemplate} that I created prior to this project, which has a basic setup for a React Typescript project, which used EsLint\cite{EsLint} to format the code and to make sure that the code is consistent, and to make sure that there are no syntax errors.
@@ -817,17 +798,14 @@ Defining the types for the data that I am using was very useful, as it allowed m
 
 The component based architecture of React made it easy to create the frontend and the routing for the different pages. It allows me to have a format and standard layout for the different pages, and it makes it easy to add new pages and to add new components to the pages, alongside importing different libraries and packages which can speed up development.
 
-\chapter{The User Interface}
-
-\section{The Front End}
-For the front end I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript.
+I have used React\cite{React} as it is a popular framework for creating web applications, and I've got experience with it. It specifically uses React Typescript, which is a combination of React and Typescript. Typescript is a superset of Javascript, and it adds types to Javascript.
 This allows for better code completion, and it makes it easier to debug the code, as it will tell you if you've made a mistake sooner, whereas javascript would give you an error at runtime, if you end up with a type error. Typescript helps counter many of the issues with JS however it's not perfect and there are still issues where there can be scope for errors.
 
 I do have the option of using tensorflow-JS, which can process all of the data locally, this has benefits and drawbacks, the main benefit is that the user doesn't have to upload their data to a server, which can make the handling more secure as everything is processed locally, so there would be far less red tape with data protection laws. The main drawback is that the model would have to be downloaded to the user's device, which could be a problem if the model is large, and it would also mean that the user would have to wait for the model to be downloaded before they could use the application, then they would have to wait for the model to make a prediction after this.
 
-\section{The Back End}
-
 I've decided to use Python for the API backend, as it's the main server side language I have used so far. I can use Flask to host the api and return the results when they have been processed by the model.
+
+Although I had developed the API in Python, I decided to use the TensorflowJS library to process the data, as it would be easier to use, and it would allow me to program more efficiently and host the project on a static website, which would make it easier to host and maintain.
 
 \chapter{Identifying and Mitigating Bias}
 
@@ -877,6 +855,9 @@ With this particular dataset, I don't have the ability to do much to mitigate bi
 This dataset is also relatively small, with only 484 images all together. Although this is a small number, the results from training with this dataset are still very good, and the model is able to predict skin cancer with a high accuracy, it just have slightly more bias than it would if it was trained with a larger and more diverse dataset.
 
 \chapter{My Initial Faulty Training Results}
+
+This section was given from the point of view that the faulty dataset was not faulty, and that the results were genuine.
+
 \subsection{The Comparison Of The Different Models}
 Here is a graph of all the different models that I have trained properly with the old and faulty Alzheimer's dataset from kaggle.
 The graph shows the accuracy of the models on the validation set along with the accuracy on the training set.
@@ -887,6 +868,7 @@ The graph shows the accuracy of the models on the validation set along with the 
   \label{fig:loss}
 \end{figure}
 \pagebreak
+
 \subsection{InceptionV3}
 For my training results, when everything was working correctly, I was able to get the highest validation accuracy of 84\% and a loss lowest of 0.30.
 % Show the graphs of the training results
@@ -922,6 +904,7 @@ Here's another graph that clearly shows the difference in performance between In
 Although InceptionV3 is slightly over 2x the size of MobilenetV3 Small, the model is likely not overfitting as much as the other models are, however I can't be sure as this was trained with the old dataset.
 
 \pagebreak
+
 \subsection{The model sizes}
 
 Here's a bar chart comparing the sizes of the models in megabytes.
@@ -1003,6 +986,13 @@ Although these results look better, I believe that this may just be because the 
 \end{figure}
 
 \pagebreak
+
+\section{How this could be improved}
+
+I believe that with a dataset such as the OASIS-3 dataset, which has more balanced classes, and more data, the models would be able to learn from the data and make more accurate predictions. This is because there are very few people with severe Alzheimer's disease, and the majority of the people in the dataset have no Alzheimer's disease.
+
+
+
 \section{The Skin Cancer Dataset}
 Training the models with the skin cancer dataset was a lot more successful than training with the other dataset. This is likely due to the fact that skin cancer is visually easier to identify than Alzheimer's disease, as the skin cancer images are much more clearly defined.
 
@@ -1048,8 +1038,7 @@ These models with a maximum validation accuracy of over 90\%, typically all perf
 
 Now that I've got the initial training results, I'm going to try and see if I can use hyperparameter optimisation, and see if I can get the models to perform even better. I'll also try adjusting the augmentation parameters and see how that affects the results.
 
-
-\section{Optimising the EfficientNet Models}
+\subsection{Optimising the EfficientNet Models}
 
 Due to the outstanding performance of the EfficientNet models in the ImageNet challenge, I decided to try and optimise one of the best models in the series too see if I can get it to perform on the same level as the other models. For this, I have chosen to use the newer and slightly larger EfficientNetV2B1 model. For this test I have decided to not change the brightness on the validation set images as I believe that this will lead to more accurate results, better representing the real world.
 
@@ -1539,5 +1528,6 @@ I have also learned about the cutting edge image classification models and techn
 \newpage
 \printbibliography
 \label{endpage}
+
 \end{document}
 \end{article}
