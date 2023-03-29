@@ -937,9 +937,28 @@ My lack of experience with machine learning meant that I didn't know what to tru
 
 \section{The OASIS-1 Dataset}
 
-The OASIS-1 dataset accuracy is not particularly high without any optimisation, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions.
+The OASIS-1 dataset accuracy is not particularly high without any optimization, the 2D preprocessed scan images don't provide enough information for the transfer learned models to learn from and make accurate predictions.
 
 \subsection{Training with only the MRI scans}
+
+Training the different models with only the MRI scans as the input data was not very successful, as the models were not able to learn from the data and make accurate predictions. 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1\textwidth]{images/OASIS-1-Transfer-Learning-Basic-Results.png}
+  \caption{The results of training the models with only the MRI scans}
+  \label{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}
+\end{figure}
+
+In \ref{fig:OASIS-1-Transfer-Learning-Basic-Results-Accuracy}, the graph shows all the validation accuracies of the models. This clearly shows there was no model that performed well, as the highest accuracy only peaked at 80\% and the majority of the time, the models were around 75\% accuracy. This would not be too bad, if the dataset were not imbalanced, however it is, as there are around 3 times more healthy patients than there are patients with Alzheimer's disease. This means it can just predict that everyone has AD and still get a 75\% accuracy.
+
+% Show the val loss graph
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=1\textwidth]{images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png}
+  \caption{The results of training the models with only the MRI scans}
+  \label{fig:OASIS-1-Transfer-Learning-Basic-Results-Validation-Loss}
+\end{figure}
 
 \subsection{Training with the MRI scans and the other features}
 
@@ -1410,6 +1429,16 @@ I had spend many hours trying to find out how to parse batches of images and flo
 % TODO: REPLACE X WITH THE ACTUAL ACCURACY
 
 I have also had some few problems with TensorflowJS\cite{tensorflowjs}, as I was not able to get all the models to run in the browser as not all of the keras layers have been implemented in the JS library. The `Normalisation` layer was not implemented, so I had to remove that model from the web-ui. This was not a huge deal as I was able to get the other models to run in the browser, and I was able to get the results of the models on the web page.
+
+\section{Future Improvements I Could Make}
+
+I could try and dive deeper into the EfficientNetv2 models and see if they would perform better than the other models, as their performance on the ImageNet\cite{ImageNet} dataset was very good. 
+
+I could also try and parse the raw MRI information into the model, as I was not able to do this due to time constraints. This could potentially make my model more accurate and it would at least be interesting to see if it could make a difference, as I would have to give a model a 3d input, instead of just 2D. I'd have to see if I could use the BIDS data format to parse the raw MRI data into the model, I could also think of ways to pre-process the data to make it easier to parse into the model, as well as augmenting the data to make the model more robust. Part of the reason for me not doing this was because that I could not have used transfer learning to train the model, as I would have had to train the model from scratch, which would have taken a lot longer and not been the objective of this project.
+
+Other improvements could be to expand the web-ui to include more models and potentially combine some of the models outputs to get a more accurate result. This would need to be done with caution, as I would have to make sure that the models are not too similar and I would likely have to prune the models to get the best results.
+
+I would also like to take a look into pruning the models I have trained, all of the base models I have used for transfer learning have been trained on the ImageNet dataset, which is a very large dataset, and I would like to see if I can get the models to run faster by pruning them and potentially removing lots of un-nessasary nodes or layers from the model. The Lottery ticket hypothesis\cite{lotteryticket} could be used to find 'winning tickets' in the models, which are the smallest subnetworks that can achieve the same accuracy as the original model.
 
 \newpage
 \printbibliography
