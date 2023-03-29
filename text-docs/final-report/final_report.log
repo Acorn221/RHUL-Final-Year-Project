@@ -1,0 +1,1053 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  29 MAR 2023 14:44
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex
+(c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-07-04> (final_report.cls
+Document Class: final_report 
+(C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip58
+\cftbeforetoctitleskip=\skip59
+\cftaftertoctitleskip=\skip60
+\cftbeforepartskip=\skip61
+\cftpartnumwidth=\skip62
+\cftpartindent=\skip63
+\cftbeforechapskip=\skip64
+\cftchapindent=\skip65
+\cftchapnumwidth=\skip66
+\cftbeforesecskip=\skip67
+\cftsecindent=\skip68
+\cftsecnumwidth=\skip69
+\cftbeforesubsecskip=\skip70
+\cftsubsecindent=\skip71
+\cftsubsecnumwidth=\skip72
+\cftbeforesubsubsecskip=\skip73
+\cftsubsubsecindent=\skip74
+\cftsubsubsecnumwidth=\skip75
+\cftbeforeparaskip=\skip76
+\cftparaindent=\skip77
+\cftparanumwidth=\skip78
+\cftbeforesubparaskip=\skip79
+\cftsubparaindent=\skip80
+\cftsubparanumwidth=\skip81
+\cftbeforeloftitleskip=\skip82
+\cftafterloftitleskip=\skip83
+\cftbeforefigskip=\skip84
+\cftfigindent=\skip85
+\cftfignumwidth=\skip86
+\c@lofdepth=\count197
+\c@lotdepth=\count198
+\cftbeforelottitleskip=\skip87
+\cftafterlottitleskip=\skip88
+\cftbeforetabskip=\skip89
+\cfttabindent=\skip90
+\cfttabnumwidth=\skip91
+)) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count199
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count266
+\Hy@pagecounter=\count267
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count268
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count269
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen150
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count270
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count271
+\c@Item=\count272
+\c@Hfootnote=\count273
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count274
+\c@bookmark@seq@number=\count275
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip92
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count276
+\lst@gtempboxa=\box51
+\lst@token=\toks18
+\lst@length=\count277
+\lst@currlwidth=\dimen153
+\lst@column=\count278
+\lst@pos=\count279
+\lst@lostspace=\dimen154
+\lst@width=\dimen155
+\lst@newlines=\count280
+\lst@lineno=\count281
+\lst@maxwidth=\dimen156
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count282
+\lst@skipnumbers=\count283
+\lst@framebox=\box52
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count286
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count287
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count288
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count289
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\c@blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\blx@sectionciteorderinternal@0=\count330
+\blx@entrysetcounter=\count331
+\blx@biblioinstance=\count332
+\labelnumberwidth=\skip93
+\labelalphawidth=\skip94
+\biblabelsep=\skip95
+\bibitemsep=\skip96
+\bibnamesep=\skip97
+\bibinitsep=\skip98
+\bibparsep=\skip99
+\bibhang=\skip100
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language79
+\c@mincomprange=\count333
+\c@maxcomprange=\count334
+\c@mincompwidth=\count335
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count336
+\c@savedafterword=\count337
+\c@annotator=\count338
+\c@savedannotator=\count339
+\c@author=\count340
+\c@savedauthor=\count341
+\c@bookauthor=\count342
+\c@savedbookauthor=\count343
+\c@commentator=\count344
+\c@savedcommentator=\count345
+\c@editor=\count346
+\c@savededitor=\count347
+\c@editora=\count348
+\c@savededitora=\count349
+\c@editorb=\count350
+\c@savededitorb=\count351
+\c@editorc=\count352
+\c@savededitorc=\count353
+\c@foreword=\count354
+\c@savedforeword=\count355
+\c@holder=\count356
+\c@savedholder=\count357
+\c@introduction=\count358
+\c@savedintroduction=\count359
+\c@namea=\count360
+\c@savednamea=\count361
+\c@nameb=\count362
+\c@savednameb=\count363
+\c@namec=\count364
+\c@savednamec=\count365
+\c@translator=\count366
+\c@savedtranslator=\count367
+\c@shortauthor=\count368
+\c@savedshortauthor=\count369
+\c@shorteditor=\count370
+\c@savedshorteditor=\count371
+\c@labelname=\count372
+\c@savedlabelname=\count373
+\c@institution=\count374
+\c@savedinstitution=\count375
+\c@lista=\count376
+\c@savedlista=\count377
+\c@listb=\count378
+\c@savedlistb=\count379
+\c@listc=\count380
+\c@savedlistc=\count381
+\c@listd=\count382
+\c@savedlistd=\count383
+\c@liste=\count384
+\c@savedliste=\count385
+\c@listf=\count386
+\c@savedlistf=\count387
+\c@location=\count388
+\c@savedlocation=\count389
+\c@organization=\count390
+\c@savedorganization=\count391
+\c@origlocation=\count392
+\c@savedoriglocation=\count393
+\c@origpublisher=\count394
+\c@savedorigpublisher=\count395
+\c@publisher=\count396
+\c@savedpublisher=\count397
+\c@language=\count398
+\c@savedlanguage=\count399
+\c@origlanguage=\count400
+\c@savedoriglanguage=\count401
+\c@pageref=\count402
+\c@savedpageref=\count403
+\shorthandwidth=\skip101
+\shortjournalwidth=\skip102
+\shortserieswidth=\skip103
+\shorttitlewidth=\skip104
+\shortauthorwidth=\skip105
+\shorteditorwidth=\skip106
+\locallabelnumberwidth=\skip107
+\locallabelalphawidth=\skip108
+\localshorthandwidth=\skip109
+\localshortjournalwidth=\skip110
+\localshortserieswidth=\skip111
+\localshorttitlewidth=\skip112
+\localshortauthorwidth=\skip113
+\localshorteditorwidth=\skip114
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+\c@textcitecount=\count404
+\c@textcitetotal=\count405
+\c@textcitemaxnames=\count406
+\c@biburlbigbreakpenalty=\count407
+\c@biburlbreakpenalty=\count408
+\c@biburlnumpenalty=\count409
+\c@biburlucpenalty=\count410
+\c@biburllcpenalty=\count411
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count412
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-natbib.def
+File: blx-natbib.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count413
+\c@bbx:relatedtotal=\count414
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-07-04 L3 programming layer (loader) 
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count415
+\l__pdf_internal_box=\box53
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-07-04 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
+))
+\@quotelevel=\count416
+\@quotereset=\count417
+ (final_report.aux)
+\openout1 = `final_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
+* v-part:(T,H,B)=(0.0pt, 788.14125pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04675pt
+* \textwidth=441.01773pt
+* \textheight=720.46213pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-72.26999pt
+* \headheight=42.67912pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count418
+\scratchdimen=\dimen165
+\scratchbox=\box54
+\nofMPsegments=\count419
+\nofMParguments=\count420
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen166
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
+\everyMPtoPDFconversion=\toks22
+) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 22.
+ (final_report.out) (final_report.out)
+\@outlinefile=\write4
+\openout4 = `final_report.out'.
+
+\c@lstlisting=\count424
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `final_report.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'final_report.bbl' found.
+ (final_report.bbl)
+Package biblatex Info: Reference section=0 on input line 22.
+Package biblatex Info: Reference segment=0 on input line 22.
+<logo.pdf, id=323, 948.54375pt x 473.77pt>
+File: logo.pdf Graphic file (type pdf)
+<use logo.pdf>
+Package pdftex.def Info: logo.pdf  used on input line 25.
+(pdftex.def)             Requested size: 284.82584pt x 142.26378pt.
+ [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+ <./logo.pdf>]
+<images/signature.jpg, id=342, 913.4125pt x 384.43625pt>
+File: images/signature.jpg Graphic file (type jpg)
+<use images/signature.jpg>
+Package pdftex.def Info: images/signature.jpg  used on input line 53.
+(pdftex.def)             Requested size: 142.26378pt x 59.87444pt.
+ [1
+
+ <./images/signature.jpg>] (final_report.toc
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 1.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 1.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 1.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 1.
+[2] [3])
+\tf@toc=\write5
+\openout5 = `final_report.toc'.
+
+ [4] [5
+
+] [6
+
+]
+Overfull \hbox (4.89122pt too wide) in paragraph at lines 114--115
+\OT1/cmr/m/n/10.95 part-ment of In-for-ma-tion and Com-puter Sci-ence, Irvine, CA, 1999, http://kdd.ics.uci.edu. 
+ []
+
+[7]
+Chapter 1.
+[8
+
+] [9]
+Chapter 2.
+<images/NeuralNetwork.png, id=474, 578.16pt x 297.36093pt>
+File: images/NeuralNetwork.png Graphic file (type png)
+<use images/NeuralNetwork.png>
+Package pdftex.def Info: images/NeuralNetwork.png  used on input line 151.
+(pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
+[10
+
+ <./images/NeuralNetwork.png>] [11]
+<images/Principe_cbir.png, id=495, 699.36281pt x 262.73157pt>
+File: images/Principe_cbir.png Graphic file (type png)
+<use images/Principe_cbir.png>
+Package pdftex.def Info: images/Principe_cbir.png  used on input line 224.
+(pdftex.def)             Requested size: 308.71106pt x 115.97507pt.
+ [12 <./images/Principe_cbir.png>] [13]
+Chapter 3.
+[14
+
+] [15]
+Chapter 4.
+<images/MobileNetv3-structure.png, id=531, 2594.19188pt x 892.08281pt>
+File: images/MobileNetv3-structure.png Graphic file (type png)
+<use images/MobileNetv3-structure.png>
+Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 356.
+(pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
+<images/mobilenet-comparison.png, id=534, 2151.53813pt x 920.68968pt>
+File: images/mobilenet-comparison.png Graphic file (type png)
+<use images/mobilenet-comparison.png>
+Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 363.
+(pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
+[16
+
+ <./images/MobileNetv3-structure.png> <./images/mobilenet-comparison.png>] [17]
+<images/VGG19-architecture.png, id=560, 1350.54562pt x 742.27313pt>
+File: images/VGG19-architecture.png Graphic file (type png)
+<use images/VGG19-architecture.png>
+Package pdftex.def Info: images/VGG19-architecture.png  used on input line 397.
+(pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
+<images/EfficientNetComparison.PNG, id=564, 1174.3875pt x 931.22906pt>
+File: images/EfficientNetComparison.PNG Graphic file (type png)
+<use images/EfficientNetComparison.PNG>
+Package pdftex.def Info: images/EfficientNetComparison.PNG  used on input line 410.
+(pdftex.def)             Requested size: 352.81552pt x 279.75453pt.
+ [18 <./images/VGG19-architecture.png> <./images/EfficientNetComparison.PNG>]
+<images/EfficientNetPerformanceDatasets.PNG, id=579, 1204.5pt x 658.71094pt>
+File: images/EfficientNetPerformanceDatasets.PNG Graphic file (type png)
+<use images/EfficientNetPerformanceDatasets.PNG>
+Package pdftex.def Info: images/EfficientNetPerformanceDatasets.PNG  used on input line 423.
+(pdftex.def)             Requested size: 352.81552pt x 192.94104pt.
+<images/EfficientNetv2-Performance-Graph.png, id=583, 651.93562pt x 511.9125pt>
+File: images/EfficientNetv2-Performance-Graph.png Graphic file (type png)
+<use images/EfficientNetv2-Performance-Graph.png>
+Package pdftex.def Info: images/EfficientNetv2-Performance-Graph.png  used on input line 433.
+(pdftex.def)             Requested size: 352.81552pt x 277.04572pt.
+ [19 <./images/EfficientNetPerformanceDatasets.PNG>]
+<images/Xception-structure.png, id=598, 788.9475pt x 546.54187pt>
+File: images/Xception-structure.png Graphic file (type png)
+<use images/Xception-structure.png>
+Package pdftex.def Info: images/Xception-structure.png  used on input line 446.
+(pdftex.def)             Requested size: 352.81552pt x 244.40709pt.
+ [20 <./images/EfficientNetv2-Performance-Graph.png> <./images/Xception-structure.png>] [21]
+Chapter 5.
+[22
+
+] (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [23] [24] [25]
+Chapter 6.
+[26
+
+] [27]
+Chapter 7.
+
+Overfull \hbox (6.91362pt too wide) in paragraph at lines 632--632
+[]\OT1/cmss/bx/n/17.28 Problems With The Datasets and How I Fixed Them 
+ []
+
+[28
+
+]
+<images/bad-training-result.png, id=691, 430.0065pt x 328.8285pt>
+File: images/bad-training-result.png Graphic file (type png)
+<use images/bad-training-result.png>
+Package pdftex.def Info: images/bad-training-result.png  used on input line 647.
+(pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
+ [29 <./images/bad-training-result.png>] [30] [31]
+Chapter 8.
+[32
+
+] [33] [34]
+Chapter 9.
+[35
+
+]
+Chapter 10.
+<images/nWBV-vs-Age.png, id=782, 416.2752pt x 312.2064pt>
+File: images/nWBV-vs-Age.png Graphic file (type png)
+<use images/nWBV-vs-Age.png>
+Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 827.
+(pdftex.def)             Requested size: 441.01773pt x 330.78pt.
+[36
+
+ <./images/nWBV-vs-Age.png>]
+<images/eTIV-vs-Age.png, id=791, 419.166pt x 312.2064pt>
+File: images/eTIV-vs-Age.png Graphic file (type png)
+<use images/eTIV-vs-Age.png>
+Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 838.
+(pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
+ [37
+
+ <./images/eTIV-vs-Age.png>]
+<images/benign-skin-cancer.png, id=799, 200.75pt x 200.75pt>
+File: images/benign-skin-cancer.png Graphic file (type png)
+<use images/benign-skin-cancer.png>
+Package pdftex.def Info: images/benign-skin-cancer.png  used on input line 850.
+(pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
+<images/malignant-skin-cancer.png, id=800, 200.75pt x 200.75pt>
+File: images/malignant-skin-cancer.png Graphic file (type png)
+<use images/malignant-skin-cancer.png>
+Package pdftex.def Info: images/malignant-skin-cancer.png  used on input line 851.
+(pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
+ [38
+
+ <./images/benign-skin-cancer.png (PNG copy)> <./images/malignant-skin-cancer.png (PNG copy)>]
+Chapter 11.
+<images/good-training-acc-vs-val.png, id=806, 1193.9004pt x 699.5736pt>
+File: images/good-training-acc-vs-val.png Graphic file (type png)
+<use images/good-training-acc-vs-val.png>
+Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 868.
+(pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
+[39
+
+ <./images/good-training-acc-vs-val.png>]
+<images/inceptionv3-accuracy-vs-val-acc.png, id=814, 1171.4967pt x 654.7662pt>
+File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
+<use images/inceptionv3-accuracy-vs-val-acc.png>
+Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 878.
+(pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
+ [40 <./images/inceptionv3-accuracy-vs-val-acc.png>]
+<images/mobilenet-v3-small-vs-inception-v3.png, id=824, 1178.7237pt x 682.9515pt>
+File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
+<use images/mobilenet-v3-small-vs-inception-v3.png>
+Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 900.
+(pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
+ [41 <./images/mobilenet-v3-small-vs-inception-v3.png>]
+<images/model-sizes.png, id=832, 791.3565pt x 344.0052pt>
+File: images/model-sizes.png Graphic file (type png)
+<use images/model-sizes.png>
+Package pdftex.def Info: images/model-sizes.png  used on input line 915.
+(pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
+<images/ResNet101-vs-Inceptionv3.png, id=833, 1182.3372pt x 677.8926pt>
+File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
+<use images/ResNet101-vs-Inceptionv3.png>
+Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 923.
+(pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
+ [42 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>] [43]
+Chapter 12.
+<images/OASIS-1-Transfer-Learning-Basic-Results.png, id=851, 897.5934pt x 389.5353pt>
+File: images/OASIS-1-Transfer-Learning-Basic-Results.png Graphic file (type png)
+<use images/OASIS-1-Transfer-Learning-Basic-Results.png>
+Package pdftex.def Info: images/OASIS-1-Transfer-Learning-Basic-Results.png  used on input line 949.
+(pdftex.def)             Requested size: 441.01773pt x 191.39702pt.
+<images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png, id=853, 891.0891pt x 389.5353pt>
+File: images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png Graphic file (type png)
+<use images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png>
+Package pdftex.def Info: images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png  used on input line 959.
+(pdftex.def)             Requested size: 441.01773pt x 192.79381pt.
+[44
+
+ <./images/OASIS-1-Transfer-Learning-Basic-Results.png>]
+<images/skin-cancer-loss.png, id=862, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-loss.png Graphic file (type png)
+<use images/skin-cancer-loss.png>
+Package pdftex.def Info: images/skin-cancer-loss.png  used on input line 972.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 972--973
+ [][] 
+ []
+
+[45 <./images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png> <./images/skin-cancer-loss.png>]
+<images/skin-cancer-validation-accuracy-last-50.png, id=871, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-validation-accuracy-last-50.png Graphic file (type png)
+<use images/skin-cancer-validation-accuracy-last-50.png>
+Package pdftex.def Info: images/skin-cancer-validation-accuracy-last-50.png  used on input line 981.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 981--982
+ [][] 
+ []
+
+<images/Skin-cancer-validation-accuracy-last-50-low-performers.png, id=872, 897.5934pt x 359.1819pt>
+File: images/Skin-cancer-validation-accuracy-last-50-low-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-low-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-low-performers.png  used on input line 991.
+(pdftex.def)             Requested size: 485.1222pt x 194.1307pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 991--992
+ [][] 
+ []
+
+<images/Skin-cancer-validation-accuracy-last-50-high-performers.png, id=873, 897.5934pt x 374.3586pt>
+File: images/Skin-cancer-validation-accuracy-last-50-high-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-high-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-high-performers.png  used on input line 1000.
+(pdftex.def)             Requested size: 485.1222pt x 202.33342pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 1000--1001
+ [][] 
+ []
+
+[46 <./images/skin-cancer-validation-accuracy-last-50.png> <./images/Skin-cancer-validation-accuracy-last-50-low-performers.png>]
+<images/skin-cancer-model-sizes-graph.png, id=882, 891.0891pt x 384.4764pt>
+File: images/skin-cancer-model-sizes-graph.png Graphic file (type png)
+<use images/skin-cancer-model-sizes-graph.png>
+Package pdftex.def Info: images/skin-cancer-model-sizes-graph.png  used on input line 1007.
+(pdftex.def)             Requested size: 485.1222pt x 209.31548pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 1007--1008
+ [][] 
+ []
+
+[47 <./images/Skin-cancer-validation-accuracy-last-50-high-performers.png> <./images/skin-cancer-model-sizes-graph.png>]
+<images/EfficientNetV2B1-initial-training-loss.png, id=891, 422.0568pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-loss.png  used on input line 1024.
+(pdftex.def)             Requested size: 176.40439pt x 131.39838pt.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1025.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1025.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-initial-training-accuracy.png, id=892, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-accuracy.png  used on input line 1029.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1030.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1030.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-loss.png, id=894, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-loss.png  used on input line 1043.
+(pdftex.def)             Requested size: 176.40439pt x 133.22122pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1044.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1044.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-accuracy.png, id=895, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-accuracy.png  used on input line 1048.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1049.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 1049.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-final-training-accuracy.png, id=896, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-final-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-final-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-final-training-accuracy.png  used on input line 1062.
+(pdftex.def)             Requested size: 308.71106pt x 233.15155pt.
+[48 <./images/EfficientNetV2B1-initial-training-loss.png> <./images/EfficientNetV2B1-initial-training-accuracy.png> <./images/EfficientNetV2B1-2nd-training-loss.png> <./images/EfficientNetV2B1-2nd-training-accuracy.png>] [49 <./images/EfficientNetV2B1-final-training-accuracy.png>]
+Chapter 13.
+[50
+
+] [51]
+Chapter 14.
+
+Overfull \hbox (4.25235pt too wide) in paragraph at lines 1128--1129
+[]\OT1/cmr/m/n/10.95 As AI-based sys-tems such as trans-fer learn-ing mod-els are in-creas-ingly em-ployed for Alzheimer's
+ []
+
+[52
+
+] [53] [54]
+Chapter 15.
+[55
+
+]
+Overfull \hbox (51.7374pt too wide) in paragraph at lines 1230--1231
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<images/better-output.png, id=975, 399.4925pt x 279.0425pt>
+File: images/better-output.png Graphic file (type png)
+<use images/better-output.png>
+Package pdftex.def Info: images/better-output.png  used on input line 1241.
+(pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
+<images/training.png, id=976, 445.665pt x 668.4975pt>
+File: images/training.png Graphic file (type png)
+<use images/training.png>
+Package pdftex.def Info: images/training.png  used on input line 1247.
+(pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
+<images/positive-progress.png, id=977, 387.4475pt x 279.0425pt>
+File: images/positive-progress.png Graphic file (type png)
+<use images/positive-progress.png>
+Package pdftex.def Info: images/positive-progress.png  used on input line 1253.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+<images/fine-tuning-more.png, id=978, 393.47pt x 279.0425pt>
+File: images/fine-tuning-more.png Graphic file (type png)
+<use images/fine-tuning-more.png>
+Package pdftex.def Info: images/fine-tuning-more.png  used on input line 1261.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/maxing-out.png, id=979, 393.47pt x 279.0425pt>
+File: images/maxing-out.png Graphic file (type png)
+<use images/maxing-out.png>
+Package pdftex.def Info: images/maxing-out.png  used on input line 1269.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/mobilenetv3-first-attempt.png, id=980, 387.4475pt x 279.0425pt>
+File: images/mobilenetv3-first-attempt.png Graphic file (type png)
+<use images/mobilenetv3-first-attempt.png>
+Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 1275.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+[56] [57 <./images/better-output.png>] [58 <./images/training.png>] [59 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [60 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>] [61] [62] [63] [64] [65]
+Chapter 16.
+[66
+
+] [67]
+Overfull \hbox (27.32025pt too wide) in paragraph at lines 1446--1446
+[]\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
+ []
+
+
+Overfull \hbox (0.12296pt too wide) in paragraph at lines 1446--1446
+[]\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
+ []
+
+[68
+
+] [69]
+Overfull \hbox (3.65741pt too wide) in paragraph at lines 1446--1446
+[]\OT1/cmr/m/n/10.95 Jonathan Fran-kle and Michael Carbin. ``The Lot-tery Ticket Hy-poth-e-sis: Train-ing Pruned
+ []
+
+[70] (final_report.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+Package rerunfilecheck Info: File `final_report.out' has not changed.
+(rerunfilecheck)             Checksum: 16C73962CF5E20122A31CF059DBE69EB;14125.
+Package logreq Info: Writing requests to 'final_report.run.xml'.
+\openout1 = `final_report.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20936 strings out of 478338
+ 375948 string characters out of 2837644
+ 1086598 words of memory out of 3000000
+ 38779 multiletter control sequences out of 15000+600000
+ 478713 words of font info for 59 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,13n,77p,3143b,1454s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_report.pdf (71 pages, 4970982 bytes).
+PDF statistics:
+ 1313 PDF objects out of 1440 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
+ 836 words of extra memory for PDF output out of 10000 (max. 10000000)
+

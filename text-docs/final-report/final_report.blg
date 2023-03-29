@@ -1,0 +1,18 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'final_report.blg'
+[132] biber-MSWIN64:340> INFO - === 
+[188] Biber.pm:418> INFO - Reading 'final_report.bcf'
+[316] Biber.pm:978> INFO - Found 51 citekeys in bib section 0
+[332] Biber.pm:4401> INFO - Processing section 0
+[345] Biber.pm:4592> INFO - Looking for bibtex file 'refs.bib' for section 0
+[426] bibtex.pm:1713> INFO - LaTeX decoding ...
+[486] bibtex.pm:1518> INFO - Found BibTeX data source 'refs.bib'
+[769] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[769] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[769] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[769] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[806] bbl.pm:654> INFO - Writing 'final_report.bbl' with encoding 'UTF-8'
+[838] bbl.pm:757> INFO - Output to final_report.bbl
+[839] Biber.pm:130> WARN - legacy month field 'September' in entry 'BMVC2016_87' is not an integer - this will probably not sort properly.
+[839] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'Gorgolewski2016' is not an integer - this will probably not sort properly.
+[839] Biber.pm:132> INFO - WARNINGS: 2

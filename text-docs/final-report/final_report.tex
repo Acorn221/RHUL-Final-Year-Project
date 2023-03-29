@@ -3,8 +3,9 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage[utf8]{inputenc}
 \usepackage{subcaption}
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=biber,style=numeric,sortcites,natbib=true,sorting=none]{biblatex}
 \addbibresource{refs.bib}
 
 
@@ -58,7 +59,7 @@ Signature:
 
 \begin{abstract}
 
-  Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
+Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
 
 \end{abstract}
 
@@ -127,7 +128,7 @@ and it seemed far more interesting than the generic project and I believe this i
 My project is about the comparison of image classification models with transfer learning.
 In this report I shall cover the background of transfer learning, the models I have chosen to compare, the datasets I have chosen to use, the pre the results of my experiments and the conclusions I have drawn from them.
 
-The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far less data and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
+The importance of transfer learning cannot be overstated, it makes training models for anyone with a computer and an internet connection possible, It opens up possibilities for people who would otherwise not be able to train models as far fewer data points and computing power is required and where properly applied, they can be more accurate than models trained from scratch.
 
 In this project, I'm planning to learn about transfer learning and comparing the different models and also going over other methods of classification such as SVMs and KNNs. I will then preprocess the dataset images and train the models on the dataset and compare the results. I will then attempt to optimise the models, find out what issues they have and try to fix them to get the best results possible.
 
@@ -726,7 +727,7 @@ I have used the following libraries to develop the front end in this project:
   \item TailwindCSS\cite{tailwindcss} - To style the web application quickly
   \item Vite\cite{Vite} - To bundle the code and to run the development server quickly
   \item MaterialUI\cite{MaterialUI} - To use the Material Design components
-  \item TensorflowJS\cite{TensorflowJS} - To run the model in the browser
+  \item TensorflowJS\cite{smilkov2019tensorflowjs} - To run the model in the browser
 \end{itemize}
 
 
@@ -1428,7 +1429,7 @@ I had spend many hours trying to find out how to parse batches of images and flo
 
 % TODO: REPLACE X WITH THE ACTUAL ACCURACY
 
-I have also had some few problems with TensorflowJS\cite{tensorflowjs}, as I was not able to get all the models to run in the browser as not all of the keras layers have been implemented in the JS library. The `Normalisation` layer was not implemented, so I had to remove that model from the web-ui. This was not a huge deal as I was able to get the other models to run in the browser, and I was able to get the results of the models on the web page.
+I have also had some few problems with TensorflowJS\cite{smilkov2019tensorflowjs}, as I was not able to get all the models to run in the browser as not all of the keras layers have been implemented in the JS library. The `Normalisation` layer was not implemented, so I had to remove that model from the web-ui. This was not a huge deal as I was able to get the other models to run in the browser, and I was able to get the results of the models on the web page.
 
 \section{Future Improvements I Could Make}
 
@@ -1438,7 +1439,7 @@ I could also try and parse the raw MRI information into the model, as I was not 
 
 Other improvements could be to expand the web-ui to include more models and potentially combine some of the models outputs to get a more accurate result. This would need to be done with caution, as I would have to make sure that the models are not too similar and I would likely have to prune the models to get the best results.
 
-I would also like to take a look into pruning the models I have trained, all of the base models I have used for transfer learning have been trained on the ImageNet dataset, which is a very large dataset, and I would like to see if I can get the models to run faster by pruning them and potentially removing lots of un-nessasary nodes or layers from the model. The Lottery ticket hypothesis\cite{lotteryticket} could be used to find 'winning tickets' in the models, which are the smallest subnetworks that can achieve the same accuracy as the original model.
+I would also like to take a look into pruning the models I have trained, all of the base models I have used for transfer learning have been trained on the ImageNet dataset, which is a very large dataset, and I would like to see if I can get the models to run faster by pruning them and potentially removing lots of un-nessasary nodes or layers from the model. The Lottery ticket hypothesis\cite{LotteryTicket} could be used to find 'winning tickets' in the models, which are the smallest subnetworks that can achieve the same accuracy as the original model.
 
 \newpage
 \printbibliography
