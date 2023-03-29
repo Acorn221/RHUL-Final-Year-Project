@@ -1429,24 +1429,48 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{TypeScript}
+      \verb{urlraw}
+      \verb https://www.typescriptlang.org/
+      \endverb
+      \verb{url}
+      \verb https://www.typescriptlang.org/
+      \endverb
     \endentry
     \entry{tailwindcss}{misc}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Tailwind CSS}
+      \verb{urlraw}
+      \verb https://tailwindcss.com/
+      \endverb
+      \verb{url}
+      \verb https://tailwindcss.com/
+      \endverb
     \endentry
     \entry{Vite}{misc}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Vite}
+      \verb{urlraw}
+      \verb https://vitejs.dev/
+      \endverb
+      \verb{url}
+      \verb https://vitejs.dev/
+      \endverb
     \endentry
     \entry{MaterialUI}{misc}{}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Material-UI}
+      \verb{urlraw}
+      \verb https://material-ui.com/
+      \endverb
+      \verb{url}
+      \verb https://material-ui.com/
+      \endverb
     \endentry
     \entry{CommitLint}{misc}{}
       \field{sortinit}{6}
@@ -1458,6 +1482,18 @@
       \endverb
       \verb{url}
       \verb https://github.com/conventional-changelog/commitlint
+      \endverb
+    \endentry
+    \entry{GitKraken}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{GitKraken}
+      \verb{urlraw}
+      \verb https://www.gitkraken.com/
+      \endverb
+      \verb{url}
+      \verb https://www.gitkraken.com/
       \endverb
     \endentry
     \entry{PyTest}{misc}{}
@@ -1482,18 +1518,6 @@
       \endverb
       \verb{url}
       \verb https://matplotlib.org/
-      \endverb
-    \endentry
-    \entry{GitKraken}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{title}{GitKraken}
-      \verb{urlraw}
-      \verb https://www.gitkraken.com/
-      \endverb
-      \verb{url}
-      \verb https://www.gitkraken.com/
       \endverb
     \endentry
     \entry{EsLint}{misc}{}
@@ -1578,8 +1602,8 @@
       \strng{authorbibnamehash}{49ae14aa3bc52f013facf74a1db2d822}
       \strng{authornamehash}{49ae14aa3bc52f013facf74a1db2d822}
       \strng{authorfullhash}{656a2a2c1133c08e05744ec59c428a8d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2624-8212}
