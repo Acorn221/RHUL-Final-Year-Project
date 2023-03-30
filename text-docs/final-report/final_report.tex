@@ -44,7 +44,7 @@ Date of Submission: \today
 
 \vskip3em
 
-Video Link: % TODO: video
+Video Link: https://youtu.be/w8QszC0jRiY
 
 \vskip3em
 
@@ -66,9 +66,7 @@ The Web-UI URL is here\cite{Hosted-UI} on GitHub Pages.
 
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
-% TODO: Software Engineering, show use of GIT and LaTeX, do uml? Show TDD with jupyter notebooks?
 % TODO: Summary of completed work
-% TODO: Ensure the models being compared are right
 
 \chapter*{Project Specification}
 
@@ -376,9 +374,6 @@ The large model is designed for high accuracy, and the small model is designed f
   \label{fig:mobilenetv3-comparison}
 \end{figure}
 
-
-% TODO: Add the top performers from here https://paperswithcode.com/sota/image-classification-on-imagenet?metric=Top%205%20Accuracy&dimension=Number%20of%20params
-
 \section{InceptionV3}
 InceptionV3\cite{DBLP:journals/corr/SzegedyVISW15}, it's one of the most popular models for image classification as it is comparatively fast and accurate.
 It's feature extraction capabilities are much more accurate than traditional methods such as hand-crafted feature extraction.
@@ -644,7 +639,6 @@ With the flower dataset however, I did apply data augmentation to the images, as
 \section{Problems With The Datasets and How I Fixed Them}
 
 \subsection{The Problems}
-% TODO: insert the Alzheimer's MRI Dataset images here, talk about repeated data and the problems that it causes
 
 The Alzheimer's MRI dataset that I had chosen early on in the project was far from ideal as I found out later on.
 The pre-augmentation that was applied to the dataset caused problems with the training/validation split, as the
@@ -717,8 +711,8 @@ should give a better representation of how well the model would work in a real w
 \section{The code}
 The way I have structured the code is by having a main.py file that contains the code to train the model, and a Main.ipynb file that contains the code to test setting up the model.
 
-\subsection{My Development Python Environment}
-% TODO: edit this section and make it more concise and descriptive of the final project
+\subsection{The Trainin Tools I Used}
+
 I have used the following tools to develop this project:
 \begin{itemize}
   \item Python 3.8.5\cite{Python} - To run the code
@@ -778,7 +772,6 @@ and to test the code quicker.
 
 Aside from testing the models, I could set up unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
-% TODO: Talk about the api and the tests
 
 \subsection{Different learning rates}
 
@@ -945,7 +938,6 @@ The results from the faulty dataset looked so promising as there was consistent 
 My lack of experience with machine learning meant that I didn't know what to trust when it came to the results, I just assumed that the model was working well. Thankfully I did realise the issue before I had finished my project, and I was able to fix it with the upcoming results.
 
 \chapter{The new training results}
-% TODO: train the models again with the new dataset and parameters, then show the results here
 
 \section{The OASIS-1 Dataset}
 
@@ -1239,8 +1231,6 @@ To run the tests for the AutomatedTestingLibary run the following command:
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
 \chapter{Professional Issues}
-
-% TODO: talk about the agreements made to get the data, and the potential issues with the data
 
 \section{Usability}
 As AI-based systems such as transfer learning models are increasingly employed for Alzheimer's detection, it is crucial to ensure that they are accessible, user-friendly and transparent in their operation. The algorithms should be focused on designing systems that complement human expertise rather than replacing it, facilitating seamless integration between healthcare professionals and AI tools. Appropriate training and guidelines for the use of AI in medical imaging should be implemented to ensure that healthcare providers are comfortable and proficient with the technology. This would mean that my web interface should be intuitive and easily accessible to healthcare professionals, and should be able to be used by them without any training.
