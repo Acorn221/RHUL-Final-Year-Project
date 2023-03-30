@@ -577,12 +577,11 @@ Whilst I have not used the BIDS standard for all the datasets in this project, I
 
 \section{Dataset Augmentation}
 
-When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
-Unfortunately I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
-Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
-This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
-It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
-If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
+Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images, which can help improve the performance of a model by reducing overfitting and improving generalization. In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available and MRI scans are very expensive. Although the majority of the archive consists of augmented images, this has caused some problems.
+
+For the skin cancer dataset, data augmentation was applied to the images since there were not enough images per class to train the model on. When training a deep learning model, it is crucial to have a large dataset to learn from a wide variety of data. Unfortunately, there are not as many MRI scans as desired in the OASIS-1\cite{OASIS} dataset, so data augentmation was used to increase the dataset size. The augmentation I'm using is done by the Keras\cite{Keras} ImageDataGenerator class, which can be used to apply random transformations to the images in the dataset, such as rotation, zooming, and flipping. This helps to prevent overfitting and improve the generalization of the model. This helps to improve the validation accuracy through reducing overfitting to the training set.
+
+While it is not optimal to rely on data augmentation, it is significantly better than not having enough data to train the model. If these models were to be used in real-world scenarios, augmentation helps make the model more resilient to the quality of the scans.
 
 \section{Batch sizes}
 The batch size is the number of images that are passed to the model at a time.
@@ -623,18 +622,24 @@ to it's simplicity and the fact that it is the most common loss function used fo
 The validation loss and accuracy are used to determine how well the model generalises to new data, and a validation loss that is much higher than the training loss is a sign that the model is overfitting.
 For the validation set, I have assigned 20\% of the data to be used.
 
-\section{Data Augmentation}
+There are a few metrics that can be used to evaluate the performance of a model in a real world scenario.
 
-Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images.
-This can help to improve the performance of a model, as it can help to reduce overfitting, and can also help to improve the generalisation of the model.
-The transformations that are applied to the images are usually random, and can include things like rotating the image,
-flipping the image, or changing the contrast/saturation of the image.
+One of these is called Sensitivity or recall, which is a performance metric used to evaluate the ability of a model to correctly identify true positive cases within a dataset. It is essentially a measure of how well the model is able to detect the positive instances within the data.
 
-In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available.
-MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
+The formula for calculating sensitivity is:
 
-In the Alzheimer's MRI Dataset, the majority of the archive consists of augmented images already however this caused me problems which I will go on to talk about.
-With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
+Sensitivity = (True Positives) / (True Positives + False Negatives)
+
+In this formula, True Positives are instances that the model correctly identifies as positive, while False Negatives are instances the model incorrectly identifies as negative (missing positive instances).
+Higher sensitivity values indicate that the model is better at identifying true positives and avoiding false negatives, which may be important, especially when diagnosing Alzheimer's disease or skin cancer.
+
+Specificity is another performance metric used to evaluate the ability of a model to correctly identify true negative cases within a dataset. It is defined as the proportion of actual negatives that are correctly predicted as negative. In other words, it is the percentage of people who do not have the disease that the model correctly identifies as not having the disease. This could help doctors to have more or less confidence in the model's predictions, so it could help with their decision making.
+
+Finally, the F1 score is a measure of a model's accuracy on a dataset. It is used to evaluate binary classification systems, which classify examples into 'positive' or 'negative'. The F1 score is a way of combining the precision and recall of the model, and it is defined as the mean of the model's precision and recall.
+
+The formula for calculating the F1 score is:
+
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
 
 \section{Problems With The Datasets and How I Fixed Them}
 
@@ -715,39 +720,16 @@ It is the lowest point in the entire loss landscape no matter what parameters th
 
 Hyperparameter tuning is the process of finding the most optimal set of hyperparameters for a given neural network. These include learning rate, batch size, number of layers, number of units per layer, and more.
 
-In a grid search, the model is trained with every possible combination of hyperparameters, and the best set of hyperparameters is chosen based on the validation accuracy. This is a very time consuming process, and it is not very efficient as it is not guaranteed that the best set of hyperparameters will be found.
+In a grid search, the model is trained with every possible combination of hyperparameters, and the best set of hyperparameters is chosen based on the validation accuracy. This is a very time-consuming process, and it is not very efficient as it is not guaranteed that the best set of hyperparameters will be found.
 
-This is very inefficient, as it essentially brute forces the process of finding the best set of hyperparameters, and it is not guaranteed that the best set of hyperparameters will even be found.
-This would be viable if the models took a very short time to train, but as the models take a long time to train, I do not have the resources to persue this method.
+Random search is where the hyperparameters are randomly chosen, and the model is trained with those hyperparameters. This can be more efficient than a grid search, as it does not train the model with every possible combination of hyperparameters. However, there is also a chance that the best set of hyperparameters will not be found in a reasonable amount of time. There is a possibility that random search could be combined with grid search, where the hyperparameters are randomly chosen in the grid search, and an algorithm could determine which hyperparameters are the best without having to train the model with every possible combination.
 
-Random search is where the hyperparameters are randomly chosen, and the model is trained with those hyperparameters. This can be more efficient than a grid search, as it does not train the model with every possible combination of hyperparameters, but there is also a chance that the best set of hyperparameters will not be found in a reasonable amount of time. There is a possibility that random search could be combined with grid search, where the hyperparameters are randomly chosen in the grid search and an algorithm could determine which hyperparameters are the best without having to train the model with every possible combination.
+Bayesian optimization is another method for hyperparameter tuning that utilizes a probabilistic model to propose better search spaces, leading to more efficient convergence to find the optimal set of hyperparameters.
 
 Genetic Algorithms (GAs) are inspired by the process of natural selection, where each individual (hyperparameter set) in the population is evaluated and scored based on its performance. The fittest individuals are selected for reproduction (crossover and mutation) to produce the next generation. This process is repeated until the optimal set is found or a stopping criterion is met. I ended up manually tuning the hyperparameters, in a method similar to this, as it was the most efficient way to do so.
 
-In practice, there's usually more than one singular method of hyperparameter tuning that is used to find the best set of hyperparameters. I essentially combined random search with a genetic algorithm, as I randomly chose the hyperparameters, and then I chose the best set of hyperparameters based on the validation accuracy, and repeated that in the juypter notebook until I felt that I had found the best set of hyperparameters.
+In practice, there's usually more than one singular method of hyperparameter tuning that is used to find the best set of hyperparameters. I essentially combined random search with a genetic algorithm, as I randomly chose the hyperparameters, and then I chose the best set of hyperparameters based on the validation accuracy. Cross-validation can also be used to assess the performance of the model with the chosen hyperparameters. I repeated this process in the Jupyter notebook until I felt that I had found the best set of hyperparameters.
 
-\subsection{The Metrics}
-
-There are a few metrics that can be used to evaluage the performance of a model in a real world scenario.
-
-One of these is called Sensitivity or recall, which is a performance metric used to evaluate the ability of a model to correctly identify true positive cases within a dataset. It is essentially a measure of how well the model is able to detect the positive instances within the data.
-
-The formula for calculating sensitivity is:
-
-Sensitivity = (True Positives) / (True Positives + False Negatives)
-
-In this formula, True Positives are instances that the model correctly identifies as positive, while False Negatives are instances the model incorrectly identifies as negative (missing positive instances).
-Higher sensitivity values indicate that the model is better at identifying true positives and avoiding false negatives, which may be important, especially when diagnosing Alzheimer's disease or skin cancer.
-
-Specificity is another performance metric used to evaluate the ability of a model to correctly identify true negative cases within a dataset. It is defined as the proportion of actual negatives that are correctly predicted as negative. In other words, it is the percentage of people who do not have the disease that the model correctly identifies as not having the disease. This could help doctors to have more or less confidence in the model's predictions, so it could help with their decision making.
-
-Finally, the F1 score is a measure of a model's accuracy on a dataset. It is used to evaluate binary classification systems, which classify examples into 'positive' or 'negative'. The F1 score is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model's precision and recall.
-
-The formula for calculating the F1 score is:
-
-F1 = 2 * (Precision * Recall) / (Precision + Recall)
-
-\pagebreak
 
 \chapter{Software Engineering}
 
