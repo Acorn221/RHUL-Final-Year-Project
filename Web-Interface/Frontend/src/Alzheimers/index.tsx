@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useState } from 'react';
 import { XyzTransitionGroup } from '@animxyz/react';
@@ -73,6 +74,10 @@ const Alzheimers = () => {
     setCurrentState(states.waitingForData);
   };
 
+  /**
+   * This loads the model from the server, only once, when the component is mounted
+   * This is done to prevent the model from being loaded every time the user changes the input data
+   */
   useEffect(() => {
     tf.loadLayersModel(modelURL).then((loadedModel) => {
       setModel(loadedModel);
@@ -87,21 +92,32 @@ const Alzheimers = () => {
     if (currentState === states.waitingForPrediction) {
       // TODO: Process the image and the other input data
       if (!image || !model) return;
+
+      // creating image that we can pass to TFJS
       const img = new Image();
       img.src = URL.createObjectURL(image);
       img.width = 224;
       img.height = 224;
+
+      // This is called when the image has loaded
       img.onload = async () => {
+        // Convert the image to a tensor
         const tensor = tf.browser.fromPixels(img);
+        // Resize the image to ensure that it is the correct size
         const resized = tf.image.resizeBilinear(tensor, [224, 224]);
+        // Expand the dimensions of the image to ensure that it is the correct shape
         const imageBatched = resized.expandDims(0);
+        // Convert the additional inputs to a tensor
         const additionalInputs = tf.tensor1d([sex === 'male' ? 1 : 0, age, mmse]);
+        // Expand the dimensions of the additional inputs to ensure that it is the correct shape
         const additionalInputsBatched = additionalInputs.expandDims(0);
 
         // Pass the inputs as an array of tensors
         const inputs = [additionalInputsBatched, imageBatched];
 
+        // Predict the CDR score
         const pred = model.predict(inputs) as tf.Tensor;
+        // Get the data from the prediction
         const predValues = await pred.data();
 
         // In the model, the CDR score is 2x, so we divide by 2 to get the actual CDR score
@@ -218,6 +234,7 @@ const Alzheimers = () => {
                 <div className="text-xl">
                   The model predicts that the patient has a CDR score of:
                   {
+                    // this checks to see if prediction is defined, and if it is, loops through the array and returns the CDR score of the highest prediction
                     prediction && prediction.reduce((prev, curr) => (prev.pred > curr.pred ? prev : curr)).CDR.toFixed(2)
                   }
                 </div>
