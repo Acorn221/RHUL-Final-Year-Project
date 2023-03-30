@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber final_report"] 1680211041 "final_report.bcf" "final_report.bbl" "final_report" 1680211938
-  "final_report.bcf" 1680211937 112546 e6f458b6fbaff737683a9278f0fe2eaa "pdflatex"
+["biber final_report"] 1680215005 "final_report.bcf" "final_report.bbl" "final_report" 1680215239
+  "final_report.bcf" 1680215239 113090 cc91bae98be299a9a93d1d1df305aaaa "pdflatex"
   "refs.bib" 1680205307 31300 6ce0eb0ee0908c997476990ba91665c9 ""
   (generated)
   "final_report.bbl"
   "final_report.blg"
-["pdflatex"] 1680211929 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1680211938
+["pdflatex"] 1680215231 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1680215239
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1679926089 84158 d77284a6843bde1e4b9764f09fb2e89e ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1669310671 12668 9f739290d3285f6525d6bae1771125d4 ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1669310875 15464 b7b1c66cd01c7bc6d4081ff506a709ef ""
@@ -116,14 +116,14 @@
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/tocloft/tocloft.sty" 1578912363 37263 3e78d14f0f4b1a30560fea5e04de805d ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1680211929 127617 4435c1c50f0013ffde0be5abe4c0b5da ""
-  "final_report.aux" 1680211937 36875 40a39ac1f6b436ef8862c4efab7a4d9f "pdflatex"
-  "final_report.bbl" 1680211044 73308 3d3d49973d4c00317d9ffcdd221c17a1 "biber final_report"
+  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1680215230 127446 4bc46bd21ab59d88a0134f6a22f3a6d2 ""
+  "final_report.aux" 1680215239 37153 181af4eaaf3c7d374268610f81e8b14e "pdflatex"
+  "final_report.bbl" 1680215009 73308 c2c2e19c05e51d9600d88c358ee5fd36 "biber final_report"
   "final_report.cls" 1380202490 5034 9949560295805b0968e9910abcf2715a ""
-  "final_report.out" 1680211937 14148 a9c0bdcebb928be0012c22c63a452be2 "pdflatex"
-  "final_report.run.xml" 1680211937 2389 98f04dd947b13b68706cb0e8f3e5b73c "pdflatex"
-  "final_report.tex" 1680211929 127617 4435c1c50f0013ffde0be5abe4c0b5da ""
-  "final_report.toc" 1680211937 9200 20a05ad00d9da554eef8a91d6dddf145 "pdflatex"
+  "final_report.out" 1680215239 14005 97354ceb56c2c2ee910a108f23adcbc7 "pdflatex"
+  "final_report.run.xml" 1680215239 2389 98f04dd947b13b68706cb0e8f3e5b73c "pdflatex"
+  "final_report.tex" 1680215230 127446 4bc46bd21ab59d88a0134f6a22f3a6d2 ""
+  "final_report.toc" 1680215239 9040 d0afcc06db9a2ff9196a586cf377ef2c "pdflatex"
   "images/EfficientNetComparison.PNG" 1679839690 397394 f73aa213fb72e6be5a03d5db40e62b43 ""
   "images/EfficientNetPerformanceDatasets.PNG" 1679844702 101381 afc2982721169eed8ce475ad02b90899 ""
   "images/EfficientNetV2B1-2nd-training-accuracy.png" 1679926638 54132 a2278476d0d02285762eb961a855fb61 ""

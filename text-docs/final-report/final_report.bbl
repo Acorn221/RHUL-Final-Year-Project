@@ -19,9 +19,56 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{Hosted-UI}{misc}{}
+    \entry{TAN2019105725}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8a59c936b9377d091c31007b3df60518}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Teck\bibnamedelima Yan},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a8ffed767d91da060abb0053200039b8}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Chee\bibnamedelima Peng},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{78606b110fa59f9d302e16468c4210a8}
+      \strng{fullhash}{78606b110fa59f9d302e16468c4210a8}
+      \strng{bibnamehash}{78606b110fa59f9d302e16468c4210a8}
+      \strng{authorbibnamehash}{78606b110fa59f9d302e16468c4210a8}
+      \strng{authornamehash}{78606b110fa59f9d302e16468c4210a8}
+      \strng{authorfullhash}{78606b110fa59f9d302e16468c4210a8}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this research, we propose an intelligent decision support system for skin cancer detection. Since generating an effective lesion representation is a vital step to ensure the success of lesion classification, the discriminative power of different types of features is exploited. Specifically, we combine clinically important asymmetry, border irregularity, colour and dermoscopic structure features with texture features extracted using Grey Level Run Length Matrix, Local Binary Patterns, and Histogram of Oriented Gradients operators for lesion representation. Then, we propose two enhanced Particle Swarm Optimization (PSO) models for feature optimization. The first model employs adaptive acceleration coefficients, multiple remote leaders, in-depth sub-dimension feature search and re-initialization mechanisms to overcome stagnation. The second model uses random acceleration coefficients, instead of adaptive ones, based on non-linear circle, sine and helix functions, respectively, to increase diversification and intensification. Ensemble classifiers are also constructed with each base model trained using each optimized feature subset. A deep convolutional neural network is devised whose hyper-parameters are fine-tuned using the proposed PSO models. Extensive experimental studies using dermoscopic skin lesion data, medical data from the UCI machine learning repository, and ALL-IDB2 image data are conducted to evaluate the model efficiency systematically. The results from empirical evaluations and statistical tests indicate the superiority of the proposed models over other advanced PSO variants and classical search methods pertaining to discriminative feature selection and optimal hyper-parameter identification for deep learning networks in lesion classification as well as other disease diagnosis.}
+      \field{issn}{1568-4946}
+      \field{journaltitle}{Applied Soft Computing}
+      \field{title}{Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models}
+      \field{volume}{84}
+      \field{year}{2019}
+      \field{pages}{105725}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.asoc.2019.105725
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S156849461930506X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S156849461930506X
+      \endverb
+      \keyw{Skin cancer detection,Feature selection,Hyper-parameter tuning,Evolutionary algorithm,Deep and ensemble classifier}
+    \endentry
+    \entry{Hosted-UI}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{Hosted UI}
       \verb{urlraw}
@@ -140,8 +187,8 @@
       \strng{authorbibnamehash}{3c90d6fb0fc2ecafcacd866602dbfffe}
       \strng{authornamehash}{3c90d6fb0fc2ecafcacd866602dbfffe}
       \strng{authorfullhash}{392d3bc9c37f815c35f0268813dd5f4f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.LG}
@@ -153,8 +200,8 @@
       \endverb
     \endentry
     \entry{DementiaStatistics}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Alzheimer's Disease Statistics}
       \verb{urlraw}
@@ -276,8 +323,8 @@
       \strng{authorbibnamehash}{b74a4489faa82cdac924ce1bbbb67174}
       \strng{authornamehash}{b74a4489faa82cdac924ce1bbbb67174}
       \strng{authorfullhash}{5362cf34d4d0220272dc416207682be1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{BACKGROUND: The accumulation of soluble and insoluble aggregated amyloid-beta (A$\beta$) may initiate or potentiate pathologic processes in Alzheimer's disease. Lecanemab, a humanized IgG1 monoclonal antibody that binds with high affinity to A$\beta$ soluble protofibrils, is being tested in persons with early Alzheimer's disease. METHODS: We conducted an 18-month, multicenter, double-blind, phase 3 trial involving persons 50 to 90 years of age with early Alzheimer's disease (mild cognitive impairment or mild dementia due to Alzheimer's disease) with evidence of amyloid on positron-emission tomography (PET) or by cerebrospinal fluid testing. Participants were randomly assigned in a 1:1 ratio to receive intravenous lecanemab (10 mg per kilogram of body weight every 2 weeks) or placebo. The primary end point was the change from baseline at 18 months in the score on the Clinical Dementia Rating-Sum of Boxes (CDR-SB; range, 0 to 18, with higher scores indicating greater impairment). Key secondary end points were the change in amyloid burden on PET, the score on the 14-item cognitive subscale of the Alzheimer's Disease Assessment Scale (ADAS-cog14; range, 0 to 90; higher scores indicate greater impairment), the Alzheimer's Disease Composite Score (ADCOMS; range, 0 to 1.97; higher scores indicate greater impairment), and the score on the Alzheimer's Disease Cooperative Study-Activities of Daily Living Scale for Mild Cognitive Impairment (ADCS-MCI-ADL; range, 0 to 53; lower scores indicate greater impairment). RESULTS: A total of 1795 participants were enrolled, with 898 assigned to receive lecanemab and 897 to receive placebo. The mean CDR-SB score at baseline was approximately 3.2 in both groups. The adjusted least-squares mean change from baseline at 18 months was 1.21 with lecanemab and 1.66 with placebo (difference, -0.45; 95\% confidence interval [CI], -0.67 to -0.23; P<0.001). In a substudy involving 698 participants, there were greater reductions in brain amyloid burden with lecanemab than with placebo (difference, -59.1 centiloids; 95\% CI, -62.6 to -55.6). Other mean differences between the two groups in the change from baseline favoring lecanemab were as follows: for the ADAS-cog14 score, -1.44 (95\% CI, -2.27 to -0.61; P<0.001); for the ADCOMS, -0.050 (95\% CI, -0.074 to -0.027; P<0.001); and for the ADCS-MCI-ADL score, 2.0 (95\% CI, 1.2 to 2.8; P<0.001). Lecanemab resulted in infusion-related reactions in 26.4\% of the participants and amyloid-related imaging abnormalities with edema or effusions in 12.6\%. CONCLUSIONS: Lecanemab reduced markers of amyloid in early Alzheimer's disease and resulted in moderately less decline on measures of cognition and function than placebo at 18 months but was associated with adverse events. Longer trials are warranted to determine the efficacy and safety of lecanemab in early Alzheimer's disease. (Funded by Eisai and Biogen; Clarity AD ClinicalTrials.gov number, NCT03887455.).}
@@ -291,8 +338,8 @@
       \range{pages}{13}
     \endentry
     \entry{NeuralNetworkDiagram}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Neural Network Diagram}
       \verb{urlraw}
@@ -346,8 +393,8 @@
       \strng{authorbibnamehash}{130317b1d4813d839664c5dacfc0bc64}
       \strng{authornamehash}{130317b1d4813d839664c5dacfc0bc64}
       \strng{authorfullhash}{28d325879ad7a274b33733df18dba22c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1664-2295}
@@ -384,8 +431,8 @@
       \strng{authorbibnamehash}{3c3f01f3fa9fc3858632686fbeec0d05}
       \strng{authornamehash}{3c3f01f3fa9fc3858632686fbeec0d05}
       \strng{authorfullhash}{3c3f01f3fa9fc3858632686fbeec0d05}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2011 9th International Workshop on Content-Based Multimedia Indexing (CBMI)}
@@ -398,8 +445,8 @@
       \endverb
     \endentry
     \entry{ContentBasedImageRetrieval}{misc}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{Content-Based Image Retrieval Diagram}
       \verb{urlraw}
@@ -420,53 +467,6 @@
       \verb{url}
       \verb https://oasis-brains.org/#data
       \endverb
-    \endentry
-    \entry{TAN2019105725}{article}{}
-      \name{author}{3}{}{%
-        {{hash=8a59c936b9377d091c31007b3df60518}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Teck\bibnamedelima Yan},
-           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Li},
-           giveni={L\bibinitperiod}}}%
-        {{hash=a8ffed767d91da060abb0053200039b8}{%
-           family={Lim},
-           familyi={L\bibinitperiod},
-           given={Chee\bibnamedelima Peng},
-           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{78606b110fa59f9d302e16468c4210a8}
-      \strng{fullhash}{78606b110fa59f9d302e16468c4210a8}
-      \strng{bibnamehash}{78606b110fa59f9d302e16468c4210a8}
-      \strng{authorbibnamehash}{78606b110fa59f9d302e16468c4210a8}
-      \strng{authornamehash}{78606b110fa59f9d302e16468c4210a8}
-      \strng{authorfullhash}{78606b110fa59f9d302e16468c4210a8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In this research, we propose an intelligent decision support system for skin cancer detection. Since generating an effective lesion representation is a vital step to ensure the success of lesion classification, the discriminative power of different types of features is exploited. Specifically, we combine clinically important asymmetry, border irregularity, colour and dermoscopic structure features with texture features extracted using Grey Level Run Length Matrix, Local Binary Patterns, and Histogram of Oriented Gradients operators for lesion representation. Then, we propose two enhanced Particle Swarm Optimization (PSO) models for feature optimization. The first model employs adaptive acceleration coefficients, multiple remote leaders, in-depth sub-dimension feature search and re-initialization mechanisms to overcome stagnation. The second model uses random acceleration coefficients, instead of adaptive ones, based on non-linear circle, sine and helix functions, respectively, to increase diversification and intensification. Ensemble classifiers are also constructed with each base model trained using each optimized feature subset. A deep convolutional neural network is devised whose hyper-parameters are fine-tuned using the proposed PSO models. Extensive experimental studies using dermoscopic skin lesion data, medical data from the UCI machine learning repository, and ALL-IDB2 image data are conducted to evaluate the model efficiency systematically. The results from empirical evaluations and statistical tests indicate the superiority of the proposed models over other advanced PSO variants and classical search methods pertaining to discriminative feature selection and optimal hyper-parameter identification for deep learning networks in lesion classification as well as other disease diagnosis.}
-      \field{issn}{1568-4946}
-      \field{journaltitle}{Applied Soft Computing}
-      \field{title}{Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models}
-      \field{volume}{84}
-      \field{year}{2019}
-      \field{pages}{105725}
-      \range{pages}{1}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.asoc.2019.105725
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S156849461930506X
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S156849461930506X
-      \endverb
-      \keyw{Skin cancer detection,Feature selection,Hyper-parameter tuning,Evolutionary algorithm,Deep and ensemble classifier}
     \endentry
     \entry{Ballerini2013}{inbook}{}
       \name{author}{4}{}{%
@@ -599,8 +599,8 @@
       \endverb
     \endentry
     \entry{Keras}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.}
       \verb{urlraw}
@@ -611,8 +611,8 @@
       \endverb
     \endentry
     \entry{ImageNet}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{ImageNet}
       \verb{urlraw}
@@ -691,8 +691,8 @@
       \strng{authorbibnamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
       \strng{authornamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
       \strng{authorfullhash}{1f186e1a9b32bef8cdecf585255a11d6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -830,8 +830,8 @@
       \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{authornamehash}{25d2f3c4577a6632d37f0126cc781232}
       \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Learning Representations}
@@ -947,8 +947,8 @@
       \strng{authornamehash}{d029e8131f7a0bef056d7edc726f1529}
       \strng{authorfullhash}{d029e8131f7a0bef056d7edc726f1529}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -980,8 +980,8 @@
       \strng{authorbibnamehash}{14134a39113404b1f80969c9ccc1f71e}
       \strng{authornamehash}{14134a39113404b1f80969c9ccc1f71e}
       \strng{authorfullhash}{14134a39113404b1f80969c9ccc1f71e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -1036,8 +1036,8 @@
       \endverb
     \endentry
     \entry{RTX3080}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{RTX 3080}
       \verb{urlraw}
@@ -1136,8 +1136,8 @@
       \strng{authorbibnamehash}{cee18d7c9bca73cbf2a27198014dcb7f}
       \strng{authornamehash}{cee18d7c9bca73cbf2a27198014dcb7f}
       \strng{authorfullhash}{5b8f3b7ff7cc76b6ae8139f29d47e536}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A large number of papers have introduced novel machine learning and feature extraction methods for automatic classification of Alzheimer's disease (AD). However, while the vast majority of these works use the public dataset ADNI for evaluation, they are difficult to reproduce because different key components of the validation are often not readily available. These components include selected participants and input data, image preprocessing and cross-validation procedures. The performance of the different approaches is also difficult to compare objectively. In particular, it is often difficult to assess which part of the method (e.g. preprocessing, feature extraction or classification algorithms) provides a real improvement, if any. In the present paper, we propose a framework for reproducible and objective classification experiments in AD using three publicly available datasets (ADNI, AIBL and OASIS). The framework comprises: i) automatic conversion of the three datasets into a standard format (BIDS); ii) a modular set of preprocessing pipelines, feature extraction and classification methods, together with an evaluation framework, that provide a baseline for benchmarking the different components. We demonstrate the use of the framework for a large-scale evaluation on 1960 participants using T1 MRI and FDG PET data. In this evaluation, we assess the influence of different modalities, preprocessing, feature types (regional or voxel-based features), classifiers, training set sizes and datasets. Performances were in line with the state-of-the-art. FDG PET outperformed T1 MRI for all classification tasks. No difference in performance was found for the use of different atlases, image smoothing, partial volume correction of FDG PET images, or feature type. Linear SVM and L2-logistic regression resulted in similar performance and both outperformed random forests. The classification performance increased along with the number of subjects used for training. Classifiers trained on ADNI generalized well to AIBL and OASIS. All the code of the framework and the experiments is publicly available: general-purpose tools have been integrated into the Clinica software (www.clinica.run) and the paper-specific code is available at: https://gitlab.icm-institute.org/aramislab/AD-ML.}
@@ -1303,8 +1303,8 @@
       \strng{authorbibnamehash}{a4f1894bca1d05414f4ba2d32db7cfb7}
       \strng{authornamehash}{a4f1894bca1d05414f4ba2d32db7cfb7}
       \strng{authorfullhash}{19f3b4aa0080d893747d616f4084620d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The development of magnetic resonance imaging (MRI) techniques has defined modern neuroimaging. Since its inception, tens of thousands of studies using techniques such as functional MRI and diffusion weighted imaging have allowed for the non-invasive study of the brain. Despite the fact that MRI is routinely used to obtain data for neuroscience research, there has been no widely adopted standard for organizing and describing the data collected in an imaging experiment. This renders sharing and reusing data (within or between labs) difficult if not impossible and unnecessarily complicates the application of automatic pipelines and quality assurance protocols. To solve this problem, we have developed the Brain Imaging Data Structure (BIDS), a standard for organizing and describing MRI datasets. The BIDS standard uses file formats compatible with existing software, unifies the majority of practices already common in the field, and captures the metadata necessary for most common data processing operations.}
@@ -1327,8 +1327,8 @@
       \endverb
     \endentry
     \entry{BIDS_metadata}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{BIDS MRI Metadata}
       \verb{urlraw}
@@ -1363,8 +1363,8 @@
       \endverb
     \endentry
     \entry{Jupyter}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.}
       \verb{urlraw}
@@ -1375,8 +1375,8 @@
       \endverb
     \endentry
     \entry{VsCode}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{VsCode}
       \verb{urlraw}
@@ -1387,8 +1387,8 @@
       \endverb
     \endentry
     \entry{RHULGitLab}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{RHUL GitLab}
       \verb{urlraw}
@@ -1399,8 +1399,8 @@
       \endverb
     \endentry
     \entry{tmux}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{tmux}
       \verb{urlraw}
@@ -1411,8 +1411,8 @@
       \endverb
     \endentry
     \entry{TypescriptProjectTemplate}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Typescript Project Template}
       \verb{urlraw}
@@ -1423,8 +1423,8 @@
       \endverb
     \endentry
     \entry{React}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{React: A JavaScript library for building user interfaces}
       \verb{urlraw}
@@ -1471,8 +1471,8 @@
       \endverb
     \endentry
     \entry{MaterialUI}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Material-UI}
       \verb{urlraw}
@@ -1483,8 +1483,8 @@
       \endverb
     \endentry
     \entry{CommitLint}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{CommitLint}
       \verb{urlraw}
@@ -1495,8 +1495,8 @@
       \endverb
     \endentry
     \entry{GitKraken}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{GitKraken}
       \verb{urlraw}
@@ -1507,8 +1507,8 @@
       \endverb
     \endentry
     \entry{PyTest}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{PyTest}
       \verb{urlraw}
@@ -1519,8 +1519,8 @@
       \endverb
     \endentry
     \entry{Matplotlib}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.}
       \verb{urlraw}
@@ -1543,8 +1543,8 @@
       \endverb
     \endentry
     \entry{ILSVRC}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{ILSVRC}
       \verb{urlraw}
@@ -1555,8 +1555,8 @@
       \endverb
     \endentry
     \entry{NodeJs}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{Node.js}
       \verb{urlraw}
@@ -1567,8 +1567,8 @@
       \endverb
     \endentry
     \entry{Yarn}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{title}{Yarn}
       \verb{urlraw}
@@ -1650,8 +1650,8 @@
       \strng{authorbibnamehash}{3258326f745480cc40d5d784a5209d9b}
       \strng{authornamehash}{3258326f745480cc40d5d784a5209d9b}
       \strng{authorfullhash}{3258326f745480cc40d5d784a5209d9b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
