@@ -7,12 +7,12 @@
   - [x] Skin Cancer
     - [x] Let the user take a photo with their phone
     - [x] Process the image with the best performing model
-    - [ ] Display the results
-    - [ ] Host on github pages
-  - [ ] Alzheimer's
-    - [ ] Make the local version work
-- [ ] Use better methods of analysis for the performance
-  - [ ] Confusion Matrices
+    - [x] Display the results
+    - [x] Host on github pages
+  - [x] Alzheimer's
+    - [x] Make the local version work
+  - [ ] Make a guide on how to use the UI
+
 - [ ] Hyperparameter tuning
 	- [ ] Use a grid search
 	- [ ] Use a random search
@@ -20,13 +20,8 @@
 
 ## On campus
 
-- [ ] Finish the automated testing library
-  - [ ] Write tests for hyperparameter tuning
-		- [ ] Write the hyperparameter tuning function
-  - [ ] Allow for the image input and the other related parameters to be passed into the model
-    - [ ] Test
-    - [ ] Function
-  - [ ] Write some examples for the library
+- [x] Finish the automated testing library
+  - [x] Write some examples for the library
 - [ ] The Report
   - [ ] Document the different hyperparameter tuning
   - [ ] Document the different ways of testing the model and showing its performance
@@ -59,7 +54,7 @@
 
 ## The Code
 
- - [ ] Does it work? Is it stable?
+ - [x] Does it work? Is it stable?
  - [ ] Is the software usable? Is the interface appropriate for the application (a compiler might require more technical skills to run than an e-commerce site)?
    - Add the Venv to the report instructions
    - Clearly explain how to run each of the python files, step by step
