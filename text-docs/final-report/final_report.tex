@@ -810,8 +810,15 @@ I've decided to use Python for the API backend, as it's the main server side lan
 
 Although I had developed the API in Python, I decided to use the TensorflowJS library to process the data, as it would be easier to use, and it would allow me to program more efficiently and host the project on a static website, which would make it easier to host and maintain.
 
-\chapter{Identifying and Mitigating Bias}
+\section{How I'm Going To Get My Results}
 
+The way I'm going to get the bulk of my training results will be with my testing and training class that I have created. This is to help speed up the training process, as I can set the parameters that I want to use for augmentation/traning, then I can run the training and testing class, and it will put the results into seperate JSON files which I can then use to generate the graphs and tables that I need for my report. It also saves the models, so I can use them later on if I need to.
+
+For more specific results, I would have liked to use the scikitLearn library with a GridSearch to find the best parameters for the model, however I didn't have time to do this, and it would have been very inefficient.
+I ended up training a model, then using that model to train for more epochs with varying parameters, to try and narrow in on the best parameters for training the model.
+This method worked well, as I could get the majority of my results automatically, leaving it running overnight, then specialising the model for more epochs with different parameters.
+
+\chapter{Identifying and Mitigating Bias}
 
 \section{The OASIS-1 Dataset}
 The OASIS-1 dataset\cite{OASIS} that I used for this project contains 416 patients with 434 scans.
@@ -839,6 +846,7 @@ One potential issue with this parameter is that women are more likely to have Al
 \end{figure}
 
 \clearpage
+
 \section{The Skin Cancer Dataset}
 The Skin cancer dataset that I was provided for this project contains images of benign and malignant skin cancer.
 
@@ -1230,8 +1238,6 @@ To run the tests for the AutomatedTestingLibary run the following command:
 \end{lstlisting}
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
-
-
 \chapter{Professional Issues}
 
 % TODO: talk about the agreements made to get the data, and the potential issues with the data
@@ -1524,6 +1530,16 @@ Today I have been training more models to try and optimise the performance of th
 I've also got the web-ui working with the client side processing, so I can give the user the results of their images locally, which avoids the need for the server to process the images. There are many advantages to this, one of which is that I can deploy to a static file hosting service, such as GitHub pages, which means I can indefinitely host the web-ui for free.
 
 I will continue to refactor the server side code to submit it to my project code, however I will not use it.
+
+\section*{29/3/2023}
+
+Today I will be working on my report, ensuring there are no spelling mistakes, repeated sections and that the report is well written and easy to understand.
+I have also been working on the web-ui, and I have managed to get the results of the models to display on the web page.
+
+\section*{30/3/2023}
+
+Today I've been refactoring my code and report to ensure it's in the best possible state it can be in, I've also been working on the web-ui, and I have managed to get the results of the models to display on the web page.
+The web-ui now works and is hosted on github pages, this is on my GitHub page and can be found here\cite{Hosted-UI}.
 
 \chapter{Conclusion}
 
