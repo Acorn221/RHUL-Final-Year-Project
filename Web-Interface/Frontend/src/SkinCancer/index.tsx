@@ -10,10 +10,12 @@ import { GrDocumentUpdate } from 'react-icons/gr';
 import { RiBodyScanFill } from 'react-icons/ri';
 import { IoChevronBackCircleSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import { setCanvas, predictImage, PredictionType } from './utils';
+import {
+  setCanvas, predictImage, PredictionType, getLocation,
+} from '@/utils';
 
 // this is the url of the model that is to be loaded
-const modelURL = `${window.location.origin}/skin-cancer-model/model.json`;
+const modelURL = `${getLocation()}/skin-cancer-model/model.json`;
 
 /**
  * This is the page to predict skin cancer, it allows the user to upload an image, then processes it locally
@@ -47,7 +49,6 @@ const SkinCancer = () => {
     height: 100,
     unit: '%',
   });
-
 
   // This useEffect runs when the page loads, it loads the model from the server
   useEffect(() => {

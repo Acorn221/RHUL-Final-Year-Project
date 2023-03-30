@@ -112,7 +112,10 @@ const setCanvas = (
   ctx.restore();
 };
 
+const getLocation = () => `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+
 export {
   predictImage,
   setCanvas,
+  getLocation,
 };

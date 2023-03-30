@@ -17,9 +17,10 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { IoChevronBackCircleSharp } from 'react-icons/io5';
 import * as tf from '@tensorflow/tfjs';
+import { getLocation } from '@/utils';
 
 // this is the url of the model that is to be loaded
-const modelURL = `${window.location.origin}/AD-model/model.json`;
+const modelURL = `${getLocation()}/AD-model/model.json`;
 
 /**
  * The different states that the app can be in,
