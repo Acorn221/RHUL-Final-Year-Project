@@ -14,4 +14,5 @@ export default defineConfig({
   server: {
     host: true,
   },
+  base: '/RHUL-FYP-Deployment/', // right now, the base options being put under /build/ is not working
 });

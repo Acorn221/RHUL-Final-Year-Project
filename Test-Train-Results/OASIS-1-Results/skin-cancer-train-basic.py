@@ -19,6 +19,9 @@ from keras.applications import (
     EfficientNetB0,
     EfficientNetB1,
     EfficientNetB3,
+    EfficientNetV2B0,
+    EfficientNetV2B1,
+    EfficientNetV2B2,
     VGG16,
     VGG19,
     Xception,
@@ -28,21 +31,15 @@ from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 
 
-"""
-This script is used to generate the transfer learning results from the OASIS-1 dataset.
-It does not use any other inputs, aside from the MRI scans.
-
-"""
-
 # Set directory paths
 data_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\skin-cancer-dataset\Resized_200x200_MIX_2Classes'
-model_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\Test-Train-Results\OASIS-1-Results\skin-cancer-basic\\'
+model_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\Test-Train-Results\OASIS-1-Results\skin-cancer-400-epoch\\'
 
 # Define constants
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
 NUM_CLASSES = 2
-EPOCHS = 150
+EPOCHS = 400
 TF_SEED = 42
 
 tf.random.set_seed(TF_SEED)
@@ -105,11 +102,15 @@ if __name__ == "__main__":
         EfficientNetB0,
         EfficientNetB1,
         EfficientNetB3,
+        EfficientNetV2B0,
+        EfficientNetV2B1,
+        EfficientNetV2B2,
         VGG16,
         VGG19,
         Xception,
     ]
 
+    # Loading up all the models to be tested, and adding them to the list
     for model in modelsToTest:
         callback = partial(create_model, model)
         models.append(m.Model(callback, modelname=model.__name__, saveDir=model_dir))
@@ -124,8 +125,7 @@ if __name__ == "__main__":
         zoom_range=0.2,
         validation_split=0.2,
         rotation_range=360,
-        brightness_range=(0.7, 1.3),
-        
+        brightness_range=(0.5, 1.5),
     )
 
     trainingArgs = [
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     ]
     # Create the Automated Testing object
     testing = AutomatedRegularTesting(
-        models, None, model_dir, augmentationParams, trainingArgs
+        models, None, model_dir, augmentationParams, trainingArgs 
     )
 
     # Run the testing

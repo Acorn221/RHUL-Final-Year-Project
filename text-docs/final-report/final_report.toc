@@ -1,91 +1,104 @@
 \contentsline {chapter}{Abstract}{5}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Rationale}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Background}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Objectives}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Background}{9}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Neural Networks}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}What is a Neural Network}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Why use a Neural Network}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}What are the alternatives to Neural Networks in Image Classification}{11}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Support Vector Machines}{11}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Content Based Image Retrieval}{11}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}The different optimizers}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.4}The Different Optimisers}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Classification Vs Regression}{12}{section.2.5}%
-\contentsline {section}{\numberline {2.6}What is a Convolutional Neural Network}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.6}What is a Convolutional Neural Network}{13}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Types Of Layers}{13}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Using an LSTM for classification with MRI scans}{13}{section.2.8}%
-\contentsline {section}{\numberline {2.9}What transfer learning is}{13}{section.2.9}%
-\contentsline {chapter}{\numberline {3}The Datasets I will be using}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The Contents of OASIS-1}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}The Contents of the Skin Cancer Dataset}{15}{section.3.2}%
-\contentsline {chapter}{\numberline {4}The Different Models That Are Being Compared}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Mobilenetv3}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}InceptionV3}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}ResNet}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}VGG}{17}{section.4.4}%
-\contentsline {section}{\numberline {4.5}EfficientNet}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Xception}{20}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Transfer Learning}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Why use Transfer Learning}{22}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Drawbacks of Transfer Learning}{22}{section.5.2}%
-\contentsline {section}{\numberline {5.3}The code behind the transfer learning}{23}{section.5.3}%
-\contentsline {section}{\numberline {5.4}How to implement Transfer Learning}{24}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Extracting features}{24}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Fine-tuning}{24}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}How to fine-tune a model}{24}{section.5.5}%
-\contentsline {section}{\numberline {5.6}My training setup}{24}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Data Importing and Preprocessing}{26}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Formatting and converting the data}{26}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Dataset Augmentation}{26}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Batch sizes}{26}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Feature Normalisation}{27}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Keras Data Generators}{27}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Evaluating the performance}{28}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The different metrics}{28}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Data Augmentation}{28}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Problems With The Datasets and How I Fixed Them}{29}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}The Problems}{29}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}The solution}{30}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Evaluating the given metrics}{31}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Software Engineering}{32}{chapter.8}%
-\contentsline {section}{\numberline {8.1}The code}{32}{section.8.1}%
-\contentsline {section}{\numberline {8.2}My Python Development Environment}{32}{section.8.2}%
-\contentsline {section}{\numberline {8.3}My Web Development Environment}{32}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Using Git}{33}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Testing with Jupyter Notebook}{33}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Using Test Driven Development}{33}{section.8.6}%
-\contentsline {section}{\numberline {8.7}Different learning rates}{34}{section.8.7}%
-\contentsline {chapter}{\numberline {9}The User Interface}{35}{chapter.9}%
-\contentsline {section}{\numberline {9.1}The Front End}{35}{section.9.1}%
-\contentsline {section}{\numberline {9.2}The Back End}{35}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Identifying and Mitigating Bias}{36}{chapter.10}%
-\contentsline {section}{\numberline {10.1}The OASIS-1 Dataset}{36}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}nWBV vs Age}{36}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}eTIV vs Age}{37}{subsection.10.1.2}%
-\contentsline {section}{\numberline {10.2}The Skin Cancer Dataset}{38}{section.10.2}%
-\contentsline {chapter}{\numberline {11}My Initial Faulty Training Results}{39}{chapter.11}%
-\contentsline {subsection}{\numberline {11.0.1}The Comparison Of The Different Models}{39}{subsection.11.0.1}%
-\contentsline {subsection}{\numberline {11.0.2}InceptionV3}{40}{subsection.11.0.2}%
-\contentsline {subsection}{\numberline {11.0.3}MobileNetV3 Small}{41}{subsection.11.0.3}%
-\contentsline {subsection}{\numberline {11.0.4}The model sizes}{42}{subsection.11.0.4}%
-\contentsline {section}{\numberline {11.1}Why These Results Looked Promising}{42}{section.11.1}%
-\contentsline {chapter}{\numberline {12}The new training results}{44}{chapter.12}%
-\contentsline {section}{\numberline {12.1}The OASIS-1 Dataset}{44}{section.12.1}%
-\contentsline {subsection}{\numberline {12.1.1}Training with only the MRI scans}{44}{subsection.12.1.1}%
-\contentsline {subsection}{\numberline {12.1.2}Training with the MRI scans and the other features}{44}{subsection.12.1.2}%
-\contentsline {section}{\numberline {12.2}The Skin Cancer Dataset}{45}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Optimising the EfficientNet Models}{47}{section.12.3}%
-\contentsline {chapter}{\numberline {13}How to run the code}{50}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Prerequisites}{50}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Running the code}{50}{section.13.2}%
-\contentsline {chapter}{\numberline {14}Professional Issues}{51}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Usability}{51}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Plagiarism}{51}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Safety and Reliability}{51}{section.14.3}%
-\contentsline {section}{\numberline {14.4}Privacy and Legal Issues}{51}{section.14.4}%
-\contentsline {section}{\numberline {14.5}Monopoly and Competition}{52}{section.14.5}%
-\contentsline {section}{\numberline {14.6}Management and Stakeholder Consultation}{52}{section.14.6}%
-\contentsline {section}{\numberline {14.7}Biases in the data}{52}{section.14.7}%
-\contentsline {section}{\numberline {14.8}Collaboration and Communication Barriers}{53}{section.14.8}%
-\contentsline {section}{\numberline {14.9}Bias in the Skin Cancer Dataset}{53}{section.14.9}%
-\contentsline {chapter}{\numberline {15}Diary}{54}{chapter.15}%
-\contentsline {chapter}{\numberline {16}Conclusion}{64}{chapter.16}%
+\contentsline {section}{\numberline {2.8}Using an LSTM for classification with MRI scans}{14}{section.2.8}%
+\contentsline {section}{\numberline {2.9}What transfer learning is}{14}{section.2.9}%
+\contentsline {chapter}{\numberline {3}The Datasets I will be using}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Contents of OASIS-1}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Contents of the Skin Cancer Dataset}{16}{section.3.2}%
+\contentsline {chapter}{\numberline {4}The Different Models That Are Being Compared}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Mobilenetv3}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}InceptionV3}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ResNet}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.4}VGG}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.5}EfficientNet}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Xception}{21}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Transfer Learning}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Why use Transfer Learning}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Drawbacks of Transfer Learning}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.3}The code behind the transfer learning}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.4}How to implement Transfer Learning}{25}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Extracting features}{25}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Fine-tuning}{25}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}How to fine-tune a model}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.6}My training setup}{25}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Data Importing and Preprocessing}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Formatting and converting the data}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Dataset Augmentation}{27}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Batch sizes}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Feature Normalisation}{28}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Keras Data Generators}{28}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Evaluating the performance}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The different metrics}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Data Augmentation}{29}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Problems With The Datasets and How I Fixed Them}{30}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}The Problems}{30}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}The solution}{31}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Evaluating the given metrics}{32}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Software Engineering}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The code}{33}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The Trainin Tools I Used}{33}{subsection.8.1.1}%
+\contentsline {section}{\numberline {8.2}My Web Development Environment}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Using Git}{34}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Testing with Jupyter Notebook}{34}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Using Test Driven Development}{34}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Different learning rates}{35}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Frontend Typescript and React}{35}{section.8.5}%
+\contentsline {section}{\numberline {8.6}How I'm Going To Get My Results}{36}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Identifying and Mitigating Bias}{37}{chapter.9}%
+\contentsline {section}{\numberline {9.1}The OASIS-1 Dataset}{37}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}nWBV vs Age}{37}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}eTIV vs Age}{38}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}The Skin Cancer Dataset}{39}{section.9.2}%
+\contentsline {chapter}{\numberline {10}My Initial Faulty Training Results}{40}{chapter.10}%
+\contentsline {subsection}{\numberline {10.0.1}The Comparison Of The Different Models}{40}{subsection.10.0.1}%
+\contentsline {subsection}{\numberline {10.0.2}InceptionV3}{41}{subsection.10.0.2}%
+\contentsline {subsection}{\numberline {10.0.3}MobileNetV3 Small}{42}{subsection.10.0.3}%
+\contentsline {subsection}{\numberline {10.0.4}The model sizes}{43}{subsection.10.0.4}%
+\contentsline {section}{\numberline {10.1}Why These Results Looked Promising}{43}{section.10.1}%
+\contentsline {chapter}{\numberline {11}The new training results}{45}{chapter.11}%
+\contentsline {section}{\numberline {11.1}The OASIS-1 Dataset}{45}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Training with only the MRI scans}{45}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Training with the MRI scans and the other features}{45}{subsection.11.1.2}%
+\contentsline {section}{\numberline {11.2}How this could be improved}{47}{section.11.2}%
+\contentsline {section}{\numberline {11.3}The Skin Cancer Dataset}{47}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Optimising the EfficientNet Models}{49}{subsection.11.3.1}%
+\contentsline {chapter}{\numberline {12}How to run the code}{53}{chapter.12}%
+\contentsline {section}{\numberline {12.1}The Frontend Installation and Setup}{53}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Installing Node.js}{53}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Installing Yarn}{53}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}Installing the dependencies}{53}{subsection.12.1.3}%
+\contentsline {subsection}{\numberline {12.1.4}Running the frontend}{53}{subsection.12.1.4}%
+\contentsline {subsection}{\numberline {12.1.5}Building the frontend}{53}{subsection.12.1.5}%
+\contentsline {subsection}{\numberline {12.1.6}How to use the UI}{53}{subsection.12.1.6}%
+\contentsline {section}{\numberline {12.2}The Python Side of the Project}{54}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Prerequisites for the Python code}{54}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Running the Notebooks}{54}{subsection.12.2.2}%
+\contentsline {chapter}{\numberline {13}Professional Issues}{56}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Usability}{56}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Plagiarism}{56}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Safety and Reliability}{56}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Privacy and Legal Issues}{56}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Monopoly and Competition}{57}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Management and Stakeholder Consultation}{57}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Biases in the data}{57}{section.13.7}%
+\contentsline {section}{\numberline {13.8}Collaboration and Communication Barriers}{58}{section.13.8}%
+\contentsline {section}{\numberline {13.9}Bias in the Skin Cancer Dataset}{58}{section.13.9}%
+\contentsline {section}{\numberline {13.10}Data Privacy and Security}{58}{section.13.10}%
+\contentsline {chapter}{\numberline {14}Diary}{59}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Conclusion}{70}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Challanges and how I overcame them}{70}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Future Improvements I Could Make}{70}{section.15.2}%
+\contentsline {section}{\numberline {15.3}The Main Things I Have Learned}{71}{section.15.3}%

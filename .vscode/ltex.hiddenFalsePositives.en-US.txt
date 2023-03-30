@@ -1,1 +1,2 @@
 {"rule":"SOME_OF_THE","sentence":"^\\QFrom this graph, it's clear to see how large some of the models are in comparison to each other.\\E$"}
+{"rule":"MASS_AGREEMENT","sentence":"^\\QThe User Interface.\\E$"}

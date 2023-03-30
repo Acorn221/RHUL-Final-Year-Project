@@ -1,4 +1,4 @@
-## These training results were with the following config:
+## These training results were with the following config, on the Alzheimer's OASIS-1 Dataset:
 
 	def create_model(base_model):
 			model = Sequential()

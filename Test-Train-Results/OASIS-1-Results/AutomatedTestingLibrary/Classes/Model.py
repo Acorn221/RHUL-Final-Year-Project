@@ -38,15 +38,20 @@ class Model:
 	"""
 	def saveHistory(self):
 		infoToSave = { 'history': self.history, 'epochs': self.epochs, 'trainingTime': self.trainingTime }
-		with open(self.saveDir+self.modelName+".json", "w+") as fp:
-				json.dump(infoToSave, fp)
 
+		# Checking to see if the directory exists
+		dirExists = os.path.exists(self.saveDir)
+		if not dirExists:
+			# Create a new directory because it does not exist
+			os.makedirs(self.saveDir)
 
 		if os.path.exists(self.saveDir+self.modelName+".h5"):
 			# delete the model and try again
 			os.remove(self.saveDir+self.modelName+".h5")
-			
+
 		try:
+			with open(self.saveDir+self.modelName+".json", "w+") as fp:
+				json.dump(infoToSave, fp)
 			self.sequentialModel.save(self.saveDir+self.modelName+".h5")
 		except Exception as e:
 			print("Error saving model: ", e)
