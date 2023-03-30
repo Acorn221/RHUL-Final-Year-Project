@@ -461,7 +461,6 @@ INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
-<<<<<<< HEAD
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
@@ -473,8 +472,6 @@ INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-=======
->>>>>>> Web-Interface
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
@@ -959,7 +956,6 @@ INPUT .\images\EfficientNetV2B1-final-training-accuracy.png
 INPUT .\images\EfficientNetV2B1-final-training-accuracy.png
 INPUT .\images\EfficientNetV2B1-final-training-accuracy.png
 INPUT .\images\EfficientNetV2B1-final-training-accuracy.png
-<<<<<<< HEAD
 INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Loss.png
 INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Loss.png
 INPUT images\EfficientNetV2B1-Extreme-Augmentation-Loss.png
@@ -974,8 +970,20 @@ INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Accuracy.png
 INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Accuracy.png
 INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Accuracy.png
 INPUT .\images\EfficientNetV2B1-Extreme-Augmentation-Accuracy.png
-=======
->>>>>>> Web-Interface
+INPUT .\images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-unclear.png
+INPUT images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-unclear.png
+INPUT .\images\UI-screenshot-clear.png
+INPUT .\images\UI-screenshot-clear.png
+INPUT images\UI-screenshot-clear.png
+INPUT .\images\UI-screenshot-clear.png
+INPUT .\images\UI-screenshot-clear.png
+INPUT .\images\UI-screenshot-clear.png
+INPUT .\images\UI-screenshot-clear.png
 INPUT .\images\better-output.png
 INPUT .\images\better-output.png
 INPUT images\better-output.png

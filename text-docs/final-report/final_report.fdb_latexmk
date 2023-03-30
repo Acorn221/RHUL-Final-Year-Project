@@ -1,23 +1,11 @@
 # Fdb version 3
-<<<<<<< HEAD
-["biber final_report"] 1680124580 "final_report.bcf" "final_report.bbl" "final_report" 1680126115
-  "final_report.bcf" 1680126114 112351 1af33db14a7c11a0e7ac315507b7a032 "pdflatex"
-  "refs.bib" 1680111331 31248 aee549c31558c39d4008659492412ecb ""
+["biber final_report"] 1680188268 "final_report.bcf" "final_report.bbl" "final_report" 1680190124
+  "final_report.bcf" 1680190124 112481 5777126870fedbfaf95cc2287187aa59 "pdflatex"
+  "refs.bib" 1680187915 31350 d0a5a1564de7e1d083fface5b92494eb ""
   (generated)
   "final_report.bbl"
   "final_report.blg"
-["pdflatex"] 1680126108 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1680126115
-=======
-["bibtex final_report"] 1680127513 "final_report.aux" "final_report.bbl" "final_report" 1680127520
-  "C:/Users/mlg/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1657613115 65483 3b5a53ada692a06ce416d088de6a391b ""
-  "final_report-blx.bib" 1680127520 340 25674e554aa25e98ea59ec40797d70f1 "pdflatex"
-  "final_report.aux" 1680127520 33356 d3ef8513ec9992f1368f253ec64d3601 "pdflatex"
-  "refs.bib" 1680127502 32989 56d8ba27c1d4e89447fd4378892b1422 ""
-  (generated)
-  "final_report.bbl"
-  "final_report.blg"
-["pdflatex"] 1680127513 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1680127520
->>>>>>> Web-Interface
+["pdflatex"] 1680190117 "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" "final_report.pdf" "final_report" 1680190124
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1679926089 84158 d77284a6843bde1e4b9764f09fb2e89e ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1669310671 12668 9f739290d3285f6525d6bae1771125d4 ""
   "C:/Users/mlg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1669310875 15464 b7b1c66cd01c7bc6d4081ff506a709ef ""
@@ -128,48 +116,36 @@
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/tocloft/tocloft.sty" 1578912363 37263 3e78d14f0f4b1a30560fea5e04de805d ""
   "C:/Users/mlg/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-<<<<<<< HEAD
-  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1680126100 121032 0fdeeb0067cf9de89d866856b71de720 ""
-  "final_report.aux" 1680126114 35428 23c93960687a021614023b7056f05710 "pdflatex"
-  "final_report.bbl" 1680124583 72957 eb3a7f6aa0725237a96bc733f381a4c0 "biber final_report"
+  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1680190108 122302 732b10f873c83cbd8e7b9b0287607114 ""
+  "final_report.aux" 1680190124 36436 31a453b0b0504c4c81743a714a02f3b2 "pdflatex"
+  "final_report.bbl" 1680188271 73356 72c9685d40bd585459025c76e6ded144 "biber final_report"
   "final_report.cls" 1380202490 5034 9949560295805b0968e9910abcf2715a ""
-  "final_report.out" 1680126114 13920 53b5cc028991f6b8abb2e6cd77d4d975 "pdflatex"
-  "final_report.run.xml" 1680126114 2389 98f04dd947b13b68706cb0e8f3e5b73c "pdflatex"
-  "final_report.tex" 1680126100 121032 0fdeeb0067cf9de89d866856b71de720 ""
-  "final_report.toc" 1680126114 8853 0aed27e0f97830a6b2e40b1e876a783b "pdflatex"
-=======
-  "c:/Active-Projects/RHUL-FYP/PROJECT/text-docs/final-report/final_report.tex" 1680127502 98900 ef0aef32f6a7c6ad043283f6a3c0d7b7 ""
-  "final_report.aux" 1680127520 33356 d3ef8513ec9992f1368f253ec64d3601 "pdflatex"
-  "final_report.bbl" 1680127513 52434 cd4f919a7ad57f12254545b02ce5365e "bibtex final_report"
-  "final_report.cls" 1380202490 5034 9949560295805b0968e9910abcf2715a ""
-  "final_report.out" 1680127520 13310 026f1819bbe2846c89253ab56e426fb5 "pdflatex"
-  "final_report.run.xml" 1680127520 2588 c75833d2c4201e1d86f79009efc08bc5 "pdflatex"
-  "final_report.tex" 1680127502 98900 ef0aef32f6a7c6ad043283f6a3c0d7b7 ""
-  "final_report.toc" 1680127520 7623 e98082c40d15a1bba6f355187bf014c0 "pdflatex"
->>>>>>> Web-Interface
+  "final_report.out" 1680190124 13920 53b5cc028991f6b8abb2e6cd77d4d975 "pdflatex"
+  "final_report.run.xml" 1680190124 2389 98f04dd947b13b68706cb0e8f3e5b73c "pdflatex"
+  "final_report.tex" 1680190108 122302 732b10f873c83cbd8e7b9b0287607114 ""
+  "final_report.toc" 1680190124 8943 de77cfaea2f4a5c1e54e5ca43ca5587f "pdflatex"
   "images/EfficientNetComparison.PNG" 1679839690 397394 f73aa213fb72e6be5a03d5db40e62b43 ""
   "images/EfficientNetPerformanceDatasets.PNG" 1679844702 101381 afc2982721169eed8ce475ad02b90899 ""
   "images/EfficientNetV2B1-2nd-training-accuracy.png" 1679926638 54132 a2278476d0d02285762eb961a855fb61 ""
   "images/EfficientNetV2B1-2nd-training-loss.png" 1679926651 58787 ad36d3e86f9d859727342c85a94324f2 ""
-<<<<<<< HEAD
-  "images/EfficientNetV2B1-Extreme-Augmentation-Accuracy.png" 1680108833 62484 af769b6cdb758c1d30d496e196ac39cf ""
-  "images/EfficientNetV2B1-Extreme-Augmentation-Loss.png" 1680108785 57680 f5163e73060009227d29df2973fd1baa ""
-=======
->>>>>>> Web-Interface
+  "images/EfficientNetV2B1-Extreme-Augmentation-Accuracy.png" 1680187276 62484 af769b6cdb758c1d30d496e196ac39cf ""
+  "images/EfficientNetV2B1-Extreme-Augmentation-Loss.png" 1680187276 57680 f5163e73060009227d29df2973fd1baa ""
   "images/EfficientNetV2B1-final-training-accuracy.png" 1679927860 75652 2507246c8188124f36398ef5afdaa31f ""
   "images/EfficientNetV2B1-initial-training-accuracy.png" 1679925023 34518 1258879346bf2031c367558919efb6a6 ""
   "images/EfficientNetV2B1-initial-training-loss.png" 1679924876 65155 bb5f158c3c80dd7a70a85b1a73c6c25f ""
   "images/EfficientNetv2-Performance-Graph.png" 1679919293 76831 07c9ebd7e0c95b930935d03df49373c1 ""
   "images/MobileNetv3-structure.png" 1677585269 431093 aab09e190cefeb85682125e5fb31a3c6 ""
   "images/NeuralNetwork.png" 1677585269 75767 d252ea67d006d476afbcec7728753a78 ""
-  "images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png" 1680095711 201219 d835817342932d237e73a9de67d8a480 ""
-  "images/OASIS-1-Transfer-Learning-Basic-Results.png" 1680095046 307124 ac3fe0aeb18887b1680dd9c66ad95099 ""
+  "images/OASIS-1-Transfer-Learning-Basic-Results-val-loss.png" 1680187276 201219 d835817342932d237e73a9de67d8a480 ""
+  "images/OASIS-1-Transfer-Learning-Basic-Results.png" 1680187276 307124 ac3fe0aeb18887b1680dd9c66ad95099 ""
   "images/Principe_cbir.png" 1677585269 92829 5693c2a25d7f29116220998b40ab1093 ""
   "images/ResNet101-vs-Inceptionv3.png" 1677585269 115055 a761bf039d9f1d67f96ff10eb0438570 ""
   "images/Skin-cancer-validation-accuracy-last-50-high-performers.png" 1679786767 218014 6c8fb5b9e8b5ef449bd481c6ca3ef8d0 ""
   "images/Skin-cancer-validation-accuracy-last-50-low-performers.png" 1679786370 123952 f7378445d97310171de7453d51e0ef3a ""
-  "images/VGG19-OASIS-1-800-epoch.png" 1680100812 73692 4b3be5c0ff8d4081962f3c6c2feaa0a3 ""
-  "images/VGG19-OASIS-1-loss.png" 1680100579 39167 977450841280fe7d6c0bd94e72ee6062 ""
+  "images/UI-screenshot-clear.png" 1680189779 322547 d0fd1209d072700f8ca4b1c04e872277 ""
+  "images/UI-screenshot-unclear.png" 1680189709 337914 428b36805af051e155710516c30345a1 ""
+  "images/VGG19-OASIS-1-800-epoch.png" 1680187276 73692 4b3be5c0ff8d4081962f3c6c2feaa0a3 ""
+  "images/VGG19-OASIS-1-loss.png" 1680187276 39167 977450841280fe7d6c0bd94e72ee6062 ""
   "images/VGG19-architecture.png" 1677585269 188744 482571f24c799224209a99dd1b8036b0 ""
   "images/Xception-structure.png" 1679848402 145759 669a85ab60466ef16bd4b9a145973f84 ""
   "images/bad-training-result.png" 1677585269 47153 3c699a8a3b7baa7a2056978020c5ea65 ""

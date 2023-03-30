@@ -19,6 +19,18 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Hosted-UI}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Hosted UI}
+      \verb{urlraw}
+      \verb https://acorn221.github.io/RHUL-FYP-Deployment/
+      \endverb
+      \verb{url}
+      \verb https://acorn221.github.io/RHUL-FYP-Deployment/
+      \endverb
+    \endentry
     \entry{smilkov2019tensorflowjs}{misc}{}
       \name{author}{20}{}{%
         {{hash=bb2e0dfdbba1fad9c1db3218456c7bd8}{%
@@ -128,8 +140,8 @@
       \strng{authorbibnamehash}{3c90d6fb0fc2ecafcacd866602dbfffe}
       \strng{authornamehash}{3c90d6fb0fc2ecafcacd866602dbfffe}
       \strng{authorfullhash}{392d3bc9c37f815c35f0268813dd5f4f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.LG}
@@ -141,8 +153,8 @@
       \endverb
     \endentry
     \entry{DementiaStatistics}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Alzheimer's Disease Statistics}
       \verb{urlraw}
@@ -264,8 +276,8 @@
       \strng{authorbibnamehash}{b74a4489faa82cdac924ce1bbbb67174}
       \strng{authornamehash}{b74a4489faa82cdac924ce1bbbb67174}
       \strng{authorfullhash}{5362cf34d4d0220272dc416207682be1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{BACKGROUND: The accumulation of soluble and insoluble aggregated amyloid-beta (A$\beta$) may initiate or potentiate pathologic processes in Alzheimer's disease. Lecanemab, a humanized IgG1 monoclonal antibody that binds with high affinity to A$\beta$ soluble protofibrils, is being tested in persons with early Alzheimer's disease. METHODS: We conducted an 18-month, multicenter, double-blind, phase 3 trial involving persons 50 to 90 years of age with early Alzheimer's disease (mild cognitive impairment or mild dementia due to Alzheimer's disease) with evidence of amyloid on positron-emission tomography (PET) or by cerebrospinal fluid testing. Participants were randomly assigned in a 1:1 ratio to receive intravenous lecanemab (10 mg per kilogram of body weight every 2 weeks) or placebo. The primary end point was the change from baseline at 18 months in the score on the Clinical Dementia Rating-Sum of Boxes (CDR-SB; range, 0 to 18, with higher scores indicating greater impairment). Key secondary end points were the change in amyloid burden on PET, the score on the 14-item cognitive subscale of the Alzheimer's Disease Assessment Scale (ADAS-cog14; range, 0 to 90; higher scores indicate greater impairment), the Alzheimer's Disease Composite Score (ADCOMS; range, 0 to 1.97; higher scores indicate greater impairment), and the score on the Alzheimer's Disease Cooperative Study-Activities of Daily Living Scale for Mild Cognitive Impairment (ADCS-MCI-ADL; range, 0 to 53; lower scores indicate greater impairment). RESULTS: A total of 1795 participants were enrolled, with 898 assigned to receive lecanemab and 897 to receive placebo. The mean CDR-SB score at baseline was approximately 3.2 in both groups. The adjusted least-squares mean change from baseline at 18 months was 1.21 with lecanemab and 1.66 with placebo (difference, -0.45; 95\% confidence interval [CI], -0.67 to -0.23; P<0.001). In a substudy involving 698 participants, there were greater reductions in brain amyloid burden with lecanemab than with placebo (difference, -59.1 centiloids; 95\% CI, -62.6 to -55.6). Other mean differences between the two groups in the change from baseline favoring lecanemab were as follows: for the ADAS-cog14 score, -1.44 (95\% CI, -2.27 to -0.61; P<0.001); for the ADCOMS, -0.050 (95\% CI, -0.074 to -0.027; P<0.001); and for the ADCS-MCI-ADL score, 2.0 (95\% CI, 1.2 to 2.8; P<0.001). Lecanemab resulted in infusion-related reactions in 26.4\% of the participants and amyloid-related imaging abnormalities with edema or effusions in 12.6\%. CONCLUSIONS: Lecanemab reduced markers of amyloid in early Alzheimer's disease and resulted in moderately less decline on measures of cognition and function than placebo at 18 months but was associated with adverse events. Longer trials are warranted to determine the efficacy and safety of lecanemab in early Alzheimer's disease. (Funded by Eisai and Biogen; Clarity AD ClinicalTrials.gov number, NCT03887455.).}
@@ -279,8 +291,8 @@
       \range{pages}{13}
     \endentry
     \entry{NeuralNetworkDiagram}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Neural Network Diagram}
       \verb{urlraw}
@@ -334,8 +346,8 @@
       \strng{authorbibnamehash}{130317b1d4813d839664c5dacfc0bc64}
       \strng{authornamehash}{130317b1d4813d839664c5dacfc0bc64}
       \strng{authorfullhash}{28d325879ad7a274b33733df18dba22c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1664-2295}
@@ -372,8 +384,8 @@
       \strng{authorbibnamehash}{3c3f01f3fa9fc3858632686fbeec0d05}
       \strng{authornamehash}{3c3f01f3fa9fc3858632686fbeec0d05}
       \strng{authorfullhash}{3c3f01f3fa9fc3858632686fbeec0d05}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2011 9th International Workshop on Content-Based Multimedia Indexing (CBMI)}
@@ -386,8 +398,8 @@
       \endverb
     \endentry
     \entry{ContentBasedImageRetrieval}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{title}{Content-Based Image Retrieval Diagram}
       \verb{urlraw}
@@ -846,8 +858,8 @@
       \strng{authornamehash}{d029e8131f7a0bef056d7edc726f1529}
       \strng{authorfullhash}{d029e8131f7a0bef056d7edc726f1529}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.LG}
@@ -1425,8 +1437,8 @@
       \endverb
     \endentry
     \entry{Typescript}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{TypeScript}
       \verb{urlraw}
@@ -1602,8 +1614,8 @@
       \strng{authorbibnamehash}{49ae14aa3bc52f013facf74a1db2d822}
       \strng{authornamehash}{49ae14aa3bc52f013facf74a1db2d822}
       \strng{authorfullhash}{656a2a2c1133c08e05744ec59c428a8d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2624-8212}
