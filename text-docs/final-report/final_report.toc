@@ -99,6 +99,6 @@
 \contentsline {section}{\numberline {13.10}Data Privacy and Security}{59}{section.13.10}%
 \contentsline {chapter}{\numberline {14}Diary}{60}{chapter.14}%
 \contentsline {chapter}{\numberline {15}Conclusion}{71}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Challanges and how I overcame them}{71}{section.15.1}%
+\contentsline {section}{\numberline {15.1}Challanges and How I Overcame Them}{71}{section.15.1}%
 \contentsline {section}{\numberline {15.2}Future Improvements I Could Make}{71}{section.15.2}%
 \contentsline {section}{\numberline {15.3}The Main Things I Have Learned}{72}{section.15.3}%

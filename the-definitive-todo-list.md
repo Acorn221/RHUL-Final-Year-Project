@@ -38,7 +38,7 @@
 
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
 - [ ] Technical Decision-Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
-- [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
+- [x] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
   - Go over everything to ensure there aren't mistakes and everything is clear
 - [x] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;
