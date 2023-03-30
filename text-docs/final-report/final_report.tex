@@ -657,7 +657,7 @@ and the validation accuracy is very high, higher than what other models from oth
 
 \pagebreak
 
-\subsection{The solution}
+\subsection{The Solution}
 The solution to this problem was to use the original images, and not the pre-augmented images.
 This meant that I had to re-download the dataset, and re-split the dataset into training and validation sets,
 and then apply data augmentation to the images. This gave me much better results, and the model was able to generalise
@@ -687,7 +687,7 @@ This was then solved by going directly with the OASIS-1 dataset, and using the i
 
 By using the OASIS-1 dataset directly, that presented a new set of challenges, as the images were given in a different format, as I had a CSV file with the labels and the image IDs which identified the images. This lead me to learn how to use the Pandas\cite{Pandas} library in Python, which allowed me to read the CSV file and extract the image IDs and the labels from it. Then I had to create my own custom data generator, which allowed me to load the images from the dataset, and apply the transformations to them. This was a very useful learning experience, as I was able to learn important skills relating to data preprocessing. The data generator, which I had talked about earlier, helps batch and augment the data that is being fed into the model during training.
 
-\section{Evaluating the given metrics}
+\section{Evaluating The Given Metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
 but they do not tell us how well the model is performing for each class.
 They do also not tell us how well the model would work in a real world scenario,
@@ -700,9 +700,52 @@ as the scans could be of a different quality.
 I have used the augmented dataset for the training and validation sets as this
 should give a better representation of how well the model would work in a real world scenario.
 
+\subsection{Different Learning Rates}
 
-% TODO: TALK ABOUT METRICS
+When training a model, the learning rate is the rate at which the model learns from the data.
+A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
 
+A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
+It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
+A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
+It is the lowest point in the entire loss landscape no matter what parameters the model has.
+
+\subsection{Hyperparameter Tuning}
+
+Hyperparameter tuning is the process of finding the most optimal set of hyperparameters for a given neural network. These include learning rate, batch size, number of layers, number of units per layer, and more.
+
+In a grid search, the model is trained with every possible combination of hyperparameters, and the best set of hyperparameters is chosen based on the validation accuracy. This is a very time consuming process, and it is not very efficient as it is not guaranteed that the best set of hyperparameters will be found.
+
+This is very inefficient, as it essentially brute forces the process of finding the best set of hyperparameters, and it is not guaranteed that the best set of hyperparameters will even be found.
+This would be viable if the models took a very short time to train, but as the models take a long time to train, I do not have the resources to persue this method.
+
+Random search is where the hyperparameters are randomly chosen, and the model is trained with those hyperparameters. This can be more efficient than a grid search, as it does not train the model with every possible combination of hyperparameters, but there is also a chance that the best set of hyperparameters will not be found in a reasonable amount of time. There is a possibility that random search could be combined with grid search, where the hyperparameters are randomly chosen in the grid search and an algorithm could determine which hyperparameters are the best without having to train the model with every possible combination.
+
+Genetic Algorithms (GAs) are inspired by the process of natural selection, where each individual (hyperparameter set) in the population is evaluated and scored based on its performance. The fittest individuals are selected for reproduction (crossover and mutation) to produce the next generation. This process is repeated until the optimal set is found or a stopping criterion is met. I ended up manually tuning the hyperparameters, in a method similar to this, as it was the most efficient way to do so.
+
+In practice, there's usually more than one singular method of hyperparameter tuning that is used to find the best set of hyperparameters. I essentially combined random search with a genetic algorithm, as I randomly chose the hyperparameters, and then I chose the best set of hyperparameters based on the validation accuracy, and repeated that in the juypter notebook until I felt that I had found the best set of hyperparameters.
+
+\subsection{The Metrics}
+
+There are a few metrics that can be used to evaluage the performance of a model in a real world scenario.
+
+One of these is called Sensitivity or recall, which is a performance metric used to evaluate the ability of a model to correctly identify true positive cases within a dataset. It is essentially a measure of how well the model is able to detect the positive instances within the data.
+
+The formula for calculating sensitivity is:
+
+Sensitivity = (True Positives) / (True Positives + False Negatives)
+
+In this formula, True Positives are instances that the model correctly identifies as positive, while False Negatives are instances the model incorrectly identifies as negative (missing positive instances).
+Higher sensitivity values indicate that the model is better at identifying true positives and avoiding false negatives, which may be important, especially when diagnosing Alzheimer's disease or skin cancer.
+
+Specificity is another performance metric used to evaluate the ability of a model to correctly identify true negative cases within a dataset. It is defined as the proportion of actual negatives that are correctly predicted as negative. In other words, it is the percentage of people who do not have the disease that the model correctly identifies as not having the disease. This could help doctors to have more or less confidence in the model's predictions, so it could help with their decision making.
+
+Finally, the F1 score is a measure of a model's accuracy on a dataset. It is used to evaluate binary classification systems, which classify examples into 'positive' or 'negative'. The F1 score is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model's precision and recall. This is how I'm evaluating the models, as it gives a good general idea of generally how good the model is.
+
+The formula for calculating the F1 score is:
+
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
 
 \pagebreak
 
@@ -772,19 +815,6 @@ and to test the code quicker.
 
 Aside from testing the models, I could set up unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
-
-\subsection{Different learning rates}
-
-When training a model, the learning rate is the rate at which the model learns from the data.
-A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
-
-A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
-It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
-A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
-It is the lowest point in the entire loss landscape no matter what parameters the model has.
-
-% Also talk about the different learning rates and how they affect the performance of the models
 
 \section{Frontend Typescript and React}
 
