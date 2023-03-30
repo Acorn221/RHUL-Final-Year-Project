@@ -33,6 +33,8 @@ from utils import createFileName, convertToString, mmseConvert
 This script is used to generate the transfer learning results from the OASIS-1 dataset.
 It does not use any other inputs, aside from the MRI scans.
 
+The directories need to be set to the locations of the scans and the csv file, then the output directory and model directory need to be set to where the results should be saved.
+
 """
 
 scansDir = "C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/processed_scans"
@@ -44,7 +46,11 @@ modelDir = (
     "C:/Active-Projects/RHUL-FYP/PROJECT/Test-Train-Results/OASIS-1-Results/models/"
 )
 
-
+"""
+    This create_model function is used to create the model that will be used for the transfer learning.
+    It takes in a base model, which is the model that will be used as the base.
+    This is used so that I do not have to create a new function for each model.
+"""
 def create_model(base_model):
     model = Sequential()
 
@@ -64,6 +70,10 @@ def create_model(base_model):
     return model
 
 
+"""
+The AutomatedTesting class was designed to be inherited from, so that the loadTrainingData function can be overwritten.
+This allows for the data to be loaded in a different way, like I need to here
+"""
 class AutomatedRegularTesting(t.AutomatedTesting):
     def __init__(
         self, models, data_dir, output, augmentationParams, trainingArgs, batchSize=32
@@ -133,6 +143,7 @@ if __name__ == "__main__":
     ]
 
     for model in modelsToTest:
+        # partial is used to pass in the model to the create_model function, but without calling it, otherwise the ram will be used up
         callback = partial(create_model, model)
         models.append(m.Model(callback, modelname=model.__name__, saveDir=modelDir))
 
@@ -166,7 +177,7 @@ if __name__ == "__main__":
             "train": {
                 "epochs": 100,
             },
-            "other": {
+            "other": { # Fully trainable is used to make the model fully trainable, so that there are no frozen layers
                 "fully_trainable": True,
             },
             "compile": {

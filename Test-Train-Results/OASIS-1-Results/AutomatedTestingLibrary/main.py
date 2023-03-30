@@ -5,6 +5,8 @@ from tensorflow.keras.layers import Flatten, Dense, Dropout
 from tensorflow.keras import Sequential
 from tensorflow.keras.applications import MobileNetV2, InceptionV3
 
+# This is an example file of how the library would be used
+
 # The models have to be passed as a list of callable functions that return a model
 # This is because otherwise if they were all loaded at the same time, they would take up all the memory
 

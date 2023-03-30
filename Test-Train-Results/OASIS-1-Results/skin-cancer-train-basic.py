@@ -31,12 +31,6 @@ from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 
 
-"""
-This script is used to generate the transfer learning results from the OASIS-1 dataset.
-It does not use any other inputs, aside from the MRI scans.
-
-"""
-
 # Set directory paths
 data_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\skin-cancer-dataset\Resized_200x200_MIX_2Classes'
 model_dir = 'C:\Active-Projects\RHUL-FYP\PROJECT\Test-Train-Results\OASIS-1-Results\skin-cancer-400-epoch\\'
@@ -116,6 +110,7 @@ if __name__ == "__main__":
         Xception,
     ]
 
+    # Loading up all the models to be tested, and adding them to the list
     for model in modelsToTest:
         callback = partial(create_model, model)
         models.append(m.Model(callback, modelname=model.__name__, saveDir=model_dir))

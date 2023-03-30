@@ -3,7 +3,7 @@ import math
 import numpy as np
 
 # The directory where the processed scans are stored
-directory='C:/Active-Projects/RHUL-FYP/PROJECT/OASIS/1/processed_scans/'
+directory='./processed_scans/'
 
 
 def createFileName(id):
@@ -15,6 +15,7 @@ def convertToString(cdr):
 	else:
 		return str(cdr)
 
+# Not all MMSE scores are available, so we need to fill in the missing values, and assume that the missing values are in the range of 25-30
 def mmseConvert(x):
 	if math.isnan(float(x)):
 		return np.random.randint(25, 30)
@@ -24,6 +25,7 @@ def mmseConvert(x):
 def genderToFloat(x):
 	return 1 if x == 'M' else 0
 
+# The CDR scores are in the range of 0-2, with 0.5 increments. We need to convert them to one-hot arrays
 def cdr_formatting(s):
 
 	values = ['0.0', '0.5', '1.0', '2.0']
