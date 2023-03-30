@@ -12,6 +12,9 @@ import { IoChevronBackCircleSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import { setCanvas, predictImage, PredictionType } from './utils';
 
+// this is the url of the model that is to be loaded
+const modelURL = `${window.location.origin}/skin-cancer-model/model.json`;
+
 /**
  * This is the page to predict skin cancer, it allows the user to upload an image, then processes it locally
  * to give the user a prediction of whether or not they have skin cancer
@@ -45,8 +48,6 @@ const SkinCancer = () => {
     unit: '%',
   });
 
-  // this is the url of the model that is to be loaded
-  const modelURL = `${window.location.origin}/model/model.json`;
 
   // This useEffect runs when the page loads, it loads the model from the server
   useEffect(() => {
