@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  29 MAR 2023 22:41
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.30)  29 MAR 2023 23:05
+>>>>>>> Web-Interface
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -241,11 +245,15 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+<<<<<<< HEAD
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
 ) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+=======
+ (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+>>>>>>> Web-Interface
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
@@ -453,12 +461,15 @@ File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
 \c@smartand=\count412
+<<<<<<< HEAD
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-natbib.def
 File: blx-natbib.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+=======
+>>>>>>> Web-Interface
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -515,6 +526,7 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
  (final_report.aux)
 \openout1 = `final_report.aux'.
 
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
@@ -533,6 +545,26 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+>>>>>>> Web-Interface
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -574,19 +606,31 @@ LaTeX Font Info:    ... okay on input line 22.
 \scratchbox=\box54
 \nofMPsegments=\count419
 \nofMParguments=\count420
+<<<<<<< HEAD
 \everyMPshowfont=\toks21
+=======
+\everyMPshowfont=\toks19
+>>>>>>> Web-Interface
 \MPscratchCnt=\count421
 \MPscratchDim=\dimen166
 \MPnumerator=\count422
 \makeMPintoPDFobject=\count423
+<<<<<<< HEAD
 \everyMPtoPDFconversion=\toks22
+=======
+\everyMPtoPDFconversion=\toks20
+>>>>>>> Web-Interface
 ) (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\mlg\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+<<<<<<< HEAD
 Package hyperref Info: Link coloring OFF on input line 22.
+=======
+Package hyperref Info: Link coloring OFF on input line 21.
+>>>>>>> Web-Interface
  (final_report.out) (final_report.out)
 \@outlinefile=\write4
 \openout4 = `final_report.out'.
@@ -606,6 +650,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'final_report.bbl' found.
+<<<<<<< HEAD
  (final_report.bbl)
 Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
@@ -613,14 +658,41 @@ Package biblatex Info: Reference segment=0 on input line 22.
 File: logo.pdf Graphic file (type pdf)
 <use logo.pdf>
 Package pdftex.def Info: logo.pdf  used on input line 25.
+=======
+ (final_report.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Gorgolewski2016':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'BMVC2016_87':
+(biblatex)                - Invalid format of field 'month'.
+
+)
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+<logo.pdf, id=311, 948.54375pt x 473.77pt>
+File: logo.pdf Graphic file (type pdf)
+<use logo.pdf>
+Package pdftex.def Info: logo.pdf  used on input line 24.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 284.82584pt x 142.26378pt.
  [0{C:/Users/mlg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
  <./logo.pdf>]
+<<<<<<< HEAD
 <images/signature.jpg, id=334, 913.4125pt x 384.43625pt>
 File: images/signature.jpg Graphic file (type jpg)
 <use images/signature.jpg>
 Package pdftex.def Info: images/signature.jpg  used on input line 53.
+=======
+<images/signature.jpg, id=330, 913.4125pt x 384.43625pt>
+File: images/signature.jpg Graphic file (type jpg)
+<use images/signature.jpg>
+Package pdftex.def Info: images/signature.jpg  used on input line 52.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 142.26378pt x 59.87444pt.
  [1
 
@@ -654,7 +726,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [6
 
 ]
+<<<<<<< HEAD
 Overfull \hbox (4.89122pt too wide) in paragraph at lines 114--115
+=======
+Overfull \hbox (4.89122pt too wide) in paragraph at lines 113--114
+>>>>>>> Web-Interface
 \OT1/cmr/m/n/10.95 part-ment of In-for-ma-tion and Com-puter Sci-ence, Irvine, CA, 1999, http://kdd.ics.uci.edu. 
  []
 
@@ -664,23 +740,42 @@ Chapter 1.
 
 ] [9]
 Chapter 2.
+<<<<<<< HEAD
 <images/NeuralNetwork.png, id=464, 578.16pt x 297.36093pt>
 File: images/NeuralNetwork.png Graphic file (type png)
 <use images/NeuralNetwork.png>
 Package pdftex.def Info: images/NeuralNetwork.png  used on input line 168.
+=======
+[9
+
+]
+Chapter 3.
+<images/NeuralNetwork.png, id=457, 578.16pt x 297.36093pt>
+File: images/NeuralNetwork.png Graphic file (type png)
+<use images/NeuralNetwork.png>
+Package pdftex.def Info: images/NeuralNetwork.png  used on input line 148.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 284.52756pt x 146.33882pt.
 [10
 
  <./images/NeuralNetwork.png>] [11]
+<<<<<<< HEAD
 <images/Principe_cbir.png, id=484, 699.36281pt x 262.73157pt>
 File: images/Principe_cbir.png Graphic file (type png)
 <use images/Principe_cbir.png>
 Package pdftex.def Info: images/Principe_cbir.png  used on input line 238.
+=======
+<images/Principe_cbir.png, id=478, 699.36281pt x 262.73157pt>
+File: images/Principe_cbir.png Graphic file (type png)
+<use images/Principe_cbir.png>
+Package pdftex.def Info: images/Principe_cbir.png  used on input line 221.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 308.71106pt x 115.97507pt.
  [12 <./images/Principe_cbir.png>] [13] [14]
 Chapter 3.
 [15
 
+<<<<<<< HEAD
 ] [16]
 Chapter 4.
 <images/MobileNetv3-structure.png, id=525, 2594.19188pt x 892.08281pt>
@@ -692,9 +787,23 @@ Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 36
 File: images/mobilenet-comparison.png Graphic file (type png)
 <use images/mobilenet-comparison.png>
 Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 371.
+=======
+] [15]
+Chapter 5.
+<images/MobileNetv3-structure.png, id=514, 2594.19188pt x 892.08281pt>
+File: images/MobileNetv3-structure.png Graphic file (type png)
+<use images/MobileNetv3-structure.png>
+Package pdftex.def Info: images/MobileNetv3-structure.png  used on input line 353.
+(pdftex.def)             Requested size: 352.81552pt x 121.32437pt.
+<images/mobilenet-comparison.png, id=517, 2151.53813pt x 920.68968pt>
+File: images/mobilenet-comparison.png Graphic file (type png)
+<use images/mobilenet-comparison.png>
+Package pdftex.def Info: images/mobilenet-comparison.png  used on input line 360.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 352.81552pt x 150.96599pt.
 [17
 
+<<<<<<< HEAD
  <./images/MobileNetv3-structure.png> <./images/mobilenet-comparison.png>] [18]
 <images/VGG19-architecture.png, id=555, 1350.54562pt x 742.27313pt>
 File: images/VGG19-architecture.png Graphic file (type png)
@@ -722,6 +831,35 @@ Package pdftex.def Info: images/EfficientNetv2-Performance-Graph.png  used on in
 File: images/Xception-structure.png Graphic file (type png)
 <use images/Xception-structure.png>
 Package pdftex.def Info: images/Xception-structure.png  used on input line 455.
+=======
+ <./images/MobileNetv3-structure.png> <./images/mobilenet-comparison.png>] [17]
+<images/VGG19-architecture.png, id=543, 1350.54562pt x 742.27313pt>
+File: images/VGG19-architecture.png Graphic file (type png)
+<use images/VGG19-architecture.png>
+Package pdftex.def Info: images/VGG19-architecture.png  used on input line 397.
+(pdftex.def)             Requested size: 352.81552pt x 193.90388pt.
+<images/EfficientNetComparison.PNG, id=547, 1174.3875pt x 931.22906pt>
+File: images/EfficientNetComparison.PNG Graphic file (type png)
+<use images/EfficientNetComparison.PNG>
+Package pdftex.def Info: images/EfficientNetComparison.PNG  used on input line 410.
+(pdftex.def)             Requested size: 352.81552pt x 279.75453pt.
+ [18 <./images/VGG19-architecture.png> <./images/EfficientNetComparison.PNG>]
+<images/EfficientNetPerformanceDatasets.PNG, id=562, 1204.5pt x 658.71094pt>
+File: images/EfficientNetPerformanceDatasets.PNG Graphic file (type png)
+<use images/EfficientNetPerformanceDatasets.PNG>
+Package pdftex.def Info: images/EfficientNetPerformanceDatasets.PNG  used on input line 423.
+(pdftex.def)             Requested size: 352.81552pt x 192.94104pt.
+<images/EfficientNetv2-Performance-Graph.png, id=566, 651.93562pt x 511.9125pt>
+File: images/EfficientNetv2-Performance-Graph.png Graphic file (type png)
+<use images/EfficientNetv2-Performance-Graph.png>
+Package pdftex.def Info: images/EfficientNetv2-Performance-Graph.png  used on input line 433.
+(pdftex.def)             Requested size: 352.81552pt x 277.04572pt.
+ [19 <./images/EfficientNetPerformanceDatasets.PNG>]
+<images/Xception-structure.png, id=581, 788.9475pt x 546.54187pt>
+File: images/Xception-structure.png Graphic file (type png)
+<use images/Xception-structure.png>
+Package pdftex.def Info: images/Xception-structure.png  used on input line 446.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 352.81552pt x 244.40709pt.
  [21 <./images/EfficientNetv2-Performance-Graph.png> <./images/Xception-structure.png>] [22]
 Chapter 5.
@@ -736,40 +874,68 @@ Chapter 6.
 ] [28]
 Chapter 7.
 
+<<<<<<< HEAD
 Overfull \hbox (6.91362pt too wide) in paragraph at lines 641--641
+=======
+Overfull \hbox (6.91362pt too wide) in paragraph at lines 632--632
+>>>>>>> Web-Interface
 []\OT1/cmss/bx/n/17.28 Problems With The Datasets and How I Fixed Them 
  []
 
 [29
 
 ]
+<<<<<<< HEAD
 <images/bad-training-result.png, id=685, 430.0065pt x 328.8285pt>
 File: images/bad-training-result.png Graphic file (type png)
 <use images/bad-training-result.png>
 Package pdftex.def Info: images/bad-training-result.png  used on input line 656.
+=======
+<images/bad-training-result.png, id=674, 430.0065pt x 328.8285pt>
+File: images/bad-training-result.png Graphic file (type png)
+<use images/bad-training-result.png>
+Package pdftex.def Info: images/bad-training-result.png  used on input line 647.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 308.71106pt x 236.07396pt.
  [30 <./images/bad-training-result.png>] [31] [32]
 Chapter 8.
 [33
 
+<<<<<<< HEAD
 ] [34] [35] [36]
 Chapter 9.
 <images/nWBV-vs-Age.png, id=776, 416.2752pt x 312.2064pt>
 File: images/nWBV-vs-Age.png Graphic file (type png)
 <use images/nWBV-vs-Age.png>
 Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 822.
+=======
+]
+Chapter 11.
+<images/nWBV-vs-Age.png, id=740, 416.2752pt x 312.2064pt>
+File: images/nWBV-vs-Age.png Graphic file (type png)
+<use images/nWBV-vs-Age.png>
+Package pdftex.def Info: images/nWBV-vs-Age.png  used on input line 790.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 441.01773pt x 330.78pt.
 [37
 
  <./images/nWBV-vs-Age.png>]
+<<<<<<< HEAD
 <images/eTIV-vs-Age.png, id=784, 419.166pt x 312.2064pt>
 File: images/eTIV-vs-Age.png Graphic file (type png)
 <use images/eTIV-vs-Age.png>
 Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 833.
+=======
+<images/eTIV-vs-Age.png, id=748, 419.166pt x 312.2064pt>
+File: images/eTIV-vs-Age.png Graphic file (type png)
+<use images/eTIV-vs-Age.png>
+Package pdftex.def Info: images/eTIV-vs-Age.png  used on input line 801.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 441.01773pt x 328.48857pt.
  [38
 
  <./images/eTIV-vs-Age.png>]
+<<<<<<< HEAD
 <images/benign-skin-cancer.png, id=792, 200.75pt x 200.75pt>
 File: images/benign-skin-cancer.png Graphic file (type png)
 <use images/benign-skin-cancer.png>
@@ -779,19 +945,39 @@ Package pdftex.def Info: images/benign-skin-cancer.png  used on input line 845.
 File: images/malignant-skin-cancer.png Graphic file (type png)
 <use images/malignant-skin-cancer.png>
 Package pdftex.def Info: images/malignant-skin-cancer.png  used on input line 846.
+=======
+<images/benign-skin-cancer.png, id=757, 200.75pt x 200.75pt>
+File: images/benign-skin-cancer.png Graphic file (type png)
+<use images/benign-skin-cancer.png>
+Package pdftex.def Info: images/benign-skin-cancer.png  used on input line 813.
+(pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
+<images/malignant-skin-cancer.png, id=758, 200.75pt x 200.75pt>
+File: images/malignant-skin-cancer.png Graphic file (type png)
+<use images/malignant-skin-cancer.png>
+Package pdftex.def Info: images/malignant-skin-cancer.png  used on input line 814.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 88.2022pt x 88.20467pt.
  [39
 
  <./images/benign-skin-cancer.png (PNG copy)> <./images/malignant-skin-cancer.png (PNG copy)>]
+<<<<<<< HEAD
 Chapter 10.
 <images/good-training-acc-vs-val.png, id=799, 1193.9004pt x 699.5736pt>
 File: images/good-training-acc-vs-val.png Graphic file (type png)
 <use images/good-training-acc-vs-val.png>
 Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 866.
+=======
+Chapter 12.
+<images/good-training-acc-vs-val.png, id=764, 1193.9004pt x 699.5736pt>
+File: images/good-training-acc-vs-val.png Graphic file (type png)
+<use images/good-training-acc-vs-val.png>
+Package pdftex.def Info: images/good-training-acc-vs-val.png  used on input line 831.
+>>>>>>> Web-Interface
 (pdftex.def)             Requested size: 441.01773pt x 258.42186pt.
 [40
 
  <./images/good-training-acc-vs-val.png>]
+<<<<<<< HEAD
 <images/inceptionv3-accuracy-vs-val-acc.png, id=807, 1171.4967pt x 654.7662pt>
 File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
 <use images/inceptionv3-accuracy-vs-val-acc.png>
@@ -876,10 +1062,102 @@ Package pdftex.def Info: images/EfficientNetV2B1-initial-training-loss.png  used
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 1053.
+=======
+<images/inceptionv3-accuracy-vs-val-acc.png, id=772, 1171.4967pt x 654.7662pt>
+File: images/inceptionv3-accuracy-vs-val-acc.png Graphic file (type png)
+<use images/inceptionv3-accuracy-vs-val-acc.png>
+Package pdftex.def Info: images/inceptionv3-accuracy-vs-val-acc.png  used on input line 841.
+(pdftex.def)             Requested size: 341.43306pt x 190.82646pt.
+ [39 <./images/inceptionv3-accuracy-vs-val-acc.png>]
+<images/mobilenet-v3-small-vs-inception-v3.png, id=782, 1178.7237pt x 682.9515pt>
+File: images/mobilenet-v3-small-vs-inception-v3.png Graphic file (type png)
+<use images/mobilenet-v3-small-vs-inception-v3.png>
+Package pdftex.def Info: images/mobilenet-v3-small-vs-inception-v3.png  used on input line 863.
+(pdftex.def)             Requested size: 341.43306pt x 197.8216pt.
+ [40 <./images/mobilenet-v3-small-vs-inception-v3.png>]
+<images/model-sizes.png, id=790, 791.3565pt x 344.0052pt>
+File: images/model-sizes.png Graphic file (type png)
+<use images/model-sizes.png>
+Package pdftex.def Info: images/model-sizes.png  used on input line 878.
+(pdftex.def)             Requested size: 341.43306pt x 148.42325pt.
+<images/ResNet101-vs-Inceptionv3.png, id=791, 1182.3372pt x 677.8926pt>
+File: images/ResNet101-vs-Inceptionv3.png Graphic file (type png)
+<use images/ResNet101-vs-Inceptionv3.png>
+Package pdftex.def Info: images/ResNet101-vs-Inceptionv3.png  used on input line 886.
+(pdftex.def)             Requested size: 341.43306pt x 195.75632pt.
+ [41 <./images/model-sizes.png> <./images/ResNet101-vs-Inceptionv3.png>] [42]
+Chapter 13.
+[43
+
+]
+<images/skin-cancer-loss.png, id=815, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-loss.png Graphic file (type png)
+<use images/skin-cancer-loss.png>
+Package pdftex.def Info: images/skin-cancer-loss.png  used on input line 916.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 916--917
+ [][] 
+ []
+
+[44 <./images/skin-cancer-loss.png>]
+<images/skin-cancer-validation-accuracy-last-50.png, id=822, 891.0891pt x 389.5353pt>
+File: images/skin-cancer-validation-accuracy-last-50.png Graphic file (type png)
+<use images/skin-cancer-validation-accuracy-last-50.png>
+Package pdftex.def Info: images/skin-cancer-validation-accuracy-last-50.png  used on input line 925.
+(pdftex.def)             Requested size: 485.1222pt x 212.06963pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 925--926
+ [][] 
+ []
+
+<images/Skin-cancer-validation-accuracy-last-50-low-performers.png, id=823, 897.5934pt x 359.1819pt>
+File: images/Skin-cancer-validation-accuracy-last-50-low-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-low-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-low-performers.png  used on input line 935.
+(pdftex.def)             Requested size: 485.1222pt x 194.1307pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 935--936
+ [][] 
+ []
+
+<images/Skin-cancer-validation-accuracy-last-50-high-performers.png, id=824, 897.5934pt x 374.3586pt>
+File: images/Skin-cancer-validation-accuracy-last-50-high-performers.png Graphic file (type png)
+<use images/Skin-cancer-validation-accuracy-last-50-high-performers.png>
+Package pdftex.def Info: images/Skin-cancer-validation-accuracy-last-50-high-performers.png  used on input line 944.
+(pdftex.def)             Requested size: 485.1222pt x 202.33342pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 944--945
+ [][] 
+ []
+
+[45 <./images/skin-cancer-validation-accuracy-last-50.png> <./images/Skin-cancer-validation-accuracy-last-50-low-performers.png>]
+<images/skin-cancer-model-sizes-graph.png, id=833, 891.0891pt x 384.4764pt>
+File: images/skin-cancer-model-sizes-graph.png Graphic file (type png)
+<use images/skin-cancer-model-sizes-graph.png>
+Package pdftex.def Info: images/skin-cancer-model-sizes-graph.png  used on input line 951.
+(pdftex.def)             Requested size: 485.1222pt x 209.31548pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 951--952
+ [][] 
+ []
+
+[46 <./images/Skin-cancer-validation-accuracy-last-50-high-performers.png> <./images/skin-cancer-model-sizes-graph.png>]
+<images/EfficientNetV2B1-initial-training-loss.png, id=842, 422.0568pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-loss.png  used on input line 968.
+(pdftex.def)             Requested size: 176.40439pt x 131.39838pt.
+
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 969.
+>>>>>>> Web-Interface
 See the caption package documentation for explanation.
 
 
 Package caption Warning: Cannot determine current font size.
+<<<<<<< HEAD
 (caption)                Try setting it with `size=' explicitly on input line 1053.
 See the caption package documentation for explanation.
 
@@ -891,10 +1169,24 @@ Package pdftex.def Info: images/EfficientNetV2B1-initial-training-accuracy.png  
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 1058.
+=======
+(caption)                Try setting it with `size=' explicitly on input line 969.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-initial-training-accuracy.png, id=843, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-initial-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-initial-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-initial-training-accuracy.png  used on input line 973.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 974.
+>>>>>>> Web-Interface
 See the caption package documentation for explanation.
 
 
 Package caption Warning: Cannot determine current font size.
+<<<<<<< HEAD
 (caption)                Try setting it with `size=' explicitly on input line 1058.
 See the caption package documentation for explanation.
 
@@ -908,10 +1200,24 @@ Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-loss.png  used on 
 
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 1072.
+=======
+(caption)                Try setting it with `size=' explicitly on input line 974.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-loss.png, id=845, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-loss.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-loss.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-loss.png  used on input line 987.
+(pdftex.def)             Requested size: 176.40439pt x 133.22122pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 988.
+>>>>>>> Web-Interface
 See the caption package documentation for explanation.
 
 
 Package caption Warning: Cannot determine current font size.
+<<<<<<< HEAD
 (caption)                Try setting it with `size=' explicitly on input line 1072.
 See the caption package documentation for explanation.
 
@@ -924,8 +1230,37 @@ Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-accuracy.png  used
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 1077.
 See the caption package documentation for explanation.
+=======
+(caption)                Try setting it with `size=' explicitly on input line 988.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-2nd-training-accuracy.png, id=846, 409.7709pt x 314.3745pt>
+File: images/EfficientNetV2B1-2nd-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-2nd-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-2nd-training-accuracy.png  used on input line 992.
+(pdftex.def)             Requested size: 176.40439pt x 135.33669pt.
+
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 993.
+See the caption package documentation for explanation.
 
 
+Package caption Warning: Cannot determine current font size.
+(caption)                Try setting it with `size=' explicitly on input line 993.
+See the caption package documentation for explanation.
+
+<images/EfficientNetV2B1-final-training-accuracy.png, id=847, 416.2752pt x 314.3745pt>
+File: images/EfficientNetV2B1-final-training-accuracy.png Graphic file (type png)
+<use images/EfficientNetV2B1-final-training-accuracy.png>
+Package pdftex.def Info: images/EfficientNetV2B1-final-training-accuracy.png  used on input line 1006.
+(pdftex.def)             Requested size: 441.01773pt x 333.07707pt.
+[47 <./images/EfficientNetV2B1-initial-training-loss.png> <./images/EfficientNetV2B1-initial-training-accuracy.png> <./images/EfficientNetV2B1-2nd-training-loss.png> <./images/EfficientNetV2B1-2nd-training-accuracy.png>] [48 <./images/EfficientNetV2B1-final-training-accuracy.png>]
+Chapter 14.
+[49
+>>>>>>> Web-Interface
+
+
+<<<<<<< HEAD
 Package caption Warning: Cannot determine current font size.
 (caption)                Try setting it with `size=' explicitly on input line 1077.
 See the caption package documentation for explanation.
@@ -1043,17 +1378,86 @@ Overfull \hbox (3.65741pt too wide) in paragraph at lines 1530--1530
  []
 
 [73] (final_report.aux)
+=======
+Overfull \hbox (4.25235pt too wide) in paragraph at lines 1038--1039
+[]\OT1/cmr/m/n/10.95 As AI-based sys-tems such as trans-fer learn-ing mod-els are in-creas-ingly em-ployed for Alzheimer's
+ []
+
+[50
+
+] [51] [52]
+Chapter 16.
+[53
+
+]
+Overfull \hbox (51.7374pt too wide) in paragraph at lines 1137--1138
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<images/better-output.png, id=903, 399.4925pt x 279.0425pt>
+File: images/better-output.png Graphic file (type png)
+<use images/better-output.png>
+Package pdftex.def Info: images/better-output.png  used on input line 1148.
+(pdftex.def)             Requested size: 352.81552pt x 246.45229pt.
+<images/training.png, id=904, 445.665pt x 668.4975pt>
+File: images/training.png Graphic file (type png)
+<use images/training.png>
+Package pdftex.def Info: images/training.png  used on input line 1154.
+(pdftex.def)             Requested size: 352.81552pt x 529.22928pt.
+<images/positive-progress.png, id=905, 387.4475pt x 279.0425pt>
+File: images/positive-progress.png Graphic file (type png)
+<use images/positive-progress.png>
+Package pdftex.def Info: images/positive-progress.png  used on input line 1160.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+<images/fine-tuning-more.png, id=906, 393.47pt x 279.0425pt>
+File: images/fine-tuning-more.png Graphic file (type png)
+<use images/fine-tuning-more.png>
+Package pdftex.def Info: images/fine-tuning-more.png  used on input line 1168.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/maxing-out.png, id=907, 393.47pt x 279.0425pt>
+File: images/maxing-out.png Graphic file (type png)
+<use images/maxing-out.png>
+Package pdftex.def Info: images/maxing-out.png  used on input line 1176.
+(pdftex.def)             Requested size: 352.81552pt x 250.2077pt.
+<images/mobilenetv3-first-attempt.png, id=908, 387.4475pt x 279.0425pt>
+File: images/mobilenetv3-first-attempt.png Graphic file (type png)
+<use images/mobilenetv3-first-attempt.png>
+Package pdftex.def Info: images/mobilenetv3-first-attempt.png  used on input line 1182.
+(pdftex.def)             Requested size: 352.81552pt x 254.10364pt.
+[54] [55 <./images/better-output.png>] [56 <./images/training.png>] [57 <./images/positive-progress.png> <./images/fine-tuning-more.png>] [58 <./images/maxing-out.png> <./images/mobilenetv3-first-attempt.png>] [59] [60] [61] [62]
+Chapter 17.
+[63
+
+]
+Overfull \hbox (27.32025pt too wide) in paragraph at lines 1321--1321
+[]\OT1/cmr/m/n/10.95 Kaiming He et al. ``Deep Resid-ual Learn-ing for Im-age Recog-ni-tion''. In: \OT1/cmr/m/it/10.95 CoRR \OT1/cmr/m/n/10.95 abs/1512.03385
+ []
+
+[64
+
+]
+Overfull \hbox (0.12296pt too wide) in paragraph at lines 1321--1321
+[]\OT1/cmr/m/n/10.95 Karen Si-monyan and An-drew Zis-ser-man. ``Very Deep Con-vo-lu-tional Net-works for Large-
+ []
+
+[65] (final_report.aux)
+>>>>>>> Web-Interface
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `final_report.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 53B5CC028991F6B8ABB2E6CD77D4D975;13920.
+=======
+(rerunfilecheck)             Checksum: 026F1819BBE2846C89253AB56E426FB5;13310.
+>>>>>>> Web-Interface
 Package logreq Info: Writing requests to 'final_report.run.xml'.
 \openout1 = `final_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  20999 strings out of 478338
  378012 string characters out of 2837644
  1087313 words of memory out of 3000000
@@ -1067,4 +1471,19 @@ PDF statistics:
  1367 PDF objects out of 1440 (max. 8388607)
  381 named destinations out of 1000 (max. 500000)
  840 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 20868 strings out of 478338
+ 373959 string characters out of 2837644
+ 1046527 words of memory out of 3000000
+ 38754 multiletter control sequences out of 15000+600000
+ 478713 words of font info for 59 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,13n,77p,1942b,1455s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\mlg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/mlg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_report.pdf (66 pages, 4460198 bytes).
+PDF statistics:
+ 1207 PDF objects out of 1440 (max. 8388607)
+ 314 named destinations out of 1000 (max. 500000)
+ 802 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Web-Interface
 

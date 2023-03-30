@@ -10,7 +10,12 @@ import { GrDocumentUpdate } from 'react-icons/gr';
 import { RiBodyScanFill } from 'react-icons/ri';
 import { IoChevronBackCircleSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import { setCanvas, predictImage, PredictionType } from './utils';
+import {
+  setCanvas, predictImage, PredictionType, getLocation,
+} from '@/utils';
+
+// this is the url of the model that is to be loaded
+const modelURL = `${getLocation()}/skin-cancer-model/model.json`;
 
 /**
  * This is the page to predict skin cancer, it allows the user to upload an image, then processes it locally
@@ -44,9 +49,6 @@ const SkinCancer = () => {
     height: 100,
     unit: '%',
   });
-
-  // this is the url of the model that is to be loaded
-  const modelURL = `${window.location.origin}/model/model.json`;
 
   // This useEffect runs when the page loads, it loads the model from the server
   useEffect(() => {
@@ -102,7 +104,7 @@ const SkinCancer = () => {
       <div className="justify-center align-middle bg-white p-5 m-auto text-center">
         <div className="flex justify-between mt-3 mb-3 gap-4">
           <Link to="/">
-            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full">
+            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full hover:bg-slate-400">
               <IoChevronBackCircleSharp className="h-10 w-10 m-auto" />
             </div>
           </Link>
@@ -129,7 +131,7 @@ const SkinCancer = () => {
                 {imageList.length === 0 && (
                   <div className="flex gap-3 mt-4">
                     <button
-                      className={`flex-1 h-20 d bg-slate-300 rounded-md p-5 flex align-middle justify-center gap-4 ${
+                      className={`flex-1 h-20 d bg-slate-300 rounded-md p-5 flex align-middle justify-center gap-4 hover:shadow-xl ${
                         isDragging && 'bg-slate-400'
                       }`}
                       onClick={onImageUpload}

@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useState } from 'react';
 import { XyzTransitionGroup } from '@animxyz/react';
@@ -13,6 +14,13 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import { IoChevronBackCircleSharp } from 'react-icons/io5';
+import * as tf from '@tensorflow/tfjs';
+import { getLocation } from '@/utils';
+
+// this is the url of the model that is to be loaded
+const modelURL = `${getLocation()}/AD-model/model.json`;
 
 /**
  * The different states that the app can be in,
@@ -29,11 +37,9 @@ enum states {
 
 // The type for the prediction, this is the same as the type in the server (0 = non AD, 3 = moderate AD)
 type predictionType = {
-  0: number;
-  1: number;
-  2: number;
-  3: number;
-};
+  CDR: number;
+  pred: number;
+}[];
 
 /**
  * This is the page to predict Alzheimers, it allows the user to upload an image, then processes it on the server
@@ -47,9 +53,11 @@ const Alzheimers = () => {
   // This stores the current state of the app
   const [currentState, setCurrentState] = useState<states>(states.waitingForFile);
   // blob or undefined
-  const [image, setImage] = useState<Blob | undefined>(undefined);
+  const [image, setImage] = useState<File | undefined>(undefined);
   // predictionType or undefined, this is the prediction that the server returns
   const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
+
+  const [model, setModel] = useState<tf.LayersModel | undefined>(undefined);
 
   // These are the values that the user can change to increase the accuracy of the prediction
   const [age, setAge] = useState<number>(50);
@@ -68,35 +76,74 @@ const Alzheimers = () => {
   };
 
   /**
-   * Called when the current state changes, this function will send the image to the server
-   * then wait for the response, and then set the prediction state
+   * This loads the model from the server, only once, when the component is mounted
+   * This is done to prevent the model from being loaded every time the user changes the input data
+   */
+  useEffect(() => {
+    tf.loadLayersModel(modelURL).then((loadedModel) => {
+      setModel(loadedModel);
+    });
+  }, []);
+
+  /**
+   * Called when the current state changes, this function will send the image and the metadata to the
+   * tensorflow library to process it
    */
   useEffect(() => {
     if (currentState === states.waitingForPrediction) {
-      const formData = new FormData();
-      if (image === undefined) return;
-      formData.append('file', image);
-      formData.append('age', age.toString());
-      formData.append('sex', sex);
-      formData.append('mmse', mmse.toString());
-      fetch('http://localhost:3002/predict', {
-        method: 'POST',
-        body: formData,
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          setPrediction(data);
-          setCurrentState(states.predictionReceived);
-        });
+      // TODO: Process the image and the other input data
+      if (!image || !model) return;
+
+      // creating image that we can pass to TFJS
+      const img = new Image();
+      img.src = URL.createObjectURL(image);
+      img.width = 224;
+      img.height = 224;
+
+      // This is called when the image has loaded
+      img.onload = async () => {
+        // Convert the image to a tensor
+        const tensor = tf.browser.fromPixels(img);
+        // Resize the image to ensure that it is the correct size
+        const resized = tf.image.resizeBilinear(tensor, [224, 224]);
+        // Expand the dimensions of the image to ensure that it is the correct shape
+        const imageBatched = resized.expandDims(0);
+        // Convert the additional inputs to a tensor
+        const additionalInputs = tf.tensor1d([sex === 'male' ? 1 : 0, age, mmse]);
+        // Expand the dimensions of the additional inputs to ensure that it is the correct shape
+        const additionalInputsBatched = additionalInputs.expandDims(0);
+
+        // Pass the inputs as an array of tensors
+        const inputs = [additionalInputsBatched, imageBatched];
+
+        // Predict the CDR score
+        const pred = model.predict(inputs) as tf.Tensor;
+        // Get the data from the prediction
+        const predValues = await pred.data();
+
+        // In the model, the CDR score is 2x, so we divide by 2 to get the actual CDR score
+        // This spreads the Float32Array into a list, so that we can map over it and create the predictionType
+        setPrediction([...predValues].map((value) => ({ CDR: value / 2, pred: value })));
+        console.log(predValues);
+        setCurrentState(states.predictionReceived);
+      };
     }
   }, [currentState]);
 
   return (
-    <div className="bg-white m-auto p-10 rounded-xl w-3/4 md:w-1/2 text-center">
-      <div className="underline text-5xl">Alzheimer&apos;s Disease Predictor</div>
-      <div className="m-5 text-left">
-        <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-2xl rounded-2xl select-none">
+    <div className="h-full flex">
+      <div className="justify-center align-middle bg-white p-5 m-auto text-center">
+        <div className="flex justify-between mt-3 mb-3 gap-4">
+          <Link to="/">
+            <div className="bg-slate-300 justify-center align-middle flex rounded-md p-2 h-full hover:bg-slate-400">
+              <IoChevronBackCircleSharp className="h-10 w-10 m-auto" />
+            </div>
+          </Link>
+          <div className="bg-slate-300 p-3 text-2xl rounded-md flex-1">
+            Alzheimer&#39;s Disease Predicter
+          </div>
+        </div>
+        <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-xl rounded-md select-none">
           {currentState === states.waitingForFile && (
           <div>
             <input type="file" name="file" onChange={imageUploaded} className="" />
@@ -186,9 +233,11 @@ const Alzheimers = () => {
               <div>
                 <div className="text-2xl">Prediction received!</div>
                 <div className="text-xl">
-                  The model predicts that the patient has a probability of &nbsp;
-                  {JSON.stringify(prediction, null, 2)}
-                  % of having Alzheimer&apos;s Disease
+                  The model predicts that the patient has a CDR score of:
+                  {
+                    // this checks to see if prediction is defined, and if it is, loops through the array and returns the CDR score of the highest prediction
+                    prediction && prediction.reduce((prev, curr) => (prev.pred > curr.pred ? prev : curr)).CDR.toFixed(2)
+                  }
                 </div>
               </div>
             )}
