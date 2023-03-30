@@ -15,6 +15,10 @@ import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { IoChevronBackCircleSharp } from 'react-icons/io5';
+import * as tf from '@tensorflow/tfjs';
+
+// this is the url of the model that is to be loaded
+const modelURL = `${window.location.origin}/AD-model/model.json`;
 
 /**
  * The different states that the app can be in,
@@ -31,11 +35,9 @@ enum states {
 
 // The type for the prediction, this is the same as the type in the server (0 = non AD, 3 = moderate AD)
 type predictionType = {
-  0: number;
-  1: number;
-  2: number;
-  3: number;
-};
+  CDR: number;
+  pred: number;
+}[];
 
 /**
  * This is the page to predict Alzheimers, it allows the user to upload an image, then processes it on the server
@@ -49,9 +51,11 @@ const Alzheimers = () => {
   // This stores the current state of the app
   const [currentState, setCurrentState] = useState<states>(states.waitingForFile);
   // blob or undefined
-  const [image, setImage] = useState<Blob | undefined>(undefined);
+  const [image, setImage] = useState<File | undefined>(undefined);
   // predictionType or undefined, this is the prediction that the server returns
   const [prediction, setPrediction] = useState<predictionType | undefined>(undefined);
+
+  const [model, setModel] = useState<tf.LayersModel | undefined>(undefined);
 
   // These are the values that the user can change to increase the accuracy of the prediction
   const [age, setAge] = useState<number>(50);
@@ -69,13 +73,43 @@ const Alzheimers = () => {
     setCurrentState(states.waitingForData);
   };
 
+  useEffect(() => {
+    tf.loadLayersModel(modelURL).then((loadedModel) => {
+      setModel(loadedModel);
+    });
+  }, []);
+
   /**
-   * Called when the current state changes, this function will send the image to the server
-   * then wait for the response, and then set the prediction state
+   * Called when the current state changes, this function will send the image and the metadata to the
+   * tensorflow library to process it
    */
   useEffect(() => {
     if (currentState === states.waitingForPrediction) {
       // TODO: Process the image and the other input data
+      if (!image || !model) return;
+      const img = new Image();
+      img.src = URL.createObjectURL(image);
+      img.width = 224;
+      img.height = 224;
+      img.onload = async () => {
+        const tensor = tf.browser.fromPixels(img);
+        const resized = tf.image.resizeBilinear(tensor, [224, 224]);
+        const imageBatched = resized.expandDims(0);
+        const additionalInputs = tf.tensor1d([sex === 'male' ? 1 : 0, age, mmse]);
+        const additionalInputsBatched = additionalInputs.expandDims(0);
+
+        // Pass the inputs as an array of tensors
+        const inputs = [additionalInputsBatched, imageBatched];
+
+        const pred = model.predict(inputs) as tf.Tensor;
+        const predValues = await pred.data();
+
+        // In the model, the CDR score is 2x, so we divide by 2 to get the actual CDR score
+        // This spreads the Float32Array into a list, so that we can map over it and create the predictionType
+        setPrediction([...predValues].map((value) => ({ CDR: value / 2, pred: value })));
+        console.log(predValues);
+        setCurrentState(states.predictionReceived);
+      };
     }
   }, [currentState]);
 
@@ -89,7 +123,7 @@ const Alzheimers = () => {
             </div>
           </Link>
           <div className="bg-slate-300 p-3 text-2xl rounded-md flex-1">
-            Skin Cancer Predicter
+            Alzheimer&#39;s Disease Predicter
           </div>
         </div>
         <div className="text-2xl p-20 text-center bg-slate-300 hover:shadow-xl rounded-md select-none">
@@ -182,9 +216,10 @@ const Alzheimers = () => {
               <div>
                 <div className="text-2xl">Prediction received!</div>
                 <div className="text-xl">
-                  The model predicts that the patient has a probability of &nbsp;
-                  {JSON.stringify(prediction, null, 2)}
-                  % of having Alzheimer&apos;s Disease
+                  The model predicts that the patient has a CDR score of:
+                  {
+                    prediction && prediction.reduce((prev, curr) => (prev.pred > curr.pred ? prev : curr)).CDR.toFixed(2)
+                  }
                 </div>
               </div>
             )}
