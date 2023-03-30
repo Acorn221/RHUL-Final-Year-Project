@@ -11,26 +11,25 @@
     - [x] Host on github pages
   - [x] Alzheimer's
     - [x] Make the local version work
-  - [ ] Make a guide on how to use the UI
+  - [x] Make a guide on how to use the UI
 
-- [ ] Hyperparameter tuning
-	- [ ] Use a grid search
-	- [ ] Use a random search
-	- [ ] Look more into hyperparameter tuning and model optimisation
+- [x] Hyperparameter tuning
+	- [x] Use a grid search
+	- [x] Use a random search
+	- [x] Look more into hyperparameter tuning and model optimisation
 
 ## On campus
 
 - [x] Finish the automated testing library
   - [x] Write some examples for the library
-- [ ] The Report
-  - [ ] Document the different hyperparameter tuning
-  - [ ] Document the different ways of testing the model and showing its performance
+- [x] The Report
+  - [x] Document the different hyperparameter tuning
+  - [x] Document the different ways of testing the model and showing its performance
   - [x] Talk about the web interface and it's potential uses
-- [ ] Talk about different metrics
-  - [ ] Sensitivity/recall
-  - [ ] Specificity
-  - [ ] Precision
-  - [ ] F1 Score
+- [x] Talk about different metrics
+  - [x] Sensitivity/recall
+  - [x] Specificity
+  - [x] F1 Score
 
 
 
