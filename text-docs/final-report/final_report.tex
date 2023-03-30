@@ -59,7 +59,7 @@ Signature:
 
 \begin{abstract}
 
-Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
+Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future. I managed to achive a maximum validation accuracy of 93.10\% on the OASIS-1 dataset and a maximum of 96\% on the skin cancer dataset\cite{TAN2019105725} I am using.
 
 The Web-UI URL is here\cite{Hosted-UI} on GitHub Pages.
 \end{abstract}
@@ -246,7 +246,7 @@ Classification is a type of supervised machine learning model that is used to pr
 
 Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset. There could however be an argument made that this could be a multi-class classification task, as the model could try and just estimate the most likely scores for the patient, rather than trying to predict the exact score, which could be more useful to a doctor.
 
-In the case of the skin cancer dataset, the problem is a binary classification problem, as the dataset only contains images of either benign or malignant skin cancer. This means that the given images are either of a benign or malignant skin cancer, and the model is trying to predict which one it is.
+In the case of the skin cancer\cite{TAN2019105725} dataset, the problem is a binary classification problem, as the dataset only contains images of either benign or malignant skin cancer. This means that the given images are either of a benign or malignant skin cancer, and the model is trying to predict which one it is.
 
 \section{What is a Convolutional Neural Network}
 A convolutional neural network (CNN) is a type of neural network that is used for image classification. It is made up of a series of convolutional layers, pooling layers, and fully connected layers. The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image. The fully connected layers are used to classify the image. They are often much more efficient than other types of neural networks, and are commonly used for image classification. CNNs are more suited to multi-dimentional data, such as images, as they are able to extract features from the image and then use those features to classify the image.
@@ -290,7 +290,7 @@ It is possible to use a pre-trained model as a feature extractor, such as an SVM
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
 This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
 
-I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
+I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer\cite{TAN2019105725} diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
 It's a combination of 2 datasets, the Edinburgh Research and Innovation (Dermofit)\cite{Ballerini2013}, and the Dermatology Service of Hospital Pedro Hispano\cite{6610779}. There are 484 images in the dataset, with 2 different classes, benign (270) and malignant (214). All the images are 200x200 pixels, with 3 channels (RGB), which is not optimal as they require upscaling to be used with the models I will be using for transfer learning.
 
 In the paper from the dataset creators, they used KNN, SVM and a CNN model to classify the images in the dataset.
@@ -316,7 +316,7 @@ The OASIS-1 dataset contains a few different associated parameters, as listed he
   \item `ASF`: The Atlas Scaling Factor of the patient
 \end{itemize}
 
-The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
+The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset\cite{TAN2019105725}, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
 \begin{itemize}
   \item Random horizontal flipping
   \item Random vertical flipping
@@ -326,7 +326,7 @@ The augmentations I can use for this dataset cannot be as extensive as the skin 
 
 \section{The Contents of the Skin Cancer Dataset}
 
-The skin cancer dataset contains 2 different classes, benign and malignant, and 484 images in total.
+The skin cancer dataset\cite{TAN2019105725} contains 2 different classes, benign and malignant, and 484 images in total.
 This is all the information that is available about the dataset, as it is not a publicly available dataset, this requires me to augment the data as much as possible to get good results.
 
 The augmentations I will be using are:
@@ -579,7 +579,7 @@ Whilst I have not used the BIDS standard for all the datasets in this project, I
 
 Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images, which can help improve the performance of a model by reducing overfitting and improving generalization. In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available and MRI scans are very expensive. Although the majority of the archive consists of augmented images, this has caused some problems.
 
-For the skin cancer dataset, data augmentation was applied to the images since there were not enough images per class to train the model on. When training a deep learning model, it is crucial to have a large dataset to learn from a wide variety of data. Unfortunately, there are not as many MRI scans as desired in the OASIS-1\cite{OASIS} dataset, so data augentmation was used to increase the dataset size. The augmentation I'm using is done by the Keras\cite{Keras} ImageDataGenerator class, which can be used to apply random transformations to the images in the dataset, such as rotation, zooming, and flipping. This helps to prevent overfitting and improve the generalization of the model. This helps to improve the validation accuracy through reducing overfitting to the training set.
+For the skin cancer dataset\cite{TAN2019105725}, data augmentation was applied to the images since there were not enough images per class to train the model on. When training a deep learning model, it is crucial to have a large dataset to learn from a wide variety of data. Unfortunately, there are not as many MRI scans as desired in the OASIS-1\cite{OASIS} dataset, so data augentmation was used to increase the dataset size. The augmentation I'm using is done by the Keras\cite{Keras} ImageDataGenerator class, which can be used to apply random transformations to the images in the dataset, such as rotation, zooming, and flipping. This helps to prevent overfitting and improve the generalization of the model. This helps to improve the validation accuracy through reducing overfitting to the training set.
 
 While it is not optimal to rely on data augmentation, it is significantly better than not having enough data to train the model. If these models were to be used in real-world scenarios, augmentation helps make the model more resilient to the quality of the scans.
 
@@ -853,7 +853,7 @@ One potential issue with this parameter is that women are more likely to have Al
 \clearpage
 
 \section{The Skin Cancer Dataset}
-The Skin cancer dataset that I was provided for this project contains images of benign and malignant skin cancer.
+The Skin cancer dataset\cite{TAN2019105725} that I was provided for this project contains images of benign and malignant skin cancer.
 
 % Show the benign and malignant images
 \begin{figure}[h]
