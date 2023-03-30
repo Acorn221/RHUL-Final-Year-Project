@@ -49,13 +49,14 @@
 \contentsline {section}{\numberline {7.4}Evaluating the given metrics}{32}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Software Engineering}{33}{chapter.8}%
 \contentsline {section}{\numberline {8.1}The code}{33}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}My Development Python Environment}{33}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.1}The Trainin Tools I Used}{33}{subsection.8.1.1}%
 \contentsline {section}{\numberline {8.2}My Web Development Environment}{33}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Using Git}{34}{section.8.3}%
 \contentsline {section}{\numberline {8.4}Testing with Jupyter Notebook}{34}{section.8.4}%
 \contentsline {subsection}{\numberline {8.4.1}Using Test Driven Development}{34}{subsection.8.4.1}%
 \contentsline {subsection}{\numberline {8.4.2}Different learning rates}{35}{subsection.8.4.2}%
 \contentsline {section}{\numberline {8.5}Frontend Typescript and React}{35}{section.8.5}%
+\contentsline {section}{\numberline {8.6}How I'm Going To Get My Results}{36}{section.8.6}%
 \contentsline {chapter}{\numberline {9}Identifying and Mitigating Bias}{37}{chapter.9}%
 \contentsline {section}{\numberline {9.1}The OASIS-1 Dataset}{37}{section.9.1}%
 \contentsline {subsection}{\numberline {9.1.1}nWBV vs Age}{37}{subsection.9.1.1}%
