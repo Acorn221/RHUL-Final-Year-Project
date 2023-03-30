@@ -61,6 +61,7 @@ Signature:
 
 Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
 
+The Web-UI URL is here\cite{Hosted-UI} on GitHub Pages.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -135,6 +136,8 @@ In this project, I'm planning to learn about transfer learning and comparing the
 I'll also make a web based GUI for the project, so that anyone can use it to classify images of their own. I plan on using python based libraries such as keras and flask, which will communicate with a backend server. I also plan to use and test the viability of tensorflowJS\cite{smilkov2019tensorflowjs} to make the model run in the browser, which would allow anyone to use the model locally, without having to send their images to a server, which would avoid all privacy issues and potential legal issues.
 
 This will be a learning experience for me, as I have not done any machine learning work before, and I will get to learn about different machine learning techniques and experiment with cutting edge technology that is being used in the real world.
+
+
 
 \section{Objectives}
 
@@ -1178,13 +1181,42 @@ To build the frontend, run the following command in the frontend directory:
 
 This will create a folder under ./dist/ which contains the built frontend.
 
+To see the code running and deployed, go to the GitHub Pages site\cite{Hosted-UI}.
+
+\subsection{How to use the UI}
+
+To use the UI, with the Alzheimer's Disease Classification model, or the Skin Cancer Classification model,
+the UI is very simple to use and only contains very few buttons.
+
+One aspect of the library which is not as clear, due to the library I am using, is the cropping with the skin cancer input.
+The interface is designed to be mobile compatible and therefore the cropping is done by dragging your finger and closing in on the skin area that you want to analyse.
+In figure \ref{fig:UI-Cropping} you can see that the cropping is not very clear all the time, so the user may need to be prompted on how to use the cropping.
+This may be fine, as 
+
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/UI-screenshot-unclear.png}
+    \label{fig:Unclear-cropping}
+  \end{subfigure}
+  \begin{subfigure}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/UI-screenshot-clear.png}
+    \label{fig:Clear-Cropping}
+  \end{subfigure}
+  \caption{The Skin Cancer Cropping UI}
+  \label{fig:UI-Cropping}
+\end{figure}
+
+
 \section{The Python Side of the Project}
 
 \subsection{Prerequisites for the Python code}
-Go to the directory in your terminal (with python 3.7 > installed) and run the following command:
+Go to the directory in your powershell terminal (with python 3.7 > installed) and run the following command:
 \begin{lstlisting}
   pip install -r requirements.txt
 \end{lstlisting}
+
+I believe this would run on Linux/Unix too, however I have not tested it, due to my main OS being Windows.
 
 \subsection{Running the Notebooks}
 
@@ -1198,7 +1230,7 @@ To run the tests for the AutomatedTestingLibary run the following command:
 \end{lstlisting}
 Run main.py in the AutomatedTestingLibary directory to run the training program.
 
-The flower training notebook does not work as I am having issues with Keras and the dataset (specifically the way it is loaded).
+
 
 \chapter{Professional Issues}
 
