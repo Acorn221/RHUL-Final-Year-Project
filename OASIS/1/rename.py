@@ -1,6 +1,11 @@
 import os
 
-path = "C:\Active-Projects\RHUL-FYP\PROJECT\OASIS\processed_scans"
+"""
+This script converts the .gif files to .png files in the processed_scans folder.
+
+"""
+
+path = "./processed_scans"
 
 files = os.listdir(path)
 
