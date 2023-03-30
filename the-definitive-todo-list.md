@@ -11,26 +11,25 @@
     - [x] Host on github pages
   - [x] Alzheimer's
     - [x] Make the local version work
-  - [ ] Make a guide on how to use the UI
+  - [x] Make a guide on how to use the UI
 
-- [ ] Hyperparameter tuning
-	- [ ] Use a grid search
-	- [ ] Use a random search
-	- [ ] Look more into hyperparameter tuning and model optimisation
+- [x] Hyperparameter tuning
+	- [x] Use a grid search
+	- [x] Use a random search
+	- [x] Look more into hyperparameter tuning and model optimisation
 
 ## On campus
 
 - [x] Finish the automated testing library
   - [x] Write some examples for the library
-- [ ] The Report
-  - [ ] Document the different hyperparameter tuning
-  - [ ] Document the different ways of testing the model and showing its performance
+- [x] The Report
+  - [x] Document the different hyperparameter tuning
+  - [x] Document the different ways of testing the model and showing its performance
   - [x] Talk about the web interface and it's potential uses
-- [ ] Talk about different metrics
-  - [ ] Sensitivity/recall
-  - [ ] Specificity
-  - [ ] Precision
-  - [ ] F1 Score
+- [x] Talk about different metrics
+  - [x] Sensitivity/recall
+  - [x] Specificity
+  - [x] F1 Score
 
 
 
@@ -39,7 +38,7 @@
 
 - [ ] Critical analysis and Discussion (10%): A discussion of actual project achievements and how successful the project was. Clear evidence of reflection on the project process, its difficulties, successes and future enhancements. Any conclusions or results analysed or discussed appropriately;
 - [ ] Technical Decision-Making (10%): Are important (technical) decisions well made and argued? This includes good design decisions, choice or development of algorithms, scope of the project.
-- [ ] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
+- [x] Structure and Presentation (20%): Good use of English. Clear and appropriate report structure. Nice use of figures.
   - More graphs are needed
   - Go over everything to ensure there aren't mistakes and everything is clear
 - [x] Contents and Knowledge (20%): Description of relevant theory - whether mathematical, algorithmic, hardware or software oriented. Also adequate chapters on development and Software Engineering;

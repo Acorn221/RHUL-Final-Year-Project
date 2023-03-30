@@ -32,7 +32,7 @@ This report has been prepared on the basis of my own work. Where other published
 
 \vskip3em
 
-Word Count: XXXX % TODO: Word count
+Word Count: 17936
 
 \vskip3em
 
@@ -44,7 +44,7 @@ Date of Submission: \today
 
 \vskip3em
 
-Video Link: https://youtu.be/w8QszC0jRiY
+Video Link: \url{https://youtu.be/w8QszC0jRiY}
 
 \vskip3em
 
@@ -59,14 +59,13 @@ Signature:
 
 \begin{abstract}
 
-Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future.% TODO: add a breif summary of the results
+Transfer learning is an effective and widely used method for training deep learning models by utilizing pre-trained models to extract features from a dataset and training a new model on these features. This project report compares the performance of several image classification models, including Mobilenetv3, InceptionV3, ResNet, VGG, EfficientNet and Xception, when applied to transfer learning. The models are evaluated on a dataset consisting of MRI scans of Alzheimer's patients and images of skin cancer, which highlights the importance of accurate diagnosis and classification in the medical field. The project aims to achieve the highest accuracy in classification by exploring various optimization techniques for neural networks. By comparing these models, this study provides valuable insights into their applicability and potential improvements for similar transfer learning tasks in the future. I managed to achive a maximum validation accuracy of 93.10\% on the OASIS-1 dataset and a maximum of 96\% on the skin cancer dataset\cite{TAN2019105725} I am using.
 
 The Web-UI URL is here\cite{Hosted-UI} on GitHub Pages.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%
 %%% Project Spec
-% TODO: Summary of completed work
 
 \chapter*{Project Specification}
 
@@ -246,7 +245,7 @@ Classification is a type of supervised machine learning model that is used to pr
 
 Alzheimer's disease is not a binary classification problem, as it is not a case of either having Alzheimer's or not having Alzheimer's, it is more of a spectrum of different stages of the disease. The OASIS-1 dataset contains a CDR score for each patient, which is a measure of the severity of the disease. This means that the problem is more of a regression problem, as it is trying to predict the severity of the disease, rather than trying to classify the patient as having Alzheimer's or not, however as there are only 4 different scores in the dataset, classification may be more suited to this problem, for this specific dataset. There could however be an argument made that this could be a multi-class classification task, as the model could try and just estimate the most likely scores for the patient, rather than trying to predict the exact score, which could be more useful to a doctor.
 
-In the case of the skin cancer dataset, the problem is a binary classification problem, as the dataset only contains images of either benign or malignant skin cancer. This means that the given images are either of a benign or malignant skin cancer, and the model is trying to predict which one it is.
+In the case of the skin cancer\cite{TAN2019105725} dataset, the problem is a binary classification problem, as the dataset only contains images of either benign or malignant skin cancer. This means that the given images are either of a benign or malignant skin cancer, and the model is trying to predict which one it is.
 
 \section{What is a Convolutional Neural Network}
 A convolutional neural network (CNN) is a type of neural network that is used for image classification. It is made up of a series of convolutional layers, pooling layers, and fully connected layers. The convolutional layers are used to extract features from the image, and the pooling layers are used to reduce the size of the image. The fully connected layers are used to classify the image. They are often much more efficient than other types of neural networks, and are commonly used for image classification. CNNs are more suited to multi-dimentional data, such as images, as they are able to extract features from the image and then use those features to classify the image.
@@ -290,7 +289,7 @@ It is possible to use a pre-trained model as a feature extractor, such as an SVM
 The dataset I have chosen to primarily use for this project is the OASIS-1\cite{OASIS} dataset.
 This dataset contains 416 patients, ageing from 18 to 96 years old. It is primarily composed of patients without Alzheimer's disease.
 
-I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
+I have also chosen to include another dataset which should be easier to classify it's used in the Intelligent skin cancer\cite{TAN2019105725} diagnosis using improved particle swarm optimization and deep learning models\cite{TAN2019105725}.
 It's a combination of 2 datasets, the Edinburgh Research and Innovation (Dermofit)\cite{Ballerini2013}, and the Dermatology Service of Hospital Pedro Hispano\cite{6610779}. There are 484 images in the dataset, with 2 different classes, benign (270) and malignant (214). All the images are 200x200 pixels, with 3 channels (RGB), which is not optimal as they require upscaling to be used with the models I will be using for transfer learning.
 
 In the paper from the dataset creators, they used KNN, SVM and a CNN model to classify the images in the dataset.
@@ -316,7 +315,7 @@ The OASIS-1 dataset contains a few different associated parameters, as listed he
   \item `ASF`: The Atlas Scaling Factor of the patient
 \end{itemize}
 
-The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
+The augmentations I can use for this dataset cannot be as extensive as the skin cancer dataset\cite{TAN2019105725}, as the scans are pretty consistent in size and shape, along with being in greyscale, so I will only be using the following augmentations:
 \begin{itemize}
   \item Random horizontal flipping
   \item Random vertical flipping
@@ -326,7 +325,7 @@ The augmentations I can use for this dataset cannot be as extensive as the skin 
 
 \section{The Contents of the Skin Cancer Dataset}
 
-The skin cancer dataset contains 2 different classes, benign and malignant, and 484 images in total.
+The skin cancer dataset\cite{TAN2019105725} contains 2 different classes, benign and malignant, and 484 images in total.
 This is all the information that is available about the dataset, as it is not a publicly available dataset, this requires me to augment the data as much as possible to get good results.
 
 The augmentations I will be using are:
@@ -405,8 +404,6 @@ The VGG architecture also introduced the use of smaller 3x3 convolutional filter
   \caption{The structure of VGG19\cite{Simonyan15}}
   \label{fig:vgg19-structure}
 \end{figure}
-
-% TODO: add more of the models that I'm comparing and graph of the size of the models
 
 \section{EfficientNet}
 
@@ -577,12 +574,11 @@ Whilst I have not used the BIDS standard for all the datasets in this project, I
 
 \section{Dataset Augmentation}
 
-When training a deep learning model, it is important to have a large dataset, as this will allow the model to learn from a wide variety of data.
-Unfortunately I do not have as many MRI scans as I would like, so I have used data augmentation to increase the size of the dataset.
-Using the ImageDataGenerator class from Keras\cite{Keras}, I have been able to generate new the new images.
-This helps training the model as it allows the model to learn from a wider variety of data, and it also helps to prevent overfitting.
-It is not optimal to be required to use data augmentation, however it's significantly better than not having enough data to train the model.
-If these models were to be used in a real world scenario, augmentation helps to make the model more resilient to the quality of the scans.
+Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images, which can help improve the performance of a model by reducing overfitting and improving generalization. In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available and MRI scans are very expensive. Although the majority of the archive consists of augmented images, this has caused some problems.
+
+For the skin cancer dataset\cite{TAN2019105725}, data augmentation was applied to the images since there were not enough images per class to train the model on. When training a deep learning model, it is crucial to have a large dataset to learn from a wide variety of data. Unfortunately, there are not as many MRI scans as desired in the OASIS-1\cite{OASIS} dataset, so data augentmation was used to increase the dataset size. The augmentation I'm using is done by the Keras\cite{Keras} ImageDataGenerator class, which can be used to apply random transformations to the images in the dataset, such as rotation, zooming, and flipping. This helps to prevent overfitting and improve the generalization of the model. This helps to improve the validation accuracy through reducing overfitting to the training set.
+
+While it is not optimal to rely on data augmentation, it is significantly better than not having enough data to train the model. If these models were to be used in real-world scenarios, augmentation helps make the model more resilient to the quality of the scans.
 
 \section{Batch sizes}
 The batch size is the number of images that are passed to the model at a time.
@@ -623,18 +619,24 @@ to it's simplicity and the fact that it is the most common loss function used fo
 The validation loss and accuracy are used to determine how well the model generalises to new data, and a validation loss that is much higher than the training loss is a sign that the model is overfitting.
 For the validation set, I have assigned 20\% of the data to be used.
 
-\section{Data Augmentation}
+There are a few metrics that can be used to evaluate the performance of a model in a real world scenario.
 
-Data augmentation is the process of artificially increasing the size of a dataset by applying random transformations or filters to the images.
-This can help to improve the performance of a model, as it can help to reduce overfitting, and can also help to improve the generalisation of the model.
-The transformations that are applied to the images are usually random, and can include things like rotating the image,
-flipping the image, or changing the contrast/saturation of the image.
+One of these is called Sensitivity or recall, which is a performance metric used to evaluate the ability of a model to correctly identify true positive cases within a dataset. It is essentially a measure of how well the model is able to detect the positive instances within the data.
 
-In the case of the Alzheimer's MRI Dataset, it is extremely useful to have more data to train the model on, as there are a limited number of brain scans available.
-MRI scans are also very expensive, so using data augmentation can significantly reduce the cost of training the model.
+The formula for calculating sensitivity is:
 
-In the Alzheimer's MRI Dataset, the majority of the archive consists of augmented images already however this caused me problems which I will go on to talk about.
-With the flower dataset however, I did apply data augmentation to the images, as there were not enough images per class to train the model on.
+Sensitivity = (True Positives) / (True Positives + False Negatives)
+
+In this formula, True Positives are instances that the model correctly identifies as positive, while False Negatives are instances the model incorrectly identifies as negative (missing positive instances).
+Higher sensitivity values indicate that the model is better at identifying true positives and avoiding false negatives, which may be important, especially when diagnosing Alzheimer's disease or skin cancer.
+
+Specificity is another performance metric used to evaluate the ability of a model to correctly identify true negative cases within a dataset. It is defined as the proportion of actual negatives that are correctly predicted as negative. In other words, it is the percentage of people who do not have the disease that the model correctly identifies as not having the disease. This could help doctors to have more or less confidence in the model's predictions, so it could help with their decision making.
+
+Finally, the F1 score is a measure of a model's accuracy on a dataset. It is used to evaluate binary classification systems, which classify examples into 'positive' or 'negative'. The F1 score is a way of combining the precision and recall of the model, and it is defined as the mean of the model's precision and recall.
+
+The formula for calculating the F1 score is:
+
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
 
 \section{Problems With The Datasets and How I Fixed Them}
 
@@ -657,7 +659,7 @@ and the validation accuracy is very high, higher than what other models from oth
 
 \pagebreak
 
-\subsection{The solution}
+\subsection{The Solution}
 The solution to this problem was to use the original images, and not the pre-augmented images.
 This meant that I had to re-download the dataset, and re-split the dataset into training and validation sets,
 and then apply data augmentation to the images. This gave me much better results, and the model was able to generalise
@@ -687,7 +689,7 @@ This was then solved by going directly with the OASIS-1 dataset, and using the i
 
 By using the OASIS-1 dataset directly, that presented a new set of challenges, as the images were given in a different format, as I had a CSV file with the labels and the image IDs which identified the images. This lead me to learn how to use the Pandas\cite{Pandas} library in Python, which allowed me to read the CSV file and extract the image IDs and the labels from it. Then I had to create my own custom data generator, which allowed me to load the images from the dataset, and apply the transformations to them. This was a very useful learning experience, as I was able to learn important skills relating to data preprocessing. The data generator, which I had talked about earlier, helps batch and augment the data that is being fed into the model during training.
 
-\section{Evaluating the given metrics}
+\section{Evaluating The Given Metrics}
 The metrics of accuracy and loss generally tell us how well the model is performing,
 but they do not tell us how well the model is performing for each class.
 They do also not tell us how well the model would work in a real world scenario,
@@ -700,11 +702,31 @@ as the scans could be of a different quality.
 I have used the augmented dataset for the training and validation sets as this
 should give a better representation of how well the model would work in a real world scenario.
 
+\subsection{Different Learning Rates}
 
-% TODO: TALK ABOUT METRICS
+When training a model, the learning rate is the rate at which the model learns from the data.
+A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
+but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
 
+A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
+It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
+A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
+It is the lowest point in the entire loss landscape no matter what parameters the model has.
 
-\pagebreak
+\subsection{Hyperparameter Tuning}
+
+Hyperparameter tuning is the process of finding the most optimal set of hyperparameters for a given neural network. These include learning rate, batch size, number of layers, number of units per layer, and more.
+
+In a grid search, the model is trained with every possible combination of hyperparameters, and the best set of hyperparameters is chosen based on the validation accuracy. This is a very time-consuming process, and it is not very efficient as it is not guaranteed that the best set of hyperparameters will be found.
+
+Random search is where the hyperparameters are randomly chosen, and the model is trained with those hyperparameters. This can be more efficient than a grid search, as it does not train the model with every possible combination of hyperparameters. However, there is also a chance that the best set of hyperparameters will not be found in a reasonable amount of time. There is a possibility that random search could be combined with grid search, where the hyperparameters are randomly chosen in the grid search, and an algorithm could determine which hyperparameters are the best without having to train the model with every possible combination.
+
+Bayesian optimization is another method for hyperparameter tuning that utilizes a probabilistic model to propose better search spaces, leading to more efficient convergence to find the optimal set of hyperparameters.
+
+Genetic Algorithms (GAs) are inspired by the process of natural selection, where each individual (hyperparameter set) in the population is evaluated and scored based on its performance. The fittest individuals are selected for reproduction (crossover and mutation) to produce the next generation. This process is repeated until the optimal set is found or a stopping criterion is met. I ended up manually tuning the hyperparameters, in a method similar to this, as it was the most efficient way to do so.
+
+In practice, there's usually more than one singular method of hyperparameter tuning that is used to find the best set of hyperparameters. I essentially combined random search with a genetic algorithm, as I randomly chose the hyperparameters, and then I chose the best set of hyperparameters based on the validation accuracy. Cross-validation can also be used to assess the performance of the model with the chosen hyperparameters. I repeated this process in the Jupyter notebook until I felt that I had found the best set of hyperparameters.
+
 
 \chapter{Software Engineering}
 
@@ -773,19 +795,6 @@ and to test the code quicker.
 Aside from testing the models, I could set up unit tests for an API that I could create for anyone to upload their brain scans to and get a prediction of whether they have Alzheimer's or not.
 This would give me an opportunity to write unit tests for the API, and to test the code that I would write for the API.
 
-\subsection{Different learning rates}
-
-When training a model, the learning rate is the rate at which the model learns from the data.
-A low learning rate will cause the model to learn slower, and a high learning rate will cause the model to learn quicker
-but it can also cause the model to get stuck in a local minimum. A combination of a high learning rate whilst the base model is frozen, and a low learning rate whilst the base model is unfrozen is a good way to train a model as it allows the model to learn quickly at the start, and then fine-tune the model at a slower rate.
-
-A local minimum is when the model can't decrease its loss any further by adjusting its parameters.
-It is stuck at a 'valley' in the loss landscape with the parameters that it currently has.
-A global minimum is the same concept, but it is the absolute lowest the model can take its loss.
-It is the lowest point in the entire loss landscape no matter what parameters the model has.
-
-% Also talk about the different learning rates and how they affect the performance of the models
-
 \section{Frontend Typescript and React}
 
 For the frontend, I have chosen not to use TDD as it would be difficult to test the code, as it's mostly just displaying the results from the the models that I have trained. I did however setup the project using my template\cite{TypescriptProjectTemplate} that I created prior to this project, which has a basic setup for a React Typescript project, which used EsLint\cite{EsLint} to format the code and to make sure that the code is consistent, and to make sure that there are no syntax errors.
@@ -841,7 +850,7 @@ One potential issue with this parameter is that women are more likely to have Al
 \clearpage
 
 \section{The Skin Cancer Dataset}
-The Skin cancer dataset that I was provided for this project contains images of benign and malignant skin cancer.
+The Skin cancer dataset\cite{TAN2019105725} that I was provided for this project contains images of benign and malignant skin cancer.
 
 % Show the benign and malignant images
 \begin{figure}[h]
@@ -1539,7 +1548,7 @@ I have also learned a lot about the Alzheimer's disease, and how important it is
 
 Although my results from the Alzheimer's dataset were not as good as I would have liked, I have still learned a lot from this project and I am very happy with the results from the skin cancer dataset, as I was able to get a very high accuracy on the validation set.
 
-\section{Challanges and how I overcame them}
+\section{Challanges and How I Overcame Them}
 
 I had many problems with the Alzheimer's dataset, however after learning how to use the OASIS-1 dataset, I was able to get some better and more reliable results. I realise how it would have been much better if I were to go straight to the OASIS-1 dataset, however I was not aware of it until I was already deep into the project. Luckily I was able to get some good results from the skin cancer dataset, and I was able to use these results to talk about the performance of the different models in my report.
 
